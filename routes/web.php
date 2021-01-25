@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('pages.index');
 });
 
+Route::get('asztalfoglalas', function () {
+    return view('pages.reservation');
+});
+
+Route::get('esemenyek', function () {
+    return view('pages.events');
+});
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

@@ -3,7 +3,7 @@
 @section('content')
     <div class="w-auto relative bg-black">
         <div class="w-full flex flex-col justify-center items-center py-72 px-6  text-white">
-            <h1 class="uppercase text-4xl mb-8 gold font-semibold">spaletta kecskemét</h1>
+            <h1 class="uppercase text-4xl mb-8 text-gold font-semibold">spaletta kecskemét</h1>
             <p class="uppercase text-6xl text-center mb-4">étterem és sörház</p>
             <p class="text-2xl mb-4">6000 Kecskemét, Jókai utca 15.</p>
             <a class="uppercase text-2xl mt-4 px-10 py-3 rounded-sm border-2 border-white" href="">kiszállításos étlap & itallap</a>
@@ -38,7 +38,11 @@
             </a>
         </div>
     </div>
+    <div class="lg:container lg:mx-auto px-6 py-32 flex flex-col items-center ">
+        <p class="text-3xl gold font-libre italic pb-2">Spaletta</p>
+        <h2 class="text-5xl gray font-semibold uppercase mb-8">asztalfoglalás</h2>
     @include('partials.sections.reservation')
+    </div>
     <div class="home-about bg-cover bg-center px-6 py-32">
         <div class="lg:container w-full lg:mx-auto lg:grid lg:grid-cols-2 lg:gap-12">
             <div class="flex justify-end">
@@ -52,5 +56,7 @@
             </div>
         </div>
     </div>
-    @include('partials.sections.opening')
+    <div class="px-6 py-32 shadow-lg">
+        @include('partials.sections.opening')
+    </div>
 @endsection

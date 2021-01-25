@@ -1,6 +1,6 @@
 <div class="bg-black text-white text-2xl font-semibold tracking-widest uppercase">
-    <div x-data="{ open: false }" class="flex flex-col lg:flex-row w-full">
-        <div class="flex justify-between items-center p-6">
+    <div x-data="{ open: false }" class="flex flex-col lg:flex-row w-full absolute">
+        <div class="flex justify-between items-center p-6 z-50">
             <a href=""><img class="w-12 lg:w-24 lg:mr-6" src="../images/logo/logo.png" alt=""></a>
             <button @click="open = !open" class="lg:hidden focus:outline-none">
                 <img x-show="!open" class="w-14 " src="../images/svg/menu.svg" alt="">
