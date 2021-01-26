@@ -12,25 +12,25 @@
     @include('partials.sections.weekly-menu')
     <div class="home-service px-6 py-32">
         <div class=" space-x-4 lg:space-x-0  lg:container lg:mx-auto lg:grid lg:grid-cols-4 lg:gap-12">
-            <a href="">
+            <a href="/menu">
                 <div class="flex items-center justify-center transition ease-in-out duration-700 lg:transform lg:hover:scale-105 border-yellow-300 border-2 ">
                     <img class=" filter  " src="../images/home-menu.png" alt="">
                     <h2 class="text-white absolute text-4xl font-semibold uppercase">étlap</h2>
                 </div>
             </a>
-            <a href="">
+            <a href="/menu">
                 <div class="flex items-center justify-center transition ease-in-out duration-700 lg:transform lg:hover:scale-105 border-yellow-300 border-2">
                     <img class=" filter" src="../images/drinks.png" alt="">
                     <h2 class="text-white absolute text-4xl font-semibold uppercase">itallap</h2>
                 </div>
             </a>
-            <a href="">
+            <a href="/asztalfoglalas">
                 <div class="flex items-center justify-center transition ease-in-out duration-700 lg:transform lg:hover:scale-105 border-yellow-300 border-2">
                     <img class=" filter" src="../images/home-reservations.png" alt="">
                     <h2 class="text-white absolute text-4xl font-semibold uppercase">asztalfoglalás</h2>
                 </div>
             </a>
-            <a href="">
+            <a href="/esemenyek">
                 <div class="flex items-center justify-center transition ease-in-out duration-700 lg:transform lg:hover:scale-105 border-yellow-300 border-2">
                     <img class=" filter" src="../images/events.png" alt="">
                     <h2 class="text-white absolute text-4xl font-semibold uppercase">rendezvények</h2>
@@ -52,7 +52,7 @@
                 <p class="text-2xl font-medium gold font-libre italic">Rólunk</p>
                 <h2 class="gray text-5xl font-semibold uppercase">Bemutatkozunk</h2>
                 <p class="text-2xl gray font-medium pt-10">Fura hullámokat vet az élet. Soha nem gondoltam volna, hogy éttermet fogunk vezetni. Eddig az élet teljesen más területén dolgoztunk, dolgozunk és bár gyermekkorom nyarait régi vendéglátós család szülöttjeként hol fagylaltosfiúként, hol pultosként töltöttem-közben leendő feleségem palacsintát sütött egy lakókocsiban a vágyott Adidas cipőért- nem is álmodtunk efféle karrierről.</p>
-                <a href=""><p class="gray-border uppercase px-10 pt-3 pb-2.5 text-2xl gray mt-8">tovább</p></a>
+                <a href="/rolunk"><p class="gray-border uppercase px-10 pt-3 pb-2.5 text-2xl gray mt-8">tovább</p></a>
             </div>
         </div>
     </div>
