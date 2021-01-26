@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Livewire\Order\Index;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function (Request $request) {
+    $value = $request->session()->put('shop', [1]);
+    $value2 = $request->session()->put('shop', [2]);
+    dd($request->session());
     return view('pages.index');
 });
+
+Route::get('rendeles', Index::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
