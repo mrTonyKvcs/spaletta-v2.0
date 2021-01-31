@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<x-layout>
     <div class="w-auto relative bg-black">
         <div class="w-full flex flex-col justify-center items-center py-72 px-6  text-white">
             <h1 class="uppercase text-4xl mb-8 text-gold font-semibold">spaletta kecskemét</h1>
@@ -10,34 +8,14 @@
         </div>
     </div>
     @include('partials.sections.weekly-menu')
-    <div class="home-service px-6 py-32">
-        <div class=" space-x-4 lg:space-x-0  lg:container lg:mx-auto lg:grid lg:grid-cols-4 lg:gap-12">
-            <a href="/menu">
-                <div class="flex items-center justify-center transition ease-in-out duration-700 lg:transform lg:hover:scale-105 border-yellow-300 border-2 ">
-                    <img class=" filter  " src="../images/home-menu.png" alt="">
-                    <h2 class="text-white absolute text-4xl font-semibold uppercase">étlap</h2>
-                </div>
-            </a>
-            <a href="/menu">
-                <div class="flex items-center justify-center transition ease-in-out duration-700 lg:transform lg:hover:scale-105 border-yellow-300 border-2">
-                    <img class=" filter" src="../images/drinks.png" alt="">
-                    <h2 class="text-white absolute text-4xl font-semibold uppercase">itallap</h2>
-                </div>
-            </a>
-            <a href="/asztalfoglalas">
-                <div class="flex items-center justify-center transition ease-in-out duration-700 lg:transform lg:hover:scale-105 border-yellow-300 border-2">
-                    <img class=" filter" src="../images/home-reservations.png" alt="">
-                    <h2 class="text-white absolute text-4xl font-semibold uppercase">asztalfoglalás</h2>
-                </div>
-            </a>
-            <a href="/esemenyek">
-                <div class="flex items-center justify-center transition ease-in-out duration-700 lg:transform lg:hover:scale-105 border-yellow-300 border-2">
-                    <img class=" filter" src="../images/events.png" alt="">
-                    <h2 class="text-white absolute text-4xl font-semibold uppercase">rendezvények</h2>
-                </div>
-            </a>
+    <x-section background="home-services">
+        <div class=" space-x-4 lg:space-x-0 lg:grid lg:grid-cols-4 lg:gap-12">
+            <x-card type="link" path="/images/home-menu.png" route="/menu"></x-card>
+            <x-card type="link" path="/images/home-menu.png" route="/menu"></x-card>
+            <x-card type="link" path="/images/home-menu.png" route="/menu"></x-card>
+            <x-card type="link" path="/images/home-menu.png" route="/menu"></x-card>
         </div>
-    </div>
+    </x-section>
     <div class="lg:container lg:mx-auto px-6 py-32 flex flex-col items-center ">
         <p class="text-3xl gold font-libre italic pb-2">Spaletta</p>
         <h2 class="text-5xl gray font-semibold uppercase mb-8">asztalfoglalás</h2>
@@ -59,4 +37,4 @@
     <div class="px-6 py-32 shadow-lg">
         @include('partials.sections.opening')
     </div>
-@endsection
+</x-layout>
