@@ -24,6 +24,30 @@ Route::get('/', function (Request $request) {
 
 Route::get('rendeles', Index::class);
 
+Route::get('menu', function () {
+    return view('pages.menu');
+});
+
+Route::get('asztalfoglalas', function () {
+    return view('pages.reservation');
+});
+
+Route::get('esemenyek', function () {
+    return view('pages.events');
+});
+
+Route::get('galeria', function () {
+    return view('pages.gallery');
+});
+
+Route::get('rolunk', function () {
+    return view('pages.about');
+});
+
+Route::get('kapcsolat', function () {
+    return view('pages.contact');
+});
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
