@@ -17,16 +17,16 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/', function (Request $request) {
-    // $value = $request->session()->put('shop', [1]);
-    // $value2 = $request->session()->put('shop', [2]);
-    // dd($request->session());
     return view('pages.index');
 });
 
 Route::get('rendeles', Index::class);
-Route::get('cart', Cart::class)->name('cart');
 
-// Route::livewire('/cart', 'cart')->name('cart');
+// Route::get('cart', Cart::class)->name('cart');
+
+Route::get('cart', function () {
+    return view('pages.cart');
+});
 
 Route::get('menu', function () {
     return view('pages.menu');
@@ -51,6 +51,10 @@ Route::get('rolunk', function () {
 Route::get('kapcsolat', function () {
     return view('pages.contact');
 });
+
+Route::get('bejelentkezes', function () {
+    return view('auth.sign-in');
+})->name('auth.signin');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

@@ -1,7 +1,7 @@
 <div class="lg:container lg:mx-auto ">
     <div class="grid grid-cols-3 gap-2">
-        <div class="flex justify-center items-center">
-            <h2 class="uppercase gray text-5xl font-semibold">Nyitva<br>tartás</h1>
+        <div class="flex flex-col justify-center items-center">
+            <h2 class="uppercase gray text-5xl font-semibold">Nyitva<br>tartás</h2>
         </div>
         <div class="grid grid-cols-2 col-span-2 lg:flex lg:flex-col lg:justify-center">
             <div class="text-2xl divide-y lg:divide-y-0 lg:border-b lg:border-gray-300 gray font-medium lg:font-semibold flex flex-col text-center lg:flex-row">

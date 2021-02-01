@@ -2,7 +2,8 @@
 
 namespace App\Http\Livewire;
 
-use App\Product;
+use App\Models\Category;
+use App\Models\Product;
 use App\Facades\Cart;
 use Illuminate\View\View;
 use Livewire\Component;
@@ -23,16 +24,20 @@ class Products extends Component
 
     public function render(): View
     {
+        $menus = Category::query()
+            ->with('items')
+            ->whereIn('type_id', [4, 5]);
+
         return view('livewire.products', [
-            'products' => $this->search === null ?
-                Product::paginate(12) :
+            'categories' => $this->search === null ?
+                $menus->get() :
                 Product::where('name', 'like', '%' . $this->search . '%')->paginate(12)
         ]);
     }
 
-    public function addToCart(int $productId): void
+    public function addToCart(Product $product): void
     {
-        $rs = Cart::add(Product::where('id', $productId)->first());
+        Cart::add($product);
         $this->emit('productAdded');
     }
 }

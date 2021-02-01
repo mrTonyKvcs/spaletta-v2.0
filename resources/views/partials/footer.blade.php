@@ -1,4 +1,4 @@
-<div class="px-6 py-32 light-gray-bg">
+<div class="px-6 py-32 light-gray-bg bg-fixed bg-center bg-no-repeat bg-cover">
     <div class="lg:container lg:mx-auto">
         <div class="flex flex-col items-center">
             <img class="w-40" src="../images/logo/logo.png" alt="">
