@@ -11,8 +11,10 @@ module.exports = {
         extend: {
             colors: {
                 gold: '#ffb606',
+                gray73: '#737373',
                 gray58: '#585858',
-                gray48: '#484848'
+                gray48: '#484848',
+                gray2e: '#2e2e2e'
             },
 
             height: {

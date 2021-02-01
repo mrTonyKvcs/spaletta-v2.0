@@ -16,9 +16,6 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/', function (Request $request) {
-    $value = $request->session()->put('shop', [1]);
-    $value2 = $request->session()->put('shop', [2]);
-    dd($request->session());
     return view('pages.index');
 });
 
