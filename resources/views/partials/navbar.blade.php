@@ -22,7 +22,7 @@
                 <a class="px-7 py-4 lg:px-7 lg:py-14 lg:text-gray-300 lg:hover:text-white" href="/galeria">Galéria</a>
                 <a class="px-7 py-4 lg:px-7 lg:py-14 lg:text-gray-300 lg:hover:text-white" href="/rolunk">Rólunk</a>
                 <a class="px-7 py-4 lg:px-7 lg:py-14 lg:text-gray-300 lg:hover:text-white" href="/kapcsolat">Kapcsolat</a>
-                <div class="flex items-center justify-evenly px-7 py-4">
+                <div class="flex  items-center justify-center px-7 py-4">
                     <a href="" class="w-10"><img class="w-7" src="../images/svg/facebook-white.svg" alt=""></a>
                     <a href="" class="w-10"><img class="w-7" src="../images/svg/instagram-white.svg" alt=""></a>
                 </div>

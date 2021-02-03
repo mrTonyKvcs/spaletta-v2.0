@@ -14,7 +14,8 @@ module.exports = {
                 gray73: '#737373',
                 gray58: '#585858',
                 gray48: '#484848',
-                gray2e: '#2e2e2e'
+                gray2e: '#2e2e2e',
+                gray26: '#262626'
             },
 
             height: {
@@ -22,7 +23,8 @@ module.exports = {
             },
 
             width: {
-                '108': '27rem'
+                '108': '27rem',
+                '160': '40rem'
             },
 
             fontSize: {
