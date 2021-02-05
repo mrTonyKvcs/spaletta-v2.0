@@ -2,7 +2,7 @@
     <x-header background="about">Rólunk</x-header>
     <x-section>
         <div class="md:flex">
-            <div class="md:w-1/2 ">
+            <div class="md:w-1/2">
                 <x-title text="Spaletta" title="Történetünk" price=""></x-title>
                 <x-history-text></x-history-text> 
             </div>

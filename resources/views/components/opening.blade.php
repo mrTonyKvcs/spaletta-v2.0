@@ -1,8 +1,8 @@
-<div class="hidden lg:flex lg:flex-row items-center">
-    <div class="w-1/5 lg:w-2/5 flex justify-center md:justify-center">
-        <span class="align-bottom uppercase text-gray2e text-5xl font-semibold">Nyitva <br> tartás</span>
+<div class="hidden lg:flex lg:flex-row justify-start">
+    <div class="w-1/4 flex md:justify-start">
+        <span class="align-bottom uppercase text-gray2e text-5xl font-semibold">Nyitvatartás</span>
     </div>
-    <table class="table-fixed lg:w-2/4 text-gray73">
+    <table class="table-fixed lg:w-3/5 text-gray73">
         <thead class=" border-b-2 border-gray-200 text-2xl">
           <tr>
             <th class="pb-2">Hétfő</th>

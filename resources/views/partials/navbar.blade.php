@@ -1,5 +1,5 @@
-<div class="bg-black text-white text-2xl font-semibold tracking-widest uppercase">
-    <div x-data="{ open: false }" class="flex flex-col lg:flex-row w-full absolute">
+<div class="bg-black text-white text-2xl font-semibold tracking-widest uppercase" >
+    <div x-data="{ open: false}" class="flex flex-col lg:flex-row w-full absolute">
         <div class="flex justify-between items-center p-6 z-50">
             <a href="/"><img class="w-12 lg:w-24 lg:mr-6 lg:fixed" src="../images/logo/logo.png" alt=""></a>
             <button @click="open = !open" class="lg:hidden focus:outline-none">
@@ -31,28 +31,3 @@
     </div>
 </div>
 
-<div class="hidden">
-    <div class="flex justify-between items-center p-6">
-        <a href=""><img class="w-12 lg:w-24 lg:mr-6" src="../images/logo/logo.png" alt=""></a>
-        <button @click="open = !open" class="lg:hidden focus:outline-none">
-            <img x-show="!open" class="w-14 " src="../images/svg/menu.svg" alt="">
-            <img x-show="open" class="w-14" src="../images/svg/close.svg" alt="">
-        </button>
-    </div>
-    <nav>
-        <button>
-            <span>Menü</span>
-        </button>
-        <div>
-        </div>
-        <a class="px-7 py-4 lg:px-7 lg:py-14 lg:text-gray-300 lg:hover:text-white" href="#">Asztalfoglalás</a> 
-        <a class="px-7 py-4 lg:px-7 lg:py-14 lg:text-gray-300 lg:hover:text-white" href="#">Rendezvények</a>
-        <a class="px-7 py-4 lg:px-7 lg:py-14 lg:text-gray-300 lg:hover:text-white" href="#">Galéria</a>
-        <a class="px-7 py-4 lg:px-7 lg:py-14 lg:text-gray-300 lg:hover:text-white" href="#">Rólunk</a>
-        <a class="px-7 py-4 lg:px-7 lg:py-14 lg:text-gray-300 lg:hover:text-white" href="#">Kapcsolat</a> 
-    </nav>
-    <div>
-        <a href=""><img class="w-7" src="../images/svg/facebook-white.svg" alt=""></a>
-        <a href=""><img class="w-7" src="../images/svg/instagram-white.svg" alt=""></a>
-    </div>
-</div>

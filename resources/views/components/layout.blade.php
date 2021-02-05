@@ -23,7 +23,7 @@
         @include('partials.navbar')
     </header>
     <main>
-        {{ $slot }}
+       {{ $slot }}
     </main>
     <footer>
         @include('partials.footer')

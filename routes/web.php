@@ -45,6 +45,7 @@ Route::get('kapcsolat', function () {
     return view('pages.contact');
 });
 
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

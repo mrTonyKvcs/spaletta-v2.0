@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="w-auto relative bg-black">
+    <div class="w-auto relative">
         <div class="w-full flex flex-col justify-center items-center py-72 px-6  text-white">
             <h1 class="uppercase text-4xl mb-8 text-gold font-semibold">spaletta kecskemét</h1>
             <p class="uppercase text-6xl text-center mb-4">étterem és sörház</p>
@@ -14,16 +14,22 @@
                     <a href="">+36 76 614 744</a>
                 </div>
             </div>
-            <a class="uppercase text-2xl mt-4 px-10 py-3 rounded-sm border-2 border-white" href="">kiszállításos étlap & itallap</a>
+            <x-button>ételrendelés</x-button>
         </div>
+        <video poster="../images/chefs.jpg" autoplay playsinline muted loop>
+            <source src="../videos/spaletta-video.mp4" type="video/webm">
+            <source src="../videos/spaletta-video.mp4" type="video/mp4">
+        </video>
     </div>
     <x-section>
-        <x-title title="Heti Menü" text="2021.02.02 - 2021.02.05." price="1800 Ft"></x-title>
-        <x-weekly-menu></x-weekly-menu>
-        <x-title title="Hétvégi Menük" text="2021.02.06 - 2021.02.07." price="2600 Ft"></x-title>
-        <x-weekend-menu></x-weekend-menu>
-        <p class="text-xl">(Az ár nem tartalmaza a csomagolás díját)</p>
-        <x-button>étlap</x-button>
+        <div class="mt-32 flex flex-col items-center">
+            <x-title title="Heti Menü" text="2021.02.02 - 2021.02.05." price="1800 Ft"></x-title>
+            <x-weekly-menu></x-weekly-menu>
+            <x-title title="Hétvégi Menük" text="2021.02.06 - 2021.02.07." price="2600 Ft"></x-title>
+            <x-weekend-menu></x-weekend-menu>
+            <p class="text-xl">(Az ár nem tartalmaza a csomagolás díját)</p>
+            <x-button>étlap</x-button>
+        </div>
     </x-section>
     <x-section background="home-services">
         <div class=" space-x-4 lg:space-x-0 lg:grid lg:grid-cols-4 lg:gap-12">
@@ -54,5 +60,5 @@
     <x-section class="shadow-lg">
         <x-opening></x-opening>
     </x-section>
-    <x-map></x-map>
+    <x-map></x-map> 
 </x-layout>

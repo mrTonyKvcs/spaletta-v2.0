@@ -87,3 +87,13 @@ html {
 .menu-bg {
     background-image: url('../images/menu-bg.jpg');
 }
+
+video {
+    width: 100vw;
+    height: 110%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

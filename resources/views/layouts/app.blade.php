@@ -18,7 +18,7 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
-<body>
+<body >
     <header>
         @include('partials.navbar')
     </header>
