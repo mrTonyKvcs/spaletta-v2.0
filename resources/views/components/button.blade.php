@@ -1,3 +1,15 @@
-<div class="border border-transparent text-white bg-gray48 hover:bg-gray2e mt-6 inline-flex items-center pt-3.5 px-10 pb-2.5 text-2xl uppercase shadow-sm focus:outline-none">
+@props([
+    'type' => 'gray',
+    'colors' => [
+        'gray' => 'mt-10 border border-transparent text-white bg-gray48 hover:bg-gray2e',
+        'gray-transparent' => 'border border-gray48 text-gray48 bg-transparent hover:bg-gray48 hover:text-white',
+        'transparent' => 'border border-white text-white bg-transparent hover:bg-white hover:text-gray48',
+    ]
+
+])
+
+
+<div {{ $attributes->merge(['class' => "{$colors[$type]} inline-flex font-medium items-center pt-3.5 px-10 pb-2.5 text-2xl uppercase shadow-sm focus:outline-none"]) }}>
     {{ $slot }}
 </div>
+

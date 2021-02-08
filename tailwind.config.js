@@ -18,7 +18,12 @@ module.exports = {
                 gray26: '#262626'
             },
 
+            margin: {
+                '160': '40rem',
+            },
+
             height: {
+                '160': '40rem',
                 '200': '50rem',
             },
 

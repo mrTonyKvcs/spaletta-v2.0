@@ -1,10 +1,10 @@
 <x-layout>
     <div class="w-auto relative">
-        <div class="w-full flex flex-col justify-center items-center py-72 px-6  text-white">
-            <h1 class="uppercase text-4xl mb-8 text-gold font-semibold">spaletta kecskemét</h1>
-            <p class="uppercase text-6xl text-center mb-4">étterem és sörház</p>
-            <p class="text-2xl mb-4">6000 Kecskemét, Jókai utca 15.</p>
-            <div class="flex flex-col items-center  md:flex-row  text-3xl mb-4">
+        <div class="w-full flex flex-col justify-center items-center py-72 px-6 text-white">
+            <h1 class="uppercase text-4xl mb-8 text-gold font-semibold z-50">spaletta kecskemét</h1>
+            <p class="uppercase text-6xl text-center mb-4 z-50">étterem és sörház</p>
+            <p class="text-2xl mb-4 z-50">6000 Kecskemét, Jókai utca 15.</p>
+            <div class="flex flex-col items-center  md:flex-row  text-3xl mb-4 z-50">
                 <div class="flex items-center mb-4 md:mb-0 md:mr-6">
                     <img class="w-10 pr-2" src="../images/svg/mobile.svg" alt="">
                     <a href="" class="">+36 20 219 99 75</p>
@@ -14,7 +14,7 @@
                     <a href="">+36 76 614 744</a>
                 </div>
             </div>
-            <x-button>ételrendelés</x-button>
+            <x-button class="z-50" type="transparent">ételrendelés</x-button>
         </div>
         <video poster="../images/chefs.jpg" autoplay playsinline muted loop>
             <source src="../videos/spaletta-video.mp4" type="video/webm">
@@ -53,7 +53,7 @@
                 <p class="text-2xl font-medium gold font-libre italic">Rólunk</p>
                 <h2 class="text-gray2e text-5xl font-semibold uppercase">Bemutatkozunk</h2>
                 <p class="text-2xl gray font-medium pt-10">Fura hullámokat vet az élet. Soha nem gondoltam volna, hogy éttermet fogunk vezetni. Eddig az élet teljesen más területén dolgoztunk, dolgozunk és bár gyermekkorom nyarait régi vendéglátós család szülöttjeként hol fagylaltosfiúként, hol pultosként töltöttem-közben leendő feleségem palacsintát sütött egy lakókocsiban a vágyott Adidas cipőért- nem is álmodtunk efféle karrierről.</p>
-                <x-button>tovább</x-button>
+                <x-button class="mt-8" type="gray-transparent">tovább</x-button>
             </div>
         </div>
     </x-section>

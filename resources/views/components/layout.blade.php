@@ -22,10 +22,10 @@
     <header>
         @include('partials.navbar')
     </header>
-    <main>
+    <main class="mb-160 bg-white z-10 shadow-lg">
        {{ $slot }}
     </main>
-    <footer>
+    <footer class="light-gray-bg footer-parallax">
         @include('partials.footer')
     </footer>
 </body>
