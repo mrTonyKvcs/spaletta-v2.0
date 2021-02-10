@@ -7,7 +7,13 @@
             <div class="md:w-2/3">
                 <x-title text="Küldjön" title="Üzenetet" price=""></x-title>
                 <p class="text-center text-gray48 text-xl">Az alábbi ürlap kitöltésevel közvetlen üzenetet tud küldeni.</p>
-                <div class="py-12">
+                @if ($errors->has('g-recaptcha-response'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                    </span>
+                @endif
+                <form method="POST" action="{{ route('mail.store','Kapcsolat') }}" class="py-12">
+                    @csrf
                     <div class="flex flex-col lg:flex-row">
                         <div class="mb-6 lg:mr-6 lg:w-1/2">
                             <p class="text-center text-2xl gray font-medium">Teljes név</p>
@@ -19,12 +25,18 @@
                         </div>
                     </div>
                     <div>
-                        <div class="mb-6">
+                        <div>
                             <p class="text-center text-2xl gray font-medium">Üzenet</p>
                             <textarea type="message" class="w-full gray outline-none text-center font-medium py-2.5 px-5 text-xl border-b border-gray-300"></textarea>
                         </div>
                     </div>
-                </div>
+                    <div>
+                        {!! NoCaptcha::display() !!}
+                    </div>
+                    <div class="w-full flex justify-center items-center">
+                        <x-button submit="true">Küldés</x-button>
+                    </div>
+                </form>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/3 lg:ml-48 mb-12 lg:mb-0 p-4 pl-12 lg:pl-28 text-lg xl:text-2xl space-y-4 flex flex-col  justify-center rounded-lg shadow-xl">
                 <h2 class="text-xl lg:text-3xl uppercase text-gold">Elérhetőségek</h2>

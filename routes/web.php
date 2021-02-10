@@ -45,7 +45,13 @@ Route::get('kapcsolat', function () {
     return view('pages.contact');
 });
 
+//SendMails
+Route::post('uzenet-kuldes/{subject}', [
+    'as'    => 'mail.store',
+    'uses' => 'SendMailsController@store'
+]);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+

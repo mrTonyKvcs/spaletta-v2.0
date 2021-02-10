@@ -20,7 +20,7 @@
 </head>
 <body>
     <header>
-        @include('partials.navbar')
+        @include('partials.new-navbar')
     </header>
     <main class="mb-160 bg-white z-10 shadow-lg">
        {{ $slot }}

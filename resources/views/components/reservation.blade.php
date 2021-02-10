@@ -1,4 +1,4 @@
-<div class="w-full lg:w-2/3 lg:grid lg:grid-cols-2 lg:gap-6">
+<form class="w-full lg:w-2/3 lg:grid lg:grid-cols-2 lg:gap-6">
     <div class="mb-6">
         <p class="text-center text-2xl gray font-medium">Dátum</p>
         <input type="date" class="bg-white w-full gray outline-none text-center font-medium py-2.5 px-5 text-xl border-b border-gray-300">
@@ -26,4 +26,4 @@
             <option value="2">2 vendég</option>
         </select> 
     </div>
-</div>
+</form>
