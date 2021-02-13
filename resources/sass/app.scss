@@ -109,11 +109,16 @@ video {
 }
 
 .scroll {
-    background-color: #fff;
-    color: #333333;
+    background-color: #262626;
     --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    a {
-        color: #333333;
+    @media (min-width: 1024px) {
+        background-color: #fff;
+        a {
+            color: #484848;
+        }
+        a:hover {
+            color: #262626
+        }
     }
 }

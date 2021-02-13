@@ -49,8 +49,8 @@
           </button>
         @else
         <div class="flex items-center">
-          <x-button type="gray-transparent">Belépés</x-button>
-          <x-button type="gray-transparent">Regisztráció</x-button>
+          <x-button class="mr-8" type="gold">Belépés</x-button>
+          <x-button type="gold">Regisztráció</x-button>
         </div> 
         @endif
         </div>
@@ -98,8 +98,10 @@
         </div>
       </div>
       @else
+      <div class="flex items-center justify-evenly"> 
         <x-button type="transparent">Belépés</x-button>
         <x-button type="transparent">Regisztráció</x-button>
+      </div>
       @endif
     </div>
 </nav>

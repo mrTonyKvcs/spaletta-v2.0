@@ -5,6 +5,7 @@
         'gray' => 'mt-10 border border-transparent text-white bg-gray48 hover:bg-gray2e',
         'gray-transparent' => 'border border-gray48 text-gray48 bg-transparent hover:bg-gray48 hover:text-white',
         'transparent' => 'border border-white text-white bg-transparent hover:bg-white hover:text-gray48',
+        'gold' => 'border border-gold bg-black bg-opacity-50 text-gold bg-transparent hover:bg-gold hover:text-white',
     ]
 
 ])
