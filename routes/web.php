@@ -45,6 +45,10 @@ Route::get('kapcsolat', function () {
     return view('pages.contact');
 });
 
+Route::get('admin', function () {
+    return view('pages.admin');
+});
+
 //SendMails
 Route::post('uzenet-kuldes/{subject}', [
     'as'    => 'mail.store',

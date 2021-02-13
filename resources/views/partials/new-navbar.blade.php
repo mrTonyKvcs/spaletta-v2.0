@@ -5,7 +5,7 @@
           <div class="flex-shrink-0 flex items-center mr-6">
             <a href="/"><img class="w-14 md:w-20 lg:w-24" src="../images/logo/logo.png" alt="Spaletta-logo"></a>
           </div>
-          <div class="hidden  lg:flex lg:space-x-2 uppercase">
+          <div class="hidden  lg:flex xl:space-x-2 uppercase">
             <a href="/menu" class="px-7 py-4 lg:px-5 lg:py-14 lg:text-gray-300 lg:hover:text-white">
                 Rendelés
             </a>
@@ -26,10 +26,9 @@
             </a>
           </div>
         </div>
+        
         <div class="hidden lg:ml-6 lg:flex lg:items-center">
-          
-
-          <!-- Profile dropdown -->
+          @if (Auth::check())
           <div @click.away="open = false" class="ml-3 relative" x-data="{ open: false }">
             <div>
               <button @click="open = !open" class="flex focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" id="user-menu" aria-haspopup="true" x-bind:aria-expanded="open">
@@ -48,6 +47,12 @@
           <button class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 border-l border-gold ml-4 px-4">
             <img class="w-8" src="../images/svg/cart.svg" alt="">
           </button>
+        @else
+        <div class="flex items-center">
+          <x-button type="gray-transparent">Belépés</x-button>
+          <x-button type="gray-transparent">Regisztráció</x-button>
+        </div> 
+        @endif
         </div>
         <div class="-mr-2 flex items-center lg:hidden">
           <!-- Mobile menu button -->
@@ -70,6 +75,7 @@
         <a href="#" class="border-transparent  hover:border-gold hover:text-gold block pl-3 pr-4 py-3 border-l-4  font-medium">Kapcsolat</a>
       </div>
       <div class="pt-4 pb-3 border-t border-white">
+      @if (Auth::check())
         <div class="flex items-center px-4">
           <div class="flex-shrink-0">
             <img class="w-14 md:w-16 rounded-full" src="../images/svg/user.svg" alt="">
@@ -91,6 +97,10 @@
           <a href="#" class="block px-4 py-3 font-medium hover:text-gray-800">Kijelenkezés</a>
         </div>
       </div>
+      @else
+        <x-button type="transparent">Belépés</x-button>
+        <x-button type="transparent">Regisztráció</x-button>
+      @endif
     </div>
 </nav>
   
