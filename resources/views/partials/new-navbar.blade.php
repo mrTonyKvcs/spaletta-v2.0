@@ -1,27 +1,27 @@
-<nav id="nav" x-data="{ open: false }" class="fixed w-full z-50 text-xl xl:text-2xl font-medium">
+<nav id="nav" x-data="{ open: false }" class="fixed w-full  z-50 text-xl xl:text-2xl font-medium">
     <div class=" px-5 py-3 lg:py-0 lg:px-6">
       <div class="flex items-center justify-between lg:h-40">
         <div class="flex">
           <div class="flex-shrink-0 flex items-center mr-6">
             <a href="/"><img class="w-14 md:w-20 lg:w-24" src="../images/logo/logo.png" alt="Spaletta-logo"></a>
           </div>
-          <div class="hidden  lg:flex xl:space-x-2 uppercase">
-            <a href="/menu" class="px-7 py-4 lg:px-5 lg:py-14 lg:text-gray-300 lg:hover:text-white">
+          <div class="hidden lg:flex xl:space-x-2 uppercase">
+            <a href="/menu" class="px-7 py-4 lg:px-5 lg:py-14 text-white lg:hover:text-gold">
                 Rendelés
             </a>
-            <a href="/asztalfoglalas" class="px-7 py-4 lg:px-5 lg:py-14 lg:text-gray-300 lg:hover:text-white">
+            <a href="/asztalfoglalas" class="px-7 py-4 lg:px-5 lg:py-14 text-white lg:hover:text-gold">
                 Asztalfoglalás
             </a>
-            <a href="/esemenyek" class="px-7 py-4 lg:px-5 lg:py-14 lg:text-gray-300 lg:hover:text-white">
+            <a href="/esemenyek" class="px-7 py-4 lg:px-5 lg:py-14 text-white lg:hover:text-gold">
                 Rendezvények
             </a>
-            <a href="/galeria" class="px-7 py-4 lg:px-5 lg:py-14 lg:text-gray-300 lg:hover:text-white">
+            <a href="/galeria" class="px-7 py-4 lg:px-5 lg:py-14 text-white lg:hover:text-gold">
                 Galéria
             </a>
-            <a href="rolunk" class="px-7 py-4 lg:px-5 lg:py-14 lg:text-gray-300 lg:hover:text-white">
+            <a href="rolunk" class="px-7 py-4 lg:px-5 lg:py-14 text-white lg:hover:text-gold">
                 Rólunk
             </a>
-            <a href="kapcsolat" class="px-7 py-4 lg:px-5 lg:py-14 lg:text-gray-300 lg:hover:text-white">
+            <a href="kapcsolat" class="px-7 py-4 lg:px-5 lg:py-14 text-white lg:hover:text-gold">
                 Kapcsolat
             </a>
           </div>
