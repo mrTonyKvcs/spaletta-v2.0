@@ -1,7 +1,6 @@
 <?php
 
-use App\Http\Livewire\Order\Index;
-use App\Http\Livewire\Cart;
+use App\Models\DeliveryAddress;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
@@ -20,9 +19,13 @@ Route::get('/', function (Request $request) {
     return view('pages.index');
 });
 
-Route::get('rendeles', Index::class);
+// Route::get('rendeles/{id}', function (Request $request) {
+//     return view('pages.order', ['request' => $request]);
+// })->name('pages.order')->middleware('auth');
 
-// Route::get('cart', Cart::class)->name('cart');
+Route::get('rendeles/{order}', \App\Http\Livewire\Order::class)
+    ->name('page.order')
+    ->middleware('auth');
 
 Route::get('cart', function () {
     return view('pages.cart');
