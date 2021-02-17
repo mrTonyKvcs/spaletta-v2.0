@@ -24,7 +24,7 @@ Route::get('/', function (Request $request) {
 // })->name('pages.order')->middleware('auth');
 
 Route::get('rendeles/{order}', \App\Http\Livewire\Order::class)
-    ->name('page.order')
+    ->name('pages.order')
     ->middleware('auth');
 
 Route::get('cart', function () {

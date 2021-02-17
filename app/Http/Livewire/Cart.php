@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Facades\Cart as CartFacade;
+use App\Helpers\Cart as HelpersCart;
 use App\Models\Order;
 use App\Models\OrderItem;
 use App\Models\Status;
@@ -82,12 +83,18 @@ class Cart extends Component
     {
         $order = Order::create([
             'user_id' => \Auth::user()->id,
-            'status' => Status::PROCCESS,
-            'type' => $this->orderType,
+            'type_id' => 1,
             'delivery_address_id' => $this->deliveryAddressId,
             'counrier_id' => 1,
             'comment' => $this->comment
         ]);
+
+        $status = Status::query()
+            ->default()
+            ->select('id')
+            ->first();
+
+        $order->statuses()->attach($status);
 
         collect($this->products)->each(function ($item) use ($order) {
             OrderItem::create([
@@ -96,6 +103,8 @@ class Cart extends Component
                 'quantity' => $item['quantity']
             ]);
         });
+
+        $this->checkout();
 
         return redirect()->route('pages.order', [$order->id]);
     }

@@ -13,4 +13,9 @@ class Status extends Model
     protected $fillable = [
         'slug', 'name'
     ];
+
+    public function scopeDefault($query)
+    {
+        $query->where('slug', 'visszaigazolasra-var');
+    }
 }
