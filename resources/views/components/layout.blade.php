@@ -22,11 +22,12 @@
 <body>
     <header>
         <livewire:navbar></livewire>
+        {{-- @include('partials.new-navbar') --}}
     </header>
-    <main>
-        {{ $slot }}
+    <main class="z-10 bg-white shadow-lg mb-160">
+       {{ $slot }}
     </main>
-    <footer>
+    <footer class="light-gray-bg footer-parallax">
         @include('partials.footer')
     </footer>
 </body>

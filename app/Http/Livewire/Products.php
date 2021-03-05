@@ -16,6 +16,8 @@ class Products extends Component
 
     public $search;
     public $cart;
+    public $cartTotal = 0;
+    public $products = [];
 
     protected $updatesQueryString = ['search'];
 
@@ -23,6 +25,8 @@ class Products extends Component
     {
         $this->search = request()->query('search', $this->search);
         $this->cart = CartFacade::get();
+        $this->getProducts($this->cart['products']);
+        $this->getCartTotal();
     }
 
     public function render(): View
@@ -42,5 +46,41 @@ class Products extends Component
     {
         Cart::add($product);
         $this->emit('productAdded');
+        $this->cart = CartFacade::get();
+        $this->products = [];
+        $this->getProducts($this->cart['products']);
+        $this->cartTotal = 0;
+        $this->getCartTotal();
+    }
+
+    public function getProducts($cart): void
+    {
+        $productsQuantity = collect($cart)->countBy(function ($item) {
+            return $item['id'];
+        });
+
+        $productsUnique = collect($cart)->unique();
+
+        $productsUnique->each(function ($item) use ($productsQuantity) {
+            array_push($this->products, collect($item)->put('quantity', $productsQuantity[$item->id]));
+        });
+    }
+
+    public function getCartTotal()
+    {
+        collect($this->products)->each(function($item) {
+            $this->cartTotal += $item['quantity'] < 2 ? $item['price'] : $item['quantity'] * $item['price'];
+        });
+    }
+
+    public function removeFromCart($productId): void
+    {
+        CartFacade::remove($productId);
+        $this->cart = CartFacade::get();
+        $this->emit('productRemoved');
+        $this->products = [];
+        $this->getProducts($this->cart['products']);
+        $this->cartTotal = 0;
+        $this->getCartTotal();
     }
 }

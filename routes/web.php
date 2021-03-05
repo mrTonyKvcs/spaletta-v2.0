@@ -29,11 +29,11 @@ Route::get('rendeles/{order}', \App\Http\Livewire\Order::class)
 
 Route::get('cart', function () {
     return view('pages.cart');
-});
+})->name('pages.cart');
 
 Route::get('menu', function () {
     return view('pages.menu');
-});
+})->name('pages.menu');
 
 Route::get('asztalfoglalas', function () {
     return view('pages.reservation');
@@ -59,6 +59,17 @@ Route::get('bejelentkezes', function () {
     return view('auth.sign-in');
 })->name('auth.signin');
 
+Route::get('admin', function () {
+    return view('pages.admin');
+});
+
+//SendMails
+Route::post('uzenet-kuldes/{subject}', [
+    'as'    => 'mail.store',
+    'uses' => 'SendMailsController@store'
+]);
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+

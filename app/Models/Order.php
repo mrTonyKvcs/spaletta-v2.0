@@ -39,4 +39,30 @@ class Order extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function items()
+    {
+        return $this->hasMany(OrderItem::class);
+    }
+
+    public function type()
+    {
+        return $this->belongsTo(Type::class);
+    }
+
+    public function address()
+    {
+        return $this->belongsTo(DeliveryAddress::class, 'delivery_address_id');
+    }
+
+    public function getTotalAttribute()
+    {
+        $total = 0;
+
+        foreach($this->items as $item) {
+            $total += $item['quantity'] < 2 ? $item['product']['price'] : $item['quantity'] * $item['product']['price'];
+        }
+
+        return $total;
+    }
 }

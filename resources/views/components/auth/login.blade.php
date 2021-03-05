@@ -13,9 +13,8 @@
         @csrf
         <x-form.group label="E-mail" name="email" type="email"></x-form.group>
         <x-form.group label="Jelszo" name="password" type="password"></x-form.group>
-        <x-form.group label="Jelszo megjegyzese" name="remember" type="checkbox" required="false"></x-form.group>
         <div class="text-left sm:col-span-2">
-            <x-button type="submit">Regisztracio</x-button>
+            <x-button>Belépés</x-button>
         </div>
     </form>
 </div>

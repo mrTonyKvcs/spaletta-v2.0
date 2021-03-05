@@ -11,16 +11,25 @@ module.exports = {
         extend: {
             colors: {
                 gold: "#ffb606",
+                gray73: "#737373",
                 gray58: "#585858",
-                gray48: "#484848"
+                gray48: "#484848",
+                gray2e: "#2e2e2e",
+                gray26: "#262626"
+            },
+
+            margin: {
+                "160": "40rem"
             },
 
             height: {
+                "160": "40rem",
                 "200": "50rem"
             },
 
             width: {
-                "108": "27rem"
+                "108": "27rem",
+                "160": "40rem"
             },
 
             fontSize: {
@@ -39,4 +48,3 @@ module.exports = {
 
     plugins: [require("@tailwindcss/ui")]
 };
-

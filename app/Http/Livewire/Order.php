@@ -23,4 +23,9 @@ class Order extends Component
             'status' => $this->status
         ])->layout('components.layout');
     }
+
+    public function setTheColors($slug)
+    {
+        return $this->status->slug == $slug ? 'bg-gold text-white' : 'text-gray-500';
+    }
 }

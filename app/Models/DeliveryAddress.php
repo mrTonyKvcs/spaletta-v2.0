@@ -23,6 +23,6 @@ class DeliveryAddress extends Model
 
     public function getNameAttribute()
     {
-        return "{$this->zip_code} {$this->city} {$this->street} {$this->house_number}. {$this->floor}/{$this->door} {$this->ring}";
+        return "{$this->zip_code} {$this->city} {$this->street} {$this->house_number}. {$this->floor}/{$this->door}  Csengő: {$this->ring}";
     }
 }

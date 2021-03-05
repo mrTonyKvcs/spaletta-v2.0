@@ -6,9 +6,9 @@
         <x-form.group label="Telefonszam" name="phone_number"></x-form.group>
         <x-form.group label="E-mail" name="email" type="email"></x-form.group>
         <x-form.group label="Jelszo" name="password" type="password"></x-form.group>
-        <x-form.group label="Jelszo megegyszer" name="password" type="password"></x-form.group>
+        <x-form.group label="Jelszo megegyszer" name="password_confirmation" type="password"></x-form.group>
         <div class="text-right sm:col-span-2">
-            <x-button type="submit">Regisztracio</x-button>
+            <x-button>Regisztráció</x-button>
         </div>
     </form>
 </div>

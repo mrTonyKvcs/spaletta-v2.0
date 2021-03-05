@@ -3,7 +3,7 @@
 ])
 
 <div class="{{ !empty($background) ? $background : '' }} px-6 py-32">
-    <div class="lg:container lg:mx-auto">
+    <div class="lg:container lg:mx-auto flex flex-col items-center">
         {{ $slot }}
     </div>
 </div>

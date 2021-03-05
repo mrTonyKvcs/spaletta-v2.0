@@ -2,11 +2,17 @@
 
 namespace App\Http\Livewire;
 
+use App\Mail\SendConfirmationMailsToStaff;
 use App\Facades\Cart as CartFacade;
 use App\Helpers\Cart as HelpersCart;
+use App\Mail\SendThankYourOrderMails;
+use App\Models\DeliveryAddress;
+use App\Models\Product;
 use App\Models\Order;
 use App\Models\OrderItem;
 use App\Models\Status;
+use App\Models\Type;
+use App\Models\User;
 use Livewire\Component;
 
 class Cart extends Component
@@ -19,16 +25,29 @@ class Cart extends Component
     public $deliveryAddresses;
     public $comment;
     public $cartTotal = 0;
+    public $zipCode;
+    public $city;
+    public $street;
+    public $houseNumber;
+    public $floor;
+    public $door;
+    public $ring;
+    public $addressComment;
+    public $phoneNumber;
+    public $user;
 
     public function mount(): void
     {
         $this->cart = CartFacade::get();
         $this->getProducts($this->cart['products']);
-        $this->orderTypes = config('order.types');
+        $this->orderTypes = Type::all();
         $this->orderType = '';
         $this->deliveryAddressId = '';
         $this->comment = '';
         $this->getCartTotal();
+        $this->user = auth()->user();
+        $this->deliveryAddresses = auth()->user()->addresses;
+        $this->phoneNumber = auth()->user()->phone_number;
     }
 
     public function render()
@@ -40,10 +59,20 @@ class Cart extends Component
 
     public function getCartTotal()
     {
-        // dd($this->products);
         collect($this->products)->each(function($item) {
             $this->cartTotal += $item['quantity'] < 2 ? $item['price'] : $item['quantity'] * $item['price'];
         });
+    }
+
+    public function addToCart(Product $product): void
+    {
+        CartFacade::add($product);
+        $this->emit('productAdded');
+        $this->cart = CartFacade::get();
+        $this->products = [];
+        $this->getProducts($this->cart['products']);
+        $this->cartTotal = 0;
+        $this->getCartTotal();
     }
 
     public function removeFromCart($productId): void
@@ -104,8 +133,53 @@ class Cart extends Component
             ]);
         });
 
+        if($this->phoneNumber != auth()->user()->phone_number) {
+            $this->user->phone_number = $this->phoneNumber;
+            $this->user->save();
+        }
+
+        $this->sendMails($order);
+
         $this->checkout();
 
         return redirect()->route('pages.order', [$order->id]);
+    }
+
+    public function sendMails($order)
+    {
+        $order = $order->query()->where('id', $order->id)->with(['user', 'items'])->first();
+
+        \Mail::to(env('MAIL_TO_ADDRESS'), 'Spaletta Kecskemét')
+            ->send(new SendConfirmationMailsToStaff($order));
+
+        \Mail::to($order->user->email, $order->user->name)
+            ->send(new SendThankYourOrderMails($order));
+    }
+
+    public function createNewAddress()
+    {
+        $address = DeliveryAddress::create([
+            'user_id' => auth()->user()->id,
+            'zip_code' => $this->zipCode,
+            'city' => $this->city,
+            'street' => $this->street,
+            'house_number' => $this->houseNumber,
+            'floor' => $this->floor,
+            'door' => $this->door,
+            'ring' => $this->ring,
+            'comment' => $this->addressComment
+        ]);
+
+        $this->deliveryAddressId = $address->id;
+
+        $this->zipCode = '';
+        $this->city = '';
+        $this->street = '';
+        $this->houseNumber = '';
+        $this->floor = '';
+        $this->door = '';
+        $this->ring = '';
+        $this->comment = '';
+        $this->deliveryAddresses = auth()->user()->addresses;
     }
 }
