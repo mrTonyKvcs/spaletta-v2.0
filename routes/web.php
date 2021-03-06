@@ -13,51 +13,59 @@ use Illuminate\Http\Request;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+ */
+Route::group(
+[
+    'prefix' => LaravelLocalization::setLocale(),
+    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'localize' ]
+], function()
+{
 
-Route::get('/', function (Request $request) {
-    return view('pages.index');
+    Route::get('/', function (Request $request) {
+        return view('pages.index');
+    });
+
+    // Route::get('rendeles/{id}', function (Request $request) {
+    //     return view('pages.order', ['request' => $request]);
+    // })->name('pages.order')->middleware('auth');
+
+    Route::get('rendeles/{order}', \App\Http\Livewire\Order::class)
+        ->name('pages.order')
+        ->middleware('auth');
+
+    Route::get('cart', function () {
+        return view('pages.cart');
+    })->name('pages.cart');
+
+    Route::get('menu', function () {
+        return view('pages.menu');
+    })->name('pages.menu');
+
+    Route::get('asztalfoglalas', function () {
+        return view('pages.reservation');
+    });
+
+    Route::get('esemenyek', function () {
+        return view('pages.events');
+    });
+
+    Route::get('galeria', function () {
+        return view('pages.gallery');
+    });
+
+    Route::get('rolunk', function () {
+        return view('pages.about');
+    });
+
+    Route::get('kapcsolat', function () {
+        return view('pages.contact');
+    });
+
+    Route::get('bejelentkezes', function () {
+        return view('auth.sign-in');
+    })->name('auth.signin');
+
 });
-
-// Route::get('rendeles/{id}', function (Request $request) {
-//     return view('pages.order', ['request' => $request]);
-// })->name('pages.order')->middleware('auth');
-
-Route::get('rendeles/{order}', \App\Http\Livewire\Order::class)
-    ->name('pages.order')
-    ->middleware('auth');
-
-Route::get('cart', function () {
-    return view('pages.cart');
-})->name('pages.cart');
-
-Route::get('menu', function () {
-    return view('pages.menu');
-})->name('pages.menu');
-
-Route::get('asztalfoglalas', function () {
-    return view('pages.reservation');
-});
-
-Route::get('esemenyek', function () {
-    return view('pages.events');
-});
-
-Route::get('galeria', function () {
-    return view('pages.gallery');
-});
-
-Route::get('rolunk', function () {
-    return view('pages.about');
-});
-
-Route::get('kapcsolat', function () {
-    return view('pages.contact');
-});
-
-Route::get('bejelentkezes', function () {
-    return view('auth.sign-in');
-})->name('auth.signin');
 
 Route::get('admin', function () {
     return view('pages.admin');
