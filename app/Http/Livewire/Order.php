@@ -14,6 +14,7 @@ class Order extends Component
     {
         $this->order = $order;
         $this->status = $order->statuses->last();
+        $this->statusSlug = $this->status->slug;
     }
 
     public function render()

@@ -23,7 +23,7 @@
 
             {{-- delivery address select --}}
             @if ($orderType = 'hazhozszallitas')
-                <div x-data="{ open: false }" class="mb-10">
+                <div x-data="{ open: @entangle('showNewAddressForm') }" class="mb-10">
                     <div class="flex flex-row justify-between">
                         <label for="location" class="block text-sm text-3xl font-medium text-gray-700 ">Szállítási cím</label>
                         <button x-show="!open" @click="open = true" class="text-2xl uppercase text-gold" type="button">Új hozzáadása</button>

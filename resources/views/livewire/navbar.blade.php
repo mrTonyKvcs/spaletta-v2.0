@@ -3,7 +3,7 @@
       <div class="flex items-center justify-between lg:h-40">
         <div class="flex">
           <div class="flex items-center flex-shrink-0 mr-6">
-            <a href="/"><img class="w-14 md:w-20 lg:w-24" src="../images/logo/logo.png" alt="Spaletta-logo"></a>
+            <a href="/"><img class="w-14 md:w-20 lg:w-24" src="/images/logo/logo.png" alt="Spaletta-logo"></a>
           </div>
           <div class="hidden uppercase lg:flex xl:space-x-2">
             <a href="/menu" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
@@ -40,8 +40,8 @@
               <button @click="open = !open" class="flex focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" id="user-menu" aria-haspopup="true" x-bind:aria-expanded="open">
                 <img class="w-8" src="../images/svg/user.svg" alt="">
                 <div class="pl-2 pr-2 text-2xl font-medium text-white align-bottom">{{ auth()->user()->name }}</div>
-                <img x-show="!open" class="w-8" src="../images/svg/down.svg" alt="">
-                <img x-show="open" class="w-8" src="../images/svg/up.svg" alt="">
+                <img x-show="!open" class="w-8" src="/images/svg/down.svg" alt="">
+                <img x-show="open" class="w-8" src="/images/svg/up.svg" alt="">
               </button>
             </div>
             <div x-show="open" x-description="Profile dropdown panel, show/hide based on dropdown state." x-transition:enter="transition ease-out duration-75" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute left-0 py-1 mt-2 text-xl bg-white shadow-lg origin-top-left w-72 rounded-md ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="user-menu" style="display: none;">
@@ -59,7 +59,7 @@
           </div>
           
           <button class="px-4 ml-4 border-l focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 border-gold">
-            <img class="w-8" src="../images/svg/cart.svg" alt="">
+            <img class="w-8" src="/images/svg/cart.svg" alt="">
           </button>
         @else
         <div class="flex items-center">
@@ -70,8 +70,8 @@
         <div class="flex items-center -mr-2 lg:hidden">
           <!-- Mobile menu button -->
             <button @click=" open = !open" class="lg:hidden focus:outline-none">
-                <img x-show="!open" class="z-20 w-14 md:w-20" src="../images/svg/menu.svg" alt="">
-                <img x-show="open" class="z-20 w-14 md:w-20" src="../images/svg/close.svg" alt="">
+                <img x-show="!open" class="z-20 w-14 md:w-20" src="/images/svg/menu.svg" alt="">
+                <img x-show="open" class="z-20 w-14 md:w-20" src="/images/svg/close.svg" alt="">
             </button>
         </div>
       </div>
@@ -91,7 +91,7 @@
       @if (Auth::check())
         <div class="flex items-center px-4">
           <div class="flex-shrink-0">
-            <img class="rounded-full w-14 md:w-16" src="../images/svg/user.svg" alt="">
+            <img class="rounded-full w-14 md:w-16" src="/images/svg/user.svg" alt="">
           </div>
           <div class="ml-3">
               <div class="">{{ auth()->user()->name }}</div>

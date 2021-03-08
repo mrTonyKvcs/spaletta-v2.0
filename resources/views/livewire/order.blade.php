@@ -10,10 +10,13 @@
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus repellat laudantium.
             </p>
         </div>
-        <div class="mt-20 grid grid-cols-1 gap-5 md:grid-cols-3">
+        <div x-data="{ active: @entangle('statusSlug') }" class="mt-20 grid grid-cols-1 gap-5 md:grid-cols-3">
             <div class="overflow-hidden bg-white shadow">
-                <div class="px-4 py-5 {{ $this->setTheColors('visszaigazolasra-var') }} sm:p-6">
+                <div
+                    x-bind:class="{ 'bg-gold text-white' : active === 'visszaigazolasra-var' }"
+                    class="px-4 py-5 sm:p-6">
                     <div class="flex items-center justify-center text-3xl font-medium truncate">
+                        <span x-text="active->name"></span>
                     Visszaigazolására vár.
                     </div>
                 </div>

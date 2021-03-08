@@ -35,6 +35,7 @@ class Cart extends Component
     public $addressComment;
     public $phoneNumber;
     public $user;
+    public $showNewAddressForm = false;
 
     public function mount(): void
     {
@@ -45,9 +46,12 @@ class Cart extends Component
         $this->deliveryAddressId = '';
         $this->comment = '';
         $this->getCartTotal();
-        $this->user = auth()->user();
-        $this->deliveryAddresses = auth()->user()->addresses;
-        $this->phoneNumber = auth()->user()->phone_number;
+
+        if (!empty(auth()->user())) {
+            $this->user = auth()->user();
+            $this->deliveryAddresses = auth()->user()->addresses;
+            $this->phoneNumber = auth()->user()->phone_number;
+        }
     }
 
     public function render()
@@ -181,5 +185,6 @@ class Cart extends Component
         $this->ring = '';
         $this->comment = '';
         $this->deliveryAddresses = auth()->user()->addresses;
+        $this->showNewAddressForm = false;
     }
 }

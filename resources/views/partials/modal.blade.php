@@ -39,7 +39,7 @@
         </div>
         <div class="flex justify-center mt-10 flex-end">
 
-            <button type="button" wire:click="createNewAddress(); open = false;" class="mt-10 uppercase text-white font-medium text-2xl lg:text-2xl px-10 pt-3 pb-2.5 gray-bg lg:hover:bg-gray-900">Új szállítási cím mentése</button>
+            <button type="button" wire:click="createNewAddress();" class="mt-10 uppercase text-white font-medium text-2xl lg:text-2xl px-10 pt-3 pb-2.5 gray-bg lg:hover:bg-gray-900">Új szállítási cím mentése</button>
 
         </div> 
     </form>
