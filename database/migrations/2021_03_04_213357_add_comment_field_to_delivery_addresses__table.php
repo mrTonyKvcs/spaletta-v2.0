@@ -14,6 +14,7 @@ class AddCommentFieldToDeliveryAddressesTable extends Migration
     public function up()
     {
         Schema::table('delivery_addresses', function (Blueprint $table) {
+            $table->dropColumn('comment');
             $table->text('comment')->nullable()->after('ring');
         });
     }
@@ -27,6 +28,7 @@ class AddCommentFieldToDeliveryAddressesTable extends Migration
     {
         Schema::table('delivery_addresses', function (Blueprint $table) {
             $table->dropColumn('comment');
+            $table->text('comment');
         });
     }
 }
