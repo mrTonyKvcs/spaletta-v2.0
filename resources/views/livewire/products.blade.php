@@ -18,11 +18,11 @@
                         <p class="text-xl">{{ !empty($item->comment) ? $item->comment : '' }}</p>
                     </div>
                 @empty
-                    <p>A kategoria jelenleg ures!</p>
+                    <p>A kategoria jelenleg üres!</p>
                 @endforelse
 
             @empty
-                <p>Nincs elerheto etel es ital!</p>
+                <p>Nincs elérhető étel es ital!</p>
             @endforelse
         </div>
         <div class="mb-10">
@@ -54,7 +54,7 @@
                     <div class="flex items-center text-3xl font-bold">{{ $cartTotal }} Ft</div>
                 </div>
                 <div class="flex justify-center mb-10">
-                    <a href="{{ route('pages.cart') }}" class="mt-10 uppercase text-white font-medium text-2xl lg:text-3xl px-10 pt-3 pb-2.5 gray-bg lg:hover:bg-gray-900">Rendeles kuldese</a>
+                    <a href="{{ route('pages.cart') }}" class="mt-10 uppercase text-white font-medium text-2xl lg:text-3xl px-10 pt-3 pb-2.5 gray-bg lg:hover:bg-gray-900">Rendelés küldése</a>
                 </div>
 
             @endif
