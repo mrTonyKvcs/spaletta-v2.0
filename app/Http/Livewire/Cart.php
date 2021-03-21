@@ -142,7 +142,7 @@ class Cart extends Component
             $this->user->save();
         }
 
-        $this->sendMails($order);
+        //$this->sendMails($order);
 
         $this->checkout();
 

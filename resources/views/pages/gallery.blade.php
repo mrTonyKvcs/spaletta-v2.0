@@ -4,23 +4,26 @@
     </x-header>
     <x-section>
         <x-tabs x-data="{ active: 'first'}"></x-tabs>
-        <div class="flex flex-col items-center">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div x-show="active === 'first" class="relative">
-                    <img class="h-96 w-full bg-cover" src="../images/home-menu.png" alt="">
-                    <img class="absolute bottom-0 right-0 w-10 m-6" src="../images/svg/camera.svg" alt="">
-                </div>
-                <div x-show="active === 'second" class="relative">
-                    <img class="h-96 w-full bg-cover" src="../images/drinks.png" alt="">
-                    <img class="absolute bottom-0 right-0 w-10 m-6" src="../images/svg/camera.svg" alt="">
-                </div>
-                <div x-show="active === 'third" class="relative">
-                    <img class="h-96 w-full bg-cover" src="../images/events.png" alt="">
-                    <img class="absolute bottom-0 right-0 w-10 m-6" src="../images/svg/camera.svg" alt="">
-                </div>
+        
+
+        <div x-data="{ openTab: 1 }" class="p-6">
+            <ul class="flex border-b">
+              <li @click="openTab = 1" class="-mb-px mr-1">
+                <a :class="{'tab-active': openTab === 1}" class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-700 font-semibold" href="#">Tab 1</a>
+              </li>
+              <li @click="openTab = 2" class="mr-1">
+                <a :class="{'tab-active': openTab === 2}" class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="#">Tab 2</a>
+              </li>
+              <li @click="openTab = 3" class="mr-1">
+                <a :class="{'tab-active': openTab === 3}" class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="#">Tab 3</a>
+              </li>
+            </ul>
+            <div class="w-full pt-4">
+              <div x-show="openTab === 1">Tab #1</div>
+              <div x-show="openTab === 2">Tab #2</div>
+              <div x-show="openTab === 3">Tab #3</div>
             </div>
-            <x-button>További képek</x-button>
-        </div>
+          </div>
     </x-section>
 </x-layout>
     

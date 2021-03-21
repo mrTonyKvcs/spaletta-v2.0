@@ -1,5 +1,5 @@
 <x-layout>
-    <x-header background="about">Rólunk</x-header>
+    <x-header background="about">{{ __('Rólunk') }}</x-header>
     <x-section>
         <div class="md:flex">
             <div class="md:w-1/2">

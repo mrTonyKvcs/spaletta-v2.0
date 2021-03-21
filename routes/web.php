@@ -3,6 +3,7 @@
 use App\Models\DeliveryAddress;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use App\Http\Controllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -65,6 +66,15 @@ Route::group(
         return view('auth.sign-in');
     })->name('auth.signin');
 
+    Route::get('rendezvenyek', [
+        'as'    => 'events.index',
+        'uses' => 'App\Http\Controllers\EventsController@index'
+    ]);
+
+    Route::get('rendezvenyek/rendezveny', [
+        'as'    => 'events.show',
+        'uses' => 'App\Http\Controllers\EventsController@show'
+    ]);
 });
 
 Route::get('admin', function () {
@@ -76,6 +86,8 @@ Route::post('uzenet-kuldes/{subject}', [
     'as'    => 'mail.store',
     'uses' => 'SendMailsController@store'
 ]);
+
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

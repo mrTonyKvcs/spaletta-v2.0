@@ -3,10 +3,10 @@
 
         @if(auth()->check())
             <div class="mb-10">
-<label for="about" class="block text-sm text-3xl font-medium text-gray-700 sm:mt-px sm:pt-2">
+<label for="about" class="block text-3xl font-medium text-gray-700 sm:mt-px sm:pt-2">
                         Telefonszám
                     </label>
-                <input type="tel" wire:model="phoneNumber" class="block w-full px-3 py-4 mt-1 bg-gray-100 border-gray-300 focus:ring-gray-500 focus:border-gray-500 shadow-sm sm:text-2xl" required>
+                <input type="tel" wire:model="phoneNumber" class="block w-full px-3 py-4 mt-1 bg-gray-100 border-gray-300 focus:ring-gray-500 focus:border-gray-500 shadow-sm text-2xl" required>
             </div>
             {{-- order type select --}}
             <div class="mb-10">
@@ -66,19 +66,19 @@
                             <thead class="bg-gray-100">
                                 <tr>
                                     <th scope="col" class="px-6 py-3 text-3xl font-light tracking-wider text-left text-gray-500 uppercase">
-                                        Nev
+                                        Név
                                     </th>
                                     <th scope="col" class="px-6 py-3 text-3xl font-light text-center text-gray-500 uppercase">
-                                        Mennyiseg
+                                        Mennyiség
                                     </th>
                                     <th scope="col" class="px-6 py-3 text-3xl font-light tracking-wider text-left text-center text-gray-500 uppercase">
-                                        Ar
+                                        Ár
                                     </th>
                                     <th scope="col" class="px-6 py-3 text-3xl font-light tracking-wider text-left text-center text-gray-500 uppercase">
                                         Hozzáadd
                                     </th>
                                     <th scope="col" class="px-6 py-3 text-3xl font-light tracking-wider text-left text-center text-gray-500 uppercase">
-                                        Torles
+                                        Törlés
                                     </th>
                                 </tr>
                             </thead>
@@ -112,11 +112,11 @@
 
         <div class="flex flex-col items-center justify-between mt-10 md:flex-row w-100">
             <button type="button" wire:click="checkout" class="flex items-center text-3xl font-medium text-red-600 hover:text-red-500">
-                <x-icon icon="trash" width="18" height="18"></x-icon> Kosár uritese
+                <x-icon icon="trash" width="18" height="18"></x-icon> Kosár üritése
             </button>
 
             <div>
-                <label class="text-3xl font-medium text-center gray">Teljes osszeg:</label>
+                <label class="text-3xl font-medium text-center gray">Teljes összeg:</label>
                 <span class="ml-10 text-4xl font-bold text-center gray">{{ $cartTotal }} Ft</span>
             </div>
         </div>
@@ -126,11 +126,17 @@
             @if(auth()->check())
             @empty(!$cart['products'])
                 {{-- @if(!$orderType != '' && !$deliveryAddressId != '') --}}
-                    <button type="button" wire:click="submitOrder" class="mt-10 uppercase text-white font-medium text-2xl lg:text-3xl px-10 pt-3 pb-2.5 gray-bg lg:hover:bg-gray-900">Rendelés küldése</button>
+                    <button type="button" wire:click="submitOrder" class="mt-10 uppercase text-white hover font-medium text-2xl lg:text-3xl px-10 pt-3 pb-2.5 gray-bg lg:hover:bg-gray48 ">Rendelés küldése</button>
+                    {{-- <x-button type="gray" wire:click="submitOrder">Rendelés Küldése</x-button> --}}
                     {{-- @endif --}}
                 @endempty
             @else
-                <a href="{{ route('auth.signin') }}" class="mt-10 uppercase text-white font-medium text-2xl lg:text-3xl px-10 pt-3 pb-2.5 gray-bg lg:hover:bg-gray-900">Bejelentkezes / Regisztracio</a>
+                <a href="{{ route('auth.signin') }}" class="mr-2 sm:mr-6">
+                    <x-button type="gray">Bejelentkezés</x-button>
+                </a>
+                <a href="{{ route('auth.signin') }}" class="">
+                    <x-button type="gray">Regisztráció</x-button>
+                </a>
             @endif
         </div>
 
