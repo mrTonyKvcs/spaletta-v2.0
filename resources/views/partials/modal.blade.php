@@ -30,7 +30,7 @@
             </div>
             <div class="col-span-6 sm:col-span-3 lg:col-span-4">
                 <label for="state" class="block text-2xl font-medium text-gray-700">Csengő</label>
-                <input type="number" wire:model="ring" class="block w-full px-3 py-4 mt-1 border-gray-300 focus:ring-gray-500 focus:border-gray-500 shadow-sm sm:text-2xl rounded-md">
+                <input type="text" wire:model="ring" class="block w-full px-3 py-4 mt-1 border-gray-300 focus:ring-gray-500 focus:border-gray-500 shadow-sm sm:text-2xl rounded-md">
             </div>
             <div class="col-span-6 sm:col-span-6 lg:col-span-6">
                 <label for="state" class="block text-2xl font-medium text-gray-700">Megjegyzés</label>

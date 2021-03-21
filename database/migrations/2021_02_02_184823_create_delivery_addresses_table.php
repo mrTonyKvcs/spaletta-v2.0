@@ -24,7 +24,7 @@ class CreateDeliveryAddressesTable extends Migration
             $table->integer('floor')->nullable();
             $table->integer('door')->nullable();
             $table->string('ring')->nullable();
-            $table->text('comment');
+            $table->text('comment')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
