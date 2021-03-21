@@ -21,7 +21,7 @@ class TypesTableSeeder extends Seeder
     {
         foreach($this->types as $type) {
             $type['slug'] = \Str::slug($type['name']);
-            Type::create($type);
+            Type::updateOrCreate($type);
         }
     }
 }

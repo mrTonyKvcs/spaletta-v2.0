@@ -72,14 +72,14 @@ Route::group(
     ]);
 
     Route::get('rendezvenyek/rendezveny', [
-        'as'    => 'events.show',
+        'as'    => 'EventsController.show',
         'uses' => 'App\Http\Controllers\EventsController@show'
     ]);
 });
 
 Route::get('admin', function () {
     return view('pages.admin');
-});
+})->middleware('admin');
 
 //SendMails
 Route::post('uzenet-kuldes/{subject}', [

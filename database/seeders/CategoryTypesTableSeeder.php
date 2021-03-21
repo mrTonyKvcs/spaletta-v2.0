@@ -1,6 +1,6 @@
 <?php
 
-use App\CategoryTypes;
+use App\Models\CategoryTypes;
 use Illuminate\Database\Seeder;
 
 class CategoryTypesTableSeeder extends Seeder
@@ -31,7 +31,7 @@ class CategoryTypesTableSeeder extends Seeder
     public function run()
     {
         foreach($this->types as $type) {
-            $type['slug'] = Str::slug($type['name']);
+            $type['slug'] = \Str::slug($type['name']);
             CategoryTypes::updateOrCreate($type);
         }
     }
