@@ -24,7 +24,7 @@
             <a href="/kapcsolat" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 Kapcsolat
             </a>
-            <a href="/cart" class="flex justify-center w-10 py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
+            <a href="/cart" class="flex justify-center w-7 xl:w-10 py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 <x-icon icon="cart" width=25 height=20 viewBox="20 20" strokeWidth=0 />
             @empty(!$cartTotal)
                 ({{ $cartTotal }})
@@ -39,7 +39,7 @@
             <div>
               <button @click="open = !open" class="flex focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" id="user-menu" aria-haspopup="true" x-bind:aria-expanded="open">
                 <img class="w-8" src="../images/svg/user.svg" alt="">
-                <div class="pl-2 pr-2 text-2xl font-medium text-white align-bottom">{{ auth()->user()->name }}</div>
+                <div class="pl-2 pr-2 text-xl xl:text-2xl font-medium text-white align-bottom">{{ auth()->user()->name }}</div>
                 <img x-show="!open" class="w-8" src="/images/svg/down.svg" alt="">
                 <img x-show="open" class="w-8" src="/images/svg/up.svg" alt="">
               </button>
@@ -58,13 +58,10 @@
             </div>
           </div>
           
-          <button class="px-4 ml-4 border-l focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 border-gold">
-            <img class="w-8" src="/images/svg/cart.svg" alt="">
-          </button>
         @else
         <div class="flex items-center">
-          <a href="{{ route('auth.signin') }}" class="p-2 text-3xl text-white hover:text-gold border-r-2 border-white">Belépés</a>
-          <a href="{{ route('auth.signin') }}" class="p-2 text-3xl text-white hover:text-gold">Regisztráció</a>
+          <a href="{{ route('auth.signin') }}" class="pr-4 text-3xl text-white hover:text-gold border-r-2 border-white">Belépés</a>
+          <a href="{{ route('auth.signin') }}" class="pl-4 text-3xl text-white hover:text-gold">Regisztráció</a>
         </div> 
         @endif
         </div>
@@ -122,8 +119,8 @@
       </div>
       @else
       <div class="flex items-center justify-center"> 
-          <a href="{{ route('auth.signin') }}" class="py-2 px-4 text-2xl text-white hover:text-gold border-r-2 border-white ">Belépés</a>
-          <a href="{{ route('auth.signin') }}" class="py-2 px-4 text-2xl text-white hover:text-gold">Regisztráció</a>
+          <a href="{{ route('auth.signin') }}" class="px-4 text-2xl text-white hover:text-gold border-r-2 border-white ">Belépés</a>
+          <a href="{{ route('auth.signin') }}" class="px-4 text-2xl text-white hover:text-gold">Regisztráció</a>
       </div>
       @endif
     </div>

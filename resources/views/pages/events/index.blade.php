@@ -26,6 +26,49 @@
             </a>
         </div>
     </div>
+    <div>
+        <x-section>
+            <x-title text="Spaletta" title="Rendezvények" price=""></x-title>
+            <div class="my-16 md:my-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
+                <div class="flex flex-col items-center justify-center shadow-lg rounded-md px-4">
+                    <div class="flex flex-col items-center">
+                        <img src="../images/rendezveny.png" alt="">
+                    </div>
+                    <div class="py-8 flex flex-col items-center space-y-8 top-80">
+                        <p class="bg-gold text-white py-2 px-6 text-2xl font-semibold rounded-md">2021.03.21 15:00</p>
+                        <h2 class="text-3xl font-medium text-center">Spaletta vacsora est Hajdú Steve-vel</h2>
+                        <x-button type="gray-transparent-radius">
+                            <a href="/rendezvenyek/rendezveny">Részletek</a>
+                        </x-button>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center shadow-lg rounded-md px-4">
+                    <div class="flex flex-col items-center">
+                        <img src="../images/rendezveny.png" alt="">
+                    </div>
+                    <div class="py-8 flex flex-col items-center space-y-8 top-80">
+                        <p class="bg-gold text-white py-2 px-6 text-2xl font-semibold rounded-md">2021.03.21 15:00</p>
+                        <h2 class="text-3xl font-medium text-center">Spaletta vacsora est Hajdú Steve-vel</h2>
+                        <x-button type="gray-transparent-radius">
+                            <a href="/rendezvenyek/rendezveny">Részletek</a>
+                        </x-button>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center shadow-lg rounded-md px-4">
+                    <div class="flex flex-col items-center">
+                        <img src="../images/rendezveny.png" alt="">
+                    </div>
+                    <div class="py-8 flex flex-col items-center space-y-8 top-80">
+                        <p class="bg-gold text-white py-2 px-6 text-2xl font-semibold rounded-md">2021.03.21 15:00</p>
+                        <h2 class="text-3xl font-medium text-center">Spaletta vacsora est Hajdú Steve-vel</h2>
+                        <x-button type="gray-transparent-radius">
+                            <a href="/rendezvenyek/rendezveny">Részletek</a>
+                        </x-button>
+                    </div>
+                </div>
+            </div>
+        </x-section>
+    </div>
     {{-- @if ($events->first() != null) 
     <div class="events-bg h-screen bg-cover flex items-center justify-center">
         <div class="bg-black w-full bg-center bg-cover md:w-1/2 bg-opacity-50">
