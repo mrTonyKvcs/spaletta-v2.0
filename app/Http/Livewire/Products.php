@@ -9,6 +9,7 @@ use Illuminate\View\View;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Facades\Cart as CartFacade;
+use App\Models\Menu;
 
 class Products extends Component
 {
@@ -18,6 +19,8 @@ class Products extends Component
     public $cart;
     public $cartTotal = 0;
     public $products = [];
+    public $menuTime;
+    public $activeMenu;
 
     protected $updatesQueryString = ['search'];
 
@@ -27,6 +30,7 @@ class Products extends Component
         $this->cart = CartFacade::get();
         $this->getProducts($this->cart['products']);
         $this->getCartTotal();
+        $this->activeMenu = Menu::isActive()->first();
     }
 
     public function render(): View
@@ -38,7 +42,8 @@ class Products extends Component
         return view('livewire.products', [
             'categories' => $this->search === null ?
                 $menus->get() :
-                Product::where('name', 'like', '%' . $this->search . '%')->paginate(12)
+                Product::where('name', 'like', '%' . $this->search . '%')->paginate(12),
+            'menu' => $this->activeMenu
         ]);
     }
 
