@@ -58,12 +58,12 @@
             </div>
           </div>
           
-          <button class="px-4 ml-4 border-l focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 border-gold">
-            <img class="w-8" src="/images/svg/cart.svg" alt="">
-          </button>
+          {{-- <button class="px-4 ml-4 border-l focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 border-gold"> --}}
+            {{-- <img class="w-8" src="/images/svg/cart.svg" alt=""> --}}
+          {{-- </button> --}}
         @else
         <div class="flex items-center">
-          <a href="{{ route('auth.signin') }}" class="p-2 text-3xl text-white hover:text-gold border-r-2 border-white">Belépés</a>
+          <a href="{{ route('auth.signin') }}" class="p-2 text-3xl text-white border-r-2 border-white hover:text-gold">Belépés</a>
           <a href="{{ route('auth.signin') }}" class="p-2 text-3xl text-white hover:text-gold">Regisztráció</a>
         </div> 
         @endif
@@ -79,7 +79,7 @@
     </div>
 
     <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'block': open, 'hidden': !open }" class="hidden text-2xl leading-tight text-white bg-gray26 md:text-3xl lg:hidden">
-      <div class="pt-2 pb-3 space-y-1 text-2xl">
+      <div class="pt-2 pb-3 text-2xl space-y-1">
         <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
         <a href="/menu" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Rendelés</a>
         <a href="/asztalfoglalas" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Asztalfoglalás</a>
@@ -122,8 +122,8 @@
       </div>
       @else
       <div class="flex items-center justify-center"> 
-          <a href="{{ route('auth.signin') }}" class="py-2 px-4 text-2xl text-white hover:text-gold border-r-2 border-white ">Belépés</a>
-          <a href="{{ route('auth.signin') }}" class="py-2 px-4 text-2xl text-white hover:text-gold">Regisztráció</a>
+          <a href="{{ route('auth.signin') }}" class="px-4 py-2 text-2xl text-white border-r-2 border-white hover:text-gold ">Belépés</a>
+          <a href="{{ route('auth.signin') }}" class="px-4 py-2 text-2xl text-white hover:text-gold">Regisztráció</a>
       </div>
       @endif
     </div>

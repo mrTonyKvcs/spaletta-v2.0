@@ -77,9 +77,11 @@ Route::group(
     ]);
 });
 
-Route::get('admin', function () {
-    return view('pages.admin');
-})->middleware('admin');
+Route::prefix('admin')->middleware(['admin'])->group(function () {
+    Route::get('/', function () {
+        return view('pages.admin');
+    })->name('admin');
+});
 
 //SendMails
 Route::post('uzenet-kuldes/{subject}', [

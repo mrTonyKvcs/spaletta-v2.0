@@ -1,6 +1,26 @@
 <x-section>
     <div class="flex flex-col-reverse w-full md:grid md:grid-cols-3 md:gap-4">
         <div class="md:col-span-2">
+            <div class="flex flex-col justify-center w-full mb-10">
+                <div class="flex flex-col items-center px-6 lg:container lg:mx-auto">
+                    <h2 class="mb-12 text-5xl font-light text-center uppercase text-gold">Heti menü ajánlatunk</h2>
+                </div>
+                <div x-data={show:false} class="max-w-full">
+                    <div class="mb-5">
+                        <div class="flex items-center justify-between max-w-full py-6 text-2xl border-b border-gray-200 md:w-11/12 text-gray48 hover:border-gray48">
+                            <button @click="show=!show">Menü kiválasztása</button>
+                            <div class="flex">
+                                <p>1800 Ft</p>
+                                <x-icon class="ml-6 mr-4" icon="plus" fill="red" width=20 height=20 viewBox="20 20" strokeWidth=0 />
+                            </div>
+                        </div>
+                        <p class="text-xl">{{ !empty($item->comment) ? $item->comment : '' }}</p>
+                    </div>
+                    <div x-show="show" class="max-w-full py">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
             @forelse($categories as $category)
                 <x-product-category title="{{ $category->name }}"></x-product-category>
 
