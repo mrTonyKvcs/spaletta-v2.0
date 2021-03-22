@@ -13,6 +13,7 @@ class Order extends Component
     public function mount(ModelsOrder $order)
     {
         $this->order = $order;
+        $this->checkUser($this->order);
         $this->status = $order->statuses->last();
         $this->statusSlug = $this->status->slug;
     }
@@ -28,5 +29,12 @@ class Order extends Component
     public function setTheColors($slug)
     {
         return $this->status->slug == $slug ? 'bg-gold text-white' : 'text-gray-500';
+    }
+
+    public function checkUser($order)
+    {
+        if ($order->user_id != \Auth::user()->id) {
+            return redirect('/');
+        }
     }
 }

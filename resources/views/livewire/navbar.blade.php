@@ -76,7 +76,7 @@
     </div>
 
     <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'block': open, 'hidden': !open }" class="hidden text-2xl leading-tight text-white bg-gray26 md:text-3xl lg:hidden">
-      <div class="pt-2 pb-3 space-y-1 text-2xl">
+      <div class="pt-2 pb-3 text-2xl space-y-1">
         <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
         <a href="/menu" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Rendelés</a>
         <a href="/asztalfoglalas" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Asztalfoglalás</a>

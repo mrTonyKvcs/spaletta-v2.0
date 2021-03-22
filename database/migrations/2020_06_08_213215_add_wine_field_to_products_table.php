@@ -25,7 +25,7 @@ class AddWineFieldToProductsTable extends Migration
      */
     public function down()
     {
-        Schema::table('items', function (Blueprint $table) {
+        Schema::table('products', function (Blueprint $table) {
             $table->dropColumn('wine');
         });
     }

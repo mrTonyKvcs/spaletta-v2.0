@@ -72,13 +72,15 @@ Route::group(
     ]);
 
     Route::get('rendezvenyek/rendezveny', [
-        'as'    => 'events.show',
+        'as'    => 'EventsController.show',
         'uses' => 'App\Http\Controllers\EventsController@show'
     ]);
 });
 
-Route::get('admin', function () {
-    return view('pages.admin');
+Route::prefix('admin')->middleware(['admin'])->group(function () {
+    Route::get('/', function () {
+        return view('pages.admin');
+    })->name('admin');
 });
 
 //SendMails

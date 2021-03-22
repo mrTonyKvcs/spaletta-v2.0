@@ -65,7 +65,11 @@ return [
 
     'home' => function(){
         //if you want to go to a specific route
-        return route('pages.menu');
+        if (\Auth::user()->is_admin) {
+            return route('admin');
+        } else {
+            return route('pages.menu');
+        }
 
         //or if you have a bunch of redirection options
         // if (Auth::user()->hasRole('admin')) {

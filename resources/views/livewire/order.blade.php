@@ -6,15 +6,13 @@
             <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
                 Köszönjük a rendelését!
             </h2>
-            <p class="mt-3 text-3xl text-gray-500 sm:mt-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus repellat laudantium.
-            </p>
+            {{-- <p class="mt-3 text-3xl text-gray-500 sm:mt-4"> --}}
+                {{-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus repellat laudantium. --}}
+            {{-- </p> --}}
         </div>
-        <div x-data="{ active: @entangle('statusSlug') }" class="mt-20 grid grid-cols-1 gap-5 md:grid-cols-3">
+        <div class="mt-20 grid grid-cols-1 gap-5 md:grid-cols-3">
             <div class="overflow-hidden bg-white shadow">
-                <div
-                    x-bind:class="{ 'bg-gold text-white' : active === 'visszaigazolasra-var' }"
-                    class="px-4 py-5 sm:p-6">
+                <div class="px-4 py-5 sm:p-6">
                     <div class="flex items-center justify-center text-3xl font-medium truncate">
                         <span x-text="active->name"></span>
                     Visszaigazolására vár.
