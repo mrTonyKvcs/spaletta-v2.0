@@ -12,7 +12,7 @@
             <a href="/asztalfoglalas" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('Asztalfoglalás') }}
             </a>
-            <a href="/esemenyek" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
+            <a href="/rendezvenyek" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 Rendezvények
             </a>
             <a href="/galeria" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
@@ -80,7 +80,7 @@
         <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
         <a href="/menu" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Rendelés</a>
         <a href="/asztalfoglalas" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Asztalfoglalás</a>
-        <a href="/esemenyek" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Rendezvények</a>
+        <a href="/rendezvenyek" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Rendezvények</a>
         <a href="/galeria" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Galéria</a>
         <a href="/rolunk" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Rólunk</a>
         <a href="/kapcsolat" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Kapcsolat</a>
