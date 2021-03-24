@@ -1,5 +1,5 @@
 <x-layout>
-    <x-header>Bejelentkezés és Regisztració</x-header>
+    <x-header>{{ __('Bejelentkezés és Regisztració') }}</x-header>
     <x-section>
         <div class="w-full">
             <div class="grid sm:grid-cols-2 gap-4">

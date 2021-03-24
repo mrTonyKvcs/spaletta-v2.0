@@ -3,7 +3,7 @@
     <x-section>
         <div class="md:flex">
             <div class="md:w-1/2">
-                <x-title text="Spaletta" title="Történetünk" price=""></x-title>
+                <x-title text="Spaletta" title="{{ __('Történetünk') }}" price=""></x-title>
                 <x-history-text></x-history-text> 
             </div>
             <div class="my-12 md:my-0 md:w-1/2 md:flex md:flex-col md:items-center md:pb-24">

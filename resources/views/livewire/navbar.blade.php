@@ -7,22 +7,22 @@
           </div>
           <div class="hidden uppercase lg:flex xl:space-x-2">
             <a href="/menu" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
-                Rendelés
+                {{ __('Rendelés') }}
             </a>
             <a href="/asztalfoglalas" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('Asztalfoglalás') }}
             </a>
             <a href="/rendezvenyek" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
-                Rendezvények
+                {{ __('Rendezvények') }}
             </a>
             <a href="/galeria" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
-                Galéria
+                {{ __('Galéria') }}
             </a>
             <a href="/rolunk" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
-                Rólunk
+                {{ __('Rólunk') }}
             </a>
             <a href="/kapcsolat" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
-                Kapcsolat
+                {{ __('Kapcsolat') }}
             </a>
             <a href="/cart" class="flex justify-center w-7 xl:w-10 py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 <x-icon icon="cart" width=25 height=20 viewBox="20 20" strokeWidth=0 />
@@ -60,8 +60,8 @@
           
         @else
         <div class="flex items-center">
-          <a href="{{ route('auth.signin') }}" class="pr-4 text-3xl text-white hover:text-gold border-r-2 border-white">Belépés</a>
-          <a href="{{ route('auth.signin') }}" class="pl-4 text-3xl text-white hover:text-gold">Regisztráció</a>
+          <a href="{{ route('auth.signin') }}" class="pr-4 text-3xl text-white hover:text-gold border-r-2 border-white">{{ __('Bejelentkezés') }}</a>
+          <a href="{{ route('auth.signin') }}" class="pl-4 text-3xl text-white hover:text-gold">{{ __('Regisztráció') }}</a>
         </div> 
         @endif
         </div>
@@ -78,12 +78,12 @@
     <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'block': open, 'hidden': !open }" class="hidden text-2xl leading-tight text-white bg-gray26 md:text-3xl lg:hidden">
       <div class="pt-2 pb-3 text-2xl space-y-1">
         <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
-        <a href="/menu" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Rendelés</a>
-        <a href="/asztalfoglalas" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Asztalfoglalás</a>
-        <a href="/rendezvenyek" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Rendezvények</a>
-        <a href="/galeria" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Galéria</a>
-        <a href="/rolunk" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Rólunk</a>
-        <a href="/kapcsolat" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">Kapcsolat</a>
+        <a href="/menu" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rendelés') }}</a>
+        <a href="/asztalfoglalas" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Asztalfoglalás') }}</a>
+        <a href="/rendezvenyek" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rendezvények') }}</a>
+        <a href="/galeria" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Galéria') }}</a>
+        <a href="/rolunk" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rólunk') }}</a>
+        <a href="/kapcsolat" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Kapcsolat') }}</a>
       </div>
       <div class="pt-4 pb-3 border-t border-white">
       @if (Auth::check())
@@ -119,8 +119,8 @@
       </div>
       @else
       <div class="flex items-center justify-center"> 
-          <a href="{{ route('auth.signin') }}" class="px-4 text-2xl text-white hover:text-gold border-r-2 border-white ">Belépés</a>
-          <a href="{{ route('auth.signin') }}" class="px-4 text-2xl text-white hover:text-gold">Regisztráció</a>
+          <a href="{{ route('auth.signin') }}" class="px-4 text-2xl text-white hover:text-gold border-r-2 border-white ">{{ __('Bejelentkezés') }}</a>
+          <a href="{{ route('auth.signin') }}" class="px-4 text-2xl text-white hover:text-gold">{{ __('Regisztráció') }}</a>
       </div>
       @endif
     </div>
