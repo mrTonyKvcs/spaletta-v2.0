@@ -7,7 +7,7 @@
                         <h2 class="mb-12 text-5xl font-light text-center uppercase text-gold"> {{ $menu->type->name }} ajánlatunk</h2>
                     </div>
                     <div x-data={show:false} class="max-w-full">
-                        <button @click="show=!show" class="w-full mb-5">
+                        <button @click="show=!show" class="w-full mb-5 focus:outline-none">
                             <div class="flex items-center justify-between max-w-full py-6 text-2xl border-b border-gray-200 md:w-11/12 text-gray48 hover:border-gray48">
                                 <p>Menü kiválasztása</p>
                                 <div class="flex">
@@ -18,7 +18,7 @@
                         </button>
                         <div x-show="show" class="flex flex-col justify-center max-w-full py md:w-11/12">
                             @if ($menu->type->slug == 'heti-menu')
-                                <select class="block w-full py-2 pl-3 pr-10 mt-1 text-3xl bg-gray-100 border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                <select wire:model="soup" class="block w-full py-2 pl-3 pr-10 mt-1 text-3xl bg-gray-100 border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
                                     <option>Válasszon levest</option>
                                     @foreach($menu->items()->soup()->get() as $soup)
                                         <option  value="{{ $soup->id }}">
@@ -26,7 +26,7 @@
                                         </option>
                                     @endforeach
                                 </select>
-                                <select class="block w-full py-2 pl-3 pr-10 mt-5 text-3xl bg-gray-100 border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                <select wire:model="mainCourse" class="block w-full py-2 pl-3 pr-10 mt-5 text-3xl bg-gray-100 border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
                                     <option>Válasszon főételt</option>
                                     @foreach($menu->items()->mainCourse()->get() as $mainCourse)
                                         <option  value="{{ $mainCourse->id }}">
@@ -34,7 +34,7 @@
                                         </option>
                                     @endforeach
                                 </select>
-                                <button type="submit" class="text-2xl mt-10 border border-transparent text-white bg-gray48 hover:bg-gray2e inline-flex font-medium items-center pt-3.5 px-8 xl:px-10 pb-2.5  uppercase shadow-sm focus:outline-none text-center justify-center">
+                                <button wire:click="addMenuToCart()" type="submit" class="text-2xl mt-10 border border-transparent text-white bg-gray48 hover:bg-gray2e inline-flex font-medium items-center pt-3.5 px-8 xl:px-10 pb-2.5  uppercase shadow-sm focus:outline-none text-center justify-center">
                                     Menü hozzáadása
                                 </button>
                             @else

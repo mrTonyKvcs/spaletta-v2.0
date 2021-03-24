@@ -3,7 +3,7 @@
 
 namespace App\Helpers;
 
-
+use App\Models\MenuItem;
 use App\Models\Product;
 
 class Cart
@@ -18,6 +18,13 @@ class Cart
     {
         $cart = $this->get();
         array_push($cart['products'], $product);
+        $this->set($cart);
+    }
+
+    public function addMenu(MenuItem $menuItem): void
+    {
+        $cart = $this->get();
+        array_push($cart['products'], $menuItem);
         $this->set($cart);
     }
 

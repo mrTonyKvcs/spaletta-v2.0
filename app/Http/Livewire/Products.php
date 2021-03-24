@@ -10,6 +10,7 @@ use Livewire\Component;
 use Livewire\WithPagination;
 use App\Facades\Cart as CartFacade;
 use App\Models\Menu;
+use App\Models\MenuItem;
 
 class Products extends Component
 {
@@ -21,6 +22,8 @@ class Products extends Component
     public $products = [];
     public $menuTime;
     public $activeMenu;
+    public $soup;
+    public $mainCourse;
 
     protected $updatesQueryString = ['search'];
 
@@ -57,6 +60,23 @@ class Products extends Component
         $this->cartTotal = 0;
         $this->getCartTotal();
     }
+
+    // public function addMenuToCart()
+    // {
+    //     $menuItems = MenuItem::whereIn('id', [$this->soup, $this->mainCourse])->get();
+    //
+    //     $menuItems->each(function ($item) {
+    //         Cart::addMenu($item);
+    //         $this->emit('menuAdded');
+    //     });
+    //
+    //     $this->cartTotal += 1800;
+    //
+    //     $this->soup = '';
+    //     $this->mainCourse = '';
+    //
+    //     dd(CartFacade::get());
+    // }
 
     public function getProducts($cart): void
     {
