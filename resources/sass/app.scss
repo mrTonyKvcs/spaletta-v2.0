@@ -115,10 +115,10 @@ video {
     @media (min-width: 1024px) {
         background-color: #262626;
         z-index: 200;
-        a {
+        .navbar>a {
             color: #fff;
         }
-        a:hover {
+        .navbar>a:hover {
             color: #ffb606;
         }
     }

@@ -5,7 +5,7 @@
     <x-section>
         <div class="flex flex-col items-center w-full lg:flex-row lg:items-stretch lg:mb-32">
             <div class="md:w-2/3">
-                <x-title text="Küldjön" title="Üzenetet" price=""></x-title>
+                <x-title text="{{ __('Küldjön') }}" title="{{ __('Üzenetet') }}" price=""></x-title>
                 <p class="text-xl text-center text-gray48">{{ __('Az alábbi ürlap kitöltésevel közvetlen üzenetet tud küldeni') }}.</p>
                 @if ($errors->has('g-recaptcha-response'))
                     <span class="help-block">
@@ -16,7 +16,7 @@
                     @csrf
                     <div class="flex flex-col lg:flex-row">
                         <div class="mb-6 lg:mr-6 lg:w-1/2">
-                            <p class="text-2xl font-medium text-center gray">{{ __('Vezetéknév és keresztnév') }}</p>
+                            <p class="text-2xl font-medium text-center gray">{{ __('Teljes név') }}</p>
                             <input type="text" class="w-full gray outline-none text-center font-medium py-2.5 px-5 text-xl border-b border-gray-300">
                         </div>
                         <div class="mb-6 lg:ml-6 lg:w-1/2">

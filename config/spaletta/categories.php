@@ -3,39 +3,55 @@
 return [
     [
         'type_id' => 1,
-        'name' => 'Előételek'
+        'name' => 'Előételek',
+        'en_name' => '',
+        'de_name' => '',
     ],
     [
         'type_id' => 1,
-        'name' => 'Bistro ételek'
+        'name' => 'Bistro ételek',
+        'en_name' => '',
+        'de_name' => '',
     ],
     [
         'type_id' => 1,
-        'name' => 'Levesek'
+        'name' => 'Levesek',
+        'en_name' => 'Soups',
+        'de_name' => 'Suppen',
     ],
     [
         'type_id' => 1,
-        'name' => 'Friss tészták'
+        'name' => 'Friss tészták',
+        'en_name' => 'Pasta',
+        'de_name' => 'Pasta',
     ],
     [
         'type_id' => 1,
-        'name' => 'Pizza'
+        'name' => 'Pizza',
+        'en_name' => '',
+        'de_name' => '',
     ],
     [
         'type_id' => 1,
-        'name' => 'Főételek'
+        'name' => 'Főételek',
+        'en_name' => 'Main courses',
+        'de_name' => 'Hauptgerichte',
     ],
     [
         'type_id' => 1,
-        'name' => 'Desszertek'
+        'name' => 'Desszertek',
+        'en_name' => '',
+        'de_name' => '',
     ],
     [
         'type_id' => 1,
-        'name' => 'Gyerekmenü'
+        'name' => 'Gyerekmenü',
+        'en_name' => '',
+        'de_name' => '',
     ],
     [
         'type_id' => 2,
-        'name' => 'Ásványvíz'
+        'name' => 'Ásványvíz',
     ],
     [
         'type_id' => 2,

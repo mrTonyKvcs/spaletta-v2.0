@@ -4,6 +4,8 @@ return [
     [
         'category_id' => 28,
         'name' => 'Csirke húsleves',
+        'en_name' => '',
+        'de_name' => '',
         'comment' => '',
         'price' => 1700
     ],
