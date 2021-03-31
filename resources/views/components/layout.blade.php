@@ -29,6 +29,11 @@
     </main>
     <footer class="light-gray-bg footer-parallax">
         @include('partials.footer')
+        <style>
+            setTimeout(function(){
+                alert("Sup!");
+            }, 2000);
+        </style>
     </footer>
 </body>
 </html>

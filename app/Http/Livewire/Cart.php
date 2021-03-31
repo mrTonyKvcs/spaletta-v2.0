@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use Illuminate\Support\Facades\Validator;
 use App\Mail\SendConfirmationMailsToStaff;
 use App\Facades\Cart as CartFacade;
 use App\Helpers\Cart as HelpersCart;
@@ -25,8 +26,8 @@ class Cart extends Component
     public $deliveryAddresses;
     public $comment;
     public $cartTotal = 0;
-    public $zipCode;
-    public $city;
+    public $zipCode = '6000';
+    public $city = 'Kecskemét';
     public $street;
     public $houseNumber;
     public $floor;
@@ -36,6 +37,12 @@ class Cart extends Component
     public $phoneNumber;
     public $user;
     public $showNewAddressForm = false;
+    
+    protected $rules = [
+        'phoneNumber' => 'required|min:11|max:12',
+        'orderType' => 'required',
+        'deliveryAddressId' => 'required'
+    ];
 
     public function mount(): void
     {
@@ -114,9 +121,11 @@ class Cart extends Component
 
     public function submitOrder()
     {
+        $this->validate();
+
         $order = Order::create([
             'user_id' => \Auth::user()->id,
-            'type_id' => 1,
+            'type_id' => $this->orderType,
             'delivery_address_id' => $this->deliveryAddressId,
             'counrier_id' => 1,
             'comment' => $this->comment
@@ -142,7 +151,7 @@ class Cart extends Component
             $this->user->save();
         }
 
-        //$this->sendMails($order);
+        $this->sendMails($order);
 
         $this->checkout();
 

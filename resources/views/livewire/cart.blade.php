@@ -1,14 +1,15 @@
 <x-section>
     <div class="w-full">
-
         @if(auth()->check())
             <div class="mb-10">
-<label for="about" class="block text-3xl font-medium text-gray-700 sm:mt-px sm:pt-2">
-                        {{ __('Telefonszám') }}
-                    </label>
-                <input type="tel" wire:model="phoneNumber" class="block w-full px-3 py-4 mt-1 bg-gray-100 border-gray-300 focus:ring-gray-500 focus:border-gray-500 shadow-sm text-2xl" required>
+                <label for="about" class="block text-3xl font-medium text-gray-700 sm:mt-px sm:pt-2">
+                    {{ __('Telefonszám') }}
+                </label>
+                <input type="tel" wire:model="phoneNumber" class="block w-full px-3 py-4 mt-1 text-2xl bg-gray-100 border-gray-300 focus:ring-gray-500 focus:border-gray-500 shadow-sm" required>
+
+                @error('phoneNumber') <span class="error">{{ $message }}</span> @enderror
             </div>
-            {{-- order type select --}}
+
             <div class="mb-10">
                 <label for="location" class="block text-3xl font-medium text-gray-700 ">{{ __('Rendelés típusa') }}</label>
                 <select wire:model="orderType" class="block w-full py-2 pl-3 pr-10 mt-1 text-3xl bg-gray-100 border-gray-300 focus:outline-none">
@@ -19,13 +20,13 @@
                         </option>
                     @endforeach
                 </select>
+                @error('orderType') <span class="error">{{ $message }}</span> @enderror
             </div>
 
-            {{-- delivery address select --}}
             @if ($orderType = 'hazhozszallitas')
                 <div x-data="{ open: @entangle('showNewAddressForm') }" class="mb-10">
                     <div class="flex flex-row justify-between">
-                        <label for="location" class="block  text-3xl font-medium text-gray-700 ">{{ __('Szállítási cím') }}</label>
+                        <label for="location" class="block text-3xl font-medium text-gray-700 ">{{ __('Szállítási cím') }}</label>
                         <button x-show="!open" @click="open = true" class="text-2xl uppercase text-gold" type="button">{{ __('Új hozzáadása') }}</button>
                         <button x-show="open" @click="open = false" class="text-2xl text-red-500 uppercase" type="button">{{ __('Mégsem') }}</button>
                         {{-- <x-modal></x-modal> --}}
@@ -42,6 +43,7 @@
                             <option value="">{{ __('Nincs mentet szállítási cím') }}</option>
                         @endforelse
                     </select>
+                    @error('deliveryAddressId') <span class="error">{{ $message }}</span> @enderror
                 </div>
             @endif
 
@@ -57,7 +59,6 @@
             </div>
         @endif
 
-        {{-- cart table --}}
         <div class="flex flex-col">
             <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
@@ -90,10 +91,10 @@
                                         <td class="px-6 py-4 text-sm text-3xl font-light text-center text-gray-500 whitespace-nowrap">{{ $product['quantity'] }} db</td>
                                         <td class="px-6 py-4 text-sm text-3xl font-light text-center text-gray-500 whitespace-nowrap">{{ $product['price'] }} Ft</td>
                                         <td class="flex justify-center px-6 py-4 text-sm text-3xl font-light text-center text-gray-500 whitespace-nowrap">
-                                                <button wire:click="addToCart({{ $product['id'] }})" class="block ml-6 mr-4 text-center">
+                                            <button wire:click="addToCart({{ $product['id'] }})" class="block ml-6 mr-4 text-center">
 
-                                                    <x-icon icon="plus" fill="red" width=20 height=20 viewBox="20 20" strokeWidth=0 />
-                                                </button>
+                                                <x-icon icon="plus" fill="red" width=20 height=20 viewBox="20 20" strokeWidth=0 />
+                                            </button>
                                         </td>
                                         <td class="px-6 py-4 text-sm text-3xl font-light font-medium text-center whitespace-nowrap">
                                             <button wire:click="removeFromCart({{ $product['id'] }})" class="px-3 py-1 text-red-600 rounded cursor-pointer bg-red hover:bg-red-dark">X</button>
@@ -101,7 +102,7 @@
                                     </tr>
                                 @empty
                                     <tr class="bg-white">
-                                        <td class="px-6 py-4 text-3xl font-light text-gray-900 whitespace-nowrap">{{ __('Üres a kosara') }}.<a href="{{ route('pages.menu') }}" class="text-gold pl-2">{{ __('Ide') }}</a> {{ __('kattintva már választhat is ételeink közül') }}.</td>
+                                        <td class="px-6 py-4 text-3xl font-light text-gray-900 whitespace-nowrap">{{ __('Üres a kosara') }}.<a href="{{ route('pages.menu') }}" class="pl-2 text-gold">{{ __('Ide') }}</a> {{ __('kattintva már választhat is ételeink közül') }}.</td>
                                     @endforelse
                             </tbody>
                         </table>
@@ -121,12 +122,11 @@
             </div>
         </div>
 
-        {{-- buttons --}}
         <div class="flex justify-center mt-10 flex-end">
             @if(auth()->check())
             @empty(!$cart['products'])
                 {{-- @if(!$orderType != '' && !$deliveryAddressId != '') --}}
-                    <button type="button" wire:click="submitOrder" class="mt-10 uppercase text-white hover font-medium text-2xl lg:text-3xl px-10 pt-3 pb-2.5 gray-bg lg:hover:bg-gray48 "> {{ __('Rendelés küldése') }}</button>
+                    <button wire:click="submitOrder" type="button" class="mt-10 uppercase text-white hover font-medium text-2xl lg:text-3xl px-10 pt-3 pb-2.5 gray-bg lg:hover:bg-gray48 "> {{ __('Rendelés küldése') }}</button>
                     {{-- <x-button type="gray" wire:click="submitOrder">Rendelés Küldése</x-button> --}}
                     {{-- @endif --}}
                 @endempty
@@ -139,6 +139,5 @@
                 </a>
             @endif
         </div>
-
     </div>
 </x-section>

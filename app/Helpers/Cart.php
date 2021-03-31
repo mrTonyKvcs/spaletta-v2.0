@@ -21,12 +21,12 @@ class Cart
         $this->set($cart);
     }
 
-    public function addMenu(MenuItem $menuItem): void
-    {
-        $cart = $this->get();
-        array_push($cart['products'], $menuItem);
-        $this->set($cart);
-    }
+    // public function addMenu(MenuItem $menuItem): void
+    // {
+    //     $cart = $this->get();
+    //     array_push($cart['products'], $menuItem);
+    //     $this->set($cart);
+    // }
 
     public function remove(int $productId): void
     {

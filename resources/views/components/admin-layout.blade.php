@@ -17,13 +17,14 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        @livewireScripts
 </head>
-<body class="antialiased font-sans bg-gray-200"><div class="" style="">
+<body class="font-sans antialiased bg-gray-200"><div class="" style="">
     <x-sidebar></x-sidebar>
     <x-admin-topheader></x-admin-topheader>
-    <main class="flex-1 relative pb-8 z-0 overflow-y-auto">
-        <x-admin-header></x-admin-header>
-        <div class="mt-8">
+    <main class="relative z-0 flex-1 pb-8 overflow-y-auto">
+        {{-- <x-admin-header></x-admin-header> --}}
+        <div class="mt-8 max-w-8xl">
             {{ $slot }}
         </div>
     </main>

@@ -72,10 +72,8 @@ class Products extends Component
     //
     //     $this->cartTotal += 1800;
     //
-    //     $this->soup = '';
-    //     $this->mainCourse = '';
-    //
-    //     dd(CartFacade::get());
+        // $this->soup = '';
+        // $this->mainCourse = '';
     // }
 
     public function getProducts($cart): void

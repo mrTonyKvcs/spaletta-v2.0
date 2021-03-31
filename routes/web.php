@@ -77,7 +77,7 @@ Route::group(
     ]);
 });
 
-Route::prefix('admin')->middleware(['admin'])->group(function () {
+Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
     Route::get('/', function () {
         return view('pages.admin');
     })->name('admin');

@@ -65,4 +65,9 @@ class Order extends Model
 
         return $total;
     }
+
+    public function scopeToday($query)
+    {
+        return $query->where('created_at', 'like', '%' . now()->format('Y-m-d') . '%');
+    }
 }
