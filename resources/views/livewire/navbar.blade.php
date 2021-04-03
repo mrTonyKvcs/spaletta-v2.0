@@ -103,10 +103,10 @@
         </div>
         <div class="flex items-center order-first lg:hidden">
           <!-- Mobile menu button -->
-            <button @click=" open = !open" class="lg:hidden focus:outline-none">
-                <img x-show="!open" class="z-20 w-14 md:w-20" src="/images/svg/menu.svg" alt="">
-                <img x-show="open" class="z-20 w-14 md:w-20" src="/images/svg/close.svg" alt="">
-            </button>
+              <button @click=" open = !open" class="lg:hidden focus:outline-none">
+                  <img x-show="!open" class="z-20 w-14 md:w-20" src="/images/svg/menu.svg" alt="">
+                  <img x-show="open" class="z-20 w-14 md:w-20" src="/images/svg/close.svg" alt="">
+              </button>
         </div>
       </div>
     </div>
