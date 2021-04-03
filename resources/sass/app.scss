@@ -115,10 +115,10 @@ video {
     @media (min-width: 1024px) {
         background-color: #262626;
         z-index: 200;
-        a {
+        .navbar>a {
             color: #fff;
         }
-        a:hover {
+        .navbar>a:hover {
             color: #ffb606;
         }
     }
@@ -127,4 +127,10 @@ video {
 .tab-active {
     color: #484848;
     border-bottom: 1px solid #484848;
+}
+
+.error {
+    color: red;
+    font-size: 1.4rem;
+    margin-top: 1rem;
 }

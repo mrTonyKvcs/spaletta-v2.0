@@ -14,6 +14,11 @@ class Type extends Model
         'slug', 'name'
     ];
 
+    public function getNameAttribute($value)
+    {
+        return trans($value);
+    }
+
     public function getTextAttribute($value)
     {
         return $value == 'kiszallitas' ? 'A rendelés úton van.' : 'Elkészült a rendelés.';

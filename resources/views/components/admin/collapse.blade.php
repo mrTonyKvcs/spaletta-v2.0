@@ -38,12 +38,12 @@
                                 </div>
                             </div>
                             <div class="flex items-center text-3xl text-gray-500">
-                                @if ($order->statuses->last()->id < 4)
+                                @if ($order->statuses->last()->slug != 'rendeles-kiszallitva')
                                     <button wire:click="updateOrderStatus({{ $order->id }}, {{ $order->statuses->last()->id }})" type="button" class="inline-flex items-center px-6 py-3 text-2xl font-bold text-white border border-gray-300 bg-gold shadow-sm rounded-md hover:bg-gray-50 hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                                         {{ $order->statuses->last()->name }}
                                     </button>
                                 @else
-                                    <p class="text-2xl font-bold text-gold">Kiszállítva</p>
+                                    <p class="text-2xl font-bold text-gold">Lezárt rendelés</p>
                                 @endif
                             </div>
                         </div>

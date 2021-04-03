@@ -43,6 +43,15 @@ class Cart extends Component
         'orderType' => 'required',
         'deliveryAddressId' => 'required'
     ];
+    
+    protected $messages = [
+        'phoneNumber.min' => ['string' => 'Helytelen telefonszám formátum! Példa: +36XXXXXXXXX'],
+        'phoneNumber.max' => ['string' => 'Helytelen telefonszám formátum! Példa: +36XXXXXXXXX'],
+        'phoneNumber.max.string' => 'Helytelen telefonszám formátum!',
+        'phoneNumber.required' => 'Telefonszám megadása kötelező!',
+        'orderType.required' => 'Rendelési típus megadása kötelező!',
+        'deliveryAddressId.required' => 'Szállítási cím megadása kötelező!'
+    ];
 
     public function mount(): void
     {
@@ -171,6 +180,18 @@ class Cart extends Component
 
     public function createNewAddress()
     {
+        Validator::make(
+            ['street' => $this->street],
+            ['street' => 'required'],
+            ['required' => 'A közterület neve megadása kötelező!'],
+        )->validate();
+
+        Validator::make(
+            ['houseNumber' => $this->houseNumber],
+            ['houseNumber' => 'required'],
+            ['required' => 'A házszám megadása kötelező!'],
+        )->validate();
+
         $address = DeliveryAddress::create([
             'user_id' => auth()->user()->id,
             'zip_code' => $this->zipCode,

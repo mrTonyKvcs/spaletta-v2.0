@@ -39,14 +39,14 @@ class Order extends Component
     public function getOrders()
     {
         return ModelsOrder::today()->orderBy('created_at')->with('statuses')->whereDoesntHave('statuses', function ($query) {
-            $query->where('id', 4);
+            $query->where('slug', 'rendeles-kiszallitva');
         })->get();
     }
 
     public function getFinishedOrders()
     {
         return ModelsOrder::today()->orderBy('created_at')->with('statuses')->whereHas('statuses', function ($query) {
-            $query->where('id', 4);
+            $query->where('slug', 'rendeles-kiszallitva');
         })->get();
     }
 }

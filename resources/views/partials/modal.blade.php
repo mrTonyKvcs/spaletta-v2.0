@@ -2,6 +2,11 @@
     <form action="#" method="POST">
         <div class="my-10 grid grid-cols-6 gap-6">
 
+            <div class="col-span-6">
+                @error('street') <span class="error">{{ $message }}</span> @enderror
+                @error('houseNumber') <span class="error">{{ $message }}</span> @enderror
+            </div>
+
             <div class="col-span-6 sm:col-span-3 lg:col-span-1">
                 <label for="city" class="block text-2xl font-medium text-gray-700">Irányítószám*</label>
                 <input type="number" wire:model="zipCode" class="block w-full px-3 py-4 mt-1 border-gray-300 focus:ring-gray-500 focus:border-gray-500 shadow-sm sm:text-2xl rounded-md" readonly required>

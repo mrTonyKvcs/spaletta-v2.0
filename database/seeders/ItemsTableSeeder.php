@@ -1,6 +1,9 @@
 <?php
 
+namespace Database\Seeders;
+
 use App\Item;
+use App\Models\Product;
 use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
 
@@ -14,7 +17,7 @@ class ItemsTableSeeder extends Seeder
     public function run()
     {
         $foods = config()->get('spaletta.foods');
-        $foods = config()->get('spaletta.delivery-drinks');
+        //$foods = config()->get('spaletta.delivery-drinks');
         //$foods = config()->get('spaletta.summer-foods');
 
         foreach($foods as $item) {
@@ -30,7 +33,7 @@ class ItemsTableSeeder extends Seeder
                 $item['slug'] = Str::slug($item['name']);
             }
 
-            Item::updateOrCreate($item);
+            Product::updateOrCreate($item);
         }
     }
 }

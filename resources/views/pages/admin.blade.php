@@ -3,8 +3,6 @@
         SPALETTA KECSKEMÉT ÉTTEREM ÉS SÖRHÁZ Admin
     </h2>
 
-    <livewire:admin.switch-menu/>
-
     <livewire:admin.order/>
 
     {{-- <x-overview></x-overview> --}}

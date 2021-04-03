@@ -8,10 +8,10 @@ use Illuminate\Database\Seeder;
 class StatusesTableSeeder extends Seeder
 {
     protected $statuses = [
-        ['name' => 'Visszaigazolásra vár.'],
-        ['name' => 'Rendelés visszaigazolva.'],
-        ['name' => 'Készül a rendelés.'],
-        ['name' => 'A rendelés úton van.'],
+        ['name' => 'Visszaigazolásra vár'],
+        ['name' => 'Készül a rendelés'],
+        // ['name' => 'A rendelés úton van'],
+        ['name' => 'Rendelés kiszállítva']
     ];
 
     /**

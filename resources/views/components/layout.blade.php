@@ -17,6 +17,11 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        <script charset="utf-8">
+            function autoRefresh() {
+                setTimeout("location.reload(true);", 60000);
+            }
+        </script>
         @livewireScripts
     </head>
 <body>
@@ -29,11 +34,6 @@
     </main>
     <footer class="light-gray-bg footer-parallax">
         @include('partials.footer')
-        <style>
-            setTimeout(function(){
-                alert("Sup!");
-            }, 2000);
-        </style>
     </footer>
 </body>
 </html>
