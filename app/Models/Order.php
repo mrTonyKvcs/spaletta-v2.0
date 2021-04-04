@@ -11,7 +11,7 @@ class Order extends Model
     use HasFactory; use SoftDeletes;
 
     protected $fillable = [
-        'user_id', 'type_id', 'delivery_address_id', 'comment'
+        'user_id', 'payment_id', 'type_id', 'delivery_address_id', 'comment'
     ];
 
     /**
@@ -53,6 +53,11 @@ class Order extends Model
     public function address()
     {
         return $this->belongsTo(DeliveryAddress::class, 'delivery_address_id');
+    }
+
+    public function payment()
+    {
+        return $this->belongsTo(Payment::class);
     }
 
     public function getTotalAttribute()

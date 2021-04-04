@@ -43,6 +43,7 @@
                     <h3 class="pb-3 mb-5 text-3xl text-center border-b border-gold border-opacity-25">{{ __('Rendelés adatai') }}</h3>
 
                     <div class="mt-5 text-3xl">{{ __('Rendelésazonosító') }}: <span class="ml-5 text-3xl font-bold">{{ $order->id }}</span></div>
+                    <div class="mt-5 text-3xl">{{ __('Fizetési mód') }}: <span class="ml-5 text-3xl font-bold">{{ $order->payment->name }}</span></div>
                     <div class="my-5 text-3xl">{{ __('Rendeléstípusa') }}: <span class="ml-5 text-3xl font-bold">{{ $order->type->name }}</span></div>
                     <div class="my-5 text-3xl">{{ __('Telefonszám') }}: <span class="ml-5 text-3xl font-bold">{{ $order->user->phone_number }}</span></div>
                     <div class="mb-5 text-3xl">{{ __('Szállítási cím') }}: <span class="ml-5 text-3xl font-bold">{{ $order->address->name }}</span></div>

@@ -2,6 +2,18 @@
     <div class="w-full">
         @if(auth()->check())
             <div class="mb-10">
+                <label for="location" class="block text-3xl font-medium text-gray26">{{ __('Fizetési mód') }}</label>
+                <select wire:model="payment" class="block w-full py-2 pl-3 pr-10 mt-1 text-3xl bg-gray-100 border-gray-300 focus:outline-none">
+                    <option>{{ __('Válasszon fizetési módot') }}!</option>
+                    @foreach($payments as $payment)
+                        <option  value="{{ $payment->id }}">
+                        {{ $payment->name }}
+                        </option>
+                    @endforeach
+                </select>
+                @error('payment') <span class="error">{{ $message }}</span> @enderror
+            </div>
+            <div class="mb-10">
                 <label for="about" class="block text-3xl text-gray26 sm:mt-px sm:pt-2 ">
                     {{ __('Telefonszám') }}
                 </label>

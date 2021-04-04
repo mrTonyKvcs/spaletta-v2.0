@@ -7,11 +7,11 @@
             <div class="flex flex-col items-center  md:flex-row  text-3xl mb-4">
                 <div class="flex items-center mb-4 md:mb-0 md:mr-6 z-20">
                     <img class="w-10 pr-2" src="../images/svg/mobile.svg" alt="">
-                    <a href="" class="">+36 20 219 99 75</p>
+                    <a href="tel:+36 20 219 99 75" class="">+36 20 219 99 75</p>
                 </div>
                 <div class="flex items-center z-20">
                     <img class="w-10 pr-2" src="../images/svg/phone.svg" alt="">
-                    <a href="">+36 76 614 744</a>
+                    <a href="tel:+36 76 614 744">+36 76 614 744</a>
                 </div>
             </div>
             <x-button class="z-20" type="transparent">{{ __('Ételrendelés') }}</x-button>

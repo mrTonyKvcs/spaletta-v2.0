@@ -2,11 +2,11 @@
     <h2 class="text-2xl uppercase lg:text-3xl text-gold">{{ __('Elérhetőségek') }}</h2>
     <div class="flex">
         <img class="w-10 pr-2" src="../images/svg/mobile-black.svg" alt="">
-        <a href="" class="">+36 20 219 99 75</a>
+        <a href="tel:+36 20 219 99 75" class="">+36 20 219 99 75</a>
     </div>
     <div class="flex">
         <img class="w-10 pr-2" src="../images/svg/phone-black.svg" alt="">
-        <a href="">+36 76 614 744</a>
+        <a href="tel:+36 76 614 744">+36 76 614 744</a>
     </div>
     <div class="flex">
         <img class="w-10 pr-2" src="../images/svg/email.svg" alt="">

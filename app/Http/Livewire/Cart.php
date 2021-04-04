@@ -11,6 +11,7 @@ use App\Models\DeliveryAddress;
 use App\Models\Product;
 use App\Models\Order;
 use App\Models\OrderItem;
+use App\Models\Payment;
 use App\Models\Status;
 use App\Models\Type;
 use App\Models\User;
@@ -37,11 +38,14 @@ class Cart extends Component
     public $phoneNumber;
     public $user;
     public $showNewAddressForm = false;
+    public $payments;
+    public $payment;
     
     protected $rules = [
         'phoneNumber' => 'required|min:11|max:12',
         'orderType' => 'required',
-        'deliveryAddressId' => 'required'
+        'deliveryAddressId' => 'required',
+        'payment' => 'required'
     ];
     
     protected $messages = [
@@ -50,7 +54,8 @@ class Cart extends Component
         'phoneNumber.max.string' => 'Helytelen telefonszám formátum!',
         'phoneNumber.required' => 'Telefonszám megadása kötelező!',
         'orderType.required' => 'Rendelési típus megadása kötelező!',
-        'deliveryAddressId.required' => 'Szállítási cím megadása kötelező!'
+        'deliveryAddressId.required' => 'Szállítási cím megadása kötelező!',
+        'payment.required' => 'Fizetési mód megadása kötelező!'
     ];
 
     public function mount(): void
@@ -62,6 +67,7 @@ class Cart extends Component
         $this->deliveryAddressId = '';
         $this->comment = '';
         $this->getCartTotal();
+        $this->payments = Payment::all();
 
         if (!empty(auth()->user())) {
             $this->user = auth()->user();
@@ -134,6 +140,7 @@ class Cart extends Component
 
         $order = Order::create([
             'user_id' => \Auth::user()->id,
+            'payment_id' => $this->payment,
             'type_id' => $this->orderType,
             'delivery_address_id' => $this->deliveryAddressId,
             'counrier_id' => 1,
