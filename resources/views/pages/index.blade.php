@@ -28,7 +28,7 @@
             <x-title title="{{ __('Hétvégi Menük') }}" text="2021.02.06 - 2021.02.07." price="2600 Ft"></x-title>
             <x-weekend-menu></x-weekend-menu>
             <p class="text-xl">{{ __('(Az ár nem tartalmaza a csomagolás díját)') }}</p>
-            <x-button>{{ __('Étlap') }}</x-button>
+            <x-button><a href="/menu">{{ __('Étlap') }}</a></x-button>
         </div>
     </x-section>
     <x-section background="home-services">
@@ -42,7 +42,7 @@
     <x-section>
         <x-title text="Spaletta" title="{{ __('Asztalfoglalás') }}" price=""></x-title>
         <x-reservation></x-reservation>
-        <x-button>{{ __('Asztalfoglalás') }}</x-button>
+        <x-button><a href="/asztalfoglalas">{{ __('Asztalfoglalás') }}</a></x-button>
     </x-section>
     <x-section background="home-about">
         <div class="md:grid md:grid-cols-2">
@@ -53,7 +53,7 @@
                 <p class="text-3xl font-medium gold font-libre italic">{{ __('Rólunk') }}</p>
                 <h2 class="text-gray2e text-5xl font-semibold uppercase text-center">{{ __('Bemutatkozunk') }}</h2>
                 <p class="text-2xl gray font-medium pt-10">{{ __('Fura hullámokat vet az élet. Soha nem gondoltam volna, hogy éttermet fogunk vezetni. Eddig az élet teljesen más területén dolgoztunk, dolgozunk és bár gyermekkorom nyarait régi vendéglátós család szülöttjeként hol fagylaltosfiúként, hol pultosként töltöttem-közben leendő feleségem palacsintát sütött egy lakókocsiban a vágyott Adidas cipőért- nem is álmodtunk efféle karrierről.') }}</p>
-                <x-button class="mt-8" type="gray-transparent">{{ __('Tovább') }}</x-button>
+                <x-button class="mt-8" type="gray-transparent"><a href="/rolunk">{{ __('Tovább') }}</a></x-button>
             </div>
         </div>
     </x-section>

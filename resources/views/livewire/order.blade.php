@@ -58,7 +58,7 @@
                             <div class="flex justify-between mb-5 text-3xl">{{ $item->quantity . 'db ' . $item->product->name }} <span class="ml-5 text-3xl font-bold">{{ $item->product->price }} Ft</span></div>
                         @endforeach
                     </div>
-                    <div class="flex justify-between mb-5 text-3xl">{{ __('Teljes összeg') }}: <span class="ml-5 text-3xl font-bold">{{ $order->total }} Ft</span></div>
+                    <div class="flex justify-between font-bold mb-5 text-3xl">{{ __('Teljes összeg') }}: <span class="ml-5 text-3xl font-bold">{{ $order->total }} Ft</span></div>
                 </div>
             </div>
         </div>
