@@ -51,7 +51,7 @@
                         {{ $address->name }}
                             </option>
                         @empty
-                            <option value="">{{ __('Nincs mentet szállítási cím') }}</option>
+                            <option value="">{{ __('Nincs mentett szállítási cím') }}!</option>
                         @endforelse
                     </select>
                     @error('deliveryAddressId') <span class="error">{{ $message }}</span> @enderror
@@ -112,7 +112,8 @@
                                     </tr>
                                 @empty
                                     <tr class="bg-white">
-                                        <td class="px-6 py-4 text-3xl font-light text-gray-900 whitespace-nowrap">{{ __('Üres a kosara') }}.<a href="{{ route('pages.menu') }}" class="pl-2 text-gold">{{ __('Ide') }}</a> {{ __('kattintva már választhat is ételeink közül') }}.</td>
+                                        <td class="px-6 py-4 text-3xl font-light text-gray-900 whitespace-nowrap">{{ __('Üres a kosara') }}.<a href="{{ route('pages.menu') }}" class="pl-2 text-gold">{{ __('Ide kattintva már választhat is ételeink közül') }}.</a></td>
+                                    </tr>
                                     @endforelse
                             </tbody>
                         </table>

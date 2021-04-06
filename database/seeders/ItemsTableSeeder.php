@@ -1,5 +1,4 @@
 <?php
-
 namespace Database\Seeders;
 
 use App\Item;
@@ -16,8 +15,8 @@ class ItemsTableSeeder extends Seeder
      */
     public function run()
     {
-        $foods = config()->get('spaletta.foods');
-        //$foods = config()->get('spaletta.delivery-drinks');
+        //$foods = config()->get('spaletta.foods');
+        $foods = config()->get('spaletta.delivery-drinks');
         //$foods = config()->get('spaletta.summer-foods');
 
         foreach($foods as $item) {

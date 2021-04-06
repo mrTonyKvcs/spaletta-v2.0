@@ -89,7 +89,7 @@
                     </div>
                 </div>
             @empty
-                <p class="px-4 py-10 text-3xl text-center bg-gray-100 border-b border-gray-200 sm:px-6">{{ __('Kosár') }}!</p>
+                <p class="px-4 py-10 text-3xl text-center bg-gray-100 border-b border-gray-200 sm:px-6">{{ __('Üres a kosara') }}!</p>
             @endforelse
             @if (!empty($products))
                 <div class="flex items-center justify-between px-4 py-10 bg-gray-100 border-b border-gray-200 sm:px-6">

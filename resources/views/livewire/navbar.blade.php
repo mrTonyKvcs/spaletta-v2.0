@@ -72,16 +72,10 @@
               </button>
             </div>
             <div x-show="open" x-description="Profile dropdown panel, show/hide based on dropdown state." x-transition:enter="transition ease-out duration-75" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute left-0 py-1 mt-2 text-xl bg-white shadow-lg origin-top-left w-72 rounded-md ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="user-menu" style="display: none;">
-              <a href="{{ route('pages.user-orders') }}" class="block px-4 py-2 text-gray-700 hover:bg-gray-100" role="menuitem">Rendeléses</a>
-              <form method="POST" class="block px-4 py-2 text-2xl text-gray26 hover:bg-gray-100" action="{{ route('logout') }}">
+              <a href="{{ route('pages.user-orders') }}" class="block px-4 py-2 text-2xl text-gray-700 " role="menuitem">Rendeléses</a>
+              <form method="POST" class="block px-4 py-2" action="{{ route('logout') }}">
                   @csrf
-
-                    <x-jet-responsive-nav-link href="{{ route('logout') }}"
-                                             onclick="event.preventDefault();
-                                             this.closest('form').submit();">
-                      {{ __('Kijelenkezés') }}
-                    </x-jet-responsive-nav-link>
-
+                  <button class="text-2xl font-medium text-gray-700" type="submit">{{ __('Kijelenkezés') }}</button>
               </form>
             </div>
           </div> 
@@ -153,15 +147,15 @@
         <div class="mt-3">
           {{-- <a href="#" class="block px-4 py-3 font-medium hover:text-gray-800">Profil</a> --}}
           {{-- <a href="#" class="block px-4 py-3 font-medium hover:text-gray-800">Kijelenkezés</a> --}}
-            <a href="{{ route('pages.user-orders') }}" class="block px-4 py-2 text-white-700 hover:bg-gray-100" role="menuitem">Rendelések</a>
-          <form method="POST" class="block py-2" action="{{ route('logout') }}">
+          <a href="{{ route('pages.user-orders') }}" class="block px-4 py-2 text-white" role="menuitem">Rendelések</a>
+          <form method="POST" class="block py-2 px-4 text-2xl" action="{{ route('logout') }}">
               @csrf
-
-              <x-jet-responsive-nav-link href="{{ route('logout') }}"
+              <button class="text-white text-2xl font-medium" type="submit">{{ __('Kijelenkezés') }}</button>
+              {{-- <x-jet-responsive-nav-link href="{{ route('logout') }}"
                                          onclick="event.preventDefault();
                                          this.closest('form').submit();">
-                  <span class="text-2xl text-white">{{ __('Kijelenkezés') }}</span>
-              </x-jet-responsive-nav-link>
+                  <span class=" text-white">{{ __('Kijelenkezés') }}</span>
+              </x-jet-responsive-nav-link>--}}
           </form>
         </div>
       </div>

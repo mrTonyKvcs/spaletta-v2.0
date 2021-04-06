@@ -1,4 +1,5 @@
 <?php
+namespace Database\Seeders;
 
 use App\Models\Category;
 use Illuminate\Database\Seeder;
@@ -15,9 +16,13 @@ class CategoriesTableSeeder extends Seeder
         $categories = config()->get('spaletta.categories');
 
         foreach($categories as $category) {
-            $category['slug'] = Str::slug($category['name']);
+            $category['slug'] = \Str::slug($category['name']);
 
-            Category::updateOrCreate($category);
+            Category::updateOrCreate([
+                'type_id' => $category['type_id'],
+                'slug' => $category['slug'],
+                'name' => $category['name']
+            ]);
         }
     }
 }

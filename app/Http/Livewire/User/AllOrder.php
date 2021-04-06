@@ -15,7 +15,7 @@ class AllOrder extends Component
     public function render()
     {
         return view('livewire.user.all-orders', [
-                'orders' => Order::where('user_id', \Auth::user()->id)->where('created_at', 'like', '%' . $this->searchDate . '%')->orderByDesc('created_at')->paginate(5)
+                'orders' => Order::where('user_id', \Auth::user()->id)->where('created_at', 'like', '%' . $this->searchDate . '%')->orderByDesc('created_at')->get()
             ])
             ->layout('components.layout');
     }
