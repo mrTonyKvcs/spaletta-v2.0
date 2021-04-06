@@ -34,6 +34,10 @@ Route::group(
         ->name('pages.order')
         ->middleware('auth');
 
+    Route::get(LaravelLocalization::transRoute('routes.orders'), \App\Http\Livewire\User\AllOrder::class)
+        ->name('pages.user-orders')
+        ->middleware('auth');
+
     Route::get('cart', function () {
         return view('pages.cart');
     })->name('pages.cart');
@@ -44,23 +48,23 @@ Route::group(
 
     Route::get('asztalfoglalas', function () {
         return view('pages.reservation');
-    });
+    })->name('pages.reservation');
 
     Route::get('esemenyek', function () {
         return view('pages.events');
-    });
+    })->name('pages.events');
 
     Route::get('galeria', function () {
         return view('pages.gallery');
-    });
+    })->name('pages.gallery');
 
     Route::get('rolunk', function () {
         return view('pages.about');
-    });
+    })->name('pages.about');
 
     Route::get('kapcsolat', function () {
         return view('pages.contact');
-    });
+    })->name('pages.contact');
 
     Route::get('bejelentkezes', function () {
         return view('auth.sign-in');
@@ -89,10 +93,8 @@ Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
 //SendMails
 Route::post('uzenet-kuldes/{subject}', [
     'as'    => 'mail.store',
-    'uses' => 'SendMailsController@store'
+    'uses' => 'App\Http\Controllers\SendMailsController@store'
 ]);
-
-
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

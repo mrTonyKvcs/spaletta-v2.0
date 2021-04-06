@@ -31,7 +31,11 @@
             <div class="overflow-hidden bg-white shadow">
                 <div class="px-4 py-5 {{ $this->setTheColors('rendeles-kiszallitva') }} sm:p-6">
                     <div class="flex items-center justify-center text-3xl font-medium truncate">
-                        {{ __('Elkészült a rendelés') }}.  
+                        @if ($order->type->slug == 'kiszallitas')
+                            {{ __('A rendelése úton van') }}.
+                        @else
+                            {{ __('Elkészült a rendelés') }}.
+                        @endif
                     </div>
                 </div>
             </div>
@@ -58,7 +62,7 @@
                             <div class="flex justify-between mb-5 text-3xl">{{ $item->quantity . 'db ' . $item->product->name }} <span class="ml-5 text-3xl font-bold">{{ $item->product->price }} Ft</span></div>
                         @endforeach
                     </div>
-                    <div class="flex justify-between font-bold mb-5 text-3xl">{{ __('Teljes összeg') }}: <span class="ml-5 text-3xl font-bold">{{ $order->total }} Ft</span></div>
+                    <div class="flex justify-between mb-5 text-3xl font-bold">{{ __('Teljes összeg') }}: <span class="ml-5 text-3xl font-bold">{{ $order->total }} Ft</span></div>
                 </div>
             </div>
         </div>

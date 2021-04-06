@@ -6,43 +6,43 @@
             <a href="/"><img class="w-14 md:w-20" src="/images/logo/logo.png" alt="Spaletta-logo"></a>
           </div>
           
-          <div class="navbar hidden uppercase lg:flex items-center xl:space-x-2">
-            <a href="/menu" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
+          <div class="items-center hidden uppercase navbar lg:flex xl:space-x-2">
+            <a href="{{ route('pages.menu') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('Rendelés') }}
             </a>
-            <a href="/asztalfoglalas" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
+            <a href="{{ route('pages.reservation') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('Asztalfoglalás') }}
             </a>
-            <a href="/rendezvenyek" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
+            <a href="{{ route('pages.events') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('Rendezvények') }}
             </a>
-            <a href="/galeria" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
+            <a href="{{ route('pages.gallery') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('Galéria') }}
             </a>
-            <a href="/rolunk" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
+            <a href="{{ route('pages.about') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('Rólunk') }}
             </a>
-            <a href="/kapcsolat" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
+            <a href="{{ route('pages.contact') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('Kapcsolat') }}
             </a>
             
-            <div x-data="{ open: false }" @keydown.escape.stop="open = false" @click.away="open = false" class="ml-48 relative  inline-block text-right">
+            <div x-data="{ open: false }" @keydown.escape.stop="open = false" @click.away="open = false" class="relative inline-block ml-48 text-right">
               <div>
-                <button type="button" class="inline-flex items-center justify-center w-full px-4 py-2 xl:text-2xl font-medium text-gray-700 focus:outline-none" id="options-menu" aria-expanded="true" @click="open = !open" aria-haspopup="true" x-bind:aria-expanded="open">
+                <button type="button" class="inline-flex items-center justify-center w-full px-4 py-2 font-medium text-gray-700 xl:text-2xl focus:outline-none" id="options-menu" aria-expanded="true" @click="open = !open" aria-haspopup="true" x-bind:aria-expanded="open">
                   <img class="w-10" src="/images/flag/{{ LaravelLocalization::getCurrentLocale() }}.png" alt="">
                   <img x-show="!open" class="w-10" src="/images/svg/down-white.svg" alt="">
                   <img x-show="open" class="w-10" src="/images/svg/up-white.svg" alt="">
-                  {{-- <svg class="-mr-1 ml-2 h-5 w-5" x-description="Heroicon name: solid/chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  {{-- <svg class="w-5 h-5 ml-2 -mr-1" x-description="Heroicon name: solid/chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                   </svg> --}}
                 </button>
               </div>
           
-              <div x-description="Dropdown menu, show/hide based on menu state." x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="origin-top-right absolute right-0 mt-2 bg-white focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+              <div x-description="Dropdown menu, show/hide based on menu state." x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 mt-2 bg-white origin-top-right focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                   <div class="py-1" role="none">
                       @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                           @if (LaravelLocalization::getCurrentLocale() != $localeCode)
-                              <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}" class="block px-4 py-2 text-gray26 text-xl text-left hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+                              <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}" class="block px-4 py-2 text-xl text-left text-gray26 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
                                   {{ $properties['native'] }}
                               </a>
                           @endif
@@ -64,16 +64,16 @@
           @if (Auth::check())
           <div @click.away="open = false" class="relative ml-3" x-data="{ open: false }">
             <div>
-              <button @click="open = !open" class="flex focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 lg:pr-3 lg:border-r-2 border-white" id="user-menu" aria-haspopup="true" x-bind:aria-expanded="open">
+              <button @click="open = !open" class="flex border-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 lg:pr-3 lg:border-r-2" id="user-menu" aria-haspopup="true" x-bind:aria-expanded="open">
                 <img class="w-8" src="../images/svg/user.svg" alt="">
-                <div class="pl-2 pr-2 text-xl xl:text-2xl font-medium text-white align-bottom">{{ auth()->user()->name }}</div>
+                <div class="pl-2 pr-2 text-xl font-medium text-white align-bottom xl:text-2xl">{{ auth()->user()->name }}</div>
                 <img x-show="!open" class="w-8" src="/images/svg/down.svg" alt="">
                 <img x-show="open" class="w-8" src="/images/svg/up.svg" alt="">
               </button>
             </div>
             <div x-show="open" x-description="Profile dropdown panel, show/hide based on dropdown state." x-transition:enter="transition ease-out duration-75" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute left-0 py-1 mt-2 text-xl bg-white shadow-lg origin-top-left w-72 rounded-md ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="user-menu" style="display: none;">
-              {{-- <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100" role="menuitem">Profil</a> --}}
-              <form method="POST" class="block px-4 py-2 text-gray26 text-2xl hover:bg-gray-100" action="{{ route('logout') }}">
+              <a href="{{ route('pages.user-orders') }}" class="block px-4 py-2 text-gray-700 hover:bg-gray-100" role="menuitem">Rendeléses</a>
+              <form method="POST" class="block px-4 py-2 text-2xl text-gray26 hover:bg-gray-100" action="{{ route('logout') }}">
                   @csrf
 
                     <x-jet-responsive-nav-link href="{{ route('logout') }}"
@@ -86,7 +86,7 @@
             </div>
           </div> 
           <div class="ml-6">
-            <a href="/cart" class="flex justify-center w-7 xl:w-10 py-4 text-white px-7 lg:px-5  lg:py-14 lg:hover:text-gold">
+            <a href="/cart" class="flex justify-center py-4 text-white w-7 xl:w-10 px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
               <x-icon icon="cart" width=25 height=20 viewBox="20 20" strokeWidth=0 />
               @empty(!$cartTotal)
                   ({{ $cartTotal }})
@@ -96,7 +96,7 @@
           
         @else
         <div class="flex items-center">
-          <a href="{{ route('auth.signin') }}" class="pr-4 text-3xl text-white hover:text-gold border-r-2 border-white">{{ __('Bejelentkezés') }}</a>
+          <a href="{{ route('auth.signin') }}" class="pr-4 text-3xl text-white border-r-2 border-white hover:text-gold">{{ __('Bejelentkezés') }}</a>
           <a href="{{ route('auth.signin') }}" class="pl-4 text-3xl text-white hover:text-gold">{{ __('Regisztráció') }}</a>
         </div> 
         @endif
@@ -114,13 +114,13 @@
     <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'block': open, 'hidden': !open }" class="hidden text-2xl leading-tight text-white bg-gray26 md:text-3xl lg:hidden">
       <div class="pt-2 pb-3 text-2xl space-y-1">
         <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
-        <a href="/menu" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rendelés') }}</a>
-        <a href="/asztalfoglalas" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Asztalfoglalás') }}</a>
-        <a href="/rendezvenyek" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rendezvények') }}</a>
-        <a href="/galeria" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Galéria') }}</a>
-        <a href="/rolunk" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rólunk') }}</a>
-        <a href="/kapcsolat" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Kapcsolat') }}</a>
-        <div x-data="{ open: false }" @keydown.escape.stop="open = false" @click.away="open = false" class="relative py-3 pl-5 pr-4 inline-block text-right">
+        <a href="{{ route('pages.menu') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rendelés') }}</a>
+        <a href="{{ route('pages.reservation') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Asztalfoglalás') }}</a>
+        <a href="{{ route('pages.events') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rendezvények') }}</a>
+        <a href="{{ route('pages.gallery') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Galéria') }}</a>
+        <a href="{{ route('pages.about') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rólunk') }}</a>
+        <a href="{{ route('pages.contact') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Kapcsolat') }}</a>
+        <div x-data="{ open: false }" @keydown.escape.stop="open = false" @click.away="open = false" class="relative inline-block py-3 pl-5 pr-4 text-right">
           <div class="flex space-x-4">
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                 @if (LaravelLocalization::getCurrentLocale() != $localeCode)
@@ -153,6 +153,7 @@
         <div class="mt-3">
           {{-- <a href="#" class="block px-4 py-3 font-medium hover:text-gray-800">Profil</a> --}}
           {{-- <a href="#" class="block px-4 py-3 font-medium hover:text-gray-800">Kijelenkezés</a> --}}
+            <a href="{{ route('pages.user-orders') }}" class="block px-4 py-2 text-white-700 hover:bg-gray-100" role="menuitem">Rendelések</a>
           <form method="POST" class="block py-2" action="{{ route('logout') }}">
               @csrf
 
@@ -166,7 +167,7 @@
       </div>
       @else
       <div class="flex items-center justify-center py-2"> 
-          <a href="{{ route('auth.signin') }}" class="px-4 text-3xl text-white hover:text-gold border-r-2 border-white ">{{ __('Bejelentkezés') }}</a>
+          <a href="{{ route('auth.signin') }}" class="px-4 text-3xl text-white border-r-2 border-white hover:text-gold ">{{ __('Bejelentkezés') }}</a>
           <a href="{{ route('auth.signin') }}" class="px-4 text-3xl text-white hover:text-gold">{{ __('Regisztráció') }}</a>
       </div>
       @endif

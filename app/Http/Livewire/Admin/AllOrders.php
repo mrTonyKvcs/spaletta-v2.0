@@ -24,4 +24,9 @@ class AllOrders extends Component
     {
         return $this->searchDate = '';
     }
+
+    public function updateOrderStatus(Order $order, $statusId)
+    {
+        $order->statuses()->attach($statusId + 1, ['staff_id' => \Auth::user()->id]);
+    }
 }

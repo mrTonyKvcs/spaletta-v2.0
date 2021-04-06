@@ -3,7 +3,7 @@
     'emptyText' => ''
 ])
 
-<div class="mx-20 overflow-hidden bg-white shadow sm:rounded-md">
+<div class="overflow-hidden bg-white shadow md:mx-20 sm:rounded-md">
     <ul class="divide-y divide-gray-200">
         @forelse($data as $order)
             <li x-data="{show:false}">
@@ -18,6 +18,12 @@
                                             <circle cx="4" cy="4" r="3"></circle>
                                         </svg>
                                         {{ $order->type->name }}
+                                    </span>
+                                    <span class="inline-flex items-center px-3 py-0.5 ml-5 rounded-full text-2xl font-medium bg-gray2e text-white">
+                                        <svg class="-ml-1 mr-1.5 h-2 w-2 text-gold" fill="currentColor" viewBox="0 0 8 8">
+                                            <circle cx="4" cy="4" r="3"></circle>
+                                        </svg>
+                                        {{ $order->payment->name }}
                                     </span>
                                 </div>
                                 <div class="flex flex-col mt-2">
@@ -39,9 +45,15 @@
                             </div>
                             <div class="flex items-center text-3xl text-gray-500">
                                 @if ($order->statuses->last()->slug != 'rendeles-kiszallitva')
-                                    <button wire:click="updateOrderStatus({{ $order->id }}, {{ $order->statuses->last()->id }})" type="button" class="inline-flex items-center px-6 py-3 text-2xl font-bold text-white border border-gray-300 bg-gold shadow-sm rounded-md hover:bg-gray-50 hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                        {{ $order->statuses->last()->name }}
-                                    </button>
+                                    @if (!\Auth::user()->is_admin)
+                                        <a href="{{ route('pages.order', $order->id) }}" class="inline-flex items-center px-6 py-3 mt-10 text-2xl font-bold text-white border border-gray-300 md:mt-0 bg-gold shadow-sm rounded-md hover:bg-gray-50 hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                            {{ __('Rendelési adatlap') }}
+                                        </a>
+                                    @else
+                                        <button wire:click="updateOrderStatus({{ $order->id }}, {{ $order->statuses->last()->id }})" type="button" class="inline-flex items-center px-6 py-3 text-2xl font-bold text-white border border-gray-300 bg-gold shadow-sm rounded-md hover:bg-gray-50 hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                            {{ $order->statuses->last()->name }}
+                                        </button>
+                                    @endif
                                 @else
                                     <p class="text-2xl font-bold text-gold">Lezárt rendelés</p>
                                 @endif

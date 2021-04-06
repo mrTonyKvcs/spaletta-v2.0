@@ -30,9 +30,9 @@ class SendMailsController extends Controller
 
     public function validations(Request $request)
     {
-        $request->validate([
-            'g-recaptcha-response' => 'required|captcha'
-        ]);
+        // $request->validate([
+        //     'g-recaptcha-response' => 'required|captcha'
+        // ]);
 
         $request->validate([
             'name' => 'required',
