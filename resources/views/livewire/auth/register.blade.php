@@ -5,8 +5,8 @@
         <x-form.group livewire="true" label="{{ __('Teljes név') }}" name="name"></x-form.group>
         <x-form.group livewire="true"  label="{{ __('Telefonszám') }}" name="phoneNumber"></x-form.group>
         <x-form.group livewire="true"  label="{{ __('E-mail') }}" name="email" type="email"></x-form.group>
-        <x-form.group livewire="true"  label="{{ __('Jelszó') }}" name="password" type="password"></x-form.group>
-        <x-form.group livewire="true"  label="{{ __('Jelszó megismétlése') }}" name="password_confirmation" type="password"></x-form.group>
+        <x-form.group livewire="true"  label="{{ __('Jelszó') }}" name="regPassword" type="password"></x-form.group>
+        <x-form.group livewire="true"  label="{{ __('Jelszó megismétlése') }}" name="regPassword_confirmation" type="password"></x-form.group>
         <div class="text-center sm:col-span-2">
             <x-button>{{ __('Regisztráció') }}</x-button>
         </div>

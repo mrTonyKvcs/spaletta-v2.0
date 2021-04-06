@@ -11,14 +11,14 @@ class Register extends Component
     public $name;
     public $phoneNumber;
     public $email;
-    public $password;
-    public $password_confirmation;
+    public $regPassword;
+    public $regPassword_confirmation;
 
     protected $rules = [
         'name' => ['required', 'string', 'max:255'],
         'phoneNumber' => ['required', 'string', 'max:15'],
         'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-        'password' => ['required', 'confirmed'],
+        'regPassword' => ['required', 'confirmed'],
     ];
 
     public function render()
@@ -34,7 +34,7 @@ class Register extends Component
             'name' => $this->name,
             'phone_number' => $this->phoneNumber,
             'email' => $this->email,
-            'password' => Hash::make($this->password),
+            'password' => Hash::make($this->regPassword),
         ]);
 
         auth()->login($user);

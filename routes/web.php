@@ -30,7 +30,7 @@ Route::group(
     //     return view('pages.order', ['request' => $request]);
     // })->name('pages.order')->middleware('auth');
 
-    Route::get('rendeles/{order}', \App\Http\Livewire\Order::class)
+    Route::get(LaravelLocalization::transRoute('routes.orders') . '/{order}', \App\Http\Livewire\Order::class)
         ->name('pages.order')
         ->middleware('auth');
 
@@ -81,6 +81,9 @@ Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
     Route::get('/', function () {
         return view('pages.admin');
     })->name('admin');
+
+    Route::get('rendelesek', \App\Http\Livewire\Admin\AllOrders::class)
+        ->name('admin.orders');
 });
 
 //SendMails

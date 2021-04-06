@@ -21,19 +21,19 @@
                 
                 
                     <!-- Current: "bg-cyan-800 text-white", Default: "text-cyan-100 hover:text-white hover:bg-cyan-600" -->
-                    <a href="#" class="flex items-center px-2 py-2 text-base font-medium bg-cyan-800 group rounded-md" aria-current="page">
+                    <a href="{{ route('admin') }}" class="flex items-center px-2 py-2 text-base font-medium bg-cyan-800 group rounded-md" aria-current="page">
                     <svg class="w-6 h-6 mr-4 text-cyan-200" x-description="Heroicon name: outline/home" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
                     </svg>
-                    Home
+                        Kezdőlap
                     </a>
                 
                 
-                    <a href="#" class="flex items-center px-2 py-2 text-base font-medium text-cyan-100 hover:text-white hover:bg-cyan-600 group rounded-md">
+                    <a href="{{ route('admin.orders') }}" class="flex items-center px-2 py-2 text-base font-medium text-cyan-100 hover:text-white hover:bg-cyan-600 group rounded-md">
                     <svg class="w-6 h-6 mr-4 text-cyan-200" x-description="Heroicon name: outline/clock" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
-                    History
+                        Rendelések
                     </a>
             </div>
             </nav>
@@ -61,15 +61,15 @@
                     <svg class="w-6 h-6 mr-4 text-cyan-200" x-description="Heroicon name: outline/home" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
                     </svg>
-                    Home
+                    Kezdőlap
                   </a>
                 
                 
-                  <a href="#" class="flex items-center px-2 py-2 text-2xl font-medium group leading-6 rounded-md text-cyan-100 hover:text-gold hover:bg-cyan-600">
+                  <a href="{{ route('admin.orders') }}" class="flex items-center px-2 py-2 text-2xl font-medium group leading-6 rounded-md text-cyan-100 hover:text-gold hover:bg-cyan-600">
                     <svg class="w-6 h-6 mr-4 text-cyan-200" x-description="Heroicon name: outline/clock" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
-                    History
+                    Rendelések
                   </a>
             </div>
           </nav>
