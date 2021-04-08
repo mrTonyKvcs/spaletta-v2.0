@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Auth;
 
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Component;
 use App\Models\User;
