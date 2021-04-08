@@ -32,5 +32,8 @@
         </select> 
     </div>
 
-    <x-button type="gray">{{ __('Asztalfoglalás') }}</x-button>
+    <div class="col-span-2 flex items-center justify-center">
+        <x-button type="gray">{{ __('Asztalfoglalás') }}</x-button>
+    </div>
+    
 </form>

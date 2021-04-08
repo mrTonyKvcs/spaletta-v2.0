@@ -1,3 +1,13 @@
+@extends('layouts.app')
+
+@section('title') Kapcsolat @endsection
+
+@section('meta_data')
+    <meta name="description" content="A Spaletta Étterem Kecskeméten a Jókai utca 15. szám alatt található, további kérdéseiket várjuk üzenetben.">
+    <meta property="og:description" content="A Spaletta Étterem Kecskeméten a Jókai utca 15. szám alatt található, további kérdéseiket várjuk üzenetben.">
+    <meta property="og:url" content="https://spalettaetterem.com/kapcsolat"> 
+@endsection
+
 <x-layout>
     <x-header>
         {{ __('Kapcsolat') }}

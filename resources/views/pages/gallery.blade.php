@@ -1,3 +1,13 @@
+@extends('layouts.app')
+
+@section('title') Galéria @endsection
+
+@section('meta_data')
+    <meta name="description" content="A galéria betekintés nyújt a Spaletta Étterem világába. A étterem mellett ételekről,italakról,eseményekről,hangulatos teraszunkról és a sörházról is talál képeket.">
+    <meta property="og:description" content="A galéria betekintés nyújt a Spaletta Étterem világába. A étterem mellett ételekről,italakról,eseményekről,hangulatos teraszunkról és a sörházról is talál képeket.">
+    <meta property="og:url" content="https://spalettaetterem.com/galeria"> 
+@endsection
+
 <x-layout>
     <x-header background="gallery">
         Galéria

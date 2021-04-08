@@ -6,7 +6,7 @@
             <a href="/"><img class="w-14 md:w-20" src="/images/logo/logo.png" alt="Spaletta-logo"></a>
           </div>
           
-          <div class="items-center hidden uppercase navbar lg:flex xl:space-x-2">
+          <div class="items-center hidden uppercase navbar xl:flex xl:space-x-2">
             <a href="{{ route('pages.menu') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('Rendelés') }}
             </a>
@@ -53,14 +53,14 @@
           </div>
         </div>
 
-        <a href="/cart" class="flex justify-center lg:hidden w-7 xl:w-10 text-gold lg:text-white lg:px-5 lg:py-14 lg:hover:text-gold">
+        <a href="/cart" class="flex justify-center xl:hidden w-7 xl:w-10 text-gold lg:text-white lg:px-5 lg:py-14 lg:hover:text-gold">
           <x-icon icon="cart" width=28 height=23 viewBox="20 20" strokeWidth=0 />
         @empty(!$cartTotal)
             ({{ $cartTotal }})
         @endempty
         </a>
         
-        <div class="hidden lg:ml-6 lg:flex lg:items-center">
+        <div class="hidden xl:ml-6 xl:flex xl:items-center">
           @if (Auth::check())
           <div @click.away="open = false" class="relative ml-3" x-data="{ open: false }">
             <div>
@@ -95,9 +95,9 @@
         </div> 
         @endif
         </div>
-        <div class="flex items-center order-first lg:hidden">
+        <div class="flex items-center order-first xl:hidden">
           <!-- Mobile menu button -->
-              <button @click=" open = !open" class="lg:hidden focus:outline-none">
+              <button @click=" open = !open" class="xl:hidden focus:outline-none">
                   <img x-show="!open" class="z-20 w-14 md:w-20" src="/images/svg/menu.svg" alt="">
                   <img x-show="open" class="z-20 w-14 md:w-20" src="/images/svg/close.svg" alt="">
               </button>
@@ -105,8 +105,8 @@
       </div>
     </div>
 
-    <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'block': open, 'hidden': !open }" class="hidden text-2xl leading-tight text-white bg-gray26 md:text-3xl lg:hidden">
-      <div class="pt-2 pb-3 text-2xl space-y-1">
+    <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'block': open, 'hidden': !open }" class="hidden text-2xl leading-tight text-white bg-gray26 md:text-3xl xl:hidden">
+      <div class="pt-2 pb-3 text-2xl lg:text-4xl space-y-1">
         <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
         <a href="{{ route('pages.menu') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rendelés') }}</a>
         <a href="{{ route('pages.reservation') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Asztalfoglalás') }}</a>
@@ -119,7 +119,7 @@
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                 @if (LaravelLocalization::getCurrentLocale() != $localeCode)
                     <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
-                        <img class="w-12 h-6" src="/images/flag/{{ $localeCode }}.png" alt="">
+                        <img class="w-12 lg:w-14 h-6 lg:h-8" src="/images/flag/{{ $localeCode }}.png" alt="">
                     </a>
                 @endif
             @endforeach

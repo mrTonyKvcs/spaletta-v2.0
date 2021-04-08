@@ -1,3 +1,13 @@
+@extends('layouts.app')
+
+@section('title') Kezdőlap @endsection
+
+@section('meta_data')
+    <meta name="description" content="A Spaletta Étterem hetente frissülő menü ajánlattal, online asztalfoglalási lehetőséggel várja vendégeit keddtől vasárnapig.">
+    <meta property="og:description" content="A Spaletta Étterem hetente frissülő menü ajánlattal, online asztalfoglalási lehetőséggel várja vendégeit keddtől vasárnapig.">
+    <meta property="og:url" content="https://spalettaetterem.com/"> 
+@endsection
+
 <x-layout>
     <div class="w-auto relative">
         <div class="w-full flex flex-col justify-center items-center py-72 px-6 bg-transparent text-white">
@@ -42,7 +52,6 @@
     <x-section>
         <x-title text="Spaletta" title="{{ __('Asztalfoglalás') }}" price=""></x-title>
         <x-reservation></x-reservation>
-        <x-button><a href="/asztalfoglalas">{{ __('Asztalfoglalás') }}</a></x-button>
     </x-section>
     <x-section background="home-about">
         <div class="md:grid md:grid-cols-2">
