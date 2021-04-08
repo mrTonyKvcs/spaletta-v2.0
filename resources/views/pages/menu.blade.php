@@ -1,6 +1,6 @@
 <x-layout>
     <x-header background="menu">
-        {{ __('Menü') }}
+        {{ __('Rendelés') }}
     </x-header>
     <livewire:products></livewire>
 </x-layout>

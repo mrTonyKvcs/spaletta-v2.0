@@ -38,35 +38,35 @@ Route::group(
         ->name('pages.user-orders')
         ->middleware('auth');
 
-    Route::get('cart', function () {
+    Route::get(LaravelLocalization::transRoute('routes.cart'), function () {
         return view('pages.cart');
     })->name('pages.cart');
 
-    Route::get('menu', function () {
+    Route::get(LaravelLocalization::transRoute('routes.order'), function () {
         return view('pages.menu');
     })->name('pages.menu');
 
-    Route::get('asztalfoglalas', function () {
+    Route::get(LaravelLocalization::transRoute('routes.reservation'), function () {
         return view('pages.reservation');
     })->name('pages.reservation');
 
-    Route::get('esemenyek', function () {
+    Route::get(LaravelLocalization::transRoute('routes.events'), function () {
         return view('pages.events');
     })->name('pages.events');
 
-    Route::get('galeria', function () {
+    Route::get(LaravelLocalization::transRoute('routes.gallery'), function () {
         return view('pages.gallery');
     })->name('pages.gallery');
 
-    Route::get('rolunk', function () {
+    Route::get(LaravelLocalization::transRoute('routes.about'), function () {
         return view('pages.about');
     })->name('pages.about');
 
-    Route::get('kapcsolat', function () {
+    Route::get(LaravelLocalization::transRoute('routes.contact'), function () {
         return view('pages.contact');
     })->name('pages.contact');
 
-    Route::get('bejelentkezes', function () {
+    Route::get(LaravelLocalization::transRoute('routes.signin'), function () {
         return view('auth.sign-in');
     })->name('auth.signin');
 

@@ -88,6 +88,31 @@ html {
     background-image: url('../images/menu-bg.jpg');
 }
 
+.bg-zoom {
+    -webkit-animation: test 10s;
+    animation: test 10s;
+}
+
+@-webkit-keyframes test {
+    0%,
+    100% {
+        background-size: 125%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+@keyframes test {
+    0%,
+    100% {
+        background-size: 125%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
 video {
     width: 100vw;
     height: 110%;
