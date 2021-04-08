@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Asztalfoglalás @endsection
+@section('title') {{ __('Asztalfoglalás') }} @endsection
 
 @section('meta_data')
     <meta name="description" content="Foglaljon asztalt online vagy telefonon a kecskeméti Spaletta Étterembe, várunk mindenkit sok szeretettel.">

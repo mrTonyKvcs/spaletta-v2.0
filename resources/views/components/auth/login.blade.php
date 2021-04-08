@@ -1,3 +1,13 @@
+@extends('layouts.app')
+
+@section('title') {{ __('Bejelentkezés') }} @endsection
+
+@section('meta_data')
+    <meta name="description" content="Egyszerű regisztráció és egy gyors bejelenkezés után haza rendelheti a Spaletta Étterem ízeit.">
+    <meta property="og:description" content="Egyszerű regisztráció és egy gyors bejelenkezés után haza rendelheti a Spaletta Étterem ízeit.">
+    <meta property="og:url" content="https://spalettaetterem.com/bejelentkezes"> 
+@endsection
+
 <div>
     <h2 class="mb-12 text-5xl font-light text-center uppercase text-gold">{{ __('Bejelentkezés') }}</h2>
 

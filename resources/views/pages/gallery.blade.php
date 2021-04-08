@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Galéria @endsection
+@section('title') {{ __('Galéria') }} @endsection
 
 @section('meta_data')
     <meta name="description" content="A galéria betekintés nyújt a Spaletta Étterem világába. A étterem mellett ételekről,italakról,eseményekről,hangulatos teraszunkról és a sörházról is talál képeket.">
@@ -10,7 +10,7 @@
 
 <x-layout>
     <x-header background="gallery">
-        Galéria
+        {{ __('Galéria') }}
     </x-header>
     <x-section>
       <div x-data="{ openTab: 1 }" class="p-6">

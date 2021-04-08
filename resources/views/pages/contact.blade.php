@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Kapcsolat @endsection
+@section('title') {{ __('Kapcsolat') }} @endsection
 
 @section('meta_data')
     <meta name="description" content="A Spaletta Étterem Kecskeméten a Jókai utca 15. szám alatt található, további kérdéseiket várjuk üzenetben.">

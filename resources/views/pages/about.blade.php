@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Rólunk @endsection
+@section('title') {{ __('Rólunk') }} @endsection
 
 @section('meta_data')
     <meta name="description" content="Fura hullámokat vet az élet. Soha nem gondoltam volna, hogy éttermet fogunk vezetni. Eddig az élet teljesen más területén dolgoztunk, dolgozunk és bár gyermekkorom nyarait régi vendéglátós család szülöttjeként hol fagylaltosfiúként, hol pultosként töltöttem-közben leendő feleségem palacsintát sütött...">

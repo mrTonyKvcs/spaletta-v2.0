@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Rendelés @endsection
+@section('title') {{ __('Rendelés') }} @endsection
 
 @section('meta_data')
     <meta name="description" content="A Spaletta Étterem a kialakult helyzet miatt kiszállításos étlappal, és itallappal jelentkezik. Várjuk megrendelésüket, házhoz visszük a Spaletta ízeket!">

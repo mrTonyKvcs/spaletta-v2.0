@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Rendezvények @endsection
+@section('title') {{ __('Rendezvények') }} @endsection
 
 @section('meta_data')
     <meta name="description" content="A Spaletta Étteremben vacsora, színházi esteket és számtalan változatos rendezvényekkel készül a vendégei számára.">
