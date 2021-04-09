@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title') Kezdőlap{{ __('Kezdőlap') }} @endsection
+@section('title') {{ __('Kezdőlap') }} @endsection
 
 @section('meta_data')
-    <meta name="description" content="A Spaletta Étterem hetente frissülő menü ajánlattal, online asztalfoglalási lehetőséggel várja vendégeit keddtől vasárnapig.">
-    <meta property="og:description" content="A Spaletta Étterem hetente frissülő menü ajánlattal, online asztalfoglalási lehetőséggel várja vendégeit keddtől vasárnapig.">
+    <meta name="description" content="{{ __('A Spaletta Étterem hetente frissülő menü ajánlattal, online asztalfoglalási lehetőséggel várja vendégeit keddtől vasárnapig.') }}">
+    <meta property="og:description" content="{{ __('A Spaletta Étterem hetente frissülő menü ajánlattal, online asztalfoglalási lehetőséggel várja vendégeit keddtől vasárnapig.') }}">
     <meta property="og:url" content="https://spalettaetterem.com/"> 
 @endsection
 

@@ -3,8 +3,8 @@
 @section('title') {{ __('Bejelentkezés') }} @endsection
 
 @section('meta_data')
-    <meta name="description" content="Egyszerű regisztráció és egy gyors bejelenkezés után haza rendelheti a Spaletta Étterem ízeit.">
-    <meta property="og:description" content="Egyszerű regisztráció és egy gyors bejelenkezés után haza rendelheti a Spaletta Étterem ízeit.">
+    <meta name="description" content="Egyszerű regisztráció és egy gyors bejelenkezés után haza rendelheti a Spaletta Étterem ízeit. Várjuk megrendeléseiket.">
+    <meta property="og:description" content="Egyszerű regisztráció és egy gyors bejelenkezés után haza rendelheti a Spaletta Étterem ízeit. Várjuk megrendeléseiket.">
     <meta property="og:url" content="https://spalettaetterem.com/bejelentkezes"> 
 @endsection
 

@@ -19,14 +19,14 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
 <body >
-    <header>
+    {{-- <header>
         @include('partials.navbar')
     </header>
     <main>
         @yield('content')
     </main>
     <footer>
-        {{-- @include('partials.footer') --}}
-    </footer>
+        @include('partials.footer')
+    </footer> --}}
 </body>
 </html>
