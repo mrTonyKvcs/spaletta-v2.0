@@ -49,7 +49,7 @@
 
                 @forelse($category->items as $item)
                     <div class="mb-32">
-                        <div class="flex items-center justify-between w-full py-6 text-2xl border-b border-gray-200 md:w-11/12 text-gray48 hover:border-gray48 focu:outline-none">
+                        <div class="flex items-center justify-between w-full py-6 text-2xl border-b border-gray-200 md:w-11/12 text-gray48 hover:border-gray48 focu:outline-none transition duration-300 ease-in">
                             <p>{{ $item->name }}</p>
                             <div class="flex">
                                 <p>{{ $item->price }} Ft</p>

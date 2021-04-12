@@ -29,7 +29,10 @@ html {
 }
 
 .home-services {
-    background-image: url('../images/service.jpg');
+    background-image: url('../images/service2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 
 .filter {
@@ -45,7 +48,11 @@ html {
 }
 
 .home-about {
-    background-image: url('../images/home-about.jpg');
+    background-image: url('../images/home-about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
 
 .light-gray-bg {

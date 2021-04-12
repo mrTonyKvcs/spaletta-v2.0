@@ -12,6 +12,6 @@
 
 ])
 
-<button @if ($submit) type="submit"  @endif {{ $attributes->merge(['class' => "{$colors[$type]} inline-flex font-medium items-center pt-3.5 px-8 xl:px-10 pb-2.5  uppercase shadow-sm focus:outline-none"]) }}>
+<button @if ($submit) type="submit"  @endif {{ $attributes->merge(['class' => "{$colors[$type]} inline-flex font-medium items-center pt-3.5 px-8 xl:px-10 pb-2.5 transition duration-300 ease-in uppercase shadow-sm focus:outline-none"]) }}>
     {{ $slot }}
 </button>

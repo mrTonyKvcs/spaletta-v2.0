@@ -11,7 +11,7 @@
 <x-layout>
     <div class="w-auto relative">
         <div class="w-full flex flex-col justify-center items-center py-72 px-6 bg-transparent text-white">
-            <h1 class="uppercase text-4xl mb-8 text-gold font-semibold z-20">spaletta kecskemét</h1>
+            <h1 class="uppercase text-4xl mb-8 text-gold font-semibold z-20">{{ __('Spaletta kecskemét') }}</h1>
             <p class="uppercase text-6xl text-center mb-4 z-20">{{ __('Étterem és sörház') }}</p>
             <p class="text-2xl mb-4 z-20">6000 Kecskemét, Jókai utca 15.</p>
             <div class="flex flex-col items-center  md:flex-row  text-3xl mb-4 xl:mb-10">
@@ -26,7 +26,7 @@
             </div>
             <x-button class="z-20" type="transparent"><a href="/menu">{{ __('Ételrendelés') }}</a></x-button>
         </div>
-        <video poster="../images/chefs.jpg" autoplay playsinline muted loop>
+        <video poster="../images/gallery-bg.jpg" autoplay playsinline muted loop>
             <source src="../videos/spaletta-video.mp4" type="video/webm">
             <source src="../videos/spaletta-video.mp4" type="video/mp4">
         </video>
@@ -42,7 +42,7 @@
         </div>
     </x-section>
     <x-section background="home-services">
-        <div class=" space-x-4 lg:space-x-0 lg:grid lg:grid-cols-4 lg:gap-12">
+        <div class=" space-x-4 lg:space-x-0 md:grid md:grid-cols-2 gap-12 lg:grid lg:grid-cols-4 lg:gap-12">
             <x-card type="link" path="/images/home-menu.png" route="/menu">{{ __('Étlap') }}</x-card>
             <x-card type="link" path="/images/drinks.png" route="/menu">{{ __('Itallap') }}</x-card>
             <x-card type="link" path="/images/home-reservations.png" route="/menu"> {{ __('Asztalfoglalás') }}</x-card>
@@ -55,10 +55,10 @@
     </x-section>
     <x-section background="home-about">
         <div class="md:grid md:grid-cols-2">
-            <div class="flex justify-end lg:mr-24">
+            <div class="flex justify-end sm:mr-6 lg:mr-24">
                 <img src="../images/chefs.jpg" class="border-yellow-300 border-2 " alt="">
             </div>
-            <div class="bg-white bg-opacity-75 w-full py-8 px-6 mt-4 lg:mt-0 flex flex-col items-center">
+            <div class="bg-white bg-opacity-75 w-full py-8 px-6 mt-4 sm:mt-0 flex flex-col items-center">
                 <p class="text-3xl font-medium gold font-libre italic">{{ __('Rólunk') }}</p>
                 <h2 class="text-gray2e text-5xl font-semibold uppercase text-center">{{ __('Bemutatkozunk') }}</h2>
                 <p class="text-2xl gray font-medium pt-10">{{ __('Fura hullámokat vet az élet. Soha nem gondoltam volna, hogy éttermet fogunk vezetni. Eddig az élet teljesen más területén dolgoztunk, dolgozunk és bár gyermekkorom nyarait régi vendéglátós család szülöttjeként hol fagylaltosfiúként, hol pultosként töltöttem-közben leendő feleségem palacsintát sütött egy lakókocsiban a vágyott Adidas cipőért- nem is álmodtunk efféle karrierről.') }}</p>
