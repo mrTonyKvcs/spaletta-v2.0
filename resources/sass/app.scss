@@ -29,10 +29,19 @@ html {
 }
 
 .home-services {
-    background-image: url('../images/service2.png');
+    background-image: url('../images/service.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    @media only screen and (min-width: 640px) {
+        background-image: url('../images/service-md.png');
+    }
+    @media only screen and (min-width: 1024px) {
+        background-image: url('../images/service-lg.png');
+    }
+    @media only screen and (min-width: 1280px) {
+        background-image: url('../images/service-xl.png');
+    }
 }
 
 .filter {
@@ -53,6 +62,15 @@ html {
     background-size: cover;
     background-position: center;
     width: 100%;
+    @media only screen and (min-width: 640px) {
+        background-image: url('../images/home-about-md.png');
+    }
+    @media only screen and (min-width: 1024px) {
+        background-image: url('../images/home-about-lg.png');
+    }
+    @media only screen and (min-width: 1280px) {
+        background-image: url('../images/home-about-xl.png');
+    }
 }
 
 .light-gray-bg {

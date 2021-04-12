@@ -26,7 +26,7 @@ function run() {
 }
 
 function setUpQuery() {
-  const api = 'https://www.googleapis.com/pagespeedonline/v5/runPagespeed&key=AIzaSyA5UVz9iQwFM5zDEfOVviNptQLiDsBz7Jw';
+  const api = 'https://www.googleapis.com/pagespeedonline/v5/runPagespeed&key=AIzaSyCXg-K3EQMVUo8WJs1jEtj6COVfaIoEx5o';
   const parameters = {
     url: encodeURIComponent('https://developers.google.com')
   };

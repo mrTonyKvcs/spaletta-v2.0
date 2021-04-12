@@ -35,7 +35,7 @@
             }
         </script>
         @livewireScripts
-        {{-- @include('./partials.page-speed') --}}
+        @include('./partials.page-speed')
     </head>
 <body>
     <header>

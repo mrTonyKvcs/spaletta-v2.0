@@ -3,8 +3,8 @@
       <div class="flex items-center justify-between lg:h-32">
         <div class="flex">
           <div class="flex items-center flex-shrink-0 lg:mr-6">
-            <a href="/" class="md:hidden"><img height="35" width="35" src="/images/logo/logo.png" alt="Spaletta-logo"></a>
-            <a href="/" class="hidden md:block"><img height="50" width="50" src="/images/logo/logo.png" alt="Spaletta-logo"></a>
+            <a href="/" class="md:hidden"><img height="35" width="35" src="/images/logo/logo.png" alt="Spaletta-logo" title="Spaletta-logo"></a>
+            <a href="/" class="hidden md:block"><img height="50" width="50" src="/images/logo/logo.png" alt="Spaletta-logo" title="Spaletta-logo"></a>
           </div>
           
           <div class="items-center hidden uppercase navbar xl:flex xl:space-x-2">
