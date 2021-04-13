@@ -38,7 +38,7 @@
             <x-title title="{{ __('Hétvégi Menük') }}" text="2021.02.06 - 2021.02.07." price="2600 Ft"></x-title>
             <x-weekend-menu></x-weekend-menu>
             <p class="text-xl">{{ __('(Az ár nem tartalmaza a csomagolás díját)') }}</p>
-            <x-button><a href="/menu">{{ __('Étlap') }}</a></x-button>
+            <x-button><a href="{{ route('pages.menu') }}">{{ __('Étlap') }}</a></x-button>
         </div>
     </x-section>
     <x-section background="home-services">

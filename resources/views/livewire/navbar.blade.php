@@ -3,10 +3,21 @@
       <div class="flex items-center justify-between lg:h-32">
         <div class="flex">
           <div class="flex items-center flex-shrink-0 lg:mr-6">
-            <a href="/" class="md:hidden"><img height="35" width="35" src="/images/logo/logo.png" alt="Spaletta-logo" title="Spaletta-logo"></a>
-            <a href="/" class="hidden md:block"><img height="50" width="50" src="/images/logo/logo.png" alt="Spaletta-logo" title="Spaletta-logo"></a>
+            {{-- <a href="/" class="md:hidden"><img height="35" width="35" src="/images/logo/logo.png" alt="Spaletta-logo" title="Spaletta-logo"></a>
+            <a href="/" class="hidden md:block"><img height="50" width="50" src="/images/logo/logo-xl.png" alt="Spaletta-logo" title="Spaletta-logo"></a> --}}
+            <a href="/" class="md:hidden">
+              <picture height="35" width="35" alt="Spaletta-logo" title="Spaletta-logo">
+                <source srcset="/images/logo/logo.webp" type="image/webp"></source>
+                <img src="/images/logo/logo.png">
+              </picture>
+            </a>
+            <a href="/" class="hidden md:block">
+              <picture height="50" width="50" alt="Spaletta-logo" title="Spaletta-logo">
+                <source srcset="/images/logo/logo-xl.webp" type="image/webp"></source>
+                <img src="/images/logo/logo-xl.png">
+              </picture>
+            </a>
           </div>
-          
           <div class="items-center hidden uppercase navbar xl:flex xl:space-x-2">
             <a href="{{ route('pages.menu') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
                 {{ __('Rendelés') }}
@@ -30,9 +41,9 @@
             <div x-data="{ open: false }" @keydown.escape.stop="open = false" @click.away="open = false" class="relative inline-block ml-48 text-right">
               <div>
                 <button type="button" class="inline-flex items-center justify-center w-full px-4 py-2 font-medium text-gray-700 xl:text-2xl focus:outline-none transition duration-300 ease-in" id="options-menu" aria-expanded="true" @click="open = !open" aria-haspopup="true" x-bind:aria-expanded="open">
-                  <img class="w-10" src="/images/flag/{{ LaravelLocalization::getCurrentLocale() }}.png" alt="">
-                  <img x-show="!open" class="w-10" src="/images/svg/down-white.svg" alt="">
-                  <img x-show="open" class="w-10" src="/images/svg/up-white.svg" alt="">
+                  <img class="w-10" height="25" width="13" src="/images/flag/{{ LaravelLocalization::getCurrentLocale() }}.png" alt="flag" title="flag" >
+                  <img x-show="!open" class="w-10" height="25" width="25" src="/images/svg/down-white.svg" alt="">
+                  <img x-show="open" class="w-10" height="25" width="25" src="/images/svg/up-white.svg" alt="">
                   {{-- <svg class="w-5 h-5 ml-2 -mr-1" x-description="Heroicon name: solid/chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                   </svg> --}}
