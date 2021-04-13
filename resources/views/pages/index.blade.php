@@ -43,10 +43,10 @@
     </x-section>
     <x-section background="home-services">
         <div class=" space-x-4 lg:space-x-0 md:grid md:grid-cols-2 gap-12 lg:grid lg:grid-cols-4 lg:gap-12">
-            <x-card type="link" path="/images/home-menu.png" route="/menu" alt="spaletta" title="spaletta">{{ __('Étlap') }}</x-card>
-            <x-card type="link" path="/images/drinks.png" route="/menu" alt="drinks" title="drinks">{{ __('Itallap') }}</x-card>
-            <x-card type="link" path="/images/home-reservations.png" route="/menu" alt="reservation" title="reservation"> {{ __('Asztalfoglalás') }}</x-card>
-            <x-card type="link" path="/images/events.png" route="/menu" alt="events" title="events">{{ __('Rendezvények') }}</x-card>
+            <x-card type="link" path="/images/home-menu.png" route="{{ route('pages.menu') }}" alt="spaletta" title="spaletta">{{ __('Étlap') }}</x-card>
+            <x-card type="link" path="/images/drinks.png" route="{{ route('pages.menu') }}" alt="drinks" title="drinks">{{ __('Itallap') }}</x-card>
+            <x-card type="link" path="/images/home-reservations.png" route="{{ route('pages.reservation') }}" alt="reservation" title="reservation"> {{ __('Asztalfoglalás') }}</x-card>
+            <x-card type="link" path="/images/events.png" route="{{ route('pages.events') }}" alt="events" title="events">{{ __('Rendezvények') }}</x-card>
         </div>
     </x-section>
     <x-section>
@@ -56,7 +56,7 @@
     <x-section background="home-about">
         <div class="md:grid md:grid-cols-2">
             <div class="flex justify-end sm:mr-6 lg:mr-24">
-                <img src="../images/chefs.png" class="border-yellow-300 border-2 md:hidden"  alt="chefs" title="chefs">
+                <img src="../images/chefs.png" class="border-yellow-300 border-2 md:hidden" width="381" height="256"  alt="chefs" title="chefs">
                 <img src="../images/chefs-md.png" class="border-yellow-300 border-2 hidden md:block lg:hidden " width="354" height="417" alt="chefs" title="chefs">
                 <img src="../images/chefs-md.png" class="border-yellow-300 border-2 hidden lg:block xl:hidden" width="437" height="351" alt="chefs" title="chefs">
                 <img src="../images/chefs-md.png" class="border-yellow-300 border-2 hidden xl:block" width="490" height="329" alt="chefs" title="chefs">

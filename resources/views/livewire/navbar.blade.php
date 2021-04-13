@@ -54,7 +54,7 @@
           </div>
         </div>
 
-        <a href="/cart" class="flex justify-center xl:hidden w-7 xl:w-10 text-gold lg:text-white lg:px-5 lg:py-14 lg:hover:text-gold">
+        <a href="{{ route('pages.cart') }}" class="flex justify-center xl:hidden w-7 xl:w-10 text-gold lg:text-white lg:px-5 lg:py-14 lg:hover:text-gold">
           <x-icon icon="cart" width=28 height=23 viewBox="20 20" strokeWidth=0 />
         @empty(!$cartTotal)
             ({{ $cartTotal }})
@@ -81,7 +81,7 @@
             </div>
           </div> 
           <div class="ml-6">
-            <a href="/cart" class="flex justify-center py-4 text-white w-7 xl:w-10 px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
+            <a href="{{ route('pages.cart') }}" class="flex justify-center py-4 text-white w-7 xl:w-10 px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
               <x-icon icon="cart" width=25 height=20 viewBox="20 20" strokeWidth=0 />
               @empty(!$cartTotal)
                   ({{ $cartTotal }})
