@@ -24,7 +24,7 @@
                     <a href="tel:+36 76 614 744">+36 76 614 744</a>
                 </div>
             </div>
-            <x-button class="z-20" type="transparent"><a href="/menu">{{ __('Ételrendelés') }}</a></x-button>
+            <x-button class="z-20" type="transparent"><a href="{{ route('pages.menu') }}">{{ __('Ételrendelés') }}</a></x-button>
         </div>
         <video poster="../images/gallery-bg.jpg" autoplay playsinline muted loop>
             <source src="../videos/spaletta-video.mp4" type="video/webm">
