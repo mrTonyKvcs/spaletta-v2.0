@@ -16,11 +16,11 @@
             <p class="text-2xl mb-4 z-20">6000 Kecskemét, Jókai utca 15.</p>
             <div class="flex flex-col items-center  md:flex-row  text-3xl mb-4 xl:mb-10">
                 <div class="flex items-center mb-4 md:mb-0 md:mr-6 z-20">
-                    <img class="w-10 pr-2" src="../images/svg/mobile.svg" alt="">
+                    <img class="w-10 pr-2" src="../images/svg/mobile.svg" alt="mobile-icon">
                     <a href="tel:+36 20 219 99 75" class="">+36 20 219 99 75</p>
                 </div>
                 <div class="flex items-center z-20">
-                    <img class="w-10 pr-2" src="../images/svg/phone.svg" alt="">
+                    <img class="w-10 pr-2" src="../images/svg/phone.svg" alt="phone-icon">
                     <a href="tel:+36 76 614 744">+36 76 614 744</a>
                 </div>
             </div>

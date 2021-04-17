@@ -19,6 +19,8 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
+        <link rel="shortcut icon" type="image/x-icon" href="{{ URL::to('/') . '/favicon.ico' }}" />
+
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
@@ -35,7 +37,6 @@
             }
         </script>
         @livewireScripts
-        @include('./partials.page-speed')
     </head>
 <body>
     <header>

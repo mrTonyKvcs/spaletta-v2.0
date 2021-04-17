@@ -6,15 +6,15 @@
             {{-- <a href="/" class="md:hidden"><img height="35" width="35" src="/images/logo/logo.png" alt="Spaletta-logo" title="Spaletta-logo"></a>
             <a href="/" class="hidden md:block"><img height="50" width="50" src="/images/logo/logo-xl.png" alt="Spaletta-logo" title="Spaletta-logo"></a> --}}
             <a href="/" class="md:hidden">
-              <picture height="35" width="35" alt="Spaletta-logo" title="Spaletta-logo">
+              <picture>
                 <source srcset="/images/logo/logo.webp" type="image/webp"></source>
-                <img src="/images/logo/logo.png">
+                <img src="/images/logo/logo.png" height="35" width="35" alt="Spaletta-logo" title="Spaletta-logo">
               </picture>
             </a>
             <a href="/" class="hidden md:block">
-              <picture height="50" width="50" alt="Spaletta-logo" title="Spaletta-logo">
+              <picture>
                 <source srcset="/images/logo/logo-xl.webp" type="image/webp"></source>
-                <img src="/images/logo/logo-xl.png">
+                <img src="/images/logo/logo-xl.png" height="50" width="50" alt="Spaletta-logo" title="Spaletta-logo">
               </picture>
             </a>
           </div>
