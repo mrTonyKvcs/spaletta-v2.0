@@ -2,7 +2,8 @@
 
 return [
     'title'     => 'heti menü',
-    'sub_title' => '2021.03.02 - 2021.03.07.',
+    'menu-date' => '2021.03.02 - 2021.03.07.',
+    'weekend-date' => '2021.03.02 - 2021.03.07.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
@@ -22,20 +23,22 @@ return [
             ]
         ],
     ],
-    'saturday-menu' => [
-        'name'  => 'Szombati menü',
-        'items' => [
-            'Minestrone leves (G, L)',
-            'Töltött csirkecomb – petrezselymes burgonya (L)',
-            'Puncsszelet'
-        ]
-    ],
-    'sunday-menu' => [
-        'name'  => 'Vasárnapi menü',
-        'items' => [
-            'Sütőtök krémleves bacon chips (G, L)',
-            'Sous - vide csirkemell – friss kevertsaláta (G, L)',
-            'Csokis narancsos palacsinta'
+    'weekendmenu' => [
+        'saturday-menu' => [
+            'name'  => 'Szombati menü',
+            'items' => [
+                'Minestrone leves (G, L)',
+                'Töltött csirkecomb – petrezselymes burgonya (L)',
+                'Puncsszelet'
+            ]
+        ],
+        'sunday-menu' => [
+            'name'  => 'Vasárnapi menü',
+            'items' => [
+                'Sütőtök krémleves bacon chips (G, L)',
+                'Sous - vide csirkemell – friss kevertsaláta (G, L)',
+                'Csokis narancsos palacsinta'
+            ]
         ]
     ]
 ];

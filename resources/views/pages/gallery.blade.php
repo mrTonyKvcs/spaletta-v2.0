@@ -34,38 +34,16 @@
         </ul>
 
         <div class="flex flex-col items-center">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="pt-4">
-              <div x-show="openTab === 1">
-                <div class="relative">
-                  <img class="h-96 w-full bg-cover" src="../images/home-menu.png" alt="">
-                  <img class="absolute bottom-0 right-0 w-10 m-6" src="../images/svg/camera.svg" alt="">
+          <div class="">
+            <div class="pt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              @foreach(config('spaletta.gallery-images') as $item)
+                <div x-show="openTab === {{ $item['tab'] }}">
+                  <div class="relative">
+                    <img class="h-96 w-full bg-cover" src="../images/gallery/{{ $item['name'] }}.jpg" alt="">
+                    <img class="absolute bottom-0 right-0 w-10 m-6" src="../images/svg/camera.svg" alt="">
+                  </div>
                 </div>
-              </div>
-              <div x-show="openTab === 2">
-                <div class="relative">
-                  <img class="h-96 w-full bg-cover" src="../images/drinks.png" alt="">
-                  <img class="absolute bottom-0 right-0 w-10 m-6" src="../images/svg/camera.svg" alt="">
-                </div>
-              </div>
-              <div x-show="openTab === 3">
-                <div class="relative">
-                  <img class="h-96 w-full bg-cover" src="../images/events.png" alt="">
-                  <img class="absolute bottom-0 right-0 w-10 m-6" src="../images/svg/camera.svg" alt="">
-                </div>
-              </div>
-              <div x-show="openTab === 4">
-                <div class="relative">
-                  <img class="h-96 w-full bg-cover" src="../images/home-menu.png" alt="">
-                  <img class="absolute bottom-0 right-0 w-10 m-6" src="../images/svg/camera.svg" alt="">
-                </div>
-              </div>
-              <div x-show="openTab === 5">
-                <div class="relative">
-                  <img class="h-96 w-full bg-cover" src="../images/drinks.png" alt="">
-                  <img class="absolute bottom-0 right-0 w-10 m-6" src="../images/svg/camera.svg" alt="">
-                </div>
-              </div>
+              @endforeach
             </div>
           </div>
         </div>
