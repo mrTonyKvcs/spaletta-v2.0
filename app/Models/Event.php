@@ -20,6 +20,7 @@ class Event extends Model
 
     public function scopeActive($query)
     {
-        return $query->where('started_at', '>=', now());
+        return $query->where('started_at', '<=', now())
+            ->where('finished_at', '>=', now());
     }
 }

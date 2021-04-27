@@ -50,9 +50,9 @@ Route::group(
         return view('pages.reservation');
     })->name('pages.reservation');
 
-    Route::get(LaravelLocalization::transRoute('routes.events'), function () {
-        return view('pages.events');
-    })->name('pages.events');
+    // Route::get(LaravelLocalization::transRoute('routes.events'), function () {
+    //     return view('pages.events');
+    // })->name('pages.events');
 
     Route::get(LaravelLocalization::transRoute('routes.gallery'), function () {
         return view('pages.gallery');
@@ -70,13 +70,13 @@ Route::group(
         return view('auth.sign-in');
     })->name('auth.signin');
 
-    Route::get('rendezvenyek', [
+    Route::get(LaravelLocalization::transRoute('routes.events'), [
         'as'    => 'events.index',
-        'uses' => 'App\Http\Controllers\EventsController@index'
+        'uses' => 'App\Http\Controllers\EventsController'
     ]);
 
-    Route::get('rendezvenyek/rendezveny', [
-        'as'    => 'EventsController.show',
+    Route::get(LaravelLocalization::transRoute('routes.events') . '/{id}', [
+        'as'    => 'events.show',
         'uses' => 'App\Http\Controllers\EventsController@show'
     ]);
 });

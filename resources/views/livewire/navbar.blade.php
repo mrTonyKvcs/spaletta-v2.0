@@ -25,7 +25,7 @@
             <a href="{{ route('pages.reservation') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
                 {{ __('Asztalfoglalás') }}
             </a>
-            <a href="{{ route('pages.events') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
+            <a href="{{ route('events.index') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
                 {{ __('Rendezvények') }}
             </a>
             <a href="{{ route('pages.gallery') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
@@ -122,7 +122,7 @@
         <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
         <a href="{{ route('pages.menu') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rendelés') }}</a>
         <a href="{{ route('pages.reservation') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Asztalfoglalás') }}</a>
-        <a href="{{ route('pages.events') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rendezvények') }}</a>
+        <a href="{{ route('events.index') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rendezvények') }}</a>
         <a href="{{ route('pages.gallery') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Galéria') }}</a>
         <a href="{{ route('pages.about') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rólunk') }}</a>
         <a href="{{ route('pages.contact') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Kapcsolat') }}</a>
@@ -131,7 +131,7 @@
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                 @if (LaravelLocalization::getCurrentLocale() != $localeCode)
                     <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
-                        <img class="w-12 lg:w-14 h-6 lg:h-8" src="/images/flag/{{ $localeCode }}.png" alt="">
+                        <img class="w-12 h-6 lg:w-14 lg:h-8" src="/images/flag/{{ $localeCode }}.png" alt="">
                     </a>
                 @endif
             @endforeach
@@ -160,13 +160,13 @@
           {{-- <a href="#" class="block px-4 py-3 font-medium hover:text-gray-800">Profil</a> --}}
           {{-- <a href="#" class="block px-4 py-3 font-medium hover:text-gray-800">Kijelenkezés</a> --}}
           <a href="{{ route('pages.user-orders') }}" class="block px-4 py-2 text-white" role="menuitem">Rendelések</a>
-          <form method="POST" class="block py-2 px-4 text-2xl" action="{{ route('logout') }}">
+          <form method="POST" class="block px-4 py-2 text-2xl" action="{{ route('logout') }}">
               @csrf
-              <button class="text-white text-2xl font-medium" type="submit">{{ __('Kijelenkezés') }}</button>
+              <button class="text-2xl font-medium text-white" type="submit">{{ __('Kijelenkezés') }}</button>
               {{-- <x-jet-responsive-nav-link href="{{ route('logout') }}"
                                          onclick="event.preventDefault();
                                          this.closest('form').submit();">
-                  <span class=" text-white">{{ __('Kijelenkezés') }}</span>
+                  <span class="text-white ">{{ __('Kijelenkezés') }}</span>
               </x-jet-responsive-nav-link>--}}
           </form>
         </div>
