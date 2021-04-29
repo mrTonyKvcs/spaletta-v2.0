@@ -25,7 +25,7 @@
                 @endif
                 <form method="POST" action="{{ route('mail.store','Kapcsolat') }}" class="py-12">
                     @csrf
-                    @honeypot
+                    {{-- @honeypot --}}
                     
                     <div class="flex flex-col lg:flex-row">
                         <div class="mb-6 lg:mr-6 lg:w-1/2">

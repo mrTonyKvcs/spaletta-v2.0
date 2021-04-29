@@ -9,7 +9,11 @@
 @if ($type == 'link')
         <a href="{{ $route }}">
             <div class="flex items-center justify-center transition ease-in-out duration-700 lg:transform lg:hover:scale-105 border-yellow-300 border-2 ">
-                <img class="filter" src="{{ $path }}" width="300" height="420" alt="{{ $alt }}" title="{{ $title }}">
+                <picture>
+                    <source srcset="{{ $path }}.webp" type="image/webp"></source>
+                    <img src="{{ $path }}.png" width="300" height="420" alt="{{ $alt }}" title="{{ $title }}">
+                  </picture>
+                {{-- <img class="filter" src="{{ $path }}" width="300" height="420" alt="{{ $alt }}" title="{{ $title }}"> --}}
                 <h2 class="text-white absolute text-4xl font-semibold uppercase">{{ $slot }}</h2>
             </div>
         </a>

@@ -43,10 +43,10 @@
     </x-section>
     <x-section background="home-services">
         <div class=" space-x-4 lg:space-x-0 md:grid md:grid-cols-2 gap-12 lg:grid lg:grid-cols-4 lg:gap-12">
-            <x-card type="link" path="/images/home-menu.png" route="{{ route('pages.menu') }}" alt="spaletta" title="spaletta">{{ __('Étlap') }}</x-card>
-            <x-card type="link" path="/images/drinks.png" route="{{ route('pages.menu') }}" alt="drinks" title="drinks">{{ __('Itallap') }}</x-card>
-            <x-card type="link" path="/images/home-reservations.png" route="{{ route('pages.reservation') }}" alt="reservation" title="reservation"> {{ __('Asztalfoglalás') }}</x-card>
-            <x-card type="link" path="/images/events.png" route="{{ route('pages.events') }}" alt="events" title="events">{{ __('Rendezvények') }}</x-card>
+            <x-card type="link" path="/images/home-menu" route="{{ route('pages.menu') }}" alt="spaletta" title="spaletta">{{ __('Étlap') }}</x-card>
+            <x-card type="link" path="/images/drinks" route="{{ route('pages.menu') }}" alt="drinks" title="drinks">{{ __('Itallap') }}</x-card>
+            <x-card type="link" path="/images/home-reservations" route="{{ route('pages.reservation') }}" alt="reservation" title="reservation"> {{ __('Asztalfoglalás') }}</x-card>
+            <x-card type="link" path="/images/events" route="{{ route('pages.events') }}" alt="events" title="events">{{ __('Rendezvények') }}</x-card>
         </div>
     </x-section>
     <x-section>
