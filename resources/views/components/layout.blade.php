@@ -35,6 +35,62 @@
             function autoRefresh() {
                 setTimeout("location.reload(true);", 60000);
             }
+
+            function timer(expiry) {
+  return {
+    expiry: expiry,
+    remaining:null,
+    init() {
+      this.setRemaining()
+      setInterval(() => {
+        this.setRemaining();
+        console.log(this.expiry)
+      }, 1000);
+    },
+    setRemaining() {
+        console.log(new Date().getDate())
+        // const parse = Date.parse('04 Dec 2021 00:12:00 GMT')
+        // this.expiry = parse
+      const diff = this.expiry - new Date().getTime();
+      this.remaining =  parseInt(diff / 1000);
+    },
+    days() {
+      return {
+      	value:this.remaining / 86400,
+        remaining:this.remaining % 86400
+      };
+    },
+    hours() {
+      return {
+      	value:this.days().remaining / 3600,
+        remaining:this.days().remaining % 3600
+      };
+    },
+    minutes() {
+    	return {
+      	value:this.hours().remaining / 60,
+        remaining:this.hours().remaining % 60
+      };
+    },
+    seconds() {
+    	return {
+      	value:this.minutes().remaining,
+      };
+    },
+    format(value) {
+      return ("0" + parseInt(value)).slice(-2)
+    },
+    time(){
+    	return {
+      	days:this.format(this.days().value),
+        hours:this.format(this.hours().value),
+        minutes:this.format(this.minutes().value),
+        seconds:this.format(this.seconds().value),
+      }
+    },
+  }
+}
+
         </script>
         @livewireScripts
     </head>
@@ -44,6 +100,12 @@
         {{-- @include('partials.new-navbar') --}}
     </header>
     <main class="z-10 bg-white shadow-lg mb-160">
+        {{-- <div class="timer" x-data="timer(new Date().setDate(new Date().getDate() + 1))" x-init="init();">
+            <h1 x-text="time().days"></h1>
+            <h1 x-text="time().hours"></h1>
+            <h1 x-text="time().minutes"></h1>
+            <h1 x-text="time().seconds"></h1>
+          </div> --}}
        {{ $slot }}
     </main>
     <footer class="light-gray-bg footer-parallax">
