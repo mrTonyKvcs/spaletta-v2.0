@@ -35,7 +35,7 @@
         <div class="mt-32 flex flex-col items-center">
             <x-title title="{{ __('Heti Menü') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" price="1800 Ft"></x-title>
             <x-weekly-menu></x-weekly-menu>
-            <x-title title="{{ __('Hétvégi Menük') }}" text="{{ config('spaletta.weekly-menu.weekend-date') }}" price="2600 Ft"></x-title>
+            <x-title title="{{ __('Hétvégi Menü') }}" text="{{ config('spaletta.weekly-menu.weekend-date') }}" price="2600 Ft"></x-title>
             <x-weekend-menu></x-weekend-menu>
             <p class="text-xl">{{ __('(Az ár nem tartalmaza a csomagolás díját)') }}</p>
             <x-button><a href="{{ route('pages.menu') }}">{{ __('Étlap') }}</a></x-button>

@@ -101,10 +101,10 @@
           </div>
           
         @else
-        <div class="flex items-center">
+        {{-- <div class="flex items-center">
           <a href="{{ route('auth.signin') }}" class="pr-4 text-3xl text-white border-r-2 border-white hover:text-gold">{{ __('Bejelentkezés') }}</a>
           <a href="{{ route('auth.signin') }}" class="pl-4 text-3xl text-white hover:text-gold">{{ __('Regisztráció') }}</a>
-        </div> 
+        </div>  --}}
         @endif
         </div>
         <div class="flex items-center order-first xl:hidden">
@@ -138,7 +138,7 @@
           </div>
         </div>
       </div>
-      <div class="py-4 border-t border-white">
+      {{-- <div class="py-4 border-t border-white">
       @if (Auth::check())
         <div class="flex items-center px-4">
           <div class="flex-shrink-0">
@@ -148,26 +148,12 @@
               <div class="">{{ auth()->user()->name }}</div>
               <div class="">{{ auth()->user()->email }}</div>
           </div>
-          {{-- <button class="flex-shrink-0 p-1 ml-auto rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"> --}}
-            {{-- <!--<span class="sr-only">View notifications</span> --}}
-            {{-- <svg class="w-6 h-6" x-description="Heroicon name: outline/bell" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"> --}}
-            {{--     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path> --}}
-            {{-- </svg>--> --}}
-            {{-- <img class="w-10 md:w-12" src="../images/svg/bell.svg" alt=""> --}}
-          {{-- </button> --}}
         </div>
         <div class="mt-3">
-          {{-- <a href="#" class="block px-4 py-3 font-medium hover:text-gray-800">Profil</a> --}}
-          {{-- <a href="#" class="block px-4 py-3 font-medium hover:text-gray-800">Kijelenkezés</a> --}}
           <a href="{{ route('pages.user-orders') }}" class="block px-4 py-2 text-white" role="menuitem">Rendelések</a>
           <form method="POST" class="block py-2 px-4 text-2xl" action="{{ route('logout') }}">
               @csrf
               <button class="text-white text-2xl font-medium" type="submit">{{ __('Kijelenkezés') }}</button>
-              {{-- <x-jet-responsive-nav-link href="{{ route('logout') }}"
-                                         onclick="event.preventDefault();
-                                         this.closest('form').submit();">
-                  <span class=" text-white">{{ __('Kijelenkezés') }}</span>
-              </x-jet-responsive-nav-link>--}}
           </form>
         </div>
       </div>
@@ -177,6 +163,6 @@
           <a href="{{ route('auth.signin') }}" class="px-4 text-3xl text-white hover:text-gold">{{ __('Regisztráció') }}</a>
       </div>
       @endif
-    </div>
+    </div> --}}
 </nav>
   
