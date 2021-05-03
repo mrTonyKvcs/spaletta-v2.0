@@ -4,6 +4,7 @@ use App\Models\DeliveryAddress;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers;
+use App\Models\Category;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,20 +31,25 @@ Route::group(
     //     return view('pages.order', ['request' => $request]);
     // })->name('pages.order')->middleware('auth');
 
-    Route::get(LaravelLocalization::transRoute('routes.orders') . '/{order}', \App\Http\Livewire\Order::class)
-        ->name('pages.order')
-        ->middleware('auth');
+    // Route::get(LaravelLocalization::transRoute('routes.orders') . '/{order}', \App\Http\Livewire\Order::class)
+    //     ->name('pages.order')
+    //     ->middleware('auth');
 
-    Route::get(LaravelLocalization::transRoute('routes.orders'), \App\Http\Livewire\User\AllOrder::class)
-        ->name('pages.user-orders')
-        ->middleware('auth');
+    // Route::get(LaravelLocalization::transRoute('routes.orders'), \App\Http\Livewire\User\AllOrder::class)
+    //     ->name('pages.user-orders')
+    //     ->middleware('auth');
 
-    Route::get(LaravelLocalization::transRoute('routes.cart'), function () {
-        return view('pages.cart');
-    })->name('pages.cart');
+    // Route::get(LaravelLocalization::transRoute('routes.cart'), function () {
+    //     return view('pages.cart');
+    // })->name('pages.cart');
 
-    Route::get(LaravelLocalization::transRoute('routes.order'), function () {
-        return view('pages.menu');
+    // Route::get(LaravelLocalization::transRoute('routes.order'), function () {
+    //     return view('pages.menu');
+    // })->name('pages.menu');
+
+    Route::get(LaravelLocalization::transRoute('routes.menu'), function () {
+        $categories = Category::where('type_id', 1)->with('items')->get();
+        return view('pages.menu', compact('categories'));
     })->name('pages.menu');
 
     Route::get(LaravelLocalization::transRoute('routes.reservation'), function () {

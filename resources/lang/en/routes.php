@@ -4,6 +4,7 @@ return [
     'orders' => 'orders',
     'order' => 'order',
     'cart' => 'cart',
+    'menu' => 'menu',
     'reservation' => 'reservation',
     'events' => 'events',
     'gallery' => 'gallery',

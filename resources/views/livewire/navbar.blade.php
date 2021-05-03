@@ -20,7 +20,7 @@
           </div>
           <div class="items-center hidden uppercase navbar xl:flex xl:space-x-2">
             <a href="{{ route('pages.menu') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
-                {{ __('Rendelés') }}
+                {{ __('Étlap') }}
             </a>
             <a href="{{ route('pages.reservation') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
                 {{ __('Asztalfoglalás') }}
@@ -65,12 +65,12 @@
           </div>
         </div>
 
-        <a href="{{ route('pages.cart') }}" class="flex justify-center xl:hidden w-7 xl:w-10 text-gold lg:text-white lg:px-5 lg:py-14 lg:hover:text-gold">
+        {{-- <a href="{{ route('pages.cart') }}" class="flex justify-center xl:hidden w-7 xl:w-10 text-gold lg:text-white lg:px-5 lg:py-14 lg:hover:text-gold">
           <x-icon icon="cart" width=28 height=23 viewBox="20 20" strokeWidth=0 />
         @empty(!$cartTotal)
             ({{ $cartTotal }})
         @endempty
-        </a>
+        </a> --}}
         
         <div class="hidden xl:ml-6 xl:flex xl:items-center">
           @if (Auth::check())
@@ -91,14 +91,14 @@
               </form>
             </div>
           </div> 
-          <div class="ml-6">
+          {{-- <div class="ml-6">
             <a href="{{ route('pages.cart') }}" class="flex justify-center py-4 text-white w-7 xl:w-10 px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
               <x-icon icon="cart" width=25 height=20 viewBox="20 20" strokeWidth=0 />
               @empty(!$cartTotal)
                   ({{ $cartTotal }})
               @endempty
             </a>
-          </div>
+          </div> --}}
           
         @else
         {{-- <div class="flex items-center">
@@ -120,7 +120,7 @@
     <div x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'block': open, 'hidden': !open }" class="hidden text-2xl leading-tight text-white bg-gray26 md:text-3xl xl:hidden">
       <div class="pt-2 pb-3 text-2xl lg:text-4xl space-y-1">
         <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
-        <a href="{{ route('pages.menu') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rendelés') }}</a>
+        <a href="{{ route('pages.menu') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Étlap') }}</a>
         <a href="{{ route('pages.reservation') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Asztalfoglalás') }}</a>
         <a href="{{ route('pages.events') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rendezvények') }}</a>
         <a href="{{ route('pages.gallery') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Galéria') }}</a>
