@@ -15,21 +15,21 @@
     <x-section>
       <div x-data="{ openTab: 1 }" class="p-6">
 
-        <ul class="flex flex-wrap space-x-3 items-center justify-center sm:flex md:mb-16 md:flex md:items-center md:justify-center md:space-x-16 light-gray font-medium  uppercase text-2xl">
-          <li @click="openTab = 1" class="-mb-px mr-1">
-            <a :class="{'tab-active': openTab === 1}" class="hover:text-gray58 pb-6 sm:border-b  hover:border-gray-500" href="#">Spaletta</a>
+        <ul class="flex flex-wrap items-center justify-center text-2xl font-medium uppercase space-x-3 sm:flex md:mb-16 md:flex md:items-center md:justify-center md:space-x-16 light-gray">
+          <li @click="openTab = 1" class="mr-1 -mb-px">
+            <a :class="{'tab-active': openTab === 1}" class="pb-6 hover:text-gray58 sm:border-b hover:border-gray-500" href="#">Spaletta</a>
           </li>
           <li @click="openTab = 2" class="mr-1">
-            <a :class="{'tab-active': openTab === 2}" class="hover:text-gray58 pb-6 sm:border-b  hover:border-gray-500" href="#">{{ __('Étterem') }}</a>
+            <a :class="{'tab-active': openTab === 2}" class="pb-6 hover:text-gray58 sm:border-b hover:border-gray-500" href="#">{{ __('Étterem') }}</a>
           </li>
           <li @click="openTab = 3" class="mr-1">
-            <a :class="{'tab-active': openTab === 3}" class="hover:text-gray58 pb-6 sm:border-b hover:border-gray-500" href="#">{{ __('Sörház') }}</a>
+            <a :class="{'tab-active': openTab === 3}" class="pb-6 hover:text-gray58 sm:border-b hover:border-gray-500" href="#">{{ __('Sörház') }}</a>
           </li>
           <li @click="openTab = 4" class="mr-1">
-            <a :class="{'tab-active': openTab === 4}" class="hover:text-gray58 pb-6 sm:border-b hover:border-gray-500" href="#">{{ __('Csapatunk') }}</a>
+            <a :class="{'tab-active': openTab === 4}" class="pb-6 hover:text-gray58 sm:border-b hover:border-gray-500" href="#">{{ __('Csapatunk') }}</a>
           </li>
           <li @click="openTab = 5" class="mr-1">
-            <a :class="{'tab-active': openTab === 5}" class="hover:text-gray58 pb-6 sm:border-b  hover:border-gray-500" href="#">{{ __('Rendezvények') }}</a>
+            <a :class="{'tab-active': openTab === 5}" class="pb-6 hover:text-gray58 sm:border-b hover:border-gray-500" href="#">{{ __('Rendezvények') }}</a>
           </li>
         </ul>
 
@@ -39,7 +39,9 @@
               @foreach(config('spaletta.gallery-images') as $item)
                 <div x-show="openTab === {{ $item['tab'] }}">
                   <div class="relative">
-                    <img class="h-96 w-full bg-cover" src="../images/gallery/{{ $item['name'] }}.jpg" alt="">
+                      <a href="/images/gallery/{{ $item['name'] }}.jpg" target="_blank">
+                          <img class="w-full bg-cover h-96" src="/images/gallery/{{ $item['name'] }}.jpg" alt="">
+                      </a>
                     <img class="absolute bottom-0 right-0 w-10 m-6" src="../images/svg/camera.svg" alt="">
                   </div>
                 </div>
