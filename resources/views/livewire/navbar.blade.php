@@ -3,8 +3,6 @@
       <div class="flex items-center justify-between lg:h-32">
         <div class="flex">
           <div class="flex items-center flex-shrink-0 lg:mr-6">
-            {{-- <a href="/" class="md:hidden"><img height="35" width="35" src="/images/logo/logo.png" alt="Spaletta-logo" title="Spaletta-logo"></a>
-            <a href="/" class="hidden md:block"><img height="50" width="50" src="/images/logo/logo-xl.png" alt="Spaletta-logo" title="Spaletta-logo"></a> --}}
             <a href="/" class="md:hidden">
               <picture>
                 <source srcset="/images/logo/logo.webp" type="image/webp"></source>
@@ -20,7 +18,7 @@
           </div>
           <div class="items-center hidden uppercase navbar xl:flex xl:space-x-2">
             <a href="{{ route('pages.menu') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
-                {{ __('Rendelés') }}
+                {{ __('Étlap') }}
             </a>
             <a href="{{ route('pages.reservation') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
                 {{ __('Asztalfoglalás') }}
@@ -44,9 +42,6 @@
                   <img class="w-10" height="25" width="13" src="/images/flag/{{ LaravelLocalization::getCurrentLocale() }}.png" alt="flag" title="flag" >
                   <img x-show="!open" class="w-10" height="25" width="25" src="/images/svg/down-white.svg" alt="">
                   <img x-show="open" class="w-10" height="25" width="25" src="/images/svg/up-white.svg" alt="">
-                  {{-- <svg class="w-5 h-5 ml-2 -mr-1" x-description="Heroicon name: solid/chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                  </svg> --}}
                 </button>
               </div>
           
@@ -59,19 +54,19 @@
                               </a>
                           @endif
                       @endforeach
-                  </div>  
+                  </div>
               </div>
             </div>
           </div>
         </div>
 
-        <a href="{{ route('pages.cart') }}" class="flex justify-center xl:hidden w-7 xl:w-10 text-gold lg:text-white lg:px-5 lg:py-14 lg:hover:text-gold">
+        {{-- <a href="{{ route('pages.cart') }}" class="flex justify-center xl:hidden w-7 xl:w-10 text-gold lg:text-white lg:px-5 lg:py-14 lg:hover:text-gold">
           <x-icon icon="cart" width=28 height=23 viewBox="20 20" strokeWidth=0 />
         @empty(!$cartTotal)
             ({{ $cartTotal }})
         @endempty
-        </a>
-        
+        </a> --}}
+
         <div class="hidden xl:ml-6 xl:flex xl:items-center">
           @if (Auth::check())
           <div @click.away="open = false" class="relative ml-3" x-data="{ open: false }">
@@ -91,20 +86,20 @@
               </form>
             </div>
           </div> 
-          <div class="ml-6">
+          {{-- <div class="ml-6">
             <a href="{{ route('pages.cart') }}" class="flex justify-center py-4 text-white w-7 xl:w-10 px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
               <x-icon icon="cart" width=25 height=20 viewBox="20 20" strokeWidth=0 />
               @empty(!$cartTotal)
                   ({{ $cartTotal }})
               @endempty
             </a>
-          </div>
+          </div> --}}
           
-        @else
-        <div class="flex items-center">
+        {{-- @else --}}
+        {{-- <div class="flex items-center">
           <a href="{{ route('auth.signin') }}" class="pr-4 text-3xl text-white border-r-2 border-white hover:text-gold">{{ __('Bejelentkezés') }}</a>
           <a href="{{ route('auth.signin') }}" class="pl-4 text-3xl text-white hover:text-gold">{{ __('Regisztráció') }}</a>
-        </div> 
+        </div>  --}}
         @endif
         </div>
         <div class="flex items-center order-first xl:hidden">
@@ -120,7 +115,7 @@
     <div x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'block': open, 'hidden': !open }" class="hidden text-2xl leading-tight text-white bg-gray26 md:text-3xl xl:hidden">
       <div class="pt-2 pb-3 text-2xl lg:text-4xl space-y-1">
         <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
-        <a href="{{ route('pages.menu') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rendelés') }}</a>
+        <a href="{{ route('pages.menu') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Étlap') }}</a>
         <a href="{{ route('pages.reservation') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Asztalfoglalás') }}</a>
         <a href="{{ route('events.index') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rendezvények') }}</a>
         <a href="{{ route('pages.gallery') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Galéria') }}</a>
@@ -138,7 +133,7 @@
           </div>
         </div>
       </div>
-      <div class="py-4 border-t border-white">
+      {{-- <div class="py-4 border-t border-white">
       @if (Auth::check())
         <div class="flex items-center px-4">
           <div class="flex-shrink-0">
@@ -148,35 +143,28 @@
               <div class="">{{ auth()->user()->name }}</div>
               <div class="">{{ auth()->user()->email }}</div>
           </div>
-          {{-- <button class="flex-shrink-0 p-1 ml-auto rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"> --}}
-            {{-- <!--<span class="sr-only">View notifications</span> --}}
-            {{-- <svg class="w-6 h-6" x-description="Heroicon name: outline/bell" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"> --}}
-            {{--     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path> --}}
-            {{-- </svg>--> --}}
-            {{-- <img class="w-10 md:w-12" src="../images/svg/bell.svg" alt=""> --}}
-          {{-- </button> --}}
         </div>
         <div class="mt-3">
-          {{-- <a href="#" class="block px-4 py-3 font-medium hover:text-gray-800">Profil</a> --}}
-          {{-- <a href="#" class="block px-4 py-3 font-medium hover:text-gray-800">Kijelenkezés</a> --}}
           <a href="{{ route('pages.user-orders') }}" class="block px-4 py-2 text-white" role="menuitem">Rendelések</a>
           <form method="POST" class="block px-4 py-2 text-2xl" action="{{ route('logout') }}">
               @csrf
+<<<<<<< HEAD
               <button class="text-2xl font-medium text-white" type="submit">{{ __('Kijelenkezés') }}</button>
               {{-- <x-jet-responsive-nav-link href="{{ route('logout') }}"
                                          onclick="event.preventDefault();
                                          this.closest('form').submit();">
                   <span class="text-white ">{{ __('Kijelenkezés') }}</span>
               </x-jet-responsive-nav-link>--}}
-          </form>
-        </div>
-      </div>
-      @else
-      <div class="flex items-center justify-center py-2"> 
-          <a href="{{ route('auth.signin') }}" class="px-4 text-3xl text-white border-r-2 border-white hover:text-gold ">{{ __('Bejelentkezés') }}</a>
-          <a href="{{ route('auth.signin') }}" class="px-4 text-3xl text-white hover:text-gold">{{ __('Regisztráció') }}</a>
-      </div>
-      @endif
-    </div>
+{{--               <button class="text-2xl font-medium text-white" type="submit">{{ __('Kijelenkezés') }}</button> --}}
+          {{-- </form> --}}
+    {{--     </div> --}}
+    {{--   </div> --}}
+    {{--   @else --}}
+    {{--   <div class="flex items-center justify-center py-2">  --}}
+    {{--       <a href="{{ route('auth.signin') }}" class="px-4 text-3xl text-white border-r-2 border-white hover:text-gold ">{{ __('Bejelentkezés') }}</a> --}}
+    {{--       <a href="{{ route('auth.signin') }}" class="px-4 text-3xl text-white hover:text-gold">{{ __('Regisztráció') }}</a> --}}
+    {{--   </div> --}}
+    {{--   @endif --}}
+    {{-- </div> --}}
 </nav>
   

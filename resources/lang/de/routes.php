@@ -4,6 +4,7 @@ return [
     'orders' => 'aufträge',
     'order' => 'bestellung',
     'cart' => 'warenkorb',
+    'menu' => 'menu',
     'reservation' => 'reservierung',
     'events' => 'veranstaltungen',
     'gallery' => 'galerie',
