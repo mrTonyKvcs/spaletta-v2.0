@@ -3,21 +3,24 @@
         <div class="w-full py-6 bg-black bg-center bg-cover lg:py-12 md:w-1/2 bg-opacity-50">
             <h2 class="text-2xl text-center uppercase lg:mb-4 text-gold lg:text-3xl">{{ __('Következõ Spaletta Rendezvény') }}</h2>
             <h1 class="text-3xl font-semibold text-center text-white lg:mb-4 lg:text-4xl">{{ $nextEvent->title }}</h1>
-            <div class="flex items-center justify-center my-8 text-white uppercase ">
+            {{-- @dd($nextEvent->started_at->format('Y-m-d H:i:s')) --}}
+            <div x-data="timer(new Date('{{ $nextEvent->started_at }}'))" x-init="init();" class="flex items-center justify-center my-8 text-white uppercase timer ">
+            {{-- <div x-data="timer(new Date().setDate(new Date().getDate() + 1))" x-init="init();" class="flex items-center justify-center my-8 text-white uppercase timer "> --}}
                 <div class="flex flex-col items-center justify-center px-3 border-r border-white">
-                    <p class="text-2xl font-semibold lg:text-3xl">00</p>
+                    <p x-text="'{{ $nextEvent->started_at->format('Y-m-d H:i:s') }}'"></p>
+                    <p x-text="time().days" class="text-2xl font-semibold lg:text-3xl"></p>
                     <p class="text-base lg:text-lg">{{ __('Nap') }}</p>
                 </div>
                 <div class="px-3 text-center border-r border-white">
-                    <p class="text-2xl font-semibold lg:text-3xl">01</p>
+                    <p x-text="time().hours" class="text-2xl font-semibold lg:text-3xl"></p>
                     <p class="text-base lg:text-lg">{{ __('Óra') }}</p>
                 </div>
                 <div class="px-3 text-center border-r border-white">
-                    <p class="text-2xl font-semibold lg:text-3xl">02</p>
+                    <p x-text="time().minutes" class="text-2xl font-semibold lg:text-3xl"></p>
                     <p class="text-base lg:text-lg">{{ __('Perc') }}</p>
                 </div>
                 <div class="px-3 text-center">
-                    <p class="text-2xl font-semibold lg:text-3xl">03</p>
+                    <p  x-text="time().seconds" class="text-2xl font-semibold lg:text-3xl"></p>
                     <p class="text-base lg:text-lg">{{ __('Másodperc') }}</p>
                 </div>
             </div>

@@ -88,6 +88,9 @@ Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
 
     Route::get('rendelesek', \App\Http\Livewire\Admin\AllOrders::class)
         ->name('admin.orders');
+
+    Route::get('termekek', \App\Http\Livewire\Admin\Item::class)
+        ->name('admin.product');
 });
 
 //SendMails

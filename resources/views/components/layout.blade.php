@@ -48,10 +48,9 @@
       }, 1000);
     },
     setRemaining() {
-        console.log(new Date().getDate())
-        // const parse = Date.parse('04 Dec 2021 00:12:00 GMT')
-        // this.expiry = parse
-      const diff = this.expiry - new Date().getTime();
+        this.expiry = new Date(this.expiry).getTime()
+        console.log(new Date(this.expiry))
+      const diff = - this.expiry - new Date().getTime();
       this.remaining =  parseInt(diff / 1000);
     },
     days() {
@@ -100,12 +99,12 @@
         {{-- @include('partials.new-navbar') --}}
     </header>
     <main class="z-10 bg-white shadow-lg mb-160">
-        {{-- <div class="timer" x-data="timer(new Date().setDate(new Date().getDate() + 1))" x-init="init();">
-            <h1 x-text="time().days"></h1>
-            <h1 x-text="time().hours"></h1>
-            <h1 x-text="time().minutes"></h1>
-            <h1 x-text="time().seconds"></h1>
-          </div> --}}
+        {{-- <div class="timer" x-data="timer(new Date().setDate(new Date().getDate() + 1))" x-init="init();"> --}}
+            {{-- <h1 x-text="time().days"></h1> --}}
+            {{-- <h1 x-text="time().hours"></h1> --}}
+            {{-- <h1 x-text="time().minutes"></h1> --}}
+            {{-- <h1 x-text="time().seconds"></h1> --}}
+          {{-- </div> --}}
        {{ $slot }}
     </main>
     <footer class="light-gray-bg footer-parallax">

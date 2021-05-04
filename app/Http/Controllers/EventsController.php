@@ -10,6 +10,7 @@ class EventsController extends Controller
     public function __invoke()
     {
         $events = Event::active()->orderBy('started_at')->get();
+        // dd($events);
 
         if ($events->isEmpty()) {
             return view('pages.events.empty');
