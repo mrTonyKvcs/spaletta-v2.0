@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.05.04 - 2021.05.07.',
-    'weekend-date' => '2021.05.08.',
+    'menu-date' => '2021.05.11 - 2021.05.15.',
+    'weekend-date' => '2021.05.16.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Zöld minestrone leves pesto-val (L)',
-                'Sertésgulyás galuskával (G, L)',
-                'Joghurtos eper krémleves (G)'
+                'Erőleves fridatto módra (G, L)',
+                'Bableves füstölt húsos derelyével (L)',
+                'Görög gyümölcsleves (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Chilis tarja – fokhagymás zöldbabbal, fűszeres steak burgonya (G, L)',
-                'Pórés – újhagymás lencse fasírt – Édesburgonya püré',
-                'Spanyol zöldséges bulgur csirkehússal(G, L)',
-                'Máglyarakás'
+                'Borjúpörkölt – sós burgonya, csemegeuborka (G, L)',
+                'Rakott karfiol (G, L)',
+                'Barackos túrós rétes',
+                'Zöldséggel töltött rántott palacsinta, tzatziki'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Narancsos répakrémleves kókuszos kekszmorzsa (G)',
-                'Paprikás csirke – galuska, lilahagymás paradicsomsaláta (L)',
-                'Mimóza szelet'
+                'Joghurtos almás – édeskömény leves csibehússal (G)',
+                'Sült oldalas – pirított burgonya, görögsaláta (G)',
+                'Epres pudingos szelet'
             ]
         ],
     ]

@@ -21,7 +21,10 @@
     <strong>Időpont:</strong> {{ $mail['time'] }}
     </p>
     <p>
-        <strong>Vendégek száma:</strong> {{ $mail['persons'] }}
+        <strong>Vendégek száma:</strong> {{ $mail['persons'] }} fő
+    </p>
+    <p>
+        <strong>Helyszín</strong> {{ $mail['locale'] }}
     </p>
 </body>
 </html>

@@ -27,12 +27,21 @@
     <div>
         <p class="text-2xl font-medium text-center gray ">{{ __('Vendégek') }}</p>
         <select name="persons" id="" class=" bg-white w-full gray outline-none text-center font-medium py-2.5 px-5 text-2xl border-b border-gray-300" required>
-            <option value="1">1 {{ __('fő') }}</option>
-            <option value="2">2 {{ __('fő') }}</option>
+            @for($i = 1; $i <= 20; $i++)
+                <option value="{{ $i }}">{{ $i }} {{ __('fő') }}</option>
+            @endfor
+        </select> 
+    </div>
+    <div>
+        <p class="text-2xl font-medium text-center gray ">{{ __('Helyszín') }}</p>
+        <select name="locale" id="" class=" bg-white w-full gray outline-none text-center font-medium py-2.5 px-5 text-2xl border-b border-gray-300" required>
+            <option value="Terasz">{{ __('Terasz') }}</option>
+            <option value="Étterem">{{ __('Étterem') }}</option>
+            <option value="Sörház">{{ __('Sörház') }}</option>
         </select> 
     </div>
 
-    <div class="col-span-2 flex items-center justify-center">
+    <div class="flex items-center justify-center col-span-2">
         <x-button type="gray">{{ __('Asztalfoglalás') }}</x-button>
     </div>
     
