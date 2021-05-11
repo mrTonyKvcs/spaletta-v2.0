@@ -102,7 +102,7 @@
         </div>  --}}
         @endif
         </div>
-        <div class="flex items-center order-first xl:hidden">
+        <div class="flex items-center xl:hidden">
           <!-- Mobile menu button -->
               <button @click=" open = !open" class="xl:hidden focus:outline-none ">
                   <img x-show="!open" class="z-20 w-14 md:w-20 ease-in" src="/images/svg/menu.svg" alt="">
