@@ -16,8 +16,8 @@ return [
         'category_id' => 3,
         'name' => [
             'hu' => 'Gomba consommé – kacsamáj ganache, (G)',
-            'en' => '',
-            'de' => ''
+            'en' => 'Mushroom consommé - duck liver ganache, (G)',
+            'de' => 'Pilzbrühe - Entenleber-Ganache, (G)'
         ],
         'comment' => '',
         'price' => 1900,
@@ -27,8 +27,8 @@ return [
         'category_id' => 3,
         'name' => [
             'hu' => 'Eper leves túró fagylalttal és piskótával (G)',
-            'en' => '',
-            'de' => ''
+            'en' => 'Strawberry soup with cottage cheese ice cream and sponge cake (G)',
+            'de' => 'Erdbeersuppe mit Quarkeis und Biskuit (G)'
         ],
         'comment' => '',
         'price' => 1600,
@@ -38,30 +38,30 @@ return [
         'category_id' => 1,
         'name' => [
             'hu' => 'Hideg caprese –kenyér chips',
-            'en' => '',
-            'de' => ''
+            'en' => 'Cold caprese - bread chips',
+            'de' => 'Kalte Caprese - Brotchips'
         ],
         'comment' => '',
         'price' => 3500,
         'wine' => 'Montelvini Frizzante dry Veuve Clicqout Brut'
     ],
-    [
-        'category_id' => 1,
-        'name' => [
-            'hu' => 'Citrusos lazac, fermentált fokhagymahamu, hidegen marinált zöldségek, brioche (L)',
-            'en' => 'Citrus salmon with fermented garlic ash,cold marinated vegetables, brioche (L)',
-            'de' => 'Zitruslachs mit fermentierter Knoblauchasche, kalt mariniertes Gemüse, Brioche (L)'
-        ],
-        'comment' => '',
-        'price' => 3500,
-        'wine' => 'Tenute Setten Prosecco,Günzer Lezser Cuvée (Villány)'
-    ],
+    // [
+    //     'category_id' => 1,
+    //     'name' => [
+    //         'hu' => 'Citrusos lazac, fermentált fokhagymahamu, hidegen marinált zöldségek, brioche (L)',
+    //         'en' => 'Citrus salmon with fermented garlic ash,cold marinated vegetables, brioche (L)',
+    //         'de' => 'Zitruslachs mit fermentierter Knoblauchasche, kalt mariniertes Gemüse, Brioche (L)'
+    //     ],
+    //     'comment' => '',
+    //     'price' => 3500,
+    //     'wine' => 'Tenute Setten Prosecco,Günzer Lezser Cuvée (Villány)'
+    // ],
     [
         'category_id' => 1,
         'name' => [
             'hu' => 'Nyári, házi kencék (csirkemájpástétom, padlizsánkrém, zöldségpástétom) - friss zöldségek, pirítós',
-            'en' => '',
-            'de' => ''
+            'en' => 'Homemade summer spreads (chicken liver paté, eggplant cream, vegetable paté) fresh vegetables, toast',
+            'de' => 'Hausgemachte Sommeraufstriche (Hühnerleberpastete, Auberginencreme, Gemüsepastete) frisches Gemüse, Toast'
         ],
         'comment' => '',
         'price' => 2300,
@@ -93,8 +93,8 @@ return [
         'category_id' => 6,
         'name' => [
             'hu' => 'Sáfrányos rizottó - sajtforgács(G)',
-            'en' => '',
-            'de' => ''
+            'en' => 'Saffron risotto with cheese shavings (G)',
+            'de' => 'Safranrisotto mit Käseflocken (G)'
         ],
         'comment' => '',
         'price' => 2500,
@@ -104,8 +104,8 @@ return [
         'category_id' => 6,
         'name' => [
             'hu' => 'Magvas-kapros túrós sajtgolyó (G)',
-            'en' => '',
-            'de' => ''
+            'en' => 'Cheese balls with cottage cheese, seeds and dill (G)',
+            'de' => 'Käsebällchen mit Quark, Samen und Dill (G)'
         ],
         'comment' => '',
         'price' => 2800,
@@ -115,8 +115,8 @@ return [
         'category_id' => 6,
         'name' => [
             'hu' => 'Konfitált fogasfilé, mentás-málnás dresszing, friss kevert saláta',
-            'en' => '',
-            'de' => ''
+            'en' => 'Zander fillet confit, mint-raspberry dressing, fresh salad mix',
+            'de' => 'Confiertes Zanderfilet, Minz-Himbeer-Dressing, frische Salatmischung'
         ],
         'comment' => '',
         'price' => 4200,
@@ -126,8 +126,8 @@ return [
         'category_id' => 6,
         'name' => [
             'hu' => 'Lazac pisztáciás kéregben,parmezános kuszkusz, borsópüré, pirított mandula, lazacbőr chips,',
-            'en' => '',
-            'de' => ''
+            'en' => 'Salmon in pistachio crust, parmesan couscous, pea puree, roasted almonds',
+            'de' => 'Lachs in Pistazienkruste Parmesan-Couscous, Erbsenpüree, geröstete Mandeln'
         ],
         'comment' => '',
         'price' => 4900,
@@ -137,8 +137,8 @@ return [
         'category_id' => 6,
         'name' => [
             'hu' => 'Petrezselymes csirkerolád, csirkenyalóka, répapüré, zöldséges kuszkusz saláta',
-            'en' => '',
-            'de' => ''
+            'en' => 'Chicken roulade with parsley, chicken lollipop, carrot puree couscous salad with vegetables',
+            'de' => 'Hühnerroulade mit Petersilie, Hühnerlutscher, Karottenpüree Couscous-Salat mit Gemüse'
         ],
         'comment' => '',
         'price' => 3900,
@@ -148,8 +148,8 @@ return [
         'category_id' => 6,
         'name' => [
             'hu' => 'Kacsamell - pirított hajdinával,meggy variáció, kacsa rilette (G)',
-            'en' => '',
-            'de' => ''
+            'en' => 'Duck breast with roasted buckwheat - sour cherry variation (G)',
+            'de' => 'Entenbrust mit geröstetem Buchweizen - Sauerkirschvariation (G)'
         ],
         'comment' => '',
         'price' => 4100,
@@ -159,8 +159,8 @@ return [
         'category_id' => 6,
         'name' => [
             'hu' => 'Marhapofa pörkölt tejfölhabos galuskával',
-            'en' => '',
-            'de' => ''
+            'en' => 'Beef cheeks stew with sour cream dumplings',
+            'de' => 'Rinderbackengulasch mit Sauerrahmknödel'
         ],
         'comment' => '',
         'price' => 4200,
@@ -170,8 +170,8 @@ return [
         'category_id' => 6,
         'name' => [
             'hu' => 'Sertésszűz fekete bundában – narancsos répapüré, magvas pirított polenta, sült zöldségek, articsókás brokkoli püré',
-            'en' => '',
-            'de' => ''
+            'en' => 'Pork tenderloin in black crust - orange carrot puree, roasted polenta with seeds, roasted vegetables, artichoke and broccoli puree',
+            'de' => 'Schweinefilet in schwarzer Kruste - Orangen-Karottenpüree, geröstete Polenta mit Samen, geröstetes Gemüse, Artischocken- und Brokkolipüree'
         ],
         'comment' => '',
         'price' => 4000,
@@ -181,8 +181,8 @@ return [
         'category_id' => 6,
         'name' => [
             'hu' => 'Zöldfűszeres mangalicakaraj – burgonyakrém, lilaburgonya csepp, sült mandarin, sajtchips',
-            'en' => '',
-            'de' => ''
+            'en' => 'Mangalica pork with herbs, mashed potato, purple potato, grilled mandarin, cheese chips',
+            'de' => 'Mangalitsakarree mit Grünzeug, erdapfelcreme, lilakartoffeltropf, gegrillte clementine, kasechips'
         ],
         'comment' => '',
         'price' => 4800,
@@ -192,8 +192,8 @@ return [
         'category_id' => 6,
         'name' => [
             'hu' => 'Bélszínszeletek, gombákkal , polentával (G)',
-            'en' => '',
-            'de' => ''
+            'en' => 'Tenderloin slices with mushrooms and polenta (G)',
+            'de' => 'Lendenbraten mit Pilzen und Polenta (G)'
         ],
         'comment' => '',
         'price' => 6100,
@@ -203,8 +203,8 @@ return [
         'category_id' => 6,
         'name' => [
             'hu' => 'Supreme csirke, édesköményes, diós almasaláta',
-            'en' => '',
-            'de' => ''
+            'en' => 'Chicken Supreme, apple salad with fennel and walnut',
+            'de' => 'Hähnchen-Supreme, Apfelsalat mit Fenchel und Walnuss'
         ],
         'comment' => '',
         'price' => 3700,
@@ -247,8 +247,8 @@ return [
         'category_id' => 2,
         'name' => [
             'hu' => 'Lazac burger – fekete buciban, házi hasáb, koktél szósz',
-            'en' => '',
-            'de' => ''
+            'en' => 'Salmon burger – in black bun, with homemade french fries and cocktail sauce',
+            'de' => 'Lachsburger - in schwarzem Brötchen, mit hausgemachten Pommes Frites und Cocktailsauce'
         ],
         'comment' => '',
         'price' => 3300,
@@ -258,8 +258,8 @@ return [
         'category_id' => 2,
         'name' => [
             'hu' => 'Sörben pácolt sertés csülök – káposztás nudli',
-            'en' => '',
-            'de' => ''
+            'en' => 'Pork knuckle marinated in beer – cabbage noodles',
+            'de' => 'In Bier marinierter Schweinshaxe – Kohlnudeln'
         ],
         'comment' => '',
         'price' => 5100,
@@ -357,8 +357,8 @@ return [
         'category_id' => 4,
         'name' => [
             'hu' => 'Kacsamell – vargánya házi tészta (L)',
-            'en' => '',
-            'de' => ''
+            'en' => 'Duck breast - homemade noodles with porcini (L)',
+            'de' => 'Entenbrust - hausgemachte Nudeln mit Steinpilzen (L)'
         ],
         'comment' => '',
         'price' => 3500,
@@ -434,8 +434,8 @@ return [
         'category_id' => 7,
         'name' => [
             'hu' => 'Vaniliás mille-feuille - meggyfagylalt',
-            'en' => '',
-            'de' => ''
+            'en' => 'Vanilla- mille-feuille - curd cheese ice cream',
+            'de' => 'Vanille -Mille-Feuille - Quark-Eis'
         ],
         'comment' => '',
         'price' => 1800,
