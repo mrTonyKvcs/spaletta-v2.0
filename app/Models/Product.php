@@ -12,7 +12,7 @@ class Product extends Model
 
     // protected $table = 'items';
 
-    protected $fillable = [ 'category_id', 'slug', 'name', 'comment','price', 'less_price', 'wine'];
+    protected $fillable = [ 'category_id', 'slug', 'name', 'en_name', 'de_name', 'comment','price', 'less_price', 'wine'];
 
     /**
      * The attributes that should be mutated to dates.
@@ -20,6 +20,25 @@ class Product extends Model
      * @var array
      */
     protected $dates = ['deleted_at'];
+
+    /**
+     * Get the user's first name.
+     *
+     * @param  string  $value
+     * @return string
+     */
+    public function getNameAttribute($value)
+    {
+        $locale = \LaravelLocalization::getCurrentLocale();
+
+        if ($locale === 'hu') {
+            return $value;
+        } elseif ($locale === 'en') {
+            return $this->en_name;
+        } elseif ($locale === 'de') {
+            return $this->de_name;
+        };
+    }
 
 
     public function category()
