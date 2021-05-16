@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.05.11 - 2021.05.15.',
-    'weekend-date' => '2021.05.16.',
+    'menu-date' => '2021.05.18 - 2021.05.21.',
+    'weekend-date' => '2021.05.22.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Erőleves fridatto módra (G, L)',
-                'Bableves füstölt húsos derelyével (L)',
-                'Görög gyümölcsleves (G, L)'
+                'Újházi – tyúkleves (L)',
+                'Spárgakrémleves, snidlinges ricottás pirítós (G, L)',
+                'Palócleves '
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Borjúpörkölt – sós burgonya, csemegeuborka (G, L)',
-                'Rakott karfiol (G, L)',
-                'Barackos túrós rétes',
-                'Zöldséggel töltött rántott palacsinta, tzatziki'
+                'Sous – vide csirkemell – rebarbarás almamártás, rizs (G, L)',
+                'Brassói aprópecsenye, ecetes vegyes saláta (G, L)',
+                'Tejszínes spenótos házi tészta-buggyantott fürjtojás (G, L)',
+                'Csörögefánk baracklekvár'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Joghurtos almás – édeskömény leves csibehússal (G)',
-                'Sült oldalas – pirított burgonya, görögsaláta (G)',
-                'Epres pudingos szelet'
+                'Hideg mentás meggyleves vanília fagyi (G)',
+                'Borjúnyak Budapest módra pirított polenta (G, L)',
+                'Epres túrós Pavlova (G)'
             ]
         ],
     ]
