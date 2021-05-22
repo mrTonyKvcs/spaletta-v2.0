@@ -31,8 +31,12 @@
             <source src="../videos/spaletta-video.mp4" type="video/mp4">
         </video>
     </div>
+    <div class="flex flex-col items-center justify-center mt-56 px-6 text-4xl text-center">
+        <h2 class="font-semibold pb-4">Kedves Vendégeink!</h2>
+        <p>2021. május 23-án vasárnap a megszokottól eltérően, éttermünk ZÁRVA tart.<br> Mindenkinek Kellemes Pünkösdi Ünnepeket kíván a Spaletta Étterem.</p>
+    </div>
     <x-section>
-        <div class="flex flex-col items-center mt-32">
+        <div class="flex flex-col items-center">
             <x-title title="{{ __('Heti Menü') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" price="1800 Ft"></x-title>
             <x-weekly-menu></x-weekly-menu>
             <x-title title="{{ __('Hétvégi Menü') }}" text="{{ config('spaletta.weekly-menu.weekend-date') }}" price="2600 Ft"></x-title>
