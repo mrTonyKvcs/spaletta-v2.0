@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.06.01 - 2021.06.04.',
-    'weekend-date' => '2021.06.05.',
+    'menu-date' => '2021.06.08 - 2021.06.11.',
+    'weekend-date' => '2021.06.12.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Francia tojásleves (L)',
-                'Gulyásleves (G, L)',
-                'Tavaszi salátaleves húsgombóccal'
+                'Vegyes gyümölcsleves Panna cotta (G, L)',
+                'Frankfurti leves (G, L)',
+                'Ponty halászlé, gyufatészta (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Spárgával töltött sertéstarja-burgonyakrém, almakompót',
-                'Bőrös fogas roston – pirított hajdina, mentás zöldborsó püré (G, L)',
-                'Rakott cukkini (G)',
-                'Eredeti cézársaláta'
+                'Rántott sertésmáj – petrezselymes parázsburgonya, fejes saláta',
+                'Hortobágyi húsos palacsinta',
+                'Gombás – aszaltparadicsomos csirkemell– jázminrizs (G, L)',
+                'Vargabéles –vanília mártás'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Gombaleves kacsamájjal (G, L)',
-                'Rozé szűzpecsenye – langyos lencsesaláta, zöldbors mártás (G, L)',
-                'Lajcsi szelet'
+                'Lebbencsleves (L)',
+                'Sült kacsacomb – almás pezsgőskáposzta, pirított nudli (L)',
+                'Piskótatekercs'
             ]
         ],
     ]
