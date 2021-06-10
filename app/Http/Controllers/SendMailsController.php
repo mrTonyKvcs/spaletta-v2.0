@@ -16,6 +16,12 @@ class SendMailsController extends Controller
         $request['subject'] = $request->subject;
 
         if ($request->subject == 'Asztalfoglalás') {
+            $privateEvent = $this->privateEvent($request->checkin, $request->time);
+
+            if ($privateEvent) {
+                return back()->with('error', 'Erre az időpontra nem tud foglalni asztalt mert az éttermünk zártkörű esemény miatt zárva tart!');
+            }
+
             \Mail::to(env('MAIL_TO_ADDRESS'), 'Spaletta Kecskemét')
                 ->send(new SendMails($request->all()));
 
@@ -70,5 +76,14 @@ class SendMailsController extends Controller
                 'persons' => 'required'
             ]);
         }
+    }
+
+    public function privateEvent($date, $time)
+    {
+        if ($date == '2021-06-11' && ($time >= '18:00' && $time < '20:30')) {
+            return true;
+        }
+
+        return false;
     }
 }

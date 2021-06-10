@@ -1,7 +1,7 @@
 <div class="w-full mb-10">
     @include('flash-message')
 </div>
-<form action="{{ route('mail.store', 'Asztalfoglalás')}}" method="POST" class="w-full lg:w-2/3 lg:grid lg:grid-cols-2 lg:gap-6">
+<form id="reservation" action="{{ route('mail.store', 'Asztalfoglalás')}}" method="POST" class="w-full lg:w-2/3 lg:grid lg:grid-cols-2 lg:gap-6">
 
     @csrf
     <div class="mb-6">

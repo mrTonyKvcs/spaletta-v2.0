@@ -28,9 +28,9 @@
 @endif
   
 @if ($message = Session::get('error'))
-<div class="alert alert-danger alert-block">
+<div class="bg-red-900 alert alert-danger alert-block">
     <button type="button" class="close" data-dismiss="alert">?</button>    
-    <strong>{{ $message }}</strong>
+    <strong class="text-2xl text-white">{{ $message }}</strong>
 </div>
 @endif
    
