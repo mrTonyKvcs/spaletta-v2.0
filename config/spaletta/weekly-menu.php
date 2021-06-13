@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.06.08 - 2021.06.11.',
-    'weekend-date' => '2021.06.12.',
+    'menu-date' => '2021.06.15 - 2021.06.18.',
+    'weekend-date' => '2021.06.19.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Vegyes gyümölcsleves Panna cotta (G, L)',
-                'Frankfurti leves (G, L)',
-                'Ponty halászlé, gyufatészta (L)'
+                'Póréhagymás burgonya krémleves baconchips és sajt (G)',
+                'Kelbimbós csirkeleves (L)',
+                'Mentás málnaleves fagyi (G)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Rántott sertésmáj – petrezselymes parázsburgonya, fejes saláta',
-                'Hortobágyi húsos palacsinta',
-                'Gombás – aszaltparadicsomos csirkemell– jázminrizs (G, L)',
-                'Vargabéles –vanília mártás'
+                'Mézes – szezámmagos pulykacsíkok – bulgursaláta (L)',
+                'Hideg kapros tökfőzelék – tofus lazacnyárs (G, L)',
+                'Zserbós rakott palacsinta',
+                'Vaddisznópörkölt- tarhonya- vegyes vágott'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Lebbencsleves (L)',
-                'Sült kacsacomb – almás pezsgőskáposzta, pirított nudli (L)',
-                'Piskótatekercs'
+                'Citromos tárkonyos raguleves (G, L)',
+                'Gyros tál (L)',
+                'Cseresznyés tiramisu pohárba'
             ]
         ],
     ]
