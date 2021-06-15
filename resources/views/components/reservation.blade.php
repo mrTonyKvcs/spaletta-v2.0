@@ -40,6 +40,17 @@
             <option value="Sörház">{{ __('Sörház') }}</option>
         </select> 
     </div>
+    <div>
+        <p class="text-2xl font-medium text-center gray ">{{ __('Asztalfoglalás meccsnézésre') }}</p>
+        <select name="matchmaker" id="" class=" bg-white w-full gray outline-none text-center font-medium py-2.5 px-5 text-2xl border-b border-gray-300" required>
+            <option value="Nem">{{ __('Nem') }}</option>
+            <option value="Igen">{{ __('Igen') }}</option>
+        </select> 
+    </div>
+    <div>
+        <p class="text-2xl font-medium text-center gray">{{ __('Megjegyzés') }}</p>
+        <textarea name="comment" class="w-full gray outline-none text-center font-medium py-2.5 px-5 text-xl border-b border-gray-300"></textarea>
+    </div>
 
     <div class="flex items-center justify-center col-span-2">
         <x-button type="gray">{{ __('Asztalfoglalás') }}</x-button>

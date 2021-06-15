@@ -24,7 +24,13 @@
         <strong>Vendégek száma:</strong> {{ $mail['persons'] }} fő
     </p>
     <p>
-        <strong>Helyszín</strong> {{ $mail['locale'] }}
+        <strong>Helyszín:</strong> {{ $mail['locale'] }}
+    </p>
+    <p>
+        <strong>Asztalfoglalás meccsnézésre:</strong> {{ $mail['matchmaker'] }}
+    </p>
+    <p>
+        <strong>Megjegyzés:</strong> {{ $mail['comment'] }}
     </p>
 </body>
 </html>

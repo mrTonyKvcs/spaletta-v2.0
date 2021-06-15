@@ -45,6 +45,12 @@ class SendMailsController extends Controller
             'email' => 'required'
         ]);
 
+        if ($request->matchmaker) {
+            $request->validate([
+                'matchmaker' => 'required'
+            ]);
+        }
+
         if ($request->phone) {
             $request->validate([
                 'phone' => 'required'
