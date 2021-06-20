@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.06.15 - 2021.06.18.',
-    'weekend-date' => '2021.06.19.',
+    'menu-date' => '2021.06.22 - 2021.06.25.',
+    'weekend-date' => '2021.06.26.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Póréhagymás burgonya krémleves baconchips és sajt (G)',
-                'Kelbimbós csirkeleves (L)',
-                'Mentás málnaleves fagyi (G)'
+                'Minestrone leves (L)',
+                'Hideg citromleves (L, G)',
+                'Babgulyás (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Mézes – szezámmagos pulykacsíkok – bulgursaláta (L)',
-                'Hideg kapros tökfőzelék – tofus lazacnyárs (G, L)',
-                'Zserbós rakott palacsinta',
-                'Vaddisznópörkölt- tarhonya- vegyes vágott'
+                'Sous-vide csirkemell – gorgonzola mártás, spárgás rizs (G)',
+                'Töltött cukkini (G)',
+                'Zöldborsós tokány – galuska, meggykompót (L)',
+                'Zöldségtócsni - Bazsalikomos, újhagymás mártogatós (G, L)'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Citromos tárkonyos raguleves (G, L)',
-                'Gyros tál (L)',
-                'Cseresznyés tiramisu pohárba'
+                'Brokkoli krémleves, pirított mandula (G, L)',
+                'Pácolt sertéstarja – steak burgonya, friss saláta (G, L)',
+                'Citromos túrós pite'
             ]
         ],
     ]
