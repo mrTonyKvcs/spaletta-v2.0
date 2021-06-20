@@ -16,6 +16,12 @@ class SendMailsController extends Controller
         $request['subject'] = $request->subject;
 
         if ($request->subject == 'Asztalfoglalás') {
+            $open = $this->checkOpenHours($request->checkin, $request->time);
+
+            if (!$open) {
+                return back()->with('error', 'Erre az időpontra nem tud foglalni asztalt mert az éttermünk zárva tart!');
+            }
+
             $privateEvent = $this->privateEvent($request->checkin, $request->time);
 
             if ($privateEvent) {
@@ -91,5 +97,20 @@ class SendMailsController extends Controller
         }
 
         return false;
+    }
+
+    public function checkOpenHours($checkin, $time)
+    {
+        $day = Carbon::parse($checkin)->format('l');
+
+        if ($day === 'Monday') {
+            return false;
+        } elseif ($day === 'Sunday' && $time > '15:40') {
+            return false;
+        } elseif ($time < '11:30' || $time > '22:40') {
+            return false;
+        }
+
+        return true;
     }
 }
