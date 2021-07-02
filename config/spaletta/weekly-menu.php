@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.06.29 - 2021.07.02.',
-    'weekend-date' => '2021.07.03.',
+    'menu-date' => '2021.07.06 - 2021.07.09.',
+    'weekend-date' => '2021.07.10.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Hideg egresleves (G, L)',
-                'Zöldbableves kapros túrós galuskával',
-                'Magyaros gombaleves sertéshússal (L)'
+                'Tejszínes hideg meggyleves (G, L)',
+                'Marhahúsleves cérnametélt (L)',
+                'Mentás zöldborsó krémleves, gyömbéres garnéla (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Mexikói csirkés bulgur (L)',
-                'Marhapörkölt – túrós csusza, kovászos uborka',
-                'Roston harcsacsíkok – csőben sültkarfiol (G)',
-                'Nyári fetás saláta (G)'
+                'Gombás vaddisznóragu – krokett',
+                'Saslik –hasábburgonya, görögdinnye (G, L)',
+                'Waldorf saláta (G)',
+                'Klasszikus bolognai - házi tészta'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Hideg ánizsos szederkrémleves (G)',
-                'Sült pulykacomb – citromos pityóka (G, L)',
-                'Lime-os mentás süti'
+                'Grízgaluska leves (L)',
+                'Toledói jércemell ragu - jázmin rizs (G, L)',
+                'Gyümölcsrizs (G)'
             ]
         ],
     ]
