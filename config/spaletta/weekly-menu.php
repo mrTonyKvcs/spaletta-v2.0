@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.07.06 - 2021.07.09.',
-    'weekend-date' => '2021.07.10.',
+    'menu-date' => '2021.07.13 - 2021.07.16.',
+    'weekend-date' => '2021.07.17.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Tejszínes hideg meggyleves (G, L)',
-                'Marhahúsleves cérnametélt (L)',
-                'Mentás zöldborsó krémleves, gyömbéres garnéla (G, L)'
+                'Csontleves csigatésztával (L)',
+                'Nyírségi gombócleves (L)',
+                'Sárgadinnye krémleves (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Gombás vaddisznóragu – krokett',
-                'Saslik –hasábburgonya, görögdinnye (G, L)',
-                'Waldorf saláta (G)',
-                'Klasszikus bolognai - házi tészta'
+                'Barna sörös marhapörkölt – petrezselymes burgonya (L)',
+                'Fűszeres sült csirkecomb – rizibizi ecetes vegyes saláta (G, L)',
+                'Töröklecsó (G)',
+                'Aranygaluska vaníliamártás'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Grízgaluska leves (L)',
-                'Toledói jércemell ragu - jázmin rizs (G, L)',
-                'Gyümölcsrizs (G)'
+                'Könnyű nyári zöldségleves (L)',
+                'Illatos mézes oldalas – steak burgonya kevert saláta (G, L)',
+                'Madártej (G)'
             ]
         ],
     ]
