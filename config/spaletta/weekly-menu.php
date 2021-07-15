@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.07.13 - 2021.07.16.',
-    'weekend-date' => '2021.07.17.',
+    'menu-date' => '2021.07.20 - 2021.07.23.',
+    'weekend-date' => '2021.07.24.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Csontleves csigatésztával (L)',
-                'Nyírségi gombócleves (L)',
-                'Sárgadinnye krémleves (G, L)'
+                'Nyári, hűvös, habart bableves (G, L)',
+                'Frissítő görögdinnyeleves (G, L)',
+                'Zöldborsóleves galuskával (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Barna sörös marhapörkölt – petrezselymes burgonya (L)',
-                'Fűszeres sült csirkecomb – rizibizi ecetes vegyes saláta (G, L)',
-                'Töröklecsó (G)',
-                'Aranygaluska vaníliamártás'
+                'Zúzapörkölt – tarhonya, vegyes vágott savanyúság (L)',
+                'Sertéstarja cukkinival és paradicsommal – kefires romai saláta (G)',
+                'Brokkolis bulgursaláta sült paprikával és fogas chips (L)',
+                'Császármorzsa – baracklekvár'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Könnyű nyári zöldségleves (L)',
-                'Illatos mézes oldalas – steak burgonya kevert saláta (G, L)',
-                'Madártej (G)'
+                'Erőleves fridattó (L)',
+                'Grillben sült sertéskaraj – bakonyi mártás, pirított kenyérpuding',
+                'Kakaós palacsinta, vanília töltelék, meggyragu, tejszínhab'
             ]
         ],
     ]
