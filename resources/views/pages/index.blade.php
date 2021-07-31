@@ -38,7 +38,7 @@
     </div>  --}}
     <x-section>
         <div class="flex flex-col items-center mt-24">
-            <x-title title="{{ __('Heti Menü') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" price="1800 Ft"></x-title>
+            <x-title title="{{ __('Heti Menü') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" price="2100 Ft"></x-title>
             <x-weekly-menu></x-weekly-menu>
             <x-title title="{{ __('Hétvégi Menü') }}" text="{{ config('spaletta.weekly-menu.weekend-date') }}" price="2600 Ft"></x-title>
             <x-weekend-menu></x-weekend-menu>
