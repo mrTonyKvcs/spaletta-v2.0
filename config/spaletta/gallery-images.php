@@ -266,6 +266,41 @@ return [
         'name' => 12,
     ],
     [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 80,
+    ],
+    [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 81,
+    ],
+    [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 82,
+    ],
+    [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 83,
+    ],
+    [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 84,
+    ],
+    [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 85,
+    ],
+    [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 86,
+    ],
+    [
         'tab' => 4,
         'category' => 'team',
         'name' => 55,
