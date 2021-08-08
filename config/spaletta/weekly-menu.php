@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.08.03 - 2021.08.06.',
-    'weekend-date' => '2021.08.07.',
+    'menu-date' => '2021.08.10 - 2021.08.13.',
+    'weekend-date' => '2021.08.14.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Krémes gombaleves (G, L)',
-                'Marhagulyás leves (L)',
-                'Eperleves, panna cotta'
+                'Palócleves (L)',
+                'Szilvaleves (G, L)',
+                'Szicíliai halleves (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Brassói aprópecsenye, káposztasaláta (G, L)',
-                'Hideg tökfőzelék – amerikai bundás virsli (L)',
-                'Fehér csoki ganache – val töltött fánk',
-                'Cukkini fasírt – feketerizs, kevertsaláta (G, L)'
+                'Alföldi tarhonyás hús, kovászos uborka (L)',
+                'Bardírozott csirke - kókusztejes zöldborsófőzelék (G, L)',
+                'Kolbászos burgonya nyárs – sopszka saláta (G)',
+                'Rántott sajt – jázminrizs, tartármártás'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Frankfurti leves (L)',
-                'Ropogós kacsacomb – meggymártás, mogyorós rizs (G, L)',
-                'Csokis gyümölcsöskosár'
+                'Tejszínes zöldséges csirkeleves (L)',
+                'Sajttal, sonkával töltött sertésborda – burgonyapüré, uborkasaláta',
+                'Fanta szelet'
             ]
         ],
     ]
