@@ -61,10 +61,11 @@
     <x-section background="home-about">
         <div class="md:grid md:grid-cols-2">
             <div class="flex justify-end sm:mr-6 lg:mr-24">
-                <img src="../images/chefs.png" class="border-2 border-yellow-300 md:hidden" width="381" height="256"  alt="chefs" title="chefs">
-                <img src="../images/chefs-md.png" class="hidden border-2 border-yellow-300 md:block lg:hidden " width="354" height="417" alt="chefs" title="chefs">
-                <img src="../images/chefs-md.png" class="hidden border-2 border-yellow-300 lg:block xl:hidden" width="437" height="351" alt="chefs" title="chefs">
-                <img src="../images/chefs-md.png" class="hidden border-2 border-yellow-300 xl:block" width="490" height="329" alt="chefs" title="chefs">
+                <picture>
+                    <source srcset="/images/index.webp" type="image/webp">
+                    <img class="w-full hidden border-2 border-yellow-300 xl:block" src="/images/index.png" alt="Rolunk"
+                        title="Rolunk" height="329" width="490">
+                </picture>
             </div>
             <div class="flex flex-col items-center w-full px-6 py-8 mt-4 bg-white bg-opacity-75 sm:mt-0">
                 <p class="text-3xl italic font-medium gold font-libre">{{ __('Rólunk') }}</p>
