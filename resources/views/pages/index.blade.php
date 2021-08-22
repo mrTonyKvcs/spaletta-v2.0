@@ -31,17 +31,16 @@
             <source src="../videos/spaletta-video.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="flex flex-col items-center justify-center mt-56 px-6 text-4xl text-center">
+    {{-- <div class="flex flex-col items-center justify-center mt-56 px-6 text-4xl text-center">
         <h2 class="font-semibold pb-4">Kedves Vendégeink !</h2>
         <p>2021. augusztus 20-án éttermünk zárva tart, augusztus 21-től a megszokott nyitvatartással várjuk Vendégeinket.</p>
-    </div> 
+    </div>  --}}
     <x-section>
         <div class="flex flex-col items-center mt-24">
             <x-title title="{{ __('Heti Menü') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" price="2100 Ft"></x-title>
             <x-weekly-menu></x-weekly-menu>
             <x-title title="{{ __('Hétvégi Menü') }}" text="{{ config('spaletta.weekly-menu.weekend-date') }}" price="2600 Ft"></x-title>
-            {{-- <x-weekend-menu></x-weekend-menu> --}}
-            <p class="text-2xl uppercase pb-4 font-semibold text-gray2e text-center">2021. augusztus 21-én szombaton csak À La Carte étlapunk elérhető!</p>
+            <x-weekend-menu></x-weekend-menu>
             <p class="text-xl">{{ __('(Az ár nem tartalmazza a csomagolás díját)') }}</p>
             <x-button><a href="{{ route('pages.menu') }}">{{ __('Étlap') }}</a></x-button>
         </div>

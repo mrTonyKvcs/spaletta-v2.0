@@ -2,22 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.08.17 - 2021.08.19.',
-    'weekend-date' => '2021.08.21.',
+    'menu-date' => '2021.08.24 - 2021.08.27.',
+    'weekend-date' => '2021.08.28.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Újházi tyúkhúsleves (L)',
-                'Tojásleves (L)',
+                'Vegyes gyümölcsleves (G, L)',
+                'Legényfogó leves (G, L)',
+                'Csontleves cérnametélt (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Lecsós sertésszelet – bulgur (L)',
-                'Rántott szelet – majonézes burgonyasaláta',
-                'Zöldséges sült tészta (L)',
+                'Bakonyi tokány – galuska (L)',
+                'Zsályás csirkecomb filé – fondant burgonya, paprikasaláta (G, L)',
+                'Sajtos – cukkinis rizottó (G)',
+                'Mákos házi nudli (L)',
             ]
         ],
     ],
@@ -25,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                '',
-                '',
-                ''
+                'Kolbászos lebbencsleves (L)',
+                'Fűszeres sajttal töltött csirkemell – zöldborsós hajdina',
+                'Keksztekercs'
             ]
         ],
     ]
