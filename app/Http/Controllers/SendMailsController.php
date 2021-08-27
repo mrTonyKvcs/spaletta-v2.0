@@ -92,7 +92,7 @@ class SendMailsController extends Controller
 
     public function privateEvent($date, $time)
     {
-        if ($date == '2021-06-11' && ($time >= '18:00' && $time < '20:30')) {
+        if ($date == '2021-08-28' && $time >= '13:40') {
             return true;
         }
 
