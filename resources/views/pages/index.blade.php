@@ -31,10 +31,10 @@
             <source src="../videos/spaletta-video.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="flex flex-col items-center justify-center mt-56 px-6 text-4xl text-center">
+    {{-- <div class="flex flex-col items-center justify-center mt-56 px-6 text-4xl text-center">
         <h2 class="font-semibold pb-4">Kedves Vendégeink !</h2>
         <p>A mai napon 14.30-ig várjuk vendégeinket szombati menü ajánlatunkkal. 14.30-tól zártkörű rendezvény miatt éttermünk zárva tart.</p>
-    </div> 
+    </div>  --}}
     <x-section>
         <div class="flex flex-col items-center mt-24">
             <x-title title="{{ __('Heti Menü') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" price="2100 Ft"></x-title>
