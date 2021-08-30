@@ -19,14 +19,21 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
 <body >
-    {{-- <header>
-        @include('partials.navbar')
+    <header>
+        <livewire:navbar />
+        {{-- @include('partials.new-navbar') --}}
     </header>
-    <main>
-        @yield('content')
+    <main class="z-10 bg-white shadow-lg mb-160">
+        {{-- <div class="timer" x-data="timer(new Date().setDate(new Date().getDate() + 1))" x-init="init();"> --}}
+            {{-- <h1 x-text="time().days"></h1> --}}
+            {{-- <h1 x-text="time().hours"></h1> --}}
+            {{-- <h1 x-text="time().minutes"></h1> --}}
+            {{-- <h1 x-text="time().seconds"></h1> --}}
+          {{-- </div> --}}
+       @yield('content')
     </main>
-    <footer>
+    <footer class="light-gray-bg footer-parallax">
         @include('partials.footer')
-    </footer> --}}
+    </footer>
 </body>
 </html>

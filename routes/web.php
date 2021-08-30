@@ -19,7 +19,7 @@ use App\Models\Category;
 Route::group(
 [
     'prefix' => LaravelLocalization::setLocale(),
-    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'localize' ]
+    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'localize']
 ], function()
 {
 

@@ -18,7 +18,7 @@ class Navbar extends Component
 
     public function mount(): void
     {
-        $this->cartTotal = count(Cart::get()['products']);
+        // $this->cartTotal = count(Cart::get()['products']);
     }
 
     public function render(): View

@@ -1,5 +1,3 @@
-@extends('layouts.app')
-
 @section('title') {{ __('Kapcsolat') }} @endsection
 
 @section('meta_data')

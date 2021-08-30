@@ -95,7 +95,7 @@
     </head>
 <body>
     <header>
-        <livewire:navbar></livewire>
+        <livewire:navbar />
         {{-- @include('partials.new-navbar') --}}
     </header>
     <main class="z-10 bg-white shadow-lg mb-160">
