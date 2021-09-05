@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.08.31 - 2021.09.03.',
-    'weekend-date' => '2021.09.04.',
+    'menu-date' => '2021.09.07 - 2021.09.10.',
+    'weekend-date' => '2021.09.11.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Jókai bableves (L)',
-                'Reszelt tésztaleves (L)',
-                'Őszibarack krémleves, tejszínhab, mini fánk'
+                'Borjúbecsinált leves (L)',
+                'Gyömbéres almaleves, vaníliás mini rétes',
+                'Erőleves zöldséges galuska (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Mátrai borzaska – petrezselymes burgonya',
-                'Öreglebbencs, házi vegyes vágott savanyúság (L)',
-                'Zöldséges piadina',
-                'Túrógombóc fahéjas tejföl',
+                'Zúzapörkölt – tarhonya, kovászos uborka (L)',
+                'Ropogós csirkecomb – hasábburgonya, görögsaláta (G)',
+                'Kapros cukkini főzelék – zöldség fasírt (G, L)',
+                'Fahéjas csiga – vanília mártás',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Sárgaborsó krémleves, bacon chips (G, L)',
-                'Magvas bundába sült harcsa filé – kukoricás rizs, friss saláta',
-                'Karamellás sós mogyorós szelet'
+                'Zelleres – zöldséges rizsleves (G, L)',
+                'Tejszínes gombás sertés szűz – jázmin rizs (G, L)',
+                'Barackos pite'
             ]
         ],
     ]
