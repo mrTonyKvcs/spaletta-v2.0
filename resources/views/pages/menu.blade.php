@@ -16,6 +16,7 @@
         <div class="flex flex-col-reverse w-full">
             <div class="">
                 
+                
                 @forelse($categories as $category)
                     <x-product-category title="{{ $category->name }}"></x-product-category>
 
