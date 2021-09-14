@@ -17,6 +17,9 @@
             </a>
           </div>
           <div class="items-center hidden uppercase navbar xl:flex xl:space-x-2">
+              <a href="{{ route('pages.oktobierfest') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
+                {{ __('OKTOBIERFEST') }}
+            </a>
             <a href="{{ route('pages.menu') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
                 {{ __('Étlap') }}
             </a>
