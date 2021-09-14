@@ -10,7 +10,7 @@
 
 <x-layout>
     <x-header background="menu">
-        {{ __('Étlap') }}
+        {{ __($title) }}
     </x-header>
     <x-section>
         <div class="flex flex-col-reverse w-full">

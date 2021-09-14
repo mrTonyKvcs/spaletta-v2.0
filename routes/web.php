@@ -48,9 +48,16 @@ Route::group(
     // })->name('pages.menu');
 
     Route::get(LaravelLocalization::transRoute('routes.menu'), function () {
+        $title = 'Étlap';
         $categories = Category::where('type_id', 1)->with('items')->get();
-        return view('pages.menu', compact('categories'));
+        return view('pages.menu', compact('categories', 'title'));
     })->name('pages.menu');
+
+    Route::get('oktobierfest', function () {
+        $title = 'OKTOBIERFEST Étlap';
+        $categories = Category::where('type_id', 8)->with('items')->get();
+        return view('pages.menu', compact('categories', 'title'));
+    })->name('pages.oktobierfest');
 
     Route::get(LaravelLocalization::transRoute('routes.reservation'), function () {
         return view('pages.reservation');

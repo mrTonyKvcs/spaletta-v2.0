@@ -17,7 +17,7 @@ class ItemsTableSeeder extends Seeder
     {
         //$foods = config()->get('spaletta.foods');
         // $foods = config()->get('spaletta.delivery-drinks');
-        $foods = config()->get('spaletta.summer-foods');
+        $foods = config()->get('spaletta.oktobierfest');
         // dd($foods);
 
         foreach($foods as $item) {
@@ -27,17 +27,17 @@ class ItemsTableSeeder extends Seeder
                 $item['less_price'] = null;
             }
 
-            // if (isset($item['name']['hu'])) {
-            //     $item['slug'] = Str::slug($item['name']['hu']);
-            //     $item['name'] = $item['name']['hu'];
-            // } else {
-            //     $item['slug'] = Str::slug($item['name']);
-            // }
+            if (isset($item['name']['hu'])) {
+                $item['slug'] = Str::slug($item['name']['hu']);
+                $item['name'] = $item['name']['hu'];
+            } else {
+                $item['slug'] = Str::slug($item['name']);
+            }
 
-            $item['slug'] = Str::slug($item['name']['hu']);
-            $item['en_name'] = $item['name']['en'];
-            $item['de_name'] = $item['name']['de'];
-            $item['name'] = $item['name']['hu'];
+            // $item['slug'] = Str::slug($item['name']['hu']);
+            // $item['en_name'] = $item['name']['en'];
+            // $item['de_name'] = $item['name']['de'];
+            // $item['name'] = $item['name']['hu'];
 
             Product::updateOrCreate($item);
         }
