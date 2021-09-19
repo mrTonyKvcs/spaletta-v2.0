@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.09.14 - 2021.09.17.',
-    'weekend-date' => '2021.09.18.',
+    'menu-date' => '2021.09.21 - 2021.09.24.',
+    'weekend-date' => '2021.09.25.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Sörös savanyú káposztaleves pirított virsli (G, L)',
-                'Fokhagyma krémleves kruton (G, L)',
-                'Kakukkfüves gombaleves daragaluska (L)'
+                'Vietnámi marhahúsleves (G, L)',
+                'Mézes szőlőleves, citromos panna cotta (G)',
+                'Zöldborsóleves csurgatott galuskával (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Barna sörös borjúragu – zsemlegombóc (L)',
-                'Lencsefőzelék – sült debreceni (L)',
-                'Rántott camembert – jázminrizs, áfonyamártás',
-                'Máglyarakás',
+                'Bácskai rizses hús, csemegeuborka (G, L)',
+                'Corn flakes bundás csirkemell – pároltzöldség, lilahagymás majonéz (G, L)',
+                'Penne arrabbiata',
+                'Harcsa papillote, Rác módra (G, L)',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Húsleves cérnametélt (G)',
-                'Sültcsülök – savanyú káposztás tepsis burgonya (G, L)',
-                'Rántott alma vaníliasodó'
+                'Kukorica krémleves, bacon chips (G, L)',
+                'Konfitált sertéstarja – steak burgonya, friss saláta (G, L)',
+                'Kávékrémes piskóta rolád'
             ]
         ],
     ]

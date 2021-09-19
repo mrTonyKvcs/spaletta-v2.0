@@ -31,7 +31,7 @@
             <source src="../videos/spaletta-video.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="md:grid md:grid-cols-2 mt-56 px-6">
+    {{-- <div class="md:grid md:grid-cols-2 mt-56 px-6">
         <div class="flex justify-end items-center">
             <img class="lg:w-2/3" src="/images/events/2021-oktobierfest.jpg" alt="">
         </div>
@@ -40,7 +40,7 @@
             <p class="text-3xl text-center font-medium gold font-libre italic">2021. szeptember 14 - 19.</p>
             <x-button type="gray-transparent"><a href="{{ route('events.index') }}">{{ __('Részletek') }}</a></x-button>
         </div>
-    </div> 
+    </div>  --}}
     <x-section>
         <div class="flex flex-col items-center mt-24">
             <x-title title="{{ __('Heti Menü') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" price="2100 Ft"></x-title>
