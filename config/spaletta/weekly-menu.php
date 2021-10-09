@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.10.05 - 2021.10.08.',
-    'weekend-date' => '2021.10.09.',
+    'menu-date' => '2021.10.12 - 2021.10.15.',
+    'weekend-date' => '2021.10.16.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Frankfurti leves (L)',
-                'Vörösboros szilvaleves (G, L)',
-                'Fácánleves (L)'
+                'Legényfogó leves (G, L)',
+                'Tarhonyaleves (L)',
+                'Erőleves tojáskocsonya (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Illatos mézes oldalas – fűszeres burgonya, kevert saláta (G, L)',
-                'Paprikás csirke – galuska, uborkasaláta (L)',
-                'Füstölt sajttal töltött padlizsán – bulgur, borsmártás',
-                'Vargabéles',
+                'Brassói aprópecsenye, házi vegyes vágott (G, L)',
+                'Rántott karfiol – rizibiz, tartármártás',
+                'Burgonyafőzelék – Stefánia szelet',
+                'Mákos guba, meggyragu',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Babgulyás (L)',
-                'Rostonsült fogas – feketerizs, sültzöldség (G, L)',
-                'Kókuszkocka'
+                'Marha húsleves gazdagon (L)',
+                'Sous-vide csirkemell – burgonyapüré, mézes sültalma (G)',
+                'Rigójancsi'
             ]
         ],
     ]
