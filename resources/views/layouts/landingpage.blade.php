@@ -13,18 +13,12 @@
         <!-- Styles -->
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
-        @livewireStyles
 
         
 </head>
 <body >
-    <header></header>
-
-    <main>
-       @yield('content')
-    </main>
-
-    <footer class=""></footer>
+   
+   @yield('content')
     
 </body>
 </html>
