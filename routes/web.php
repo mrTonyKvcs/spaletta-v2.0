@@ -53,11 +53,11 @@ Route::group(
         return view('pages.menu', compact('categories', 'title'));
     })->name('pages.menu');
 
-    Route::get('oktobierfest', function () {
-        $title = 'OKTOBIERFEST Étlap';
-        $categories = Category::where('type_id', 8)->with('items')->get();
-        return view('pages.menu', compact('categories', 'title'));
-    })->name('pages.oktobierfest');
+    // Route::get('oktobierfest', function () {
+    //     $title = 'OKTOBIERFEST Étlap';
+    //     $categories = Category::where('type_id', 8)->with('items')->get();
+    //     return view('pages.menu', compact('categories', 'title'));
+    // })->name('pages.oktobierfest');
 
     Route::get(LaravelLocalization::transRoute('routes.reservation'), function () {
         return view('pages.reservation');
@@ -92,6 +92,14 @@ Route::group(
         'as'    => 'events.show',
         'uses' => 'App\Http\Controllers\EventsController@show'
     ]);
+
+    Route::get(LaravelLocalization::transRoute('routes.weeklymenu'), function () {
+        return view('pages.weeklymenu');
+    })->name('pages.weeklymenu');
+
+    Route::get(LaravelLocalization::transRoute('routes.landingpage'), function () {
+        return view('pages.landingpage');
+    })->name('pages.landingpage');
 });
 
 Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {

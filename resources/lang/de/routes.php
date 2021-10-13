@@ -10,5 +10,7 @@ return [
     'gallery' => 'galerie',
     'about' => 'überuns',
     'contact' => 'kontakt',
-    'signin' => 'anmelden'
+    'signin' => 'anmelden',
+    'weeklymenu' => 'wochenkarte',
+    'landingpage' => 'landingpage'
 ];

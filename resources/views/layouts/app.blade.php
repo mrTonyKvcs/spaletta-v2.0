@@ -15,8 +15,7 @@
 
         @livewireStyles
 
-        <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
+        
 </head>
 <body >
     <header>
@@ -35,5 +34,9 @@
     <footer class="light-gray-bg footer-parallax">
         @include('partials.footer')
     </footer>
+
+    <!-- Scripts -->
+    <script src="{{ mix('js/app.js') }}" defer></script>
+
 </body>
 </html>

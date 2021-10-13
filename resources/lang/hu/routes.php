@@ -10,5 +10,7 @@ return [
     'gallery' => 'galeria',
     'about' => 'rolunk',
     'contact' => 'kapcsolat',
-    'signin' => 'bejelenkezes'
+    'signin' => 'bejelenkezes',
+    'weeklymenu' => 'hetimenu',
+    'landingpage' => 'qr-menu'
 ];

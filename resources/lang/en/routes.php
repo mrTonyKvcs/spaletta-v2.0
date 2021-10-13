@@ -10,5 +10,7 @@ return [
     'gallery' => 'gallery',
     'about' => 'about',
     'contact' => 'contact',
-    'signin' => 'signin'
+    'signin' => 'signin',
+    'weeklymenu'=> 'weeklymenu',
+    'landingpage' => 'landingpage'
 ];
