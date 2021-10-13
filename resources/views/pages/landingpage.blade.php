@@ -13,7 +13,7 @@
 
 @section('content')
     <div
-        class="max-w-sm mx-auto px-8 pt-16 pb-28 sm:pt-32 sm:pb-44 md:pt-20 md:pb-24 flex flex-col items-center justify-between h-screen">
+        class="max-w-sm mx-auto px-8 pt-10 pb-12 sm:pt-32 sm:pb-44 md:pt-20 md:pb-24 flex flex-col items-center justify-between h-screen">
         <div class="">
         <img src=" /images/logo/logo-qr.png" class="h-32 w-auto" alt="">
         </div>
