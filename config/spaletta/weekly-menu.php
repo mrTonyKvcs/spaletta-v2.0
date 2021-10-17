@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.10.12 - 2021.10.15.',
-    'weekend-date' => '2021.10.16.',
+    'menu-date' => '2021.10.19 - 2021.10.22.',
+    'weekend-date' => '2021.10.23.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Legényfogó leves (G, L)',
-                'Tarhonyaleves (L)',
-                'Erőleves tojáskocsonya (G, L)'
+                'Lencseleves csülökkel (L)',
+                'Gyömbéres almás répa krémleves (G, L)',
+                'Csípős garnélaleves (TOM YAM GOONG) (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Brassói aprópecsenye, házi vegyes vágott (G, L)',
-                'Rántott karfiol – rizibiz, tartármártás',
-                'Burgonyafőzelék – Stefánia szelet',
-                'Mákos guba, meggyragu',
+                'Pacalpörkölt – sósburgonya, kovászos uborka (L)',
+                'Habart tojással töltött sertésborda – jázminrizs, almakompót (G, L)',
+                'Rakott vega padlizsán (G)',
+                'Szilvás gombóc',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Marha húsleves gazdagon (L)',
-                'Sous-vide csirkemell – burgonyapüré, mézes sültalma (G)',
-                'Rigójancsi'
+                'Zöldséges pulykaleves (L)',
+                'Borjúoldalas gazdagon (G, L)',
+                'Gesztenyekocka'
             ]
         ],
     ]
