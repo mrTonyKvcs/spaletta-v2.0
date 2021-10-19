@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers;
 use App\Models\Category;
+use App\Models\Ticket;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,6 +63,14 @@ Route::group(
     Route::get(LaravelLocalization::transRoute('routes.reservation'), function () {
         return view('pages.reservation');
     })->name('pages.reservation');
+
+    Route::get('sikeres-vasarlas/{id}', function ($id) {
+        $ticket = Ticket::find($id);
+
+        return view('pages.successful-shopping', [
+            'ticket' => $ticket
+        ]);
+    })->name('pages.successful-shopping');
 
     // Route::get(LaravelLocalization::transRoute('routes.events'), function () {
     //     return view('pages.events');
