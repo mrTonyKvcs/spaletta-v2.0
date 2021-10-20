@@ -8,15 +8,20 @@
 
 <x-layout>
     <x-header background="reservation">
-        {{ __('Sikeres vásárlás') }}
+        {{ __('Jegy ellenőrzése') }}
     </x-header>
 
     <x-section>
         <div class="">
             <div class="overflow-hidden bg-white shadow">
                 <div class="px-4 pb-5 sm:p-6">
-                    <h3 class="pb-3 mb-5 text-3xl text-center uppercase border-b text-gold border-gold border-opacity-25">{{ __('Következő lépés') }}</h3>
-                    <p class="mb-10 text-3xl">Sikeres jegyvásárlás visszaigazolás. Email-ben kiküldésre került a jegy a Vevőnek.</p>
+                    @if($ticket->is_paid)
+                        <h3 class="pb-3 mb-5 text-3xl text-center uppercase border-b text-gold border-gold border-opacity-25">Érvényes jegy</h3>
+                    @else
+                        <h3 class="pb-3 mb-5 text-3xl text-center uppercase border-b border-gold border-opacity-25" style="color: red;">Érvénytelen jegy</h3>
+                    <p class="mb-10 text-3xl">Nem történt meg az utalás!</p>
+                    @endif
+                    <p class="mb-10 text-3xl">{!!  $ticket->is_paid ? 'Érvényeítve: ' . '<span class="text-gray-300">' .$ticket->check_in . '</span>' : ''  !!}</p>
 
                     <h3 class="pb-3 mb-5 text-3xl text-center uppercase border-b border-gold border-opacity-25 text-gold">{{ __('Rendelés adatai') }}</h3>
 
