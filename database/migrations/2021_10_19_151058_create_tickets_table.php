@@ -21,6 +21,7 @@ class CreateTicketsTable extends Migration
             $table->bigInteger('quantity');
             $table->bigInteger('total');
             $table->boolean('is_paid')->default(false);
+            $table->dateTime('check_in')->nullable();
             $table->string('name');
             $table->string('email');
             $table->string('phone_number');

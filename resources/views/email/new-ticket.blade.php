@@ -34,6 +34,6 @@
         <strong>Teljes összeg::</strong> {{ $data['total'] }} Ft
     </p>
 
-    <a href="{{ URL::to('/') . '/sikeres-vasarlas/' . $data['ticket_id'] }}">Jegyvásárlás visszaigazolás</a>
+    <a href="{{ URL::to('/') . '/sikeres-vasarlas-visszaigazolasa/' . $data['ticket_id'] . '/' . $data['order_number'] }}">Jegyvásárlás visszaigazolása</a>
 </body>
 </html>

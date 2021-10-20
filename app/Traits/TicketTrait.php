@@ -23,8 +23,21 @@ trait TicketTrait
 
     public function generateOrderNumber()
     {
-        $newOrderNumber = substr(Ticket::select('order_number')->get()->last()->order_number, 11) + 1;
+        $lastTicket = Ticket::select('order_number')->get()->last();
+
+        if(empty($lastTicket)) {
+            $newOrderNumber = 1010;
+        } else {
+            $newOrderNumber = substr($lastTicket->order_number, 11) + 1;
+        }
 
         return 'SPALETTA-T-' . $newOrderNumber;
+    }
+
+    public function getTicket($id, $orderNumber)
+    {
+        return Ticket::where('id', $id)
+            ->where('order_number', $orderNumber)
+            ->firstOrFail();
     }
 }

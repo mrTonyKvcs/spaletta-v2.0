@@ -9,6 +9,7 @@ use Livewire\Component;
 use App\Traits\TicketTrait;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\URL;
 
 class BuyTicket extends Component
 {
@@ -75,13 +76,13 @@ class BuyTicket extends Component
         return redirect()->route('pages.successful-shopping', $ticket->id);
     }
 
-    public function generateQrCode($ticketData)
+    public function generateQrCode($data)
     {
-        $qr = '/public/images/qr-codes/'. $ticketData['order_number'] . '.png';
+        $qr = '/public/images/qr-codes/'. $data['order_number'] . '.png';
 
         Storage::disk('local')->put($qr, \QrCode::format('png')
           ->size(300)
-          ->generate($ticketData['order_number'])
+          ->generate(URL::to('/') . '/check-in/' . $data['ticket_id'] . '/' . $data['order_number'])
         );
     }
 }

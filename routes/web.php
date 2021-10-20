@@ -72,6 +72,16 @@ Route::group(
         ]);
     })->name('pages.successful-shopping');
 
+    Route::get('check-in/{id}/{orderNumber}', [
+        'as' => 'ticket.check-in',
+        'uses' => 'App\Http\Controllers\TicketController@CheckIn'
+    ]);
+
+    Route::get('sikeres-vasarlas-visszaigazolasa/{id}/{orderNumber}', [
+        'as' => 'pages.confirmation-successful-shopping',
+        'uses' => 'App\Http\Controllers\TicketController@confirmAndSendTicket'
+    ]);
+
     // Route::get(LaravelLocalization::transRoute('routes.events'), function () {
     //     return view('pages.events');
     // })->name('pages.events');
