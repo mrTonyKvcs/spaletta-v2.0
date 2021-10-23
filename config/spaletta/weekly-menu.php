@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.10.19 - 2021.10.22.',
-    'weekend-date' => '2021.10.23.',
+    'menu-date' => '2021.10.26 - 2021.10.29.',
+    'weekend-date' => '2021.10.30.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Lencseleves csülökkel (L)',
-                'Gyömbéres almás répa krémleves (G, L)',
-                'Csípős garnélaleves (TOM YAM GOONG) (G, L)'
+                'Kolbászos csicseriborsó leves bevert tojással (G, L)',
+                'Sütőtök krémleves (G, L)',
+                'Erőleves baconszalonnás zsemlegombóccal'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Pacalpörkölt – sósburgonya, kovászos uborka (L)',
-                'Habart tojással töltött sertésborda – jázminrizs, almakompót (G, L)',
-                'Rakott vega padlizsán (G)',
-                'Szilvás gombóc',
+                'Hortobágyi húsos palacsinta (L)',
+                'Sous – vide sertéskaraj – petrezselymes rizs, tormamártás (G, L)',
+                'Prézlis tészta, házi baracklekvárral',
+                'Halszeletek sörtésztában – zöldséges hajdina, koktélszósz',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Zöldséges pulykaleves (L)',
-                'Borjúoldalas gazdagon (G, L)',
-                'Gesztenyekocka'
+                'Ecetes cukros zöldbableves (L)',
+                'Sült tarja – borsos burgonya, lilahagyma lekvár',
+                'Kekszes banános krémes süti'
             ]
         ],
     ]
