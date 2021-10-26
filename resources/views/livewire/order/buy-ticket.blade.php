@@ -37,9 +37,12 @@
         </div>
     </div>
     <div class="py-3 mt-8 text-right ">
-        <button wire:click="submit" type="submit" class="inline-flex justify-center px-4 py-2 text-2xl font-medium text-white uppercase border border-transparent bg-gold shadow-sm rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        <button wire:click="submit" wire:loading.class="hidden" type="submit" class="inline-flex justify-center px-4 py-2 text-2xl font-medium text-white uppercase border border-transparent bg-gold shadow-sm rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
             Jegyvásárlás
         </button>
+        <div wire:loading class="text-2xl uppercase">
+            Jegyvásárlás folyamatban...
+        </div>
     </div>
 
 </div>

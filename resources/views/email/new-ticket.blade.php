@@ -4,7 +4,7 @@
     <title>Spaletta</title>
 </head>
 <body style="padding: 50px;">
-    <p>Új jegyvásárlás</p>
+    <h3>Új jegyvásárlás</h3>
     <p>
         <strong>Rendelési azonosító:</strong> {{ $data['order_number'] }}
     </p>
@@ -27,13 +27,14 @@
         <strong>Rendelési cím:</strong> {{ $data['address'] }}
     </p>
     <p>
-        <strong>Jegyek száma</strong> {{ $data['quantity'] }}
+        <strong>Jegyek száma:</strong> {{ $data['quantity'] }}
     </p>
 
     <p>
-        <strong>Teljes összeg::</strong> {{ $data['total'] }} Ft
+        <strong>Teljes összeg:</strong> {{ $data['total'] }} Ft
     </p>
 
+    <h4><stonng>Számlaszám:</stonng> {{ $data['invoice_number'] }}</h4>
     <a href="{{ URL::to('/') . '/sikeres-vasarlas-visszaigazolasa/' . $data['ticket_id'] . '/' . $data['order_number'] }}">Jegyvásárlás visszaigazolása</a>
 </body>
 </html>

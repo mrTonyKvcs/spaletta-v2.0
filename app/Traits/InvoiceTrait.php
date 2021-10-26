@@ -2,13 +2,23 @@
 
 namespace App\Traits;
 
+use App\Models\Invoice as InvoiceModel;
 use SzamlaAgent\SzamlaAgentAPI;
 use SzamlaAgent\Buyer;
 use SzamlaAgent\Document\Invoice\Invoice;
 use SzamlaAgent\Item\InvoiceItem;
+use Illuminate\Support\Str;
 
 trait InvoiceTrait
 {
+    public function createInvoiceModel($invoiceNumber)
+    {
+        return InvoiceModel::create([
+            'slug' => Str::slug($invoiceNumber),
+            'invoice_number' => $invoiceNumber
+        ]);
+    }
+
     public function createInvoice($data)
     {
         $priceWithoutTax = $data['price'] * 0.75;

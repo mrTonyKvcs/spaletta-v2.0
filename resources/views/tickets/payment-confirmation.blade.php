@@ -16,7 +16,7 @@
             <div class="overflow-hidden bg-white shadow">
                 <div class="px-4 pb-5 sm:p-6">
                     <h3 class="pb-3 mb-5 text-3xl text-center uppercase border-b text-gold border-gold border-opacity-25">{{ __('Következő lépés') }}</h3>
-                    <p class="mb-10 text-3xl">Sikeres jegyvásárlás visszaigazolás. Email-ben kiküldésre került a jegy a Vevőnek.</p>
+                    <p class="mb-10 text-3xl">Sikeres jegyvásárlás visszaigazolás. Email-ben kiküldésre került a jegy a Vásárlónak.</p>
 
                     <h3 class="pb-3 mb-5 text-3xl text-center uppercase border-b border-gold border-opacity-25 text-gold">{{ __('Rendelés adatai') }}</h3>
 

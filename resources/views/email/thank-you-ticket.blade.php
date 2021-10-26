@@ -4,8 +4,11 @@
     <title>Spaletta</title>
 </head>
 <body style="padding: 50px;">
-    <p>Köszönjük a jegyvásárlását!</p>
-    <p>72 órán belül küldjük a díjbekérőt. Ennek teljesítese után a regisztrált email címre(szjm@gmail.com) küldjük ki a jegyeket.</p>
+    <h2>Köszönjük a jegyvásárlását!</h2>
+    <h3>Az email-hez csatolva megtalálja az átutalásos számlát.<br><br><strong>Fizetési  határidő: </strong> <span style="color: red;">{{ $data['payment_expired'] }}</span><br><br> Ennek teljesítese után a regisztrált email címre({{ $data['email'] }}) küldjük ki a jegyeket.</h3>
+    <br>
+    <hr>
+    <h3>Rendelési adatok:</h3>
     <p>
         <strong>Rendelési azonosító:</strong> {{ $data['order_number'] }}
     </p>

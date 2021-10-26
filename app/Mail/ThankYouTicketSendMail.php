@@ -30,9 +30,12 @@ class ThankYouTicketSendMail extends Mailable
      */
     public function build()
     {
+        $invoicePath = base_path() . '/szamlaagent/pdf/' . $this->data['invoice_number'] . '.pdf';
+
         return $this->view('email.thank-you-ticket')
             ->to($this->data['email'])
             ->from('noreply@spalettaetterem.com')
-            ->subject('Új jegyvásárlás, rendelési szám: ' . $this->data['order_number']);
+            ->subject('Új jegyvásárlás, rendelési szám: ' . $this->data['order_number'])
+            ->attach($invoicePath);
     }
 }
