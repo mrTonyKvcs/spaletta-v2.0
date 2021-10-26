@@ -8,7 +8,7 @@
 
 <x-layout>
     <x-header background="reservation">
-        {{ __('Sikeres vásárlás') }}
+        {{ __('Sikeres a vásárlás visszaigazolása') }}
     </x-header>
 
     <x-section>
