@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.10.26 - 2021.10.29.',
-    'weekend-date' => '2021.10.30.',
+    'menu-date' => '2021.11.02 - 2021.11.05.',
+    'weekend-date' => '2021.11.06.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Kolbászos csicseriborsó leves bevert tojással (G, L)',
-                'Sütőtök krémleves (G, L)',
-                'Erőleves baconszalonnás zsemlegombóccal'
+                'Tárkonyos pulyka raguleves (G, L)',
+                'Brokkoli krémleves',
+                'Darálthúsleves (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Hortobágyi húsos palacsinta (L)',
-                'Sous – vide sertéskaraj – petrezselymes rizs, tormamártás (G, L)',
-                'Prézlis tészta, házi baracklekvárral',
-                'Halszeletek sörtésztában – zöldséges hajdina, koktélszósz',
+                'Borjúpaprikás – galuska, céklasaláta (L)',
+                'Mangós csirke – újhagymás köles (G, L)',
+                'Zöldséges sült tészta (L)',
+                'Szilvalekváros kifli',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Ecetes cukros zöldbableves (L)',
-                'Sült tarja – borsos burgonya, lilahagyma lekvár',
-                'Kekszes banános krémes süti'
+                'Fahéjas almaleves (G, L)',
+                'Sertés szűzpecsenye Budapest módra – Batthyányi rizs',
+                'Puncskocka'
             ]
         ],
     ]
