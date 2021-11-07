@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.11.02 - 2021.11.05.',
-    'weekend-date' => '2021.11.06.',
+    'menu-date' => '2021.11.09 - 2021.11.12.',
+    'weekend-date' => '2021.11.13.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Tárkonyos pulyka raguleves (G, L)',
-                'Brokkoli krémleves',
-                'Darálthúsleves (L)'
+                'Borjúbecsinált',
+                'Őszi gyümölcsleves (G, L)',
+                'Csontleves cérnametélt (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Borjúpaprikás – galuska, céklasaláta (L)',
-                'Mangós csirke – újhagymás köles (G, L)',
-                'Zöldséges sült tészta (L)',
-                'Szilvalekváros kifli',
+                'Tejszínes gombás csirkeragu – tészta (L)',
+                'Holstein szelet – hasábburgonya, vegyes vágott savanyúság (G, L)',
+                'Rizsfelfújt, meggyhab (G)',
+                'Kapros túrós sajtgolyó – vajon párolt zöldség',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Fahéjas almaleves (G, L)',
-                'Sertés szűzpecsenye Budapest módra – Batthyányi rizs',
-                'Puncskocka'
+                'Hagyma krémleves (G, L)',
+                'Töltött csirkecomb – burgonyapüré, birsalma kompót',
+                'Piskótatekercs'
             ]
         ],
     ]
