@@ -68,7 +68,10 @@ Route::group(
     // })->name('pages.events');
 
     Route::get(LaravelLocalization::transRoute('routes.gallery'), function () {
-        return view('pages.gallery');
+        $gallery = collect(config('spaletta.gallery-images'))->sortBy('name')->reverse()->toArray();
+        return view('pages.gallery', [
+            'gallery' => $gallery
+        ]);
     })->name('pages.gallery');
 
     Route::get(LaravelLocalization::transRoute('routes.about'), function () {

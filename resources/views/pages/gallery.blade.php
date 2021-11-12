@@ -36,11 +36,11 @@
         <div class="flex flex-col items-center">
           <div class="">
             <div class="pt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              @foreach(config('spaletta.gallery-images') as $item)
+              @foreach($gallery as $item)
                 <div x-show="openTab === {{ $item['tab'] }}">
                   <div class="relative">
                       <a href="/images/gallery/{{ $item['name'] }}.jpg" target="_blank">
-                          <img class="w-full bg-cover h-96" src="/images/gallery/{{ $item['name'] }}.jpg" alt="">
+                          <img width="100" height="100" class="w-full bg-cover h-96" src="/images/gallery/{{ $item['name'] }}.jpg" alt="">
                       </a>
                     <img class="absolute bottom-0 right-0 w-10 m-6" src="../images/svg/camera.svg" alt="">
                   </div>
