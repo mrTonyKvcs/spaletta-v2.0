@@ -4,12 +4,12 @@ return [
     [
         'category_id' => 3,
         'name' => [
-            'hu' => 'Fürj húsleves –tojással, házi tészta (L)',
-            'en' => 'Quail broth with eggs, homemade noodles (L)',
-            'de' => 'Wachtelbrühe mit Eiern und hausgemachten Nudeln (L)'
+            'hu' => '”Szinbád”-Velős csontleves, tészta, zöldségek, velős csont  (L)',
+            'en' => '”Szinbád”- Marrow bone soup, pasta, vegetables, marrow bone  (L)',
+            'de' => 'Szinbad-Mark KnochenSuppe, Nudel, Gemüse,  (L)'
         ],
         'comment' => '',
-        'price' => 1900,
+        'price' => 2100,
         'wine' => ''
     ],
     [

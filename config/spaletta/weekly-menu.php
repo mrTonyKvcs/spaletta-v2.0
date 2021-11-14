@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.11.09 - 2021.11.12.',
-    'weekend-date' => '2021.11.13.',
+    'menu-date' => '2021.11.16 - 2021.11.19.',
+    'weekend-date' => '2021.11.20.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Borjúbecsinált',
-                'Őszi gyümölcsleves (G, L)',
-                'Csontleves cérnametélt (L)'
+                'Babgulyás (G, L)',
+                'Gesztenye krémleves (G, L)',
+                'Erőleves spenótos – ricottás tortellini'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Tejszínes gombás csirkeragu – tészta (L)',
-                'Holstein szelet – hasábburgonya, vegyes vágott savanyúság (G, L)',
-                'Rizsfelfújt, meggyhab (G)',
-                'Kapros túrós sajtgolyó – vajon párolt zöldség',
+                'Székelykáposzta (G, L)',
+                'Burgonyafőzelék – zöldség fasírt (G, L)',
+                'Kijevi sertésborda – bulgur, majonézes kukoricasaláta',
+                'Császármorzsa mazsolával, házi baracklekvár',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Hagyma krémleves (G, L)',
-                'Töltött csirkecomb – burgonyapüré, birsalma kompót',
-                'Piskótatekercs'
+                'Húsgombóc leves (G, L)',
+                'Aszalt szilvával töltött pulykamell – jázminrizs, sütőtökpüré (G)',
+                'Kókuszkocka'
             ]
         ],
     ]
