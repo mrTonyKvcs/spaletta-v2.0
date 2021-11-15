@@ -48,6 +48,11 @@ return [
         'name' => 61,
     ],
     [
+        'tab' => 1,
+        'category' => 'spaletta',
+        'name' => 107,
+    ],
+    [
         'tab' => 3,
         'category' => 'beer',
         'name' => 19,
@@ -115,6 +120,26 @@ return [
         'tab' => 3,
         'category' => 'beer',
         'name' => 73,
+    ],
+    [
+        'tab' => 3,
+        'category' => 'beer',
+        'name' => 103,
+    ],
+    [
+        'tab' => 3,
+        'category' => 'beer',
+        'name' => 104,
+    ],
+    [
+        'tab' => 3,
+        'category' => 'beer',
+        'name' => 105,
+    ],
+    [
+        'tab' => 3,
+        'category' => 'beer',
+        'name' => 106,
     ],
     [
         'tab' => 5,
@@ -226,6 +251,41 @@ return [
         'name' => 49,
     ],
     [
+        'tab' => 2,
+        'category' => 'restaurent',
+        'name' => 95,
+    ],
+    [
+        'tab' => 2,
+        'category' => 'restaurent',
+        'name' => 96,
+    ],
+    [
+        'tab' => 2,
+        'category' => 'restaurent',
+        'name' => 97,
+    ],
+    [
+        'tab' => 2,
+        'category' => 'restaurent',
+        'name' => 98,
+    ],
+    [
+        'tab' => 2,
+        'category' => 'restaurent',
+        'name' => 99,
+    ],
+    [
+        'tab' => 2,
+        'category' => 'restaurent',
+        'name' => 100,
+    ],
+    [
+        'tab' => 2,
+        'category' => 'restaurent',
+        'name' => 101,
+    ],
+    [
         'tab' => 5,
         'category' => 'events',
         'name' => 76,
@@ -301,9 +361,34 @@ return [
         'name' => 86,
     ],
     [
-        'tab' => 4,
-        'category' => 'team',
-        'name' => 55,
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 90,
+    ],
+    [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 91,
+    ],
+    [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 92,
+    ],
+    [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 93,
+    ],
+    [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 102,
+    ],
+    [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 94,
     ],
     [
         'tab' => 4,
@@ -314,5 +399,20 @@ return [
         'tab' => 4,
         'category' => 'team',
         'name' => 57,
+    ],
+    [
+        'tab' => 4,
+        'category' => 'team',
+        'name' => 87,
+    ],
+    [
+        'tab' => 4,
+        'category' => 'team',
+        'name' => 88,
+    ],
+    [
+        'tab' => 4,
+        'category' => 'team',
+        'name' => 89,
     ],
 ];
