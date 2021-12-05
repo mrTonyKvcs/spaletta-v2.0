@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.11.30 - 2021.12.03.',
-    'weekend-date' => '2021.12.04.',
+    'menu-date' => '2021.12.07 - 2021.12.10.',
+    'weekend-date' => '2021.12.11.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Májgombócleves (L)',
-                'Vaddisznó raguleves (G, L)',
-                'Sült almás répa krémleves, répa chips (G, L)   '
+                'Palócleves (L)',
+                'Csontleves lúdgégetészta (L)',
+                'Paradicsomleves sajtos omlett rolád (G)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Harcsapaprikás – juhtúrós sztrapacska',
-                'Lasagne',
-                'Töltött csirkecomb – karfiolos kuszkusz (L)',
-                'Corn flakes bundába sült cukkini – hasábburgonya, fokhagymástejföl (G, L)',
+                'Töltött káposzta (G, L)',
+                'Fogas chips – jázminrizs, édesburgonya püré (G, L)',
+                'Kókusztejes zöldborsófőzelék – bacon-be tekert csibemáj (G, L)',
+                'Mákos guba – langyos szilvaragu',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Lencseleves kapros krumpli gombóccal (L)',
-                'Lassan párolt sertéstarja – burgonyafánk (L)',
-                'Méteres szelet'
+                'Lebbencsleves (L)',
+                'Rántott sertésborda – petrezselymes törtburgonya, céklasaláta (L)',
+                'Madártej (G)'
             ]
         ],
     ]
