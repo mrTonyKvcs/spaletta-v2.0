@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.12.07 - 2021.12.10.',
-    'weekend-date' => '2021.12.11.',
+    'menu-date' => '2021.12.14 - 2021.12.17.',
+    'weekend-date' => '2021.12.18.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Palócleves (L)',
-                'Csontleves lúdgégetészta (L)',
-                'Paradicsomleves sajtos omlett rolád (G)'
+                'Vietnámi marhahúsleves (G, L)',
+                'Gombakrémleves (G, L)',
+                'Sajtkrémes csirkés leves'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Töltött káposzta (G, L)',
-                'Fogas chips – jázminrizs, édesburgonya püré (G, L)',
-                'Kókusztejes zöldborsófőzelék – bacon-be tekert csibemáj (G, L)',
-                'Mákos guba – langyos szilvaragu',
+                'Vörösboros marharagu – gnocchi, csemegeuborka (L)',
+                'Lassan sült sertéskaraj – fűszeres héjas burgonya, waldorf saláta (G, L)',
+                'Szezámmagos rántott sütőtök – hajdina, pirított kelbimbó (L)',
+                'Aranygaluska – vaníliasodó',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Lebbencsleves (L)',
-                'Rántott sertésborda – petrezselymes törtburgonya, céklasaláta (L)',
-                'Madártej (G)'
+                'Sütőtök krémleves (G, L)',
+                'Sörben pácolt csülök – káposztás nudli (L)',
+                'Puncsszelet'
             ]
         ],
     ]
