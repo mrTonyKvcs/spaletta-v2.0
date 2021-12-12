@@ -32,7 +32,7 @@
             </button>
             <button tabindex="-1"
                 class="focus:outline-none uppercase text-base tracking-widest w-full py-3 rounded-full font-semibold text-white bg-gray-800 ring ring-gray-400 ring-offset-2">
-                <a href="/esemenyek">Rendezvények</a>
+                <a href="/esemenyek">Karácsonyi menü</a>
             </button>
         </div>
     </div>

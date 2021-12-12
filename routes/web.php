@@ -91,6 +91,10 @@ Route::group(
         'uses' => 'App\Http\Controllers\EventsController'
     ]);
 
+    Route::get('karacsonyimenu', function() {
+        return view('pages.chrismas');
+    });
+
     Route::get(LaravelLocalization::transRoute('routes.events') . '/{id}', [
         'as'    => 'events.show',
         'uses' => 'App\Http\Controllers\EventsController@show'
