@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.12.14 - 2021.12.17.',
+    'menu-date' => '2021.12.21 - 2021.12.23.',
     'weekend-date' => '2021.12.18.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Vietnámi marhahúsleves (G, L)',
-                'Gombakrémleves (G, L)',
-                'Sajtkrémes csirkés leves'
+                'Frankfurti leves (G, L)',
+                'Csontleves gazdagon (L)',
+                'Sárgaborsó krémleves, füstölt csülökkel (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Vörösboros marharagu – gnocchi, csemegeuborka (L)',
-                'Lassan sült sertéskaraj – fűszeres héjas burgonya, waldorf saláta (G, L)',
-                'Szezámmagos rántott sütőtök – hajdina, pirított kelbimbó (L)',
-                'Aranygaluska – vaníliasodó',
+                'Gesztenyével töltött pulyka baconba tekerve – rizibizi, fahéjas almakompót (G, L)',
+                'Bőrös sertéskaraj pirosra sütve – hagymás törtburgonya, lila párolt káposzta (G, L)',
+                'Rukkolás lazacos tészta (L)',
+                'Rakott palacsinta',
             ]
         ],
     ],
