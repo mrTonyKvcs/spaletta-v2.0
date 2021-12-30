@@ -41,6 +41,11 @@
             <x-button type="gray-transparent"><a href="/karacsonyimenu">Részletek</a></x-button>
         </div>
     </div>  --}}
+    <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
+        <h2 class="text-4xl font-medium gold font-libre italic">Ünnepi nyitvatartás</h2>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">2021. december 31 - 2022. január 10. - zárva</p>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Nyitás - 2022. január 11. (kedd)</p>
+    </div>
     <x-section>
         <div class="flex flex-col items-center mt-24">
             <x-title title="{{ __('Heti Menü') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" price="2100 Ft"></x-title>
