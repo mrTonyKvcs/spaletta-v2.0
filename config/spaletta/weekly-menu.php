@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2021.12.21 - 2021.12.23.',
-    'weekend-date' => '2021.12.18.',
+    'menu-date' => '2022.01.11 - 2022.01.14.',
+    'weekend-date' => '2022.01.15.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Frankfurti leves (G, L)',
-                'Csontleves gazdagon (L)',
-                'Sárgaborsó krémleves, füstölt csülökkel (L)'
+                'Alföldi gulyásleves csipetke (L)',
+                'Könnyű zöldségleves (G, L)',
+                'Tárkonyos pulykaraguleves (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Gesztenyével töltött pulyka baconba tekerve – rizibizi, fahéjas almakompót (G, L)',
-                'Bőrös sertéskaraj pirosra sütve – hagymás törtburgonya, lila párolt káposzta (G, L)',
-                'Rukkolás lazacos tészta (L)',
-                'Rakott palacsinta',
+                'Brassói aprópecsenye, kovászos uborka (L)',
+                'Csípős csirkeszárny – hasáb, mediterrán jégsaláta (G)',
+                'Lencsefőzelék – sült virsli (L)',
+                'Juhtúróval töltött rántott gomba – zöldséges kuszkusz',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Sütőtök krémleves (G, L)',
-                'Sörben pácolt csülök – káposztás nudli (L)',
-                'Puncsszelet'
+                'Reszelt tésztaleves (L)',
+                'Csirkepaprikás – nokedli, uborkasaláta (L)',
+                'Fanta szelet'
             ]
         ],
     ]
