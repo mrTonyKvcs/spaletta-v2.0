@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.01.11 - 2022.01.14.',
-    'weekend-date' => '2022.01.15.',
+    'menu-date' => '2022.01.18 - 2022.01.21.',
+    'weekend-date' => '2022.01.22.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Alföldi gulyásleves csipetke (L)',
-                'Könnyű zöldségleves (G, L)',
-                'Tárkonyos pulykaraguleves (G, L)'
+                'Májgombóc leves (L)',
+                'Palócleves (G, L)',
+                'Vegyes gyümölcs krémleves, rántott tejbegríz'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Brassói aprópecsenye, kovászos uborka (L)',
-                'Csípős csirkeszárny – hasáb, mediterrán jégsaláta (G)',
-                'Lencsefőzelék – sült virsli (L)',
-                'Juhtúróval töltött rántott gomba – zöldséges kuszkusz',
+                'Töltött káposzta (G, L)',
+                'Kókusztejes zöldborsófőzelék – lazac fasírt (G, L)',
+                'Bolognai spagetti',
+                'Roston csirkemell – grillezett zöldségek, feketerizs (G, L)',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Reszelt tésztaleves (L)',
-                'Csirkepaprikás – nokedli, uborkasaláta (L)',
-                'Fanta szelet'
+                'Burgonyagombóc leves (L)',
+                'Marhacomb vadasan – pirított kenyérpuding (L)',
+                'Piskótatekercs'
             ]
         ],
     ]
