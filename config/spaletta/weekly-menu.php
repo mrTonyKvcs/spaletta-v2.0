@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.01.18 - 2022.01.21.',
-    'weekend-date' => '2022.01.22.',
+    'menu-date' => '2022.01.25 - 2022.01.28.',
+    'weekend-date' => '2022.01.29.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Májgombóc leves (L)',
-                'Palócleves (G, L)',
-                'Vegyes gyümölcs krémleves, rántott tejbegríz'
+                'Fürj húsleves (L)',
+                'Harcsa halászlé (L) (haltej, halikra, gyufatészta)',
+                'Vörösboros szilvaleves (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Töltött káposzta (G, L)',
-                'Kókusztejes zöldborsófőzelék – lazac fasírt (G, L)',
-                'Bolognai spagetti',
-                'Roston csirkemell – grillezett zöldségek, feketerizs (G, L)',
+                'Tarhonyás hús, káposztával töltött paprika (L)',
+                'Roston sült sertés java – jázmin rizs tejszínes erdei gombamártás (G, L)',
+                'Burgonyafőzelék – zöldséggel töltött rántott palacsinta',
+                'Vargabéles',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Burgonyagombóc leves (L)',
-                'Marhacomb vadasan – pirított kenyérpuding (L)',
-                'Piskótatekercs'
+                'Brokkoli krémleves, fokhagymás kruton, baconchips (G, L)',
+                'Supreme csirkemell – Zöldborsós pirított hajdina, hollandi mártás (G)',
+                'Csokis gyümölcsrizs (G)'
             ]
         ],
     ]
