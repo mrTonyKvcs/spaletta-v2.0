@@ -2,7 +2,9 @@
     <x-header background="reservation">{{ $event->title }}</x-header>
     <x-section>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
-                <img src="{{ $event->image_path }}" alt="{{ $event->title }}">
+                <div class="flex items-center justify-center">
+                    <img class="w-1/2" src="{{ $event->image_path }}" alt="{{ $event->title }}">
+                </div>
                 <div class="flex flex-col justify-center space-y-10">
                     <div class="flex items-center justify-center">
                         <div class="flex justify-center pr-6">

@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.01.25 - 2022.01.28.',
-    'weekend-date' => '2022.01.29.',
+    'menu-date' => '2022.02.01 - 2022.02.04.',
+    'weekend-date' => '2022.02.05.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Fürj húsleves (L)',
-                'Harcsa halászlé (L) (haltej, halikra, gyufatészta)',
-                'Vörösboros szilvaleves (G, L)'
+                'Orjaleves (L)',
+                'Szíve-nyelve leves',
+                'Őszibarack krémleves (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Tarhonyás hús, káposztával töltött paprika (L)',
-                'Roston sült sertés java – jázmin rizs tejszínes erdei gombamártás (G, L)',
-                'Burgonyafőzelék – zöldséggel töltött rántott palacsinta',
-                'Vargabéles',
+                'Hurka, kolbász – törtburgonya, párolt káposzta (G, L)',
+                'Vegyes sertéspörkölt – sósburgonya, vegyes vágott savanyúság (G, L)',
+                'Rántott camambert – jázmin rizs, áfonya mártás',
+                'Farsangi fánk',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Brokkoli krémleves, fokhagymás kruton, baconchips (G, L)',
-                'Supreme csirkemell – Zöldborsós pirított hajdina, hollandi mártás (G)',
-                'Csokis gyümölcsrizs (G)'
+                'Paprika krémleves (G, L)',
+                'Roston sült fogas – Kuszkusz, vajon párolt zöldségek, répapüré, citromos avokádókrém (G)',
+                'Somlói galuska'
             ]
         ],
     ]

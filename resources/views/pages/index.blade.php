@@ -41,11 +41,14 @@
             <x-button type="gray-transparent"><a href="/karacsonyimenu">Részletek</a></x-button>
         </div>
     </div>  --}}
-    {{-- <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
-        <h2 class="text-4xl font-medium gold font-libre italic">Ünnepi nyitvatartás</h2>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">2021. december 31 - 2022. január 10. - zárva</p>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Nyitás - 2022. január 11. (kedd)</p>
-    </div> --}}
+    <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
+        <h2 class="text-4xl font-medium gold font-libre italic">Februári programajánló</h2>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Valentin hét - 2022. február 11 - 18.</p>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">LVI Superbowl döntő - 2022. február 13 - 14.</p>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Spirit Színház : Boldogság 50 felett - 2022. február 18.</p>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Spaletta Étterem  születésnap-Farsang - 2022. február 25.</p>
+        <x-button type="gray-transparent"><a href="/esemenyek">Részletek</a></x-button>
+    </div>
     <x-section>
         <div class="flex flex-col items-center mt-24">
             <x-title title="{{ __('Heti Menü') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" price="2100 Ft"></x-title>
