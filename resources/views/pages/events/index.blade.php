@@ -31,7 +31,7 @@
             </a>
         </div>
     </div>
-    @empty($events)
+    @empty(!$events)
         <div>
             <x-section>
                 <x-title text="Spaletta" title="{{ __('Rendezvények') }}" price=""></x-title>
@@ -39,13 +39,13 @@
                     @foreach($events as $event)
                     <div class="flex flex-col items-center justify-center px-4 shadow-lg rounded-md">
                         <div class="flex flex-col items-center">
-                            <img src="../images/rendezveny.png" alt="">
+                            <img src="{{ $event->image_path }}" alt="">
                         </div>
                         <div class="flex flex-col items-center py-8 space-y-8 top-80">
                             <p class="px-6 py-2 text-2xl font-semibold text-white bg-gold rounded-md">{{ $event->started_at }}</p>
                             <h2 class="text-3xl font-medium text-center">{{ $event->title }}</h2>
                             <x-button type="gray-transparent-radius">
-                                <a href="{{ route('events.show', $nextEvent->id) }}">{{ __('Részletek') }}</a>
+                                <a href="{{ route('events.show', $event->id) }}">{{ __('Részletek') }}</a>
                             </x-button>
                         </div>
                     </div>
