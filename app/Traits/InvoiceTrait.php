@@ -23,7 +23,7 @@ trait InvoiceTrait
     {
         $priceWithoutTax = $data['price'] * 0.73;
 
-        $agent = SzamlaAgentAPI::create('jhghwq8mypzhzjjefqcfwwmhqv4sfbyazafyexbpad');
+        $agent = SzamlaAgentAPI::create('unjd4fpyfnz3unjd4fntm4wvunjd4frtmp2eunjd4f');
         /**
          * Új papír alapú számla létrehozása
          *

@@ -31,7 +31,7 @@ class NewSendMail extends Mailable
     public function build()
     {
         return $this->view('email.new-ticket')
-            ->to('spalettaetterem@gmail.com')
+            ->to(['spalettaetterem@gmail.com', 'attila.kovacs92@gmail.com'])
             ->from('noreply@spalettaetterem.com')
             ->subject('Új jegyvásárlás, rendelési azonosító: ' . $this->data['order_number']);
     }
