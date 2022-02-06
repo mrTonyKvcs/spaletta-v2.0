@@ -43,7 +43,7 @@ class BuyTicket extends Component
         $this->total = $this->event->price;
 
         //Fake
-        $this->invoiceData = $this->testData();
+        // $this->invoiceData = $this->testData();
     }
 
     public function render()
@@ -91,14 +91,11 @@ class BuyTicket extends Component
     {
         $qr = '/public/images/qr-codes/'. $data['order_number'] . '.png';
 
-        // Storage::disk('local')->put($qr, \QrCode::format('png')
-        //   ->size(300)
-        //   ->generate(URL::to('/') . '/check-in/' . $data['ticket_id'] . '/' . $data['order_number'])
-        // );
+        Storage::disk('local')->put($qr, \QrCode::format('png')
+          ->size(300)
+          ->generate(URL::to('/') . '/check-in/' . $data['ticket_id'] . '/' . $data['order_number'])
+        );
 
-		\QrCode::size(500)
-            ->format('png')
-            ->generate(URL::to('/') . '/check-in/' . $data['ticket_id'] . '/' . $data['order_number'], storage_path($qr));
     }
 
     public function testData()
