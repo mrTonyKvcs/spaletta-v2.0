@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.02.08 - 2022.02.11.',
-    'weekend-date' => '2022.02.12.',
+    'menu-date' => '2022.02.15 - 2022.02.18.',
+    'weekend-date' => '2022.02.19.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Toszkán bableves (G)',
-                'Májgaluskaleves (L)',
-                'Tárkonyos csirkeraguleves (G, L)'
+                'Zöldség krémleves, pizza kenyér (L)',
+                'Vietnámi marhahúsleves (G, L)',
+                'Magyaros burgonyaleves kolbászmorzsa (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Sült Oldalas – rizibizi, almakompót (G, L)',
-                'Sajttal, sonkával töltött pulykamell – burgonyapüré, céklasaláta (L)',
-                'Zöldséges lasagne',
-                'Mákos guba',
+                'Zúzapörkölt – tarhonya, kovászos uborka (L)',
+                'Langyos meggymártás – rántott szelet (L)',
+                'Csirkés tortilla – hasáb (L)',
+                'Túrógombóc, fahéjas tejföl',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Körtés zellerkrémleves (G, L)',
-                'Sült Tarja – lecsós karikaburgonya, Lyoni hagyma (G, L)',
-                'Rumos csokis szelet'
+                'Zöldségleves árpagyönggyel, füstült hússal (L)',
+                'Sous-vide csirkemell, grillezett ananász – jázminrizs, parmezán chips (G)',
+                'Madártej'
             ]
         ],
     ]
