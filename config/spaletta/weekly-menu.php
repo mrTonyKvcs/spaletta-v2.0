@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.02.22 - 2022.02.25.',
-    'weekend-date' => '2022.02.26.',
+    'menu-date' => '2022.03.01 - 2022.03.04.',
+    'weekend-date' => '2022.03.05.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Frankfurti leves (G, L)',
-                'Borsóleves csurgatott galuskával (G, L)',
-                'Tyúkhúsleves (L)'
+                'Magyaros zöldbableves húsgombóccal (L)',
+                'Bazsalikomos rákleves (L)',
+                'Őszibarack krémleves (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Toledói jércemell ragu – jázminrizs (G, L)',
-                'BBQ oldalas – steak burgonya, friss saláta (G, L)',
-                'Magvas bundás sültharcsa – franciasaláta',
-                'Penne napolitana',
+                'Marhapörkölt – galuska, házi vegyes vágott savanyúság (L)',
+                'Sült csirkecomb – petrezselymes burgonya, gyümölcssaláta (G, L)',
+                'Zöldséges sült tészta (L)',
+                'Szilvásderelye',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Legényfogó leves (G, L)',
-                'Rozmaringos kacsacomb – káposztás rétes, burgonyakrém (L)',
-                'Körtés csokoládés pohárkrém'
+                'Pulyka nyakleves (L)',
+                'Klasszikus cigánypecsenye – hasábburgonya, paradicsomsaláta (G, L)',
+                'Rántott alma, vaníliamártás'
             ]
         ],
     ]

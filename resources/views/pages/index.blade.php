@@ -42,11 +42,10 @@
         </div>
     </div>  --}}
     <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
-        <h2 class="text-4xl font-medium gold font-libre italic">Februári programajánló</h2>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Valentin hét - 2022. február 11 - 18.</p>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">LVI Superbowl döntő - 2022. február 13 - 14.</p>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Spirit Színház : Boldogság 50 felett - 2022. február 18.</p>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Spaletta Étterem  születésnap-Farsang - 2022. február 25.</p>
+        <h2 class="text-4xl font-medium gold font-libre italic">Márciusi programajánló</h2>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Nőnapi meglepetés - 2022. március 8.</p>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Spirti Színház: Az élet egy kabaré – “büfékabaré” - 2022. március 19.</p>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Országos Étteremhét - 2022. március 23 - 26.</p>
         <x-button type="gray-transparent"><a href="/esemenyek">Részletek</a></x-button>
     </div>
     <x-section>
