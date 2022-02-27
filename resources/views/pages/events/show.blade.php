@@ -2,10 +2,12 @@
     <x-header background="reservation">{{ $event->title }}</x-header>
     <x-section>
                 <div class="flex flex-col md:flex-row">
-                    <div class="">
-                        <img class="" src="{{ $event->image_path }}" alt="{{ $event->title }}">
+                    <div class="w-1/2 ">
+                        <div class="flex justify-center items-center">
+                            <img class="w-1/2" src="{{ $event->image_path }}" alt="{{ $event->title }}">
+                        </div>
                     </div>
-                    <div class="flex flex-col justify-center pl-8 space-y-10">
+                    <div class="w-1/2 flex flex-col justify-center pl-8 space-y-10">
                         <div class="flex items-center justify-center mt-8 md:mt-0">
                             <div class="flex justify-center pr-6">
                                 <img class="w-7" src="/images/svg/calender.svg" alt="">
