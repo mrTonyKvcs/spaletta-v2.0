@@ -52,6 +52,10 @@
         <textarea name="comment" class="w-full gray outline-none text-center font-medium py-2.5 px-5 text-xl border-b border-gray-300"></textarea>
     </div>
 
+    <div class="mt-10 flex items-center justify-center col-span-2">
+        <p class="text-2xl lg:text-xl text-center">Felhívjuk vendégeink figyelmét hogy, az Étteremhétre való asztalfoglalás az alábbi linken lehetséges: <a class="text-gold" href="https://www.etteremhet.hu/lang/hu/cities/countryside/restaurants/spaletta-etterem-es-sorhaz-kecskemet/reservations/new?meal_type=&reservation%5Bfor_date%5D=&reservation%5Bno_persons%5D=2&sort=name">Étteremhét link</a> </p>
+    </div>
+
     <div class="flex items-center justify-center col-span-2">
         <x-button type="gray">{{ __('Asztalfoglalás') }}</x-button>
     </div>

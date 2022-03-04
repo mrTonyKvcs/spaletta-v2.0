@@ -46,6 +46,7 @@
         <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Nőnapi meglepetés - 2022. március 8.</p>
         <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Spirit Színház: Az élet egy kabaré – “büfékabaré” - 2022. március 19.</p>
         <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Országos Étteremhét - 2022. március 23 - 26.</p>
+        <p class="text-2xl text-center">Felhívjuk vendégeink figyelmét hogy, az Étteremhétre való asztalfoglalás az alábbi linken lehetséges: <a class="text-gold" href="https://www.etteremhet.hu/lang/hu/cities/countryside/restaurants/spaletta-etterem-es-sorhaz-kecskemet/reservations/new?meal_type=&reservation%5Bfor_date%5D=&reservation%5Bno_persons%5D=2&sort=name">Étteremhét link</a> </p>
         <x-button type="gray-transparent"><a href="/esemenyek">Részletek</a></x-button>
     </div>
     <x-section>
