@@ -4,7 +4,7 @@
                 <div class="flex flex-col md:flex-row">
                     <div class="w-1/2 ">
                         <div class="flex justify-center items-center">
-                            <img class="w-1/2" src="{{ $event->image_path }}" alt="{{ $event->title }}">
+                            <img class="" src="{{ $event->image_path }}" alt="{{ $event->title }}">
                         </div>
                     </div>
                     <div class="w-1/2 flex flex-col justify-center pl-8 space-y-10">

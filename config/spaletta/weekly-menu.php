@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.03.01 - 2022.03.04.',
-    'weekend-date' => '2022.03.05.',
+    'menu-date' => '2022.03.08 - 2022.03.11.',
+    'weekend-date' => '2022.03.12.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Magyaros zöldbableves húsgombóccal (L)',
-                'Bazsalikomos rákleves (L)',
-                'Őszibarack krémleves (G, L)'
+                'Jókai bableves (L)',
+                'Csicseriborsó leves (G, L)',
+                'Grízgaluskaleves (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Marhapörkölt – galuska, házi vegyes vágott savanyúság (L)',
-                'Sült csirkecomb – petrezselymes burgonya, gyümölcssaláta (G, L)',
-                'Zöldséges sült tészta (L)',
-                'Szilvásderelye',
+                'Baconbe göngyölt pulykamell – törtburgonya, csemegeuborka (G, L)',
+                'Kelkáposzta főzelék – sült kolbász (L)',
+                'Rántott karfiol – rizibizi, tartármártás',
+                'Aranygaluska, vaníliasodó',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Pulyka nyakleves (L)',
-                'Klasszikus cigánypecsenye – hasábburgonya, paradicsomsaláta (G, L)',
-                'Rántott alma, vaníliamártás'
+                'Hagyma krémleves, sajtos pirítóssal',
+                'Zöldséges csirkefalatok nyárson – steak burgonya, narancsos mézes kevert saláta (G, L)',
+                'Női szeszély'
             ]
         ],
     ]
