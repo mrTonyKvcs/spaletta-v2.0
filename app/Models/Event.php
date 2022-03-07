@@ -18,6 +18,11 @@ class Event extends Model
      */
     protected $dates = ['started_at', 'finished_at', 'deleted_at'];
 
+	public function tickets()
+	{
+		return $this->hasMany(Ticket::class);
+	}
+
     public function scopeActive($query)
     {
         return $query

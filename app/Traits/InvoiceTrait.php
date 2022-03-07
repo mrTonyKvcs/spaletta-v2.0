@@ -36,13 +36,13 @@ trait InvoiceTrait
         // Vevő adatainak hozzáadása (kötelezően kitöltendő adatokkal)
         $invoice->setBuyer(new Buyer($data['name'], $data['zip'], $data['city'], $data['street'] . ' ' . $data['house_number']));
         // Számla tétel összeállítása alapértelmezett adatokkal (1 db tétel 27%-os ÁFA tartalommal)
-        $item = new InvoiceItem($data['event_name'], 3937.01);
+        $item = new InvoiceItem($data['event_name'], 9449.00 * $data['quantity']);
         // Tétel nettó értéke
-        $item->setNetPrice(3937.01);
+        $item->setNetPrice(9449.00 * $data['quantity']);
         // Tétel ÁFA értéke
-        $item->setVatAmount(1062.99);
+        $item->setVatAmount(2551.00 * $data['quantity']);
         // Tétel bruttó értéke
-        $item->setGrossAmount(5000.00);
+        $item->setGrossAmount(12000.00 * $data['quantity']);
         // Tétel hozzáadása a számlához
         $invoice->addItem($item);
 

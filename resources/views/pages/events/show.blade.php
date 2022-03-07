@@ -29,9 +29,11 @@
                 </div>
                     {{-- <div class="lg:container lg:mx-auto"> --}}
                 @empty(!$event->price)
-                    <div class="w-full mt-8">
-                        <livewire:order.buy-ticket :event="$event" />
-                    </div>
+					@if ($sold < 20)
+						<div class="w-full mt-8">
+							<livewire:order.buy-ticket :event="$event" />
+						</div>
+					@endif
                 @endempty
             {{-- </div> --}}
     </x-section>
