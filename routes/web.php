@@ -17,6 +17,15 @@ use App\Models\Ticket;
 | contains the "web" middleware group. Now create something great!
 |
  */
+
+Route::get('payment-start', 'App\Http\Controllers\PaymentController@start')
+->name('payment.start');
+
+Route::get('payment-back', 'App\Http\Controllers\PaymentController@back')
+->name('payment.back');
+
+
+
 Route::group(
 [
     'prefix' => LaravelLocalization::setLocale(),
