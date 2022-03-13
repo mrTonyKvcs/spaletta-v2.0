@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Ticket;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,9 @@ Route::get('payment-start', 'App\Http\Controllers\PaymentController@start')
 
 Route::get('payment-back', 'App\Http\Controllers\PaymentController@back')
 ->name('payment.back');
+
+Route::get('payment-finish', 'App\Http\Controllers\PaymentController@finish')
+->name('payment.finish');
 
 
 

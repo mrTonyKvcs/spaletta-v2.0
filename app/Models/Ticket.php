@@ -12,7 +12,7 @@ class Ticket extends Model
     use HasFactory; use SoftDeletes;
 
     protected $fillable = [
-        'order_number', 'event_id', 'name', 'email', 'phone_number', 'zip', 'city', 'street', 'house_number', 'quantity', 'total', 'payment_id', "is_paid", 'check_in', 'invoice_id'
+        'order_number', 'event_id', 'name', 'email', 'phone_number', 'zip', 'city', 'street', 'house_number', 'quantity', 'total', 'payment_id', "is_paid", 'check_in', 'invoice_id', 'order_ref', 'transaction_id'
     ];
 
     public function event()

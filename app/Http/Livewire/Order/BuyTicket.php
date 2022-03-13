@@ -43,7 +43,7 @@ class BuyTicket extends Component
         $this->total = $this->event->price;
 
         //Fake
-        // $this->invoiceData = $this->testData();
+        $this->invoiceData = $this->testData();
     }
 
     public function render()
@@ -71,6 +71,8 @@ class BuyTicket extends Component
         $ticketData['event_name'] = $ticket->event->title;
         $ticketData['event_started_at'] = $ticket->event->started_at;
         $ticketData['ticket_id'] = $ticket->id;
+
+        return redirect()->route('payment.start', $ticketData);
 
         $this->generateQrCode($ticketData);
 

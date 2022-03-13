@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ticket;
 use Illuminate\Http\Request;
 use SimplePay\SimplePayStart;
+use SimplePay\SimplePayBack;
+use SimplePay\SimplePayFinish;
 
 class PaymentController extends Controller
 {
@@ -14,75 +17,41 @@ class PaymentController extends Controller
 		$this->config = config('spaletta.simplepay');
 	}
 
-	public function start()
+	public function start(Request $request)
 	{
+		$data = $request->all();
 		$trx = new SimplePayStart();
 
 		$currency = 'HUF';
 		$trx->addData('currency', $currency);
 
 		$trx->addConfig($this->config);
-		$trx->addData('total', 25);
+		$trx->addData('total', $data['total']);
 
 
 		$trx->addItems(
 			array(
-				'ref' => 'Product ID 1',
-				'title' => 'Product name 1',
-				'desc' => 'Product description 1',
-				'amount' => '1',
-				'price' => '5',
-				'tax' => '0',
+				'ref' => $data['order_number'],
+				'title' => $data['event_name'],
+				'desc' => $data['event_name'] . 'jegy',
+				'amount' => $data['quantity'],
+				'price' => $data['price'],
+				// 'tax' => '27',
 			)
 		);
 
-		$trx->addItems(
-			array(
-				'ref' => 'Product ID 2',
-				'title' => 'Product name 2',
-				'desc' => 'Product description 2',
-				'amount' => '1',
-				'price' => '2',
-				'tax' => '0',
-			)
-		);
-
-
-		// OPTIONAL DATA INPUT ON PAYMENT PAGE
-		//-----------------------------------------------------------------------------------------
 		$trx->addData('maySelectEmail', true);
 		$trx->addData('maySelectInvoice', true);
-		// $trx->addData('maySelectDelivery', ['HU']);
 
-
-		// SHIPPING COST
-		//-----------------------------------------------------------------------------------------
-		$trx->addData('shippingCost', 20);
-
-
-		// DISCOUNT
-		//-----------------------------------------------------------------------------------------
-		$trx->addData('discount', 10);
-
-
-		// ORDER REFERENCE NUMBER
-		// uniq oreder reference number in the merchant system
-		//-----------------------------------------------------------------------------------------
 		$trx->addData('orderRef', str_replace(array('.', ':', '/'), "", @$_SERVER['SERVER_ADDR']) . @date("U", time()) . rand(1000, 9999));
 
 
-		$trx->addData('customer', 'v2 SimplePay Teszt');
+		$trx->addData('customer', $data['name']);
 
-
-		// customer's registration mehod
-		// 01: guest
-		// 02: registered
-		// 05: third party
-		//-----------------------------------------------------------------------------------------
 		$trx->addData('threeDSReqAuthMethod', '02');
 
 
-		$trx->addData('customerEmail', 'sdk_test@otpmobil.com');
+		$trx->addData('customerEmail', $data['email']);
 
 
 		$trx->addData('language', 'HU');
@@ -108,54 +77,138 @@ class PaymentController extends Controller
 		// $trx->addGroupData('urls', 'timeout', $config['URLS_TIMEOUT']);
 
 
-		// Redirect from Simple app to merchant app
-		//-----------------------------------------------------------------------------------------
 		$trx->addGroupData('mobilApp', 'simpleAppBackUrl', 'myAppS01234://payment/123456789');
 
 
-		$trx->addGroupData('invoice', 'name', 'SimplePay V2 Tester');
-		$trx->addGroupData('invoice', 'company', '');
+		$trx->addGroupData('invoice', 'name', $data['name']);
+		// $trx->addGroupData('invoice', 'company', '');
 		$trx->addGroupData('invoice', 'country', 'hu');
-		$trx->addGroupData('invoice', 'state', 'Budapest');
-		$trx->addGroupData('invoice', 'city', 'Budapest');
-		$trx->addGroupData('invoice', 'zip', '1111');
-		$trx->addGroupData('invoice', 'address', 'Address 1');
-		$trx->addGroupData('invoice', 'address2', 'Address 2');
-		$trx->addGroupData('invoice', 'phone', '06201234567');
+		// $trx->addGroupData('invoice', 'state', 'Budapest');
+		$trx->addGroupData('invoice', 'city', $data['city']);
+		$trx->addGroupData('invoice', 'zip', $data['zip']);
+		$trx->addGroupData('invoice', 'address', $data['street']);
+		// $trx->addGroupData('invoice', 'address2', 'Address 2');
+		$trx->addGroupData('invoice', 'phone', $data['phone_number']);
 
-
-		// $trx->addGroupData('delivery', 'name', 'SimplePay V2 Tester');
-		// $trx->addGroupData('delivery', 'company', '');
-		// $trx->addGroupData('delivery', 'country', 'hu');
-		// $trx->addGroupData('delivery', 'state', 'Budapest');
-		// $trx->addGroupData('delivery', 'city', 'Budapest');
-		// $trx->addGroupData('delivery', 'zip', '1111');
-		// $trx->addGroupData('delivery', 'address', 'Address 1');
-		// $trx->addGroupData('delivery', 'address2', '');
-		// $trx->addGroupData('delivery', 'phone', '06203164978');
-
-		//payment starter element
-		// auto: (immediate redirect)
-		// button: (default setting)
-		// link: link to payment page
-		//-----------------------------------------------------------------------------------------
 		$trx->formDetails['element'] = 'button';
 
 		$trx->runStart();
 
 		$trx->getHtmlForm();
+		
+		Ticket::find($data['ticket_id'])
+			->update([
+				'transaction_id' => $trx->returnData['transactionId'],
+				'order_ref' => $trx->returnData['orderRef']
+			]);
 
         return redirect()->to($trx->returnData['paymentUrl']);
-
-		// print $trx->returnData['form'];
-
-		// var_dump($trx->returnData['form']);
-		// var_dump($trx->getTransactionBase());
-		// var_dump($trx->getReturnData(), 200);
 	}
 
 	public function back()
 	{
-		dd('back');
+		$trx = new SimplePayBack();
+
+		$trx->addConfig($this->config);
+
+
+		//result
+		//-----------------------------------------------------------------------------------------
+		$result = array();
+		if (isset($_REQUEST['r']) && isset($_REQUEST['s'])) {
+			if ($trx->isBackSignatureCheck($_REQUEST['r'], $_REQUEST['s'])) {
+				$result = $trx->getRawNotification();
+			}
+		}
+
+		if ($result['e'] === 'SUCCESS') {
+			$result['originalTotal'] = Ticket::where('transaction_id', $result['t'])
+				->first()
+				->total;
+
+			return redirect()->route('payment.finish', $result);
+		} else {
+			return 'refund';
+		}
+
+
+		if (count($result) > 0) {
+			// QUERY
+			print '<a href="query.php?orderRef=' . $result['o'] . '&transactionId=' . $result['t'] . '&merchant=' . $result['m'] . '"> QUERY: ' . $result['t'] . '</a>';
+			print "<br/><br/>";
+
+			// REFUND
+			print '<a href="refund.php?orderRef=' . $result['o'] . '&transactionId=' . $result['t'] . '&merchant=' . $result['m'] . '"> REFUND 5 HUF</a>';
+			print "<br/><br/>";
+
+			print "Kétlépcsős tranzakció lezárása esetén<br/><br/>";
+			// FINISH FULL
+			print '<a href="finish.php?orderRef=' . $result['o'] . '&transactionId=' . $result['t'] . '&merchant=' . $result['m'] . '&originalTotal=25&approveTotal=25"> FINISH 25 HUF (terhelés teljes összeggel)</a>';
+			print "<br/><br/>";
+		}
+	}
+
+	public function finish(Request $request)
+	{
+		$trx = new SimplePayFinish();
+
+		$trx->addConfig($this->config);
+
+		//add merchant transaction ID
+		//-----------------------------------------------------------------------------------------
+		if (isset($_REQUEST['o'])) {
+			$trx->addData('orderRef', $_REQUEST['o']);
+		}
+
+
+		//add SimplePay transaction ID
+		//-----------------------------------------------------------------------------------------
+		if (isset($_REQUEST['t'])) {
+			$trx->addData('transactionId', $_REQUEST['t']);
+		}
+
+
+		//add merchant account ID
+		//-----------------------------------------------------------------------------------------
+		if (isset($_REQUEST['m'])) {
+			$trx->addConfigData('merchantAccount', $_REQUEST['m']);
+		}
+
+
+		//add original total amount
+		//-----------------------------------------------------------------------------------------
+		if (isset($_REQUEST['originalTotal'])) {
+			$trx->addData('originalTotal', $_REQUEST['originalTotal']);
+		}
+
+
+		//add approved total amount
+		//-----------------------------------------------------------------------------------------
+		if (isset($_REQUEST['approveTotal'])) {
+			$trx->addData('approveTotal', $_REQUEST['originalTotal']);
+		}
+
+
+		//add currency
+		//-----------------------------------------------------------------------------------------
+		$trx->transactionBase['currency'] = 'HUF';
+
+
+		//start finish
+		//-----------------------------------------------------------------------------------------
+		$trx->runFinish();
+
+
+		//test data
+		//-----------------------------------------------------------------------------------------
+		print "API REQUEST";
+		print "<pre>";
+		print_r($trx->getTransactionBase());
+		print "</pre>";
+
+		print "API RESULT";
+		print "<pre>";
+		print_r($trx->getReturnData());
+		print "</pre>";
 	}
 }
