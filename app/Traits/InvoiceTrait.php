@@ -21,7 +21,8 @@ trait InvoiceTrait
 
     public function createInvoice($data)
     {
-        $priceWithoutTax = $data['price'] * 0.73;
+        $priceWithoutTax = $data['price'] / 1.27;
+        $tax = $data['price'] - $priceWithoutTax;
 
         $agent = SzamlaAgentAPI::create('unjd4fpyfnz3unjd4fntm4wvunjd4frtmp2eunjd4f');
 		// tony's api key
@@ -36,13 +37,13 @@ trait InvoiceTrait
         // Vevő adatainak hozzáadása (kötelezően kitöltendő adatokkal)
         $invoice->setBuyer(new Buyer($data['name'], $data['zip'], $data['city'], $data['street'] . ' ' . $data['house_number']));
         // Számla tétel összeállítása alapértelmezett adatokkal (1 db tétel 27%-os ÁFA tartalommal)
-        $item = new InvoiceItem($data['event_name'], 9449.00 * $data['quantity']);
+        $item = new InvoiceItem($data['event_name'], $priceWithoutTax * $data['quantity']);
         // Tétel nettó értéke
-        $item->setNetPrice(9449.00 * $data['quantity']);
+        $item->setNetPrice($priceWithoutTax * $data['quantity']);
         // Tétel ÁFA értéke
-        $item->setVatAmount(2551.00 * $data['quantity']);
+        $item->setVatAmount($tax * $data['quantity']);
         // Tétel bruttó értéke
-        $item->setGrossAmount(12000.00 * $data['quantity']);
+        $item->setGrossAmount($data['price'] * $data['quantity']);
         // Tétel hozzáadása a számlához
         $invoice->addItem($item);
 
