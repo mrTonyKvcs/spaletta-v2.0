@@ -2,24 +2,23 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.03.08 - 2022.03.11.',
-    'weekend-date' => '2022.03.12.',
+    'menu-date' => '2022.03.16 - 2022.03.18.',
+    'weekend-date' => '2022.03.19.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Jókai bableves (L)',
-                'Csicseriborsó leves (G, L)',
-                'Grízgaluskaleves (L)'
+                'Lencseleves kapros burgonya gombóccal (L)',
+                'Vegyes gyümölcs krémleves, Panna – cotta',
+                'Erőleves fridatto módra (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Baconbe göngyölt pulykamell – törtburgonya, csemegeuborka (G, L)',
-                'Kelkáposzta főzelék – sült kolbász (L)',
-                'Rántott karfiol – rizibizi, tartármártás',
-                'Aranygaluska, vaníliasodó',
+                'Bácskai tarhonyás hús, céklasaláta (G, L)',
+                'Zelleres borzaska harcsából – rusztikus zöldséges rizs (L)',
+                'Alfredo tészta',
             ]
         ],
     ],
@@ -27,9 +26,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Hagyma krémleves, sajtos pirítóssal',
-                'Zöldséges csirkefalatok nyárson – steak burgonya, narancsos mézes kevert saláta (G, L)',
-                'Női szeszély'
+                'Póréhagymás burgonyakrémleves (G, L)',
+                'Sous vide csirkemell – kakukkfüves gombaragu, fekete rizs (G, L)',
+                'Lajcsi szelet csokimázzal'
             ]
         ],
     ]
