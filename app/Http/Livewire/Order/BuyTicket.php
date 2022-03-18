@@ -65,6 +65,12 @@ class BuyTicket extends Component
 
     public function submit()
     {
+		$ticketSold = $this->event->tickets()->sum('quantity') + $this->quantity;
+
+		if ($ticketSold > 20) {
+			$freeTicket = 20 - $this->event->tickets()->sum('quantity');
+			return back()->with('error', 'Szabad jegyek száma: ' . $freeTicket);
+		}
         // $this->hideSubmitButton();
 
         //Validation
