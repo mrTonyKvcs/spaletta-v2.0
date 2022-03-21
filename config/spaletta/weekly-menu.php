@@ -2,23 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.03.16 - 2022.03.18.',
-    'weekend-date' => '2022.03.19.',
+    'menu-date' => '2022.03.22 - 2022.03.25.',
+    'weekend-date' => '2022.03.26.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Lencseleves kapros burgonya gombóccal (L)',
-                'Vegyes gyümölcs krémleves, Panna – cotta',
-                'Erőleves fridatto módra (G, L)'
+                'Csiberagu leves (G, L)',
+                'Lebbencsleves (L)',
+                'Paradicsomleves (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Bácskai tarhonyás hús, céklasaláta (G, L)',
-                'Zelleres borzaska harcsából – rusztikus zöldséges rizs (L)',
-                'Alfredo tészta',
+                'Brassói aprópecsenye, csalamádé (G, L)',
+                'Vaslapon sült füstölt sajt - mexikói vega bulgur',
+                'Mustáros csirkemell – zöldséges kuszkusz saláta (L)',
+                'Máglyarakás'
             ]
         ],
     ],
@@ -26,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Póréhagymás burgonyakrémleves (G, L)',
-                'Sous vide csirkemell – kakukkfüves gombaragu, fekete rizs (G, L)',
-                'Lajcsi szelet csokimázzal'
+                'Húsos fazékleves (L)',
+                'Rántott sertésborda – rizibizi, őszibarackbefőtt (L)',
+                'Rigójancsi'
             ]
         ],
     ]
