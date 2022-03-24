@@ -9,7 +9,7 @@ return [
             'de' => 'Szinbad-Mark KnochenSuppe, Nudel, Gemüse,  (L)'
         ],
         'comment' => '',
-        'price' => 2100,
+        'price' => 2300,
         'wine' => ''
     ],
     [
@@ -20,7 +20,7 @@ return [
             'de' => 'Wildsuppe, Hirschkeule, Gemüse'
         ],
         'comment' => '',
-        'price' => 2300,
+        'price' => 2550,
         'wine' => 'Rosato Salento Rosé,  Pannonhalmi Főapátság Tricollis Vörös 2020'
     ],
     [
@@ -31,7 +31,7 @@ return [
             'de' => 'Gebackene Paprikacremesuppe 	(G, L, V)'
         ],
         'comment' => '',
-        'price' => 1900,
+        'price' => 2100,
         'wine' => 'Etyeki Kúria Sauvignon Blanc 2020 (Etyek-Buda), Günzer Lezser Fehér Cuvée 2020 (Villány)'
     ],
     [
@@ -42,7 +42,7 @@ return [
             'de' => 'Winter Aufstriche - Toast (Liptauer, Grammelcreme, Kürbiscreme)'
         ],
         'comment' => '',
-        'price' => 2600,
+        'price' => 2900,
         'wine' => 'Günzer Lezser Fehér Cuvée 2020 (Villány), Jásdi Csopaki Rizling 2020 (Hegybor) (Csopak)'
     ],
     [
@@ -53,7 +53,7 @@ return [
             'de' => 'Schinken-Käseteller, Salat '
         ],
         'comment' => '',
-        'price' => 3000,
+        'price' => 3300,
         'wine' => 'Ikon Rajnai Rizling 2021 (Rádpuszta), St. Andrea Boldogságos 2020 (Eger)'
     ],
     [
@@ -64,7 +64,7 @@ return [
             'de' => 'Rindsteak Tatare, Lilazwiebel Marmelade, Gemüse, Butter  '
         ],
         'comment' => '',
-        'price' => 4400,
+        'price' => 4800,
         'wine' => 'Günzer Cabernet Franc 2016 (Villány), Konyári Loliense 2019 (Balatonlelle)'
     ],
     [
@@ -75,7 +75,7 @@ return [
             'de' => 'Aubergine Steak, Erdapfelcreme mit Knoblauch, Linsensalat, Tomaten (G, L, V)'
         ],
         'comment' => '',
-        'price' => 4000,
+        'price' => 4400,
         'wine' => 'Oremus Mondolás Furmint (Tokaj-Hegyalja), Günzer Lezser Fehér Cuvée 2020 (Villány)'
     ],
     [
@@ -86,7 +86,7 @@ return [
             'de' => 'Konfitiert Zanderfilet, Kichererbse, Rote Rübe, Fenchel, Hirse (G)'
         ],
         'comment' => '',
-        'price' => 4600,
+        'price' => 5000,
         'wine' => 'Ikon Rajnai Rizling 2021 (Rádpuszta), Figula Bella Róza 2019 (rozé) (Balatonfüred)'
     ],
     [
@@ -97,7 +97,7 @@ return [
             'de' => 'Gebackener Lachs, Gnocchi, Broccoli, Joghurt-Dill Soße '
         ],
         'comment' => '',
-        'price' => 5300,
+        'price' => 5800,
         'wine' => 'Heimann Mammaróza Rozé 2021 (Szekszárd), Ikon Rajnai Rizling 2021 (Rádpuszta)'
     ],
     [
@@ -108,7 +108,7 @@ return [
             'de' => 'Entenbrust –sauere Pflaume, Krauter Quinoa, Mandel, Lilazwiebel(G)'
         ],
         'comment' => '',
-        'price' => 4600,
+        'price' => 5000,
         'wine' => 'Rosato Salento Rosé (Olaszország), Sauska Pinot Noir Birs 2018 (Tokaj)'
     ],
     [
@@ -119,7 +119,7 @@ return [
             'de' => 'Rinderbackengulasch mit Sauerrahmknödel'
         ],
         'comment' => '',
-        'price' => 4600,
+        'price' => 5000,
         'wine' => 'il Roccolo primitivo salento, Bock Syrah (Villány)'
     ],
     [
@@ -130,7 +130,7 @@ return [
             'de' => 'Lammrippeln, Morchel, Lammfilet, Reisauflauf mit Safran (G) '
         ],
         'comment' => '',
-        'price' => 5300,
+        'price' => 5800,
         'wine' => 'Günzer Cabernet Franc 2016 (Villány), Konyári Fecske Konyári Fecske Vörös 2020 (Balatonlelle)'
     ],
     [
@@ -141,7 +141,7 @@ return [
             'de' => 'Kräuter Schweinefilet – Erdapfelcreme, Heidelbeeren, Feige mit Rotwein, Käse Chips (G)'
         ],
         'comment' => '',
-        'price' => 4500,
+        'price' => 4950,
         'wine' => 'Bock Chardonnay  (Villány), Béla és Bandi Kékfrankos 2019 (Balatonszőlős) '
     ],
     
@@ -153,7 +153,7 @@ return [
             'de' => 'Mangalitsa Karree – Mais Variationen (G)'
         ],
         'comment' => '',
-        'price' => 5200,
+        'price' => 5700,
         'wine' => 'Natale Verga chianti docg, Jásdi Csopaki Rizling 2020 (Hegybor) (Csopak)'
     ],
     [
@@ -164,7 +164,7 @@ return [
             'de' => 'Lendenbraten, Kaffee-Selleriepüree, Erdapfel Gratin, Kürbis, Pilzen (G)'
         ],
         'comment' => '',
-        'price' => 6600,
+        'price' => 7900,
         'wine' => 'il Roccolo primitivo salento, Bock Capella (Villány)'
     ],
     [
@@ -175,7 +175,7 @@ return [
             'de' => 'Hühnerbrust, Kastanien, Süßkartoffel Püree, Wildreiß, Mandelschaum (G) '
         ],
         'comment' => '',
-        'price' => 4300,
+        'price' => 4750,
         'wine' => 'Bock Chardonnay  (Villány), Etyeki Kúria Sauvignon Blanc 2020 (Etyek-Buda)'
     ],
     [
@@ -186,7 +186,7 @@ return [
             'de' => 'Bayerische Brezel (2 Stk)'
         ],
         'comment' => '',
-        'price' => 950,
+        'price' => 1050,
         'wine' => ''
     ],
     [
@@ -198,7 +198,7 @@ return [
             Remoulade-Soße,   Lilazwiebel-Mayo, Scharf )'
         ],
         'comment' => '',
-        'price' => 4000,
+        'price' => 4400,
         'wine' => 'Ikon Rajnai Rizling 2021 (Rádpuszta), Jásdi Csopaki Rizling 2020 (Hegybor) (Csopak)'
     ],
     [
@@ -209,7 +209,7 @@ return [
             'de' => 'Spaletta-Burger - hausgemachte Pommes, hausgemachte BBQ Sauce'
         ],
         'comment' => '',
-        'price' => 3700,
+        'price' => 4000,
         'wine' => 'Béla és Bandi Kékfrankos 2019 (Balatonszőlős), Takler Merlot 2018 (Szekszárd)'
     ],
     [
@@ -220,7 +220,7 @@ return [
             'de' => 'In Bier marinierter Schweinshaxe – Kohlnudeln'
         ],
         'comment' => '',
-        'price' => 5400,
+        'price' => 6000,
         'wine' => 'Ikon Rajnai Rizling 2021 (Rádpuszta)'
     ],
     [
@@ -231,7 +231,7 @@ return [
             'de' => 'Pute Cordon, Pommes'
         ],
         'comment' => '',
-        'price' => 4000,
+        'price' => 4400,
         'wine' => 'Günzer Lezser Fehér Cuvée 2020 (Villány), Bock Chardonnay  (Villány)'
     ],
     [
@@ -242,7 +242,7 @@ return [
             'de' => 'Riesen Wiener Schnitzel vom Schwein (natur, Dijoner, Kräuter) (L), hausgemachte Pommes'
         ],
         'comment' => '',
-        'price' => 3900,
+        'price' => 4200,
         'wine' => 'Ikon Rajnai Rizling 2021 (Rádpuszta), Jásdi Csopaki Rizling 2020 (Hegybor) (Csopak)'
     ],
     [
@@ -253,7 +253,7 @@ return [
             'de' => 'Riesen Wiener Schnitzel vom Kalb (natur, Dijoner, Kräuter), kartoffelsalat'
         ],
         'comment' => '',
-        'price' => 5200,
+        'price' => 5700,
         'wine' => 'Etyeki Kúria Chardonnay (Etyek), Balla Géza Kadarka (Erdély)'
     ],
     [
@@ -264,7 +264,7 @@ return [
             'de' => 'Jasmin reis'
         ],
         'comment' => '',
-        'price' => 750,
+        'price' => 850,
         'wine' => ''
     ],
     [
@@ -275,7 +275,7 @@ return [
             'de' => 'Hausgemachte pommes'
         ],
         'comment' => '',
-        'price' => 850,
+        'price' => 950,
         'wine' => ''
     ],
     [
@@ -286,7 +286,7 @@ return [
             'de' => 'Hausgemachte steakkartoffeln'
         ],
         'comment' => '',
-        'price' => 850,
+        'price' => 950,
         'wine' => ''
     ],
     [
@@ -297,7 +297,7 @@ return [
             'de' => 'Puszta-Salat'
         ],
         'comment' => '',
-        'price' => 700,
+        'price' => 800,
         'wine' => ''
     ],
     [
@@ -308,7 +308,7 @@ return [
             'de' => 'Gurke'
         ],
         'comment' => '',
-        'price' => 700,
+        'price' => 800,
         'wine' => ''
     ],
     [
@@ -319,7 +319,7 @@ return [
             'de' => 'Rote Rübe Salat'
         ],
         'comment' => '',
-        'price' => 700,
+        'price' => 800,
         'wine' => ''
     ],
     [
@@ -330,7 +330,7 @@ return [
             'de' => 'Gemischter grüner salat'
         ],
         'comment' => '',
-        'price' => 1350,
+        'price' => 1400,
         'wine' => ''
     ],
     [
@@ -341,7 +341,7 @@ return [
             'de' => 'Nudel – Tomaten mit Thunfisch (L)'
         ],
         'comment' => '',
-        'price' => 4100,
+        'price' => 4500,
         'wine' => 'il Roccolo primitivo salento, Figula Bella Róza 2019 (rozé) (Balatonfüred)'
     ],
     [
@@ -352,7 +352,7 @@ return [
             'de' => 'Nudel mit Schlagobers und Pilzen (L)'
         ],
         'comment' => '',
-        'price' => 3600,
+        'price' => 4000,
         'wine' => 'Etyeki Kúria Sauvignon Blanc 2020 (Etyek-Buda), Oremus Mondolás Furmint (Tokaj-Hegyalja)'
     ],
     [
@@ -363,7 +363,7 @@ return [
             'de' => 'Entenbrust - hausgemachte Nudeln mit Steinpilzen (L)'
         ],
         'comment' => '',
-        'price' => 4100,
+        'price' => 4500,
         'wine' => 'Rosato Salento Rosé (Olaszország), Sauska Pinot Noir Birs 2018 (Tokaj)'
     ],
     [
@@ -374,7 +374,7 @@ return [
             'de' => 'Pizza Margherita – Tomatensauce,Mozzarella, Basilikum'
         ],
         'comment' => '',
-        'price' => 2200,
+        'price' => 2450,
         'wine' => 'Martinus Rosé  2021  (Tagyon-Hegy), Pannonhalmi Főapátság Tricollis Vörös 2020'
     ],
     [
@@ -385,7 +385,7 @@ return [
             'de' => 'Pizza Tonno – Thunfisch, Tomaten, Lilazwiebel'
         ],
         'comment' => '',
-        'price' => 3600,
+        'price' => 3950,
         'wine' => 'Natale Verga chianti docg, Jásdi Csopaki Rizling 2020 (Hegybor) (Csopak)'
     ],
     [
@@ -396,7 +396,7 @@ return [
             'de' => 'Pizza Primavera – Tomatensauce, Mozzarella, Parmaschinken,Rucola, Parmesan'
         ],
         'comment' => '',
-        'price' => 3600,
+        'price' => 3950,
         'wine' => 'Ikon Rajnai Rizling 2021 (Rádpuszta), Konyári Fecske Konyári Fecske Vörös 2020 (Balatonlelle)'
     ],
     [
@@ -407,7 +407,7 @@ return [
             'de' => 'Pizza Diavola – scharf – Tomatensauce,Mozzarella, würzige Salami, Chili'
         ],
         'comment' => '',
-        'price' => 3400,
+        'price' => 3750,
         'wine' => ''
     ],
     [
@@ -451,7 +451,7 @@ return [
             'de' => 'Fleischbrühe mit Fadennudeln'
         ],
         'comment' => '',
-        'price' => 990,
+        'price' => 1100,
         'wine' => ''
     ],
     [
@@ -462,7 +462,7 @@ return [
             'de' => 'Panierter Käse / Hähnchenbrust mit Kartoffeln'
         ],
         'comment' => '',
-        'price' => 1900,
+        'price' => 2100,
         'wine' => ''
     ],
     [
@@ -473,7 +473,7 @@ return [
             'de' => ''
         ],
         'comment' => '',
-        'price' => 1900,
+        'price' => 2100,
         'wine' => ''
     ],
     [
@@ -495,7 +495,7 @@ return [
             'de' => 'Kinderpizza mit Schinken'
         ],
         'comment' => '',
-        'price' => 2100,
+        'price' => 2300,
         'wine' => ''
     ],
 ];
