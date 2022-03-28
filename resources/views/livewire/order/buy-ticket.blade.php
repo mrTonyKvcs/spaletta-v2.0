@@ -1,4 +1,7 @@
 <div>
+	<div class="w-full mb-10">
+		@include('flash-message')
+	</div>
     <div class="flex flex-col p-4 py-5 mt-5 bg-gray-100 shadow md:flex-row">
         <div class="overflow-hidden md:w-1/2 md:mr-8">
             <div class="px-4 py-5 sm:px-6">

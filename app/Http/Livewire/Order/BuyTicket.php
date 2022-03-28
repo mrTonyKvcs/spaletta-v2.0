@@ -22,6 +22,9 @@ class BuyTicket extends Component
     public $event;
     public $total = 0;
     public $price = 0;
+    public $dinnerPrice = 0;
+    public $isDinner = false;
+    public $activePrice = 0;
     public $quantity = 1;
     public $invoiceData = [];
 
@@ -40,7 +43,11 @@ class BuyTicket extends Component
     {
         $this->event = $event;
         $this->price = $this->event->price;
+        $this->dinnerPrice = $this->event->dinner_price;
         $this->total = $this->event->price;
+
+        $this->activePrice = $this->price;
+        $this->isDinner = !is_null($this->dinnerPrice) ? true : false;
 
         //Fake
         $this->invoiceData = $this->testData();
@@ -58,6 +65,12 @@ class BuyTicket extends Component
 
     public function submit()
     {
+		$ticketSold = $this->event->tickets()->sum('quantity') + $this->quantity;
+
+		if ($ticketSold > 20) {
+			$freeTicket = 20 - $this->event->tickets()->sum('quantity');
+			return back()->with('error', 'Szabad jegyek száma: ' . $freeTicket);
+		}
         // $this->hideSubmitButton();
 
         //Validation
@@ -66,7 +79,8 @@ class BuyTicket extends Component
 
         //Ticket
         $ticket = Ticket::create($ticketData);
-        $ticketData['price'] = $ticket->event->price;
+        // $ticketData['price'] = $ticket->event->price;
+        $ticketData['price'] = $this->activePrice;
         $ticketData['address'] = $ticket->address;
         $ticketData['event_name'] = $ticket->event->title;
         $ticketData['event_started_at'] = $ticket->event->started_at;

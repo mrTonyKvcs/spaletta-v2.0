@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.03.01 - 2022.03.04.',
-    'weekend-date' => '2022.03.05.',
+    'menu-date' => '2022.03.29 - 2022.04.01.',
+    'weekend-date' => '2022.04.02.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Magyaros zöldbableves húsgombóccal (L)',
-                'Bazsalikomos rákleves (L)',
-                'Őszibarack krémleves (G, L)'
+                'Babgulyás (G, L)',
+                'Spenót krémleves, buggyantott tojás (G, L)',
+                'Ázsiai zöldségleves (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Marhapörkölt – galuska, házi vegyes vágott savanyúság (L)',
-                'Sült csirkecomb – petrezselymes burgonya, gyümölcssaláta (G, L)',
-                'Zöldséges sült tészta (L)',
-                'Szilvásderelye',
+                'Sült oldalas - krokett, majonézes kukorica saláta',
+                'Rakott burgonya (G, L)',
+                'Borsópörkölt – galuska (L)',
+                'Rántott csirke szárny – jázminrizs, lilahagymás majonéz '
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Pulyka nyakleves (L)',
-                'Klasszikus cigánypecsenye – hasábburgonya, paradicsomsaláta (G, L)',
-                'Rántott alma, vaníliamártás'
+                'Almaleves, eper sorbet, pirított mandula (G, L)',
+                'Sajttal töltött pulykamell – burgonyapüré, céklasaláta (L)',
+                'Puncsszelet'
             ]
         ],
     ]

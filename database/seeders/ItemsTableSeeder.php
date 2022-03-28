@@ -15,9 +15,9 @@ class ItemsTableSeeder extends Seeder
      */
     public function run()
     {
-        //$foods = config()->get('spaletta.foods');
+        $foods = config()->get('spaletta.summer-foods');
         // $foods = config()->get('spaletta.delivery-drinks');
-        $foods = config()->get('spaletta.oktobierfest');
+        // $foods = config()->get('spaletta.oktobierfest');
         // dd($foods);
 
         foreach($foods as $item) {

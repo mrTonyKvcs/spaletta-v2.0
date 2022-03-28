@@ -26,9 +26,11 @@ class EventsController extends Controller
     public function show($id)
     {
         $event = Event::find($id);
+        $ticketSold = $event->tickets()->sum('quantity');
 
         return view('pages.events.show', [
-            'event' => $event
+			'event' => $event,
+			'sold' => empty($ticketSold) ?? 0
         ]);
     }
 }

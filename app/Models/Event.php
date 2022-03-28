@@ -9,7 +9,7 @@ class Event extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = [ 'slug', 'title', 'image_path'];
+    protected $fillable = [ 'slug', 'title', 'image_path', 'content', 'price', 'dinner_price'];
 
     /**
      * The attributes that should be mutated to dates.
@@ -17,6 +17,11 @@ class Event extends Model
      * @var array
      */
     protected $dates = ['started_at', 'finished_at', 'deleted_at'];
+
+	public function tickets()
+	{
+		return $this->hasMany(Ticket::class);
+	}
 
     public function scopeActive($query)
     {

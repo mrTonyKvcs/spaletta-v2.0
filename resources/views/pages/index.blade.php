@@ -42,11 +42,11 @@
         </div>
     </div>  --}}
     <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
-        <h2 class="text-4xl font-medium gold font-libre italic">Márciusi programajánló</h2>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Nőnapi meglepetés - 2022. március 8.</p>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Spirti Színház: Az élet egy kabaré – “büfékabaré” - 2022. március 19.</p>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Országos Étteremhét - 2022. március 23 - 26.</p>
-        <x-button type="gray-transparent"><a href="/esemenyek">Részletek</a></x-button>
+        <h2 class="text-4xl font-medium gold font-libre italic">Áprilisi programajánló</h2>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Sohonyai Attila önálló estje - 2022. április 8.</p>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Húsvéti menü ajánló - 2022. április 13-tól</p>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Kecskeméti Szalon 2. (Képzőművészeti sorozatunk folytatódik) - 2022. április 21.</p>
+        
     </div>
     <x-section>
         <div class="flex flex-col items-center mt-24">
