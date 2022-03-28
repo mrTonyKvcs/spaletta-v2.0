@@ -77,13 +77,13 @@ Route::group(
         return view('pages.reservation');
     })->name('pages.reservation');
 
-    Route::get('sikeres-vasarlas/{id}', function ($id) {
-        $ticket = Ticket::find($id);
+    // Route::get('sikeres-vasarlas/{id}', function ($id) {
+    //     $ticket = Ticket::find($id);
 
-        return view('pages.successful-shopping', [
-            'ticket' => $ticket
-        ]);
-    })->name('pages.successful-shopping');
+    //     return view('pages.successful-shopping', [
+    //         'ticket' => $ticket
+    //     ]);
+    // })->name('pages.successful-shopping');
 
     Route::get('check-in/{id}/{orderNumber}', [
         'as' => 'ticket.check-in',
@@ -91,8 +91,13 @@ Route::group(
     ]);
 
     Route::get('sikeres-vasarlas-visszaigazolasa/{id}/{orderNumber}', [
-        'as' => 'pages.confirmation-successful-shopping',
-        'uses' => 'App\Http\Controllers\TicketController@confirmAndSendTicket'
+        'as' => 'pages.successful-payment',
+        'uses' => 'App\Http\Controllers\TicketController@successfullyPayment'
+    ]);
+
+    Route::get('sikertelen-fizetes/{transaction}', [
+        'as' => 'pages.payment-error',
+        'uses' => 'App\Http\Controllers\TicketController@paymentError'
     ]);
 
     // Route::get(LaravelLocalization::transRoute('routes.events'), function () {

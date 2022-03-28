@@ -30,7 +30,7 @@ class EventsController extends Controller
 
         return view('pages.events.show', [
 			'event' => $event,
-			'sold' => empty($ticketSold) ?? 0
+			'sold' => empty($ticketSold) ? 0 : $ticketSold
         ]);
     }
 }

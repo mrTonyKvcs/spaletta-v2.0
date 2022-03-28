@@ -76,6 +76,8 @@ class BuyTicket extends Component
         //Validation
         $validateData = $this->validate();
         $ticketData = $this->getTicketData($validateData);
+        $ticketData['total'] = $this->activePrice * $this->quantity;
+        $ticketData['payment_id'] = 2;
 
         //Ticket
         $ticket = Ticket::create($ticketData);

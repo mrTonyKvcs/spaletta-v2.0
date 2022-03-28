@@ -27,6 +27,7 @@ class SendQrTicket extends Mailable
         $this->data['started_at'] = $ticket->event->started_at;
         $this->data['quantity'] = $ticket->quantity;
         $this->data['total'] = $ticket->total;
+        $this->data['transaction_id'] = $ticket->transaction->transaction_id;
     }
 
     /**

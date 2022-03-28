@@ -25,6 +25,11 @@ class Ticket extends Model
         return $this->belongsTo(Payment::class);
     }
 
+    public function transaction()
+    {
+        return $this->morphOne(Transaction::class, 'model');
+    }
+
     public function getAddressAttribute()
     {
         return "{$this->zip_code} {$this->city} {$this->street} {$this->house_number}";

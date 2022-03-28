@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Status;
 use App\Models\Ticket;
+use App\Models\Transaction;
 use Illuminate\Http\Request;
 use SimplePay\SimplePayStart;
 use SimplePay\SimplePayBack;
@@ -26,7 +28,7 @@ class PaymentController extends Controller
 		$trx->addData('currency', $currency);
 
 		$trx->addConfig($this->config);
-		$trx->addData('total', $data['total']);
+		$trx->addData('total', $data['price'] * $data['quantity']);
 
 
 		$trx->addItems(
@@ -96,8 +98,10 @@ class PaymentController extends Controller
 
 		$trx->getHtmlForm();
 		
-		Ticket::find($data['ticket_id'])
-			->update([
+		$ticket = Ticket::find($data['ticket_id'])
+			->transaction()
+			->create([
+				'status' => Status::START_PAYMENT,
 				'transaction_id' => $trx->returnData['transactionId'],
 				'order_ref' => $trx->returnData['orderRef']
 			]);
@@ -111,7 +115,6 @@ class PaymentController extends Controller
 
 		$trx->addConfig($this->config);
 
-
 		//result
 		//-----------------------------------------------------------------------------------------
 		$result = array();
@@ -122,93 +125,39 @@ class PaymentController extends Controller
 		}
 
 		if ($result['e'] === 'SUCCESS') {
-			$result['originalTotal'] = Ticket::where('transaction_id', $result['t'])
-				->first()
-				->total;
 
-			return redirect()->route('payment.finish', $result);
+			$payment = Transaction::query()
+				->where('transaction_id', $result['t'])
+				->where('order_ref', $result['o'])
+				->firstOrFail();
+			
+			$payment->update(['status' => Status::END_PAYMENT]);
+			
+			$ticket = $payment->model;
+
+			return redirect()->route('pages.successful-payment', [$ticket->id, $ticket->order_number]);
+
 		} else {
-			return 'refund';
+			$transaction = Transaction::query()
+				->where('transaction_id', $result['t'])
+				->where('order_ref', $result['o'])
+				->firstOrFail();
+
+			switch ($result['e']) {
+				case 'CANCEL':
+					$transaction->update(['status' => Status::CANCEL_PAYMENT]);
+					break;
+				
+				case 'FAIL':
+					$transaction->update(['status' => Status::FAIL_PAYMENT]);
+					break;
+
+				case 'TIMEOUT':
+					$transaction->update(['status' => Status::TIMEOUT_PAYMENT]);
+					break;
+			}
+
+			return redirect()->route('pages.payment-error', $transaction->id);
 		}
-
-
-		if (count($result) > 0) {
-			// QUERY
-			print '<a href="query.php?orderRef=' . $result['o'] . '&transactionId=' . $result['t'] . '&merchant=' . $result['m'] . '"> QUERY: ' . $result['t'] . '</a>';
-			print "<br/><br/>";
-
-			// REFUND
-			print '<a href="refund.php?orderRef=' . $result['o'] . '&transactionId=' . $result['t'] . '&merchant=' . $result['m'] . '"> REFUND 5 HUF</a>';
-			print "<br/><br/>";
-
-			print "Kétlépcsős tranzakció lezárása esetén<br/><br/>";
-			// FINISH FULL
-			print '<a href="finish.php?orderRef=' . $result['o'] . '&transactionId=' . $result['t'] . '&merchant=' . $result['m'] . '&originalTotal=25&approveTotal=25"> FINISH 25 HUF (terhelés teljes összeggel)</a>';
-			print "<br/><br/>";
-		}
-	}
-
-	public function finish(Request $request)
-	{
-		$trx = new SimplePayFinish();
-
-		$trx->addConfig($this->config);
-
-		//add merchant transaction ID
-		//-----------------------------------------------------------------------------------------
-		if (isset($_REQUEST['o'])) {
-			$trx->addData('orderRef', $_REQUEST['o']);
-		}
-
-
-		//add SimplePay transaction ID
-		//-----------------------------------------------------------------------------------------
-		if (isset($_REQUEST['t'])) {
-			$trx->addData('transactionId', $_REQUEST['t']);
-		}
-
-
-		//add merchant account ID
-		//-----------------------------------------------------------------------------------------
-		if (isset($_REQUEST['m'])) {
-			$trx->addConfigData('merchantAccount', $_REQUEST['m']);
-		}
-
-
-		//add original total amount
-		//-----------------------------------------------------------------------------------------
-		if (isset($_REQUEST['originalTotal'])) {
-			$trx->addData('originalTotal', $_REQUEST['originalTotal']);
-		}
-
-
-		//add approved total amount
-		//-----------------------------------------------------------------------------------------
-		if (isset($_REQUEST['approveTotal'])) {
-			$trx->addData('approveTotal', $_REQUEST['originalTotal']);
-		}
-
-
-		//add currency
-		//-----------------------------------------------------------------------------------------
-		$trx->transactionBase['currency'] = 'HUF';
-
-
-		//start finish
-		//-----------------------------------------------------------------------------------------
-		$trx->runFinish();
-
-
-		//test data
-		//-----------------------------------------------------------------------------------------
-		print "API REQUEST";
-		print "<pre>";
-		print_r($trx->getTransactionBase());
-		print "</pre>";
-
-		print "API RESULT";
-		print "<pre>";
-		print_r($trx->getReturnData());
-		print "</pre>";
 	}
 }
