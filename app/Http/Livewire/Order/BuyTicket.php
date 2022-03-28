@@ -74,19 +74,19 @@ class BuyTicket extends Component
 
         return redirect()->route('payment.start', $ticketData);
 
-        $this->generateQrCode($ticketData);
+        // $this->generateQrCode($ticketData);
 
         //Invoice
-        $invoiceNumber = $this->createInvoice($ticketData);
-        $invoice = $this->createInvoiceModel($invoiceNumber);
+        // $invoiceNumber = $this->createInvoice($ticketData);
+        // $invoice = $this->createInvoiceModel($invoiceNumber);
 
         //Mail
-        $ticketData['invoice_number'] = $invoice->invoice_number;
-        $ticketData['payment_expired'] = $ticket->payment_expired;
-        Mail::send(new NewSendMail($ticketData));
-        Mail::send(new ThankYouTicketSendMail($ticketData));
+        // $ticketData['invoice_number'] = $invoice->invoice_number;
+        // $ticketData['payment_expired'] = $ticket->payment_expired;
+        // Mail::send(new NewSendMail($ticketData));
+        // Mail::send(new ThankYouTicketSendMail($ticketData));
 
-        return redirect()->route('pages.successful-shopping', $ticket->id);
+        // return redirect()->route('pages.successful-shopping', $ticket->id);
     }
 
     public function generateQrCode($data)
