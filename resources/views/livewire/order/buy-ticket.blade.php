@@ -23,7 +23,7 @@
                     <p><strong>Fízetési mód:</strong> Bankkártya</p>
                     <p class="mb-10 text-xl text-gray-500"><span class="text-gold">72</span> órán belül küldjük a díjbekérőt. Ennek teljesítese után a regisztrált email címre küldjük ki a jegyeket.</p>
                     <a href="http://simplepartner.hu/PaymentService/Fizetesi_tajekoztato.pdf" target="_blank" class="text-center">
-                        <img width="70%" height="auto" src="/images/simplepay.jpg" title=" SimplePay - Online bankkártyás fi
+                        <img width="70%" height="auto" src="/images/simplepay.png" title=" SimplePay - Online bankkártyás fi
                                     zetés" alt=" SimplePay vásárlói tájékoztató">
                     </a>
                 </div>

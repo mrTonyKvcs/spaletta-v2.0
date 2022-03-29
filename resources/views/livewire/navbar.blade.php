@@ -17,38 +17,38 @@
             </a>
           </div>
           <div class="items-center hidden uppercase navbar xl:flex xl:space-x-2">
-              {{-- <a href="{{ route('pages.oktobierfest') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
+              {{-- <a href="{{ route('pages.oktobierfest') }}" class="py-4 text-white transition duration-300 ease-in px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('OKTOBIERFEST') }}
             </a> --}}
-            <a href="{{ route('pages.menu') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
+            <a href="{{ route('pages.menu') }}" class="py-4 text-white transition duration-300 ease-in px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('Étlap') }}
             </a>
-            <a href="{{ route('pages.reservation') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
+            <a href="{{ route('pages.reservation') }}" class="py-4 text-white transition duration-300 ease-in px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('Asztalfoglalás') }}
             </a>
-            <a href="{{ route('events.index') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
+            <a href="{{ route('events.index') }}" class="py-4 text-white transition duration-300 ease-in px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('Rendezvények') }}
             </a>
-            <a href="{{ route('pages.gallery') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
+            <a href="{{ route('pages.gallery') }}" class="py-4 text-white transition duration-300 ease-in px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('Galéria') }}
             </a>
-            <a href="{{ route('pages.about') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
+            <a href="{{ route('pages.about') }}" class="py-4 text-white transition duration-300 ease-in px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('Rólunk') }}
             </a>
-            <a href="{{ route('pages.contact') }}" class="py-4 text-white px-7 lg:px-5 lg:py-14 transition duration-300 ease-in lg:hover:text-gold">
+            <a href="{{ route('pages.contact') }}" class="py-4 text-white transition duration-300 ease-in px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('Kapcsolat') }}
             </a>
             
-            <div x-data="{ open: false }" @keydown.escape.stop="open = false" @click.away="open = false" class="relative inline-block ml-48 text-right">
+            {{-- <div x-data="{ open: false }" @keydown.escape.stop="open = false" @click.away="open = false" class="relative inline-block ml-48 text-right">
               <div>
-                <button type="button" class="inline-flex items-center justify-center w-full px-4 py-2 font-medium text-gray-700 xl:text-2xl focus:outline-none transition duration-300 ease-in" id="options-menu" aria-expanded="true" @click="open = !open" aria-haspopup="true" x-bind:aria-expanded="open">
+                <button type="button" class="inline-flex items-center justify-center w-full px-4 py-2 font-medium text-gray-700 transition duration-300 ease-in xl:text-2xl focus:outline-none" id="options-menu" aria-expanded="true" @click="open = !open" aria-haspopup="true" x-bind:aria-expanded="open">
                   <img class="w-10" height="25" width="13" src="/images/flag/{{ LaravelLocalization::getCurrentLocale() }}.png" alt="flag" title="flag" >
                   <img x-show="!open" class="w-10" height="25" width="25" src="/images/svg/down-white.svg" alt="">
                   <img x-show="open" class="w-10" height="25" width="25" src="/images/svg/up-white.svg" alt="">
                 </button>
               </div>
           
-              <div  x-show="open" x-transition:enter="transition ease-in duration-500" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 mt-2 bg-white origin-top-right focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+              <div  x-show="open" x-transition:enter="transition ease-in duration-500" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 mt-2 origin-top-right bg-white focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                   <div class="py-1" role="none">
                       @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                           @if (LaravelLocalization::getCurrentLocale() != $localeCode)
@@ -59,7 +59,7 @@
                       @endforeach
                   </div>
               </div>
-            </div>
+            </div> --}}
           </div>
         </div>
 
@@ -81,7 +81,7 @@
                 <img x-show="open" class="w-10" src="/images/svg/up.svg" alt="">
               </button>
             </div>
-            <div x-show="open" x-description="Profile dropdown panel, show/hide based on dropdown state." x-transition:enter="transition ease-in duration-500" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-500" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute left-0 py-1 mt-2 text-xl bg-white shadow-lg origin-top-left w-72 rounded-md ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="user-menu" style="display: none;">
+            <div x-show="open" x-description="Profile dropdown panel, show/hide based on dropdown state." x-transition:enter="transition ease-in duration-500" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-500" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute left-0 py-1 mt-2 text-xl origin-top-left bg-white rounded-md shadow-lg w-72 ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="user-menu" style="display: none;">
               <a href="{{ route('pages.user-orders') }}" class="block px-4 py-2 text-2xl text-gray-700 " role="menuitem">Rendeléses</a>
               <form method="POST" class="block px-4 py-2" action="{{ route('logout') }}">
                   @csrf
@@ -108,7 +108,7 @@
         <div class="flex items-center xl:hidden">
           <!-- Mobile menu button -->
               <button @click=" open = !open" class="xl:hidden focus:outline-none ">
-                  <img x-show="!open" class="z-20 w-14 md:w-20 ease-in" src="/images/svg/menu.svg" alt="">
+                  <img x-show="!open" class="z-20 ease-in w-14 md:w-20" src="/images/svg/menu.svg" alt="">
                   <img x-show="open" class="z-20 w-14 md:w-20" src="/images/svg/close.svg" alt="">
               </button>
         </div>
@@ -116,7 +116,7 @@
     </div>
 
     <div x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'block': open, 'hidden': !open }" class="hidden text-2xl leading-tight text-white bg-gray26 md:text-3xl xl:hidden">
-      <div class="pt-2 pb-3 text-2xl lg:text-4xl space-y-1">
+      <div class="pt-2 pb-3 space-y-1 text-2xl lg:text-4xl">
         <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
         {{-- <a href="{{ route('pages.oktobierfest') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('OKTOBIERFEST') }}</a> --}}
         <a href="{{ route('pages.menu') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Étlap') }}</a>
@@ -125,7 +125,7 @@
         <a href="{{ route('pages.gallery') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Galéria') }}</a>
         <a href="{{ route('pages.about') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Rólunk') }}</a>
         <a href="{{ route('pages.contact') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Kapcsolat') }}</a>
-        <div x-data="{ open: false }" @keydown.escape.stop="open = false" @click.away="open = false" class="relative inline-block py-3 pl-5 pr-4 text-right">
+        {{-- <div x-data="{ open: false }" @keydown.escape.stop="open = false" @click.away="open = false" class="relative inline-block py-3 pl-5 pr-4 text-right">
           <div class="flex space-x-4">
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                 @if (LaravelLocalization::getCurrentLocale() != $localeCode)
@@ -135,7 +135,7 @@
                 @endif
             @endforeach
           </div>
-        </div>
+        </div> --}}
       </div>
       {{-- <div class="py-4 border-t border-white">
       @if (Auth::check())
