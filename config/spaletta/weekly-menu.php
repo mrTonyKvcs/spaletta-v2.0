@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.04.05 - 2022.04.08.',
-    'weekend-date' => '2022.04.09.',
+    'menu-date' => '2022.04.12. - 2022.04.15.',
+    'weekend-date' => '2022.04.16.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Májgaluskaleves (L)',
-                'Medvehagyma krémleves pirított mandulával (G, L)',
-                'Currys halraguleves kókusztejjel (G, L)'
+                'Zurek (Lengyel burgonyaleves) (G, L)',
+                'Pikáns kukorica krémleves (G, L)',
+                'Borsóleves csibehússal (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Zúzapörkölt – tarhonya, kovászos uborka (L)',
-                'Lassan sült sertéskaraj – zöldbabfőzelék (L)',
-                'Csirke tortilla – hasábburgonya (L)',
-                'Rukkolás – gombás tészta (L)'
+                'Roston csirke – görög saláta (G)',
+                'Vaníliás mákos guba, málnaragu',
+                'Barna sörös marharagu, petrezselymes burgonya (L)',
+                'Muszaka (Görög rakott padlizsán)'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Zöldséges sárgaborsóleves, fokhagymás kenyérkocka (L)',
-                'Almán sült sertés java – törtburgonya, pezsgős párolt lilakáposzta (G, L)',
-                'Klasszikus képviselőfánk'
+                'Sült paprika krémleves (G, L)',
+                'Bőrös malackaraj – Lyoni hagyma, jázminrizs (G, L)',
+                'Gesztenyés, mandarinos Rum-baba'
             ]
         ],
     ]
