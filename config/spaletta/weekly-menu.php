@@ -16,7 +16,7 @@ return [
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Spenóttal töltött tarja',
+                'Spenóttal töltött tarja – Burgonyapüré, káposztasaláta (G, L)',
                 'Pankómorzsába sült cukkini – zöldfűszeres jázminrizs, joghurtos újhagymás dip (L)',
                 'Stroganoff marhacomb – házi röszti burgonya (L)',
                 'Stíriai metélt'
