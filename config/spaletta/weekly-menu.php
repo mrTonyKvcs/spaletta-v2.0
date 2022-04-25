@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.04.19. - 2022.04.22.',
-    'weekend-date' => '2022.04.23.',
+    'menu-date' => '2022.04.26. - 2022.04.29.',
+    'weekend-date' => '2022.04.30.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Pontyhalászlé, gyufatészta (L)',
-                'Kelkáposzta leves, füstölt hússal (G, L)',
-                'Kecskeméti barackleves (G, L)'
+                'Pho leves (Vietnámi marhahúsleves)',
+                'Tárkonyos sertés raguleves (G, L)',
+                'Görög gyümölcsleves (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Spenóttal töltött tarja – Burgonyapüré, káposztasaláta (G, L)',
-                'Pankómorzsába sült cukkini – zöldfűszeres jázminrizs, joghurtos újhagymás dip (L)',
-                'Stroganoff marhacomb – házi röszti burgonya (L)',
-                'Stíriai metélt'
+                'Marhapörkölt – galuska, csemegeuborka (L)',
+                'Szántódi ropogós – rizibizi, gyümölcssaláta (L)',
+                'Paradicsomos pisztáciás masni tészta (L)',
+                'Harcsa papillotte (G, L)'
             ]
         ],
     ],
@@ -27,8 +27,8 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Alföldi gulyás csipetkével (L)',
-                'Cseburek- zöldséges tört búza, queso-sajtmártás',
+                'Zöldségleves eperlevéllel (L)',
+                'Csülök Pékné módra (L)',
                 'Gyümölcsrizs (G)'
             ]
         ],

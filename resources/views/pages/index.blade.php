@@ -42,10 +42,10 @@
         </div>
     </div>  --}}
     <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
-        <h2 class="text-4xl font-medium gold font-libre italic">Áprilisi programajánló</h2>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Sohonyai Attila önálló estje - 2022. április 8.</p>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Húsvéti menü ajánló - 2022. április 13-tól</p>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Kecskeméti Szalon 2. (Képzőművészeti sorozatunk folytatódik) - 2022. április 21.</p>
+        <h2 class="text-4xl font-medium gold font-libre italic">Májusi programajánló</h2>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Belga sörhét - 2022. május 4-7.</p>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Belga sörvacsora - 2022. május 6.</p>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Kubai rumest - 2022. május 20.</p>
         
     </div>
     <x-section>
