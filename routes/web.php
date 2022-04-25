@@ -28,6 +28,9 @@ Route::get('payment-back', 'App\Http\Controllers\PaymentController@back')
 Route::get('payment-finish', 'App\Http\Controllers\PaymentController@finish')
 ->name('payment.finish');
 
+Route::post('payment-ipn', 'App\Http\Controllers\PaymentController@ipn')
+	->name('payment.ipn');
+
 
 
 Route::group(

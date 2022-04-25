@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use SimplePay\SimplePayStart;
 use SimplePay\SimplePayBack;
 use SimplePay\SimplePayFinish;
+use SimplePay\SimplePayIpn;
 
 class PaymentController extends Controller
 {
@@ -159,5 +160,41 @@ class PaymentController extends Controller
 
 			return redirect()->route('pages.payment-error', $transaction->id);
 		}
+	}
+
+	public function ipn(Request $request)
+	{
+		$json = $request->all();
+
+		$trx = new SimplePayIpn;
+
+		$trx->addConfig($this->config);
+
+		//check signature and confirm IPN
+		//-----------------------------------------------------------------------------------------
+		if ($trx->isIpnSignatureCheck($json)) {
+			/**
+			 * Generates all response
+			 * Puts signature into header
+			 * Print response body
+			 *
+			 * Use this OR getIpnConfirmContent
+			 */
+			$trx->runIpnConfirm();
+
+			/**
+			 * Generates all response
+			 * Gets signature and response body
+			 *
+			 * You must set signeature in header and you must print response body!
+			 *
+			 * Use this OR runIpnConfirm()
+			 */
+			// $confirm = $trx->getIpnConfirmContent();
+
+		}
+
+		//no need to print further information
+		exit;
 	}
 }
