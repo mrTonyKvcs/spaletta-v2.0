@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.04.26. - 2022.04.29.',
-    'weekend-date' => '2022.04.30.',
+    'menu-date' => '2022.05.03. - 2022.05.06.',
+    'weekend-date' => '2022.05.07.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Pho leves (Vietnámi marhahúsleves)',
-                'Tárkonyos sertés raguleves (G, L)',
-                'Görög gyümölcsleves (G, L)'
+                'Borjúbecsinált leves (G, L)',
+                'Egres leves (G, L)',
+                'Csontleves csigatésztával (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Marhapörkölt – galuska, csemegeuborka (L)',
-                'Szántódi ropogós – rizibizi, gyümölcssaláta (L)',
-                'Paradicsomos pisztáciás masni tészta (L)',
-                'Harcsa papillotte (G, L)'
+                'Borsos tokány – tészta, paradicsomsaláta (L)',
+                'Ropogósra sült csirkecomb – Petrezselymes parázsburgonya, barackbefőtt (G, L)',
+                'Spenótmártás – buggyantott tojás (G, L)',
+                'Túrófánk'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Zöldségleves eperlevéllel (L)',
-                'Csülök Pékné módra (L)',
-                'Gyümölcsrizs (G)'
+                'Brokkoli krémleves, bacon chips, pirított mandula (G, L)',
+                'Párizsi sertésborda – jázminrizs, pároltzöldségek (L)',
+                'Skót szelet'
             ]
         ],
     ]
