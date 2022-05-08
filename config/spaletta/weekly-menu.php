@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.05.03. - 2022.05.06.',
-    'weekend-date' => '2022.05.07.',
+    'menu-date' => '2022.05.10. - 2022.05.13.',
+    'weekend-date' => '2022.05.14.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Borjúbecsinált leves (G, L)',
-                'Egres leves (G, L)',
-                'Csontleves csigatésztával (L)'
+                'Palócleves (L)',
+                'Könnyű tavaszi zöldségleves (G, L)',
+                'Gyümölcs krémleves, meggyfagyi (G)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Borsos tokány – tészta, paradicsomsaláta (L)',
-                'Ropogósra sült csirkecomb – Petrezselymes parázsburgonya, barackbefőtt (G, L)',
-                'Spenótmártás – buggyantott tojás (G, L)',
-                'Túrófánk'
+                'Bakonyi sertésborda – galuska, uborkasaláta (L)',
+                'Zöldborsófőzelék – csibemáj felfújt (G, L)',
+                'Spárgás rizottó (G)',
+                'Sajtos brokkolis pulykamell – bulgur, csicseriborsó saláta'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Brokkoli krémleves, bacon chips, pirított mandula (G, L)',
-                'Párizsi sertésborda – jázminrizs, pároltzöldségek (L)',
-                'Skót szelet'
+                'Legényfogó leves (G, L)',
+                'Vasalt csirkecomb file – hasáb, friss saláta (G, L)',
+                'Rizskoch, eper öntet'
             ]
         ],
     ]
