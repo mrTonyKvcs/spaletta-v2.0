@@ -169,7 +169,7 @@ class PaymentController extends Controller
 
         try {
             $json['receiveDate'] = now();
-            $signature = base64_encode(hash_hmac('sha384', json_encode($json), trim('5bMcopOlH1F2LmnfC36S4uvWW5Ws23Lm'), true));
+            $signature = base64_encode(hash_hmac('sha384', json_encode($json), trim('5yF2qxFf41MY4qC80Q2345Fw49jf9i3A'), true));
 
             return response($json, 200)
                 ->header('Content-Type', 'application/json')
