@@ -29,8 +29,8 @@ class EventsController extends Controller
         $ticketSold = $event->tickets()->sum('quantity');
 
         return view('pages.events.show', [
-			'event' => $event,
-			'sold' => empty($ticketSold) ?? 0
+            'event' => $event,
+            'sold' => empty($ticketSold) ? 0 : $ticketSold
         ]);
     }
 }
