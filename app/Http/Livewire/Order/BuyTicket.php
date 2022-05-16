@@ -17,7 +17,8 @@ use \SzamlaAgent\SzamlaAgentAPI;
 
 class BuyTicket extends Component
 {
-    use TicketTrait; use InvoiceTrait;
+    use TicketTrait;
+    use InvoiceTrait;
 
     public $event;
     public $total = 0;
@@ -50,7 +51,7 @@ class BuyTicket extends Component
         $this->isDinner = !is_null($this->dinnerPrice) ? true : false;
 
         //Fake
-        $this->invoiceData = $this->testData();
+        // $this->invoiceData = $this->testData();
     }
 
     public function render()
@@ -65,12 +66,12 @@ class BuyTicket extends Component
 
     public function submit()
     {
-		$ticketSold = $this->event->tickets()->sum('quantity') + $this->quantity;
+        $ticketSold = $this->event->tickets()->sum('quantity') + $this->quantity;
 
-		if ($ticketSold > 20) {
-			$freeTicket = 20 - $this->event->tickets()->sum('quantity');
-			return back()->with('error', 'Szabad jegyek száma: ' . $freeTicket);
-		}
+        if ($ticketSold > 20) {
+            $freeTicket = 20 - $this->event->tickets()->sum('quantity');
+            return back()->with('error', 'Szabad jegyek száma: ' . $freeTicket);
+        }
         // $this->hideSubmitButton();
 
         //Validation
@@ -109,11 +110,12 @@ class BuyTicket extends Component
     {
         $qr = '/public/images/qr-codes/'. $data['order_number'] . '.png';
 
-        Storage::disk('local')->put($qr, \QrCode::format('png')
+        Storage::disk('local')->put(
+            $qr,
+            \QrCode::format('png')
           ->size(300)
           ->generate(URL::to('/') . '/check-in/' . $data['ticket_id'] . '/' . $data['order_number'])
         );
-
     }
 
     public function testData()
