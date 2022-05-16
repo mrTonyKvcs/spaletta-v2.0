@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Ticket;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,21 @@ use App\Models\Ticket;
 | contains the "web" middleware group. Now create something great!
 |
  */
+
+Route::get('payment-start', 'App\Http\Controllers\PaymentController@start')
+->name('payment.start');
+
+Route::get('payment-back', 'App\Http\Controllers\PaymentController@back')
+->name('payment.back');
+
+Route::get('payment-finish', 'App\Http\Controllers\PaymentController@finish')
+->name('payment.finish');
+
+Route::post('payment-ipn', 'App\Http\Controllers\PaymentController@ipn')
+	->name('payment.ipn');
+
+
+
 Route::group(
 [
     'prefix' => LaravelLocalization::setLocale(),
@@ -64,13 +80,13 @@ Route::group(
         return view('pages.reservation');
     })->name('pages.reservation');
 
-    Route::get('sikeres-vasarlas/{id}', function ($id) {
-        $ticket = Ticket::find($id);
+    // Route::get('sikeres-vasarlas/{id}', function ($id) {
+    //     $ticket = Ticket::find($id);
 
-        return view('pages.successful-shopping', [
-            'ticket' => $ticket
-        ]);
-    })->name('pages.successful-shopping');
+    //     return view('pages.successful-shopping', [
+    //         'ticket' => $ticket
+    //     ]);
+    // })->name('pages.successful-shopping');
 
     Route::get('check-in/{id}/{orderNumber}', [
         'as' => 'ticket.check-in',
@@ -78,8 +94,13 @@ Route::group(
     ]);
 
     Route::get('sikeres-vasarlas-visszaigazolasa/{id}/{orderNumber}', [
-        'as' => 'pages.confirmation-successful-shopping',
-        'uses' => 'App\Http\Controllers\TicketController@confirmAndSendTicket'
+        'as' => 'pages.successful-payment',
+        'uses' => 'App\Http\Controllers\TicketController@successfullyPayment'
+    ]);
+
+    Route::get('sikertelen-fizetes/{transaction}', [
+        'as' => 'pages.payment-error',
+        'uses' => 'App\Http\Controllers\TicketController@paymentError'
     ]);
 
     // Route::get(LaravelLocalization::transRoute('routes.events'), function () {

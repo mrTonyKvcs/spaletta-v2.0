@@ -47,7 +47,8 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "SzamlaAgent\\": "szamlaagent/"
+            "SzamlaAgent\\": "szamlaagent/",
+            "SimplePay\\": "simplepay/src/"
         }
     },
     "autoload-dev": {

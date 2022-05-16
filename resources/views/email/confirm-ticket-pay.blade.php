@@ -4,10 +4,14 @@
     <title>Spaletta</title>
 </head>
 <body style="padding: 50px;">
-    <p>Utálását sikeresen megkaptuk. A jegyet az üzenet alján találja (QR kód).</p>
+    <p>Köszönjük. Sikeres tranzakció és jegyvásárlás. A jegyet az üzenet alján találja (QR kód).</p>
+    <p>
+        <strong>SimplePay tranzakció azonosító:</strong> {{ $data['transaction_id'] }}
+    </p>
     <p>
         <strong>Rendelési azonosító:</strong> {{ $data['orderNumber'] }}
     </p>
+    <hr/>
     <p>
         <strong>Esemény neve:</strong> {{ $data['event'] }}
     </p>

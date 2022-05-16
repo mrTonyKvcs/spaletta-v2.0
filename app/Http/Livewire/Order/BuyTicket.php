@@ -50,7 +50,7 @@ class BuyTicket extends Component
         $this->isDinner = !is_null($this->dinnerPrice) ? true : false;
 
         //Fake
-        // $this->invoiceData = $this->testData();
+        $this->invoiceData = $this->testData();
     }
 
     public function render()
@@ -76,6 +76,8 @@ class BuyTicket extends Component
         //Validation
         $validateData = $this->validate();
         $ticketData = $this->getTicketData($validateData);
+        $ticketData['total'] = $this->activePrice * $this->quantity;
+        $ticketData['payment_id'] = 2;
 
         //Ticket
         $ticket = Ticket::create($ticketData);
@@ -86,19 +88,21 @@ class BuyTicket extends Component
         $ticketData['event_started_at'] = $ticket->event->started_at;
         $ticketData['ticket_id'] = $ticket->id;
 
-        $this->generateQrCode($ticketData);
+        return redirect()->route('payment.start', $ticketData);
+
+        // $this->generateQrCode($ticketData);
 
         //Invoice
-        $invoiceNumber = $this->createInvoice($ticketData);
-        $invoice = $this->createInvoiceModel($invoiceNumber);
+        // $invoiceNumber = $this->createInvoice($ticketData);
+        // $invoice = $this->createInvoiceModel($invoiceNumber);
 
         //Mail
-        $ticketData['invoice_number'] = $invoice->invoice_number;
-        $ticketData['payment_expired'] = $ticket->payment_expired;
-        Mail::send(new NewSendMail($ticketData));
-        Mail::send(new ThankYouTicketSendMail($ticketData));
+        // $ticketData['invoice_number'] = $invoice->invoice_number;
+        // $ticketData['payment_expired'] = $ticket->payment_expired;
+        // Mail::send(new NewSendMail($ticketData));
+        // Mail::send(new ThankYouTicketSendMail($ticketData));
 
-        return redirect()->route('pages.successful-shopping', $ticket->id);
+        // return redirect()->route('pages.successful-shopping', $ticket->id);
     }
 
     public function generateQrCode($data)

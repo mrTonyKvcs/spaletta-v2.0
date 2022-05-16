@@ -9,10 +9,10 @@
         <strong>Rendelési azonosító:</strong> {{ $data['order_number'] }}
     </p>
     <p>
-        <strong>Esemény neve:</strong> {{ $data['event_name'] }}
+        <strong>Esemény neve:</strong> {{ $data['event']->title }}
     </p>
     <p>
-        <strong>Esemény kezdete:</strong> {{ $data['event_started_at'] }}
+        <strong>Esemény kezdete:</strong> {{ $data['event']->started_at }}
     </p>
     <p>
         <strong>Név:</strong> {{ $data['name'] }}
@@ -34,7 +34,5 @@
         <strong>Teljes összeg:</strong> {{ $data['total'] }} Ft
     </p>
 
-    <h4><stonng>Számlaszám:</stonng> {{ $data['invoice_number'] }}</h4>
-    <a href="{{ URL::to('/') . '/sikeres-vasarlas-visszaigazolasa/' . $data['ticket_id'] . '/' . $data['order_number'] }}">Jegyvásárlás visszaigazolása</a>
 </body>
 </html>
