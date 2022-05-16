@@ -39,7 +39,7 @@ return [
     'USD_MERCHANT' => "",            //merchant account ID (USD)
     'USD_SECRET_KEY' => "",          //secret key for account ID (USD)
 
-    'SANDBOX' => true,
+    'SANDBOX' => env('SIMPLEPAY_SANDBOX'),
 
     //common return URL
     'URL' => 'http://' . $_SERVER['HTTP_HOST'] . '/payment-back',
