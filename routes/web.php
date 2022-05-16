@@ -29,17 +29,16 @@ Route::get('payment-finish', 'App\Http\Controllers\PaymentController@finish')
 ->name('payment.finish');
 
 Route::post('payment-ipn', 'App\Http\Controllers\PaymentController@ipn')
-	->name('payment.ipn');
+    ->name('payment.ipn');
 
 
 
 Route::group(
-[
+    [
     'prefix' => LaravelLocalization::setLocale(),
     'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'localize']
-], function()
-{
-
+],
+    function () {
     Route::get('/', function (Request $request) {
         return view('pages.index');
     });
@@ -90,7 +89,7 @@ Route::group(
 
     Route::get('check-in/{id}/{orderNumber}', [
         'as' => 'ticket.check-in',
-        'uses' => 'App\Http\Controllers\TicketController@CheckIn'
+        'uses' => 'App\Http\Controllers\TicketController@checkIn'
     ]);
 
     Route::get('sikeres-vasarlas-visszaigazolasa/{id}/{orderNumber}', [
@@ -143,7 +142,8 @@ Route::group(
     Route::get(LaravelLocalization::transRoute('routes.landingpage'), function () {
         return view('pages.landingpage');
     })->name('pages.landingpage');
-});
+}
+);
 
 Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
     Route::get('/', function () {
@@ -166,4 +166,3 @@ Route::post('uzenet-kuldes/{subject}', [
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
-
