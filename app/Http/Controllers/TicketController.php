@@ -48,11 +48,13 @@ class TicketController extends Controller
 
     public function checkIn($id, $orderNumber)
     {
-        $ticket = $this->getTicket($id, $orderNumber);
+        $ticket = $this->getTicket($orderNumber);
 
-        $ticket->update([
-            'check_in' => now()
-        ]);
+        if (!empty($ticket)) {
+            $ticket->update([
+                'check_in' => now()
+            ]);
+        }
 
         return view('tickets.check-in', [
             'ticket' => $ticket
