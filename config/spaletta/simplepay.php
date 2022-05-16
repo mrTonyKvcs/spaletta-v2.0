@@ -28,8 +28,8 @@
 
 return [
     //HUF
-    'HUF_MERCHANT' => "OMS52049901",            //merchant account ID (HUF)
-    'HUF_SECRET_KEY' => "5yF2qxFf41MY4qC80Q2345Fw49jf9i3A",          //secret key for account ID (HUF)
+    'HUF_MERCHANT' => env('SIMPLEPAY_HUF_MERCHANT'),            //merchant account ID (HUF)
+    'HUF_SECRET_KEY' => env('SIMPLEPAY_HUF_SECRET_KEY'),          //secret key for account ID (HUF)
     
     //EUR
     'EUR_MERCHANT' => "",            //merchant account ID (EUR)
