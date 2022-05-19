@@ -17,7 +17,7 @@ class TicketController extends Controller
 
     public function successfullyPayment($id, $orderNumber)
     {
-        $ticket = $this->getTicket($id, $orderNumber);
+        $ticket = $this->getTicket($orderNumber);
 
         $ticket->update([
             'is_paid' => true
