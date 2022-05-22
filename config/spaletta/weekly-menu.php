@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.05.17. - 2022.05.20.',
-    'weekend-date' => '2022.05.21.',
+    'menu-date' => '2022.05.24. - 2022.05.27.',
+    'weekend-date' => '2022.05.28.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Frankfurti leves (L)',
-                'Csibehúsos grízgaluskaleves (L)',
-                'Eper krémleves, mangó fagyi (G)'
+                'Legényfogó leves (G, L)',
+                'Csontleves csigatésztával (L)',
+                'Őszibarack krémleves (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Zúzapörkölt – tarhonya, kovászos uborka (L)',
-                'Hideg tökfőzelék – arancini (L)',
-                'Rakott kelkáposzta (G, L)',
-                'Pulykás – spenótos tésztasaláta'
+                'Brassói aprópecsenye, vegyes vágott savanyúság (G, L)',
+                'Rántott camembert – Basmati rizs, áfonyalekvár',
+                'Sültoldalas – parázsburgonya, friss saláta (G, L)',
+                'Roston harcsa – burgonyakrokett, hollandi mártás'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Tejfölös krumpligombóc leves füstölt hússal (L)',
-                'Ropogós kacsacomb, vörösboros meggymártás, burgonyapüré (G, L)',
-                'Rákóczi túrós pohárkrém'
+                'Gulyásleves',
+                'Tojásos galuska – ecetes fejes saláta (L)',
+                'Rigójancsi'
             ]
         ],
     ]
