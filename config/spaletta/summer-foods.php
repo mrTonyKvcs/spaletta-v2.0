@@ -15,168 +15,146 @@ return [
     [
         'category_id' => 3,
         'name' => [
-            'hu' => 'Vadas leves, szarvas comb, zöldségek ',
-            'en' => 'Wild game soup, venison thigh, vegetables',
-            'de' => 'Wildsuppe, Hirschkeule, Gemüse'
+            'hu' => 'Áfonyaleves, habcsókmorzsa, franciapiskóta, tejszín mousse, isomalt tuile',
+            'en' => 'Blueberry soup, meringue crumble, French sponge cake, cream mousse, Isomalt tuile',
+            'de' => 'Blaubeeren Suppe, Baiser, Biskotte, Sahnemousse, Isomalt Tuile'
         ],
         'comment' => '',
-        'price' => 2550,
-        'wine' => 'Rosato Salento Rosé,  Pannonhalmi Főapátság Tricollis Vörös 2020'
+        'price' => 2100,
+        'wine' => ''
     ],
     [
         'category_id' => 3,
         'name' => [
-            'hu' => 'Sült paprika krémleves 	(G, L, V)',
-            'en' => 'Roasted red pepper cream soup	(G, L, V)',
-            'de' => 'Gebackene Paprikacremesuppe 	(G, L, V)'
+            'hu' => 'Cukorborsó krémleves, menta sorbet (V, G, L)',
+            'en' => 'Cream of sugar pea soup, mint sorbet (V, G, L)',
+            'de' => 'Zuckererbsen Cremesuppe, Minze Sorbet (V, G, L)'
         ],
         'comment' => '',
         'price' => 2100,
-        'wine' => 'Etyeki Kúria Sauvignon Blanc 2020 (Etyek-Buda), Günzer Lezser Fehér Cuvée 2020 (Villány)'
+        'wine' => ' '
     ],
     [
         'category_id' => 1,
         'name' => [
-            'hu' => 'Téli házi kencék - pirítós kenyér (házi kőrözött, tepertőkrém, sütőtökkrém)',
-            'en' => 'Winter spreads - toast (home-made Liptauer, greaves cream, pumpkin cream)',
-            'de' => 'Winter Aufstriche - Toast (Liptauer, Grammelcreme, Kürbiscreme)'
+            'hu' => 'Házi kencék - pirítós kenyér (Vegán pástétom, gombakrém, csirkepástétom)',
+            'en' => 'Homemade spreads - toast (Vegan pâté, mushroom pâté, chicken pâté)',
+            'de' => 'Hausegemachte Aufstriche - Toast (Vegan Pastete, Pilzcreme, Hühnerpastete)'
         ],
         'comment' => '',
-        'price' => 2900,
-        'wine' => 'Günzer Lezser Fehér Cuvée 2020 (Villány), Jásdi Csopaki Rizling 2020 (Hegybor) (Csopak)'
+        'price' => 3200,
+        'wine' => 'Béla és Bandi Sauvignon Blanc 2021, Günzer Lezser 2020/21'
     ],
     [
         'category_id' => 1,
         'name' => [
             'hu' => 'Sonka-sajttál vegyesen, saláta',
-            'en' => 'Plate of mixed ham and cheese, salad',
-            'de' => 'Schinken-Käseteller, Salat '
+            'en' => 'Mixed ham and cheese plate, salad',
+            'de' => 'Schinken-Käse Teller, Salat'
         ],
         'comment' => '',
-        'price' => 3300,
-        'wine' => 'Ikon Rajnai Rizling 2021 (Rádpuszta), St. Andrea Boldogságos 2020 (Eger)'
+        'price' => 3500,
+        'wine' => 'Jásdi Csopaki Olaszrizling 2020/21, I Magredi Traminer Aromatico'
     ],
     [
         'category_id' => 1,
         'name' => [
-            'hu' => 'Marha tatár, lilahagyma lekvár,friss zöldségek, vaj',
-            'en' => 'Beef tartare, red onion jam, fresh vegetables, butter  ',
-            'de' => 'Rindsteak Tatare, Lilazwiebel Marmelade, Gemüse, Butter  '
+            'hu' => 'Répa tatár (L)	',
+            'en' => 'Carrot tartare (L)',
+            'de' => 'Karotten Tatar (L)'
+        ],
+        'comment' => '',
+        'price' => 2800,
+        'wine' => 'Günzer Lezser 2020/21, I Magredi Traminer Aromatico'
+    ],
+    [
+        'category_id' => 6,
+        'name' => [
+            'hu' => 'Cukkiniba tekert zöldséges hajdina, burgonyakrém, hasselback-alma, répachips, sült zöldségek, almapüré. (V, G, L)',
+            'en' => 'Buckwheat wrapped in courgette, mashed potatoes, hasselback apples, carrot crisps, roasted vegetables, apple puree (V)',
+            'de' => 'Zukkini gefüllt mit Buchweizen, Kartoffelcreme, Hasselback-Apfel, Karottenchips, gebakene Gemüse, Apfelpüréé. (V)'
         ],
         'comment' => '',
         'price' => 4800,
-        'wine' => 'Günzer Cabernet Franc 2016 (Villány), Konyári Loliense 2019 (Balatonlelle)'
+        'wine' => 'St Andrea Napbor 2021, Béla és Bandi Sauvignon Blanc 2021'
     ],
     [
         'category_id' => 6,
         'name' => [
-            'hu' => 'Padlizsán steak, fokhagymás burgonyakrém, lencsesaláta, paradicsom (G, L, V)',
-            'en' => 'Aubergine steak, garlic potato cream, lentil salad, tomatoes (G, L, V)',
-            'de' => 'Aubergine Steak, Erdapfelcreme mit Knoblauch, Linsensalat, Tomaten (G, L, V)'
-        ],
-        'comment' => '',
-        'price' => 4400,
-        'wine' => 'Oremus Mondolás Furmint (Tokaj-Hegyalja), Günzer Lezser Fehér Cuvée 2020 (Villány)'
-    ],
-    [
-        'category_id' => 6,
-        'name' => [
-            'hu' => 'Konfitált fogasfilé, csicseriborsó, cékla, édeskömény ,köles (G)',
-            'en' => 'Zander fillet confit, chickpeas, beetroot, fennel , millet (G)',
-            'de' => 'Konfitiert Zanderfilet, Kichererbse, Rote Rübe, Fenchel, Hirse (G)'
-        ],
-        'comment' => '',
-        'price' => 5000,
-        'wine' => 'Ikon Rajnai Rizling 2021 (Rádpuszta), Figula Bella Róza 2019 (rozé) (Balatonfüred)'
-    ],
-    [
-        'category_id' => 6,
-        'name' => [
-            'hu' => 'Bőrén sült lazac, burgonya gnocchi, brokkoli, joghurtos-kapros szósz ',
-            'en' => 'Crispy-skin grilled salmon, potato gnocchi, broccoli, yoghurt-dill sauce  ',
-            'de' => 'Gebackener Lachs, Gnocchi, Broccoli, Joghurt-Dill Soße '
+            'hu' => 'Grillezett lazac steak, sültpaprikás kuszkusz, szardellamajonéz, római saláta, pecorino chipsz, koriander-lime olaj, kruton	',
+            'en' => 'Grilled salmon steak, couscous with roasted bell peppers, anchovy mayonnaise, romaine lettuce, pecorino chips, coriander-lime oil, croutons',
+            'de' => 'Gegrillte Lachssteak, Gebackene Paprika-Couscous, Sardellenmayo, Römersalat, Pecorino Chips, Koriander-Lime Öl, Croutons'
         ],
         'comment' => '',
         'price' => 5800,
-        'wine' => 'Heimann Mammaróza Rozé 2021 (Szekszárd), Ikon Rajnai Rizling 2021 (Rádpuszta)'
+        'wine' => 'Rosato Salento Rosé, Gere Portugieser 2021'
     ],
     [
         'category_id' => 6,
         'name' => [
-            'hu' => 'Kacsamell, savanyú szilva, zöldfűszeres quinoa, mandula, lilahagyma(G)',
-            'en' => 'Duck breast, sour plums, quinoa with herbs, almonds, red onion (G) ',
-            'de' => 'Entenbrust –sauere Pflaume, Krauter Quinoa, Mandel, Lilazwiebel(G)'
+            'hu' => 'Sous-vide szürkeharcsa, sáfrányos halszósz, parmezános citrusos sörét-tarhonya, pisztráng kaviár, tápióka chips',
+            'en' => 'Sous-vide catfish, saffron fish sauce, citrus and parmesan egg barley, trout caviar, tapioca chips',
+            'de' => 'Sous-vide Wels, Safran-Fishsosse, Parmezan-Zitrus Nudel, Forellen Kaviar, Tapioka chips '
         ],
         'comment' => '',
-        'price' => 5000,
-        'wine' => 'Rosato Salento Rosé (Olaszország), Sauska Pinot Noir Birs 2018 (Tokaj)'
+        'price' => 4900,
+        'wine' => 'Bock Chardonnay 2020, St Andrea Napbor 2021'
     ],
     [
         'category_id' => 6,
         'name' => [
-            'hu' => 'Marhapofa pörkölt tejfölhabos galuskával',
-            'en' => 'Beef cheeks stew with sour cream dumplings',
-            'de' => 'Rinderbackengulasch mit Sauerrahmknödel'
+            'hu' => 'Rozé kacsamell, pörkölt hajdina, zöldborsó, burgonyakrém, körte, borsópüré, burgonya cihps (G, L)',
+            'en' => 'Duck breast medium rare with roasted buckwheat, green peas, potato puree, pear, mashed peas, potato chips (G, L)',
+            'de' => 'Rosé Entenbrust, Buchweizen, Erbsen, Kartoffelcreme, Birne, Erbsenpüréé, Kartoffeln Chips (G, L)'
         ],
         'comment' => '',
-        'price' => 5000,
-        'wine' => 'il Roccolo primitivo salento, Bock Syrah (Villány)'
+        'price' => 5600,
+        'wine' => 'St Andrea Pinot Noir 2020, Béla és Bandi Kékfrankos, Sauska Rosé'
     ],
     [
         'category_id' => 6,
         'name' => [
-            'hu' => 'Bárányborda, kucsmagomba, bárányszűz, sáfrányos rizsfelfújt (G) ',
-            'en' => 'Lamb chop, morel, lamb tenderloin, saffron rice soufflé (G)',
-            'de' => 'Lammrippeln, Morchel, Lammfilet, Reisauflauf mit Safran (G) '
+            'hu' => 'Barna sörös marhapofa, burgonyakrémmel töltött sült wonton tészta, pagoda püré, zöldségek',
+            'en' => 'Brown beer beef cheek, fried wonton noodles stuffed with potato cream, pagoda puree, vegetables',
+            'de' => 'Dunkles Bier-Rindsmaul, gebackene Wonton mit Kartoffelcreme gefüllt, Pagoda püréé, Gemüse'
         ],
         'comment' => '',
-        'price' => 5800,
-        'wine' => 'Günzer Cabernet Franc 2016 (Villány), Konyári Fecske Konyári Fecske Vörös 2020 (Balatonlelle)'
+        'price' => 5600,
+        'wine' => 'Pannonhalmi Hemina 2020, Gellavilla September 2019/20'
     ],
     [
         'category_id' => 6,
         'name' => [
-            'hu' => 'Zöldfűszeres sertésszűz – burgonyakrém, áfonya, vörösboros füge,sajt chips (G)',
-            'en' => 'Pork tenderloin with herbs - potato cream, blueberries, red wine figs, cheese chips (G)',
-            'de' => 'Kräuter Schweinefilet – Erdapfelcreme, Heidelbeeren, Feige mit Rotwein, Käse Chips (G)'
+            'hu' => 'Borskérges sertés szűz, hordóburgonya, zöldborsópüré, burgonya chips, baconos cukorborsó, marinált gyöngyhagyma (G, L)',
+            'en' => 'Pepper-crusted pork tenderloin, barrel potatoes, green pea puree, potato chips, bacon sugar peas, marinated pearl onions (G, L)',
+            'de' => 'Schweinefilet im Pfeffermantel, hausgem. Pommes, Erbsenpüréé, Kartoffelchips, Zuckererbsen mit Bacon, marinierte Perlzwiebel (G, L) '
         ],
         'comment' => '',
-        'price' => 4950,
-        'wine' => 'Bock Chardonnay  (Villány), Béla és Bandi Kékfrankos 2019 (Balatonszőlős) '
+        'price' => 5200,
+        'wine' => 'Bock Syrah 2017, Il Roccolo Primitivo salento'
+    ],
+    [
+        'category_id' => 6,
+        'name' => [
+            'hu' => 'Borjúhátszín, burgonyapüré, zelleres babsaláta, szeder (G)',
+            'en' => 'Veal fillet, mashed potatoes, celery bean salad, blackberries (G)',
+            'de' => 'Kalbslendenstück, Kartoffelnpüréé, Sellerie-Bohnensalat, Brombeere (G)'
+        ],
+        'comment' => '',
+        'price' => 8400,
+        'wine' => 'Bock Capella 2009, Günzer Cabernet Franc 2017'
     ],
     
     [
         'category_id' => 6,
         'name' => [
-            'hu' => 'Mangalicakaraj – kukorica variációk (G)',
-            'en' => 'Mangalica pork chop - corn variations (G)',
-            'de' => 'Mangalitsa Karree – Mais Variationen (G)'
+            'hu' => 'Grillezett csirkemell, parázsburgonya, vad brokkoli, savanyított zöldség, burgonyás brokkoli krém, zöldséghab (G)',
+            'en' => 'Grilled chicken breast, baked potatoes, wild broccoli, pickled vegetables, cream of broccoli with potatoes, vegetable mousse  (G) ',
+            'de' => 'Gegrillte Höhnerbrust, Wedges Kartoffel, Wild Brokkoli, Sauergemüse, Kartoffel-Brokkoli creme, Gemüseschaum (G)'
         ],
         'comment' => '',
-        'price' => 5700,
+        'price' => 4900,
         'wine' => 'Natale Verga chianti docg, Jásdi Csopaki Rizling 2020 (Hegybor) (Csopak)'
-    ],
-    [
-        'category_id' => 6,
-        'name' => [
-            'hu' => 'Bélszínszeletek, kávés zellerpüré, burgonya gratin, sütőtök, gombák (G)',
-            'en' => 'Filets mignon, celery puree with coffee, potato gratin, pumpkin, mushrooms (G)',
-            'de' => 'Lendenbraten, Kaffee-Selleriepüree, Erdapfel Gratin, Kürbis, Pilzen (G)'
-        ],
-        'comment' => '',
-        'price' => 7900,
-        'wine' => 'il Roccolo primitivo salento, Bock Capella (Villány)'
-    ],
-    [
-        'category_id' => 6,
-        'name' => [
-            'hu' => 'Gesztenyés csirkemell édesburgonya püré, vadrizs, mandulahab (G)',
-            'en' => 'Chestnut chicken breast with sweet potato puree, wild rice, almond mousse (G)',
-            'de' => 'Hühnerbrust, Kastanien, Süßkartoffel Püree, Wildreiß, Mandelschaum (G) '
-        ],
-        'comment' => '',
-        'price' => 4750,
-        'wine' => 'Bock Chardonnay  (Villány), Etyeki Kúria Sauvignon Blanc 2020 (Etyek-Buda)'
     ],
     [
         'category_id' => 2,
@@ -199,7 +177,8 @@ return [
         ],
         'comment' => '',
         'price' => 4400,
-        'wine' => 'Ikon Rajnai Rizling 2021 (Rádpuszta), Jásdi Csopaki Rizling 2020 (Hegybor) (Csopak)'
+        'wine' => 'Jásdi Olaszrizling 2021, Günzer Lezser 2020/21
+        '
     ],
     [
         'category_id' => 2,
@@ -210,7 +189,7 @@ return [
         ],
         'comment' => '',
         'price' => 4000,
-        'wine' => 'Béla és Bandi Kékfrankos 2019 (Balatonszőlős), Takler Merlot 2018 (Szekszárd)'
+        'wine' => 'Béla és Bandi Kékfrankos 2019, Gere Portugieser	2021'
     ],
     [
         'category_id' => 2,
@@ -221,18 +200,7 @@ return [
         ],
         'comment' => '',
         'price' => 6000,
-        'wine' => 'Ikon Rajnai Rizling 2021 (Rádpuszta)'
-    ],
-    [
-        'category_id' => 2,
-        'name' => [
-            'hu' => 'Pulyka cordon, hasábburgonya',
-            'en' => 'Turkey cordon bleu, French fries',
-            'de' => 'Pute Cordon, Pommes'
-        ],
-        'comment' => '',
-        'price' => 4400,
-        'wine' => 'Günzer Lezser Fehér Cuvée 2020 (Villány), Bock Chardonnay  (Villány)'
+        'wine' => ''
     ],
     [
         'category_id' => 2,
@@ -336,35 +304,24 @@ return [
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Hosszúmetélt – paradicsomos tonhallal (L)',
-            'en' => 'Tagliatelle with tomato and tuna (L)',
-            'de' => 'Nudel – Tomaten mit Thunfisch (L)'
+            'hu' => 'Pasta Alfredo',
+            'en' => 'Pasta Alfredo',
+            'de' => 'Pasta Alfredo'
         ],
         'comment' => '',
-        'price' => 4500,
-        'wine' => 'il Roccolo primitivo salento, Figula Bella Róza 2019 (rozé) (Balatonfüred)'
+        'price' => 3500,
+        'wine' => 'Béla és Bandi Sauvignon Blanc 2021, Günzer Lezser 2020/21'
     ],
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Tejszínes gombás hosszúmetélt (L)',
-            'en' => 'Tagliatelle with cream and mushroom (L)',
-            'de' => 'Nudel mit Schlagobers und Pilzen (L)'
+            'hu' => 'Pasta Napolitana (L)',
+            'en' => 'Pasta Napolitana (L)',
+            'de' => 'Pasta Napolitana (L)'
         ],
         'comment' => '',
-        'price' => 4000,
-        'wine' => 'Etyeki Kúria Sauvignon Blanc 2020 (Etyek-Buda), Oremus Mondolás Furmint (Tokaj-Hegyalja)'
-    ],
-    [
-        'category_id' => 4,
-        'name' => [
-            'hu' => 'Kacsamell – vargánya házi tészta (L)',
-            'en' => 'Duck breast - homemade noodles with porcini (L)',
-            'de' => 'Entenbrust - hausgemachte Nudeln mit Steinpilzen (L)'
-        ],
-        'comment' => '',
-        'price' => 4500,
-        'wine' => 'Rosato Salento Rosé (Olaszország), Sauska Pinot Noir Birs 2018 (Tokaj)'
+        'price' => 3700,
+        'wine' => 'Gere Portugierser 2021, Rosato Salento Rosé'
     ],
     [
         'category_id' => 5,
@@ -375,18 +332,7 @@ return [
         ],
         'comment' => '',
         'price' => 2450,
-        'wine' => 'Martinus Rosé  2021  (Tagyon-Hegy), Pannonhalmi Főapátság Tricollis Vörös 2020'
-    ],
-    [
-        'category_id' => 5,
-        'name' => [
-            'hu' => 'Pizza Tonno – tonhal, paradicsom, lilahagyma',
-            'en' => 'Pizza Tonno – tuna, tomato, red onion',
-            'de' => 'Pizza Tonno – Thunfisch, Tomaten, Lilazwiebel'
-        ],
-        'comment' => '',
-        'price' => 3950,
-        'wine' => 'Natale Verga chianti docg, Jásdi Csopaki Rizling 2020 (Hegybor) (Csopak)'
+        'wine' => 'Natale Verga Chianti docg, il Roccolo Primitivo Salento'
     ],
     [
         'category_id' => 5,
@@ -397,7 +343,7 @@ return [
         ],
         'comment' => '',
         'price' => 3950,
-        'wine' => 'Ikon Rajnai Rizling 2021 (Rádpuszta), Konyári Fecske Konyári Fecske Vörös 2020 (Balatonlelle)'
+        'wine' => ' I Magredi Traminer Aromatico, il Roccolo Primitivo Salento'
     ],
     [
         'category_id' => 5,
@@ -411,37 +357,59 @@ return [
         'wine' => ''
     ],
     [
-        'category_id' => 7,
+        'category_id' => 5,
         'name' => [
-            'hu' => 'Szőlő espuma  (L,G,)',
-            'en' => 'Grape espuma (L,G,)',
-            'de' => 'Trauben Espuma  (L,G,)'
+            'hu' => 'Gluténmentes Pizza Margherita',
+            'en' => 'Gluten-free Pizza Margherita',
+            'de' => 'Glutenfreie Pizza Margherita'
         ],
         'comment' => '',
-        'price' => 2100,
-        'wine' => 'Csapolt  Vino Frizzante extra dry, Sauska Late Harvest 2018 (0,5 liter)(Tokaj)'
+        'price' => 3450,
+        'wine' => ''
+    ],
+    [
+        'category_id' => 5,
+        'name' => [
+            'hu' => 'Gluténmentes Pizza sonkás',
+            'en' => 'Gluten free Pizza with ham',
+            'de' => 'Glutenfreie Pizza mit Schinken'
+        ],
+        'comment' => '',
+        'price' => 3800,
+        'wine' => ''
     ],
     [
         'category_id' => 7,
         'name' => [
-            'hu' => 'Pisztácia- nugát- mogyoró desszert',
-            'en' => 'Pistachio- nougat- hazelnut dessert',
-            'de' => 'Pistazien- Nugat- Nuss Dessert'
+            'hu' => 'Créme brulée, ribizli sorbet, makaron, ribizli gél',
+            'en' => 'Créme brulée, currant sorbet, macaron, currant gel',
+            'de' => 'Créme brulée, Ribisel sorbet, Makaron, Ribisel Gel'
         ],
         'comment' => '',
         'price' => 2500,
-        'wine' => 'Sauska Late Harvest 2018 (0,5 liter)(Tokaj)'
+        'wine' => 'Gróf Degenfeld Édes Szamorodni 2017'
     ],
     [
         'category_id' => 7,
         'name' => [
-            'hu' => 'Tökös- mákos  mille-feuille',
-            'en' => 'Pumpkin-poppy seed mille-feuille',
-            'de' => 'Kürbis- Mohn  mille-feuille'
+            'hu' => 'Tiramisu',
+            'en' => 'Tiramisu',
+            'de' => 'Tiramisu'
         ],
         'comment' => '',
         'price' => 2500,
-        'wine' => 'Thummerer Tréfli Cuvée 2018 (édes) (Noszvaj), Graham’s  The Tawny  Port'
+        'wine' => 'Gróf Degenfeld Édes Szamorodni 2017'
+    ],
+    [
+        'category_id' => 7,
+        'name' => [
+            'hu' => 'Házi készítésű sütemények',
+            'en' => 'Homemade pastries',
+            'de' => 'Hausgemachte Kuchen'
+        ],
+        'comment' => '',
+        'price' => 950,
+        'wine' => 'Gróf Degenfeld Édes Szamorodni 2017'
     ],
     [
         'category_id' => 8,
