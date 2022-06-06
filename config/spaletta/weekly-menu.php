@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.05.31. - 2022.06.03.',
-    'weekend-date' => '2022.06.04.',
+    'menu-date' => '2022.06.07. - 2022.06.10.',
+    'weekend-date' => '2022.06.11.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Minestrone',
-                'Erőleves sertéshússal töltött ravioli (L)',
-                'Currys lencse krémleves pulykanyárs (G, L)'
+                'Klasszikus korhelyleves (L)',
+                'Zöldségleves húsgombóccal (G, L)',
+                'Göröggyümölcsleves (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Tarhonyás hús, tavaszi saláta (L)',
-                'Burgonyafőzelék – borjú fasírt (L)',
-                'Rántott zöldséggolyó – rusztikus bulgur, fokhagymás, kapros, tejföl (L)',
-                'Rizsfelfújt gyümölcsvelő'
+                'Harcsapaprikás steak – túrós csusza (L)',
+                'Rakott zöldbab hajdinával és pulykával (G, L)',
+                'Zöldséges fetás tortilla – hasáb',
+                'Császármorzsa mazsolával'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Lebbencsleves (L)',
-                'Tejszínes gombás pulyka – köles (G, L)',
-                'Házi krémes'
+                'Rozmaringos fehérbab krémleves sajt chips (G)',
+                'Sült tarja steak - burgonya, fűszeres rebarbara kompót (G, L)',
+                'Intelligenskrémes'
             ]
         ],
     ]
