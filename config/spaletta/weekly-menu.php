@@ -16,7 +16,7 @@ return [
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Harcsapaprikás steak – túrós csusza (L)',
+                'Harcsapaprikás steak – túrós csusza',
                 'Rakott zöldbab hajdinával és pulykával (G, L)',
                 'Zöldséges fetás tortilla – hasáb',
                 'Császármorzsa mazsolával'
