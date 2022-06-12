@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.06.07. - 2022.06.10.',
-    'weekend-date' => '2022.06.11.',
+    'menu-date' => '2022.06.14. - 2022.06.17.',
+    'weekend-date' => '2022.06.18.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Klasszikus korhelyleves (L)',
-                'Zöldségleves húsgombóccal (G, L)',
-                'Göröggyümölcsleves (G, L)'
+                'Borjúbecsinált leves (G, L)',
+                'Hideg salátaleves (G, L)',
+                'Erőleves fridatto módra (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Harcsapaprikás steak – túrós csusza',
-                'Rakott zöldbab hajdinával és pulykával (G, L)',
-                'Zöldséges fetás tortilla – hasáb',
-                'Császármorzsa mazsolával'
+                'Burgundi marharagu – krokett (L)',
+                'Zöldségtócsni – Jázminrizs, bazsalikomos újhagymás mártogatós (G, L)',
+                'Rántott csirke szárny – burgonyapüré, meggykompót (L)',
+                'Nizzai saláta, pirítós (G)'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Rozmaringos fehérbab krémleves sajt chips (G)',
-                'Sült tarja steak - burgonya, fűszeres rebarbara kompót (G, L)',
-                'Intelligenskrémes'
+                'Hűsítő citromleves, panna-cotta (G)',
+                'Zöldborsós tokány – tészta, káposztasaláta (L)',
+                'Brownie, gyümölcspüré'
             ]
         ],
     ]
