@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.06.21. - 2022.06.24.',
-    'weekend-date' => '2022.06.25.',
+    'menu-date' => '2022.06.28. - 2022.07.01.',
+    'weekend-date' => '2022.07.02.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Hideg meggyleves ( G,L)',
-                'Magyaros zöldbableves (G,L)',
-                'Pirított tarhonyaleves (L)'
+                'Raguleves (G,L)',
+                'Hideg Almaleves (G,L)',
+                'Bakonyi betyárleves (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Csicseriborsó tikka masala, lepénykenyér (L)',
-                'Rántott sertéskaraj- rizibizi – barackbefőtt (L)',
-                'Csirkés Cézár saláta (L)',
-                'Citromos lazacos spaghetti (L)'
+                'Grillsajt-joghurtos saláta (G)',
+                'Szezámmagos harcsa-petrezselymes burgonya, tartár mártás (L)',
+                'Borjúpaprikás-galuska, uborka saláta (L)',
+                'Moussaka (görög rakott padlizsán) (G,L)'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Sajtkrémleves',
-                'Chili con carne (G,L)',
-                'Cseresznyés pohárkrém'
+                'Húsleves gazdagon',
+                'Baconos pulykamell fetával töltve-burgonya püré, bazsalikomos paradicsomsaláta',
+                'Házi fagylalt'
             ]
         ],
     ]
