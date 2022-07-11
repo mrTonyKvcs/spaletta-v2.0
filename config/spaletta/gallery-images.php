@@ -461,6 +461,36 @@ return [
         'name' => 122,
     ],
     [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 123,
+    ],
+    [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 124,
+    ],
+    [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 125,
+    ],
+    [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 126,
+    ],
+    [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 127,
+    ],
+    [
+        'tab' => 5,
+        'category' => 'events',
+        'name' => 128,
+    ],
+    [
         'tab' => 4,
         'category' => 'team',
         'name' => 56,
