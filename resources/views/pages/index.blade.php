@@ -31,7 +31,7 @@
             <source src="../videos/spaletta-video.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="md:grid md:grid-cols-2 mt-56 px-6">
+    {{-- <div class="md:grid md:grid-cols-2 mt-56 px-6">
         <div class="flex justify-end items-center">
             <img class="lg:w-2/3" src="/images/grillvacsora.jpg" alt="">
         </div>
@@ -40,7 +40,7 @@
             <p class="text-3xl text-center font-medium text-gray2e font-libre">Grill vacsora Csillag-Molnár Melina & Németh Zsolt duóval a Spaletta étteremben.<br> Töltsön velünk egy kellemes nyári estét!</p>
             <x-button type="gray-transparent"><a href="/asztalfoglalas">Asztalfoglalás</a></x-button>
         </div>
-    </div> 
+    </div>  --}}
     {{-- <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
         <h2 class="text-4xl font-medium gold font-libre italic">Májusi programajánló</h2>
         <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Belga sörhét - 2022. május 4-7.</p>

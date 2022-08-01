@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.07.26. - 2022.07.29.',
-    'weekend-date' => '2022.07.30.',
+    'menu-date' => '2022.08.02. - 2022.08.05.',
+    'weekend-date' => '2022.08.06.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Hideg sárgabarack krémleves (G, L)',
-                'Bazsalikomos dinnyegazppacho (G, L)',
-                'Húsos karfiolleves grízgaluskával'
+                'Görög gyümölcsleves (G, L)',
+                'Palócleves (L)',
+                'Hideg joghurtos uborkaleves (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Darált hússal töltött cukkini (G, L)',
-                'Csirkemell saláta (L)',
-                'Zöldséges rántott palacsinta – petrezselymes törtburgonya, fokhagymás deep',
-                'Császármorzsa mazsolával, házi lekvár'
+                'Marhapörkölt – tarhonya, kovászos uborka (L)',
+                'Lecsó – rizs, pizza kenyér (L)',
+                'Sörös bundás csirkecsíkok – kukoricasaláta',
+                'Zöldséges sült tészta (L)'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Savanyú burgonyaleves kolbásszal (L)',
-                'Pirosra sült csirkecomb – kukoricás kuszkusz, hideg görögdinnye',
-                'Gyümölcsrizs (G)'
+                'Magyaros gombaleves (L)',
+                'Sültpulyka – hagymásburgonya, sopszka saláta (G)',
+                'Szilvásrétes'
             ]
         ],
     ]
