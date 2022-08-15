@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.08.09. - 2022.08.12.',
+    'menu-date' => '2022.08.16. - 2022.08.19.',
     'weekend-date' => '2022.08.13.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Hideg szilvaleves (G, L)',
-                'Csorbaleves húsgombóccal (G, L)',
-                'Hideg pikáns kukoricaleves poppcornnal (G, L)'
+                'Gulyásleves (L)',
+                'Joghurtos barackleves (G, L)',
+                'Langyos kapros tökleves, pirított tökmag (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Bácskai rizses hús, házi káposztasaláta (G, L)',
-                'Roston fogas – joghurtos köles saláta (G, L)',
-                'Hideg paradicsomszósz – árpagyönggyel, gombával töltött paprika (L)',
-                'Palacsinta házi sárgabaracklekvárral'
+                'Brassói aprópecsenye, uborkasaláta (G, L)',
+                'Majonézes, csirkés tésztasaláta',
+                'Töltött camembert rántva – rizs, áfonyamártás',
+                'Hideg egresmártás – cukkini fasírt (G, L)'
             ]
         ],
     ],
