@@ -41,13 +41,11 @@
             <x-button type="gray-transparent"><a href="/asztalfoglalas">Asztalfoglalás</a></x-button>
         </div>
     </div>  --}}
-    {{-- <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
-        <h2 class="text-4xl font-medium gold font-libre italic">Májusi programajánló</h2>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Belga sörhét - 2022. május 4-7.</p>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Belga sörvacsora - 2022. május 6.</p>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Kubai rumest - 2022. május 20.</p>
-        
-    </div> --}}
+    <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
+        <h2 class="text-4xl font-medium gold font-libre italic">Kedves Vendégeink !</h2>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Éttermünk augusztus 20-29 között nyári szünet miatt zárva tart.</p>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Nyitás augusztus 30-án.</p>
+    </div>
     <x-section>
         <div class="flex flex-col items-center mt-24">
             <x-title title="{{ __('Heti Menü') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" price="2400 Ft"></x-title>
