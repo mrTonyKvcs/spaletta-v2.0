@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.08.16. - 2022.08.19.',
-    'weekend-date' => '2022.08.13.',
+    'menu-date' => '2022.08.30. - 2022.09.02.',
+    'weekend-date' => '2022.09.03.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Gulyásleves (L)',
-                'Joghurtos barackleves (G, L)',
-                'Langyos kapros tökleves, pirított tökmag (G, L)'
+                'Marhahúsleves gazdagon (L)',
+                'Tejszínes meggyleves (G)',
+                'Brokkoli krémleves, fokhagymás kruton, cheddar sajt'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Brassói aprópecsenye, uborkasaláta (G, L)',
-                'Majonézes, csirkés tésztasaláta',
-                'Töltött camembert rántva – rizs, áfonyamártás',
-                'Hideg egresmártás – cukkini fasírt (G, L)'
+                'Pirított sertésmáj – petrezselymes törtburgonya, paradicsomsaláta (G, L)',
+                'Lazacos rucolás tészta',
+                'Paradicsomos csirkés rakott cukkini (G)',
+                'Kétsajtos zöldséges saslik – pirított hajdina, fokhagymás mártogatós (G)'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Vegyes gyümölcsleves (G, L)',
-                'Csülök jóasszony módra, savanyított gyöngyhagyma (L)',
-                'Meggyes kókusztekercs'
+                'Sajtkrémes csirkés leves, eperlevéllel (G)',
+                'Holstein szelet – hasábburgonya, friss kevertsaláta (G, L)',
+                'Reszelt túrós'
             ]
         ],
     ]
