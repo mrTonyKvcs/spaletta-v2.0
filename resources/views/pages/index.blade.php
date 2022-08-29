@@ -43,8 +43,7 @@
     </div>  --}}
     <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
         <h2 class="text-4xl font-medium gold font-libre italic">Kedves Vendégeink !</h2>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Éttermünk augusztus 20-29 között nyári szünet miatt zárva tart.</p>
-        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Nyitás augusztus 30-án.</p>
+        <p class="text-3xl text-center text-gray2e font-medium font-libre italic">A nyári szünet után , augusztus 30-án (kedden)  a megszokott nyitvatartással várjuk Vendégeinket</p>
     </div>
     <x-section>
         <div class="flex flex-col items-center mt-24">
