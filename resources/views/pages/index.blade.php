@@ -41,10 +41,10 @@
             <x-button type="gray-transparent"><a href="/asztalfoglalas">Asztalfoglalás</a></x-button>
         </div>
     </div>  --}}
-    <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
+    {{-- <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
         <h2 class="text-4xl font-medium gold font-libre italic">Kedves Vendégeink !</h2>
         <p class="text-3xl text-center text-gray2e font-medium font-libre italic">A nyári szünet után , augusztus 30-án (kedden)  a megszokott nyitvatartással várjuk Vendégeinket</p>
-    </div>
+    </div> --}}
     <x-section>
         <div class="flex flex-col items-center mt-24">
             <x-title title="{{ __('Heti Menü') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" price="2400 Ft"></x-title>
