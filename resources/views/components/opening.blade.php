@@ -17,9 +17,9 @@
         <tbody>
           <tr class="text-center text-xl">
             <td class="pt-2">-</td>
-            <td class="pt-2">11:30 - 23:00</td>
-            <td class="pt-2">11:30 - 23:00</td>
-            <td class="pt-2">11:30 - 23:00</td>
+            <td class="pt-2">11:30 - 22:00</td>
+            <td class="pt-2">11:30 - 22:00</td>
+            <td class="pt-2">11:30 - 22:00</td>
             <td class="pt-2">11:30 - 23:00</td>
             <td class="pt-2">11:30 - 23:00</td>
             <td class="pt-2">11:30 - 16:00</td>
