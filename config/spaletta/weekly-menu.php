@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.09.27. - 2022.09.30.',
-    'weekend-date' => '2022.10.01.',
+    'menu-date' => '2022.10.04. - 2022.10.07.',
+    'weekend-date' => '2022.10.08.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Tárkonyos húsgombóc leves (G, L)',
-                'Paradicsomleves (L)',
-                'Zöldbableves (G, L)'
+                'Halászlé, gyufatészta (L)',
+                'Kelbimbó-krémleves (G,L)',
+                'Erőleves tojáskocsonya (G,L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Vasalt csirkecomb – steakburgonya, friss saláta (G, L)',
-                'Tökfőzelék – borjú fasírt (L)',
-                'Mexikói vegabulgur',
-                'Gundel palacsinta'
+                'Párolt sertéskaraj, barna-sörös mártás, krokett (L)',
+                'Parmezános-karfiol Orly, hasábburgonya, majonéz',
+                'Házi sajtos metélt tészta',
+                'Bakonyi pulyka szelet, rizs (G,L)'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Vörösboros szilvaleves (G, L)',
-                'Sertésszelet Budapest módra – pirított polenta (L)',
-                'Kata szelet'
+                'Burgonyagombóc leves (L)',
+                'Mustáros tarja, burgonyapüré, házi kovászos uborka',
+                'Brownie, gyümölcs,tejszínhab'
             ]
         ],
     ]
