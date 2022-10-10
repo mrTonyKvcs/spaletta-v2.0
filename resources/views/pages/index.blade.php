@@ -33,12 +33,12 @@
     </div>
     <div class="md:grid md:grid-cols-2 mt-56 px-6">
         <div class="flex justify-end items-center">
-            <img class="lg:w-2/3" src="/images/events/oktobierfest2022.jpg" alt="">
+            <img class="lg:w-2/3" src="/images/events/dc2022.jpg" alt="">
         </div>
         <div class="flex flex-col justify-center items-center space-y-8 mt-10 md:mt-0">
-            <h2 class="text-4xl text-center uppercase gold italic font-semibold">Oktobierfest a Spalettában !</h2>
-            <p class="text-3xl text-center font-medium text-gray2e font-libre">2022. október 4 - október 9.</p>
-            <x-button type="gray-transparent"><a href="/asztalfoglalas">Asztalfoglalás</a></x-button>
+            <h2 class="text-4xl text-center uppercase gold italic font-semibold">DiningCity Országos Étterem Hét a Spalettában !</h2>
+            <p class="text-3xl text-center font-medium text-gray2e font-libre">2022. október 11 - október 16.</p>
+            <x-button type="gray-transparent"><a href=" https://www.etteremhet.hu/lang/hu/cities/countryside/restaurants/spaletta-etterem-es-sorhaz-kecskemet?search%5Bdate%5D=&search%5Bmeal_type%5D=&search%5Bno_persons%5D=2&search%5Bsearch_query%5D=&sort=name">Asztalfoglalás</a></x-button>
         </div>
     </div> 
     {{-- <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
