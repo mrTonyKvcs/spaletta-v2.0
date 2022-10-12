@@ -51,7 +51,7 @@ class BuyTicket extends Component
         $this->isDinner = !is_null($this->dinnerPrice) ? true : false;
 
         //Fake
-        $this->invoiceData = $this->testData();
+        // $this->invoiceData = $this->testData();
     }
 
     public function render()
