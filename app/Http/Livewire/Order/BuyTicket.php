@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\URL;
-use \SzamlaAgent\SzamlaAgentAPI;
+use SzamlaAgent\SzamlaAgentAPI;
 
 class BuyTicket extends Component
 {
@@ -51,7 +51,7 @@ class BuyTicket extends Component
         $this->isDinner = !is_null($this->dinnerPrice) ? true : false;
 
         //Fake
-        // $this->invoiceData = $this->testData();
+        $this->invoiceData = $this->testData();
     }
 
     public function render()
@@ -94,8 +94,6 @@ class BuyTicket extends Component
         // $this->generateQrCode($ticketData);
 
         //Invoice
-        // $invoiceNumber = $this->createInvoice($ticketData);
-        // $invoice = $this->createInvoiceModel($invoiceNumber);
 
         //Mail
         // $ticketData['invoice_number'] = $invoice->invoice_number;

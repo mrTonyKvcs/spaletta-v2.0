@@ -38,6 +38,7 @@ trait TicketTrait
     {
         return Ticket::query()
             ->where('order_number', $orderNumber)
+            ->with('invoice')
             ->first();
     }
 }

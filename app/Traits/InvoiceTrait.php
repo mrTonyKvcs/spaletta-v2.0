@@ -24,9 +24,9 @@ trait InvoiceTrait
         $priceWithoutTax = $data['price'] / 1.27;
         $tax = $data['price'] - $priceWithoutTax;
 
-        $agent = SzamlaAgentAPI::create('unjd4fpyfnz3unjd4fntm4wvunjd4frtmp2eunjd4f');
-		// tony's api key
-        // $agent = SzamlaAgentAPI::create('jhghwq8mypzhzjjefqcfwwmhqv4sfbyazafyexbpad');
+        // $agent = SzamlaAgentAPI::create('unjd4fpyfnz3unjd4fntm4wvunjd4frtmp2eunjd4f');
+        // tony's api key
+        $agent = SzamlaAgentAPI::create('jhghwq8mypzhzjjefqcfwwmhqv4sfbyazafyexbpad');
         /**
          * Új papír alapú számla létrehozása
          *
@@ -35,7 +35,7 @@ trait InvoiceTrait
          */
         $invoice = new Invoice(Invoice::INVOICE_TYPE_E_INVOICE);
         // Vevő adatainak hozzáadása (kötelezően kitöltendő adatokkal)
-        $invoice->setBuyer(new Buyer($data['name'], $data['zip'], $data['city'], $data['street'] . ' ' . $data['house_number']));
+        $invoice->setBuyer(new Buyer($data['name'], strval($data['zip']), $data['city'], $data['street'] . ' ' . $data['house_number']));
         // Számla tétel összeállítása alapértelmezett adatokkal (1 db tétel 27%-os ÁFA tartalommal)
         $item = new InvoiceItem($data['event_name'], $priceWithoutTax * $data['quantity']);
         // Tétel nettó értéke
@@ -51,6 +51,7 @@ trait InvoiceTrait
         $result = $agent->generateInvoice($invoice);
         // Agent válasz sikerességének ellenőrzése
         if ($result->isSuccess()) {
+            $this->createInvoiceModel($result->getDocumentNumber());
             // echo 'A számla sikeresen elkészült. Számlaszám: ' . $result->getDocumentNumber();
             // Válasz adatai a további feldolgozáshoz
             // var_dump($result->getDataObj());

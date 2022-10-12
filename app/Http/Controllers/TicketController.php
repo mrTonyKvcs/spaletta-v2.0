@@ -6,6 +6,7 @@ use App\Mail\NewSendMail;
 use App\Mail\SendQrTicket;
 use App\Models\Ticket;
 use App\Models\Transaction;
+use App\Traits\InvoiceTrait;
 use App\Traits\TicketTrait;
 use Illuminate\Support\Facades\Mail;
 
@@ -14,6 +15,7 @@ use Illuminate\Support\Facades\Mail;
 class TicketController extends Controller
 {
     use TicketTrait;
+    use InvoiceTrait;
 
     public function successfullyPayment($id, $orderNumber)
     {
@@ -22,6 +24,14 @@ class TicketController extends Controller
         $ticket->update([
             'is_paid' => true
         ]);
+
+        $ticket->price = $ticket->event->price;
+        $ticket->event_name = $ticket->event->title;
+
+        $invoiceNumber = $this->createInvoice($ticket->toArray());
+        $invoice = $this->createInvoiceModel($invoiceNumber);
+        $updateTicket = $this->getTicket($orderNumber);
+        $updateTicket->update(['invoice_id' => $invoice->id]);
 
         Mail::send(new SendQrTicket($ticket));
         Mail::send(new NewSendMail($ticket));
