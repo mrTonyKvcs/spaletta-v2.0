@@ -42,7 +42,7 @@ return [
     'SANDBOX' => env('SIMPLEPAY_SANDBOX'),
 
     //common return URL
-    'URL' => 'https://' . $_SERVER['HTTP_HOST'] . '/payment-back',
+    'URL' => 'http://' . $_SERVER['HTTP_HOST'] . '/payment-back',
 
     //optional uniq URL for events
     /*

@@ -24,9 +24,9 @@ trait InvoiceTrait
         $priceWithoutTax = $data['price'] / 1.27;
         $tax = $data['price'] - $priceWithoutTax;
 
-        // $agent = SzamlaAgentAPI::create('unjd4fpyfnz3unjd4fntm4wvunjd4frtmp2eunjd4f');
+        $agent = SzamlaAgentAPI::create('unjd4fpyfnz3unjd4fntm4wvunjd4frtmp2eunjd4f');
         // tony's api key
-        $agent = SzamlaAgentAPI::create('jhghwq8mypzhzjjefqcfwwmhqv4sfbyazafyexbpad');
+        // $agent = SzamlaAgentAPI::create('jhghwq8mypzhzjjefqcfwwmhqv4sfbyazafyexbpad');
         /**
          * Új papír alapú számla létrehozása
          *
