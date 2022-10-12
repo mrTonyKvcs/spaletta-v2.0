@@ -215,7 +215,6 @@ class Base
      */
     public function checkOrSetToJson($data = '')
     {
-        
         $json = '[]';
         //empty
         if ($data === '') {
@@ -447,7 +446,7 @@ class Base
         //fill transaction data
         if (is_object(json_decode($transaction['responseBody']))) {
             foreach (json_decode($transaction['responseBody']) as $key => $value) {
-                   $transaction[$key] = $value;
+                $transaction[$key] = $value;
             }
         }
 
@@ -470,15 +469,15 @@ class Base
 }
 
 
- /**
-  * Start transaction
-  *
-  * @category SDK
-  * @package  SimplePayV2_SDK
-  * @author   SimplePay IT Support <itsupport@otpmobil.com>
-  * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
-  * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
-  */
+/**
+ * Start transaction
+ *
+ * @category SDK
+ * @package  SimplePayV2_SDK
+ * @author   SimplePay IT Support <itsupport@otpmobil.com>
+ * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
+ * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
+ */
 class SimplePayStart extends Base
 {
     protected $currentInterface = 'start';
@@ -491,12 +490,12 @@ class SimplePayStart extends Base
         'methods' => [],
         ];
 
-     /**
-      * Send initial data to SimplePay API for validation
-      * The result is the payment link to where website has to redirect customer
-      *
-      * @return void
-      */
+    /**
+     * Send initial data to SimplePay API for validation
+     * The result is the payment link to where website has to redirect customer
+     *
+     * @return void
+     */
     public function runStart()
     {
         $this->execApiCall();
@@ -504,15 +503,15 @@ class SimplePayStart extends Base
 }
 
 
- /**
-  * Back
-  *
-  * @category SDK
-  * @package  SimplePayV2_SDK
-  * @author   SimplePay IT Support <itsupport@otpmobil.com>
-  * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
-  * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
-  */
+/**
+ * Back
+ *
+ * @category SDK
+ * @package  SimplePayV2_SDK
+ * @author   SimplePay IT Support <itsupport@otpmobil.com>
+ * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
+ * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
+ */
 class SimplePayBack extends Base
 {
     protected $currentInterface = 'back';
@@ -530,14 +529,14 @@ class SimplePayBack extends Base
             ]
         ];
 
-     /**
-      * Validates CTRL variable
-      *
-      * @param string $rRequest Request data -> r
-      * @param string $sRequest Request data -> s
-      *
-      * @return boolean
-      */
+    /**
+     * Validates CTRL variable
+     *
+     * @param string $rRequest Request data -> r
+     * @param string $sRequest Request data -> s
+     *
+     * @return boolean
+     */
     public function isBackSignatureCheck($rRequest = '', $sRequest = '')
     {
         //request handling
@@ -563,7 +562,6 @@ class SimplePayBack extends Base
         $this->request['checkCtrlResult'] = false;
         if ($this->isCheckSignature($this->request['rJson'], $this->request['sRequest'])) {
             $this->request['checkCtrlResult'] = true;
-
         }
 
         //write log
@@ -597,15 +595,15 @@ class SimplePayBack extends Base
 }
 
 
- /**
-  * IPN
-  *
-  * @category SDK
-  * @package  SimplePayV2_SDK
-  * @author   SimplePay IT Support <itsupport@otpmobil.com>
-  * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
-  * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
-  */
+/**
+ * IPN
+ *
+ * @category SDK
+ * @package  SimplePayV2_SDK
+ * @author   SimplePay IT Support <itsupport@otpmobil.com>
+ * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
+ * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
+ */
 class SimplePayIpn extends Base
 {
     protected $currentInterface = 'ipn';
@@ -781,15 +779,15 @@ class SimplePayQuery extends Base
 }
 
 
- /**
-  * Refund
-  *
-  * @category SDK
-  * @package  SimplePayV2_SDK
-  * @author   SimplePay IT Support <itsupport@otpmobil.com>
-  * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
-  * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
-  */
+/**
+ * Refund
+ *
+ * @category SDK
+ * @package  SimplePayV2_SDK
+ * @author   SimplePay IT Support <itsupport@otpmobil.com>
+ * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
+ * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
+ */
 class SimplePayRefund extends Base
 {
     protected $currentInterface = 'refund';
@@ -822,15 +820,15 @@ class SimplePayRefund extends Base
 }
 
 
- /**
-  * Finish
-  *
-  * @category SDK
-  * @package  SimplePayV2_SDK
-  * @author   SimplePay IT Support <itsupport@otpmobil.com>
-  * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
-  * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
-  */
+/**
+ * Finish
+ *
+ * @category SDK
+ * @package  SimplePayV2_SDK
+ * @author   SimplePay IT Support <itsupport@otpmobil.com>
+ * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
+ * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
+ */
 class SimplePayFinish extends Base
 {
     protected $currentInterface = 'finish';
@@ -857,18 +855,17 @@ class SimplePayFinish extends Base
 }
 
 
-  /**
-   * Hash generation for Signature
-   *
-   * @category SDK
-   * @package  SimplePayV2_SDK
-   * @author   SimplePay IT Support <itsupport@otpmobil.com>
-   * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
-   * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
-   */
+/**
+ * Hash generation for Signature
+ *
+ * @category SDK
+ * @package  SimplePayV2_SDK
+ * @author   SimplePay IT Support <itsupport@otpmobil.com>
+ * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
+ * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
+ */
 trait Signature
 {
-
     /**
      * Get full JSON hash string form hash calculation base
      *
@@ -948,18 +945,17 @@ trait Signature
 }
 
 
- /**
-  * Communication
-  *
-  * @category SDK
-  * @package  SimplePayV2_SDK
-  * @author   SimplePay IT Support <itsupport@otpmobil.com>
-  * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
-  * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
-  */
+/**
+ * Communication
+ *
+ * @category SDK
+ * @package  SimplePayV2_SDK
+ * @author   SimplePay IT Support <itsupport@otpmobil.com>
+ * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
+ * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
+ */
 trait Communication
 {
-
     /**
      * Handler for cURL communication
      *
@@ -1001,15 +997,15 @@ trait Communication
 }
 
 
- /**
-  * Views
-  *
-  * @category SDK
-  * @package  SimplePayV2_SDK
-  * @author   SimplePay IT Support <itsupport@otpmobil.com>
-  * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
-  * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
-  */
+/**
+ * Views
+ *
+ * @category SDK
+ * @package  SimplePayV2_SDK
+ * @author   SimplePay IT Support <itsupport@otpmobil.com>
+ * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
+ * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
+ */
 trait Views
 {
     public $formDetails = [
@@ -1031,19 +1027,19 @@ trait Views
     protected function formSubmitElement($formName = '', $submitElement = 'button', $submitElementText = '')
     {
         switch ($submitElement) {
-        case 'link':
-            $element = "\n<a href='javascript:document.getElementById(\"" . $formName ."\").submit()'>".addslashes($submitElementText)."</a>";
-            break;
-        case 'button':
-            $element = "\n<button type='submit'>".addslashes($submitElementText)."</button>";
-            break;
-        case 'auto':
-            $element = "\n<button type='submit'>".addslashes($submitElementText)."</button>";
-            $element .= "\n<script language=\"javascript\" type=\"text/javascript\">document.getElementById(\"" . $formName . "\").submit();</script>";
-            break;
-        default :
-            $element = "\n<button type='submit'>".addslashes($submitElementText)."</button>";
-            break;
+            case 'link':
+                $element = "\n<a href='javascript:document.getElementById(\"" . $formName ."\").submit()'>".addslashes($submitElementText)."</a>";
+                break;
+            case 'button':
+                $element = "\n<button type='submit'>".addslashes($submitElementText)."</button>";
+                break;
+            case 'auto':
+                $element = "\n<button type='submit'>".addslashes($submitElementText)."</button>";
+                $element .= "\n<script language=\"javascript\" type=\"text/javascript\">document.getElementById(\"" . $formName . "\").submit();</script>";
+                break;
+            default:
+                $element = "\n<button type='submit'>".addslashes($submitElementText)."</button>";
+                break;
         }
         return $element;
     }
@@ -1083,18 +1079,17 @@ trait Views
 }
 
 
- /**
-  * Logger
-  *
-  * @category SDK
-  * @package  SimplePayV2_SDK
-  * @author   SimplePay IT Support <itsupport@otpmobil.com>
-  * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
-  * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
-  */
+/**
+ * Logger
+ *
+ * @category SDK
+ * @package  SimplePayV2_SDK
+ * @author   SimplePay IT Support <itsupport@otpmobil.com>
+ * @license  http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
+ * @link     http://simplepartner.hu/online_fizetesi_szolgaltatas.html
+ */
 trait Logger
 {
-
     /**
      * Prepare log content before write in into log
      *
@@ -1119,15 +1114,15 @@ trait Logger
         try {
             if (!is_writable($this->config['logPath'])) {
                 $write = false;
-                throw new Exception('Folder is not writable: ' . $this->config['logPath']);
+                throw new \Exception('Folder is not writable: ' . $this->config['logPath']);
             }
             if (file_exists($logFile)) {
                 if (!is_writable($logFile)) {
                     $write = false;
-                    throw new Exception('File is not writable: ' . $logFile);
+                    throw new \Exception('File is not writable: ' . $logFile);
                 }
             }
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             $this->logContent['logFile'] = $e->getMessage();
         }
 
@@ -1215,7 +1210,6 @@ trait Logger
  */
 trait Sca
 {
-
     /**
      * StartChallenge
      *
