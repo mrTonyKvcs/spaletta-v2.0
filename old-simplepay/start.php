@@ -215,20 +215,19 @@ $trx->runStart();
 //-----------------------------------------------------------------------------------------
 $trx->getHtmlForm();
 
+// //print form
+// //-----------------------------------------------------------------------------------------
+// print $trx->returnData['form'];
 
-//print form
-//-----------------------------------------------------------------------------------------
-print $trx->returnData['form'];
 
+// // test data
+// //-----------------------------------------------------------------------------------------
+// print "API REQUEST";
+// print "<pre>";
+// print_r($trx->getTransactionBase());
+// print "</pre>";
 
-// test data
-//-----------------------------------------------------------------------------------------
-print "API REQUEST";
-print "<pre>";
-print_r($trx->getTransactionBase());
-print "</pre>";
-
-print "API RESULT";
-print "<pre>";
-print_r($trx->getReturnData());
-print "</pre>";
+// print "API RESULT";
+// print "<pre>";
+// print_r($trx->getReturnData());
+// print "</pre>";
