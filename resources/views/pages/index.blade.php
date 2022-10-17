@@ -31,7 +31,7 @@
             <source src="../videos/spaletta-video.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="md:grid md:grid-cols-2 mt-56 px-6">
+    {{-- <div class="md:grid md:grid-cols-2 mt-56 px-6">
         <div class="flex justify-end items-center">
             <img class="lg:w-2/3" src="/images/events/dc2022.jpg" alt="">
         </div>
@@ -40,7 +40,7 @@
             <p class="text-3xl text-center font-medium text-gray2e font-libre">2022. október 11 - október 16.</p>
             <x-button type="gray-transparent"><a href=" https://www.etteremhet.hu/lang/hu/cities/countryside/restaurants/spaletta-etterem-es-sorhaz-kecskemet?search%5Bdate%5D=&search%5Bmeal_type%5D=&search%5Bno_persons%5D=2&search%5Bsearch_query%5D=&sort=name">Asztalfoglalás</a></x-button>
         </div>
-    </div> 
+    </div>  --}}
     {{-- <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
         <h2 class="text-4xl font-medium gold font-libre italic">Kedves Vendégeink !</h2>
         <p class="text-3xl text-center text-gray2e font-medium font-libre italic">A nyári szünet után , augusztus 30-án (kedden)  a megszokott nyitvatartással várjuk Vendégeinket</p>
