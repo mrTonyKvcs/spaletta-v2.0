@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.10.18. - 2022.10.21.',
-    'weekend-date' => '2022.10.22.',
+    'menu-date' => '2022.10.25. - 2022.10.28.',
+    'weekend-date' => '2022.10.29.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Frankfurti leves (G, L)',
-                'Langyos barackleves (L)',
-                'Zöldségleves csurgatott galuskával (G, L)'
+                'Babgulyás (G, L)',
+                'Sütőtök krémleves (G, L)',
+                'Erőleves fridattó módra'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Dubarry sertésborda – batthány rizs (G, L)',
-                'Sült csirkrcomb – petrezselymes burgonya, majonéz (G)',
-                'Túrós csusza tepertővel',
-                'Mákos guba, vanília mártás'
+                'Paprikás csirke – galuska, uborkasaláta (L)',
+                'Rántott halszeletek – zöldséges hajdina, koktélszósz',
+                'Zöldséges sült tészta',
+                'Sous-vide sertéskaraj – petrezselymes rizs, tormamártás (G)'
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Tarhonyaleves (L)',
-                'Sonkával, sajttal töltött csirkemell – zöldséges hajdina',
-                'Sütőtökös szilváspite'
+                'Ecetes-cukros zöldbableves (G, L)',
+                'Sült tarja – steak burgonya, borsmártás, lilahagyma lekvár (G, L)',
+                'Gesztenyésszelet'
             ]
         ],
     ]
