@@ -4,75 +4,66 @@ return [
     [
         'category_id' => 3,
         'name' => [
-            'hu' => '”Szinbád”-Velős csontleves, tészta, zöldségek, velős csont  (L)',
-            'en' => '”Szinbád”- Marrow bone soup, pasta, vegetables, marrow bone  (L)',
-            'de' => 'Szinbad-Mark KnochenSuppe, Nudel, Gemüse,  (L)'
+            'hu' => 'Brokkoli krémleves, sajt mousse, Cheddar chips (G)',
+            'de' => 'Broccoli-Cremesuppe, Käse-Mousse, Cheddar Chips (G)',
+            'en' => 'Cream of broccoli soup, cheese mousse, cheddar chips (G)'
         ],
         'comment' => '',
-        'price' => 2300,
+        'price' => 2400,
         'wine' => ''
     ],
     [
         'category_id' => 3,
         'name' => [
-            'hu' => 'Áfonyaleves, habcsókmorzsa, franciapiskóta, tejszín mousse, isomalt tuile',
-            'en' => 'Blueberry soup, meringue crumble, French sponge cake, cream mousse, Isomalt tuile',
-            'de' => 'Blaubeeren Suppe, Baiser, Biskotte, Sahnemousse, Isomalt Tuile'
+            'hu' => 'Kakas Rámen leves (G,L)',
+            'de' => 'Hahn Ramen (G,L)',
+            'en' => 'Rooster Ramen (G,L)'
         ],
         'comment' => '',
-        'price' => 2100,
+        'price' => 3300,
         'wine' => ''
     ],
     [
-        'category_id' => 3,
+        'category_id' => 1,
         'name' => [
-            'hu' => 'Cukorborsó krémleves, menta sorbet (V, G, L)',
-            'en' => 'Cream of sugar pea soup, mint sorbet (V, G, L)',
-            'de' => 'Zuckererbsen Cremesuppe, Minze Sorbet (V, G, L)'
+            'hu' => 'Cékla ravioli, beluga lencse saláta, mandula, cékla, gorgonzola sajt. (G)',
+            'de' => 'Rote Rübe Ravioli, Belugalinsen Salat, Mandeln, Rote Rübe, Gorgonzola (G)',
+            'en' => 'Beetroot ravioli, beluga lentil salad, almonds, beetroot, Gorgonzola (G)'
         ],
         'comment' => '',
-        'price' => 2100,
-        'wine' => ' '
+        'price' => 3300,
+        'wine' => ''
     ],
     [
         'category_id' => 1,
         'name' => [
             'hu' => 'Házi kencék - pirítós kenyér (Vegán pástétom, gombakrém, csirkepástétom)',
-            'en' => 'Homemade spreads - toast (Vegan pâté, mushroom pâté, chicken pâté)',
-            'de' => 'Hausegemachte Aufstriche - Toast (Vegan Pastete, Pilzcreme, Hühnerpastete)'
+            'de' => 'Hausegemachte Aufstriche - Toast (Vegan Pastete, Pilzcreme, Hühnerpastete)',
+            'en' => 'Homemade spreads - toast (Vegan pâté, mushroom pâté, chicken pâté)'
         ],
         'comment' => '',
         'price' => 3200,
-        'wine' => 'Béla és Bandi Sauvignon Blanc 2021, Günzer Lezser 2020/21'
+        'wine' => ''
     ],
     [
         'category_id' => 1,
         'name' => [
             'hu' => 'Sonka-sajttál vegyesen, saláta',
-            'en' => 'Mixed ham and cheese plate, salad',
-            'de' => 'Schinken-Käse Teller, Salat'
+            'de' => 'Schinken-Käse Teller, Salat',
+            'en' => 'Mixed ham and cheese plate, salad'
         ],
         'comment' => '',
         'price' => 3500,
-        'wine' => 'Jásdi Csopaki Olaszrizling 2020/21, I Magredi Traminer Aromatico'
+        'wine' => ''
     ],
-    [
-        'category_id' => 1,
-        'name' => [
-            'hu' => 'Répa tatár (L)	',
-            'en' => 'Carrot tartare (L)',
-            'de' => 'Karotten Tatar (L)'
-        ],
-        'comment' => '',
-        'price' => 2800,
-        'wine' => 'Günzer Lezser 2020/21, I Magredi Traminer Aromatico'
-    ],
+    
     [
         'category_id' => 6,
         'name' => [
             'hu' => 'Cukkiniba tekert zöldséges hajdina, burgonyakrém, hasselback-alma, répachips, sült zöldségek, almapüré. (V, G, L)',
-            'en' => 'Buckwheat wrapped in courgette, mashed potatoes, hasselback apples, carrot crisps, roasted vegetables, apple puree (V)',
-            'de' => 'Zukkini gefüllt mit Buchweizen, Kartoffelcreme, Hasselback-Apfel, Karottenchips, gebakene Gemüse, Apfelpüréé. (V)'
+            'de' => 'Zukkini gefüllt mit Buchweizen, Kartoffelcreme, Hasselback-Apfel, Karottenchips, gebakene Gemüse, Apfelpüréé. (V)',
+            'en' => 'Buckwheat wrapped in courgette, mashed potatoes, hasselback apples, carrot crisps, roasted vegetables, apple puree (V)'
+            
         ],
         'comment' => '',
         'price' => 4800,
@@ -81,80 +72,75 @@ return [
     [
         'category_id' => 6,
         'name' => [
-            'hu' => 'Grillezett lazac steak, sültpaprikás kuszkusz, szardellamajonéz, római saláta, pecorino chipsz, koriander-lime olaj, kruton	',
-            'en' => 'Grilled salmon steak, couscous with roasted bell peppers, anchovy mayonnaise, romaine lettuce, pecorino chips, coriander-lime oil, croutons',
-            'de' => 'Gegrillte Lachssteak, Gebackene Paprika-Couscous, Sardellenmayo, Römersalat, Pecorino Chips, Koriander-Lime Öl, Croutons'
+            'hu' => 'Feketeborsos csirke, quinoa saláta, marinált zöldalma,
+            barackos répapüré, répa chips, sültbarack (G)',
+            'de' => 'Schwarzpfeffer-Hühnchen, Quinoa Salat, marinierter Grünapfel,
+            Pfirsich-Karotten Püree, Karottenchips, gebackener Pfirsich (G)',
+            'en' => 'Black pepper chicken, quinoa salad, marinated apple, peach-carrot puree, carrot
+            chips, baked peach (G)'
         ],
         'comment' => '',
-        'price' => 5800,
-        'wine' => 'Rosato Salento Rosé, Gere Portugieser 2021'
+        'price' => 5400,
+        'wine' => ''
     ],
     [
         'category_id' => 6,
         'name' => [
-            'hu' => 'Sous-vide szürkeharcsa, sáfrányos halszósz, parmezános citrusos sörét-tarhonya, pisztráng kaviár, tápióka chips',
-            'en' => 'Sous-vide catfish, saffron fish sauce, citrus and parmesan egg barley, trout caviar, tapioca chips',
-            'de' => 'Sous-vide Wels, Safran-Fishsosse, Parmezan-Zitrus Nudel, Forellen Kaviar, Tapioka chips '
-        ],
-        'comment' => '',
-        'price' => 4900,
-        'wine' => 'Bock Chardonnay 2020, St Andrea Napbor 2021'
-    ],
-    [
-        'category_id' => 6,
-        'name' => [
-            'hu' => 'Rozé kacsamell, pörkölt hajdina, zöldborsó, burgonyakrém, körte, borsópüré, burgonya cihps (G, L)',
-            'en' => 'Duck breast medium rare with roasted buckwheat, green peas, potato puree, pear, mashed peas, potato chips (G, L)',
-            'de' => 'Rosé Entenbrust, Buchweizen, Erbsen, Kartoffelcreme, Birne, Erbsenpüréé, Kartoffeln Chips (G, L)'
+            'hu' => 'Rozé kacsamell, pörkölt hajdina, zöldborsó, burgonyakrém, körte, borsópüré,
+            burgonya chips (G,L)',
+            'de' => 'Entenbrust rosa gebraten, geröstete Buchweizen, Erbsen, Kartoffelcreme, Birne,
+            Erbsenpüree, Kartoffelchips (G,L)',
+            'en' => 'Roasted duck breast medium rare, roasted buckwheat, green peas, potato cream,
+            pear, pea puree, potato chips (G,L)'
         ],
         'comment' => '',
         'price' => 5600,
-        'wine' => 'St Andrea Pinot Noir 2020, Béla és Bandi Kékfrankos, Sauska Rosé'
+        'wine' => ''
     ],
     [
         'category_id' => 6,
         'name' => [
-            'hu' => 'Barna sörös marhapofa, burgonyakrémmel töltött sült wonton tészta, pagoda püré, zöldségek',
-            'en' => 'Brown beer beef cheek, fried wonton noodles stuffed with potato cream, pagoda puree, vegetables',
-            'de' => 'Dunkles Bier-Rindsmaul, gebackene Wonton mit Kartoffelcreme gefüllt, Pagoda püréé, Gemüse'
+            'hu' => 'Hekkfilé, garnélás zöldborsó, újhagymás burgonyapüré (G)',
+            'de' => 'Hechtdorschfilet, Erbsen mit Garnelen, Kartoffelpüree mit Schnittlauch(G)',
+            'hu' => 'Fillet of hake, green peas with prawns, mashed potatoes with chives (G)'
+        ],
+        'comment' => '',
+        'price' => 5500,
+        'wine' => ''
+    ],
+    [
+        'category_id' => 6,
+        'name' => [
+            'hu' => 'Lassan párolt marhapofa, karfiol, répa, puliszkával (G)',
+            'de' => 'Geschmorte Rinderbacke, Blumenkohl, Karotten, Polenta (G)',
+            'en' => 'Braised beef cheek, cauliflower, carrots, polenta (G)'
         ],
         'comment' => '',
         'price' => 5600,
-        'wine' => 'Pannonhalmi Hemina 2020, Gellavilla September 2019/20'
+        'wine' => ''
     ],
     [
         'category_id' => 6,
         'name' => [
-            'hu' => 'Borskérges sertés szűz, hordóburgonya, zöldborsópüré, burgonya chips, baconos cukorborsó, marinált gyöngyhagyma (G, L)',
-            'en' => 'Pepper-crusted pork tenderloin, barrel potatoes, green pea puree, potato chips, bacon sugar peas, marinated pearl onions (G, L)',
-            'de' => 'Schweinefilet im Pfeffermantel, hausgem. Pommes, Erbsenpüréé, Kartoffelchips, Zuckererbsen mit Bacon, marinierte Perlzwiebel (G, L) '
+            'hu' => 'Borjú hátszín, zöldbors mártás, burgonya, kelbimbó, padlizsán (G, L)',
+            'de' => 'Kalbsbeiried, Grüne Pfeffersauce, Kartoffel, Rosenkohl, Aubergine (G, L)',
+            'en' => 'Veal sirloin, green pepper sauce, potato, Brussels sprouts, aubergine (G, L)'
         ],
         'comment' => '',
-        'price' => 5200,
-        'wine' => 'Bock Syrah 2017, Il Roccolo Primitivo salento'
+        'price' => 8700,
+        'wine' => ''
     ],
     [
         'category_id' => 6,
         'name' => [
-            'hu' => 'Borjúhátszín, burgonyapüré, zelleres babsaláta, szeder (G)',
-            'en' => 'Veal fillet, mashed potatoes, celery bean salad, blackberries (G)',
-            'de' => 'Kalbslendenstück, Kartoffelnpüréé, Sellerie-Bohnensalat, Brombeere (G)'
+            'hu' => 'Burgonyás, gombás rétes, aszalt gyümölcsös gerslivel, füge, pak choi (V, L)',
+            'de' => 'Kartoffel-Pilz Strudel, Perlgraupen mit getrockneten Früchten Feigen, Pak Choi (V, L)',
+            'en' => 'Potato and mushroom strudel, pearl barley with dried fruits,
+            figs, Pak Choi (V, L)'
         ],
         'comment' => '',
-        'price' => 8400,
-        'wine' => 'Bock Capella 2009, Günzer Cabernet Franc 2017'
-    ],
-    
-    [
-        'category_id' => 6,
-        'name' => [
-            'hu' => 'Grillezett csirkemell, parázsburgonya, vad brokkoli, savanyított zöldség, burgonyás brokkoli krém, zöldséghab (G)',
-            'en' => 'Grilled chicken breast, baked potatoes, wild broccoli, pickled vegetables, cream of broccoli with potatoes, vegetable mousse  (G) ',
-            'de' => 'Gegrillte Höhnerbrust, Wedges Kartoffel, Wild Brokkoli, Sauergemüse, Kartoffel-Brokkoli creme, Gemüseschaum (G)'
-        ],
-        'comment' => '',
-        'price' => 4900,
-        'wine' => 'Natale Verga chianti docg, Jásdi Csopaki Rizling 2020 (Hegybor) (Csopak)'
+        'price' => 4200,
+        'wine' => ''
     ],
     [
         'category_id' => 2,
@@ -177,8 +163,7 @@ return [
         ],
         'comment' => '',
         'price' => 4400,
-        'wine' => 'Jásdi Olaszrizling 2021, Günzer Lezser 2020/21
-        '
+        'wine' => ''
     ],
     [
         'category_id' => 2,
@@ -189,7 +174,7 @@ return [
         ],
         'comment' => '',
         'price' => 4000,
-        'wine' => 'Béla és Bandi Kékfrankos 2019, Gere Portugieser	2021'
+        'wine' => ''
     ],
     [
         'category_id' => 2,
@@ -211,7 +196,7 @@ return [
         ],
         'comment' => '',
         'price' => 4200,
-        'wine' => 'Ikon Rajnai Rizling 2021 (Rádpuszta), Jásdi Csopaki Rizling 2020 (Hegybor) (Csopak)'
+        'wine' => ''
     ],
     [
         'category_id' => 2,
@@ -222,7 +207,7 @@ return [
         ],
         'comment' => '',
         'price' => 5700,
-        'wine' => 'Etyeki Kúria Chardonnay (Etyek), Balla Géza Kadarka (Erdély)'
+        'wine' => ''
     ],
     [
         'category_id' => 36,
@@ -232,7 +217,7 @@ return [
             'de' => 'Jasmin reis'
         ],
         'comment' => '',
-        'price' => 850,
+        'price' => 950,
         'wine' => ''
     ],
     [
@@ -265,7 +250,7 @@ return [
             'de' => 'Puszta-Salat'
         ],
         'comment' => '',
-        'price' => 800,
+        'price' => 900,
         'wine' => ''
     ],
     [
@@ -276,7 +261,7 @@ return [
             'de' => 'Gurke'
         ],
         'comment' => '',
-        'price' => 800,
+        'price' => 900,
         'wine' => ''
     ],
     [
@@ -287,7 +272,7 @@ return [
             'de' => 'Rote Rübe Salat'
         ],
         'comment' => '',
-        'price' => 800,
+        'price' => 900,
         'wine' => ''
     ],
     [
@@ -298,30 +283,30 @@ return [
             'de' => 'Gemischter grüner salat'
         ],
         'comment' => '',
-        'price' => 1400,
+        'price' => 1500,
         'wine' => ''
     ],
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Pasta Alfredo',
-            'en' => 'Pasta Alfredo',
-            'de' => 'Pasta Alfredo'
+            'hu' => 'Házi szélesmetélt vargányával (V)',
+            'en' => 'Homemade tagliatelle with porcini mushroom (V)',
+            'de' => 'Nudel mit Steinpilz (V)'
         ],
         'comment' => '',
         'price' => 3500,
-        'wine' => 'Béla és Bandi Sauvignon Blanc 2021, Günzer Lezser 2020/21'
+        'wine' => ''
     ],
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Pasta Napolitana (L)',
-            'en' => 'Pasta Napolitana (L)',
-            'de' => 'Pasta Napolitana (L)'
+            'hu' => 'Csirkés ázsiai rizstészta',
+            'en' => 'Asian rice noodles with chicken',
+            'de' => 'Asia Reisnudel mit Hühnchen'
         ],
         'comment' => '',
         'price' => 3700,
-        'wine' => 'Gere Portugierser 2021, Rosato Salento Rosé'
+        'wine' => ''
     ],
     [
         'category_id' => 5,
@@ -331,8 +316,8 @@ return [
             'de' => 'Pizza Margherita – Tomatensauce,Mozzarella, Basilikum'
         ],
         'comment' => '',
-        'price' => 2450,
-        'wine' => 'Natale Verga Chianti docg, il Roccolo Primitivo Salento'
+        'price' => 2600,
+        'wine' => ''
     ],
     [
         'category_id' => 5,
@@ -343,7 +328,7 @@ return [
         ],
         'comment' => '',
         'price' => 3950,
-        'wine' => ' I Magredi Traminer Aromatico, il Roccolo Primitivo Salento'
+        'wine' => ''
     ],
     [
         'category_id' => 5,
@@ -387,18 +372,18 @@ return [
         ],
         'comment' => '',
         'price' => 2500,
-        'wine' => 'Gróf Degenfeld Édes Szamorodni 2017'
+        'wine' => ''
     ],
     [
         'category_id' => 7,
         'name' => [
-            'hu' => 'Tiramisu',
-            'en' => 'Tiramisu',
-            'de' => 'Tiramisu'
+            'hu' => 'Karamellás pisztácia, fagyi',
+            'en' => 'Karamellás pisztácia, fagyi',
+            'de' => 'Karamell-Pistazien, Eis'
         ],
         'comment' => '',
         'price' => 2500,
-        'wine' => 'Gróf Degenfeld Édes Szamorodni 2017'
+        'wine' => ''
     ],
     [
         'category_id' => 7,
@@ -409,28 +394,28 @@ return [
         ],
         'comment' => '',
         'price' => 950,
-        'wine' => 'Gróf Degenfeld Édes Szamorodni 2017'
+        'wine' => ''
     ],
     [
         'category_id' => 8,
         'name' => [
             'hu' => 'Húsleves cérnametélttel',
-            'en' => 'Bouillon with vermicelli',
-            'de' => 'Fleischbrühe mit Fadennudeln'
+            'en' => 'Broth with vermicelli noodles',
+            'de' => 'Fadennudel Suppe'
         ],
         'comment' => '',
-        'price' => 1100,
+        'price' => 1400,
         'wine' => ''
     ],
     [
         'category_id' => 8,
         'name' => [
             'hu' => 'Rántott sajt /csirkemell-sült burgonya',
-            'en' => 'Breaded cheese / chicken breast-fried potatoes',
-            'de' => 'Panierter Käse / Hähnchenbrust mit Kartoffeln'
+            'en' => 'Breaded cheese or chicken breast - French fries',
+            'de' => 'Gebackene Käse oder Hühnerbrust - Pommes'
         ],
         'comment' => '',
-        'price' => 2100,
+        'price' => 2200,
         'wine' => ''
     ],
     [
@@ -438,21 +423,21 @@ return [
         'name' => [
             'hu' => 'Bolognai spaghetti',
             'en' => 'Spaghetti Bolognese',
-            'de' => ''
+            'de' => 'Spaghetti Bolognese'
         ],
         'comment' => '',
-        'price' => 2100,
+        'price' => 2200,
         'wine' => ''
     ],
     [
         'category_id' => 8,
         'name' => [
             'hu' => 'Palacsinta (2 db)',
-            'en' => 'Crêpes (2 pcs)',
-            'de' => 'Palatschinken (2 Stk)  '
+            'en' => 'Pancakes (2 pcs)',
+            'de' => 'Palatschinken (2 Stk)'
         ],
         'comment' => '',
-        'price' => 750,
+        'price' => 900,
         'wine' => ''
     ],
     [
@@ -463,7 +448,7 @@ return [
             'de' => 'Kinderpizza mit Schinken'
         ],
         'comment' => '',
-        'price' => 2300,
+        'price' => 2400,
         'wine' => ''
     ],
 ];
