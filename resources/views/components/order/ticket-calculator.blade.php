@@ -7,8 +7,8 @@
                         wire:model="activePrice"
                         class="block w-full py-2 pr-10 mt-1 text-2xl border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                     >
-                        <option value="6000">Vacsora menü nélkül</option>
-                        <option value="12000">Vacsora menüvel </option>
+                        <option value="8000">Vacsora menü nélkül</option>
+                        <option value="17000">Vacsora menüvel </option>
                     </select>
                 </div>
             @endif
