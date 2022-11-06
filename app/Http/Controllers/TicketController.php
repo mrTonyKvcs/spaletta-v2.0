@@ -25,7 +25,8 @@ class TicketController extends Controller
             'is_paid' => true
         ]);
 
-        $ticket->price = $ticket->event->price;
+        $ticket->price = $ticket->total / $ticket->quantity;
+        // $ticket->price = $ticket->event->price;
         $ticket->event_name = $ticket->event->title;
 
         $invoiceNumber = $this->createInvoice($ticket->toArray());
