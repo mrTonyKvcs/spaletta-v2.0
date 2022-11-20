@@ -8,16 +8,16 @@ return [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Bakonyi sertésleves (G, L)',
-                'Kukorica krémleves- kukorica relish',
-                'Daragaluska leves kakas hússal ( L)'
+                'Bakonyi sertésleves (G,L)',
+                'Kukorica krémleves- kukorica relish(G)',
+                'Daragaluska leves kakas hússal'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Csülök Pékné módra (G, L)',
-                'Pirított kacsa rilette, paradicsomos káposzta (G, L)',
+                'Csülök Pékné módra (G,L)',
+                'Pirított kacsa rilette, paradicsomos káposzta (L)',
                 'Tejszínes- parajos házi gnocchi',
                 'Máglyarakás',
             ]
