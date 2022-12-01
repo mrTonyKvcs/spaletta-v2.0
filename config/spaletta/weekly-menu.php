@@ -28,8 +28,8 @@ return [
             'name'  => 'Szombati menü',
             'items' => [
                 'Áfonya leves',
-                'Vadas Nyúlcomb, szalvétagombóc',
-                'Epres crumble (morzsasüti)'
+                'Nyúl és Bárány duett vadas mártásban, szalvétagombóc',
+                'Mandulás panna cotta kakaó töret, kávé krémmel'
             ]
         ],
     ]
