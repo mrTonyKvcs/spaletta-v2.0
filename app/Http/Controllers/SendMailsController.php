@@ -109,14 +109,10 @@ class SendMailsController extends Controller
             return false;
         } elseif ($time < '11:30' || $time > '22:40') {
             return false;
-		} elseif ($checkin == '2022-08-07') {
-			return false;
-		} elseif ($checkin == '2022-08-14') {
-            return false;
-        } elseif ($checkin >= '2022-08-20' && $checkin <= '2022-08-29') {
+        } elseif ($checkin == '2022-12-08' || $checkin == '2022-12-09') {
             return false;
         }
-    
+
 
         return true;
     }
