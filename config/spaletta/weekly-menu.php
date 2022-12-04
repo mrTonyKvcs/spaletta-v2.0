@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.11.29. - 2022.12.02.',
-    'weekend-date' => '2022.12.03.',
+    'menu-date' => '2022.12.06. - 2022.12.09.',
+    'weekend-date' => '2022.12.10.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Zeller krémleves',
-                'Tárkonyos sertésragu leves (G,L)',
-                'Kolbászos burgonyaleves (G,L)'
+                'Kucsmagomba leves (G, L)',
+                'Barack krémleves túrógombóccal',
+                'Májgaluska leves (L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Chedar sajtos töltött sertésszelet, burgonyapüré',
-                'Garnélás- lazacos papardelle tészta (L)',
-                'Édes-chilis csirkemell, tojásos rizs (G,L)',
-                'Túrós csusza',
+                'Vörösboros marharagu, pirított burgonya (G, L)',
+                'Fokhagymás hal brassói (G, L)',
+                'Bolognai spagetti Parmezánnal',
+                'Káposztás cvekedli (L)',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Áfonya leves',
-                'Nyúl és Bárány duett vadas mártásban, szalvétagombóc',
-                'Mandulás panna cotta kakaó töret, kávé krémmel'
+                'Zöldbab leves (G,L)',
+                'Klasszikus tökfőzelék, csirkecomb (G)',
+                'Szilvás gombóc'
             ]
         ],
     ]
