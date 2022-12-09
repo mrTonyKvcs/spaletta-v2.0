@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Zöldbab leves (G,L)',
-                'Klasszikus tökfőzelék, csirkecomb (G)',
-                'Szilvás gombóc'
+                'Sárgaborsó krémleves, füstöltekkel',
+                'Bárányszalagok, vargányás metélt',
+                'Sült grízpuding, erdei gyümölcs'
             ]
         ],
     ]
