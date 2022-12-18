@@ -50,7 +50,24 @@
   
 @if ($errors->any())
 <div class="alert alert-danger">
-    <button type="button" class="close" data-dismiss="alert">?</button>    
-    Please check the form below for errors
+    <div class="p-4 bg-red-500 rounded-md">
+        <div class="flex">
+          <div class="flex-shrink-0">
+            <!-- Heroicon name: mini/x-circle -->
+            <svg class="w-5 h-5 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="ml-3">
+            <div class="mt-2 text-xl text-red-500">
+              <ul role="list" class="pl-5 space-y-1 text-red-500 list-disc">
+                @foreach ($errors->all() as $error)
+                    <li class="text-red-500">{{ $error }}</li>
+                @endforeach
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>
 @endif
