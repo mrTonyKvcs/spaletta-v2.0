@@ -102,7 +102,7 @@ return [
         'name' => [
             'hu' => 'Hekkfilé, garnélás zöldborsó, újhagymás burgonyapüré (G)',
             'de' => 'Hechtdorschfilet, Erbsen mit Garnelen, Kartoffelpüree mit Schnittlauch(G)',
-            'hu' => 'Fillet of hake, green peas with prawns, mashed potatoes with chives (G)'
+            'en' => 'Fillet of hake, green peas with prawns, mashed potatoes with chives (G)'
         ],
         'comment' => '',
         'price' => 5500,
