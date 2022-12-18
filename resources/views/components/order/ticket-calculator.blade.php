@@ -7,8 +7,8 @@
                         wire:model="activePrice"
                         class="block w-full py-2 pr-10 mt-1 text-2xl border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                     >
-                        <option value="7000">Vacsora menü nélkül</option>
-                        <option value="18000">Vacsora menüvel </option>
+                        <option value="{{ $this->event->price }}">Vacsora menü nélkül</option>
+                        <option value="{{ $this->event->dinner_price }}">Vacsora menüvel </option>
                     </select>
                 </div>
             @endif
