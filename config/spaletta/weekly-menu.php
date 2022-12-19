@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.12.13. - 2022.12.16.',
+    'menu-date' => '2022.12.20. - 2022.12.23.',
     'weekend-date' => '2022.12.17.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Fokhagyma-krémleves (G)',
-                'Tarhonya leves (L)',
-                'Zöldbableves (G)'
+                'Fahéjas szilvaleves (G,L)',
+                'Magyaros burgonyaleves, tejföl, kolbászmorzsa (G)',
+                'Olasz zöldségleves (G,L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Töltött káposzta',
-                'Cheddar sajttal és brokkolival töltött sertéskaraj, burgonyapüré',
-                'Gundel palacsinta',
-                'Paradicsomos rizottó (G)',
+                'Fokhagymás flekken, parázsburgonya, szalonnás zöldbab (G,L)',
+                'Kijevi jércemell, burgonya gratin',
+                'Stroganoff sertésragu, jázsminrizs (G,L)',
+                'Stíriai metélt, házi baracklekvár',
             ]
         ],
     ],
