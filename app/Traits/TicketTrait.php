@@ -28,7 +28,7 @@ trait TicketTrait
         if (empty($lastTicket)) {
             $newOrderNumber = 1010;
         } else {
-            $newOrderNumber = substr($lastTicket->order_number, 11) + 10000;
+            $newOrderNumber = substr($lastTicket->order_number, 11) + 10000878;
         }
 
         return 'SPALETTA-T-' . $newOrderNumber;
