@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2022.12.27. - 2022.12.30.',
-    'weekend-date' => '2022.12.17.',
+    'menu-date' => '2023.01.10. - 2023.01.13.',
+    'weekend-date' => '2023.01.14.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Paradicsomleves betűtésztával (L)',
-                'Tárkonyos bárány raguleves (G)',
-                'Frankfurti leves virslivel (G)'
+                'Zeller Krémleves (G)',
+                'Tejszíen Zalai Csirkeraguleves (G)',
+                'Magyaros Gombaleves csurgatott tésztával'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Thai csirke rizzsel (G,L)',
-                'Töltött káposzta',
-                'Sült kolbász, hagymás törtburgonyával (G,L)',
-                'Tejes pite baracklekvárral',
+                'Meggyszósz pirított darával és párolt marha szelettel (L)',
+                'Sertés Brassói, kovászos uborka (G,L)',
+                'Spagetti aglio e olio (L)',
+                'Sajt-Sonkakrémmel töltött palacsinta, saláta és remolulád mártás',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Korhely leves, roppanós virsli',
-                'Toledói szárnyasragu, rizs (G)',
-                'Házi szilva lekváros gombóc'
+                'Tavaszi zöldségleves (G)',
+                'Kakaspörkölt vajas galuskával, tejfölös uborka saláta',
+                'Körte mousse, pirított magvak (G,L)'
             ]
         ],
     ]
