@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2023.01.10. - 2023.01.13.',
-    'weekend-date' => '2023.01.14.',
+    'menu-date' => '2023.01.17. - 2023.01.20.',
+    'weekend-date' => '2023.01.21.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Zeller Krémleves (G)',
-                'Tejszíen Zalai Csirkeraguleves (G)',
-                'Magyaros Gombaleves csurgatott tésztával'
+                'Sajt krémleves padlizsán ropogóssal (G)',
+                'Daragaluska leves (L)',
+                'Csülkös bableves'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Meggyszósz pirított darával és párolt marha szelettel (L)',
-                'Sertés Brassói, kovászos uborka (G,L)',
-                'Spagetti aglio e olio (L)',
-                'Sajt-Sonkakrémmel töltött palacsinta, saláta és remolulád mártás',
+                'Szalontüdő zsemlegombóccal',
+                'Pásztor tarhonya (L)',
+                'Széles metélt csípős paradicsomszósszal',
+                'Arany galuska vanília sodóval',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Tavaszi zöldségleves (G)',
-                'Kakaspörkölt vajas galuskával, tejfölös uborka saláta',
-                'Körte mousse, pirított magvak (G,L)'
+                'Erdei gyümölcsleves (G)',
+                'Sertés füle, lába rántva petrezselymes burgonyával, tartármártás',
+                'Farsangi fánk házi baracklekvárral'
             ]
         ],
     ]
