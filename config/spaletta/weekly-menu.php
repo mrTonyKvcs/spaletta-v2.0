@@ -2,24 +2,24 @@
 
 return [
     'title'     => 'heti menü',
-    'menu-date' => '2023.01.31. - 2023.02.03.',
-    'weekend-date' => '2023.02.04.',
+    'menu-date' => '2023.02.07. - 2023.02.10.',
+    'weekend-date' => '2023.02.11.',
     'menu' => [
         'soups' => [
             'name'  => 'Levesek',
             'items' => [
-                'Karfiol krémleves pirított mandulával (G, L)',
-                'Májgaluska leves (L)',
-                'Palócz leves (G)'
+                'Burgonya krémleves füstöltekkel (G)',
+                'Magyaros zöldborsóleves csurgatott tésztával',
+                'Édes savanyú zöldségleves (G, L)'
             ]
         ],
         'main-course' => [
             'name'  => 'Főételek',
             'items' => [
-                'Sárgaborsó főzelék Sült debreceni',
-                'Rántott szelet rizi bizi (L)',
-                'Sajtos tejfölös nudli',
-                'Rakott kelkáposzta (G)',
+                'Fokhagymás garnéla parajos burgonyával (G)',
+                'Sertés karaj hentes raguval, jázmin rizzsel (G)',
+                'Zúzapörkölt galuskával, házi csalamádé (L)',
+                'Mákos guba vanília sodóval',
             ]
         ],
     ],
@@ -27,9 +27,9 @@ return [
         'saturday-menu' => [
             'name'  => 'Szombati menü',
             'items' => [
-                'Tyúkhúsleves lúdgége tésztával (L)',
-                'Eszterházy sertésragu burgonya gnocchival',
-                'Gesztenyepüré'
+                'Kecskeméti zöldséges halleves (G)',
+                'Kijevi jércemell burgonya pürével',
+                'Spaletta desszerttányér'
             ]
         ],
     ]
