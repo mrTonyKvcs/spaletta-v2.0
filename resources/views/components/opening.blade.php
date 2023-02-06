@@ -20,8 +20,8 @@
             <td class="pt-2">11:30 - 22:00</td>
             <td class="pt-2">11:30 - 22:00</td>
             <td class="pt-2">11:30 - 22:00</td>
-            <td class="pt-2">11:30 - 23:00</td>
-            <td class="pt-2">11:30 - 23:00</td>
+            <td class="pt-2">11:30 - 24:00</td>
+            <td class="pt-2">11:30 - 24:00</td>
             <td class="pt-2">11:30 - 16:00</td>
           </tr>
         </tbody>
