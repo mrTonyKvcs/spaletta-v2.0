@@ -64,6 +64,7 @@ Route::group(
     // })->name('pages.menu');
 
     Route::get(LaravelLocalization::transRoute('routes.menu'), function () {
+        return redirect('https://www.facebook.com/spalettaetterem/menu/?id=100036783267355&sk=menu');
         $title = 'Étlap';
         $categories = Category::where('type_id', 1)->with('items')->get();
         return view('pages.menu', compact('categories', 'title'));
