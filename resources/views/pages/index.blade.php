@@ -1,11 +1,15 @@
 @extends('layouts.app')
 
-@section('title') {{ __('Kezdőlap') }} @endsection
+@section('title')
+    {{ __('Kezdőlap') }}
+@endsection
 
 @section('meta_data')
-    <meta name="description" content="{{ __('A Spaletta Étterem hetente frissülő menü ajánlattal, online asztalfoglalási lehetőséggel várja vendégeit keddtől vasárnapig.') }}">
-    <meta property="og:description" content="{{ __('A Spaletta Étterem hetente frissülő menü ajánlattal, online asztalfoglalási lehetőséggel várja vendégeit keddtől vasárnapig.') }}">
-    <meta property="og:url" content="https://spalettaetterem.com/"> 
+    <meta name="description"
+        content="{{ __('A Spaletta Étterem hetente frissülő menü ajánlattal, online asztalfoglalási lehetőséggel várja vendégeit keddtől vasárnapig.') }}">
+    <meta property="og:description"
+        content="{{ __('A Spaletta Étterem hetente frissülő menü ajánlattal, online asztalfoglalási lehetőséggel várja vendégeit keddtől vasárnapig.') }}">
+    <meta property="og:url" content="https://spalettaetterem.com/">
 @endsection
 
 <x-layout>
@@ -24,7 +28,12 @@
                     <a href="tel:+36 76 614 744">+36 76 614 744</a>
                 </div>
             </div>
-            <x-button class="z-20" type="transparent"><a href="{{ route('pages.restaurant') }}">{{ __('Étlap') }}</a></x-button>
+            <div class="z-20">
+                <x-button class="mr-10" type="transparent"><a
+                        href="{{ route('pages.restaurant') }}">{{ __('Étterem') }}</a></x-button>
+                <x-button type="transparent"><a
+                        href="{{ route('pages.restaurant') }}">{{ __('Sörház') }}</a></x-button>
+            </div>
         </div>
         <video poster="../images/gallery-bg.jpg" autoplay playsinline muted loop>
             <source src="../videos/spaletta-video.mp4" type="video/webm">
@@ -40,25 +49,28 @@
             <p class="text-3xl text-center font-medium text-gray2e font-libre">2022. október 11 - október 16.</p>
             <x-button type="gray-transparent"><a href=" https://www.etteremhet.hu/lang/hu/cities/countryside/restaurants/spaletta-etterem-es-sorhaz-kecskemet?search%5Bdate%5D=&search%5Bmeal_type%5D=&search%5Bno_persons%5D=2&search%5Bsearch_query%5D=&sort=name">Asztalfoglalás</a></x-button>
         </div>
-    </div>  --}}
+    </div>  --}} 
     {{-- <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
         <h2 class="text-4xl font-medium gold font-libre italic">Kedves Vendégeink !</h2>
         <p class="text-3xl text-center text-gray2e font-medium font-libre italic">A nyári szünet után , augusztus 30-án (kedden)  a megszokott nyitvatartással várjuk Vendégeinket</p>
     </div> --}}
     <x-section>
-        <div class="flex flex-col items-center mt-24">
-            {{-- <x-title title="{{ __('Heti Menü') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" ></x-title>
+        <div class="flex flex-col items-center mt-24 w-full">
+            <x-title title="{{ __('Déli ajánló') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" ></x-title>
             <x-weekly-menu></x-weekly-menu>
             <p class="text-xl">{{ __('(Az ár nem tartalmazza a csomagolás díját)') }}</p>
-            <x-button><a href="{{ route('pages.restaurant') }}">{{ __('Étlap') }}</a></x-button> --}}
         </div>
     </x-section>
     <x-section background="home-services">
         <div class=" space-x-4 lg:space-x-0 md:grid md:grid-cols-2 gap-12 lg:grid lg:grid-cols-4 lg:gap-12">
-            <x-card type="link" path="/images/home-menu" route="{{ route('pages.restaurant') }}" alt="spaletta" title="spaletta">{{ __('Étlap') }}</x-card>
-            <x-card type="link" path="/images/home-reservations" route="{{ route('pages.reservation') }}" alt="reservation" title="reservation"> {{ __('Asztalfoglalás') }}</x-card>
-            <x-card type="link" path="/images/events" route="{{ route('events.index') }}" alt="events" title="events">{{ __('Rendezvények') }}</x-card>
-            <x-card type="link" path="/images/index-contact" route="{{ route('pages.contact') }}" alt="drinks" title="drinks">{{ __('Kapcsolat') }}</x-card>
+            <x-card type="link" path="/images/home-menu" route="{{ route('pages.restaurant') }}" alt="spaletta"
+                title="spaletta">{{ __('Étterem') }}</x-card>
+            <x-card type="link" path="/images/home-reservations" route="{{ route('pages.bar') }}" alt="reservation"
+                title="reservation">{{ __('Sörház') }}</x-card>
+            <x-card type="link" path="/images/events" route="{{ route('events.index') }}" alt="events"
+                title="events">{{ __('Rendezvények') }}</x-card>
+            <x-card type="link" path="/images/index-contact" route="{{ route('pages.reservation') }}" alt="drinks"
+                title="drinks">{{ __('Asztalfoglalás') }}</x-card>
         </div>
     </x-section>
     <x-section>
@@ -70,14 +82,16 @@
             <div class="flex justify-end sm:mr-6 lg:mr-24">
                 <picture>
                     <source srcset="/images/index.webp" type="image/webp">
-                    <img class="w-full hidden border-2 border-yellow-300 xl:block" src="/images/index.png" alt="Rolunk"
-                        title="Rolunk" height="329" width="490">
+                    <img class="w-full hidden border-2 border-yellow-300 xl:block" src="/images/index.png"
+                        alt="Rolunk" title="Rolunk" height="329" width="490">
                 </picture>
             </div>
             <div class="flex flex-col items-center w-full px-6 py-8 mt-4 bg-white bg-opacity-75 sm:mt-0">
                 <p class="text-3xl italic font-medium gold font-libre">{{ __('Rólunk') }}</p>
                 <h2 class="text-5xl font-semibold text-center uppercase text-gray2e">{{ __('Bemutatkozunk') }}</h2>
-                <p class="pt-10 text-2xl font-medium gray">{{ __('Fura hullámokat vet az élet. Soha nem gondoltam volna, hogy éttermet fogunk vezetni. Eddig az élet teljesen más területén dolgoztunk, dolgozunk és bár gyermekkorom nyarait régi vendéglátós család szülöttjeként hol fagylaltosfiúként, hol pultosként töltöttem-közben leendő feleségem palacsintát sütött egy lakókocsiban a vágyott Adidas cipőért- nem is álmodtunk efféle karrierről.') }}</p>
+                <p class="pt-10 text-2xl font-medium gray">
+                    {{ __('Fura hullámokat vet az élet. Soha nem gondoltam volna, hogy éttermet fogunk vezetni. Eddig az élet teljesen más területén dolgoztunk, dolgozunk és bár gyermekkorom nyarait régi vendéglátós család szülöttjeként hol fagylaltosfiúként, hol pultosként töltöttem-közben leendő feleségem palacsintát sütött egy lakókocsiban a vágyott Adidas cipőért- nem is álmodtunk efféle karrierről.') }}
+                </p>
                 <x-button class="mt-8" type="gray-transparent"><a href="/rolunk">{{ __('Tovább') }}</a></x-button>
             </div>
         </div>

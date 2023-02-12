@@ -86,7 +86,7 @@ Route::group(
     // Route::get('oktobierfest', function () {
     //     $title = 'OKTOBIERFEST Étlap';
     //     $categories = Category::where('type_id', 8)->with('items')->get();
-    //     return view('pages.restaurant', compact('categories', 'title'));
+    //     return view('pages.restaur`ant', compact('categories', 'title'));
     // })->name('pages.oktobierfest');
 
     Route::get(LaravelLocalization::transRoute('routes.reservation'), function () {
