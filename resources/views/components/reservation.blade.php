@@ -49,7 +49,7 @@
     </div>
     <div x-show="checkin === '2023-02-25'" class="flex flex-col justify-between">
         <p class="text-2xl font-medium text-center text-gold">{{ __('Asztalfoglalás a "Szülinapi farsang" eseményünkre') }}</p>
-        <select name="matchmaker" id="" class=" bg-white w-full gray outline-none text-center font-medium py-2.5 px-5 text-2xl border-b border-gray-300" required>
+        <select name="carnival" id="" class=" bg-white w-full gray outline-none text-center font-medium py-2.5 px-5 text-2xl border-b border-gray-300" required>
             <option value="Nem">{{ __('Nem') }}</option>
             <option value="Igen">{{ __('Igen') }}</option>
         </select> 
