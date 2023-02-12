@@ -29,6 +29,11 @@
     <p>
         <strong>Asztalfoglalás meccsnézésre:</strong> {{ $mail['matchmaker'] }}
     </p>
+    @if(isset($mail['carnival']))
+        <p>
+            <strong>Asztalfoglalás a "Szülinapi farsang" eseményünkre:</strong> {{  $mail['carnival'] }}
+        </p>
+    @endif
     <p>
         <strong>Megjegyzés:</strong> {{ $mail['comment'] }}
     </p>
