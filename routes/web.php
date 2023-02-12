@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers;
 use App\Models\Category;
+use App\Models\Product;
 use App\Models\Ticket;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -60,20 +61,32 @@ Route::group(
     // })->name('pages.cart');
 
     // Route::get(LaravelLocalization::transRoute('routes.order'), function () {
-    //     return view('pages.menu');
-    // })->name('pages.menu');
+    //     return view('pages.restaurant');
+    // })->name('pages.restaurant');
 
-    Route::get(LaravelLocalization::transRoute('routes.menu'), function () {
-        return redirect('https://www.facebook.com/spalettaetterem/menu/?id=100036783267355&sk=menu');
-        $title = 'Étlap';
+    // Route::get(LaravelLocalization::transRoute('routes.menu'), function () {
+    //     return redirect('https://www.facebook.com/spalettaetterem/menu/?id=100036783267355&sk=menu');
+    //     $title = 'Étlap';
+    //     $categories = Category::where('type_id', 1)->with('items')->get();
+    //     return view('pages.restaurant', compact('categories', 'title'));
+    // })->name('pages.restaurant');
+
+    Route::get(LaravelLocalization::transRoute('routes.restaurant'), function () {
+        $title = 'Étterem Ajánló';
         $categories = Category::where('type_id', 1)->with('items')->get();
-        return view('pages.menu', compact('categories', 'title'));
-    })->name('pages.menu');
+        return view('pages.restaurant', compact('categories', 'title'));
+    })->name('pages.restaurant');
+
+    Route::get(LaravelLocalization::transRoute('routes.bar'), function () {
+        $title = 'Sörház Ajánló';
+        $products = Product::where('category_id', 61)->get();
+        return view('pages.bar', compact('products', 'title'));
+    })->name('pages.bar');
 
     // Route::get('oktobierfest', function () {
     //     $title = 'OKTOBIERFEST Étlap';
     //     $categories = Category::where('type_id', 8)->with('items')->get();
-    //     return view('pages.menu', compact('categories', 'title'));
+    //     return view('pages.restaurant', compact('categories', 'title'));
     // })->name('pages.oktobierfest');
 
     Route::get(LaravelLocalization::transRoute('routes.reservation'), function () {

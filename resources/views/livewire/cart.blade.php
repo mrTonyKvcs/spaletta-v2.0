@@ -112,7 +112,7 @@
                                     </tr>
                                 @empty
                                     <tr class="bg-white">
-                                        <td class="px-6 py-4 text-3xl font-light text-gray-900 whitespace-nowrap">{{ __('Üres a kosara') }}.<a href="{{ route('pages.menu') }}" class="pl-2 text-gold">{{ __('Ide kattintva már választhat is ételeink közül') }}.</a></td>
+                                        <td class="px-6 py-4 text-3xl font-light text-gray-900 whitespace-nowrap">{{ __('Üres a kosara') }}.<a href="{{ route('pages.restaurant') }}" class="pl-2 text-gold">{{ __('Ide kattintva már választhat is ételeink közül') }}.</a></td>
                                     </tr>
                                     @endforelse
                             </tbody>

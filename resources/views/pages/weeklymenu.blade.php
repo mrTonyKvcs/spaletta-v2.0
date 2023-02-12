@@ -19,7 +19,7 @@
             <x-title title="{{ __('Hétvégi Menü') }}" text="{{ config('spaletta.weekly-menu.weekend-date') }}" price="4000 Ft"></x-title>
             <x-weekend-menu></x-weekend-menu>
             <p class="text-xl">{{ __('(Az ár nem tartalmazza a csomagolás díját)') }}</p>
-            <x-button><a href="{{ route('pages.menu') }}">{{ __('Étlap') }}</a></x-button>
+            <x-button><a href="{{ route('pages.restaurant') }}">{{ __('Étlap') }}</a></x-button>
         </div>
     </x-section>
 </x-layout>

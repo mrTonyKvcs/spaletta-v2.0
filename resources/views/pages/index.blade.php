@@ -24,7 +24,7 @@
                     <a href="tel:+36 76 614 744">+36 76 614 744</a>
                 </div>
             </div>
-            <x-button class="z-20" type="transparent"><a href="{{ route('pages.menu') }}">{{ __('Étlap') }}</a></x-button>
+            <x-button class="z-20" type="transparent"><a href="{{ route('pages.restaurant') }}">{{ __('Étlap') }}</a></x-button>
         </div>
         <video poster="../images/gallery-bg.jpg" autoplay playsinline muted loop>
             <source src="../videos/spaletta-video.mp4" type="video/webm">
@@ -47,17 +47,15 @@
     </div> --}}
     <x-section>
         <div class="flex flex-col items-center mt-24">
-            <x-title title="{{ __('Heti Menü') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" price="3100 Ft"></x-title>
+            {{-- <x-title title="{{ __('Heti Menü') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" ></x-title>
             <x-weekly-menu></x-weekly-menu>
-            <x-title title="{{ __('Hétvégi Menü') }}" text="{{ config('spaletta.weekly-menu.weekend-date') }}" price="4000 Ft"></x-title>
-            <x-weekend-menu></x-weekend-menu>
             <p class="text-xl">{{ __('(Az ár nem tartalmazza a csomagolás díját)') }}</p>
-            <x-button><a href="{{ route('pages.menu') }}">{{ __('Étlap') }}</a></x-button>
+            <x-button><a href="{{ route('pages.restaurant') }}">{{ __('Étlap') }}</a></x-button> --}}
         </div>
     </x-section>
     <x-section background="home-services">
         <div class=" space-x-4 lg:space-x-0 md:grid md:grid-cols-2 gap-12 lg:grid lg:grid-cols-4 lg:gap-12">
-            <x-card type="link" path="/images/home-menu" route="{{ route('pages.menu') }}" alt="spaletta" title="spaletta">{{ __('Étlap') }}</x-card>
+            <x-card type="link" path="/images/home-menu" route="{{ route('pages.restaurant') }}" alt="spaletta" title="spaletta">{{ __('Étlap') }}</x-card>
             <x-card type="link" path="/images/home-reservations" route="{{ route('pages.reservation') }}" alt="reservation" title="reservation"> {{ __('Asztalfoglalás') }}</x-card>
             <x-card type="link" path="/images/events" route="{{ route('events.index') }}" alt="events" title="events">{{ __('Rendezvények') }}</x-card>
             <x-card type="link" path="/images/index-contact" route="{{ route('pages.contact') }}" alt="drinks" title="drinks">{{ __('Kapcsolat') }}</x-card>

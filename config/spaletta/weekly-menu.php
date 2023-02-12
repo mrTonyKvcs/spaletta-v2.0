@@ -1,36 +1,52 @@
 <?php
 
 return [
-    'title'     => 'heti menü',
-    'menu-date' => '2023.02.07. - 2023.02.10.',
-    'weekend-date' => '2023.02.11.',
+    'title'     => 'Déli Ajánló',
+    'menu-date' => '2023.02.14. - 2023.02.17.',
     'menu' => [
-        'soups' => [
-            'name'  => 'Levesek',
+        'first-courses' => [
+            'name' => 'Előétel',
             'items' => [
-                'Burgonya krémleves füstöltekkel (G)',
-                'Magyaros zöldborsóleves csurgatott tésztával',
-                'Édes savanyú zöldségleves (G, L)'
+                [
+                'name'  => 'Humusz',
+                'price' => 1100
+                ]
             ]
         ],
-        'main-course' => [
-            'name'  => 'Főételek',
+        'soup' => [
+            'name' => 'Leves',
             'items' => [
-                'Fokhagymás garnéla parajos burgonyával (G)',
-                'Sertés karaj hentes raguval, jázmin rizzsel (G)',
-                'Zúzapörkölt galuskával, házi csalamádé (L)',
-                'Mákos guba vanília sodóval',
+                [
+                'name'  => 'Savanyú burgonyaleves kolbászmorzsával',
+                'price' => 1300
+                ]
             ]
         ],
+        'main-courses' => [
+            'name' => 'Főétel',
+            'items' => [
+                [
+                    'name' => 'Gnocchi Sorrentina mozzarellával',
+                    'price' => 2500
+                ],
+                [
+                    'name' => 'Diós metélt',
+                    'price' => 2500
+                ],
+                [
+                    'name' => 'Rántott csirkecomb petrezselymes burgonyával',
+                    'price' => 2500
+                ],
+            ]
+        ],
+        'desserts' => [
+            'name' => 'Desszert',
+            'items' => [
+                [
+                    'name' => 'Zsuzsi palacsinta vanília fagylalttal',
+                    'price' => 1200
+                ]
+            ]
+        ]
     ],
-    'weekendmenu' => [
-        'saturday-menu' => [
-            'name'  => 'Szombati menü',
-            'items' => [
-                'Kecskeméti zöldséges halleves (G)',
-                'Kijevi jércemell burgonya pürével',
-                'Spaletta desszerttányér'
-            ]
-        ],
-    ]
 ];

@@ -5,6 +5,8 @@ return [
     'order' => 'rendeles',
     'cart' => 'kosar',
     'menu' => 'etlap',
+    'restaurant' => 'etterem',
+    'bar' => 'sorhaz',
     'reservation' => 'asztalfoglalas',
     'events' => 'esemenyek',
     'gallery' => 'galeria',
