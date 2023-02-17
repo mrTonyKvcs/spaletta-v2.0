@@ -61,7 +61,7 @@
         </div>
         <div class="flex flex-col items-center mt-24 w-full">
             <x-title title="{{ __('Szombati ajánló') }}" text="{{ config('spaletta.weekly-menu.saturday-date') }}" ></x-title>
-            <p>{{ config('spaletta.weekly-menu.saturday-menu')['price'] }}</p>
+            <p class="text-3xl text-center font-medium text-gray2e font-libre italic">{{ config('spaletta.weekly-menu.saturday-menu')['price'] }} Ft</p>
             <x-weekend-menu></x-weekend-menu>
         </div>
         <p class="text-xl">{{ __('(Az ár nem tartalmazza a csomagolás díját)') }}</p>
