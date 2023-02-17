@@ -58,8 +58,13 @@
         <div class="flex flex-col items-center mt-24 w-full">
             <x-title title="{{ __('Déli ajánló') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" ></x-title>
             <x-weekly-menu></x-weekly-menu>
-            <p class="text-xl">{{ __('(Az ár nem tartalmazza a csomagolás díját)') }}</p>
         </div>
+        <div class="flex flex-col items-center mt-24 w-full">
+            <x-title title="{{ __('Szombati ajánló') }}" text="{{ config('spaletta.weekly-menu.saturday-date') }}" ></x-title>
+            <p>{{ config('spaletta.weekly-menu.saturday-menu')['price'] }}</p>
+            <x-weekend-menu></x-weekend-menu>
+        </div>
+        <p class="text-xl">{{ __('(Az ár nem tartalmazza a csomagolás díját)') }}</p>
     </x-section>
     <x-section background="home-services">
         <div class=" space-x-4 lg:space-x-0 md:grid md:grid-cols-2 gap-12 lg:grid lg:grid-cols-4 lg:gap-12">
