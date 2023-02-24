@@ -4,7 +4,7 @@ return [
     [
         'category_id' => 2,
         'name' => [
-            'hu' => 'Jókai Bableves füstölt csülökkel (1,2,8)',
+            'hu' => 'Jókai Bableves füstölt csülökkel (1,3,7,9)',
             'de' => 'Jókai Bohnensuppe mit geraucherte Haxen',
             'en' => 'Jókai Bean Soup with Smoked Pork Knuckle'
         ],
@@ -15,7 +15,7 @@ return [
     [
         'category_id' => 2,
         'name' => [
-            'hu' => 'Húsleves, roppanós zöldségekkel és daragaluskával (2,3,8)',
+            'hu' => 'Húsleves, roppanós zöldségekkel és daragaluskával (1,3,7,9)',
             'de' => 'Brühe mit knusprige Gemüse und Grießnokkerl',
             'en' => 'Meat Soup with Crunchy Vegetables and Semolina Dumplings'
         ],
@@ -37,7 +37,7 @@ return [
     [
         'category_id' => 1,
         'name' => [
-            'hu' => 'Hízott kacsamáj terrine kaláccsal és alma csatnival (1,2,3)',
+            'hu' => 'Hízott kacsamáj terrine kaláccsal és alma csatnival (1,3,7)',
             'de' => 'Entenleber Terrine mit Milchbrot und Apfelchutnie',
             'en' => 'Fattened Duck Liver Terrine with Brioche Bread and Apple Chutney'
         ],
@@ -48,7 +48,7 @@ return [
     [
         'category_id' => 1,
         'name' => [
-            'hu' => 'Polip burgonyával, citrusos petrezselyemmel és chorizoval (1,4,6,8)',
+            'hu' => 'Polip burgonyával, citrusos petrezselyemmel és chorizoval (4)',
             'de' => 'Oktopus mit Kartoffel, Zitrus-Petersilien und Chorizo',
             'en' => 'Octopus with Potatoes and Citrus Parsley, Served with Chorizo'
         ],
@@ -59,7 +59,7 @@ return [
     [
         'category_id' => 1,
         'name' => [
-            'hu' => 'Karfiolok, fűszeres mogyoróval (7)',
+            'hu' => 'Karfiolok, fűszeres mogyoróval (3,7,8)',
             'de' => 'Blumenkohl mit gewürtzte Nuss',
             'en' => 'Cauliflower with Spicy Nuts'
         ],
@@ -70,7 +70,7 @@ return [
     [
         'category_id' => 3,
         'name' => [
-            'hu' => 'Házi szélesmetélt, bolognai raguval és parmezán sajttal (1,2,3,8)',
+            'hu' => 'Házi szélesmetélt, bolognai raguval és parmezán sajttal (1,3,7)',
             'de' => 'Hausgemachte Bandnudel mit Ragu Bolognese und Parmesan',
             'en' => 'Homemade Fettuccine with Bolognese Sauce and Parmesan Cheese'
         ],
@@ -81,7 +81,7 @@ return [
     [
         'category_id' => 3,
         'name' => [
-            'hu' => 'Gnocchi Sorrentina “DOP”, friss bazsalikommal és Buffala mozzarellával (1,2,3)',
+            'hu' => 'Gnocchi Sorrentina “DOP”, friss bazsalikommal és Buffala mozzarellával (1,3,7)',
             'de' => 'Gnocchi Sorrentina “DOP”, frische Basilikum und Buffala Mozzarella',
             'en' => 'Gnocchi Sorrentina D.O.P. with Fresh Basil and Buffalo Mozzarella Cheese'
         ],
@@ -92,7 +92,7 @@ return [
     [
         'category_id' => 3,
         'name' => [
-            'hu' => 'Spagetti Aglio e olio (1,2,3)',
+            'hu' => 'Spagetti Aglio e olio (1)',
             'de' => 'Spaghetti Aglio e olio',
             'en' => 'Spaghetti Aglio e Olio'
         ],
@@ -103,7 +103,7 @@ return [
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Szarvas gerinc filé (150g), “Burgundi” gombaraguval és burgonyapürével (1,6,8)',
+            'hu' => 'Szarvas gerinc filé (150g), “Burgundi” gombaraguval és burgonyapürével (7,9,10)',
             'de' => 'Hirschrücken Filet (150g), “Burgunder” Pilzragu und Kartoffelpüre',
             'en' => 'Venison Sirloin (150 g) with Burgundy Mushroom Ragout and Mashed Potatoes'
         ],
@@ -114,7 +114,7 @@ return [
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Kijevi jércemell petrezselymes burgonyával (1,2,3)',
+            'hu' => 'Kijevi jércemell petrezselymes burgonyával (1,3,7)',
             'de' => 'Kiewer Hühnerbrust mit Petersilienkartoffel',
             'en' => 'Chicken Kiev with Parsley Potatoes'
         ],
@@ -125,7 +125,7 @@ return [
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Füstön sült csirke “hortobágyi” (1,2,3,8)',
+            'hu' => 'Füstön sült csirke “hortobágyi” (1,3,7)',
             'de' => 'Im Rauch gebackene Hühner “Hortobágyer”',
             'en' => 'Smoked Roast Chicken a la Hortobágy'
         ],
@@ -136,7 +136,7 @@ return [
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Borjú bécsi, burgonyasalátával (2,3)',
+            'hu' => 'Borjú bécsi, burgonyasalátával (1,3,7,10)',
             'de' => 'Kalb Wiener mit Kartoffelsalat',
             'en' => 'Veal Wienerschnitzel with Potato Salad'
         ],
@@ -147,7 +147,7 @@ return [
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Szalontüdő szalvéta gombóccal (1,2,3,8,10)',
+            'hu' => 'Szalontüdő szalvéta gombóccal (1,3,7,9,10)',
             'de' => 'Innereienragout mit Serviettenknödel',
             'en' => 'Tripe Fricassee with Yeast Dumplings'
         ],
@@ -169,7 +169,7 @@ return [
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Cézár saláta fokhagymás garnélával (1,2,4,6,10)',
+            'hu' => 'Cézár saláta fokhagymás garnélával (1,3,4,7,10,11)',
             'de' => 'oder Knoblauch-Garnelen',
             'en' => 'Caesar Salad with Garlic Prawns'
         ],
@@ -191,7 +191,7 @@ return [
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Tengeri süllő filé bőrén sütve, citrusos vajmártással és sült répával (1,5,6,9)',
+            'hu' => 'Tengeri süllő filé bőrén sütve, citrusos vajmártással és sült répával (3,6,7,9)',
             'de' => 'See Barsch Filet auf Haut gebacken mit Zitrus-Butter Soße und gebackene Karotte',
             'en' => 'Crispy Skin Sea Bass Fillet with Citrus Butter Sauce and Roasted Carrots'
         ],
@@ -202,7 +202,7 @@ return [
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Sült cékla, juhsajttal, dióval, korianderrel és sumach-al (1,7)',
+            'hu' => 'Sült cékla, juhsajttal, dióval, korianderrel és sumach-al (1,7,8)',
             'de' => 'Gebackene Rote Bete mit Schafskäse, Walnuss, Koriander und Sumach',
             'en' => 'Roasted Beet with Sheep’s Cheese, Walnuts, Coriander and Sumac'
         ],
@@ -279,7 +279,7 @@ return [
     [
         'category_id' => 7,
         'name' => [
-            'hu' => 'Szilvás gombóc, fahéjas-karamellás morzsával és szilva raguval (2,3)',
+            'hu' => 'Szilvás gombóc, fahéjas-karamellás morzsával és szilva raguval (1,3,7)',
             'de' => 'Pflaumenknödel mit Zimt-Karamell Streusel und Pflaumenragu',
             'en' => 'Plum Dumpling with Cinnamon and Caramel Crumb and Stewed Plums'
         ],
@@ -290,7 +290,7 @@ return [
     [
         'category_id' => 7,
         'name' => [
-            'hu' => 'Somlói galuska, pirított dióval és rumos arany mazsolával (1,2,3,7)',
+            'hu' => 'Somlói galuska, pirított dióval és rumos arany mazsolával (1,3,7,8)',
             'de' => 'Somlauer mit geröstete Walnuss und Rum-Rosine',
             'en' => 'Somló Trifle with Roasted Walnuts and Rum-soaked Golden Raisins'
         ],
@@ -301,7 +301,7 @@ return [
     [
         'category_id' => 7,
         'name' => [
-            'hu' => '“Citromtart” (1,2,3)',
+            'hu' => '“Citromtart” (1,3,7)',
             'de' => '“Zitronentart”',
             'en' => 'Lemon Tart'
         ],
@@ -345,7 +345,7 @@ return [
     [
         'category_id' => 9,
         'name' => [
-            'hu' => 'Húsleves cérnametélttel',
+            'hu' => 'Húsleves cérnametélttel (1,3,9)',
             'de' => 'Brühe mit Fadennudel',
             'en' => 'Meat Soup with Vermicelli Pasta'
         ],
@@ -356,7 +356,7 @@ return [
     [
         'category_id' => 9,
         'name' => [
-            'hu' => 'Rántott csirkemell sültburgonyával',
+            'hu' => 'Rántott csirkemell sültburgonyával (1,3)',
             'de' => 'Gebackene Hühnerbrust mit Pommes',
             'en' => 'Breaded Chicken Breast with Fries'
         ],
@@ -367,7 +367,7 @@ return [
     [
         'category_id' => 9,
         'name' => [
-            'hu' => 'Palacsinta kakaós, lekváros',
+            'hu' => 'Palacsinta kakaós, lekváros (1,3,7)',
             'de' => 'Palatschinken Kakaopulver, Marmelade',
             'en' => 'Crêpes filled with Cocoa or Jam'
         ],

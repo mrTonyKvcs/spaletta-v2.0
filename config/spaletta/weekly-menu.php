@@ -57,7 +57,7 @@ return [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Savanyú burgonyaleves kolbászmorzsával',
+                        'name'  => 'Húsleves vajas daragaluskával',
                         'price' => 1300
                     ]
                 ]
@@ -66,7 +66,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Gnocchi Sorrentina mozzarellával',
+                        'name' => 'Sertéskaraj orly módra, snidlinges burgonyapüré',
                         'price' => 2500
                     ],
                 ]
@@ -75,7 +75,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Zsuzsi palacsinta vanília fagylalttal',
+                        'name' => 'Csörögefánk áfonyamártással',
                         'price' => 1200
                     ]
                 ]

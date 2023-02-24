@@ -4,7 +4,7 @@ return [
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Hortobágyi Angus marha tatár (100g), kaprival, dijoni mustárral és pirítóssal (1,2,6,10)',
+            'hu' => 'Hortobágyi Angus marha tatár (100g), kaprival, dijoni mustárral és pirítóssal (1,7,10)',
             'de' => 'Hortobágyer Angus Beef Tatare (100g), Kaper, Dijoner Senf und Toast',
             'en' => 'Hortobágy Angus Beef Tartare (100 g) with Capers, Dijon Mustard and Toast'
         ],
@@ -15,7 +15,7 @@ return [
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Kencék - tonhalkrém, humusz tahinivel, kacsarilette (1,2,5,6,9,10)',
+            'hu' => 'Kencék - tonhalkrém, humusz tahinivel, kacsarilette (1,4,7,11)',
             'de' => 'Aufstrich – Thunfisch creme, Hummus mit Tahini, Entenrilette',
             'en' => 'Spreads – Tuna Spread, Hummus with Tahini, Duck Rilettes'
         ],
@@ -26,7 +26,7 @@ return [
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Sajtok (1,2,7)',
+            'hu' => 'Sajtok (1,7)',
             'de' => 'Käse',
             'en' => 'Cheeses'
         ],
@@ -41,7 +41,7 @@ return [
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Sonkák',
+            'hu' => 'Sonkák (1)',
             'de' => 'Schinken',
             'en' => 'Hams'
         ],
@@ -56,7 +56,7 @@ return [
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Spaletta Burger, sült burgonya, ketchup (Hortobágyi Angusz)(1,2,3,6,9,10)',
+            'hu' => 'Spaletta Burger, sült burgonya, ketchup (Hortobágyi Angusz)(1,3,6,7,10,11)',
             'de' => 'Spaletta Burger, Pommes, Ketchup (Hortobágyer Angus)',
             'en' => '“Spaletta” Hortobágy Angus Beef Burger with Fries and Ketchup'
         ],
@@ -67,7 +67,7 @@ return [
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Bao bun csirkével, hoi sin szósszal és korianderrel (2,3,6,9)',
+            'hu' => 'Bao bun csirkével, hoi sin szósszal és korianderrel (1,3,6,7,11)',
             'de' => 'Bao Bun mit Hühner, Hoi Sin und Koriander',
             'en' => 'Chicken Bao Bun with Hoisin Sauce and Coriander'
         ],
@@ -78,7 +78,7 @@ return [
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Spaletta kosár - csípős Csirke szárny, ragacsos sertésoldalas rántott csirkecomb filé, res zöldségek, bbq mártás, joghurtos kapros mártás (1,2,3,6,8,9)',
+            'hu' => 'Spaletta kosár - csípős Csirke szárny, ragacsos sertésoldalas rántott csirkecomb filé, res zöldségek, bbq mártás, joghurtos kapros mártás (1,3,6,7,9,10,11)',
             'de' => 'Spaletta Korb - gewürtzt Chicken Wings, Schweine Rippeln, gebackene Hühnerkeule Filet, knusprige Gemüse, BBQ Soße, Joghurt-Dill Dip',
             'en' => '“Spaletta” Basket – Spicy Chicken Wings, Sticky Ribs, Breaded Boneless Chicken Thigh, Crunchy Vegetables Barbeque Sauce, Dill and Yogurt Dipping Sauce'
         ],
@@ -89,7 +89,7 @@ return [
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Óriás sertéscsülök bajor káposztával és pirított nudlival (2,3,10)',
+            'hu' => 'Óriás sertéscsülök bajor káposztával és pirított nudlival (1,3,7,10)',
             'de' => 'Riesen Schweinhaxe mit Kraut und Schupfnudel',
             'en' => 'Giant Pork Knuckle with Bavarian Cabbage and Toasted Gnocchi'
         ],
