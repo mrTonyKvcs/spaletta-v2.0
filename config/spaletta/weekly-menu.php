@@ -2,14 +2,15 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.02.14. - 2023.02.17.',
+    'menu-date' => '2023.03.08. - 2023.03.11.',
+    'saturday-date' => '2023.02.25.',
     'menu' => [
         'first-courses' => [
             'name' => 'Előétel',
             'items' => [
                 [
-                'name'  => 'Humusz',
-                'price' => 1100
+                    'name'  => 'Füstölt libamell, lilahagyma chutney',
+                    'price' => 1200
                 ]
             ]
         ],
@@ -17,8 +18,8 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                'name'  => 'Savanyú burgonyaleves kolbászmorzsával',
-                'price' => 1300
+                    'name'  => 'Karfiol krémleves',
+                    'price' => 1100
                 ]
             ]
         ],
@@ -26,16 +27,12 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Gnocchi Sorrentina mozzarellával',
+                    'name' => 'Csirkecomb paprikás, galuska',
                     'price' => 2500
                 ],
                 [
-                    'name' => 'Diós metélt',
-                    'price' => 2500
-                ],
-                [
-                    'name' => 'Rántott csirkecomb petrezselymes burgonyával',
-                    'price' => 2500
+                    'name' => 'Lassan sült sertéstarja, zöldséges jázminrizs',
+                    'price' => 2600
                 ],
             ]
         ],
@@ -43,8 +40,40 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Zsuzsi palacsinta vanília fagylalttal',
+                    'name' => 'Somlói galuska',
                     'price' => 1200
+                ]
+            ]
+        ]
+    ],
+    'saturday-menu' => [
+        'price' => 5000,
+        'items' => [
+            'soup' => [
+                'name' => 'Leves',
+                'items' => [
+                    [
+                        'name'  => 'Húsleves vajas daragaluskával',
+                        'price' => 1300
+                    ]
+                ]
+            ],
+            'main-courses' => [
+                'name' => 'Főétel',
+                'items' => [
+                    [
+                        'name' => 'Sertéskaraj orly módra, snidlinges burgonyapüré',
+                        'price' => 2500
+                    ],
+                ]
+            ],
+            'desserts' => [
+                'name' => 'Desszert',
+                'items' => [
+                    [
+                        'name' => 'Csörögefánk áfonyamártással',
+                        'price' => 1200
+                    ]
                 ]
             ]
         ]
