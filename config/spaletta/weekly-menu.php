@@ -2,15 +2,15 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.03.01. - 2023.03.04.',
+    'menu-date' => '2023.03.08. - 2023.03.11.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         'first-courses' => [
             'name' => 'Előétel',
             'items' => [
                 [
-                    'name'  => 'Hideg karfiolok fűszeres magokkal',
-                    'price' => 1300
+                    'name'  => 'Füstölt libamell, lilahagyma chutney',
+                    'price' => 1200
                 ]
             ]
         ],
@@ -18,8 +18,8 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Gomba consomme- gombás tortellini',
-                    'price' => 1200
+                    'name'  => 'Karfiol krémleves',
+                    'price' => 1100
                 ]
             ]
         ],
@@ -27,12 +27,12 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'BBQ sertésoldalas – póréhagymás burgonyapüré',
-                    'price' => 2600
+                    'name' => 'Csirkecomb paprikás, galuska',
+                    'price' => 2500
                 ],
                 [
-                    'name' => 'Pestos pappardelle tészta',
-                    'price' => 2300
+                    'name' => 'Lassan sült sertéstarja, zöldséges jázminrizs',
+                    'price' => 2600
                 ],
             ]
         ],
@@ -40,7 +40,7 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Túrós palacsinta',
+                    'name' => 'Somlói galuska',
                     'price' => 1200
                 ]
             ]
