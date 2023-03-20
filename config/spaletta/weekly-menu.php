@@ -2,15 +2,15 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.03.15. - 2023.03.18.',
+    'menu-date' => '2023.03.22. - 2023.03.25.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         'first-courses' => [
             'name' => 'Előétel',
             'items' => [
                 [
-                    'name'  => 'Zöldséges ravioli(G,L)',
-                    'price' => 1300
+                    'name'  => 'Sült cékla, joghurt,dió,koriander',
+                    'price' => 1200
                 ]
             ]
         ],
@@ -18,8 +18,8 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Paradicsomleves,fűszeres vadrizs',
-                    'price' => 1200
+                    'name'  => 'Ázsiai húsleves, rizstészta, zöldségek',
+                    'price' => 1300
                 ]
             ]
         ],
@@ -27,12 +27,12 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Rakott burgonya(L)',
-                    'price' => 2000
+                    'name' => 'Zöldborsó főzelék, medvehagyma, petrezselyem, sajtos bundáskenyér',
+                    'price' => 2200
                 ],
                 [
-                    'name' => 'Thai currys csirkemell, bulgur(G)',
-                    'price' => 2500
+                    'name' => 'Ragacsos sertéstarja, jázminrizs, pakchoi',
+                    'price' => 2600
                 ],
             ]
         ],
@@ -40,7 +40,7 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Creme brulée(L)',
+                    'name' => 'Túróspalacsinta',
                     'price' => 1200
                 ]
             ]
