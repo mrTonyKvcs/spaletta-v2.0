@@ -2,15 +2,15 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.03.22. - 2023.03.25.',
+    'menu-date' => '2023.03.30. - 2023.04.01.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         'first-courses' => [
             'name' => 'Előétel',
             'items' => [
                 [
-                    'name'  => 'Sült cékla, joghurt,dió,koriander',
-                    'price' => 1200
+                    'name'  => 'Vitello tonnato',
+                    'price' => 1400
                 ]
             ]
         ],
@@ -18,8 +18,8 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Ázsiai húsleves, rizstészta, zöldségek',
-                    'price' => 1300
+                    'name'  => 'Sárgaborsó krémleves, karamellizált hagymával',
+                    'price' => 1200
                 ]
             ]
         ],
@@ -27,12 +27,12 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Zöldborsó főzelék, medvehagyma, petrezselyem, sajtos bundáskenyér',
-                    'price' => 2200
+                    'name' => 'Házi tagliatelle medvehagyma pesztóval',
+                    'price' => 2300
                 ],
                 [
-                    'name' => 'Ragacsos sertéstarja, jázminrizs, pakchoi',
-                    'price' => 2600
+                    'name' => 'Füstön sült „hentes” sertéskaraj, burgonyapüré',
+                    'price' => 2500
                 ],
             ]
         ],
@@ -41,7 +41,7 @@ return [
             'items' => [
                 [
                     'name' => 'Túróspalacsinta',
-                    'price' => 1200
+                    'price' => 1100
                 ]
             ]
         ]
