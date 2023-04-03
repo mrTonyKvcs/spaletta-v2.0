@@ -2,15 +2,15 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.03.30. - 2023.04.01.',
+    'menu-date' => '2023.04.06. - 2023.04.08.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         'first-courses' => [
             'name' => 'Előétel',
             'items' => [
                 [
-                    'name'  => 'Vitello tonnato',
-                    'price' => 1400
+                    'name'  => 'Orda, tavaszi zöldek',
+                    'price' => 1100
                 ]
             ]
         ],
@@ -18,8 +18,8 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Sárgaborsó krémleves, karamellizált hagymával',
-                    'price' => 1200
+                    'name'  => 'Burgonya krémleves medvehagymával',
+                    'price' => 1300
                 ]
             ]
         ],
@@ -27,11 +27,11 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Házi tagliatelle medvehagyma pesztóval',
-                    'price' => 2300
+                    'name' => '„Finomfőzelék”, tökéletes tojás',
+                    'price' => 2200
                 ],
                 [
-                    'name' => 'Füstön sült „hentes” sertéskaraj, burgonyapüré',
+                    'name' => 'Rizseshús',
                     'price' => 2500
                 ],
             ]
@@ -41,7 +41,7 @@ return [
             'items' => [
                 [
                     'name' => 'Túróspalacsinta',
-                    'price' => 1100
+                    'price' => 1300
                 ]
             ]
         ]
