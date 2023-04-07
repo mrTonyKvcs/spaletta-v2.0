@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="w-full flex flex-col items-center space-y-8">
-            <h1 class="text-2xl font-semibold">Chef: Kovács Attila</h1>
+            <h1 class="text-2xl font-semibold">Chef: Bódis Bence</h1>
             <div class="text-center">
                 {{ __('Allergének: 1. Laktóz, 2. Glutén, 3. Tojás,4. Rákok, Puhatestűek, 5. Hal, 6. Szója, 7. Olajos magvak,
                 8. Zeller, 9. Szezámmag, 10. Mustár') }}
