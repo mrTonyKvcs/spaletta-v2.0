@@ -2,15 +2,15 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.04.06. - 2023.04.08.',
+    'menu-date' => '2023.04.13. - 2023.04.15.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         'first-courses' => [
             'name' => 'Előétel',
             'items' => [
                 [
-                    'name'  => 'Orda, tavaszi zöldek',
-                    'price' => 1100
+                    'name'  => 'Kacsás gyoza, hoisin, káposzta',
+                    'price' => 1200
                 ]
             ]
         ],
@@ -18,7 +18,7 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Burgonya krémleves medvehagymával',
+                    'name'  => 'Bárány raguleves, medvehagymás burgonyagomóc',
                     'price' => 1300
                 ]
             ]
@@ -27,12 +27,12 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => '„Finomfőzelék”, tökéletes tojás',
-                    'price' => 2200
+                    'name' => 'Spaletta harcsapaprikás, túrós tészta, pörc',
+                    'price' => 2500
                 ],
                 [
-                    'name' => 'Rizseshús',
-                    'price' => 2500
+                    'name' => 'Tojásos nokedli, szívsaláta',
+                    'price' => 2200
                 ],
             ]
         ],
@@ -40,7 +40,7 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Túróspalacsinta',
+                    'name' => 'Panna cotta, málna',
                     'price' => 1300
                 ]
             ]
