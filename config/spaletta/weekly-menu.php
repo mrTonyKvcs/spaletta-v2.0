@@ -5,21 +5,21 @@ return [
     'menu-date' => '2023.04.13. - 2023.04.15.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
-        'first-courses' => [
-            'name' => 'Előétel',
-            'items' => [
-                [
-                    'name'  => 'Kacsás gyoza, hoisin, káposzta',
-                    'price' => 1200
-                ]
-            ]
-        ],
+        // 'first-courses' => [
+        //     'name' => 'Előétel',
+        //     'items' => [
+        //         [
+        //             'name'  => 'Kacsás gyoza, hoisin, káposzta',
+        //             'price' => 1200
+        //         ]
+        //     ]
+        // ],
         'soup' => [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Bárány raguleves, medvehagymás burgonyagomóc',
-                    'price' => 1300
+                    'name'  => 'Ázsiai húsleves',
+                    'price' => 1400
                 ]
             ]
         ],
@@ -27,12 +27,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Spaletta harcsapaprikás, túrós tészta, pörc',
+                    'name' => 'Paradicsomos újkáposzta, ropogós pontyfarok',
+                    'price' => 2600
+                ],
+                [
+                    'name' => 'Rántott csirkecomb filé, medvehagymás burgonyapüré',
                     'price' => 2500
                 ],
                 [
-                    'name' => 'Tojásos nokedli, szívsaláta',
-                    'price' => 2200
+                    'name' => 'Borsós, spárgás tagliatelle',
+                    'price' => 2400
                 ],
             ]
         ],
@@ -40,7 +44,7 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Panna cotta, málna',
+                    'name' => 'Gyümölcsrizs, eper, karamell',
                     'price' => 1300
                 ]
             ]
