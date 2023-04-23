@@ -2,23 +2,23 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.03.22. - 2023.03.25.',
+    'menu-date' => '2023.04.27. - 2023.04.29.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
-        'first-courses' => [
-            'name' => 'Előétel',
-            'items' => [
-                [
-                    'name'  => 'Sült cékla, joghurt,dió,koriander',
-                    'price' => 1200
-                ]
-            ]
-        ],
+        // 'first-courses' => [
+        //     'name' => 'Előétel',
+        //     'items' => [
+        //         [
+        //             'name'  => 'Kacsás gyoza, hoisin, káposzta',
+        //             'price' => 1200
+        //         ]
+        //     ]
+        // ],
         'soup' => [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Ázsiai húsleves, rizstészta, zöldségek',
+                    'name'  => 'Bableves, füstölt csülök (G)',
                     'price' => 1300
                 ]
             ]
@@ -27,12 +27,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Zöldborsó főzelék, medvehagyma, petrezselyem, sajtos bundáskenyér',
+                    'name' => 'Cordon blue sertéskarajból, rizibizi (G,L)',
+                    'price' => 2300
+                ],
+                [
+                    'name' => 'Paprikás újburgonya, kolbász',
                     'price' => 2200
                 ],
                 [
-                    'name' => 'Ragacsos sertéstarja, jázminrizs, pakchoi',
-                    'price' => 2600
+                    'name' => 'Karalábé főzelék, sajtos bundáskenyér(G,L)',
+                    'price' => 2200
                 ],
             ]
         ],
@@ -40,8 +44,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Túróspalacsinta',
-                    'price' => 1200
+                    'name' => '„Répatorta”(G,L)',
+                    'price' => 1100
                 ]
             ]
         ]
