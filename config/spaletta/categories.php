@@ -230,4 +230,24 @@ return [
         'name' => 'Palackozott belga sörök'
     ],
 
+    [
+        'type_id' => 10,
+        'name' => 'Vacsora menü nélkül'
+    ],
+    [
+        'type_id' => 10,
+        'name' => 'Vacsora menüvel'
+    ],
+    [
+        'type_id' => 10,
+        'name' => 'Gyerek'
+    ],
+    [
+        'type_id' => 10,
+        'name' => 'Felnőtt'
+    ],
+    [
+        'type_id' => 10,
+        'name' => 'Családi'
+    ],
 ];

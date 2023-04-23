@@ -16,7 +16,11 @@
                 <h3 class="text-3xl font-medium leading-6 text-gray-900">Jegyvásárlás</h3>
             </div>
 
-            <x-order.ticket-calculator/>
+            @if ($this->event->more_type_of_price)
+                <x-order.group-ticket-calculator/>
+            @else
+                <x-order.ticket-calculator/>
+            @endif
 
             <div class="px-4 py-5">
                 <div class="py-4 mt-1 text-2xl sm:py-5 sm:px-6">
@@ -44,7 +48,7 @@
         </div>
     </div>
     <div class="py-3 mt-8 text-right ">
-        <button wire:click="submit" wire:loading.class="hidden" type="submit" class="inline-flex justify-center px-4 py-2 text-2xl font-medium text-white uppercase border border-transparent rounded-md shadow-sm bg-gold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        <button {{ ($this->event->more_type_of_price && $this->total == 0 ) ? 'disabled' : '' }} wire:click="submit" wire:loading.class="hidden" type="submit" class="inline-flex justify-center px-4 py-2 text-2xl font-medium text-white uppercase border border-transparent rounded-md shadow-sm bg-gold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
             Jegyvásárlás
         </button>
         <div wire:loading class="text-2xl uppercase">

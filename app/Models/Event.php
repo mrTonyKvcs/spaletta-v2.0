@@ -9,7 +9,7 @@ class Event extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = [ 'slug', 'title', 'image_path', 'content', 'price', 'dinner_price'];
+    protected $fillable = [ 'slug', 'title', 'image_path', 'content', 'more_type_of_price', 'is_paid'];
 
     /**
      * The attributes that should be mutated to dates.
@@ -18,16 +18,21 @@ class Event extends Model
      */
     protected $dates = ['started_at', 'finished_at', 'deleted_at'];
 
-	public function tickets()
-	{
-		return $this->hasMany(Ticket::class);
-	}
+    public function prices()
+    {
+        return $this->morphMany(Price::class, 'priceable');
+    }
+
+    public function tickets()
+    {
+        return $this->hasMany(Ticket::class);
+    }
 
     public function scopeActive($query)
     {
         return $query
             ->orWhere('finished_at', '>=', now());
-            // ->where('started_at', '>=', now())
-            // ->where('finished_at', '<=', now());
+        // ->where('started_at', '>=', now())
+        // ->where('finished_at', '<=', now());
     }
 }

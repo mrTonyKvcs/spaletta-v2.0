@@ -21,8 +21,6 @@ trait InvoiceTrait
 
     public function createInvoice($data)
     {
-        $priceWithoutTax = $data['price'] / 1.27;
-        $tax = $data['price'] - $priceWithoutTax;
 
         $agent = SzamlaAgentAPI::create('unjd4fpyfnz3unjd4fntm4wvunjd4frtmp2eunjd4f');
         // tony's api key
@@ -36,16 +34,21 @@ trait InvoiceTrait
         $invoice = new Invoice(Invoice::INVOICE_TYPE_E_INVOICE);
         // Vevő adatainak hozzáadása (kötelezően kitöltendő adatokkal)
         $invoice->setBuyer(new Buyer($data['name'], strval($data['zip']), $data['city'], $data['street'] . ' ' . $data['house_number']));
-        // Számla tétel összeállítása alapértelmezett adatokkal (1 db tétel 27%-os ÁFA tartalommal)
-        $item = new InvoiceItem($data['event_name'], $priceWithoutTax * $data['quantity']);
-        // Tétel nettó értéke
-        $item->setNetPrice($priceWithoutTax * $data['quantity']);
-        // Tétel ÁFA értéke
-        $item->setVatAmount($tax * $data['quantity']);
-        // Tétel bruttó értéke
-        $item->setGrossAmount($data['price'] * $data['quantity']);
-        // Tétel hozzáadása a számlához
-        $invoice->addItem($item);
+
+        foreach($data['prices'] as $ticketPrice) {
+            $priceWithoutTax = $ticketPrice['price'] / 1.27;
+            $tax = $ticketPrice['price'] - $priceWithoutTax;
+            // Számla tétel összeállítása alapértelmezett adatokkal (1 db tétel 27%-os ÁFA tartalommal)
+            $item = new InvoiceItem($data['event_name'] . ' | ' . $ticketPrice['category']['name'], $priceWithoutTax * $ticketPrice['quantity']);
+            // Tétel nettó értéke
+            $item->setNetPrice($priceWithoutTax * $ticketPrice['quantity']);
+            // Tétel ÁFA értéke
+            $item->setVatAmount($tax * $ticketPrice['quantity']);
+            // Tétel bruttó értéke
+            $item->setGrossAmount($ticketPrice['price'] * $ticketPrice['quantity']);
+            // Tétel hozzáadása a számlához
+            $invoice->addItem($item);
+        }
 
         // Számla elkészítése
         $result = $agent->generateInvoice($invoice);
