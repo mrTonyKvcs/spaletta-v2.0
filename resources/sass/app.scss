@@ -91,6 +91,7 @@ html {
 
 .reservation-bg {
     background-image: url('../images/reservations.jpg');
+    background-position: center;
 }
 
 .events-bg {
@@ -113,8 +114,13 @@ html {
     background-image: url('../images/karacsony.jpg');
 }
 
-.menu-bg {
-    background-image: url('../images/menu-bg.jpg');
+.restaurante-bg {
+    background-image: url('../images/restaurante-bg.jpg');
+}
+
+.bar-bg {
+    background-image: url('../images/bar-bg.jpg');
+    background-position: bottom;
 }
 
 .bg-zoom {

@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.04.13. - 2023.04.15.',
+    'menu-date' => '2023.04.27. - 2023.04.29.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         // 'first-courses' => [
@@ -18,8 +18,8 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Ázsiai húsleves',
-                    'price' => 1400
+                    'name'  => 'Bableves, füstölt csülök (G)',
+                    'price' => 1300
                 ]
             ]
         ],
@@ -27,16 +27,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Paradicsomos újkáposzta, ropogós pontyfarok',
-                    'price' => 2600
+                    'name' => 'Cordon blue sertéskarajból, rizibizi (G,L)',
+                    'price' => 2300
                 ],
                 [
-                    'name' => 'Rántott csirkecomb filé, medvehagymás burgonyapüré',
-                    'price' => 2500
+                    'name' => 'Paprikás újburgonya, kolbász',
+                    'price' => 2200
                 ],
                 [
-                    'name' => 'Borsós, spárgás tagliatelle',
-                    'price' => 2400
+                    'name' => 'Karalábé főzelék, sajtos bundáskenyér(G,L)',
+                    'price' => 2200
                 ],
             ]
         ],
@@ -44,8 +44,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Gyümölcsrizs, eper, karamell',
-                    'price' => 1300
+                    'name' => '„Répatorta”(G,L)',
+                    'price' => 1100
                 ]
             ]
         ]

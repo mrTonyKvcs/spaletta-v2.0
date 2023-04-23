@@ -1,4 +1,4 @@
-<div class="lg:grid lg:grid-cols-2 lg:gap-24 text-gray48 w-full my-12 space-y-10 md:space-y-0">
+<div class="lg:grid  lg:gap-24 text-gray48 w-full md:w-2/3 my-12 space-y-10 md:space-y-0">
     @foreach (config('spaletta.weekly-menu.menu') as $menu)
     <div class="flex flex-col items-center md:w-full">
         <h3 class="text-4xl uppercase font-sembold text-gray2e">{{ __($menu['name']) }}</h3>

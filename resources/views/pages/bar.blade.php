@@ -9,7 +9,7 @@
 @endsection
 
 <x-layout>
-    <x-header background="menu">
+    <x-header background="bar">
         {{ __($title) }}
     </x-header>
     <x-section>
