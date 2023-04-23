@@ -62,7 +62,7 @@ class BuyTicket extends Component
         // }
 
         //Fake
-        $this->invoiceData = $this->testData();
+        // $this->invoiceData = $this->testData();
     }
 
     public function render()
@@ -164,7 +164,7 @@ class BuyTicket extends Component
                 });
         } else {
             $ticketData['total'] = $this->activePrice;
-            $ticketType = $this->ticketTypes->where('quantity', '>', 0)->first();
+            $ticketType = $this->ticketTypes->where('price', $this->activePrice)->first();
             TicketSold::create([
                 'ticket_id'     => $ticket->id,
                 'category_id'   => $ticketType->category_id,
