@@ -37,8 +37,8 @@
         <div class="w-full flex flex-col items-center space-y-8">
             <h1 class="text-2xl font-semibold">Chef: Bódis Bence</h1>
             <div class="text-center">
-                {{ __('Allergének: 1. Laktóz, 2. Glutén, 3. Tojás,4. Rákok, Puhatestűek, 5. Hal, 6. Szója, 7. Olajos magvak,
-                8. Zeller, 9. Szezámmag, 10. Mustár') }}
+                {{ __('1. Glutén 2. Rákfélék 3. Tojás 4. Halak 5. Földimogyoró 6. Szójabab 7. Tej 8. Diófélék 9. Zeller
+                10. Mustár 11. Szezámmag') }}
             </div>
         </div>
     </x-section>

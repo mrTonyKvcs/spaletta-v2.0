@@ -86,15 +86,4 @@ return [
         'price' => 4500,
         'wine' => ''
     ],
-    [
-        'category_id' => 10,
-        'name' => [
-            'hu' => 'Óriás sertéscsülök bajor káposztával és pirított nudlival (1,3,7,10)',
-            'de' => 'Riesen Schweinhaxe mit Kraut und Schupfnudel',
-            'en' => 'Giant Pork Knuckle with Bavarian Cabbage and Toasted Gnocchi'
-        ],
-        'comment' => '',
-        'price' => 7500,
-        'wine' => ''
-    ],
 ];
