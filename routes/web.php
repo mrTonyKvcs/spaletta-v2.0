@@ -40,123 +40,123 @@ Route::group(
     'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'localize']
 ],
     function () {
-    Route::get('/', function (Request $request) {
-        return view('pages.index');
-    });
+        Route::get('/', function (Request $request) {
+            return view('pages.index');
+        });
 
-    // Route::get('rendeles/{id}', function (Request $request) {
-    //     return view('pages.order', ['request' => $request]);
-    // })->name('pages.order')->middleware('auth');
+        // Route::get('rendeles/{id}', function (Request $request) {
+        //     return view('pages.order', ['request' => $request]);
+        // })->name('pages.order')->middleware('auth');
 
-    // Route::get(LaravelLocalization::transRoute('routes.orders') . '/{order}', \App\Http\Livewire\Order::class)
-    //     ->name('pages.order')
-    //     ->middleware('auth');
+        // Route::get(LaravelLocalization::transRoute('routes.orders') . '/{order}', \App\Http\Livewire\Order::class)
+        //     ->name('pages.order')
+        //     ->middleware('auth');
 
-    // Route::get(LaravelLocalization::transRoute('routes.orders'), \App\Http\Livewire\User\AllOrder::class)
-    //     ->name('pages.user-orders')
-    //     ->middleware('auth');
+        // Route::get(LaravelLocalization::transRoute('routes.orders'), \App\Http\Livewire\User\AllOrder::class)
+        //     ->name('pages.user-orders')
+        //     ->middleware('auth');
 
-    // Route::get(LaravelLocalization::transRoute('routes.cart'), function () {
-    //     return view('pages.cart');
-    // })->name('pages.cart');
+        // Route::get(LaravelLocalization::transRoute('routes.cart'), function () {
+        //     return view('pages.cart');
+        // })->name('pages.cart');
 
-    // Route::get(LaravelLocalization::transRoute('routes.order'), function () {
-    //     return view('pages.restaurant');
-    // })->name('pages.restaurant');
+        // Route::get(LaravelLocalization::transRoute('routes.order'), function () {
+        //     return view('pages.restaurant');
+        // })->name('pages.restaurant');
 
-    // Route::get(LaravelLocalization::transRoute('routes.menu'), function () {
-    //     return redirect('https://www.facebook.com/spalettaetterem/menu/?id=100036783267355&sk=menu');
-    //     $title = 'Étlap';
-    //     $categories = Category::where('type_id', 1)->with('items')->get();
-    //     return view('pages.restaurant', compact('categories', 'title'));
-    // })->name('pages.restaurant');
+        // Route::get(LaravelLocalization::transRoute('routes.menu'), function () {
+        //     return redirect('https://www.facebook.com/spalettaetterem/menu/?id=100036783267355&sk=menu');
+        //     $title = 'Étlap';
+        //     $categories = Category::where('type_id', 1)->with('items')->get();
+        //     return view('pages.restaurant', compact('categories', 'title'));
+        // })->name('pages.restaurant');
 
-    Route::get(LaravelLocalization::transRoute('routes.restaurant'), function () {
-        $title = 'Étterem Ajánló';
-        $categories = Category::where('type_id', 1)->with('items')->get();
-        return view('pages.restaurant', compact('categories', 'title'));
-    })->name('pages.restaurant');
+        Route::get(LaravelLocalization::transRoute('routes.restaurant'), function () {
+            $title = 'Étterem Ajánló';
+            $categories = Category::where('type_id', 1)->with('items')->get();
+            return view('pages.restaurant', compact('categories', 'title'));
+        })->name('pages.restaurant');
 
-    Route::get(LaravelLocalization::transRoute('routes.bar'), function () {
-        $title = 'Sörház Ajánló';
-        $products = Product::where('category_id', 61)->get();
-        return view('pages.bar', compact('products', 'title'));
-    })->name('pages.bar');
+        Route::get(LaravelLocalization::transRoute('routes.bar'), function () {
+            $title = 'Sörház Ajánló';
+            $products = Product::where('category_id', 10)->get();
+            return view('pages.bar', compact('products', 'title'));
+        })->name('pages.bar');
 
-    // Route::get('oktobierfest', function () {
-    //     $title = 'OKTOBIERFEST Étlap';
-    //     $categories = Category::where('type_id', 8)->with('items')->get();
-    //     return view('pages.restaur`ant', compact('categories', 'title'));
-    // })->name('pages.oktobierfest');
+        // Route::get('oktobierfest', function () {
+        //     $title = 'OKTOBIERFEST Étlap';
+        //     $categories = Category::where('type_id', 8)->with('items')->get();
+        //     return view('pages.restaur`ant', compact('categories', 'title'));
+        // })->name('pages.oktobierfest');
 
-    Route::get(LaravelLocalization::transRoute('routes.reservation'), function () {
-        return view('pages.reservation');
-    })->name('pages.reservation');
+        Route::get(LaravelLocalization::transRoute('routes.reservation'), function () {
+            return view('pages.reservation');
+        })->name('pages.reservation');
 
-    // Route::get('sikeres-vasarlas/{id}', function ($id) {
-    //     $ticket = Ticket::find($id);
+        // Route::get('sikeres-vasarlas/{id}', function ($id) {
+        //     $ticket = Ticket::find($id);
 
-    //     return view('pages.successful-shopping', [
-    //         'ticket' => $ticket
-    //     ]);
-    // })->name('pages.successful-shopping');
+        //     return view('pages.successful-shopping', [
+        //         'ticket' => $ticket
+        //     ]);
+        // })->name('pages.successful-shopping');
 
-    Route::get('check-in/{id}/{orderNumber}', [
-        'as' => 'ticket.check-in',
-        'uses' => 'App\Http\Controllers\TicketController@checkIn'
-    ]);
-
-    Route::get('sikeres-vasarlas-visszaigazolasa/{id}/{orderNumber}', [
-        'as' => 'pages.successful-payment',
-        'uses' => 'App\Http\Controllers\TicketController@successfullyPayment'
-    ]);
-
-    Route::get('sikertelen-fizetes/{transaction}', [
-        'as' => 'pages.payment-error',
-        'uses' => 'App\Http\Controllers\TicketController@paymentError'
-    ]);
-
-    // Route::get(LaravelLocalization::transRoute('routes.events'), function () {
-    //     return view('pages.events');
-    // })->name('pages.events');
-
-    Route::get(LaravelLocalization::transRoute('routes.gallery'), function () {
-        $gallery = collect(config('spaletta.gallery-images'))->sortBy('name')->reverse()->toArray();
-        return view('pages.gallery', [
-            'gallery' => $gallery
+        Route::get('check-in/{id}/{orderNumber}', [
+            'as' => 'ticket.check-in',
+            'uses' => 'App\Http\Controllers\TicketController@checkIn'
         ]);
-    })->name('pages.gallery');
 
-    Route::get(LaravelLocalization::transRoute('routes.about'), function () {
-        return view('pages.about');
-    })->name('pages.about');
+        Route::get('sikeres-vasarlas-visszaigazolasa/{id}/{orderNumber}', [
+            'as' => 'pages.successful-payment',
+            'uses' => 'App\Http\Controllers\TicketController@successfullyPayment'
+        ]);
 
-    Route::get(LaravelLocalization::transRoute('routes.contact'), function () {
-        return view('pages.contact');
-    })->name('pages.contact');
+        Route::get('sikertelen-fizetes/{transaction}', [
+            'as' => 'pages.payment-error',
+            'uses' => 'App\Http\Controllers\TicketController@paymentError'
+        ]);
 
-    Route::get(LaravelLocalization::transRoute('routes.signin'), function () {
-        return view('auth.sign-in');
-    })->name('auth.signin');
+        // Route::get(LaravelLocalization::transRoute('routes.events'), function () {
+        //     return view('pages.events');
+        // })->name('pages.events');
 
-    Route::get(LaravelLocalization::transRoute('routes.events'), [
-        'as'    => 'events.index',
-        'uses' => 'App\Http\Controllers\EventsController'
-    ]);
+        Route::get(LaravelLocalization::transRoute('routes.gallery'), function () {
+            $gallery = collect(config('spaletta.gallery-images'))->sortBy('name')->reverse()->toArray();
+            return view('pages.gallery', [
+                'gallery' => $gallery
+            ]);
+        })->name('pages.gallery');
 
-    Route::get(LaravelLocalization::transRoute('routes.events') . '/{id}', [
-        'as'    => 'events.show',
-        'uses' => 'App\Http\Controllers\EventsController@show'
-    ]);
+        Route::get(LaravelLocalization::transRoute('routes.about'), function () {
+            return view('pages.about');
+        })->name('pages.about');
 
-    Route::get(LaravelLocalization::transRoute('routes.weeklymenu'), function () {
-        return view('pages.weeklymenu');
-    })->name('pages.weeklymenu');
+        Route::get(LaravelLocalization::transRoute('routes.contact'), function () {
+            return view('pages.contact');
+        })->name('pages.contact');
 
-    Route::get(LaravelLocalization::transRoute('routes.landingpage'), function () {
-        return view('pages.landingpage');
-    })->name('pages.landingpage');
-}
+        Route::get(LaravelLocalization::transRoute('routes.signin'), function () {
+            return view('auth.sign-in');
+        })->name('auth.signin');
+
+        Route::get(LaravelLocalization::transRoute('routes.events'), [
+            'as'    => 'events.index',
+            'uses' => 'App\Http\Controllers\EventsController'
+        ]);
+
+        Route::get(LaravelLocalization::transRoute('routes.events') . '/{id}', [
+            'as'    => 'events.show',
+            'uses' => 'App\Http\Controllers\EventsController@show'
+        ]);
+
+        Route::get(LaravelLocalization::transRoute('routes.weeklymenu'), function () {
+            return view('pages.weeklymenu');
+        })->name('pages.weeklymenu');
+
+        Route::get(LaravelLocalization::transRoute('routes.landingpage'), function () {
+            return view('pages.landingpage');
+        })->name('pages.landingpage');
+    }
 );
 
 Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
