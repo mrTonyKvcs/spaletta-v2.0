@@ -254,20 +254,8 @@ return [
         'price' => 1700,
         'wine' => ''
     ],
-    
     [
         'category_id' => 7,
-        'name' => [
-            'hu' => '“Citromtart” (1,3,7)',
-            'de' => '“Zitronentart”',
-            'en' => 'Lemon Tart'
-        ],
-        'comment' => '',
-        'price' => 1950,
-        'wine' => ''
-    ],
-    [
-        'category_id' => 8,
         'name' => [
             'hu' => 'Házi fagylalt',
             'de' => 'Hausgemachtes Eis ',
