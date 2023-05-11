@@ -105,7 +105,9 @@ class SendMailsController extends Controller
 
         if ($day === 'Monday') {
             return false;
-        } elseif ($day === 'Sunday' && $time > '15:40') {
+        } elseif ($day === 'Tuesday') {
+            return false;
+        } elseif ($day === 'Sunday' && $time >= '15:00') {
             return false;
         } elseif ($time < '11:30' || $time > '22:40') {
             return false;
