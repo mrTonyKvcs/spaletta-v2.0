@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.05.23. - 2023.05.27.',
+    'menu-date' => '2023.05.24. - 2023.05.27.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         // 'first-courses' => [
