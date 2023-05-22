@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.05.17. - 2023.05.20.',
+    'menu-date' => '2023.05.23. - 2023.05.27.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         // 'first-courses' => [
@@ -18,7 +18,7 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Halászlé, gyufa tészta',
+                    'name'  => 'Hideg meggyleves, bazsalikom, alma',
                     'price' => 1800
                 ]
             ]
@@ -27,16 +27,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Burgonya főzelék „fasírt”',
-                    'price' => 2400
+                    'name' => 'Csirke, spárgasaláta, mandula”',
+                    'price' => 2600
                 ],
                 [
-                    'name' => 'Spárgás rizottó',
-                    'price' => 2300
+                    'name' => 'Ragacsos malac császárhús, csípős - hideg káposzta',
+                    'price' => 2800
                 ],
                 [
-                    'name' => 'Csirkepaprikás, túrós csusza',
-                    'price' => 2900
+                    'name' => 'Zöldborsó főzelék, sajtos bundás kenyér',
+                    'price' => 2600
                 ],
             ]
         ],
@@ -44,8 +44,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Tejberizs, zöldalma',
-                    'price' => 1100
+                    'name' => 'Vanília fagylalt, eper, habcsók, bazsalikom',
+                    'price' => 1300
                 ]
             ]
         ]
