@@ -86,4 +86,15 @@ return [
         'price' => 4500,
         'wine' => ''
     ],
+    [
+        'category_id' => 10,
+        'name' => [
+            'hu' => 'Óriás sertéscsülök pirított burgonyával (1,3,7,10)',
+            'de' => 'Óriás sertéscsülök pirított burgonyával (1,3,7,10)',
+            'en' => 'Óriás sertéscsülök pirított burgonyával (1,3,7,10)'
+        ],
+        'comment' => '',
+        'price' => 7500,
+        'wine' => ''
+    ],
 ];
