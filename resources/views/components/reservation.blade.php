@@ -27,7 +27,7 @@
     <div>
         <p class="text-2xl font-medium text-center gray ">{{ __('Vendégek') }}</p>
         <select name="persons" id="" class=" bg-white w-full gray outline-none text-center font-medium py-2.5 px-5 text-2xl border-b border-gray-300" required>
-            @for($i = 1; $i <= 20; $i++)
+            @for($i = 1; $i <= 10; $i++)
                 <option value="{{ $i }}">{{ $i }} {{ __('fő') }}</option>
             @endfor
         </select> 
