@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.06.08. - 2023.06.10.',
+    'menu-date' => '2023.06.15. - 2023.06.17.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         // 'first-courses' => [
@@ -18,7 +18,7 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Ázsiai húsleves, zöldséges wonton',
+                    'name'  => 'Meggyleves',
                     'price' => 1400
                 ]
             ]
@@ -27,16 +27,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Spaletta harcsapaprikás',
-                    'price' => 2800
+                    'name' => 'Töltött paprika, újburgonya',
+                    'price' => 2400
                 ],
                 [
-                    'name' => 'Rikottás zöldsaláta',
-                    'price' => 2300
+                    'name' => 'Rántott ponty, uborka',
+                    'price' => 2600
                 ],
                 [
-                    'name' => 'Resztelt máj, újburgonya',
-                    'price' => 2500
+                    'name' => 'Mozzarella, paradicsom, barack',
+                    'price' => 2200
                 ],
             ]
         ],
@@ -44,8 +44,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Madártej',
-                    'price' => 1100
+                    'name' => 'Palacsinta, meggy, vaníliás tejföl',
+                    'price' => 1300
                 ]
             ]
         ]
