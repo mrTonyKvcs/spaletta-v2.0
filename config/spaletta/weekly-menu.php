@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.06.15. - 2023.06.17.',
+    'menu-date' => '2023.06.22. - 2023.06.24.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         // 'first-courses' => [
@@ -18,8 +18,8 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Meggyleves',
-                    'price' => 1400
+                    'name'  => 'Citromleves',
+                    'price' => 1500
                 ]
             ]
         ],
@@ -27,16 +27,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Töltött paprika, újburgonya',
+                    'name' => 'Gulyásos hús',
                     'price' => 2400
                 ],
                 [
-                    'name' => 'Rántott ponty, uborka',
-                    'price' => 2600
+                    'name' => 'Lazacos tagliatelle',
+                    'price' => 2300
                 ],
                 [
-                    'name' => 'Mozzarella, paradicsom, barack',
-                    'price' => 2200
+                    'name' => 'Görögdinnye saláta, feta, olíva',
+                    'price' => 2100
                 ],
             ]
         ],
@@ -44,8 +44,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Palacsinta, meggy, vaníliás tejföl',
-                    'price' => 1300
+                    'name' => 'Barackos pite',
+                    'price' => 1200
                 ]
             ]
         ]
