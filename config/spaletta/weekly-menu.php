@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.06.29. - 2023.07.01.',
+    'menu-date' => '2023.07.06. - 2023.07.08.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         // 'first-courses' => [
@@ -18,8 +18,8 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Egres leves, zöld alma, kapor',
-                    'price' => 1400
+                    'name'  => 'Hideg kápia leves, málna, fűszeres mandula',
+                    'price' => 1500
                 ]
             ]
         ],
@@ -27,16 +27,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Kelkáposzta főzelék, fasírt',
-                    'price' => 2400
-                ],
-                [
-                    'name' => 'Gödöllői csirkecomb, rizibizi',
+                    'name' => 'Rizses hús',
                     'price' => 2600
                 ],
                 [
-                    'name' => 'Bulgur, pesztó, barack',
-                    'price' => 2400
+                    'name' => 'Joghurtos csirkenyárs, grill zöldség, orda',
+                    'price' => 2500
+                ],
+                [
+                    'name' => 'Cukkínis tagliatelle',
+                    'price' => 2500
                 ],
             ]
         ],
@@ -44,7 +44,7 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Mákos nudli, meggy',
+                    'name' => 'Túrógombóc, barack, levendula',
                     'price' => 1300
                 ]
             ]
