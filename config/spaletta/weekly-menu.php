@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.07.12. - 2023.07.15.',
+    'menu-date' => '2023.07.19. - 2023.07.22.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         // 'first-courses' => [
@@ -18,7 +18,7 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Ázsiai csípős-savanyú leves',
+                    'name'  => 'Gazpacho, bazsalikom, pirítós',
                     'price' => 1500
                 ]
             ]
@@ -27,15 +27,15 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Hideg tökfőzelék, fasírt',
-                    'price' => 2400
-                ],
-                [
-                    'name' => 'Zöldcurrys csirkecomb filé, pirított karfiol, lepénykenyér',
+                    'name' => 'Rántott karaj, uborka, tonkatsu szósz',
                     'price' => 2500
                 ],
                 [
-                    'name' => 'Nyáritekercs',
+                    'name' => 'Grillezett Manouri sajt, saláta, nektarin',
+                    'price' => 2300
+                ],
+                [
+                    'name' => 'Házi tagliatelle, paradicsom, parmezán',
                     'price' => 2200
                 ],
             ]
@@ -44,8 +44,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Citromtart',
-                    'price' => 1400
+                    'name' => 'Füge, mascarpone, fűszeres mandula',
+                    'price' => 1200
                 ]
             ]
         ]
