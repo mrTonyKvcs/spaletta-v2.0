@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.07.19. - 2023.07.22.',
+    'menu-date' => '2023.07.26. - 2023.07.29.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         // 'first-courses' => [
@@ -18,8 +18,8 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Gazpacho, bazsalikom, pirítós',
-                    'price' => 1500
+                    'name'  => 'Langyos vajbab leves, kapor, joghurt',
+                    'price' => 1400
                 ]
             ]
         ],
@@ -27,15 +27,15 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Rántott karaj, uborka, tonkatsu szósz',
-                    'price' => 2500
+                    'name' => 'Sertés dagadó, burgonya',
+                    'price' => 2400
                 ],
                 [
-                    'name' => 'Grillezett Manouri sajt, saláta, nektarin',
-                    'price' => 2300
+                    'name' => 'Rántott patiszon, rizibizi, tartár',
+                    'price' => 2200
                 ],
                 [
-                    'name' => 'Házi tagliatelle, paradicsom, parmezán',
+                    'name' => 'Házi tagliatelle, cukkíni, szardella, kapri',
                     'price' => 2200
                 ],
             ]
@@ -44,7 +44,7 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Füge, mascarpone, fűszeres mandula',
+                    'name' => 'Füge, ricotta, crumble',
                     'price' => 1200
                 ]
             ]
