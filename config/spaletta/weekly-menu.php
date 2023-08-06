@@ -18,7 +18,7 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Barack leves, barack salsa',
+                    'name'  => 'Kovászos uborka leves, joghurt, kapor',
                     'price' => 1400
                 ]
             ]
@@ -27,15 +27,15 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Marha oldalas, káposzta, tárkony, paradicsom',
+                    'name' => 'Cordon bleu, burgonya püré, kajszi barack',
                     'price' => 2500
                 ],
                 [
-                    'name' => 'Pisztráng, cukkíni, chimichurri',
+                    'name' => 'Ropogós ponty, zöldségek, szójás vinaigrette',
                     'price' => 2400
                 ],
                 [
-                    'name' => 'Gombás tagliatelle, pecorino',
+                    'name' => 'Cukkíni, sztracsatella, pisztácia, menta',
                     'price' => 2200
                 ],
             ]
@@ -44,8 +44,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => '„Tiramisu”, cantuccini, amaretto',
-                    'price' => 1300
+                    'name' => 'Bogyós gyümölcsök, crumble, tejszín',
+                    'price' => 1200
                 ]
             ]
         ]
