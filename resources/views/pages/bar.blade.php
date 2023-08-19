@@ -36,6 +36,7 @@
         </div>
         <div class="w-full flex flex-col items-center space-y-8">
             <h1 class="text-2xl font-semibold">Chef: Bódis Bence</h1>
+            <h1 class="text-2xl font-semibold">Üzletvezető: Péliné Farkas Nikolett</h1>
             <div class="text-center">
                 {{ __('1. Glutén 2. Rákfélék 3. Tojás 4. Halak 5. Földimogyoró 6. Szójabab 7. Tej 8. Diófélék 9. Zeller
                 10. Mustár 11. Szezámmag') }}
