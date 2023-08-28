@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.08.16. - 2023.08.19.',
+    'menu-date' => '2023.08.31. - 2023.09.02.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         // 'first-courses' => [
@@ -18,8 +18,8 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Paradicsom consommé, sárgadinnye, uborka',
-                    'price' => 1300
+                    'name'  => 'Hideg szilvaleves, gyömbér, szeder',
+                    'price' => 1400
                 ]
             ]
         ],
@@ -27,15 +27,15 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Csirkecomb filé, cukkíni, curry',
+                    'name' => 'Töltött dagadó, snidlinges burgonyapüré',
                     'price' => 2400
                 ],
                 [
-                    'name' => 'Tagliatelle, lazac, paraj',
-                    'price' => 2400
+                    'name' => 'Bőrén sütött pisztráng, tom yum, répák, koriander',
+                    'price' => 2300
                 ],
                 [
-                    'name' => 'Hummusz, cékla, kesudió, koriander',
+                    'name' => 'Rántott laska, rizibizi, tartár',
                     'price' => 2200
                 ],
             ]
@@ -44,8 +44,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Nudli, karamellizált morzsa, szilva, győmbér',
-                    'price' => 1300
+                    'name' => 'Palacsinta, kajszi, levendula',
+                    'price' => 1200
                 ]
             ]
         ]
