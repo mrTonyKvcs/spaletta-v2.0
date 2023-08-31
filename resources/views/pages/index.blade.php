@@ -50,10 +50,10 @@
             <x-button type="gray-transparent"><a href=" https://www.etteremhet.hu/lang/hu/cities/countryside/restaurants/spaletta-etterem-es-sorhaz-kecskemet?search%5Bdate%5D=&search%5Bmeal_type%5D=&search%5Bno_persons%5D=2&search%5Bsearch_query%5D=&sort=name">Asztalfoglalás</a></x-button>
         </div>
     </div>  --}} 
-    <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
+    {{-- <div class="flex flex-col justify-center items-center space-y-8 mt-56 px-6 w-full">
         <h2 class="text-4xl font-medium gold font-libre italic">Kedves Vendégeink !</h2>
         <p class="text-3xl text-center text-gray2e font-medium font-libre italic">Éttermünk augusztus 20-29-ig nyári szünetet tart, augusztus 30-án 16 órától várjuk Vendégeinket!</p>
-    </div>
+    </div> --}}
     <x-section>
         <div class="flex flex-col items-center mt-24 w-full">
             <x-title title="{{ __('Déli ajánló') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}" ></x-title>
