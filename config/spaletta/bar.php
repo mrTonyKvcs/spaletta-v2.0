@@ -4,75 +4,71 @@ return [
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Hortobágyi Angus marha tatár (100g), kaprival, dijoni mustárral és pirítóssal (1,7,10)',
-            'de' => 'Hortobágyer Angus Beef Tatare (100g), Kaper, Dijoner Senf und Toast',
-            'en' => 'Hortobágy Angus Beef Tartare (100 g) with Capers, Dijon Mustard and Toast'
+            'hu' => 'Hortobágyi Angus marha tatár (100g), kaprival, dijoni mustárral és pirítóssal (1,4,10)',
+            'de' => 'Hortobágyer Angus Beef Tatare (100g), Kaper, Dijoner Senf und Toast (1,4,10)',
+            'en' => 'Hortobágy Angus Beef Tartare (100 g) with Capers, Dijon Mustard and Toast (1,4,10)'
         ],
         'comment' => '',
-        'price' => 4500,
+        'price' => 4900,
         'wine' => ''
     ],
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Kencék - tonhalkrém, humusz tahinivel, kacsarilette (1,4,7,11)',
-            'de' => 'Aufstrich – Thunfisch creme, Hummus mit Tahini, Entenrilette',
-            'en' => 'Spreads – Tuna Spread, Hummus with Tahini, Duck Rilettes'
+            'hu' => 'Hummus, tahini, friss zöldségek, sumach, olívaolaj, (1,11)',
+            'de' => 'Hummus, Tahini, frische Gemüse, Sumach, Oliven öl,(1,11)',
+            'en' => 'Hummus, tahini, fresh vegetables, sumac, olive oil (1,11)'
         ],
         'comment' => '',
-        'price' => 3500,
+        'price' => 2400,
         'wine' => ''
     ],
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Sajtok (1,7)',
-            'de' => 'Käse',
-            'en' => 'Cheeses'
+            'hu' => '“Small plate az asztalnak” (1,3,6,7,8,11)',
+            'de' => '“Small plate für den Tisch”(1,3,6,7,8,11)',
+            'en' => '"Small plate for the table" (1,3,6,7,8,11)'
         ],
         'comment' => [
-            'hu' => 'Hegyvidéki félkemény sajt, Sándor Tamás, Mónosbél, Faszenes rouge sajt, Sándor Tamás, Mónosbél, Tekeresvölgyi Matuzsálem sajt, Házi kovászos kenyér',
-            'de' => 'Almkäse, Sándor Tamás, Mónosbél, Kohl-rouge Käse, Sándor Tamás, Mónosbél, Tekeresvölgyer Methusalem Käse, Hausgemachtes Germbrot',
-            'en' => 'Semi-hard Mountain Cheese made by Tamás Sándor from Mónosbél, Charcoal Rouge Cheese made by Tamás Sándor from Mónosbél, Tekeresvölgyi Matuzsálem (aged semi-hard cow’s milk cheese), Homemade Sourdough Bread'
+            'hu' => 'csípős csirkeszárny, pecsenye kacsamáj, ragacsos oldalas, sült cékla, friss sajt, raas el hanout hummus citrusos labneh',
+            'de' => 'würzige Chicken wings, gebratene Entenleber, BBQ Rippeln, gebackene Rote Rübe, frische Käse, Raas el Hanout, Hummus, Zitrus Labneh',
+            'en' => 'Spicy chicken wings, Pan-seared duck liver, BBQ ribs, Baked beetroot, fresh cheese, Ras el Hanout, Hummus, citrus labneh'
         ],
-        'price' => 4500,
+        'price' => 10000,
         'wine' => ''
     ],
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Sonkák (1)',
-            'de' => 'Schinken',
-            'en' => 'Hams'
+            'hu' => 'Ropogós sült csülök, pirított burgonya, pirított savanyú káposzta',
+            'de' => 'Knusprig gebackene Schweinhaxe, geröstete Kartoffel und Sauerkraut,',
+            'en' => 'Crispy baked pork knuckle, roasted potatoes, and Sauerkraut.'
         ],
-        'comment' => [
-            'hu' => 'Mangalica sonka, Monte Nevado, Calabriai pikáns szalámi (kézzel darabolt,6 hónapos érlelésű), Pármai sonka (18 hónapos érlelésű), Házi kovászos kenyér',
-            'de' => 'Mangalica Schinke, Monte Nevado, Calabria gewürtz Salami (6 Monate gelagert), Parma Schinken (18 Monate gelagert), Hausgemachtes Germbrot',
-            'en' => 'Mangalica Ham, Monte Nevado, Calabrese Piccante Salami (aged 6 months, cut by hand), Parma Ham (aged 18 months), Homemade Sourdough Bread'
-        ],
-        'price' => 5600,
+        'comment' => [''],
+        'price' => 7700,
         'wine' => ''
     ],
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Spaletta Burger, sült burgonya, ketchup (Hortobágyi Angusz)(1,3,6,7,10,11)',
-            'de' => 'Spaletta Burger, Pommes, Ketchup (Hortobágyer Angus)',
-            'en' => '“Spaletta” Hortobágy Angus Beef Burger with Fries and Ketchup'
+            'hu' => 'Spaletta Burger, hortobágyi Angus, sült burgonya, ketchup (1,3,4,6,7,10,11)',
+            'de' => 'Spaletta Burger, Pommes, Ketchup (Hortobágyer Angus) (1,3,4,6,7,10,11)',
+            'en' => 'Spaletta Burger with fries, ketchup (Hortobágy Angus) (1,3,4,6,7,10,11)'
         ],
         'comment' => '',
-        'price' => 3500,
+        'price' => 4900,
         'wine' => ''
     ],
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Bao bun csirkével, hoi sin szósszal és korianderrel (1,3,6,7,11)',
-            'de' => 'Bao Bun mit Hühner, Hoi Sin und Koriander',
-            'en' => 'Chicken Bao Bun with Hoisin Sauce and Coriander'
+            'hu' => 'Bao bun, csirke, hoi sin szósz és koriander (1,3,6,7,11)',
+            'de' => 'Bao Bun mit Hühner, Hoi Sin und Koriander (1,3,6,7,11)',
+            'en' => 'Chicken Bao Bun with Hoisin Sauce and Coriander (1,3,6,7,11)'
         ],
         'comment' => '',
-        'price' => 2850,
+        'price' => 3100,
         'wine' => ''
     ],
     [
