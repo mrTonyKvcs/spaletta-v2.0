@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.09.20. - 2023.09.23.',
+    'menu-date' => '2023.09.27. - 2023.09.30.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         // 'first-courses' => [
@@ -18,8 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Tojásleves, zeller',
+                    'name'  => 'Körteleves, körte sorbet, kesudió',
                     'price' => 1300
+                ],
+                [
+                    'name'  => 'Gulyásleves, csipetke',
+                    'price' => 1500
                 ]
             ]
         ],
@@ -27,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Pacal, köröm, kenyér',
+                    'name' => 'Rakott kel, tejföl',
+                    'price' => 2400
+                ],
+                [
+                    'name' => 'Tagliatelle, lazac, aszalt paradicsom',
                     'price' => 2300
                 ],
                 [
-                    'name' => 'Csirkecomb, hoisin, pak choi, mogyoró',
-                    'price' => 2300
-                ],
-                [
-                    'name' => 'Vad brokkoli, paradicsom, kesudió, fekete fokhagyma',
-                    'price' => 2200
+                    'name' => 'Sütőtökös rizottó, pecorinó',
+                    'price' => 2100
                 ],
             ]
         ],
@@ -44,8 +48,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Langyos csoki mousse, körte, tonkabab',
-                    'price' => 1200
+                    'name' => 'Olivás piskóta, gyömbéres szilvaragu, mandula, tejszín',
+                    'price' => 1300
                 ]
             ]
         ]
