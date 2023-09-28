@@ -1,12 +1,12 @@
 <div class="w-full mb-10">
     @include('flash-message')
 </div>
-<form id="reservation" action="{{ route('mail.store', 'Asztalfoglalás')}}" method="POST" class="w-full lg:w-2/3 lg:grid lg:grid-cols-2 lg:gap-6">
+<form x-data="{ checkin: ''}" id="reservation" action="{{ route('mail.store', 'Asztalfoglalás')}}" method="POST" class="w-full lg:w-2/3 lg:grid lg:grid-cols-2 lg:gap-6">
 
     @csrf
     <div class="mb-6">
         <p class="text-2xl font-medium text-center gray">{{ __('Dátum') }}</p>
-        <input type="date" name="checkin" class="bg-white w-full gray outline-none text-center font-medium py-2.5 px-5 text-xl border-b border-gray-300" required>
+        <input x-model="checkin" type="date" name="checkin" class="bg-white w-full gray outline-none text-center font-medium py-2.5 px-5 text-xl border-b border-gray-300" required>
     </div>
     <div class="mb-6">
         <p class="text-2xl font-medium text-center gray">{{ __('Időpont') }}</p>
@@ -27,7 +27,7 @@
     <div>
         <p class="text-2xl font-medium text-center gray ">{{ __('Vendégek') }}</p>
         <select name="persons" id="" class=" bg-white w-full gray outline-none text-center font-medium py-2.5 px-5 text-2xl border-b border-gray-300" required>
-            @for($i = 1; $i <= 20; $i++)
+            @for($i = 1; $i <= 10; $i++)
                 <option value="{{ $i }}">{{ $i }} {{ __('fő') }}</option>
             @endfor
         </select> 
@@ -47,14 +47,15 @@
             <option value="Igen">{{ __('Igen') }}</option>
         </select> 
     </div>
-    <div>
+    
+    <div class="flex flex-col justify-between">
         <p class="text-2xl font-medium text-center gray">{{ __('Megjegyzés') }}</p>
         <textarea name="comment" class="w-full gray outline-none text-center font-medium py-2.5 px-5 text-xl border-b border-gray-300"></textarea>
     </div>
 
-    <div class="mt-10 flex items-center justify-center col-span-2">
-        <p class="text-2xl lg:text-xl text-center">Felhívjuk vendégeink figyelmét hogy, az Étteremhétre való asztalfoglalás az alábbi linken lehetséges: <a class="text-gold" href="https://www.etteremhet.hu/lang/hu/cities/countryside/restaurants/spaletta-etterem-es-sorhaz-kecskemet/reservations/new?meal_type=&reservation%5Bfor_date%5D=&reservation%5Bno_persons%5D=2&sort=name">Étteremhét link</a> </p>
-    </div>
+    {{-- <div class="flex items-center justify-center col-span-2 mt-10">
+        <p class="text-2xl text-center lg:text-xl">Felhívjuk vendégeink figyelmét hogy, az Étteremhétre való asztalfoglalás az alábbi linken lehetséges: <a class="text-gold" href="https://www.etteremhet.hu/lang/hu/cities/countryside/restaurants/spaletta-etterem-es-sorhaz-kecskemet/reservations/new?meal_type=&reservation%5Bfor_date%5D=&reservation%5Bno_persons%5D=2&sort=name">Étteremhét link</a> </p>
+    </div> --}}
 
     <div class="flex items-center justify-center col-span-2">
         <x-button type="gray">{{ __('Asztalfoglalás') }}</x-button>

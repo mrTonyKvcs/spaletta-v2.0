@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers;
 use App\Models\Category;
+use App\Models\Product;
 use App\Models\Ticket;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -102,6 +103,63 @@ Route::group(
     //     ]);
         // })->name('pages.successful-shopping');
 
+        // Route::get('rendeles/{id}', function (Request $request) {
+        //     return view('pages.order', ['request' => $request]);
+        // })->name('pages.order')->middleware('auth');
+
+        // Route::get(LaravelLocalization::transRoute('routes.orders') . '/{order}', \App\Http\Livewire\Order::class)
+        //     ->name('pages.order')
+        //     ->middleware('auth');
+
+        // Route::get(LaravelLocalization::transRoute('routes.orders'), \App\Http\Livewire\User\AllOrder::class)
+        //     ->name('pages.user-orders')
+        //     ->middleware('auth');
+
+        // Route::get(LaravelLocalization::transRoute('routes.cart'), function () {
+        //     return view('pages.cart');
+        // })->name('pages.cart');
+
+        // Route::get(LaravelLocalization::transRoute('routes.order'), function () {
+        //     return view('pages.restaurant');
+        // })->name('pages.restaurant');
+
+        // Route::get(LaravelLocalization::transRoute('routes.menu'), function () {
+        //     return redirect('https://www.facebook.com/spalettaetterem/menu/?id=100036783267355&sk=menu');
+        //     $title = 'Étlap';
+        //     $categories = Category::where('type_id', 1)->with('items')->get();
+        //     return view('pages.restaurant', compact('categories', 'title'));
+        // })->name('pages.restaurant');
+
+        Route::get(LaravelLocalization::transRoute('routes.restaurant'), function () {
+            $title = 'Étterem Ajánló';
+            $categories = Category::where('type_id', 1)->with('items')->get();
+            return view('pages.restaurant', compact('categories', 'title'));
+        })->name('pages.restaurant');
+
+        Route::get(LaravelLocalization::transRoute('routes.bar'), function () {
+            $title = 'Sörház Ajánló';
+            $products = Product::where('category_id', 10)->get();
+            return view('pages.bar', compact('products', 'title'));
+        })->name('pages.bar');
+
+        // Route::get('oktobierfest', function () {
+        //     $title = 'OKTOBIERFEST Étlap';
+        //     $categories = Category::where('type_id', 8)->with('items')->get();
+        //     return view('pages.restaur`ant', compact('categories', 'title'));
+        // })->name('pages.oktobierfest');
+
+        Route::get(LaravelLocalization::transRoute('routes.reservation'), function () {
+            return view('pages.reservation');
+        })->name('pages.reservation');
+
+        // Route::get('sikeres-vasarlas/{id}', function ($id) {
+        //     $ticket = Ticket::find($id);
+
+        //     return view('pages.successful-shopping', [
+        //         'ticket' => $ticket
+        //     ]);
+        // })->name('pages.successful-shopping');
+
         Route::get('check-in/{id}/{orderNumber}', [
             'as' => 'ticket.check-in',
             'uses' => 'App\Http\Controllers\TicketController@checkIn'
@@ -119,6 +177,7 @@ Route::group(
 
         // Route::get(LaravelLocalization::transRoute('routes.events'), function () {
     //     return view('pages.events');
+        //     return view('pages.events');
         // })->name('pages.events');
 
         Route::get(LaravelLocalization::transRoute('routes.gallery'), function () {

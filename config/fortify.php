@@ -68,7 +68,7 @@ return [
         if (\Auth::user()->is_admin) {
             return route('admin');
         } else {
-            return route('pages.menu');
+            return route('pages.restaurant');
         }
 
         //or if you have a bunch of redirection options

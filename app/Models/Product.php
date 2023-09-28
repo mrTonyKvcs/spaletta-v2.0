@@ -40,6 +40,25 @@ class Product extends Model
         };
     }
 
+    /**
+     * Get the user's first name.
+     *
+     * @param  string  $value
+     * @return string
+     */
+    public function getCommentAttribute($value)
+    {
+        $locale = \LaravelLocalization::getCurrentLocale();
+
+        if ($locale === 'hu') {
+            return $value;
+        } elseif ($locale === 'en') {
+            return $this->en_comment;
+        } elseif ($locale === 'de') {
+            return $this->de_comment;
+        };
+    }
+
 
     public function category()
     {

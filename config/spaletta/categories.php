@@ -4,14 +4,8 @@ return [
     [
         'type_id' => 1,
         'name' => 'Előételek',
-        'en_name' => '',
-        'de_name' => '',
-    ],
-    [
-        'type_id' => 1,
-        'name' => 'Bistro ételek',
-        'en_name' => '',
-        'de_name' => '',
+        'en_name' => 'First Courses',
+        'de_name' => 'Vorspeisen',
     ],
     [
         'type_id' => 1,
@@ -21,15 +15,9 @@ return [
     ],
     [
         'type_id' => 1,
-        'name' => 'Friss tészták',
-        'en_name' => 'Pasta',
-        'de_name' => 'Pasta',
-    ],
-    [
-        'type_id' => 1,
-        'name' => 'Pizza',
-        'en_name' => '',
-        'de_name' => '',
+        'name' => 'Tészták',
+        'en_name' => 'Pasta Dishes',
+        'de_name' => 'Nudeln',
     ],
     [
         'type_id' => 1,
@@ -39,15 +27,39 @@ return [
     ],
     [
         'type_id' => 1,
+        'name' => 'Steak ajánlat',
+        'en_name' => 'Steak Selection',
+        'de_name' => 'Steak Angebot',
+    ],
+    [
+        'type_id' => 1,
+        'name' => 'Steak köretek',
+        'en_name' => 'Side Dishes',
+        'de_name' => 'Beilage',
+    ],
+    [
+        'type_id' => 1,
         'name' => 'Desszertek',
-        'en_name' => '',
-        'de_name' => '',
+        'en_name' => 'Desserts',
+        'de_name' => 'Dessert',
+    ],
+    [
+        'type_id' => 1,
+        'name' => 'Saláta, savanyúság',
+        'en_name' => 'Salads and Preserved Vegetables',
+        'de_name' => 'Salat, Saueres',
     ],
     [
         'type_id' => 1,
         'name' => 'Gyerekmenü',
-        'en_name' => '',
-        'de_name' => '',
+        'en_name' => 'Kids Menu',
+        'de_name' => 'Kindermenü',
+    ],
+    [
+        'type_id' => 9,
+        'name' => 'Sörház Ajánló',
+        'en_name' => 'Beer Bar',
+        'de_name' => 'Bierhaus',
     ],
     [
         'type_id' => 2,
@@ -218,4 +230,24 @@ return [
         'name' => 'Palackozott belga sörök'
     ],
 
+    [
+        'type_id' => 10,
+        'name' => 'Vacsora menü nélkül'
+    ],
+    [
+        'type_id' => 10,
+        'name' => 'Vacsora menüvel'
+    ],
+    [
+        'type_id' => 10,
+        'name' => 'Gyerek'
+    ],
+    [
+        'type_id' => 10,
+        'name' => 'Felnőtt'
+    ],
+    [
+        'type_id' => 10,
+        'name' => 'Családi'
+    ],
 ];

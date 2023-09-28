@@ -14,7 +14,7 @@
                 </button>
                 <div x-show="open" class="lg:absolute lg:bg-gray58 lg:top-32 lg:w-108">
                     <div class="px-10 py-4 text-base">
-                        <a href="{{ route('pages.menu') }}">Kiszállításos Étlap & Itallap</a>
+                        <a href="{{ route('pages.restaurant') }}">Kiszállításos Étlap & Itallap</a>
                     </div>
                 </div>
                 <a class="px-7 py-4 lg:px-7 lg:py-14 lg:text-gray-300 lg:hover:text-white" href="/asztalfoglalas">Asztalfoglalás</a> 

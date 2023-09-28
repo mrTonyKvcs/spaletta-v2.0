@@ -26,8 +26,12 @@
     <p>
         <strong>Rendelési cím:</strong> {{ $data['address'] }}
     </p>
+    
     <p>
-        <strong>Jegyek száma:</strong> {{ $data['quantity'] }}
+        <strong>Jegyek: </strong> 
+        @foreach($data['prices'] as $item)
+            <p>{{ $item['category']['name'] . ': ' . $item['price'] . 'Ft/db' . ' Összesen: ' . $item['quantity'] }}</p>
+        @endforeach
     </p>
 
     <p>

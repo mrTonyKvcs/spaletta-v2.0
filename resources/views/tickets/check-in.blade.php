@@ -25,7 +25,11 @@
                         <div class="mt-5 text-3xl">{{ __('Esemény neve') }}: <span class="ml-5 text-3xl font-bold">{{ $ticket->event->title }}</span></div>
                         <div class="mt-5 text-3xl">{{ __('Rendelésazonosító') }}: <span class="ml-5 text-3xl font-bold">{{ $ticket->order_number }}</span></div>
                         <div class="mt-5 text-3xl">{{ __('Fizetési mód') }}: <span class="ml-5 text-3xl font-bold">{{ $ticket->payment->name }}</span></div>
-                        <div class="mb-5 text-3xl">{{ __('Jegyek száma') }}: <span class="ml-5 text-3xl font-bold">{{ $ticket->quantity }}  db</span></div>
+                        <div class="mb-5 text-3xl">{{ __('Jegyek') }}: 
+                            @foreach($ticket->sold as $type)
+                                <div class="ml-5 text-3xl font-bold">{{ $type->category->name }}: {{ $type->price . 'Ft/DB' }} {{ $type->quantity }}db</div>
+                            @endforeach
+                        </div>
                         <div class="mb-5 text-3xl">{{ __('Összesen fizetendő') }}: <span class="ml-5 text-3xl font-bold">{{ $ticket->total }} Ft</span></div>
                         <div class="my-5 text-3xl">{{ __('Név') }}: <span class="ml-5 text-3xl font-bold">{{ $ticket->name }}</span></div>
                         <div class="my-5 text-3xl">{{ __('Telefonszám') }}: <span class="ml-5 text-3xl font-bold">{{ $ticket->phone_number }}</span></div>

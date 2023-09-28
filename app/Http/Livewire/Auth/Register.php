@@ -40,6 +40,6 @@ class Register extends Component
 
         auth()->login($user);
 
-        return redirect()->route('pages.menu');
+        return redirect()->route('pages.restaurant');
     }
 }

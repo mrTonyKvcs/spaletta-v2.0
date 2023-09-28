@@ -19,7 +19,7 @@ return [
             ],
             // [
             //     'name' => 'Étlap',
-            //     'link' => 'pages.menu'
+            //     'link' => 'pages.restaurant'
             // ],
             // [
             //     'name' => 'Itallap',

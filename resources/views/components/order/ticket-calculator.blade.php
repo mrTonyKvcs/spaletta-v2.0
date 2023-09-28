@@ -1,17 +1,16 @@
 <div>
     <div class="flex flex-col justify-between px-4 py-5 border-t border-gray-200 md:flex-row sm:p-0 md:mr-5">
         <dl class="sm:divide-y sm:divide-gray-200">
-            @if ($this->isDinner)
                 <div class="flex flex-row items-center py-4 sm:py-5 sm:px-6">
                     <select
-                        wire:model="activePrice"
+                        wire:model="simpleTicket"
                         class="block w-full py-2 pr-10 mt-1 text-2xl border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                     >
-                        <option value="7000">Vacsora menü nélkül</option>
-                        <option value="18000">Vacsora menüvel </option>
+                        @foreach ($this->event->prices as $type)
+                            <option value="{{ $type->price}}">{{ $type->category->name }}</option>
+                        @endforeach
                     </select>
                 </div>
-            @endif
             <div class="flex flex-row items-center py-4 sm:py-5 sm:px-6">
                 <dt class="text-3xl text-gray-500 font-lg">
                     <div class="flex mt-4 sm:mt-0 sm:pr-9">
@@ -20,7 +19,7 @@
                             --}}
                             <select id="location" wire:model="quantity"
                                 class="block w-full py-2 pr-10 mt-1 text-2xl border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
-                                @for ($i=1; $i <= 10; $i++) <option value="{{ $i }}">{{ $i }}</option> @endfor
+                                @for ($i=1; $i <= 20; $i++) <option value="{{ $i }}">{{ $i }}</option> @endfor
                             </select>
                         </div>
 
@@ -41,7 +40,7 @@
                 <dd class="mt-1 ml-5 text-2xl text-gray-900 sm:mt-0 sm:col-span-2">db</dd>
             </div>
         </dl>
-        <div x-data="{price: @entangle('activePrice'),selectDinner: @entangle('selectDinner'), dinnerPrice: @entangle('dinnerPrice'), quantity: @entangle('quantity')}"
+        <div x-data="{price: @entangle('activePrice'),selectDinner: @entangle('selectDinner'), dinnerPrice: @entangle('dinnerPrice'), quantity: @entangle('quantity'), total: @entangle('total')}"
             class="flex flex-row items-center mt-3 md:mt-0">
             <label class="mr-5 text-2xl">Összesen: </label>
             <div class="text-2xl"><span class="font-bold" x-text="quantity * price"></span> <span>Ft</span></div>

@@ -1,36 +1,85 @@
 <?php
 
 return [
-    'title'     => 'heti menü',
-    'menu-date' => '2022.11.29. - 2022.12.02.',
-    'weekend-date' => '2022.12.03.',
+    'title'     => 'Déli Ajánló',
+    'menu-date' => '2023.09.20. - 2023.09.23.',
+    'saturday-date' => '2023.02.25.',
     'menu' => [
-        'soups' => [
-            'name'  => 'Levesek',
+        // 'first-courses' => [
+        //     'name' => 'Előétel',
+        //     'items' => [
+        //         [
+        //             'name'  => 'Kacsás gyoza, hoisin, káposzta',
+        //             'price' => 1200
+        //         ]
+        //     ]
+        // ],
+        'soup' => [
+            'name' => 'Leves',
             'items' => [
-                'Zeller krémleves',
-                'Tárkonyos sertésragu leves (G,L)',
-                'Kolbászos burgonyaleves (G,L)'
+                [
+                    'name'  => 'Tojásleves, zeller',
+                    'price' => 1300
+                ]
             ]
         ],
-        'main-course' => [
-            'name'  => 'Főételek',
+        'main-courses' => [
+            'name' => 'Főétel',
             'items' => [
-                'Chedar sajtos töltött sertésszelet, burgonyapüré',
-                'Garnélás- lazacos papardelle tészta (L)',
-                'Édes-chilis csirkemell, tojásos rizs (G,L)',
-                'Túrós csusza',
+                [
+                    'name' => 'Pacal, köröm, kenyér',
+                    'price' => 2300
+                ],
+                [
+                    'name' => 'Csirkecomb, hoisin, pak choi, mogyoró',
+                    'price' => 2300
+                ],
+                [
+                    'name' => 'Vad brokkoli, paradicsom, kesudió, fekete fokhagyma',
+                    'price' => 2200
+                ],
             ]
         ],
+        'desserts' => [
+            'name' => 'Desszert',
+            'items' => [
+                [
+                    'name' => 'Langyos csoki mousse, körte, tonkabab',
+                    'price' => 1200
+                ]
+            ]
+        ]
     ],
-    'weekendmenu' => [
-        'saturday-menu' => [
-            'name'  => 'Szombati menü',
-            'items' => [
-                'Áfonya leves',
-                'Vadas Nyúlcomb, szalvétagombóc',
-                'Epres crumble (morzsasüti)'
+    'saturday-menu' => [
+        'price' => 5000,
+        'items' => [
+            'soup' => [
+                'name' => 'Leves',
+                'items' => [
+                    [
+                        'name'  => 'Húsleves vajas daragaluskával',
+                        'price' => 1400
+                    ]
+                ]
+            ],
+            'main-courses' => [
+                'name' => 'Főétel',
+                'items' => [
+                    [
+                        'name' => 'Sertéskaraj orly módra, snidlinges burgonyapüré',
+                        'price' => 2500
+                    ],
+                ]
+            ],
+            'desserts' => [
+                'name' => 'Desszert',
+                'items' => [
+                    [
+                        'name' => 'Csörögefánk áfonyamártással',
+                        'price' => 1200
+                    ]
+                ]
             ]
-        ],
-    ]
+        ]
+    ],
 ];

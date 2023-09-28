@@ -1,4 +1,5 @@
 <?php
+
 namespace Database\Seeders;
 
 use App\Models\CategoryTypes;
@@ -21,6 +22,9 @@ class CategoryTypesTableSeeder extends Seeder
         ],
         [
             'name' => 'Kiszállításos Itallap'
+        ],
+        [
+            'name' => 'Árak'
         ]
     ];
 

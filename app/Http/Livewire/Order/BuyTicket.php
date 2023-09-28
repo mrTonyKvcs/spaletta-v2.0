@@ -6,6 +6,7 @@ use App\Mail\NewSendMail;
 use App\Mail\ThankYouTicketSendMail;
 use App\Models\Invoice;
 use App\Models\Ticket;
+use App\Models\TicketSold;
 use App\Traits\InvoiceTrait;
 use Livewire\Component;
 use App\Traits\TicketTrait;
@@ -28,6 +29,8 @@ class BuyTicket extends Component
     public $activePrice = 0;
     public $quantity = 1;
     public $invoiceData = [];
+    public $ticketTypes;
+    public $simpleTicket;
 
     protected $rules = [
         'invoiceData.name' => 'required|min:6',
@@ -38,17 +41,25 @@ class BuyTicket extends Component
         'invoiceData.street' => 'required',
         'invoiceData.houseNumber' => 'required|max:5',
         'invoiceData.gdpr' => 'required|boolean',
+        'ticketTypes.*' => 'required',
+        'ticketTypes.*.quantity' => 'required'
     ];
 
     public function mount($event)
     {
         $this->event = $event;
-        $this->price = $this->event->price;
-        $this->dinnerPrice = $this->event->dinner_price;
-        $this->total = $this->event->price;
 
-        $this->activePrice = $this->price;
         $this->isDinner = !is_null($this->dinnerPrice) ? true : false;
+
+        $this->ticketTypes = $event->prices;
+        // if ($this->event->more_type_of_price) {
+        $this->ticketTypes->map(function ($item, $index) {
+            $item['quantity'] = 0;
+            return $item;
+        });
+        // } else {
+        $this->activePrice = $this->event->prices->first()->price;
+        // }
 
         //Fake
         // $this->invoiceData = $this->testData();
@@ -64,30 +75,109 @@ class BuyTicket extends Component
         return $this->price * $this->quantity;
     }
 
+    public function updatedSimpleTicket($value)
+    {
+        $type = $this->ticketTypes->where('price', $value)->first();
+        $this->quantity = 1;
+        $this->activePrice = $value;
+        $this->total = $value * $this->quantity;
+    }
+
+    public function updatedQuantity($value)
+    {
+        $ticketTypeKey = array_key_first($this->ticketTypes->where('price', $this->activePrice)->toArray());
+        $ticketType = $this->ticketTypes[$ticketTypeKey];
+        $event = $this->event;
+        $soldCount = TicketSold::query()
+            ->whereHas('ticket', function ($query) use ($event) {
+                $query->where('event_id', $event->id);
+            })
+            ->where('category_id', $ticketType->category_id)
+            ->sum('quantity');
+        $availableQuantity = $ticketType->maxQuantity - $soldCount;
+
+        if ($value > $availableQuantity) {
+            $this->ticketTypes[$ticketTypeKey]['quantity'] = $availableQuantity;
+
+            $this->quantity = $availableQuantity;
+            $errorMessage = $ticketType->category->name . ' szabad jegyek száma: ' . htmlspecialchars($availableQuantity) . ' db';
+            return back()->with('error', $errorMessage);
+        }
+
+        $this->ticketTypes[$ticketTypeKey]['quantity'] = $value;
+        $this->quantity = $value;
+    }
+
+    public function updatedTicketTypes($value, $key)
+    {
+        if (!empty($value)) {
+            $ticketTypeKey = str_replace('.quantity', '', $key);
+            $ticketType = $this->ticketTypes[$ticketTypeKey];
+            $event = $this->event;
+
+            $soldCount = TicketSold::query()
+                ->whereHas('ticket', function ($query) use ($event) {
+                    $query->where('event_id', $event->id);
+                })
+                ->where('category_id', $ticketType->category_id)
+                ->sum('quantity');
+
+            $availableQuantity = $ticketType->maxQuantity - $soldCount;
+
+            if ($value > $availableQuantity) {
+                $this->ticketTypes[$ticketTypeKey]['quantity'] = $availableQuantity;
+                $this->total = collect($this->ticketTypes)->sum(function ($ticketType) {
+                    return $ticketType['price'] * $ticketType['quantity'];
+                });
+
+                $errorMessage = $ticketType->category->name . ' szabad jegyek száma: ' . htmlspecialchars($availableQuantity);
+                return back()->with('error', $errorMessage);
+            }
+
+            $this->ticketTypes[$ticketTypeKey]['quantity'] = $value;
+            $this->total = collect($this->ticketTypes)->sum(function ($ticketType) {
+                return $ticketType['price'] * $ticketType['quantity'];
+            });
+        }
+    }
+
     public function submit()
     {
-        $ticketSold = $this->event->tickets()->sum('quantity') + $this->quantity;
-
-        if ($ticketSold > 20) {
-            $freeTicket = 20 - $this->event->tickets()->sum('quantity');
-            return back()->with('error', 'Szabad jegyek száma: ' . $freeTicket);
-        }
-        // $this->hideSubmitButton();
-
         //Validation
         $validateData = $this->validate();
         $ticketData = $this->getTicketData($validateData);
-        $ticketData['total'] = $this->activePrice * $this->quantity;
+        $ticketData['total'] = $this->event->more_type_of_price ? $this->total : $this->activePrice * $this->quantity;
         $ticketData['payment_id'] = 2;
 
         //Ticket
         $ticket = Ticket::create($ticketData);
+
+        if ($this->event->more_type_of_price) {
+            $this->ticketTypes->where('quantity', '>', 0)
+                ->each(function ($item) use ($ticket) {
+                    TicketSold::create([
+                        'ticket_id'     => $ticket->id,
+                        'category_id'   => $item->category_id,
+                        'price'         => $item->price,
+                        'quantity'     => $item->quantity
+                    ]);
+                });
+        } else {
+            $ticketData['total'] = $this->activePrice;
+            $ticketType = $this->ticketTypes->where('price', $this->activePrice)->first();
+            TicketSold::create([
+                'ticket_id'     => $ticket->id,
+                'category_id'   => $ticketType->category_id,
+                'price'         => $ticketType->price,
+                'quantity'     => $this->quantity
+            ]);
+        }
         // $ticketData['price'] = $ticket->event->price;
-        $ticketData['price'] = $this->activePrice;
         $ticketData['address'] = $ticket->address;
         $ticketData['event_name'] = $ticket->event->title;
         $ticketData['event_started_at'] = $ticket->event->started_at;
         $ticketData['ticket_id'] = $ticket->id;
+        $ticket['quantity'] = $this->ticketTypes->sum('quantity');
 
         return redirect()->route('payment.start', $ticketData);
 

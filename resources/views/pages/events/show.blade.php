@@ -28,13 +28,11 @@
                     </div>
                 </div>
                     {{-- <div class="lg:container lg:mx-auto"> --}}
-                @empty(!$event->price)
-					@if ($sold < 15)
-						<div class="w-full mt-8">
-							<livewire:order.buy-ticket :event="$event" />
-						</div>
-					@endif
-                @endempty
+                @if($event->is_paid)
+                    <div class="w-full mt-8">
+                        <livewire:order.buy-ticket :event="$event" />
+                    </div>
+                @endif
             {{-- </div> --}}
     </x-section>
 

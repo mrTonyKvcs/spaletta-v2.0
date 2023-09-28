@@ -32,7 +32,7 @@ class PaymentController extends Controller
         $trx->addData('currency', $currency);
 
         $trx->addConfig($this->config);
-        $trx->addData('total', $data['price'] * $data['quantity']);
+        $trx->addData('total', $data['total']);
 
 
         $trx->addItems(
@@ -41,7 +41,7 @@ class PaymentController extends Controller
                 'title' => $data['event_name'],
                 'desc' => $data['event_name'] . 'jegy',
                 'amount' => $data['quantity'],
-                'price' => $data['price'],
+                'price' => $data['total'],
                 // 'tax' => '27',
             )
         );
@@ -101,7 +101,7 @@ class PaymentController extends Controller
         $trx->runStart();
 
         $trx->getHtmlForm();
-        
+
         $ticket = Ticket::find($data['ticket_id'])
             ->transaction()
             ->create([
@@ -133,9 +133,9 @@ class PaymentController extends Controller
                 ->where('transaction_id', $result['t'])
                 ->where('order_ref', $result['o'])
                 ->firstOrFail();
-            
+
             $payment->update(['status' => Status::END_PAYMENT]);
-            
+
             $ticket = $payment->model;
 
             return redirect()->route('pages.successful-payment', [$ticket->id, $ticket->order_number]);
@@ -149,7 +149,7 @@ class PaymentController extends Controller
                 case 'CANCEL':
                     $transaction->update(['status' => Status::CANCEL_PAYMENT]);
                     break;
-                
+
                 case 'FAIL':
                     $transaction->update(['status' => Status::FAIL_PAYMENT]);
                     break;

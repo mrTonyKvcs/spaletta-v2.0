@@ -13,3 +13,4 @@ npm-debug.log
 yarn-error.log
 szamlaagent/pdf/*
 szamlaagent/xmls/*
+public/images/.DS_Store
