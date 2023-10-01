@@ -33,12 +33,16 @@
   <div class="flex justify-around uppercase text-gray73 w-full text-2xl">
     <div class="space-y-6 font-semibold">
       <p>{{ __('Hétfő') }}</p>
-      <p>{{ __('Kedd') }} - {{ __('Szombat') }}</p>
+      <p>{{ __('Kedd') }}</p>
+      <p>{{ __('Szerda') }} - {{ __('Csütörtök') }}</p>
+      <p>{{ __('Péntek') }} - {{ __('Szombat') }}</p>
       <p>{{ __('Vasárnap') }}</p>
     </div>
     <div class="space-y-6 font-medium">
       <p>{{ __('Zárva') }}</p>
-      <p>11:30 - 23:00</p>
+      <p>16:00 - 22:00</p>
+      <p>11:30 - 22:00</p>
+      <p>11:30 - 24:00</p>
       <p>11:30 - 16:00</p>
     </div>
   </div>
