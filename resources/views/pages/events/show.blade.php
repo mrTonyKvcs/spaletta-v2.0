@@ -1,8 +1,8 @@
 <x-layout>
     <x-header background="reservation">{{ $event->title }}</x-header>
     <x-section>
-                <div class="flex flex-col md:flex-row">
-                    <div class="w-full md:w-1/2 ">
+                <div class="flex flex-col md:flex-row-reverse">
+                    <div class="flex w-full md:w-1/2">
                         <div class="flex items-center justify-center">
                             <img class="" src="{{ $event->image_path }}" alt="{{ $event->title }}">
                         </div>
@@ -18,7 +18,7 @@
                                 <p class="ml-4 text-2xl text-gold">{{ $event->finished_at }}</p>
                             </div>
                         </div>
-                        <div class="overflow-y-scroll text-center overscroll-auto h-96"> 
+                        <div class="text-left"> 
                             <p class="text-2xl">{!! $event->content !!}</p>
                         </div>
                         {{-- <p class="text-2xl">{{ __('További információ') }}<a class="pl-2 text-2xl text-gold"  href="https://www.facebook.com/events/595767197688697">facebook oldalunkon.</a></p> --}}
