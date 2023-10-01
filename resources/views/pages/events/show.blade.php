@@ -18,7 +18,7 @@
                                 <p class="ml-4 text-2xl text-gold">{{ $event->finished_at }}</p>
                             </div>
                         </div>
-                        <div class="overflow-y-scroll text-left overscroll-auto h-96"> 
+                        <div class="overflow-y-scroll text-justify overscroll-auto h-96"> 
                             <p class="text-2xl">{!! $event->content !!}</p>
                         </div>
                         {{-- <p class="text-2xl">{{ __('További információ') }}<a class="pl-2 text-2xl text-gold"  href="https://www.facebook.com/events/595767197688697">facebook oldalunkon.</a></p> --}}

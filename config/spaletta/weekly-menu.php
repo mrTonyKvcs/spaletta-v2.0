@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.09.27. - 2023.09.30.',
+    'menu-date' => '2023.10.04. - 2023.10.07.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         // 'first-courses' => [
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Körteleves, körte sorbet, kesudió',
-                    'price' => 1300
+                    'name'  => 'Tárkonyos sertés raguleves, burgonyagombóc',
+                    'price' => 1500
                 ],
                 [
-                    'name'  => 'Gulyásleves, csipetke',
-                    'price' => 1500
+                    'name'  => 'Kókusztejes répaleves, pirított fűszeres répa',
+                    'price' => 1300
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Rakott kel, tejföl',
+                    'name' => 'Székelykáposzta',
+                    'price' => 2500
+                ],
+                [
+                    'name' => 'Zöldfűszeres csirkemell rántva, burgonyapüré',
                     'price' => 2400
                 ],
                 [
-                    'name' => 'Tagliatelle, lazac, aszalt paradicsom',
+                    'name' => 'Vegán töltött paprika',
                     'price' => 2300
-                ],
-                [
-                    'name' => 'Sütőtökös rizottó, pecorinó',
-                    'price' => 2100
                 ],
             ]
         ],
@@ -48,8 +48,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Olivás piskóta, gyömbéres szilvaragu, mandula, tejszín',
-                    'price' => 1300
+                    'name' => 'Kukorica prósza, baracklekvár',
+                    'price' => 1200
                 ]
             ]
         ]
