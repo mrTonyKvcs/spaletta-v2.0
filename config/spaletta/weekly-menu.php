@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.10.04. - 2023.10.07.',
+    'menu-date' => '2023.10.11. - 2023.10.14.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         // 'first-courses' => [
@@ -18,11 +18,11 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Tárkonyos sertés raguleves, burgonyagombóc',
+                    'name'  => 'Orja leves',
                     'price' => 1500
                 ],
                 [
-                    'name'  => 'Kókusztejes répaleves, pirított fűszeres répa',
+                    'name'  => 'Kakukkfüves gombakrémleves, pirított erdei gomba',
                     'price' => 1300
                 ]
             ]
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Székelykáposzta',
-                    'price' => 2500
-                ],
-                [
-                    'name' => 'Zöldfűszeres csirkemell rántva, burgonyapüré',
-                    'price' => 2400
-                ],
-                [
-                    'name' => 'Vegán töltött paprika',
+                    'name' => 'Lasagne',
                     'price' => 2300
+                ],
+                [
+                    'name' => 'Zöldséges indiai biryani ',
+                    'price' => 2300
+                ],
+                [
+                    'name' => 'Cigánypecsenye, steak burgonya',
+                    'price' => 2500
                 ],
             ]
         ],
