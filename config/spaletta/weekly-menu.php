@@ -18,7 +18,7 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Orja leves',
+                    'name'  => 'Orjaleves',
                     'price' => 1500
                 ],
                 [
