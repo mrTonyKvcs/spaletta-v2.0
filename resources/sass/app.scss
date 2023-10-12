@@ -33,18 +33,19 @@ nav {
 }
 
 .home-services {
-    background-image: url('../images/service.png');
+    background-image: url('../images/pages/home/section/background-services.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     @media only screen and (min-width: 640px) {
-        background-image: url('../images/service-md.png');
+    background-image: url('../images/pages/home/section/background-services.jpg');
     }
     @media only screen and (min-width: 1024px) {
-        background-image: url('../images/service-lg.png');
+    background-image: url('../images/pages/home/section/background-services.jpg');
     }
     @media only screen and (min-width: 1280px) {
-        background-image: url('../images/service-xl.png');
+    background-image: url('../images/pages/home/section/background-services.jpg');
+    // background-color: #262626;
     }
 }
 
@@ -61,19 +62,19 @@ nav {
 }
 
 .home-about {
-    background-image: url('../images/home-about.png');
+    background-image: url('../images/pages/home/section/background-about.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     @media only screen and (min-width: 640px) {
-        background-image: url('../images/home-about-md.png');
+    background-image: url('../images/pages/home/section/background-about.jpg');
     }
     @media only screen and (min-width: 1024px) {
-        background-image: url('../images/home-about-lg.png');
+    background-image: url('../images/pages/home/section/background-about.jpg');
     }
     @media only screen and (min-width: 1280px) {
-        background-image: url('../images/home-about-xl.png');
+    background-image: url('../images/pages/home/section/background-about.jpg');
     }
 }
 
@@ -93,25 +94,41 @@ nav {
     background-color: #262626;
 }
 
-.reservation-bg {
-    background-image: url('../images/reservations.jpg');
+.home-bg {
+    background-image: url('../images/pages/home/home-mobile.jpg');
+    background-size: cover;
     background-position: center;
+    @media (min-width: 1035px) {
+        background-image: url('../images/pages/home/home.jpg');
+    }
+}
+
+.home-section {
+    background-color: rgba(38, 38, 38, .5);
+    padding: 35px;
+}
+
+.reservation-bg {
+    background-image: url('../images/pages/reservation/reservation-mobile.jpg');
+    @media (min-width: 1035px) {
+        background-image: url('../images/pages/reservation/reservation.jpg');
+    }
 }
 
 .events-bg {
-    background-image: url('../images/events-bg.jpg');
+    background-image: url('../images/pages/events/events.jpg');
 }
 
 .gallery-bg {
-    background-image: url('../images/gallery-bg.jpg');
+    background-image: url('../images/pages/gallery/gallery.jpg');
 }
 
 .about-bg {
-    background-image: url('../images/about-bg.jpg');
+    background-image: url('../images/pages/about/about.jpg');
 }
 
 .contact-bg {
-    background-image: url('../images/contact-bg.jpg');
+    background-image: url('../images/pages/contact/contact.jpg');
 }
 
 .chrismas-bg {
@@ -119,11 +136,11 @@ nav {
 }
 
 .restaurante-bg {
-    background-image: url('../images/restaurante-bg.jpg');
+    background-image: url('../images/pages/restaurant/restaurant.jpg');
 }
 
 .bar-bg {
-    background-image: url('../images/bar-bg.jpg');
+    background-image: url('../images/pages/bar/bar.jpg');
     background-position: bottom;
 }
 
@@ -135,20 +152,20 @@ nav {
 @-webkit-keyframes test {
     0%,
     100% {
-        background-size: 125%;
+        background-size: 100%;
     }
     100% {
-        background-size: 100%;
+        background-size: 125%;
     }
 }
 
 @keyframes test {
     0%,
     100% {
-        background-size: 125%;
+        background-size: 100%;
     }
     100% {
-        background-size: 100%;
+        background-size: 125%;
     }
 }
 
@@ -197,4 +214,10 @@ video {
     color: red;
     font-size: 1.4rem;
     margin-top: 1rem;
+}
+
+.event {
+    &__content p {
+        text-align: justify;
+    }
 }

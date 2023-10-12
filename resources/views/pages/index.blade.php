@@ -14,31 +14,32 @@
 
 <x-layout>
     <div class="relative w-auto">
-        <div class="flex flex-col items-center justify-center w-full px-6 text-white bg-transparent py-72">
-            <h1 class="z-20 mb-8 text-4xl font-semibold uppercase text-gold">{{ __('Spaletta kecskemét') }}</h1>
-            <p class="z-20 mb-4 text-6xl text-center uppercase">{{ __('Étterem és sörház') }}</p>
-            <p class="z-20 mb-4 text-2xl">6000 Kecskemét, Jókai utca 15.</p>
-            <div class="flex flex-col items-center mb-4 text-3xl md:flex-row xl:mb-10">
-                <div class="z-20 flex items-center mb-4 md:mb-0 md:mr-6">
-                    <img class="w-10 pr-2" src="../images/svg/mobile.svg" alt="mobile-icon">
-                    <a href="tel:+36 20 219 99 75" class="">+36 20 219 99 75</p>
+        <div class="flex flex-col items-center justify-center w-full px-6 text-white bg-transparent py-72 home-bg">
+            <div class="flex flex-col items-center justify-center home-section">
+                <h1 class="z-20 mb-8 text-4xl font-semibold uppercase text-gold">{{ __('Spaletta kecskemét') }}</h1>
+                <p class="z-20 mb-4 text-6xl text-center uppercase">{{ __('Étterem és sörház') }}</p>
+                <p class="z-20 mb-4 text-2xl">6000 Kecskemét, Jókai utca 15.</p>
+                <div class="flex flex-col items-center mb-4 text-3xl md:flex-row xl:mb-10">
+                    <div class="z-20 flex items-center mb-4 md:mb-0 md:mr-6">
+                        <img class="w-10 pr-2" src="../images/svg/mobile.svg" alt="mobile-icon">
+                        <a href="tel:+36 20 219 99 75" class="">+36 20 219 99 75</p>
+                    </div>
+                    <div class="z-20 flex items-center">
+                        <img class="w-10 pr-2" src="../images/svg/phone.svg" alt="phone-icon">
+                        <a href="tel:+36 76 614 744">+36 76 614 744</a>
+                    </div>
                 </div>
-                <div class="z-20 flex items-center">
-                    <img class="w-10 pr-2" src="../images/svg/phone.svg" alt="phone-icon">
-                    <a href="tel:+36 76 614 744">+36 76 614 744</a>
+                <div class="z-20">
+                    <x-button class="mr-10" type="transparent"><a href="{{ route('pages.restaurant') }}">{{ __('Étterem') }}</a>
+                    </x-button>
+                    <x-button type="transparent"><a href="{{ route('pages.restaurant') }}">{{ __('Sörház') }}</a></x-button>
                 </div>
-            </div>
-            <div class="z-20">
-                <x-button class="mr-10" type="transparent"><a
-                        href="{{ route('pages.restaurant') }}">{{ __('Étterem') }}</a></x-button>
-                <x-button type="transparent"><a
-                        href="{{ route('pages.restaurant') }}">{{ __('Sörház') }}</a></x-button>
             </div>
         </div>
-        <video poster="../images/gallery-bg.jpg" autoplay playsinline muted loop>
+        {{-- <video poster="../images/gallery-bg.jpg" autoplay playsinline muted loop>
             <source src="../videos/spaletta-video.mp4" type="video/webm">
             <source src="../videos/spaletta-video.mp4" type="video/mp4">
-        </video>
+        </video> --}}
     </div>
     {{-- <div class="px-6 mt-56 md:grid md:grid-cols-2">
         <div class="flex items-center justify-end">
@@ -49,17 +50,14 @@
             <p class="text-3xl font-medium text-center text-gray2e font-libre">2022. október 11 - október 16.</p>
             <x-button type="gray-transparent"><a href=" https://www.etteremhet.hu/lang/hu/cities/countryside/restaurants/spaletta-etterem-es-sorhaz-kecskemet?search%5Bdate%5D=&search%5Bmeal_type%5D=&search%5Bno_persons%5D=2&search%5Bsearch_query%5D=&sort=name">Asztalfoglalás</a></x-button>
         </div>
-<<<<<<< HEAD
     </div>  --}}
     {{-- <div class="flex flex-col items-center justify-center w-full px-6 mt-56 space-y-8">
         <h2 class="text-4xl italic font-medium gold font-libre">Kedves Vendégeink !</h2>
         <p class="text-3xl italic font-medium text-center text-gray2e font-libre">A nyári szünet után , augusztus 30-án (kedden)  a megszokott nyitvatartással várjuk Vendégeinket</p>
-=======
     </div>  --}} 
     {{-- <div class="flex flex-col items-center justify-center w-full px-6 mt-56 space-y-8">
         <h2 class="text-4xl italic font-medium gold font-libre">Kedves Vendégeink !</h2>
         <p class="text-3xl italic font-medium text-center text-gray2e font-libre">Éttermünk augusztus 20-29-ig nyári szünetet tart, augusztus 30-án 16 órától várjuk Vendégeinket!</p>
->>>>>>> master
     </div> --}}
     <x-section>
         <div class="flex flex-col items-center w-full mt-24">
@@ -74,14 +72,14 @@
         <p class="text-xl">{{ __('(Az ár nem tartalmazza a csomagolás díját)') }}</p>
     </x-section>
     <x-section background="home-services">
-        <div class="gap-12 space-x-4  lg:space-x-0 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 lg:gap-12">
-            <x-card type="link" path="/images/home-menu" route="{{ route('pages.restaurant') }}" alt="spaletta"
+        <div class="gap-12 space-x-4 lg:space-x-0 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 lg:gap-12">
+            <x-card type="link" path="/images/pages/home/section/menu" route="{{ route('pages.restaurant') }}" alt="spaletta"
                 title="spaletta">{{ __('Étterem') }}</x-card>
-            <x-card type="link" path="/images/home-reservations" route="{{ route('pages.bar') }}" alt="reservation"
+            <x-card type="link" path="/images/pages/home/section/bar" route="{{ route('pages.bar') }}" alt="reservation"
                 title="reservation">{{ __('Sörház') }}</x-card>
-            <x-card type="link" path="/images/events" route="{{ route('events.index') }}" alt="events"
+            <x-card type="link" path="/images/pages/home/section/events" route="{{ route('events.index') }}" alt="events"
                 title="events">{{ __('Rendezvények') }}</x-card>
-            <x-card type="link" path="/images/index-contact" route="{{ route('pages.reservation') }}" alt="drinks"
+            <x-card type="link" path="/images/pages/home/section/contact" route="{{ route('pages.reservation') }}" alt="drinks"
                 title="drinks">{{ __('Asztalfoglalás') }}</x-card>
         </div>
     </x-section>
@@ -117,19 +115,19 @@
             <h2 class="text-5xl font-semibold text-center text-white uppercase">{{ __('Hírlevél feliratkozás') }}</h2>
             <p class="pt-10 text-2xl font-medium text-center text-white">{{ __('Iratkozzon fel hírlevelünkre és értesüljön első kézből legújabb eseményeinkről, ajánlatainkról! ') }}</p>
             <div class="w-full mb-10">
-                @include('flash-message')
+                @include('flash-message', ['form' => 'form-newsletter'])
             </div>
-            <form style="" method="POST" action="{{ route('pages.newsletter') }}" class="flex flex-col items-center justify-center w-full">
+            <form name="form-newsletter" style="" method="POST" action="{{ route('pages.newsletter') }}" class="flex flex-col items-center justify-center w-full">
                 @csrf
                 <div class="flex justify-center w-full max-w-lg">
-                    <input type="email" name="email" id="email" autocomplete="email" class="h-20 bg-white w-full gray my-10 outline-none text-center font-medium py-2.5 px-5 text-xl border-b border-gray-300" required>
+                    <input type="email" name="email" id="email" class="h-20 bg-white w-full gray my-10 outline-none text-center font-medium py-2.5 px-5 text-xl border-b border-gray-300" required>
                 </div>
                 <div class="relative flex newsletter-input" style="">
                     <div class="flex items-center h-5">
                       <input id="gdpr" name="gdpr" type="checkbox" class="w-8 h-8 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500" required>
                     </div>
                     <div class="flex items-center ml-3 text-lg">
-                      <p class="text-xl text-white">Az <a href="#" class="gold">Adatkezelési Tájékoztatót</a> megértettem és hozzájárulok, hogy a Spaletta ÉTTEREM ÉS SÖRHÁZ az általam megadott e-mail címemre – hozzájárulásom visszavonásig – hírlevelet küldjön, az adataimat kezelje és kapcsolatba lépjen velem marketing célú megkeresésekkel.</p>
+                      <p class="text-xl text-white">Az <a href="/pdfs/2023-10-adatkezelesi-tajekoztato.pdf" target="_blank" class="gold">Adatkezelési Tájékoztatót</a> megértettem és hozzájárulok, hogy a Spaletta ÉTTEREM ÉS SÖRHÁZ az általam megadott e-mail címemre – hozzájárulásom visszavonásig – hírlevelet küldjön, az adataimat kezelje és kapcsolatba lépjen velem marketing célú megkeresésekkel.</p>
                     </div>
                   </div>
                 <button type="submit" class="h-20 w-6/12 text-2xl text-center border border-white text-white bg-transparent hover:bg-white hover:text-gray-500 inline-flex font-medium items-center pt-3.5 px-8 xl:px-10 pb-2.5 transition duration-300 ease-in uppercase shadow-sm focus:outline-none mt-8">

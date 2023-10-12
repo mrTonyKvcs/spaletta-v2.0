@@ -1,6 +1,6 @@
 <x-layout>
     <div class="flex flex-col items-center justify-center h-screen bg-cover events-bg">
-        <div class="w-full py-6 bg-black bg-center bg-cover lg:py-12 md:w-1/2 bg-opacity-50">
+        <div class="w-full py-6 bg-black bg-opacity-50 bg-center bg-cover lg:py-12 md:w-1/2">
             <h2 class="text-2xl text-center uppercase lg:mb-4 text-gold lg:text-3xl">{{ __('Következő Spaletta Rendezvény') }}</h2>
             <h1 class="text-3xl font-semibold text-center text-white lg:mb-4 lg:text-4xl">{{ $nextEvent->title }}</h1>
             {{-- @dd($nextEvent->started_at->format('Y-m-d H:i:s')) --}}
@@ -35,14 +35,14 @@
         <div>
             <x-section>
                 <x-title text="Spaletta" title="{{ __('Rendezvények') }}" price=""></x-title>
-                <div class="my-16 md:my-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
+                <div class="grid grid-cols-1 gap-12 my-16 md:my-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-16">
                     @foreach($events as $event)
-                    <div class="flex flex-col items-center justify-center px-4 shadow-lg rounded-md">
+                    <div class="flex flex-col items-center justify-center rounded-md shadow-lg">
                         <div class="flex flex-col items-center">
-                            <img src="{{ $event->image_path }}" alt="">
+                            <img src="/images/events/{{ $event->slug }}/{{ $event->image_path }}" alt="">
                         </div>
-                        <div class="flex flex-col items-center py-8 space-y-8 top-80">
-                            <p class="px-6 py-2 text-2xl font-semibold text-white bg-gold rounded-md">{{ $event->started_at }}</p>
+                        <div class="flex flex-col items-center px-4 py-8 space-y-8 top-80">
+                            <p class="px-6 py-2 text-2xl font-semibold text-white rounded-md bg-gold">{{ $event->started_at }}</p>
                             <h2 class="text-3xl font-medium text-center">{{ $event->title }}</h2>
                             <x-button type="gray-transparent-radius">
                                 <a href="{{ route('events.show', $event->id) }}">{{ __('Részletek') }}</a>
@@ -56,7 +56,7 @@
     @endempty
     {{-- @if ($events->first() != null) 
     <div class="flex items-center justify-center h-screen bg-cover events-bg">
-        <div class="w-full bg-black bg-center bg-cover md:w-1/2 bg-opacity-50">
+        <div class="w-full bg-black bg-opacity-50 bg-center bg-cover md:w-1/2">
             <h2 class="px-6 py-10 text-3xl italic tracking-wide text-center uppercase gold">{{ __('Jelenleg nincs Spaletta rendezvény') }}!</h2>
         </div>
     </div>
