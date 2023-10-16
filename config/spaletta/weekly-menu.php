@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.10.11. - 2023.10.14.',
+    'menu-date' => '2023.10.18. - 2023.10.21.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         // 'first-courses' => [
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Orjaleves',
-                    'price' => 1500
+                    'name'  => 'Jókai bableves',
+                    'price' => 1600
                 ],
                 [
-                    'name'  => 'Kakukkfüves gombakrémleves, pirított erdei gomba',
-                    'price' => 1300
+                    'name'  => 'Paradicsomleves, sztracsatella, friss bazsalikom',
+                    'price' => 1400
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Lasagne',
-                    'price' => 2300
+                    'name' => 'Bakonyi karaj, túrónudli',
+                    'price' => 2600
                 ],
                 [
-                    'name' => 'Zöldséges indiai biryani ',
-                    'price' => 2300
-                ],
-                [
-                    'name' => 'Cigánypecsenye, steak burgonya',
+                    'name' => 'Rántott ponty, petrezselymes burgonya, remoulade mártás',
                     'price' => 2500
+                ],
+                [
+                    'name' => 'Rizottó, aszaltparadicsom, rukkola',
+                    'price' => 2200
                 ],
             ]
         ],
@@ -48,8 +48,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Kukorica prósza, baracklekvár',
-                    'price' => 1200
+                    'name' => 'Palacsinta, szilvalekvár',
+                    'price' => 1300
                 ]
             ]
         ]
