@@ -20,6 +20,7 @@ class Price extends Model
         'priceable_type',
         'priceable_id',
         'price',
+        'tax',
         'maxQuantity',
         'comment'
     ];

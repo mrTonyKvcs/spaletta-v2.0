@@ -36,10 +36,13 @@ trait InvoiceTrait
         $invoice->setBuyer(new Buyer($data['name'], strval($data['zip']), $data['city'], $data['street'] . ' ' . $data['house_number']));
 
         foreach($data['prices'] as $ticketPrice) {
-            $priceWithoutTax = $ticketPrice['price'] / 1.27;
+            $baseTax = $ticketPrice['tax'] === 5 ? 1 . '.0' . $ticketPrice['tax'] : 1 . '.' . $ticketPrice['tax'];
+
+            $priceWithoutTax = $ticketPrice['price'] / floatval($baseTax);
+
             $tax = $ticketPrice['price'] - $priceWithoutTax;
-            // Számla tétel összeállítása alapértelmezett adatokkal (1 db tétel 27%-os ÁFA tartalommal)
-            $item = new InvoiceItem($data['event_name'] . ' | ' . $ticketPrice['category']['name'], $priceWithoutTax * $ticketPrice['quantity']);
+
+            $item = new InvoiceItem($data['event_name'] . ' | ' . $ticketPrice['category']['name'], $priceWithoutTax * $ticketPrice['quantity'], 1, 'db', strval($ticketPrice['tax']));
             // Tétel nettó értéke
             $item->setNetPrice($priceWithoutTax * $ticketPrice['quantity']);
             // Tétel ÁFA értéke

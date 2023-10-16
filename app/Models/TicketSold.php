@@ -9,7 +9,7 @@ class TicketSold extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['ticket_id', 'category_id', 'price', 'quantity'];
+    protected $fillable = ['ticket_id', 'category_id', 'price', 'tax','quantity'];
 
     public function category()
     {

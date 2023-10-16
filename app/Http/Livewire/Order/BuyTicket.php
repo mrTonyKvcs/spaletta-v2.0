@@ -159,6 +159,7 @@ class BuyTicket extends Component
                         'ticket_id'     => $ticket->id,
                         'category_id'   => $item->category_id,
                         'price'         => $item->price,
+                        'tax'         => $item->tax,
                         'quantity'     => $item->quantity
                     ]);
                 });
@@ -169,6 +170,7 @@ class BuyTicket extends Component
                 'ticket_id'     => $ticket->id,
                 'category_id'   => $ticketType->category_id,
                 'price'         => $ticketType->price,
+                'tax'         => $ticketType->tax,
                 'quantity'     => $this->quantity
             ]);
         }
