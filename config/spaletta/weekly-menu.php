@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.10.25. - 2023.10.28.',
+    'menu-date' => '2023.11.01. - 2023.11.04.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         // 'first-courses' => [
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Frankfurti leves',
+                    'name'  => 'Korhelyleves, füstölt csülök, kolbász',
                     'price' => 1700
                 ],
                 [
-                    'name'  => 'Tárkonyos burgonyaleves',
-                    'price' => 1400
+                    'name'  => 'Karfiol leves, pirított karfiol, fűszeres mogyoró',
+                    'price' => 1500
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Ropogós császár, sárgaborsó főzelék',
+                    'name' => 'Cordon bleu, burgonyapüré',
                     'price' => 2600
                 ],
                 [
-                    'name' => 'Joghurtos csirkenyárs, sült őszi zöldségek',
-                    'price' => 2400
+                    'name' => 'Cézár saláta, csirkemell',
+                    'price' => 2500
                 ],
                 [
-                    'name' => 'Rikottás-parajos tagliatelle',
-                    'price' => 2300
+                    'name' => 'Vörös lencse dahl, naan kenyér',
+                    'price' => 2400
                 ],
             ]
         ],
@@ -48,8 +48,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Tejespite, sárgabarack',
-                    'price' => 1200
+                    'name' => 'Mákos guba, vanília sodóű',
+                    'price' => 1300
                 ]
             ]
         ]
