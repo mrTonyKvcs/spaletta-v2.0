@@ -22,7 +22,7 @@ return [
                     'price' => 1700
                 ],
                 [
-                    'name'  => 'Karfiol leves, pirított karfiol, fűszeres mogyoró',
+                    'name'  => 'Karfiolleves, pirított karfiol, fűszeres mogyoró',
                     'price' => 1500
                 ]
             ]
@@ -48,7 +48,7 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Mákos guba, vanília sodóű',
+                    'name' => 'Mákos guba, vaníliasodó',
                     'price' => 1300
                 ]
             ]
