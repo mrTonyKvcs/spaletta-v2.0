@@ -77,7 +77,7 @@
                 title="spaletta">{{ __('Étterem') }}</x-card>
             <x-card type="link" path="/images/pages/home/section/bar" route="{{ route('pages.bar') }}" alt="reservation"
                 title="reservation">{{ __('Sörház') }}</x-card>
-            <x-card type="link" path="/images/pages/home/section/events" route="{{ route('events.index') }}" alt="events"
+            <x-card type="link" path="/images/pages/home/section/events-new" route="{{ route('events.index') }}" alt="events"
                 title="events">{{ __('Rendezvények') }}</x-card>
             <x-card type="link" path="/images/pages/home/section/contact" route="{{ route('pages.reservation') }}" alt="drinks"
                 title="drinks">{{ __('Asztalfoglalás') }}</x-card>
