@@ -32,7 +32,7 @@
                 <div class="z-20">
                     <x-button class="mr-10" type="transparent"><a href="{{ route('pages.restaurant') }}">{{ __('Étterem') }}</a>
                     </x-button>
-                    <x-button type="transparent"><a href="{{ route('pages.restaurant') }}">{{ __('Sörház') }}</a></x-button>
+                    <x-button type="transparent"><a href="{{ route('pages.bar') }}">{{ __('Sörház') }}</a></x-button>
                 </div>
             </div>
         </div>
