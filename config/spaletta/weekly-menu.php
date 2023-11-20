@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2023.11.15. - 2023.11.18.',
+    'menu-date' => '2023.11.22. - 2023.11.25.',
     'saturday-date' => '2023.02.25.',
     'menu' => [
         // 'first-courses' => [
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Palócleves',
-                    'price' => 1700
+                    'name'  => 'Burgonyaleves, kolbász, tojás, lestyán',
+                    'price' => 1400
                 ],
                 [
-                    'name'  => 'Vörösboros szilvaleves',
-                    'price' => 1400
+                    'name'  => 'Körteleves, kardamom, kesudió',
+                    'price' => 1300
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Szalontüdő, szalvétagombóc',
+                    'name' => 'Pacalpörkölt, köröm, házi kovászos kenyér',
                     'price' => 2600
                 ],
                 [
-                    'name' => 'Vajas csirkecomb, kapribogyó, petrezselyem, burgonyapüré',
-                    'price' => 2500
+                    'name' => 'Rántott csirkecomb filé, burgonyapüré, almakompót',
+                    'price' => 2400
                 ],
                 [
-                    'name' => 'Rántott sajt a piacról, citrusos saláta',
-                    'price' => 2400
+                    'name' => 'Krumplis tészta',
+                    'price' => 2200
                 ],
             ]
         ],
@@ -48,7 +48,7 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Almás crumble, vaníliás tejszín',
+                    'name' => 'Császármorzsa, baracklekvár',
                     'price' => 1300
                 ]
             ]
