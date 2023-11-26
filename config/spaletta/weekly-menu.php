@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Burgonyaleves, kolbász, tojás, lestyán',
-                    'price' => 1400
+                    'name'  => 'Gulyásleves, csipetke',
+                    'price' => 1600
                 ],
                 [
-                    'name'  => 'Körteleves, kardamom, kesudió',
-                    'price' => 1300
+                    'name'  => 'Gomba consomme, pirított gombák, pak choy',
+                    'price' => 1400
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Pacalpörkölt, köröm, házi kovászos kenyér',
+                    'name' => 'Ropogós sült császár, saláták, szója, lime',
                     'price' => 2600
                 ],
                 [
-                    'name' => 'Rántott csirkecomb filé, burgonyapüré, almakompót',
-                    'price' => 2400
+                    'name' => 'Csirkepaprikás, túrós specli',
+                    'price' => 2500
                 ],
                 [
-                    'name' => 'Krumplis tészta',
-                    'price' => 2200
+                    'name' => 'Leveles paraj, posírozott tojás, szezám',
+                    'price' => 2100
                 ],
             ]
         ],
@@ -48,7 +48,7 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Császármorzsa, baracklekvár',
+                    'name' => 'Erdei gyümölcsök, vanília, habcsók',
                     'price' => 1300
                 ]
             ]
