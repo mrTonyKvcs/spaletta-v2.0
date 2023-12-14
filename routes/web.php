@@ -143,7 +143,7 @@ Route::group(
         })->name('pages.bar');
 
         Route::get(LaravelLocalization::transRoute('routes.christmas'), function () {
-            $title = 'Karácsonyi Ajánló';
+            $title = 'Karácsonyi ajánló';
             $products = Product::where('category_id', 65)->get();
             return view('pages.christmas', compact('products', 'title'));
         })->name('pages.christmas');
