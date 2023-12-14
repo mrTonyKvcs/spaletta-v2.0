@@ -11,6 +11,7 @@ return [
     'about' => 'about',
     'contact' => 'contact',
     'signin' => 'signin',
-    'weeklymenu'=> 'weeklymenu',
-    'landingpage' => 'landingpage'
+    'weeklymenu' => 'weeklymenu',
+    'landingpage' => 'landingpage',
+    'christmas' => 'christmas'
 ];

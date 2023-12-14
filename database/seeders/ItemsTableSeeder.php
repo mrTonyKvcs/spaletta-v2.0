@@ -1,4 +1,5 @@
 <?php
+
 namespace Database\Seeders;
 
 use App\Item;
@@ -16,9 +17,9 @@ class ItemsTableSeeder extends Seeder
     public function run()
     {
         // $foods = config()->get('spaletta.restaurant');
-        $foods = config()->get('spaletta.bar');
+        $foods = config()->get('spaletta.christmas');
 
-        foreach($foods as $item) {
+        foreach ($foods as $item) {
             if (!isset($item['less_price'])) {
                 $item['less_price'] = null;
             }

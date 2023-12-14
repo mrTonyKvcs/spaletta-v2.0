@@ -1,4 +1,3 @@
-
 <!--<div class="flex flex-col items-center">
     <img class="w-40" src="../images/logo/logo.png" alt="">
     <div class="mt-20 w-1/3 lg:w-1/6 flex items-center justify-around">
@@ -19,8 +18,6 @@
         </div>
     </div>
     <div class="w-full border-t border-gray-200">
-        <p class="text-center light-gray py-6 text-xl font-medium">© 2020 Spaletta ÉTTEREM ÉS SÖRHÁZ</p>
+        <p class="text-center light-gray py-6 text-xl font-medium">© 2020-2024 Spaletta ÉTTEREM ÉS SÖRHÁZ</p>
     </div>
 </div>
-
- 

@@ -12,5 +12,6 @@ return [
     'contact' => 'kontakt',
     'signin' => 'anmelden',
     'weeklymenu' => 'wochenkarte',
-    'landingpage' => 'landingpage'
+    'landingpage' => 'landingpage',
+    'christmas' => 'weihnachten'
 ];

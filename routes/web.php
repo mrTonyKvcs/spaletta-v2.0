@@ -21,13 +21,13 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
  */
 
 Route::get('payment-start', 'App\Http\Controllers\PaymentController@start')
-->name('payment.start');
+    ->name('payment.start');
 
 Route::get('payment-back', 'App\Http\Controllers\PaymentController@back')
-->name('payment.back');
+    ->name('payment.back');
 
 Route::get('payment-finish', 'App\Http\Controllers\PaymentController@finish')
-->name('payment.finish');
+    ->name('payment.finish');
 
 Route::post('payment-ipn', 'App\Http\Controllers\PaymentController@ipn')
     ->name('payment.ipn');
@@ -36,9 +36,9 @@ Route::post('payment-ipn', 'App\Http\Controllers\PaymentController@ipn')
 
 Route::group(
     [
-    'prefix' => LaravelLocalization::setLocale(),
-    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'localize']
-],
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'localize']
+    ],
     function () {
         Route::get('/', function (Request $request) {
             return view('pages.index');
@@ -60,23 +60,23 @@ Route::group(
         ]);
 
         // Route::get('rendeles/{id}', function (Request $request) {
-    //     return view('pages.order', ['request' => $request]);
+        //     return view('pages.order', ['request' => $request]);
         // })->name('pages.order')->middleware('auth');
 
         // Route::get(LaravelLocalization::transRoute('routes.orders') . '/{order}', \App\Http\Livewire\Order::class)
-    //     ->name('pages.order')
-    //     ->middleware('auth');
+        //     ->name('pages.order')
+        //     ->middleware('auth');
 
         // Route::get(LaravelLocalization::transRoute('routes.orders'), \App\Http\Livewire\User\AllOrder::class)
-    //     ->name('pages.user-orders')
-    //     ->middleware('auth');
+        //     ->name('pages.user-orders')
+        //     ->middleware('auth');
 
         // Route::get(LaravelLocalization::transRoute('routes.cart'), function () {
-    //     return view('pages.cart');
+        //     return view('pages.cart');
         // })->name('pages.cart');
 
         // Route::get(LaravelLocalization::transRoute('routes.order'), function () {
-    //     return view('pages.menu');
+        //     return view('pages.menu');
         // })->name('pages.menu');
 
         Route::get(LaravelLocalization::transRoute('routes.menu'), function () {
@@ -86,9 +86,9 @@ Route::group(
         })->name('pages.menu');
 
         // Route::get('oktobierfest', function () {
-    //     $title = 'OKTOBIERFEST Étlap';
-    //     $categories = Category::where('type_id', 8)->with('items')->get();
-    //     return view('pages.menu', compact('categories', 'title'));
+        //     $title = 'OKTOBIERFEST Étlap';
+        //     $categories = Category::where('type_id', 8)->with('items')->get();
+        //     return view('pages.menu', compact('categories', 'title'));
         // })->name('pages.oktobierfest');
 
         Route::get(LaravelLocalization::transRoute('routes.reservation'), function () {
@@ -96,11 +96,11 @@ Route::group(
         })->name('pages.reservation');
 
         // Route::get('sikeres-vasarlas/{id}', function ($id) {
-    //     $ticket = Ticket::find($id);
+        //     $ticket = Ticket::find($id);
 
-    //     return view('pages.successful-shopping', [
-    //         'ticket' => $ticket
-    //     ]);
+        //     return view('pages.successful-shopping', [
+        //         'ticket' => $ticket
+        //     ]);
         // })->name('pages.successful-shopping');
 
         // Route::get('rendeles/{id}', function (Request $request) {
@@ -142,6 +142,12 @@ Route::group(
             return view('pages.bar', compact('products', 'title'));
         })->name('pages.bar');
 
+        Route::get(LaravelLocalization::transRoute('routes.christmas'), function () {
+            $title = 'Karácsonyi Ajánló';
+            $products = Product::where('category_id', 65)->get();
+            return view('pages.christmas', compact('products', 'title'));
+        })->name('pages.christmas');
+
         // Route::get('oktobierfest', function () {
         //     $title = 'OKTOBIERFEST Étlap';
         //     $categories = Category::where('type_id', 8)->with('items')->get();
@@ -176,7 +182,7 @@ Route::group(
         ]);
 
         // Route::get(LaravelLocalization::transRoute('routes.events'), function () {
-    //     return view('pages.events');
+        //     return view('pages.events');
         //     return view('pages.events');
         // })->name('pages.events');
 

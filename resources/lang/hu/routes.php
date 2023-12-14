@@ -14,5 +14,6 @@ return [
     'contact' => 'kapcsolat',
     'signin' => 'bejelenkezes',
     'weeklymenu' => 'hetimenu',
-    'landingpage' => 'qr-menu'
+    'landingpage' => 'qr-menu',
+    'christmas' => 'karacsony'
 ];
