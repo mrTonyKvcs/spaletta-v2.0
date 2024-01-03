@@ -57,24 +57,24 @@
     <x-section background="christmas-section">
         <div class="flex justify-center">
             <div class="flex flex-col items-center justify-center mt-10 space-y-8 md:mt-0">
-                <h2 class="text-5xl text-center uppercase text-gold font-semibold">{{ __('Karácsonyi ajánló') }}</h2>
-                <p class="text-3xl font-medium text-center text-gray2e font-libre">{!! __('December 6-tól Séfünk karácsonyi ajánlatával is várjuk kedves Vendégeinket.<br> Tradícionális és ízletes fogásaink év végéig elérhetők lesznek.')!!}</p>
-                <x-button type="gray-transparent"><a href="{{route('pages.christmas')}}">{{ __('AJÁNLÓ') }}</a></x-button>
+                {{-- <h2 class="text-5xl text-center uppercase text-gold font-semibold">{{ __('Karácsonyi ajánló') }}</h2> --}}
+                <p class="text-3xl font-medium text-center text-gray2e font-libre">A Spaletta csapata néhány hétre pihenőre megy. Január 24-től a megszokott Spaletta ízekkel, rengeteg eseménnyel és nagy szeretettel várjuk Vendégeinket.</p>
+                <x-button type="gray-transparent"><a href="{{ route('events.index') }}">{{ __('Rendezvények') }}</a></x-button>
             </div>
         </div>
     </x-section>
-    <x-section>
+    {{-- <x-section>
         <div class="flex flex-col items-center w-full mt-24">
             <x-title title="{{ __('Déli ajánló') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}"></x-title>
             <x-weekly-menu></x-weekly-menu>
         </div>
-        {{-- <div class="flex flex-col items-center w-full mt-24">
+        <div class="flex flex-col items-center w-full mt-24">
             <x-title title="{{ __('Szombati ajánló') }}" text="{{ config('spaletta.weekly-menu.saturday-date') }}" ></x-title>
         <p class="text-3xl italic font-medium text-center text-gray2e font-libre">{{ config('spaletta.weekly-menu.saturday-menu')['price'] }} Ft</p>
         <x-weekend-menu></x-weekend-menu>
-        </div> --}}
+        </div>
         <p class="text-xl">{{ __('(Az ár nem tartalmazza a csomagolás díját)') }}</p>
-    </x-section>
+    </x-section> --}}
     <x-section background="home-services">
         <div class="gap-12 space-x-4 lg:space-x-0 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 lg:gap-12">
             <x-card type="link" path="/images/pages/home/section/menu" route="{{ route('pages.restaurant') }}" alt="spaletta" title="spaletta">{{ __('Étterem') }}</x-card>
