@@ -54,16 +54,16 @@
         <h2 class="text-4xl italic font-medium gold font-libre">Kedves Vendégeink !</h2>
         <p class="text-3xl italic font-medium text-center text-gray2e font-libre">Éttermünk augusztus 20-29-ig nyári szünetet tart, augusztus 30-án 16 órától várjuk Vendégeinket!</p>
     </div> --}}
-    <x-section background="christmas-section">
+    {{-- <x-section background="christmas-section">
         <div class="flex justify-center">
             <div class="flex flex-col items-center justify-center mt-10 space-y-8 md:mt-0">
-                {{-- <h2 class="text-5xl text-center uppercase text-gold font-semibold">{{ __('Karácsonyi ajánló') }}</h2> --}}
+                <h2 class="text-5xl text-center uppercase text-gold font-semibold">{{ __('Karácsonyi ajánló') }}</h2>
                 <p class="text-3xl font-medium text-center text-gray2e font-libre">A Spaletta csapata néhány hétre pihenőre megy. Január 24-től a megszokott Spaletta ízekkel, rengeteg eseménnyel és nagy szeretettel várjuk Vendégeinket.</p>
                 <x-button type="gray-transparent"><a href="{{ route('events.index') }}">{{ __('Rendezvények') }}</a></x-button>
             </div>
         </div>
-    </x-section>
-    {{-- <x-section>
+    </x-section> --}}
+    <x-section>
         <div class="flex flex-col items-center w-full mt-24">
             <x-title title="{{ __('Déli ajánló') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}"></x-title>
             <x-weekly-menu></x-weekly-menu>
@@ -74,7 +74,7 @@
         <x-weekend-menu></x-weekend-menu>
         </div>
         <p class="text-xl">{{ __('(Az ár nem tartalmazza a csomagolás díját)') }}</p>
-    </x-section> --}}
+    </x-section>
     <x-section background="home-services">
         <div class="gap-12 space-x-4 lg:space-x-0 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 lg:gap-12">
             <x-card type="link" path="/images/pages/home/section/menu" route="{{ route('pages.restaurant') }}" alt="spaletta" title="spaletta">{{ __('Étterem') }}</x-card>
