@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.01.24. - 2024.01.26.',
-    'saturday-date' => '2024.01.27.',
+    'menu-date' => '2024.01.31. - 2024.02.02.',
+    'saturday-date' => '2024.02.03.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Bableves, füstölt csülök, csipetke',
-                    'price' => 1500
+                    'name'  => 'Körteleves, marinált körte, fűszeres kesudió',
+                    'price' => 1400
                 ],
                 [
-                    'name'  => 'Karfiol leves, pirított karfiol, fűszeres mogyoró',
-                    'price' => 1300
+                    'name'  => 'Frankfurti leves',
+                    'price' => 1600
                 ]
             ]
         ],
@@ -31,15 +31,15 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Sertés fasírt, burgonyafőzelék, tárkony',
+                    'name' => 'Tarhonyás hús, csalamádé',
                     'price' => 2600
                 ],
                 [
-                    'name' => 'Csirkecomb filé, tom yum, pack choy',
-                    'price' => 2500
+                    'name' => 'Rántott ponty, petrezselymes burgonya, tartár',
+                    'price' => 2600
                 ],
                 [
-                    'name' => 'Tagliatelle, paradicsom, rukkola',
+                    'name' => 'Gnocchi sorrentina',
                     'price' => 2400
                 ],
             ]
@@ -48,20 +48,20 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Citromos piskóta, mascarpone, bazsalikom',
+                    'name' => 'Csörögefánk, baracklekvár',
                     'price' => 1300
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'price' => 5200,
+        'price' => 5400,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Ázsiai húsleves, töltött wonton, roppanós zöldségek',
+                        'name'  => 'Tárkonyos csirkeraguleves',
                         'price' => 1400
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Tengeri süllő, tom yum, misos sült répa',
+                        'name' => 'Cordon bleu, burgonyapüré, alma-körte kompót',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Citromos piskóta, citsus sorbet, mascarpone, bazsalikom',
+                        'name' => 'Reszelt meggyes',
                         'price' => 1200
                     ]
                 ]
