@@ -19,7 +19,7 @@ return [
             'de' => 'Knusprig gebackene Schweinhaxe, geröstete Kartoffel und Sauerkraut,',
             'en' => 'Crispy baked pork knuckle, roasted potatoes, and Sauerkraut.'
         ],
-        'comment' => [''],
+        'comment' => '',
         'price' => 7700,
         'wine' => ''
     ],
