@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.02.14. - 2024.02.16.',
-    'saturday-date' => '2024.02.17.',
+    'menu-date' => '2024.02.21. - 2024.02.23.',
+    'saturday-date' => '2024.02.24.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Burgonya krémleves, újhagyma, túrós pogácsa',
-                    'price' => 1600
+                    'name'  => 'Almaleves, birsalma kompót',
+                    'price' => 1400
                 ],
                 [
-                    'name'  => 'Mediterrán halleves, kovászos kenyér',
-                    'price' => 2100
+                    'name'  => 'Palóc leves',
+                    'price' => 1600
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Lassan sült sertés tarja, paradicsomos sült bab, sós citrom',
-                    'price' => 2800
-                ],
-                [
-                    'name' => 'Rántott csirkecomb filé, rizibizi',
+                    'name' => 'Bakonyi, zsemlegombóc',
                     'price' => 2600
                 ],
                 [
-                    'name' => 'Muszaka, gersli, cukkíni, kápia',
-                    'price' => 2300
+                    'name' => 'Indiai vajas csirke, basmati rizs',
+                    'price' => 2500
+                ],
+                [
+                    'name' => 'Káposztás tészta',
+                    'price' => 2400
                 ],
             ]
         ],
@@ -48,8 +48,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Szilvás nudli, karamellizált morzsa',
-                    'price' => 1400
+                    'name' => '“Tiramisu”, cantuccini, amaretto',
+                    'price' => 1300
                 ]
             ]
         ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Brassói aprópecsenye, csalamádé',
+                        'name' => 'Pacalpörkölt, burgonya',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Rákóczi túrós',
+                        'name' => 'Somlói',
                         'price' => 1200
                     ]
                 ]
