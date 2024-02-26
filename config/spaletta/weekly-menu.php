@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.02.21. - 2024.02.23.',
-    'saturday-date' => '2024.02.24.',
+    'menu-date' => '2024.02.28. - 2024.03.01.',
+    'saturday-date' => '2024.03.02.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Almaleves, birsalma kompót',
+                    'name'  => 'Gombaleves',
                     'price' => 1400
                 ],
                 [
-                    'name'  => 'Palóc leves',
-                    'price' => 1600
+                    'name'  => 'Nyírségi gombóc leves',
+                    'price' => 1700
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Bakonyi, zsemlegombóc',
+                    'name' => 'Rántott szelet, burgonyapüré, tonkatsu szósz',
                     'price' => 2600
                 ],
                 [
-                    'name' => 'Indiai vajas csirke, basmati rizs',
+                    'name' => 'Rácponty',
                     'price' => 2500
                 ],
                 [
-                    'name' => 'Káposztás tészta',
-                    'price' => 2400
+                    'name' => 'Pestos tagliatelle, paradicsom, parmezán',
+                    'price' => 2300
                 ],
             ]
         ],
@@ -48,7 +48,7 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => '“Tiramisu”, cantuccini, amaretto',
+                    'name' => 'Olivás piskóta, mák, meggy, tejszín',
                     'price' => 1300
                 ]
             ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Pacalpörkölt, burgonya',
+                        'name' => 'Bolognai',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Somlói',
+                        'name' => 'Szalagos fánk, baracklekvár',
                         'price' => 1200
                     ]
                 ]
