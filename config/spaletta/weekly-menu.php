@@ -18,11 +18,11 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Gombaleves',
-                    'price' => 1400
+                    'name'  => 'Kókusztejes répaleves, gyömbér, fűszeres kesudió',
+                    'price' => 1600
                 ],
                 [
-                    'name'  => 'Nyírségi gombóc leves',
+                    'name'  => 'Ázsiai húsleves, soba tészta, zöldségek',
                     'price' => 1700
                 ]
             ]
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Rántott szelet, burgonyapüré, tonkatsu szósz',
-                    'price' => 2600
-                ],
-                [
-                    'name' => 'Rácponty',
+                    'name' => 'Burgonyafőzelék, lángolt kolbász, tárkony',
                     'price' => 2500
                 ],
                 [
-                    'name' => 'Pestos tagliatelle, paradicsom, parmezán',
-                    'price' => 2300
+                    'name' => 'Csirkemell, rizstészta, gombák',
+                    'price' => 2600
+                ],
+                [
+                    'name' => 'Grill gomolya, saláta, mangó',
+                    'price' => 2400
                 ],
             ]
         ],
@@ -48,20 +48,20 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Olivás piskóta, mák, meggy, tejszín',
-                    'price' => 1300
+                    'name' => 'Pavlova, gyümölcsök, tejszín',
+                    'price' => 1400
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'price' => 5200,
+        'price' => 5300,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Húsleves, cérnametélt, zöldségek',
+                        'name'  => 'Zeller leves, misos sült zeller, pirított magok',
                         'price' => 1400
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Bolognai',
+                        'name' => 'Spaletta brassói',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Szalagos fánk, baracklekvár',
+                        'name' => 'Gyümölcsrizs, granny smith, sós karamell',
                         'price' => 1200
                     ]
                 ]
