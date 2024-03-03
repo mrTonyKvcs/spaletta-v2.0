@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.02.28. - 2024.03.01.',
-    'saturday-date' => '2024.03.02.',
+    'menu-date' => '2024.03.06. - 2024.03.08.',
+    'saturday-date' => '2024.03.09.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -62,7 +62,7 @@ return [
                 'items' => [
                     [
                         'name'  => 'Zeller leves, misos sült zeller, pirított magok',
-                        'price' => 1400
+                        'price' => 1500
                     ]
                 ]
             ],
