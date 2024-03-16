@@ -73,6 +73,7 @@
         <p class="text-3xl italic font-medium text-center text-gray2e font-libre">{{ config('spaletta.weekly-menu.saturday-menu')['price'] }} Ft</p>
         <x-weekend-menu></x-weekend-menu>
         </div>
+        <p class="text-xl">1. Glutén 2. Rákfélék 3. Tojás 4. Halak 5. Földimogyoró 6. Szójabab 7. Tej 8. Diófélék 9. Zeller10. Mustár 11. Szezámmag</p>
         <p class="text-xl">{{ __('(Az ár nem tartalmazza a csomagolás díját)') }}</p>
     </x-section>
     <x-section background="home-services">

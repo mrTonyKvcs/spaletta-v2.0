@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.03.13. - 2024.03.15.',
-    'saturday-date' => '2024.03.16.',
+    'menu-date' => '2024.03.20. - 2024.03.22.',
+    'saturday-date' => '2024.03.23.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,11 +18,11 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Medvehagyma leves, posírozott tojás',
-                    'price' => 1500
+                    'name'  => 'Mediterrán halleves, kovászos kenyér (1,2,4,9)',
+                    'price' => 1600
                 ],
                 [
-                    'name'  => 'Kókusztejes csirkeleves, laska gomba',
+                    'name'  => 'Bableves, füstölt csülök, csipetke (1,3,7,9)',
                     'price' => 1700
                 ]
             ]
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Gulyásos hús, sült zöldségek',
-                    'price' => 2700
+                    'name' => 'Zöldborsó főzelék, medvehagyma, fasírt (1,3,7)',
+                    'price' => 2500
                 ],
                 [
-                    'name' => 'Ropogós ponty, sült rizs, kimchi',
-                    'price' => 2600
+                    'name' => 'Rántott csirkecomb filé, hoisin, uborkasaláta (1,3,6,11)',
+                    'price' => 2500
                 ],
                 [
-                    'name' => 'Tagliatelle, borsó, citrom',
-                    'price' => 2400
+                    'name' => 'Krumplis tészta (1,3)',
+                    'price' => 2300
                 ],
             ]
         ],
@@ -48,20 +48,20 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Rizskoch, rumos baracklekvár',
-                    'price' => 1400
+                    'name' => 'Szilvás crumble, tejszín (1,3,7)',
+                    'price' => 1200
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'price' => 5400,
+        'price' => 5300,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Húsleves, cérnametélt, roppanós zöldségek',
+                        'name'  => 'Húsleves, roppanós zöldségek, cérnametélt (1,3,9)',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Sült oldalas „Pékné”',
+                        'name' => 'Füstös csirke hortobágyi (1,3,7)',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Túrógombóc, vaníliás tejföl',
+                        'name' => 'Mézes körte, mascarpone, sós karamell, kesudió (7,8)',
                         'price' => 1200
                     ]
                 ]
