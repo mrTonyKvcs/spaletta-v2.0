@@ -32,11 +32,11 @@
                     </x-button>
                     <x-button type="transparent"><a href="{{ route('pages.bar') }}">{{ __('Sörház') }}</a></x-button>
                 </div>
-                <div class="z-20">
+                {{-- <div class="z-20">
                     <x-button class="mr-10" type="transparent"><a href="{{ route('pages.reservation') }}">{{ __('Asztalfoglalás') }}</a>
                     </x-button>
                     <x-button type="transparent"><a href="{{ route('events.index') }}">{{ __('Rendezvények') }}</a></x-button>
-                </div>
+                </div> --}}
             </div>
         </div>
         {{-- <video poster="../images/gallery-bg.jpg" autoplay playsinline muted loop>
