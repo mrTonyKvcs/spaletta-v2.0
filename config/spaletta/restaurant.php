@@ -59,9 +59,9 @@ return [
     [
         'category_id' => 3,
         'name' => [
-            'hu' => 'Spagetti Aglio e olio  ( 1,3,7 )',
-            'de' => 'Spagetti Aglio e olio  ( 1,3,7 )',
-            'en' => 'Spagetti Aglio e Olio  ( 1,3,7 )'
+            'hu' => 'Spaghetti Aglio e olio  ( 1,3,7 )',
+            'de' => 'Spaghetti Aglio e olio  ( 1,3,7 )',
+            'en' => 'Spaghetti Aglio e Olio  ( 1,3,7 )'
         ],
         'comment' => '',
         'price' => 3550,
@@ -70,9 +70,9 @@ return [
     [
         'category_id' => 3,
         'name' => [
-            'hu' => 'Spagetti Aglio e olio, garnélával (1,2,3,7)',
-            'de' => 'Spagetti Aglio e olio, Garnelen (1,2,3,7)',
-            'en' => 'Spagetti Aglio e olio with shrimp (1,2,3,7)'
+            'hu' => 'Spaghetti Aglio e olio, garnélával (1,2,3,7)',
+            'de' => 'Spaghetti Aglio e olio, Garnelen (1,2,3,7)',
+            'en' => 'Spaghetti Aglio e olio with shrimp (1,2,3,7)'
         ],
         'comment' => '',
         'price' => 4900,
