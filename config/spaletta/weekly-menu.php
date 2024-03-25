@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.03.20. - 2024.03.22.',
+    'menu-date' => '2024.03.27. - 2024.03.29.',
     'saturday-date' => '2024.03.23.',
     'menu' => [
         // 'first-courses' => [
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Mediterrán halleves, kovászos kenyér (1,2,4,9)',
-                    'price' => 1600
+                    'name'  => 'Ázsiai húsleves, gombák, udon tészta (1,3,4,6,7)',
+                    'price' => 1700
                 ],
                 [
-                    'name'  => 'Bableves, füstölt csülök, csipetke (1,3,7,9)',
-                    'price' => 1700
+                    'name'  => 'Tárkonyos csirkeraguleves (1,7,9,10)',
+                    'price' => 1800
                 ]
             ]
         ],
@@ -31,15 +31,15 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Zöldborsó főzelék, medvehagyma, fasírt (1,3,7)',
+                    'name' => 'Sertés cordon, burgonyapüré, ecetes szívsaláta (1,3,7)',
+                    'price' => 2700
+                ],
+                [
+                    'name' => 'Csirke tikka, jázminrizs, naan (1,7)',
                     'price' => 2500
                 ],
                 [
-                    'name' => 'Rántott csirkecomb filé, hoisin, uborkasaláta (1,3,6,11)',
-                    'price' => 2500
-                ],
-                [
-                    'name' => 'Krumplis tészta (1,3)',
+                    'name' => 'Rizottó, medvehagyma, parmezán (7)',
                     'price' => 2300
                 ],
             ]
@@ -48,8 +48,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Szilvás crumble, tejszín (1,3,7)',
-                    'price' => 1200
+                    'name' => 'Pavlova, friss gyümölcsök, tejszín, bazsalikom (3,7)',
+                    'price' => 1400
                 ]
             ]
         ]
