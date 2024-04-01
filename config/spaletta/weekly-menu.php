@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.03.27. - 2024.03.29.',
-    'saturday-date' => '2024.03.23.',
+    'menu-date' => '2024.04.03. - 2024.04.05.',
+    'saturday-date' => '2024.04.06.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,11 +18,11 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Ázsiai húsleves, gombák, udon tészta (1,3,4,6,7)',
-                    'price' => 1700
+                    'name'  => 'Zöldborsó velouté, ricotta, sós citrom(7)',
+                    'price' => 1600
                 ],
                 [
-                    'name'  => 'Tárkonyos csirkeraguleves (1,7,9,10)',
+                    'name'  => 'Gulyásleves, csiprtke(1,3,9)',
                     'price' => 1800
                 ]
             ]
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Sertés cordon, burgonyapüré, ecetes szívsaláta (1,3,7)',
+                    'name' => 'Temesvári sertés tarja, specli, kapor(1,3,7)',
                     'price' => 2700
                 ],
                 [
-                    'name' => 'Csirke tikka, jázminrizs, naan (1,7)',
-                    'price' => 2500
+                    'name' => 'Füstön sült csirkemell, tavaszi saláta',
+                    'price' => 2600
                 ],
                 [
-                    'name' => 'Rizottó, medvehagyma, parmezán (7)',
-                    'price' => 2300
+                    'name' => 'Tojásos nokedli, ecetes saláta(1,3,7,10)',
+                    'price' => 2400
                 ],
             ]
         ],
@@ -48,8 +48,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Pavlova, friss gyümölcsök, tejszín, bazsalikom (3,7)',
-                    'price' => 1400
+                    'name' => 'Churros, csoki(1,3,7)',
+                    'price' => 1300
                 ]
             ]
         ]
@@ -61,7 +61,7 @@ return [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Húsleves, roppanós zöldségek, cérnametélt (1,3,9)',
+                        'name'  => 'Húsleves, cérnametélt, zöldségek(1,3,9)',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Füstös csirke hortobágyi (1,3,7)',
+                        'name' => 'Rántott szelet, rizibizi, körtekompót(1,3,7)',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Mézes körte, mascarpone, sós karamell, kesudió (7,8)',
+                        'name' => 'Pannacotta, áfonya(7)',
                         'price' => 1200
                     ]
                 ]
