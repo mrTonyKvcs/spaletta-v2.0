@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.04.10. - 2024.04.12.',
-    'saturday-date' => '2024.04.13.',
+    'menu-date' => '2024.04.17. - 2024.04.19.',
+    'saturday-date' => '2024.04.20.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Alma, sáfrány, friss gyümölcsök',
-                    'price' => 1500
+                    'name'  => 'Hagymaleves',
+                    'price' => 1300
                 ],
                 [
-                    'name'  => 'Szarvas raguleves (1,7,9)',
-                    'price' => 1700
+                    'name'  => 'Újburgonya leves, lángolt kolbász (9)',
+                    'price' => 1500
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Tarhonyás hús, csalamádé (1,3)',
-                    'price' => 2700
-                ],
-                [
-                    'name' => 'Csirkecomb filé, zöld curry, naan (1,4,7)',
-                    'price' => 2600
-                ],
-                [
-                    'name' => 'Tagliatelle, spárga, borsó (1,3,7)',
+                    'name' => 'Ropogós császár, recsegős burgonya, coleslaw (1,3,7,10)',
                     'price' => 2500
+                ],
+                [
+                    'name' => 'Chilis csirkenyárs, zöldsaláta (6)',
+                    'price' => 2400
+                ],
+                [
+                    'name' => 'Cukkíni tócsni, csepegtetett tejföl, kapor (1,3,7)',
+                    'price' => 2200
                 ],
             ]
         ],
@@ -48,8 +48,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Palacsinta, áfonya, vanília sodó (1,3,7)',
-                    'price' => 1300
+                    'name' => 'Brownie, házi vanília fagylalt (1,3,7)',
+                    'price' => 1100
                 ]
             ]
         ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Töltött dagadó, paradicsomos újkáposzta (1,3)',
+                        'name' => 'Lasagna (1,3,7,9)',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Eper, vanília, habcsók (1,3,7)',
+                        'name' => 'Eper, mascarpone, pisztácia (7)',
                         'price' => 1200
                     ]
                 ]
