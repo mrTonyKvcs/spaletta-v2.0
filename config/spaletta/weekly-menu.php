@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.04.24. - 2024.04.26.',
-    'saturday-date' => '2024.04.27.',
+    'menu-date' => '2024.05.01. - 2024.05.03.',
+    'saturday-date' => '2024.05.04.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Zöldborsó velouté, spárga, ricotta (7)',
-                    'price' => 1300
+                    'name'  => 'Bárány raguleves, spárga, sós citrom (1,7,9,10)',
+                    'price' => 1500
                 ],
                 [
-                    'name'  => 'Szecsuáni csípős-savanyú leves (3,4,6)',
-                    'price' => 1400
+                    'name'  => 'Alma-meggy leves, fahéjas tejföl sorbet (7)',
+                    'price' => 1300
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Sertés cordon, rizibizi (1,3,7)',
-                    'price' => 2500
+                    'name' => 'Tavaszi töltöttkáposzta (7)',
+                    'price' => 2300
                 ],
                 [
-                    'name' => 'Konfitált kacsazúza, káposztás tészta (1,3)',
-                    'price' => 2400
-                ],
-                [
-                    'name' => 'Rizottó, spárga, balzsamecet (7)',
+                    'name' => 'Roston sült csirkecomb filé, pakchoy, tom yum (4,6)',
                     'price' => 2200
+                ],
+                [
+                    'name' => 'Karalábé „főzelék” (1,7,9)',
+                    'price' => 2000
                 ],
             ]
         ],
@@ -48,20 +48,20 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Nudli, eper, bazsalikom (1,3,7)',
-                    'price' => 1200
+                    'name' => 'Madártej, misos karamell (3,6,7)',
+                    'price' => 1300
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'price' => 5100,
+        'price' => 5200,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Karfiolleves, pirított karfiol (7)',
+                        'name'  => 'Tavaszi zöldségleves (9)',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Csirkepörkölt, galuska, tejfölös uborkasaláta (1,3,7)',
+                        'name' => 'Rántott ponty, petrezselymes burgonya, tartár (1,3,4,7,10)',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Túrógombóc, eper (1,3,7)',
+                        'name' => 'Almás rétes, vanília espuma (1,3,7)',
                         'price' => 1200
                     ]
                 ]
