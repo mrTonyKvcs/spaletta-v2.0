@@ -111,7 +111,7 @@ class SendMailsController extends Controller
             return false;
         } elseif ($time < '11:30' || $time > '22:40') {
             return false;
-        } elseif ($checkin === '2024-05-03' && $time < '16:00') {
+        } elseif ($checkin === '2024-05-05') {
             return false;
         }
 
