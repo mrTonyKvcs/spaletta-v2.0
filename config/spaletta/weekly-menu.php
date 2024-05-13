@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.05.08. - 2024.05.10.',
-    'saturday-date' => '2024.05.11.',
+    'menu-date' => '2024.05.15. - 2024.05.17.',
+    'saturday-date' => '2024.05.18.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,11 +18,11 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Ribizli-rebarbara, gyömbér',
+                    'name'  => 'Saláta leves, sonka, kapor (7)',
                     'price' => 1300
                 ],
                 [
-                    'name'  => 'Gulyásleves, csipetke (1,3,9)',
+                    'name'  => 'Tyúkhúsleves, cérnametélt, zöldségek (1,3,9)',
                     'price' => 1500
                 ]
             ]
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Ropogós császár, gyöngybab, paradicsom (10)',
-                    'price' => 2500
-                ],
-                [
-                    'name' => 'Házi tagliatelle, lazac, paraj (1,3,4,7)',
+                    'name' => 'Füstön sült húsgombóc, zöldbab, kápia, paprikás szaft (7)',
                     'price' => 2400
                 ],
                 [
-                    'name' => 'Langyos tökfőzelék, kapor, sült kápia (7)',
-                    'price' => 2200
+                    'name' => 'Csirkecomb teriyaki, zöldséges sült rizs (1,6,11)',
+                    'price' => 2400
+                ],
+                [
+                    'name' => 'Zöldborsófőzelék, sajtos bundáskenyér (1,3,7)',
+                    'price' => 2100
                 ],
             ]
         ],
@@ -48,20 +48,20 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Granola, körte, joghurt (1,5,7)',
-                    'price' => 1200
+                    'name' => 'Crumble, eper, rebarbara, tejszín (1,3,7)',
+                    'price' => 1300
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'price' => 5000,
+        'price' => 5200,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Brokkoli krémleves, feta, turbolya (7)',
+                        'name'  => 'Burgonyaleves, lángolt kolbász, tárkony',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Brassói, kovászos uborka (1)',
+                        'name' => 'Resztelt kacsamáj, burgonya, házi csalamádé (10)',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Citromos piskóta, málna, mascarpone (1,3,7)',
+                        'name' => 'Szilvás pite, vanília, tejszín (1,3,7)',
                         'price' => 1200
                     ]
                 ]
