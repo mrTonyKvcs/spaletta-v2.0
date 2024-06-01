@@ -37,7 +37,6 @@
         <select name="locale" id="" class=" bg-white w-full gray outline-none text-center font-medium py-2.5 px-5 text-2xl border-b border-gray-300" required>
             <option value="Terasz">{{ __('Terasz') }}</option>
             <option value="Étterem">{{ __('Étterem') }}</option>
-            <option value="Sörház">{{ __('Sörház') }}</option>
         </select> 
     </div>
     <div>
