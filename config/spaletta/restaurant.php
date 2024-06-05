@@ -4,20 +4,20 @@ return [
     [
         'category_id' => 2,
         'name' => [
-            'hu' => 'Filézett ponty halászlé - akasztói szikiponty, gyufatészta (1,3,4)',
-            'de' => 'Fischsuppe – Karpfen aus Akasztó, Nudel (1,3,4)',
-            'en' => 'Fish soup – Carp from Akasztó, noodles (1,3,4)'
+            'hu' => 'Almaleves, friss gyümölcsök a piacról',
+            'de' => 'Apfelsuppe, frische Obst vom Markt',
+            'en' => 'Applesoup, fresh fruits from market'
         ],
         'comment' => '',
-        'price' => 2800,
+        'price' => 2200,
         'wine' => ''
     ],
     [
         'category_id' => 2,
         'name' => [
-            'hu' => 'Mesterleves tésztával és roppanós zöldségekkel (1,2,3,4,6,9) ',
-            'de' => '„Meistersuppe” mit hausgemachten Nudeln und knackigem Gemüse ( 1,2, 3,4, 6, 9)',
-            'en' => '“Master” Soup with Homemade Pasta and Crunchy Vegetables ( 1,2, 3,4, 6, 9)'
+            'hu' => 'Mesterleves tésztával és roppanós zöldségekkel (1,3,4,6)',
+            'de' => 'Meistersuppe, Nudel, knusprige Gemüse (1,3,4,6)',
+            'en' => 'Master soup, noodles, crispy vegetables (1,3,4,6)'
         ],
         'comment' => '',
         'price' => 2800,
@@ -48,12 +48,12 @@ return [
     [
         'category_id' => 3,
         'name' => [
-            'hu' => 'Gnochetti,szardella, citrom, paraj (1,3,4,7)',
-            'de' => 'Gnochetti, Sardelle, Zitrone, Spinat (1,3,4,7)',
-            'en' => 'Gnochetti, anchovies, Lemon, spinach (1,3,4,7)'
+            'hu' => 'Gnocchi alla Sorrentina (1,3,7)',
+            'de' => 'Gnocchi alla Sorrentina (1,3,7)',
+            'en' => 'Gnocchi alla Sorrentina (1,3,7)'
         ],
         'comment' => '',
-        'price' => 4550,
+        'price' => 4700,
         'wine' => ''
     ],
     [
@@ -70,9 +70,9 @@ return [
     [
         'category_id' => 3,
         'name' => [
-            'hu' => 'Spaghetti Aglio e olio, garnélával (1,2,3,7)',
-            'de' => 'Spaghetti Aglio e olio, Garnelen (1,2,3,7)',
-            'en' => 'Spaghetti Aglio e olio with shrimp (1,2,3,7)'
+            'hu' => 'Spaghetti Aglio e olio, peperoncino garnélával (1,2,3,7)',
+            'de' => 'Spaghetti Aglio e olio, Peperoncino Garnelen (1,2,3,7)',
+            'en' => 'Spaghetti Aglio e olio, peperoncino with shrimp (1,2,3,7)'
         ],
         'comment' => '',
         'price' => 4900,
@@ -81,12 +81,12 @@ return [
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Karfiol,vöröslencse,coriander',
-            'de' => 'Blumenkohl, rote Linse, Koriander',
-            'en' => 'Cauliflower, red lentil, coriander'
+            'hu' => 'Sült padlizsán, chermoula, paradicsom, rukkola, fenyőmag (8)',
+            'de' => 'Gebackene Aubergine, Chermoula,Tomaten, Ruccola, Pinienkern (8)',
+            'en' => 'Baked eggplant, chermoula, tomato, rucola, pine nuts (8)'
         ],
         'comment' => '',
-        'price' => 4800,
+        'price' => 4100,
         'wine' => ''
     ],
     [
@@ -103,34 +103,34 @@ return [
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Borjú bécsi, burgonyasalátával (1,3,10)',
-            'de' => 'Kalb Wiener Schnitzel, Kartoffelsalat (1,3,10)',
-            'en' => 'Veal Wiener Schnitzel, potato salad (1,3,10)'
+            'hu' => 'Borjú bécsi, burgonyasalátával (1,3,7,9,10)',
+            'de' => 'Kalb Wiener Schnitzel, Kartoffelsalat (1,3,7,9,10)',
+            'en' => 'Veal Wiener Schnitzel, potato salad (1,3,7,9,10)'
         ],
         'comment' => '',
-        'price' => 8100,
+        'price' => 8200,
         'wine' => ''
     ],
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Kacsamell, lilakáposzta, meggy, burgonyakrokett (1,3)',
-            'de' => 'Entenbrust, Lilakraut, Sauerkirsch, Kartoffelkrokett (1,3)',
-            'en' => 'Duck breast, purple cabbage, sour cherry, and potato croquettes (1,3)'
+            'hu' => 'Kacsamell, répa, burgonyapüré (7)',
+            'de' => 'Entenbrust, Karotten, Kartoffelpüree (7)',
+            'en' => 'Duck breast, carrots, mashed potato (7)'
         ],
         'comment' => '',
-        'price' => 7400,
+        'price' => 7300,
         'wine' => ''
     ],
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Füstön sült csirke “hortobágyi” (1,3,7)',
-            'de' => 'Auf Rauch gebackene Hühner “Hortobágyer Art” (1,3,7)',
-            'en' => 'Smoked roasted chicken "Hortobágy-style" (1,3,7)'
+            'hu' => 'Lecsós tarja, pirított burgonya',
+            'de' => 'Letscho Schweinekamm, geröstete Kartoffel',
+            'en' => 'Lecho-pork collar, roasted potato'
         ],
         'comment' => '',
-        'price' => 5300,
+        'price' => 5600,
         'wine' => ''
     ],
     [
@@ -141,7 +141,7 @@ return [
             'en' => 'Catfish paprikash, pasta with curd cheese (1,3,4,7)'
         ],
         'comment' => '',
-        'price' => 5500,
+        'price' => 5600,
         'wine' => ''
     ],
     [
@@ -167,47 +167,36 @@ return [
         'wine' => ''
     ],
     [
-        'category_id' => 4,
+        'category_id' => 5,
         'name' => [
-            'hu' => 'Lassan sült sertés tarja, ,,hentesragu” burgonya (1,6,7)',
-            'de' => 'Langsam gebackene Schweinekamm, Metzgerragout, Kartoffel (1,6,7)',
-            'en' => 'Slowly baked pork collar, butcherragout, potato (1,6,7)'
+            'hu' => 'USDA PRIME hátszín (200g)',
+            'de' => 'USDA PRIME Rücke (200g)',
+            'en' => 'USDA sirloin/ribeye steak (200g)'
         ],
         'comment' => '',
-        'price' => 5800,
+        'price' => 13500,
         'wine' => ''
     ],
     [
         'category_id' => 5,
         'name' => [
-            'hu' => 'USDA PRIME hátszín (200g) (3, 7)',
-            'de' => 'USDA PRIME Rücke (200g) (3, 7)',
-            'en' => 'USDA PRIME sirloin steak (200g) (3, 7)'
+            'hu' => 'Magyar tarka Ribeye szárazon érlelt (200g)',
+            'de' => 'Ungarische “Tarka” Rib Eye – dry aged (200g)',
+            'en' => 'Hungarian "Tarka" ribeye, dry-aged (200 g)'
         ],
         'comment' => '',
-        'price' => 12000,
+        'price' => 13500,
         'wine' => ''
     ],
     [
         'category_id' => 5,
         'name' => [
-            'hu' => 'Magyar tarka Ribeye szárazon érlelt (200g) (3, 7)',
-            'de' => 'Ungarische “Tarka” Rib Eye – dry aged (200g) (3, 7)',
-            'en' => 'Hungarian "Tarka" ribeye, dry-aged (200 g) (3, 7)'
+            'hu' => 'Argentin bélszín (200g)',
+            'de' => 'Argentinisch Lendenbraten (200g)',
+            'en' => 'Argentinean Loin (200g)'
         ],
         'comment' => '',
-        'price' => 12000,
-        'wine' => ''
-    ],
-    [
-        'category_id' => 5,
-        'name' => [
-            'hu' => 'Argentin bélszín (200g) (3,7)',
-            'de' => 'Argentinisch Lendenbraten (200g) (3,7)',
-            'en' => 'Argentinean Loin (200g) (3,7)'
-        ],
-        'comment' => '',
-        'price' => 16000,
+        'price' => 16500,
         'wine' => ''
     ],
     [
@@ -257,20 +246,20 @@ return [
     [
         'category_id' => 7,
         'name' => [
-            'hu' => 'French toast, vanília sodó, citrusok (1,3,7)',
-            'de' => 'French Toast, Vanillensosse, Zitrus ( 1,3,7)',
-            'en' => 'French toast, vanillasauce, citrus (1,3,7)'
+            'hu' => 'Pavlova, idénygyümölcsök, tejszín (3,7)',
+            'de' => 'Pavlova, Saisonfrüchte, Sahne (3,7)',
+            'en' => 'Pavlova, season fruits, cream (3,7)'
         ],
         'comment' => '',
-        'price' => 1700,
+        'price' => 1500,
         'wine' => ''
     ],
     [
         'category_id' => 7,
         'name' => [
-            'hu' => 'Répa, kókusz,citrusok (VEGÁN) (8)',
-            'de' => 'Karotten, Kokus, Zitrus (VEGÁN) (8)',
-            'en' => 'Carrot, coconut, citrus (VEGÁN) (8)'
+            'hu' => 'Répa, kókusz,citrusok (8)',
+            'de' => 'Karotten, Kokus, Zitrus (8)',
+            'en' => 'Carrot, coconut, citrus (8)'
         ],
         'comment' => '',
         'price' => 2000,
@@ -290,12 +279,12 @@ return [
     [
         'category_id' => 8,
         'name' => [
-            'hu' => 'Kimchi (fermentált kínai kel) (1,4,6)',
-            'de' => 'Kimchi (1,4,6)',
-            'en' => 'Kimchi (1,4,6)'
+            'hu' => 'Kovászos uborka (1)',
+            'de' => 'Gereift Gurke (1)',
+            'en' => 'Fermented pickle (1)'
         ],
         'comment' => '',
-        'price' => 1300,
+        'price' => 800,
         'wine' => ''
     ],
     [
@@ -312,12 +301,12 @@ return [
     [
         'category_id' => 9,
         'name' => [
-            'hu' => 'Húsleves cérnametélttel (1,2,3,4,6,9)',
-            'de' => 'Brühe mit Nudel (1,2,3,4,6,9)',
-            'en' => 'Meat Soup with vermicelli noodles (1,2,3,4,6,9)'
+            'hu' => 'Húsleves cérnametélttel (1,3,4,6)',
+            'de' => 'Brühe mit Nudel (1,3,4,6)',
+            'en' => 'Meat Soup with vermicelli noodles (1,3,4,6)'
         ],
         'comment' => '',
-        'price' => 1550,
+        'price' => 550,
         'wine' => ''
     ],
     [
