@@ -102,55 +102,6 @@
         @endempty
         </a> --}}
 
-            <div class="hidden xl:ml-6 xl:flex xl:items-center">
-                @if (Auth::check())
-                    <div @click.away="open = false" class="relative ml-3" x-data="{ open: false }">
-                        <div>
-                            <button @click="open = !open"
-                                class="flex border-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 lg:pr-3 lg:border-r-2"
-                                id="user-menu" aria-haspopup="true" x-bind:aria-expanded="open">
-                                <img class="w-8" src="../images/svg/user.svg" alt="">
-                                <div class="pl-2 pr-2 text-xl font-medium text-white align-bottom xl:text-2xl">
-                                    {{ auth()->user()->name }}</div>
-                                <img x-show="!open" class="w-10" src="/images/svg/down.svg" alt="">
-                                <img x-show="open" class="w-10" src="/images/svg/up.svg" alt="">
-                            </button>
-                        </div>
-                        <div x-show="open" x-description="Profile dropdown panel, show/hide based on dropdown state."
-                            x-transition:enter="transition ease-in duration-500"
-                            x-transition:enter-start="transform opacity-0 scale-95"
-                            x-transition:enter-end="transform opacity-100 scale-100"
-                            x-transition:leave="transition ease-in duration-500"
-                            x-transition:leave-start="transform opacity-100 scale-100"
-                            x-transition:leave-end="transform opacity-0 scale-95"
-                            class="absolute left-0 py-1 mt-2 text-xl origin-top-left bg-white rounded-md shadow-lg w-72 ring-1 ring-black ring-opacity-5"
-                            role="menu" aria-orientation="vertical" aria-labelledby="user-menu"
-                            style="display: none;">
-                            <a href="{{ route('pages.user-orders') }}"
-                                class="block px-4 py-2 text-2xl text-gray-700 " role="menuitem">Rendeléses</a>
-                            <form method="POST" class="block px-4 py-2" action="{{ route('logout') }}">
-                                @csrf
-                                <button class="text-2xl font-medium text-gray-700"
-                                    type="submit">{{ __('Kijelenkezés') }}</button>
-                            </form>
-                        </div>
-                    </div>
-                    {{-- <div class="ml-6">
-            <a href="{{ route('pages.cart') }}" class="flex justify-center py-4 text-white w-7 xl:w-10 px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
-              <x-icon icon="cart" width=25 height=20 viewBox="20 20" strokeWidth=0 />
-              @empty(!$cartTotal)
-                  ({{ $cartTotal }})
-              @endempty
-            </a>
-          </div> --}}
-
-                    {{-- @else --}}
-                    {{-- <div class="flex items-center">
-          <a href="{{ route('auth.signin') }}" class="pr-4 text-3xl text-white border-r-2 border-white hover:text-gold">{{ __('Bejelentkezés') }}</a>
-          <a href="{{ route('auth.signin') }}" class="pl-4 text-3xl text-white hover:text-gold">{{ __('Regisztráció') }}</a>
-        </div>  --}}
-                @endif
-            </div>
             <div class="flex items-center xl:hidden">
                 <!-- Mobile menu button -->
                 <button @click=" open = !open" class="xl:hidden focus:outline-none ">

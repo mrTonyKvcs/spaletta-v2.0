@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Carbon\Carbon;
 use App\Mail\SendMails;
 use App\Mail\SendContactMails;
+use App\Models\Location;
+use App\Models\Reservation;
 use Illuminate\Http\Request;
 
 class SendMailsController extends Controller
@@ -19,7 +21,7 @@ class SendMailsController extends Controller
             $open = $this->checkOpenHours($request->checkin, $request->time);
 
             if (!$open) {
-                return back()->with('error', 'Erre az időpontra nem tud foglalni asztalt mert az éttermünk zárva tart!');
+                return back()->with('error', 'Erre az időpontra nem tud foglalni asztalt!');
             }
 
             $privateEvent = $this->privateEvent($request->checkin, $request->time);
@@ -27,6 +29,11 @@ class SendMailsController extends Controller
             if ($privateEvent) {
                 return back()->with('error', 'Erre az időpontra nem tud foglalni asztalt mert az éttermünk zártkörű esemény miatt zárva tart!');
             }
+
+            $request['day'] = $request['checkin'];
+            $request['number_of_persons'] = $request['persons'];
+            $request['location_id'] = Location::where('name', $request['locale'])->first()?->id;
+            Reservation::create($request->all());
 
             \Mail::to(env('MAIL_TO_ADDRESS'), 'Spaletta Kecskemét')
                 ->send(new SendMails($request->all()));
