@@ -34,6 +34,7 @@ class SendMailsController extends Controller
             $request['day'] = $request['checkin'];
             $request['number_of_persons'] = $request['persons'];
             $request['location_id'] = Location::where('name', $request['locale'])->first()?->id;
+            $request['reservation_for_tv'] = $request['matchmaker'] === 'Igen' ? 1 : 0;
             Reservation::create($request->all());
 
             \Mail::to(env('MAIL_TO_ADDRESS'), 'Spaletta Kecskemét')
