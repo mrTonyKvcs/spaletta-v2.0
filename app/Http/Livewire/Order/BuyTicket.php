@@ -117,7 +117,11 @@ class BuyTicket extends Component
 
             $soldCount = TicketSold::query()
                 ->whereHas('ticket', function ($query) use ($event) {
-                    $query->where('event_id', $event->id);
+                    $query
+                        ->where('event_id', $event->id)
+                        ->whereHas('transaction', function ($q) {
+                            $q->where('status', 'SUCCESS');
+                        });
                 })
                 ->where('category_id', $ticketType->category_id)
                 ->sum('quantity');
@@ -143,6 +147,7 @@ class BuyTicket extends Component
 
     public function submit()
     {
+        $this->updatedQuantity($this->quantity);
         //Validation
         $validateData = $this->validate();
         $ticketData = $this->getTicketData($validateData);
@@ -198,13 +203,13 @@ class BuyTicket extends Component
 
     public function generateQrCode($data)
     {
-        $qr = '/public/images/qr-codes/'. $data['order_number'] . '.png';
+        $qr = '/public/images/qr-codes/' . $data['order_number'] . '.png';
 
         Storage::disk('local')->put(
             $qr,
             \QrCode::format('png')
-          ->size(300)
-          ->generate(URL::to('/') . '/check-in/' . $data['ticket_id'] . '/' . $data['order_number'])
+                ->size(300)
+                ->generate(URL::to('/') . '/check-in/' . $data['ticket_id'] . '/' . $data['order_number'])
         );
     }
 

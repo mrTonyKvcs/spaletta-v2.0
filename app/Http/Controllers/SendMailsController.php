@@ -7,6 +7,7 @@ use App\Mail\SendMails;
 use App\Mail\SendContactMails;
 use App\Models\Location;
 use App\Models\Reservation;
+use App\Models\ReservationException;
 use Illuminate\Http\Request;
 
 class SendMailsController extends Controller
@@ -118,11 +119,36 @@ class SendMailsController extends Controller
             return false;
         } elseif ($time < '11:30' || $time > '22:40') {
             return false;
-        } elseif ($checkin === '2024-05-05') {
+        } elseif ($this->checkForOverlap($checkin, $time)) {
             return false;
         }
 
 
         return true;
+    }
+
+    private function checkForOverlap($chekin, $time)
+    {
+        $overlappingReservations = ReservationException::where(function ($query) use ($chekin) {
+            $query->where('day_from', $chekin)
+                ->orWhere('day_to', $chekin)
+                ->orWhere(function ($query) use ($chekin) {
+                    $query->where('day_from', '<', $chekin)
+                        ->where('day_to', '>', $chekin);
+                });
+        })->where(function ($query) use ($time) {
+            $query->where('time_from', $time)
+                ->orWhere('time_to', $time)
+                ->orWhere(function ($query) use ($time) {
+                    $query->where('time_from', '<', $time)
+                        ->where('time_to', '>', $time);
+                });
+        })->get();
+
+        if ($overlappingReservations->count()) {
+            return true;
+        }
+
+        return false;
     }
 }

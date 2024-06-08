@@ -9,7 +9,7 @@ class Event extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = [ 'slug', 'title', 'image_path', 'hero_image_path','content', 'more_type_of_price', 'is_paid'];
+    protected $fillable = ['slug', 'title', 'image_path', 'hero_image_path', 'content', 'more_type_of_price', 'is_paid'];
 
     /**
      * The attributes that should be mutated to dates.
