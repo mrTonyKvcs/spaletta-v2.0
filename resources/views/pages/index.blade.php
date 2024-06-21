@@ -55,10 +55,10 @@
         <h2 class="text-4xl italic font-medium gold font-libre">Kedves Vendégeink !</h2>
         <p class="text-3xl italic font-medium text-center text-gray2e font-libre">A nyári szünet után , augusztus 30-án (kedden)  a megszokott nyitvatartással várjuk Vendégeinket</p>
     </div>  --}}
-    {{-- <div class="flex flex-col items-center justify-center w-full px-6 mt-56 space-y-8">
+    <div class="flex flex-col items-center justify-center w-full px-6 mt-56 space-y-8">
         <h2 class="text-4xl italic font-medium gold font-libre">Kedves Vendégeink !</h2>
-        <p class="text-3xl italic font-medium text-center text-gray2e font-libre">Éttermünk augusztus 20-29-ig nyári szünetet tart, augusztus 30-án 16 órától várjuk Vendégeinket!</p>
-    </div> --}}
+        <p class="text-3xl italic font-medium text-center text-gray2e font-libre">Június 26 - 30. között éttermünk zárva tart.Azonban  Kecskemét  Főterén megrendezésre kerülő Street Food Street Art és Borsétány eseményen megtalálhatóak leszünk,  szerdától szombatig  16.00 -00.00-ig. Várunk Mindenkit szeretettel!</p>
+    </div>
     {{-- <x-section background="christmas-section">
         <div class="flex justify-center">
             <div class="flex flex-col items-center justify-center mt-10 space-y-8 md:mt-0">
