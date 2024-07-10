@@ -50,7 +50,6 @@
 
 <div class="flex flex-col items-center justify-center w-full mt-12">
     <div class="flex justify-around uppercase text-gray73 w-full text-2xl">
-        <div class="space-y-6 font-semibold text-center">Az étterem konyhája szerdától szombatig 21:30 óráig, vasárnap
-            pedig 15:00 óráig tart nyitva.</div>
+        <div class="space-y-6 font-semibold text-center">Az étterem konyhája keddtól szombatig 21:30 óráig tart nyitva.</div>
     </div>
 </div>
