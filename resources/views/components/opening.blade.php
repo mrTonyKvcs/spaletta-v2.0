@@ -17,7 +17,7 @@
         <tbody>
             <tr class="text-center text-xl">
                 <td class="pt-2">-</td>
-                <td class="pt-2">11:30 - 22:00</td>
+                <td class="pt-2">16:00 - 22:00</td>
                 <td class="pt-2">11:30 - 22:00</td>
                 <td class="pt-2">11:30 - 22:00</td>
                 <td class="pt-2">11:30 - 24:00</td>
@@ -40,7 +40,7 @@
         </div>
         <div class="space-y-6 font-medium">
             <p>{{ __('Zárva') }}</p>
-            <p>11:30 - 22:00</p>
+            <p>16:00 - 22:00</p>
             <p>11:30 - 22:00</p>
             <p>11:30 - 24:00</p>
             <p>{{ __('Zárva') }}</p>
