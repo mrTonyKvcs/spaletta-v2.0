@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.07.10. - 2024.07.12.',
+    'menu-date' => '2024.07.17. - 2024.07.19.',
     'saturday-date' => '2024.07.13.',
     'menu' => [
         // 'first-courses' => [
@@ -18,11 +18,11 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Hideg szilvaleves, citrus sorbet',
+                    'name'  => 'Joghurtos barack leves, kardamom, joghurt sorbet (7)',
                     'price' => 1190
                 ],
                 [
-                    'name'  => 'Erdélyi húsgombóc leves (1,3,7,9)',
+                    'name'  => 'Palóc leves (1,7)',
                     'price' => 1390
                 ]
             ]
@@ -31,15 +31,15 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Rántott szelet, burgonya püré, barackbefőtt (1,3,7)',
+                    'name' => 'Rakott kelkáposzta (7)',
+                    'price' => 2490
+                ],
+                [
+                    'name' => 'Bőrén sült ponty filé, petrezselymes burgonya (4)',
                     'price' => 2390
                 ],
                 [
-                    'name' => 'Ragacsos csirkecomb, jázmin rizs, pak choy (4,6,11)',
-                    'price' => 2390
-                ],
-                [
-                    'name' => 'Tempurás zöldségek a piacról, labneh, dukkah (1,5,7,11)',
+                    'name' => 'Tagliatelle, cukkíni, borsó, menta (1,3,7)',
                     'price' => 2190
                 ],
             ]
@@ -48,8 +48,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Mézes füge, mascarpone, narancs, mogyoró (7,8)',
-                    'price' => 990
+                    'name' => 'Fügés pite, vaníliás tejszín (1,3,7)',
+                    'price' => 1090
                 ]
             ]
         ]
