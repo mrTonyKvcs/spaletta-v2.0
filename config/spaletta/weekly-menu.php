@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.07.17. - 2024.07.19.',
-    'saturday-date' => '2024.07.13.',
+    'menu-date' => '2024.07.24. - 2024.07.26.',
+    'saturday-date' => '2024.07.27.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Joghurtos barack leves, kardamom, joghurt sorbet (7)',
-                    'price' => 1190
+                    'name'  => 'Gazpacho, zöldségek, bazsalikom(1)',
+                    'price' => 1250
                 ],
                 [
-                    'name'  => 'Palóc leves (1,7)',
-                    'price' => 1390
+                    'name'  => 'Vietnámi csípős-savanyú leves, csirkemell(3,4,6)',
+                    'price' => 1350
                 ]
             ]
         ],
@@ -31,15 +31,15 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Rakott kelkáposzta (7)',
+                    'name' => 'Chilisbab, tortilla',
                     'price' => 2490
                 ],
                 [
-                    'name' => 'Bőrén sült ponty filé, petrezselymes burgonya (4)',
+                    'name' => 'Csirkecomb saslik, saláta, füge(11)',
                     'price' => 2390
                 ],
                 [
-                    'name' => 'Tagliatelle, cukkíni, borsó, menta (1,3,7)',
+                    'name' => 'Grillezett cukkíni, hummus, sumach',
                     'price' => 2190
                 ],
             ]
@@ -48,20 +48,20 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Fügés pite, vaníliás tejszín (1,3,7)',
+                    'name' => 'Barack, zölddió, mascarpone(7)',
                     'price' => 1090
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'price' => 4990,
+        'price' => 4890,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Currys karfiol leves',
+                        'name'  => 'Sertés raguleves, tárkony, burgonya gombóc (1,3,7,9)',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Csirkepaprikás, galuska, tejfölös uborkasaláta (1,3,7)',
+                        'name' => 'Rántott patiszon, rizibizi, tartár (1,3,7)',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Sült sárgabarack, joghurt, karamellizált rizs (7)',
+                        'name' => 'Barackos cobbler, tejszín (1,3,7)',
                         'price' => 1200
                     ]
                 ]
