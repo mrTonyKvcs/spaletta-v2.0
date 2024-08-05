@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.07.31. - 2024.08.02.',
-    'saturday-date' => '2024.08.03.',
+    'menu-date' => '2024.08.07. - 2024.08.09.',
+    'saturday-date' => '2024.08.10.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Görögdinnye, barack, lime',
-                    'price' => 1090
+                    'name'  => 'Kukorica krémleves, csicseriborsó, garam masala',
+                    'price' => 1190
                 ],
                 [
-                    'name'  => 'Gulyásleves, csipetke (1,3,9)',
-                    'price' => 1390
+                    'name'  => 'Tom yum, csirkemell (1,4.6)',
+                    'price' => 1490
                 ]
             ]
         ],
@@ -31,15 +31,15 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Brassói, kovászos uborka (1)',
+                    'name' => 'Ropogós császár, paradicsomos káposzta (6,9)',
+                    'price' => 2490
+                ],
+                [
+                    'name' => 'Rántott csirkecomb filé, burgonyapüré, barack kompót (1,3,7)',
                     'price' => 2390
                 ],
                 [
-                    'name' => 'Marokkói csirke tagine, basmati rizs',
-                    'price' => 2390
-                ],
-                [
-                    'name' => 'Langyos tökfőzelék, sült kápia paprika, kapor',
+                    'name' => 'Görögdinnye saláta, feta, olíva, menta (7)',
                     'price' => 2090
                 ],
             ]
@@ -48,20 +48,20 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Palacsinta, mák, meggy (1,3,7)',
-                    'price' => 1190
+                    'name' => 'Madártej, kesudió grillázs (1,3,7,8)',
+                    'price' => 1090
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'price' => 5000,
+        'price' => 4790,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Tyúkhúsleves, cérnametélt, zöldségek (1,3,9)',
+                        'name'  => 'Kovászos uborka leves, kapor (7)',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Rizseshús, csalamádé (10)',
+                        'name' => 'Csirke hortobágyi (1,3,7)',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Túrós-barackos derelye (1,3,7)',
+                        'name' => 'Mákos bobajka (1,3,7)',
                         'price' => 1200
                     ]
                 ]
