@@ -26,7 +26,7 @@
         @else
             <x-section>
                 <x-title text="Spaletta" title="{{ __('Asztalfoglalás') }}" price=""></x-title>
-                <x-reservation></x-reservation>
+                <x-reservation :event="$event"></x-reservation>
             </x-section>
         @endif
     </x-section>
