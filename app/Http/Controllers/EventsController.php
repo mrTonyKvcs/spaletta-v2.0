@@ -19,11 +19,9 @@ class EventsController extends Controller
             return view('pages.events.empty');
         }
 
-        $nextEvent = $events->shift();
 
         return view('pages.events.index', [
             'events' => $events,
-            'nextEvent' => $nextEvent
         ]);
     }
 
