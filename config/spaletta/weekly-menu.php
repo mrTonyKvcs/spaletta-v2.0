@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.08.07. - 2024.08.09.',
+    'menu-date' => '2024.08.14. - 2024.08.16.',
     'saturday-date' => '2024.08.10.',
     'menu' => [
         // 'first-courses' => [
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Kukorica krémleves, csicseriborsó, garam masala',
-                    'price' => 1190
+                    'name'  => 'Citromleves, kardamom, citrus sorbet (7)',
+                    'price' => 1290
                 ],
                 [
-                    'name'  => 'Tom yum, csirkemell (1,4.6)',
-                    'price' => 1490
+                    'name'  => 'Burgonyaleves, lángolt kolbász(9)',
+                    'price' => 1390
                 ]
             ]
         ],
@@ -31,15 +31,15 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Ropogós császár, paradicsomos káposzta (6,9)',
-                    'price' => 2490
-                ],
-                [
-                    'name' => 'Rántott csirkecomb filé, burgonyapüré, barack kompót (1,3,7)',
+                    'name' => 'Zöldborsó főzelék, fasírt (1,3)',
                     'price' => 2390
                 ],
                 [
-                    'name' => 'Görögdinnye saláta, feta, olíva, menta (7)',
+                    'name' => 'Grillezett csirkemell, görög saláta (7)',
+                    'price' => 2290
+                ],
+                [
+                    'name' => 'Káposztás tészta (1,3)',
                     'price' => 2090
                 ],
             ]
@@ -48,8 +48,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Madártej, kesudió grillázs (1,3,7,8)',
-                    'price' => 1090
+                    'name' => 'Túrógombóc, barack, tejföl (1,3,7)',
+                    'price' => 1190
                 ]
             ]
         ]
