@@ -3,6 +3,8 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import 'components/event';
+
 html {
     font-size: 62.5%;
     font-family: "Montserrat", sans-serif;
@@ -37,12 +39,15 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+
     @media only screen and (min-width: 640px) {
         background-image: url("../images/pages/home/section/background-services.jpg");
     }
+
     @media only screen and (min-width: 1024px) {
         background-image: url("../images/pages/home/section/background-services.jpg");
     }
+
     @media only screen and (min-width: 1280px) {
         background-image: url("../images/pages/home/section/background-services.jpg");
         // background-color: #262626;
@@ -67,12 +72,15 @@ nav {
     background-size: cover;
     background-position: center;
     width: 100%;
+
     @media only screen and (min-width: 640px) {
         background-image: url("../images/pages/home/section/background-about.jpg");
     }
+
     @media only screen and (min-width: 1024px) {
         background-image: url("../images/pages/home/section/background-about.jpg");
     }
+
     @media only screen and (min-width: 1280px) {
         background-image: url("../images/pages/home/section/background-about.jpg");
     }
@@ -98,6 +106,7 @@ nav {
     background-image: url("../images/pages/home/home-mobile.jpg");
     background-size: cover;
     background-position: center;
+
     @media (min-width: 1035px) {
         background-image: url("../images/pages/home/home.jpg");
     }
@@ -110,6 +119,7 @@ nav {
 
 .reservation-bg {
     background-image: url("../images/pages/reservation/reservation-mobile.jpg");
+
     @media (min-width: 1035px) {
         background-image: url("../images/pages/reservation/reservation.jpg");
     }
@@ -154,20 +164,24 @@ nav {
 }
 
 @-webkit-keyframes test {
+
     0%,
     100% {
         background-size: 100%;
     }
+
     100% {
         background-size: 125%;
     }
 }
 
 @keyframes test {
+
     0%,
     100% {
         background-size: 100%;
     }
+
     100% {
         background-size: 125%;
     }
@@ -199,13 +213,16 @@ video {
         0 4px 6px -2px rgba(0, 0, 0, 0.05);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
         var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
     @media (min-width: 1024px) {
         background-color: #262626;
         z-index: 200;
-        .navbar > a {
+
+        .navbar>a {
             color: #fff;
         }
-        .navbar > a:hover {
+
+        .navbar>a:hover {
             color: #ffb606;
         }
     }
