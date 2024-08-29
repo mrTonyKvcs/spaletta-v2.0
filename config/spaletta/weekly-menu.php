@@ -3,7 +3,7 @@
 return [
     'title'     => 'Déli Ajánló',
     'menu-date' => '2024.08.14. - 2024.08.16.',
-    'saturday-date' => '2024.08.10.',
+    'saturday-date' => '2024.08.31.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -55,13 +55,13 @@ return [
         ]
     ],
     'saturday-menu' => [
-        'price' => 4790,
+        'price' => 4950,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Kovászos uborka leves, kapor (7)',
+                        'name'  => 'Húsleves, tészta, zöldségek (1,3,9)',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Csirke hortobágyi (1,3,7)',
+                        'name' => 'Rántott szelet, burgonya püré, barack kompót (1,3,7)',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Mákos bobajka (1,3,7)',
+                        'name' => 'Őszibarackos derelye, édes tejföl (1,3,7,8)',
                         'price' => 1200
                     ]
                 ]
