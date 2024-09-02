@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.08.14. - 2024.08.16.',
-    'saturday-date' => '2024.08.31.',
+    'menu-date' => '2024.09.04. - 2024.09.06.',
+    'saturday-date' => '2024.09.07.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Citromleves, kardamom, citrus sorbet (7)',
-                    'price' => 1290
+                    'name'  => 'Őszibarack krémleves, marinált barack',
+                    'price' => 1150
                 ],
                 [
-                    'name'  => 'Burgonyaleves, lángolt kolbász(9)',
-                    'price' => 1390
+                    'name'  => 'Salátaleves, bacon, kapor (1,7)',
+                    'price' => 1250
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Zöldborsó főzelék, fasírt (1,3)',
-                    'price' => 2390
+                    'name' => 'Zöldbabfőzelék, fasírt (1,3,7)',
+                    'price' => 2450
                 ],
                 [
-                    'name' => 'Grillezett csirkemell, görög saláta (7)',
-                    'price' => 2290
+                    'name' => 'Zöldbab főzelék, fasírt (1,3,7)',
+                    'price' => 2450
                 ],
                 [
-                    'name' => 'Káposztás tészta (1,3)',
-                    'price' => 2090
+                    'name' => 'Töltött paprika, gersli, paradicsom (1,9)',
+                    'price' => 2250
                 ],
             ]
         ],
@@ -48,8 +48,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Túrógombóc, barack, tejföl (1,3,7)',
-                    'price' => 1190
+                    'name' => 'Hideg tejberizs, zöld dió, mandula (7,8)',
+                    'price' => 1050
                 ]
             ]
         ]
@@ -61,7 +61,7 @@ return [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Húsleves, tészta, zöldségek (1,3,9)',
+                        'name'  => 'Gombaleves (9)',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Rántott szelet, burgonya püré, barack kompót (1,3,7)',
+                        'name' => 'Csülök pékné, kovászos uborka (1)',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Őszibarackos derelye, édes tejföl (1,3,7,8)',
+                        'name' => 'Citromos piskótácska, mascarpone, bazsalikom',
                         'price' => 1200
                     ]
                 ]

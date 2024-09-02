@@ -69,10 +69,10 @@
         </div>
     </x-section> --}}
     <x-section>
-        {{-- <div class="flex flex-col items-center w-full mt-24">
+        <div class="flex flex-col items-center w-full mt-24">
             <x-title title="{{ __('Déli ajánló') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}"></x-title>
             <x-weekly-menu></x-weekly-menu>
-        </div> --}}
+        </div>
         <div class="flex flex-col items-center w-full mt-24">
             <x-title title="{{ __('Szombati ajánló') }}" text="{{ config('spaletta.weekly-menu.saturday-date') }}" ></x-title>
         <p class="text-3xl italic font-medium text-center text-gray2e font-libre">{{ config('spaletta.weekly-menu.saturday-menu')['price'] }} Ft</p>
