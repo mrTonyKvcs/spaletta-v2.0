@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.09.04. - 2024.09.06.',
-    'saturday-date' => '2024.09.07.',
+    'menu-date' => '2024.09.11. - 2024.09.13.',
+    'saturday-date' => '2024.09.14.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,11 +18,11 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Őszibarack krémleves, marinált barack',
+                    'name'  => 'Tarhonyaleves (1,3)',
                     'price' => 1150
                 ],
                 [
-                    'name'  => 'Salátaleves, bacon, kapor (1,7)',
+                    'name'  => 'Tárkonyos csirkeragul eves (1,7,9)',
                     'price' => 1250
                 ]
             ]
@@ -31,15 +31,15 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Zöldbabfőzelék, fasírt (1,3,7)',
+                    'name' => 'Rakott burgonya (3,7)',
                     'price' => 2450
                 ],
                 [
-                    'name' => 'Zöldbab főzelék, fasírt (1,3,7)',
-                    'price' => 2450
+                    'name' => 'Rántott csirkemáj, rizibizi (1,3,7)',
+                    'price' => 2350
                 ],
                 [
-                    'name' => 'Töltött paprika, gersli, paradicsom (1,9)',
+                    'name' => 'Tagliatelle, paradicsom, rukkola (1,3,7)',
                     'price' => 2250
                 ],
             ]
@@ -48,7 +48,7 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Hideg tejberizs, zöld dió, mandula (7,8)',
+                    'name' => 'Füge, szőlő, mandula, tejszín (7,8)',
                     'price' => 1050
                 ]
             ]
@@ -61,7 +61,7 @@ return [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Gombaleves (9)',
+                        'name'  => 'Tyúkhúsleves, cérnametélt (1,3,9)',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Csülök pékné, kovászos uborka (1)',
+                        'name' => 'Sertéspörkölt, galuska, tejfölös uborkasaláta (1,3,7)',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Citromos piskótácska, mascarpone, bazsalikom',
+                        'name' => 'Barackos palacsinta (1,3,7)',
                         'price' => 1200
                     ]
                 ]
