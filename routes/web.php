@@ -132,7 +132,7 @@ Route::group(
 
         Route::get(LaravelLocalization::transRoute('routes.restaurant'), function () {
             $title = 'Étterem Ajánló';
-            $categories = Category::where('type_id', 1)->with('items')->get();
+            $categories = Category::where('type_id', 1)->orderBy('order_column')->with('items')->get();
             return view('pages.restaurant', compact('categories', 'title'));
         })->name('pages.restaurant');
 

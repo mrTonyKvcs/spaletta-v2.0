@@ -17,7 +17,7 @@ class Category extends Model
      */
     protected $dates = ['deleted_at'];
 
-    protected $fillable = [ 'type_id', 'slug', 'name'];
+    protected $fillable = ['type_id', 'slug', 'name', 'order_column'];
 
     public function type()
     {

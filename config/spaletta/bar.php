@@ -61,7 +61,7 @@ return [
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Cheese Burger, , hortobágyi Angus sült burgonya, ketchup (1,3,4,6,7,10)',
+            'hu' => 'Cheese Burger, hortobágyi Angus sült burgonya, ketchup (1,3,4,6,7,10)',
             'de' => 'Cheese Burger, Pommes, Ketchup (Hortobágyer Angus) (1,3,4,6,7,10)',
             'en' => 'Cheese Burger, french fries, ketchup (Angus from Hortobágy) (1,3,4,6,7,10)'
         ],
@@ -91,6 +91,6 @@ return [
         'price' => 8200,
         'wine' => ''
     ],
-    
-    
+
+
 ];
