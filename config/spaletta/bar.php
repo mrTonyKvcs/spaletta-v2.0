@@ -9,18 +9,31 @@ return [
             'en' => 'Hortobágy Angus Beef Tartare (100 g) with Capers, Dijon Mustard and Toast (1,7,10)'
         ],
         'comment' => '',
-        'price' => 5100,
+        'price' => 5350,
         'wine' => ''
     ],
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Ropogós sült csülök, pirított burgonya, pirított savanyú káposzta (1,6)',
-            'de' => 'Knusprig gebackene Schweinhaxe, geröstete Kartoffel und Sauerkraut (1,6)',
-            'en' => 'Crispy baked pork knuckle, roasted potatoes, and Sauerkraut (1,6)'
+            'hu' => 'Bao bun, csirke, hoi sin szósz és koriander (1,3,6,7,11)',
+            'de' => 'Bao Bun mit Hühner, Hoi Sin und Koriander (1,3,6,7,11)',
+            'en' => 'Chicken Bao Bun with Hoisin Sauce and Coriander (1,3,6,7,11)'
         ],
         'comment' => '',
-        'price' => 8200,
+        'price' => 3300,
+        'wine' => ''
+    ],
+    [
+        'category_id' => 10,
+        'name' => [
+            'hu' => 'Spaletta kosár -csípős csirkeszárny, rántott süllő pofa, ragacsos oldalas, friss zöldség, bbq szósz,
+            lilahagymás majonéz (1,3,4,6,7,9,10)',
+            'de' => 'Spaletta Korb -würzige Chicken Wings, gebackene Zandermaul, BBQ Rippeln, frische Gemüse, BBQ
+            Sosse, Lilazwiebel Mayo',
+            'en' => '“Spaletta” Basket -spicy chicken wings, breaded perch cheek, BBQ ribs, fresh vegetables, BBQ sauce, red onion mayo'
+        ],
+        'comment' => '',
+        'price' => 4700,
         'wine' => ''
     ],
     [
@@ -31,7 +44,7 @@ return [
             'en' => 'Spaletta Burger with fries, ketchup (Hortobágy Angus) (1,3,4,6,7,10)'
         ],
         'comment' => '',
-        'price' => 5200,
+        'price' => 5500,
         'wine' => ''
     ],
     [
@@ -53,31 +66,31 @@ return [
             'en' => 'Cheese Burger, french fries, ketchup (Angus from Hortobágy) (1,3,4,6,7,10)'
         ],
         'comment' => '',
-        'price' => 5450,
+        'price' => 5700,
         'wine' => ''
     ],
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Bao bun, csirke, hoi sin szósz és koriander (1,3,6,7,11)',
-            'de' => 'Bao Bun mit Hühner, Hoi Sin und Koriander (1,3,6,7,11)',
-            'en' => 'Chicken Bao Bun with Hoisin Sauce and Coriander (1,3,6,7,11)'
+            'hu' => 'Philly Cheesesteak burger, Jalapeno, sült burgonya, ketchup (1,3,7)',
+            'de' => 'Philly Cheesesteak Burger, Jalapeno, Pommes, Ketchup (1,3,7)',
+            'en' => 'Philly cheesesteak burger, jalapeno, french fries, ketchup (1,3,7)'
         ],
         'comment' => '',
-        'price' => 3100,
+        'price' => 5800,
         'wine' => ''
     ],
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Spaletta kosár -csípős csirkeszárny, rántott süllő pofa, ragacsos oldalas, friss zöldség, bbq szósz,
-            lilahagymás majonéz (1,3,4,6,7,9,10)',
-            'de' => 'Spaletta Korb -würzige Chicken Wings, gebackene Zandermaul, BBQ Rippeln, frische Gemüse, BBQ
-            Sosse, Lilazwiebel Mayo',
-            'en' => '“Spaletta” Basket -spicy chicken wings, breaded perch cheek, BBQ ribs, fresh vegetables, BBQ sauce, red onion mayo'
+            'hu' => 'Ropogós sült csülök, pirított burgonya, pirított savanyú káposzta (1,6)',
+            'de' => 'Knusprig gebackene Schweinhaxe, geröstete Kartoffel und Sauerkraut (1,6)',
+            'en' => 'Crispy baked pork knuckle, roasted potatoes, and Sauerkraut (1,6)'
         ],
         'comment' => '',
-        'price' => 4550,
+        'price' => 8200,
         'wine' => ''
     ],
+    
+    
 ];
