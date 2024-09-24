@@ -46,7 +46,7 @@ return [
         'wine' => ''
     ],
     [
-        'category_id' => 3,
+        'category_id' => 70,
         'name' => [
             'hu' => 'Vargányás rizottó (7)',
             'de' => 'Risotto mit Steinpilz (7)',
@@ -155,7 +155,7 @@ return [
         'price' => 8200,
         'wine' => ''
     ],
-    
+
     [
         'category_id' => 4,
         'name' => [
