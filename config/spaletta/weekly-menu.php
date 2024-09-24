@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.09.18. - 2024.09.20.',
-    'saturday-date' => '2024.09.21.',
+    'menu-date' => '2024.09.25. - 2024.09.27.',
+    'saturday-date' => '2024.09.28.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Sütőtökleves, tökmag pesto (7)',
-                    'price' => 1050
+                    'name'  => 'Karfiol leves, pirított karfiol, fűszeres mogyoró (7,8)',
+                    'price' => 1150
                 ],
                 [
-                    'name'  => 'Gulyásleves, csipetke(1,3,9)',
-                    'price' => 1280
+                    'name'  => 'Burgonya leves, lángolt kolbász, tárkony',
+                    'price' => 1250
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Töltött káposzta, tejföl(7)',
-                    'price' => 2350
-                ],
-                [
-                    'name' => 'Csirke biryani, basmati rizs(7)',
+                    'name' => 'Hentes tarja, burgonyapüré (7)',
                     'price' => 2450
                 ],
                 [
-                    'name' => 'Pirított laska, humusz, sumach',
-                    'price' => 2080
+                    'name' => 'Borzas csirkemell, jázmin rizs, fokhagymás tejföl (1,3,7)',
+                    'price' => 2250
+                ],
+                [
+                    'name' => 'Tagliatelle, ricotta, paraj (1,3,7)',
+                    'price' => 2150
                 ],
             ]
         ],
@@ -48,20 +48,20 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Mákos guba, vanília espuma(1,3,7)',
-                    'price' => 980
+                    'name' => 'Brownie, vanília fagylalt (1,3,7)',
+                    'price' => 1050
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'price' => 4950,
+        'price' => 5000,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Zöldbab leves',
+                        'name'  => 'Cukkíni krémleves, kapor, paradicsom',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Lasagna(1,3,7)',
+                        'name' => 'Kacsazúza pörkölt, tarhonya (1,3)',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Vargabéles(1,3)',
+                        'name' => 'Máglyarakás (1,3,7,8)',
                         'price' => 1200
                     ]
                 ]
