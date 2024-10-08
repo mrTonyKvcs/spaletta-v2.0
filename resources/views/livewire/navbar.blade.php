@@ -24,14 +24,14 @@
                     {{-- <a href="{{ route('pages.oktobierfest') }}" class="py-4 text-white transition duration-300 ease-in px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                 {{ __('OKTOBIERFEST') }}
             </a> --}}
-                    <a href="{{ route('pages.restaurant') }}"
+                    <a href="{{ route('pages.menu') }}"
                         class="py-4 text-white transition duration-300 ease-in px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
-                        {{ __('Étterem') }}
+                        {{ __('Étlap') }}
                     </a>
-                    <a href="{{ route('pages.bar') }}"
-                        class="py-4 text-white transition duration-300 ease-in px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
-                        {{ __('Sörház') }}
-                    </a>
+                    {{-- <a href="{{ route('pages.bar') }}" --}}
+                    {{--    class="py-4 text-white transition duration-300 ease-in px-7 lg:px-5 lg:py-14 lg:hover:text-gold"> --}}
+                    {{--    {{ __('Sörház') }} --}}
+                    {{-- </a> --}}
                     <a href="{{ route('pages.reservation') }}"
                         class="py-4 text-white transition duration-300 ease-in px-7 lg:px-5 lg:py-14 lg:hover:text-gold">
                         {{ __('Asztalfoglalás') }}

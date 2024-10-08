@@ -81,8 +81,8 @@ Route::group(
 
         Route::get(LaravelLocalization::transRoute('routes.menu'), function () {
             $title = 'Étlap';
-            $categories = Category::where('type_id', 1)->with('items')->get();
-            return view('pages.menu', compact('categories', 'title'));
+            $categories = Category::whereIn('type_id', [1, 9])->orderBy('order_column')->with('items')->get();
+            return view('pages.restaurant', compact('categories', 'title'));
         })->name('pages.menu');
 
         // Route::get('oktobierfest', function () {
@@ -131,15 +131,11 @@ Route::group(
         // })->name('pages.restaurant');
 
         Route::get(LaravelLocalization::transRoute('routes.restaurant'), function () {
-            $title = 'Étterem Ajánló';
-            $categories = Category::where('type_id', 1)->orderBy('order_column')->with('items')->get();
-            return view('pages.restaurant', compact('categories', 'title'));
+            return redirect()->route('pages.menu');
         })->name('pages.restaurant');
 
         Route::get(LaravelLocalization::transRoute('routes.bar'), function () {
-            $title = 'Sörház Ajánló';
-            $products = Product::where('category_id', 10)->get();
-            return view('pages.bar', compact('products', 'title'));
+            return redirect()->route('pages.menu');
         })->name('pages.bar');
 
         Route::get(LaravelLocalization::transRoute('routes.christmas'), function () {
