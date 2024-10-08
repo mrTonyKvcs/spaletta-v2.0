@@ -117,10 +117,8 @@
         <div class="pt-2 pb-3 space-y-1 text-2xl lg:text-4xl">
             <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
             {{-- <a href="{{ route('pages.oktobierfest') }}" class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('OKTOBIERFEST') }}</a> --}}
-            <a href="{{ route('pages.restaurant') }}"
-                class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Étterem') }}</a>
-            <a href="{{ route('pages.bar') }}"
-                class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Sörház') }}</a>
+            <a href="{{ route('pages.menu') }}"
+                class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Étlap') }}</a>
             <a href="{{ route('pages.reservation') }}"
                 class="block py-3 pl-3 pr-4 font-medium border-l-4 border-transparent hover:border-gold hover:text-gold">{{ __('Asztalfoglalás') }}</a>
             <a href="{{ route('events.index') }}"
