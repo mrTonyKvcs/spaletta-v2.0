@@ -39,9 +39,9 @@ return [
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Spaletta Burger, hortobágyi Angus, sült burgonya, ketchup (1,3,4,6,7,10)',
-            'de' => 'Spaletta Burger, Pommes, Ketchup (Hortobágyer Angus) (1,3,4,6,7,10)',
-            'en' => 'Spaletta Burger with fries, ketchup (Hortobágy Angus) (1,3,4,6,7,10)'
+            'hu' => 'Spaletta Burger, hortobágyi Angus, sült burgonya, ketchup (1,3,4,6,7,9,10)',
+            'de' => 'Spaletta Burger, Pommes, Ketchup (Hortobágyer Angus) (1,3,4,6,7,9,10)',
+            'en' => 'Spaletta Burger with fries, ketchup (Hortobágy Angus) (1,3,4,6,7,9,10)'
         ],
         'comment' => '',
         'price' => 5500,

@@ -4,9 +4,9 @@ return [
     [
         'category_id' => 2,
         'name' => [
-            'hu' => 'Kókusztejes répaleves, pirított répa, koriander (1,2,3,4,6)',
-            'de' => 'Karottennsuppe, Kokosnuss Milch, gedünstete Karotte, Koriander (1,2,3,4,6)',
-            'en' => 'Carrotsoup, coconut milk, roasted carrot, coriander (1,2,3,4,6)'
+            'hu' => 'Kókusztejes répaleves, pirított répa, koriander',
+            'de' => 'Karottennsuppe, Kokosnuss Milch, gedünstete Karotte, Koriander',
+            'en' => 'Carrotsoup, coconut milk, roasted carrot, coriander'
         ],
         'comment' => '',
         'price' => 2400,
@@ -103,9 +103,9 @@ return [
     [
         'category_id' => 4,
         'name' => [
-            'hu' => 'Cézár saláta, szezámmagos csirkecsíkokkal (1,3,4,6,10,11)',
-            'de' => 'Caesar Salat, Hühnerstreifen, Sesam (1,3,4,6,10,11)',
-            'en' => 'Caesar salat, chicken strips, sesame (1,3,4,6,10,11)'
+            'hu' => 'Cézár saláta, szezámmagos csirkecsíkokkal (1,3,4,6,7,10,11)',
+            'de' => 'Caesar Salat, Hühnerstreifen, Sesam (1,3,4,6,7,10,11)',
+            'en' => 'Caesar salat, chicken strips, sesame (1,3,4,6,7,10,11)'
         ],
         'comment' => '',
         'price' => 4500,
@@ -225,9 +225,9 @@ return [
     [
         'category_id' => 6,
         'name' => [
-            'hu' => 'Hollandi mártás',
-            'de' => 'Sauce Hollandese',
-            'en' => 'Hollandaise sauce'
+            'hu' => 'Hollandi mártás (3,7)',
+            'de' => 'Sauce Hollandese (3,7)',
+            'en' => 'Hollandaise sauce (3,7)'
         ],
         'comment' => '',
         'price' => 0,
@@ -269,9 +269,9 @@ return [
     [
         'category_id' => 8,
         'name' => [
-            'hu' => 'Házi csalamádé',
-            'de' => 'Hausgemachtes gemischte Saueres',
-            'en' => 'Homemade mixed pickles'
+            'hu' => 'Házi csalamádé (10)',
+            'de' => 'Hausgemachtes gemischte Saueres (10)',
+            'en' => 'Homemade mixed pickles (10)'
         ],
         'comment' => '',
         'price' => 1100,
@@ -302,9 +302,9 @@ return [
     [
         'category_id' => 9,
         'name' => [
-            'hu' => 'Húsleves cérnametélttel (1,3,4,6)',
-            'de' => 'Brühe mit Nudel (1,3,4,6)',
-            'en' => 'Meat Soup with vermicelli noodles (1,3,4,6)'
+            'hu' => 'Húsleves cérnametélttel (1,2,3,4,6)',
+            'de' => 'Brühe mit Nudel (1,2,3,4,6)',
+            'en' => 'Meat Soup with vermicelli noodles (1,2,3,4,6)'
         ],
         'comment' => '',
         'price' => 1600,
