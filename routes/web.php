@@ -40,9 +40,10 @@ Route::group(
         'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'localize']
     ],
     function () {
-        Route::get('/', function (Request $request) {
-            return view('pages.index');
-        });
+        Route::get('/', [
+            'as' => 'pages.index',
+            'uses' => 'App\Http\Controllers\PagesController@index'
+        ]);
 
         Route::post('hirlevel', [
             'as' => 'pages.newsletter',

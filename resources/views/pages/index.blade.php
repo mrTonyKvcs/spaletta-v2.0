@@ -1,13 +1,15 @@
 @extends('layouts.app')
 
 @section('title')
-{{ __('Kezdőlap') }}
+    {{ __('Kezdőlap') }}
 @endsection
 
 @section('meta_data')
-<meta name="description" content="{{ __('A Spaletta Étterem hetente frissülő menü ajánlattal, online asztalfoglalási lehetőséggel várja vendégeit keddtől vasárnapig.') }}">
-<meta property="og:description" content="{{ __('A Spaletta Étterem hetente frissülő menü ajánlattal, online asztalfoglalási lehetőséggel várja vendégeit keddtől vasárnapig.') }}">
-<meta property="og:url" content="https://spalettaetterem.com/">
+    <meta name="description"
+        content="{{ __('A Spaletta Étterem hetente frissülő menü ajánlattal, online asztalfoglalási lehetőséggel várja vendégeit keddtől vasárnapig.') }}">
+    <meta property="og:description"
+        content="{{ __('A Spaletta Étterem hetente frissülő menü ajánlattal, online asztalfoglalási lehetőséggel várja vendégeit keddtől vasárnapig.') }}">
+    <meta property="og:url" content="https://spalettaetterem.com/">
 @endsection
 
 <x-layout>
@@ -28,9 +30,15 @@
                     </div>
                 </div>
                 <div class="z-20">
-                    <x-button class="mr-10" type="transparent"><a href="{{ route('pages.restaurant') }}">{{ __('Étterem') }}</a>
+                    <x-button class="mr-10" type="transparent"><a
+                            href="{{ route('pages.restaurant') }}">{{ __('Étterem') }}</a>
                     </x-button>
                     <x-button type="transparent"><a href="{{ route('pages.bar') }}">{{ __('Sörház') }}</a></x-button>
+                </div>
+                <div class="z-20 mt-5">
+                    <x-button class="mt-50" type="transparent"><a
+                            href="{{ route('events.index') }}">{{ __('Rendezvények') }}</a>
+                    </x-button>
                 </div>
                 {{-- <div class="z-20">
                     <x-button class="mr-10" type="transparent"><a href="{{ route('pages.reservation') }}">{{ __('Asztalfoglalás') }}</a>
@@ -74,31 +82,23 @@
             <x-weekly-menu></x-weekly-menu>
         </div>
         <div class="flex flex-col items-center w-full mt-24">
-            <x-title title="{{ __('Szombati ajánló') }}" text="{{ config('spaletta.weekly-menu.saturday-date') }}" ></x-title>
-        <p class="text-3xl italic font-medium text-center text-gray2e font-libre">{{ config('spaletta.weekly-menu.saturday-menu')['price'] }} Ft</p>
-        <x-weekend-menu></x-weekend-menu>
+            <x-title title="{{ __('Szombati ajánló') }}"
+                text="{{ config('spaletta.weekly-menu.saturday-date') }}"></x-title>
+            <p class="text-3xl italic font-medium text-center text-gray2e font-libre">
+                {{ config('spaletta.weekly-menu.saturday-menu')['price'] }} Ft</p>
+            <x-weekend-menu></x-weekend-menu>
         </div>
-        <p class="text-xl">1. Glutén 2. Rákfélék 3. Tojás 4. Halak 5. Földimogyoró 6. Szójabab 7. Tej 8. Diófélék 9. Zeller10. Mustár 11. Szezámmag</p>
+        <p class="text-xl">1. Glutén 2. Rákfélék 3. Tojás 4. Halak 5. Földimogyoró 6. Szójabab 7. Tej 8. Diófélék 9.
+            Zeller10. Mustár 11. Szezámmag</p>
         <p class="text-xl">{{ __('(Az ár nem tartalmazza a csomagolás díját)') }}</p>
-    </x-section>
-    <x-section background="home-services">
-        <div class="gap-12 space-x-4 lg:space-x-0 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 lg:gap-12">
-            <x-card type="link" path="/images/pages/home/section/menu" route="{{ route('pages.restaurant') }}" alt="spaletta" title="spaletta">{{ __('Étterem') }}</x-card>
-            <x-card type="link" path="/images/pages/home/section/bar" route="{{ route('pages.bar') }}" alt="reservation" title="reservation">{{ __('Sörház') }}</x-card>
-            <x-card type="link" path="/images/pages/home/section/events-new" route="{{ route('events.index') }}" alt="events" title="events">{{ __('Rendezvények') }}</x-card>
-            <x-card type="link" path="/images/pages/home/section/contact" route="{{ route('pages.reservation') }}" alt="drinks" title="drinks">{{ __('Asztalfoglalás') }}</x-card>
-        </div>
-    </x-section>
-    <x-section>
-        <x-title text="Spaletta" title="{{ __('Asztalfoglalás') }}" price=""></x-title>
-        <x-reservation></x-reservation>
     </x-section>
     <x-section background="home-about">
         <div class="md:grid md:grid-cols-2">
             <div class="flex justify-end sm:mr-6 lg:mr-24">
                 <picture>
                     <source srcset="/images/index.webp" type="image/webp">
-                    <img class="hidden w-full border-2 border-yellow-300 xl:block" src="/images/index.png" alt="Rolunk" title="Rolunk" height="329" width="490">
+                    <img class="hidden w-full border-2 border-yellow-300 xl:block" src="/images/index.png"
+                        alt="Rolunk" title="Rolunk" height="329" width="490">
                 </picture>
             </div>
             <div class="flex flex-col items-center w-full px-6 py-8 mt-4 bg-white bg-opacity-75 sm:mt-0">
@@ -111,36 +111,104 @@
             </div>
         </div>
     </x-section>
-    <x-section class="shadow-lg">
-        <x-opening></x-opening>
+    <x-section>
+        <x-title text="Spaletta" title="{{ __('Rendezvények') }}" price=""></x-title>
+        @if ($events->isNotEmpty())
+            <div class="grid grid-cols-1 gap-12 my-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-16">
+                @foreach ($events as $event)
+                    <div
+                        class="flex flex-col items-center justify-start rounded-md shadow-lg
+            @if ($loop->count === 1) lg:col-start-2 @endif">
+                        <div class="flex flex-col items-center">
+                            <img class="event__image"
+                                src="/images/events/{{ $event->slug }}/{{ $event->image_path }}" alt="">
+                        </div>
+                        <div class="flex flex-col items-center px-4 py-8 space-y-8 top-80">
+                            <p class="px-6 py-2 text-2xl font-semibold text-white rounded-md bg-gold">
+                                {{ $event->started_at }}
+                            </p>
+                            <h2 class="text-3xl font-medium text-center event__title flex items-center">
+                                {{ $event->title }}
+                            </h2>
+                            <x-button type="gray-transparent-radius">
+                                <a href="{{ route('events.show', $event->id) }}">{{ __('Részletek') }}</a>
+                            </x-button>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+
+            @if ($events->count() >= 3)
+                <div class="flex items-center justify-center col-span-2">
+                    <a href="{{ route('events.index') }}"
+                        class="text-2xl mt-10 border border-transparent text-white bg-gray48 hover:bg-gray2e inline-flex font-medium items-center pt-3.5 px-8 xl:px-10 pb-2.5 transition duration-300 ease-in uppercase shadow-sm focus:outline-none">{{ __('További rendezvények') }}</a>
+                </div>
+            @endif
+        @else
+            <p class="text-2xl font-medium gray mt-10 text-center">Jelenleg nincs nyilvános rendezvényünk, de éttermünk
+                nyitva tart,
+                és sok szeretettel várjuk!</p>
+        @endif
+    </x-section>
+    <x-section background="home-services">
+        <div class="gap-12 space-x-4 lg:space-x-0 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 lg:gap-12">
+            <x-card type="link" path="/images/pages/home/section/menu" route="{{ route('pages.restaurant') }}"
+                alt="spaletta" title="spaletta">{{ __('Étterem') }}</x-card>
+            <x-card type="link" path="/images/pages/home/section/bar" route="{{ route('pages.bar') }}"
+                alt="reservation" title="reservation">{{ __('Sörház') }}</x-card>
+            <x-card type="link" path="/images/pages/home/section/events-new" route="{{ route('events.index') }}"
+                alt="events" title="events">{{ __('Rendezvények') }}</x-card>
+            <x-card type="link" path="/images/pages/home/section/contact" route="{{ route('pages.reservation') }}"
+                alt="drinks" title="drinks">{{ __('Asztalfoglalás') }}</x-card>
+        </div>
+    </x-section>
+    <x-section>
+        <x-title text="Spaletta" title="{{ __('Asztalfoglalás') }}" price=""></x-title>
+        <x-reservation></x-reservation>
     </x-section>
     <x-section id="newsletter" background="dark-gray-bg">
         <div class="flex flex-col items-center justify-center w-full lg:w-2/3 lg:grid">
             <p class="text-3xl italic font-medium text-center gold font-libre">{{ __('Spaletta') }}</p>
             <h2 class="text-5xl font-semibold text-center text-white uppercase">{{ __('Hírlevél feliratkozás') }}</h2>
-            <p class="pt-10 text-2xl font-medium text-center text-white">{{ __('Iratkozzon fel hírlevelünkre és értesüljön első kézből legújabb eseményeinkről, ajánlatainkról! ') }}</p>
+            <p class="pt-10 text-2xl font-medium text-center text-white">
+                {{ __('Iratkozzon fel hírlevelünkre és értesüljön első kézből legújabb eseményeinkről, ajánlatainkról! ') }}
+            </p>
             <div class="w-full mb-10">
                 @include('flash-message', ['form' => 'form-newsletter'])
             </div>
-            <form name="form-newsletter" style="" method="POST" action="{{ route('pages.newsletter') }}" class="flex flex-col items-center justify-center w-full">
+            <form name="form-newsletter" style="" method="POST" action="{{ route('pages.newsletter') }}"
+                class="flex flex-col items-center justify-center w-full">
                 @csrf
                 <div class="flex justify-center w-full max-w-lg">
-                    <input type="email" name="email" id="email" class="h-20 bg-white w-full gray my-10 outline-none text-center font-medium py-2.5 px-5 text-xl border-b border-gray-300" required>
+                    <input type="email" name="email" id="email"
+                        class="h-20 bg-white w-full gray my-10 outline-none text-center font-medium py-2.5 px-5 text-xl border-b border-gray-300"
+                        required>
                 </div>
                 <div class="relative flex newsletter-input" style="">
                     <div class="flex items-center h-5">
-                        <input id="gdpr" name="gdpr" type="checkbox" class="w-8 h-8 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500" required>
+                        <input id="gdpr" name="gdpr" type="checkbox"
+                            class="w-8 h-8 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500" required>
                     </div>
                     <div class="flex items-center ml-3 text-lg">
-                        <p class="text-xl text-white">Az <a href="/pdfs/2023-10-adatkezelesi-tajekoztato.pdf" target="_blank" class="gold">Adatkezelési Tájékoztatót</a> megértettem és hozzájárulok, hogy a Spaletta ÉTTEREM ÉS SÖRHÁZ az általam megadott e-mail címemre – hozzájárulásom visszavonásig – hírlevelet küldjön, az adataimat kezelje és kapcsolatba lépjen velem marketing célú megkeresésekkel.</p>
+                        <p class="text-xl text-white">Az <a href="/pdfs/2023-10-adatkezelesi-tajekoztato.pdf"
+                                target="_blank" class="gold">Adatkezelési Tájékoztatót</a> megértettem és
+                            hozzájárulok, hogy a Spaletta ÉTTEREM ÉS SÖRHÁZ az általam megadott e-mail címemre –
+                            hozzájárulásom visszavonásig – hírlevelet küldjön, az adataimat kezelje és kapcsolatba
+                            lépjen velem marketing célú megkeresésekkel.</p>
                     </div>
                 </div>
-                <button type="submit" class="h-20 w-6/12 text-2xl text-center border border-white text-white bg-transparent hover:bg-white hover:text-gray-500 inline-flex font-medium items-center pt-3.5 px-8 xl:px-10 pb-2.5 transition duration-300 ease-in uppercase shadow-sm focus:outline-none mt-8">
+                <button type="submit"
+                    class="h-20 w-6/12 text-2xl text-center border border-white text-white bg-transparent hover:bg-white hover:text-gray-500 inline-flex font-medium items-center pt-3.5 px-8 xl:px-10 pb-2.5 transition duration-300 ease-in uppercase shadow-sm focus:outline-none mt-8">
                     Feliratkozás
                 </button>
             </form>
-            <p class="pt-10 mt-10 text-2xl font-medium text-center text-white"><a href="{{ route('pages.unsubscribe-page') }}">{{ __('Hírlevél leiratkozáshoz kattintson ide') }}</p>
+            <p class="pt-10 mt-10 text-2xl font-medium text-center text-white"><a
+                    href="{{ route('pages.unsubscribe-page') }}">{{ __('Hírlevél leiratkozáshoz kattintson ide') }}
+            </p>
         </div>
+    </x-section>
+    <x-section class="shadow-lg">
+        <x-opening></x-opening>
     </x-section>
     <x-map></x-map>
 </x-layout>
