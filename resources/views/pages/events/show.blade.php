@@ -24,10 +24,12 @@
                 <livewire:order.buy-ticket :event="$event" />
             </div>
         @else
-            <x-section>
-                <x-title text="Spaletta" title="{{ __('Asztalfoglalás') }}" price=""></x-title>
-                <x-reservation :event="$event"></x-reservation>
-            </x-section>
+            @if ($event->id !== 70)
+                <x-section>
+                    <x-title text="Spaletta" title="{{ __('Asztalfoglalás') }}" price=""></x-title>
+                    <x-reservation :event="$event"></x-reservation>
+                </x-section>
+            @endif
         @endif
     </x-section>
 
