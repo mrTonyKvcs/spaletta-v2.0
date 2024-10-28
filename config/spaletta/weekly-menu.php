@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.10.23. - 2024.10.25.',
-    'saturday-date' => '2024.10.26.',
+    'menu-date' => '2024.10.29. - 2024.10.31.',
+    'saturday-date' => '2024.11.02.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Langyos őszibarack leves, fűszeres mandula(7,8)',
-                    'price' => 1150
+                    'name'  => 'Frankfurti leves (1,7)',
+                    'price' => 1180
                 ],
                 [
-                    'name'  => 'Tárkonyos csirkeraguleves, burgonyagombóc(1,3,7,9,10)',
-                    'price' => 1350
+                    'name'  => 'Sütőtök krémleves, tökmag, feta (7)',
+                    'price' => 1050
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Kapros túróval töltött sertéskaraj, francia rakott burgonya(1,3,7)',
-                    'price' => 2450
+                    'name' => 'Bbq oldalas, steak burgonya, coleslaw (1,3,7,10)',
+                    'price' => 2490
                 ],
                 [
-                    'name' => 'Zöldfűszeres préselt csirkecomb filé, sült őszi zöldségek(3,7,9)',
+                    'name' => 'Csirke Alfredo, tagliatelle (1,3,7)',
                     'price' => 2350
                 ],
                 [
-                    'name' => 'Vöröslencse dahl, naan kenyér(1,7)',
-                    'price' => 2150
+                    'name' => 'Rántott karfiol, gomba, jázminrizs, tartár (1,3,7,10)',
+                    'price' => 1990
                 ],
             ]
         ],
@@ -48,20 +48,20 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Rizsfelfújt, gyümölcsragu(1,3,7)',
-                    'price' => 950
+                    'name' => 'Körtés tarte tatin (1,3,7)',
+                    'price' => 1090
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'price' => 5100,
+        'price' => 5090,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Minestrone leves(1,3,9)',
+                        'name'  => 'Gulyásleves, csipetke (1,3,9)',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Csülkös pacal, köményes burgonya',
+                        'name' => 'Túrós csusza (1,3,7)',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Tökös-mákos rétes(1,3,7)',
+                        'name' => 'Körte, citromhab, granola (3,5,7)',
                         'price' => 1200
                     ]
                 ]
