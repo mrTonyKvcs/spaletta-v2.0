@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.11.06. - 2024.11.09.',
-    'saturday-date' => '2024.11.02.',
+    'menu-date' => '2024.11.06. - 2024.11.08.',
+    'saturday-date' => '2024.11.09.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
