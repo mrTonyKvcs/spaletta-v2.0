@@ -90,7 +90,11 @@ class BuyTicket extends Component
         $event = $this->event;
         $soldCount = TicketSold::query()
             ->whereHas('ticket', function ($query) use ($event) {
-                $query->where('event_id', $event->id);
+                $query->where('event_id', $event->id)
+                    ->whereHas('transaction', function ($q) {
+                        $q->where('status', 'SUCCESS')
+                            ->orWhere('status', 'CASH');
+                    });
             })
             ->where('category_id', $ticketType->category_id)
             ->sum('quantity');
@@ -120,7 +124,8 @@ class BuyTicket extends Component
                     $query
                         ->where('event_id', $event->id)
                         ->whereHas('transaction', function ($q) {
-                            $q->where('status', 'SUCCESS');
+                            $q->where('status', 'SUCCESS')
+                                ->orWhere('status', 'CASH');
                         });
                 })
                 ->where('category_id', $ticketType->category_id)
