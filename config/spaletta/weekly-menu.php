@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.11.13. - 2024.11.15.',
-    'saturday-date' => '2024.11.16.',
+    'menu-date' => '2024.11.20. - 2024.11.22.',
+    'saturday-date' => '2024.11.23.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Magyaros gombaleves(7)',
-                    'price' => 1250
+                    'name'  => 'Burgonyaleves, lángolt kolbász (7)',
+                    'price' => 1370
                 ],
                 [
-                    'name'  => 'Sárgaborsó krémleves, füstölt csülök',
-                    'price' => 1380
+                    'name'  => 'Székelygulyás (1,7,10)',
+                    'price' => 1470
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Mustáros flekken, lyoni hagyma steak burgonya(1,10)',
-                    'price' => 2650
+                    'name' => 'Lencsefőzelék, onsen tojás, fasírt (1,3,7,10)',
+                    'price' => 2550
                 ],
                 [
-                    'name' => 'Csirkecomb paprikás, galuska, tejfölös uborkasaláta(1,3,7)',
-                    'price' => 2560
+                    'name' => 'Indiai vajas csirke, jázmin rizs (7,8)',
+                    'price' => 2470
                 ],
                 [
-                    'name' => 'Mézes sült répa, feta sajt, kesudió(7,8)',
-                    'price' => 2340
+                    'name' => 'Gnocchi, sütőtök, zsálya (1,3,7,8)',
+                    'price' => 2280
                 ],
             ]
         ],
@@ -48,20 +48,20 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Nudli, diós morzsa, narancs, zöld dió(1,3,7,8)',
-                    'price' => 1230
+                    'name' => 'Túrófánk, barack lekvár (1,3,7)',
+                    'price' => 1310
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'price' => 5540,
+        'price' => 5380,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Marhahúsleves, cérnametélt(1,3,9)',
+                        'name'  => 'Lebbencsleves (1,3,9)',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Zöldfűszeres csirkemell, sült őszi zöldségek, gránátalma(9)',
+                        'name' => 'Brassói, cékla savanyú',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Barackos crumble(1,3,7)',
+                        'name' => 'Gyümölcskenyér puding, vanília sodó (1,3,7,8)',
                         'price' => 1200
                     ]
                 ]
