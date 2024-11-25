@@ -55,7 +55,7 @@ return [
         ]
     ],
     'saturday-menu' => [
-        'price' => 5540,
+        'price' => 5380,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
