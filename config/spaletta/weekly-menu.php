@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.11.13. - 2024.11.15.',
-    'saturday-date' => '2024.11.16.',
+    'menu-date' => '2024.11.27. - 2024.11.29.',
+    'saturday-date' => '2024.11.30.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Magyaros gombaleves(7)',
-                    'price' => 1250
+                    'name'  => 'Hagymaleves, mustár, kovászos kenyér(1,4,7,10)',
+                    'price' => 1370
                 ],
                 [
-                    'name'  => 'Sárgaborsó krémleves, füstölt csülök',
-                    'price' => 1380
+                    'name'  => 'Tárkonyos csirkeraguleves, burgonyagombóc(1,3,7,9,10)',
+                    'price' => 1450
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Mustáros flekken, lyoni hagyma steak burgonya(1,10)',
-                    'price' => 2650
+                    'name' => 'Rántott sertésköröm, waldorf saláta(1,3,5,7,8,9,10,11)',
+                    'price' => 2570
                 ],
                 [
-                    'name' => 'Csirkecomb paprikás, galuska, tejfölös uborkasaláta(1,3,7)',
-                    'price' => 2560
+                    'name' => 'Hagymás csirkemáj, puliszka(7)',
+                    'price' => 2480
                 ],
                 [
-                    'name' => 'Mézes sült répa, feta sajt, kesudió(7,8)',
-                    'price' => 2340
+                    'name' => 'Grill camembert, jázmin rizs, áfonya(7,8,10)',
+                    'price' => 2410
                 ],
             ]
         ],
@@ -48,8 +48,8 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Nudli, diós morzsa, narancs, zöld dió(1,3,7,8)',
-                    'price' => 1230
+                    'name' => 'Banánkenyér, sós karamell(1,3,7)',
+                    'price' => 1350
                 ]
             ]
         ]
@@ -61,7 +61,7 @@ return [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Marhahúsleves, cérnametélt(1,3,9)',
+                        'name'  => 'Tojásleves(1,3,4,9)',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Zöldfűszeres csirkemell, sült őszi zöldségek, gránátalma(9)',
+                        'name' => 'Csevap, konfitált bab, ajvár',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Barackos crumble(1,3,7)',
+                        'name' => 'Citromos piskóta, mascarpone(1,3,7)',
                         'price' => 1200
                     ]
                 ]
