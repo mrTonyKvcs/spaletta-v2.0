@@ -1,6 +1,6 @@
 <x-layout>
     <x-event-header :showButtons="false"
-        background="{{ 'events/' . $event->slug . '/' . $event->image_path }}">{{ $event->title }}</x-event-header>
+        background="{{ $event->heroImage() ? $event->heroImage() : '/images/events/' . $event->slug . '/' . $event->image_path }}">{{ $event->title }}</x-event-header>
     <x-section>
         <div class="flex flex-col md:flex-row-reverse">
             <div class="flex flex-col justify-center w-full pl-8 space-y-10">
@@ -14,7 +14,7 @@
                         <p class="ml-4 text-2xl md:text-3xl text-gold">{{ $event->finished_at }}</p>
                     </div>
                 </div>
-                <div class="text-left event__content">
+                <div class="text-left event__content" style="font-size: 18px !important;">
                     <p class="text-2xl">{!! $event->content !!}</p>
                 </div>
             </div>
@@ -23,7 +23,7 @@
             <div class="w-full mt-8">
                 <livewire:order.buy-ticket :event="$event" />
             </div>
-        @else
+        @elseif($event->has_reservation)
             @if ($event->id !== 73 && $event->id !== 71)
                 <x-section>
                     <x-title text="Spaletta" title="{{ __('Asztalfoglalás') }}" price=""></x-title>

@@ -10,7 +10,8 @@
                     @foreach ($events as $event)
                         <div class="flex flex-col items-center justify-start rounded-md shadow-lg">
                             <div class="flex flex-col items-center">
-                                <img class="event__image" src="/images/events/{{ $event->slug }}/{{ $event->image_path }}"
+                                <img class="event__image"
+                                    src="{{ $event->heroImage() ? $event->heroImage() : '/images/events/' . $event->slug . '/' . $event->image_path }}"
                                     alt="">
                             </div>
                             <div class="flex flex-col items-center px-4 py-8 space-y-8 top-80">
