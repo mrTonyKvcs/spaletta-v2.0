@@ -121,7 +121,8 @@
             @if ($loop->count === 1) lg:col-start-2 @endif">
                         <div class="flex flex-col items-center">
                             <img class="event__image"
-                                src="/images/events/{{ $event->slug }}/{{ $event->image_path }}" alt="">
+                                src="{{ $event->heroImage() ? $event->heroImage() : '/images/events/' . $event->slug . '/' . $event->image_path }}"
+                                alt="">
                         </div>
                         <div class="flex flex-col items-center px-4 py-8 space-y-8 top-80">
                             <p class="px-6 py-2 text-2xl font-semibold text-white rounded-md bg-gold">
@@ -158,8 +159,9 @@
                 alt="reservation" title="reservation">{{ __('Sörház') }}</x-card>
             <x-card type="link" path="/images/pages/home/section/events-new" route="{{ route('events.index') }}"
                 alt="events" title="events">{{ __('Rendezvények') }}</x-card>
-            <x-card type="link" path="/images/pages/home/section/contact" route="{{ route('pages.reservation') }}"
-                alt="drinks" title="drinks">{{ __('Asztalfoglalás') }}</x-card>
+            <x-card type="link" path="/images/pages/home/section/contact"
+                route="{{ route('pages.reservation') }}" alt="drinks"
+                title="drinks">{{ __('Asztalfoglalás') }}</x-card>
         </div>
     </x-section>
     <x-section>

@@ -39,7 +39,7 @@ class Event extends Model
             return null;
         }
 
-        return config('spaletta.image.host') . '/storage/' . $media->id . '/' . $media->file_name;
+        return $this->image_path;
     }
 
     public function scopeActive($query)
