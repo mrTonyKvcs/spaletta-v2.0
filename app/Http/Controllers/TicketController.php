@@ -29,13 +29,15 @@ class TicketController extends Controller
         // $ticket->price = $ticket->event->price;
         $ticket->event_name = $ticket->event->title;
 
-        $invoiceNumber = $this->createInvoice($ticket->toArray());
-        $invoice = $this->createInvoiceModel($invoiceNumber);
-        $updateTicket = $this->getTicket($orderNumber);
-        $updateTicket->update(['invoice_id' => $invoice->id]);
+        if (!$ticket->invoice) {
+            $invoiceNumber = $this->createInvoice($ticket->toArray());
+            $invoice = $this->createInvoiceModel($invoiceNumber);
+            $updateTicket = $this->getTicket($orderNumber);
+            $updateTicket->update(['invoice_id' => $invoice->id]);
 
-        Mail::send(new SendQrTicket($ticket));
-        Mail::send(new NewSendMail($ticket));
+            Mail::send(new SendQrTicket($ticket));
+            Mail::send(new NewSendMail($ticket));
+        }
 
         return view('tickets.payment-confirmation', [
             'ticket' => $ticket
@@ -74,6 +76,6 @@ class TicketController extends Controller
 
     public function paymentError(Transaction $transaction)
     {
-        return view('pages.payment-error', [ 'transaction' => $transaction]);
+        return view('pages.payment-error', ['transaction' => $transaction]);
     }
 }
