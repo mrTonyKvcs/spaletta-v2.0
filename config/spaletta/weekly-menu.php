@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.12.04. - 2024.12.06.',
-    'saturday-date' => '2024.12.07.',
+    'menu-date' => '2024.12.11. - 2024.12.13.',
+    'saturday-date' => '2024.12.14.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Zeller krémleves, misos pirított zeller(1,5,6,7,9)',
-                    'price' => 1380
+                    'name'  => 'Zöldbableves, kápia, kapor',
+                    'price' => 1370
                 ],
                 [
-                    'name'  => 'Bakonyi betyárleves, csipetke(1,3,7,10)',
-                    'price' => 1450
+                    'name'  => 'Currys csirkeleves, roppanós zöldségek(2,4,9)',
+                    'price' => 1480
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Rántott szelet, burgonyapüré, barack kompót(1,3,7)',
-                    'price' => 2570
-                ],
-                [
-                    'name' => 'Roston sült csirkecomb, sült zöldségek, borsmártás(1,5,6,7)',
+                    'name' => 'Erdélyi rakott káposzta(3,7)',
                     'price' => 2580
                 ],
                 [
-                    'name' => 'Házi tagliatelle, paradicsom, rukkola(1,3,7)',
-                    'price' => 2380
+                    'name' => 'Szalonnás burgonya, hagymás mangalica zsír, tojás(3)',
+                    'price' => 2200
+                ],
+                [
+                    'name' => 'Sült répa, zöld curry, rizslepény(4)',
+                    'price' => 2340
                 ],
             ]
         ],
@@ -48,20 +48,20 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Buggyantott birsalma, pisztáciás morzsa, mascarpone(1,7,8)',
-                    'price' => 1340
+                    'name' => 'Cantuccini, kávé, mascarpone(1,3,7,8)',
+                    'price' => 1280
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'price' => 5450,
+        'price' => 5390,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Langyos barack leves, fűszeres mogyoró(5,7,8)',
+                        'name'  => 'Húsleves, cérnametélt, zöldségek(1,3,9)',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Lasagna(1,3,7,9)',
+                        'name' => 'Rakott burgonya(3,7)',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Mákos guba, vanília espuma(1,3,7)',
+                        'name' => 'Szilvás bukta, szőlő sabayon(1,3,7)',
                         'price' => 1200
                     ]
                 ]
