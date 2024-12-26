@@ -139,11 +139,11 @@ Route::group(
             return redirect()->route('pages.menu');
         })->name('pages.bar');
 
-        Route::get(LaravelLocalization::transRoute('routes.christmas'), function () {
-            $title = 'Karácsonyi ajánló';
-            $products = Product::where('category_id', 65)->get();
+        Route::get('bistro', function () {
+            $title = 'Bistro étlap';
+            $products = Product::whereIn('id', [2, 31, 32, 33, 34, 35, 36, 22])->get();
             return view('pages.christmas', compact('products', 'title'));
-        })->name('pages.christmas');
+        })->name('pages.bistro');
 
         // Route::get('oktobierfest', function () {
         //     $title = 'OKTOBIERFEST Étlap';
