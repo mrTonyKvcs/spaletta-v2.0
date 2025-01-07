@@ -55,11 +55,9 @@
     <div class="px-6 mt-32 mb-24 md:grid">
         <div class="flex flex-col items-center justify-center mt-10 space-y-8 md:mt-0">
             {{-- <h2 class="text-5xl text-center uppercase text-gold font-semibold">{{ __('Karácsonyi ajánló') }}</h2> --}}
-            <p class="text-3xl font-medium text-center text-gray2e font-libre">{!! __(
-                'Az ünnepek alatt december 27-én és december 28-án tart nyitva éttermünk. Ezeken a napokon bistro étlappal várjuk Vendégeinket!',
+            <p class="text-3xl font-medium text-center text-gold font-libre">{!! __(
+                'A Spaletta Étterem csapata  megkezdte téli szünetét, hogy 2025. január 21-től feltöltődve, újult erővel várhassuk Vendégeinket!',
             ) !!}</p>
-            <x-button type="gray-transparent"><a
-                    href="{{ route('pages.bistro') }}">{{ __('Bistro étlap') }}</a></x-button>
         </div>
     </div>
     <!-- <div class="flex flex-col items-center justify-center w-full px-6 mt-56 space-y-8">
