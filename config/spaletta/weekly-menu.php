@@ -35,7 +35,7 @@ return [
                     'price' => 2500
                 ],
                 [
-                    'name' => 'Ázsiai csirkenyárs, zöldséges pirított rizs(1,4,5,6)',
+                    'name' => 'Füstön sült csirke hortobágyi(1,3,7)',
                     'price' => 2570
                 ],
                 [
