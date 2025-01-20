@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2024.12.18. - 2024.12.20.',
-    'saturday-date' => '2024.12.21.',
+    'menu-date' => '2025.01.22. - 2025.01.24.',
+    'saturday-date' => '2025.01.25.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Kókusztejes karfiolleves, égetett karfiol',
-                    'price' => 1320
+                    'name'  => 'Gulyásleves,csipetke(1,3,9)',
+                    'price' => 1540
                 ],
                 [
-                    'name'  => 'Csülkös bableves, csipetke, tejföl(1,3,7,9)',
-                    'price' => 1480
+                    'name'  => 'Karfiolleves,pirított karfiol,mogyoró(7,8)',
+                    'price' => 1320
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Körömpörkölt, köményes főtt burgonya, csemege uborka',
+                    'name' => 'Rakott burgonya,csepegtetett tejföl(3,7)',
+                    'price' => 2500
+                ],
+                [
+                    'name' => 'Ázsiai csirkenyárs, zöldséges pirított rizs(1,4,5,6)',
                     'price' => 2570
                 ],
                 [
-                    'name' => 'Borzas csirkemell, fűszeres tejföl, jázmin rizs(1,3,7)',
-                    'price' => 2570
-                ],
-                [
-                    'name' => 'Rántott padlizsán, chermoula, rukkola(1,3)',
-                    'price' => 2380
+                    'name' => 'Rizottó,roquefort,körte,dió(7,8)',
+                    'price' => 2450
                 ],
             ]
         ],
@@ -48,20 +48,20 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Túrós tejespite, baracklekvár(1,3,7)',
-                    'price' => 1240
+                    'name' => 'Aranygaluska,vanília espuma(1,3,7,8)',
+                    'price' => 1380
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'price' => 5350,
+        'price' => 5430,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Frankfurti leves (1,7)',
+                        'name'  => 'Ázsiai húsleves,kacsás wonton(1,4,6)',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Halfasírt, zöldborsófőzelék (1,3,4,7)',
+                        'name' => '“Gödöllői” csirkecomb,burgonyapüré(1,3)',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Kukorica prósza, szilvalekvár(3,7)',
+                        'name' => 'Almás pite, tejfölfagyi(1,3,7,8)',
                         'price' => 1200
                     ]
                 ]

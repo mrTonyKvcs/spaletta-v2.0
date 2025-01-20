@@ -1,6 +1,7 @@
 .event {
     &__image {
         height: 305px;
+        object-fit: cover;
     }
 
     &__title {

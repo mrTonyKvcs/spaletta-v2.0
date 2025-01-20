@@ -52,14 +52,14 @@
             <source src="../videos/spaletta-video.mp4" type="video/mp4">
         </video> --}}
     </div>
-    <div class="px-6 mt-32 mb-24 md:grid">
-        <div class="flex flex-col items-center justify-center mt-10 space-y-8 md:mt-0">
-            {{-- <h2 class="text-5xl text-center uppercase text-gold font-semibold">{{ __('Karácsonyi ajánló') }}</h2> --}}
-            <p class="text-3xl font-medium text-center text-gold font-libre">{!! __(
-                'A Spaletta Étterem csapata  megkezdte téli szünetét, hogy 2025. január 21-től feltöltődve, újult erővel várhassuk Vendégeinket!',
-            ) !!}</p>
-        </div>
-    </div>
+    {{-- <div class="px-6 mt-32 mb-24 md:grid"> --}}
+    {{--    <div class="flex flex-col items-center justify-center mt-10 space-y-8 md:mt-0"> --}}
+    {{--        {{-- <h2 class="text-5xl text-center uppercase text-gold font-semibold">{{ __('Karácsonyi ajánló') }}</h2> --}}--}}
+    {{--        <p class="text-3xl font-medium text-center text-gold font-libre">{!! __( --}}
+    {{--            'A Spaletta Étterem csapata  megkezdte téli szünetét, hogy 2025. január 21-től feltöltődve, újult erővel várhassuk Vendégeinket!', --}}
+    {{--        ) !!}</p> --}}
+    {{--    </div> --}}
+    {{-- </div> --}}
     <!-- <div class="flex flex-col items-center justify-center w-full px-6 mt-56 space-y-8">
         <h2 class="text-4xl italic font-medium gold font-libre">Kedves Vendégeink !</h2>
         <p class="text-3xl italic font-medium text-center text-gray2e font-libre">Technikai okok miatt vezetékes telefonunk nem üzemel, az alábbi telefonszámon tudják elérni éttermünket: <a href="tel:+36202199975">+36 20 219 99 75</a></p>
@@ -77,22 +77,22 @@
             </div>
         </div>
     </x-section> --}}
-    {{-- <x-section> --}}
-    {{--    <div class="flex flex-col items-center w-full mt-24"> --}}
-    {{--        <x-title title="{{ __('Déli ajánló') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}"></x-title> --}}
-    {{--        <x-weekly-menu></x-weekly-menu> --}}
-    {{--    </div> --}}
-    {{--    <div class="flex flex-col items-center w-full mt-24"> --}}
-    {{--        <x-title title="{{ __('Szombati ajánló') }}" --}}
-    {{--            text="{{ config('spaletta.weekly-menu.saturday-date') }}"></x-title> --}}
-    {{--        <p class="text-3xl italic font-medium text-center text-gray2e font-libre"> --}}
-    {{--            {{ config('spaletta.weekly-menu.saturday-menu')['price'] }} Ft</p> --}}
-    {{--        <x-weekend-menu></x-weekend-menu> --}}
-    {{--    </div> --}}
-    {{--    <p class="text-xl">1. Glutén 2. Rákfélék 3. Tojás 4. Halak 5. Földimogyoró 6. Szójabab 7. Tej 8. Diófélék 9. --}}
-    {{--        Zeller10. Mustár 11. Szezámmag</p> --}}
-    {{--    <p class="text-xl">{{ __('(Az ár nem tartalmazza a csomagolás díját)') }}</p> --}}
-    {{-- </x-section> --}}
+    <x-section>
+        <div class="flex flex-col items-center w-full mt-24">
+            <x-title title="{{ __('Déli ajánló') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}"></x-title>
+            <x-weekly-menu></x-weekly-menu>
+        </div>
+        <div class="flex flex-col items-center w-full mt-24">
+            <x-title title="{{ __('Szombati ajánló') }}"
+                text="{{ config('spaletta.weekly-menu.saturday-date') }}"></x-title>
+            <p class="text-3xl italic font-medium text-center text-gray2e font-libre">
+                {{ config('spaletta.weekly-menu.saturday-menu')['price'] }} Ft</p>
+            <x-weekend-menu></x-weekend-menu>
+        </div>
+        <p class="text-xl">1. Glutén 2. Rákfélék 3. Tojás 4. Halak 5. Földimogyoró 6. Szójabab 7. Tej 8. Diófélék 9.
+            Zeller10. Mustár 11. Szezámmag</p>
+        <p class="text-xl">{{ __('(Az ár nem tartalmazza a csomagolás díját)') }}</p>
+    </x-section>
     <x-section background="home-about">
         <div class="md:grid md:grid-cols-2">
             <div class="flex justify-end sm:mr-6 lg:mr-24">
@@ -160,8 +160,9 @@
                 alt="reservation" title="reservation">{{ __('Sörház') }}</x-card>
             <x-card type="link" path="/images/pages/home/section/events-new" route="{{ route('events.index') }}"
                 alt="events" title="events">{{ __('Rendezvények') }}</x-card>
-            <x-card type="link" path="/images/pages/home/section/contact" route="{{ route('pages.reservation') }}"
-                alt="drinks" title="drinks">{{ __('Asztalfoglalás') }}</x-card>
+            <x-card type="link" path="/images/pages/home/section/contact"
+                route="{{ route('pages.reservation') }}" alt="drinks"
+                title="drinks">{{ __('Asztalfoglalás') }}</x-card>
         </div>
     </x-section>
     <x-section>
