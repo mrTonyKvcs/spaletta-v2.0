@@ -1,11 +1,11 @@
-<div class="px-6 mt-32 mb-24 md:grid">
-    <div class="flex flex-col items-center justify-center mt-10 space-y-8 md:mt-0">
-        {{-- <h2 class="text-5xl text-center uppercase text-gold font-semibold">{{ __('Karácsonyi ajánló') }}</h2> --}}
-        <p class="text-3xl font-medium text-center text-gold font-libre">{!! __(
-            'A Spaletta Étterem csapata  megkezdte téli szünetét, hogy 2025. január 21-től feltöltődve, újult erővel várhassuk Vendégeinket!',
-        ) !!}</p>
-    </div>
-</div>
+{{-- <div class="px-6 mt-32 mb-24 md:grid"> --}}
+{{--    <div class="flex flex-col items-center justify-center mt-10 space-y-8 md:mt-0"> --}}
+{{--        {{-- <h2 class="text-5xl text-center uppercase text-gold font-semibold">{{ __('Karácsonyi ajánló') }}</h2> --}}--}}
+{{--        <p class="text-3xl font-medium text-center text-gold font-libre">{!! __( --}}
+{{--            'A Spaletta Étterem csapata  megkezdte téli szünetét, hogy 2025. január 21-től feltöltődve, újult erővel várhassuk Vendégeinket!', --}}
+{{--        ) !!}</p> --}}
+{{--    </div> --}}
+{{-- </div> --}}
 <div class="hidden lg:flex lg:flex-row justify-start">
     <div class="w-1/4 flex md:justify-start">
         <span class="align-bottom uppercase text-gray2e text-5xl font-semibold">{{ __('Nyitvatartás') }}</span>
