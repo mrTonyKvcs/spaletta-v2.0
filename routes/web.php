@@ -81,7 +81,7 @@ Route::group(
         // })->name('pages.menu');
 
         Route::get(LaravelLocalization::transRoute('routes.menu'), function () {
-            return redirect()->route('pages.bistro');
+            // return redirect()->route('pages.bistro');
             $title = 'Étlap';
             $categories = Category::whereIn('type_id', [1, 9])->orderBy('order_column')->with('items')->get();
             return view('pages.restaurant', compact('categories', 'title'));
@@ -133,7 +133,7 @@ Route::group(
         // })->name('pages.restaurant');
 
         Route::get(LaravelLocalization::transRoute('routes.restaurant'), function () {
-            return redirect()->route('pages.bistro');
+            return redirect()->route('pages.menu');
         })->name('pages.restaurant');
 
         Route::get(LaravelLocalization::transRoute('routes.bar'), function () {

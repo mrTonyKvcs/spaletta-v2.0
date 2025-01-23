@@ -31,7 +31,7 @@
                 </div>
                 <div class="z-20">
                     <x-button class="mr-10" type="transparent"><a
-                            href="{{ route('pages.restaurant') }}">{{ __('Étterem') }}</a>
+                            href="{{ route('pages.menu') }}">{{ __('Étterem') }}</a>
                     </x-button>
                     <x-button type="transparent"><a href="{{ route('pages.bar') }}">{{ __('Sörház') }}</a></x-button>
                 </div>
@@ -154,9 +154,9 @@
     </x-section>
     <x-section background="home-services">
         <div class="gap-12 space-x-4 lg:space-x-0 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 lg:gap-12">
-            <x-card type="link" path="/images/pages/home/section/menu" route="{{ route('pages.restaurant') }}"
+            <x-card type="link" path="/images/pages/home/section/menu" route="{{ route('pages.menu') }}"
                 alt="spaletta" title="spaletta">{{ __('Étterem') }}</x-card>
-            <x-card type="link" path="/images/pages/home/section/bar" route="{{ route('pages.bar') }}"
+            <x-card type="link" path="/images/pages/home/section/bar" route="{{ route('pages.menu') }}"
                 alt="reservation" title="reservation">{{ __('Sörház') }}</x-card>
             <x-card type="link" path="/images/pages/home/section/events-new" route="{{ route('events.index') }}"
                 alt="events" title="events">{{ __('Rendezvények') }}</x-card>
