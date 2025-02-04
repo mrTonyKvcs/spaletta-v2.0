@@ -1,6 +1,5 @@
 <x-layout>
-    <x-event-header :showButtons="false"
-        background="{{ $event->heroImage() ? $event->heroImage() : '/images/events/' . $event->slug . '/' . $event->image_path }}">{{ $event->title }}</x-event-header>
+    <x-event-header :showButtons="false" background="/images/pages/events/event-bg.jpg">{{ $event->title }}</x-event-header>
     <x-section>
         <div class="flex flex-col md:flex-row-reverse">
             <div class="flex flex-col justify-center w-full pl-8 space-y-10">
