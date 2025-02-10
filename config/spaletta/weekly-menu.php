@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2025.02.05. - 2025.02.07.',
-    'saturday-date' => '2025.02.08.',
+    'menu-date' => '2025.02.12. - 2025.02.14.',
+    'saturday-date' => '2025.02.15.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Grízgaluska leves (1,3,9)',
-                    'price' => 1380
+                    'name'  => 'Minestrone, arborio(9)',
+                    'price' => 1450
                 ],
                 [
-                    'name'  => 'Frankfurti leves (1,7)',
-                    'price' => 1520
+                    'name'  => 'Erdélyi csorbaleves, húsgombóc(3,7,9)',
+                    'price' => 1590
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Ragacsos sertés tarja, hideg csípőskáposzta (1,4,6,11)',
-                    'price' => 2640
+                    'name' => 'Lencsefőzelék, sertéspöri(1,4,7,10)',
+                    'price' => 2670
                 ],
                 [
-                    'name' => 'Rántott ponty filé, waldorf saláta (1,3,4,7,8,9,10,11)',
-                    'price' => 2760
+                    'name' => 'Csirkenyárs, hummus, tabulé(1,5,7,9,11)',
+                    'price' => 2580
                 ],
                 [
-                    'name' => 'Pad thai, tofu (3,4,5,6)',
-                    'price' => 2420
+                    'name' => 'Rántott sajt, jázminrizs, tartár(1,3,7,10)',
+                    'price' => 2480
                 ],
             ]
         ],
@@ -48,20 +48,20 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Posírozott körte, mascarpone, sós karamell (7,11)',
-                    'price' => 1350
+                    'name' => 'Palacsinta, áfonya, vanília espuma(1,3,7)',
+                    'price' => 1240
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'price' => 5380,
+        'price' => 5480,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Magyaros gombaleves, reszelt tészta (1,3,7)',
+                        'name'  => 'Orjaleves, cérnametélt(1,3,9)',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Rántott csirkemáj, burgonyapüré, csemege uborka (1,3,7,10)',
+                        'name' => 'Paradicsomos húsgombóc, főtt burgonya(3,9)',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Diós-prézlis nudli, baracklekvár (1,3,7,8)',
+                        'name' => 'Somlói(1,3,7,8)',
                         'price' => 1200
                     ]
                 ]
