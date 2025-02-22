@@ -1,6 +1,6 @@
 {{-- <div class="px-6 mt-32 mb-24 md:grid"> --}}
 {{--    <div class="flex flex-col items-center justify-center mt-10 space-y-8 md:mt-0"> --}}
-{{--        {{-- <h2 class="text-5xl text-center uppercase text-gold font-semibold">{{ __('Karácsonyi ajánló') }}</h2> --}}--}}
+{{--        {{-- <h2 class="text-5xl text-center uppercase text-gold font-semibold">{{ __('Karácsonyi ajánló') }}</h2> --}}
 {{--        <p class="text-3xl font-medium text-center text-gold font-libre">{!! __( --}}
 {{--            'A Spaletta Étterem csapata  megkezdte téli szünetét, hogy 2025. január 21-től feltöltődve, újult erővel várhassuk Vendégeinket!', --}}
 {{--        ) !!}</p> --}}
