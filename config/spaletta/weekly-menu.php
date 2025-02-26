@@ -18,7 +18,7 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Legényfogó leves, burgonyagombóc (1,3,7,9)',
+                    'name'  => 'Langyos almaleves, szikkasztott áfonya(7)',
                     'price' => 1390
                 ],
                 [
