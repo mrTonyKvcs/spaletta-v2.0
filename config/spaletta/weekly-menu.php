@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2025.03.12. - 2025.03.14.',
-    'saturday-date' => '2025.03.15.',
+    'menu-date' => '2025.03.19. - 2025.03.21.',
+    'saturday-date' => '2025.03.22.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Orjaleves, zöldségek, cérnametélt(1,3,9)',
-                    'price' => 1700
+                    'name'  => 'Citromleves(7)',
+                    'price' => 1430
                 ],
                 [
-                    'name'  => 'Erdei gyümölcsleves(7)',
-                    'price' => 1550
+                    'name'  => 'Bakonyi betyárleves(1,7)',
+                    'price' => 1560
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Cigánypecsenye, steak burgonya(1,10)',
-                    'price' => 2690
+                    'name' => 'Rakott burgonya(3,7)',
+                    'price' => 2670
                 ],
                 [
-                    'name' => 'Kapros túróval töltött csirkemell, jázmin rizs(1,3,7)',
-                    'price' => 2690
+                    'name' => 'Rántott csirkecomb filé, burgonyapüré, csalamádé(1,3,7,10)',
+                    'price' => 2650
                 ],
                 [
-                    'name' => 'Tagliatelle, cukkini, borsó, menta(1,3,7)',
-                    'price' => 2550
+                    'name' => 'Káposztás tészta(1,3)',
+                    'price' => 2350
                 ],
             ]
         ],
@@ -48,20 +48,20 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Madártej, sós karamell(3,7)',
-                    'price' => 1400
+                    'name' => 'Szilvásgombóc, szilvaragu, gyömbér(1,3)',
+                    'price' => 1360
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'price' => 5680,
+        'price' => 5630,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Tárkonyos burgonyaleves',
+                        'name'  => 'Karfiol leves, pirított karfiol, mogyoró(5,7,8)',
                         'price' => 1500
                     ]
                 ]
@@ -70,7 +70,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Chilisbab, tortilla',
+                        'name' => 'Sertés Cordon, rizibizi(1,3,7)',
                         'price' => 2500
                     ],
                 ]
@@ -79,7 +79,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Barackos cobbler(1,3,7)',
+                        'name' => 'Mákos bobajka, vanília fagylalt, méz(1,3,7)',
                         'price' => 1200
                     ]
                 ]
