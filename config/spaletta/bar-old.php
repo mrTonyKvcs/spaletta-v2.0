@@ -4,20 +4,33 @@ return [
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Olasz ízelítő | 2 személyre (bufala, serrano, olajbogyó, parmezán, pecorino, aszalt paradicsom, olíva olaj, ciabatta) (1,7)',
-            'de' => 'Italienische Platte | Für 2 Personen (Bufala, Serrano, Oliven, Parmesan, Pecorino getr. Tomaten, Olivenöl, Ciabatta) (1,7)',
-            'en' => 'Italian Plate | For 2 people (bufala, serrano, olives, parmesan, pecorino, dried tomatoes, olive oil, ciabatta) (1,7)'
+            'hu' => 'Hortobágyi Angus marha tatár (100g), kaprival, dijoni mustárral és pirítóssal (1,7,10)',
+            'de' => 'Hortobágyer Angus Beef Tatare (100g), Kaper, Dijoner Senf und Toast (1,7,10)',
+            'en' => 'Hortobágy Angus Beef Tartare (100 g) with Capers, Dijon Mustard and Toast (1,7,10)'
         ],
         'comment' => '',
-        'price' => 9600,
+        'price' => 5350,
         'wine' => ''
     ],
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Spaletta kosár (csípős csirkeszárny, ragacsos sertésoldalas, rántott süllőpofa, friss zöldségek, bbq mártás, lilahagymás majonéz) (1,3,4,6,7,9,10)',
-            'de' => 'Spaletta Korb (würzige Chicken Wings, gebackene Zandermaul, BBQ Rippeln, frische Gemüse, BBQ Sosse, Lilazwiebel Mayo) (1,3,4,6,7,9,10)',
-            'en' => '“Spaletta basket (spicy chicken wings, fried zander cheeks, BBQ ribbs, fresh vegetables, BBQ, red onion mayo) (1,3,4,6,7,9,10)'
+            'hu' => 'Bao bun, csirke, hoi sin szósz és koriander (1,3,6,7,11)',
+            'de' => 'Bao Bun mit Hühner, Hoi Sin und Koriander (1,3,6,7,11)',
+            'en' => 'Chicken Bao Bun with Hoisin Sauce and Coriander (1,3,6,7,11)'
+        ],
+        'comment' => '',
+        'price' => 3300,
+        'wine' => ''
+    ],
+    [
+        'category_id' => 10,
+        'name' => [
+            'hu' => 'Spaletta kosár -csípős csirkeszárny, rántott süllő pofa, ragacsos oldalas, friss zöldség, bbq szósz,
+            lilahagymás majonéz (1,3,4,6,7,9,10)',
+            'de' => 'Spaletta Korb -würzige Chicken Wings, gebackene Zandermaul, BBQ Rippeln, frische Gemüse, BBQ
+            Sosse, Lilazwiebel Mayo',
+            'en' => '“Spaletta” Basket -spicy chicken wings, breaded perch cheek, BBQ ribs, fresh vegetables, BBQ sauce, red onion mayo'
         ],
         'comment' => '',
         'price' => 4700,
@@ -26,12 +39,12 @@ return [
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Spaletta burger, Hortobágyi Angus, sült burgonya, ketchup (marhahús pogácsa, házi hamburger szósz, szívsaláta, cheddar sajt, remoulade, bacon, savanyú uborka) (1,3,4,6,7,9,10)',
+            'hu' => 'Spaletta Burger, hortobágyi Angus, sült burgonya, ketchup (1,3,4,6,7,9,10)',
             'de' => 'Spaletta Burger, Pommes, Ketchup (Hortobágyer Angus) (1,3,4,6,7,9,10)',
             'en' => 'Spaletta Burger with fries, ketchup (Hortobágy Angus) (1,3,4,6,7,9,10)'
         ],
         'comment' => '',
-        'price' => 5700,
+        'price' => 5500,
         'wine' => ''
     ],
     [
@@ -42,7 +55,7 @@ return [
             'en' => 'Smash Burger, french fries, ketchup (Angus from Hortobágy) (1,3,4,6,7,9,10)'
         ],
         'comment' => '',
-        'price' => 5600,
+        'price' => 5390,
         'wine' => ''
     ],
     [
@@ -70,12 +83,12 @@ return [
     [
         'category_id' => 10,
         'name' => [
-            'hu' => 'Ropogós sült csülök, pirított burgonya, mustáros káposzta (1,6,10)',
-            'de' => 'Knusprig gebackene Schweinhaxe, geröstete Kartoffel und Senf-Kraut (1,6,10)',
-            'en' => 'Crispy baked pork knuckle, roasted potatoes, and Mustard cabbage (1,6,10)'
+            'hu' => 'Ropogós sült csülök, pirított burgonya, pirított savanyú káposzta (1,6)',
+            'de' => 'Knusprig gebackene Schweinhaxe, geröstete Kartoffel und Sauerkraut (1,6)',
+            'en' => 'Crispy baked pork knuckle, roasted potatoes, and Sauerkraut (1,6)'
         ],
         'comment' => '',
-        'price' => 8400,
+        'price' => 8200,
         'wine' => ''
     ],
 

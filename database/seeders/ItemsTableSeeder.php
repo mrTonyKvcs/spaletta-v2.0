@@ -16,8 +16,8 @@ class ItemsTableSeeder extends Seeder
      */
     public function run()
     {
-        $foods = config()->get('spaletta.restaurant');
-        // $foods = config()->get('spaletta.bar');
+        // $foods = config()->get('spaletta.restaurant');
+        $foods = config()->get('spaletta.bar');
         /* $foods = config()->get('spaletta.christmas'); */
 
         foreach ($foods as $item) {
