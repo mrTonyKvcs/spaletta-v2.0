@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2025.04.09. - 2025.04.11.',
+    'menu-date' => '2025.04.16. - 2025.04.17.',
     'saturday-date' => '2025.04.12.',
     'menu' => [
         // 'first-courses' => [
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Gulyásleves, csipetke(1,3,9)',
-                    'price' => 1640
+                    'name'  => 'Palócleves (7,9)',
+                    'price' => 1490
                 ],
                 [
-                    'name'  => 'Tavaszi zöldségleves, burgonyagombóc(1,3,9)',
-                    'price' => 1490
+                    'name'  => 'Körtekrémleves, karamell, mandula (7,8)',
+                    'price' => 1290
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Bácskai rizseshús, csemegeuborka(1,10)',
-                    'price' => 2590
+                    'name' => 'Rakott karfiol, tejföl (7)',
+                    'price' => 2680
                 ],
                 [
-                    'name' => 'Posírozott csirkecomb filé, tom yum, pak choy(1,4,6)',
+                    'name' => 'Pirított csirkemell, zöld saláta, fűszeres csicseriborsó, tojásos dressing (1,3,10)',
                     'price' => 2620
                 ],
                 [
-                    'name' => 'Rántott sajt, rizi bizi, tartár(1,3,7,10)',
-                    'price' => 2460
+                    'name' => 'Tempurált zöldség, joghurt,tahini (1,7)',
+                    'price' => 2440
                 ],
             ]
         ],
@@ -48,13 +48,14 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Mákos nudli, szilvalekvár(1,3,7)',
-                    'price' => 1340
+                    'name' => 'Palacsinta, eper, vanília espuma (1,3,7)',
+                    'price' => 1290
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
+        'hide' => true,
         'price' => 5680,
         'items' => [
             'soup' => [
