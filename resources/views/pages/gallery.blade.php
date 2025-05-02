@@ -1,4 +1,4 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app') --}}
 
 @section('title')
     {{ __('Galéria') }}
@@ -21,9 +21,11 @@
 
             <ul
                 class="flex flex-wrap items-center justify-center text-2xl font-medium uppercase space-x-3 sm:flex md:mb-16 md:flex md:items-center md:justify-center md:space-x-16 light-gray">
-                <li @click="openTab = 1" class="mr-1 -mb-px">
-                    <a :class="{ 'tab-active': openTab === 1 }"
-                        class="pb-1 hover:text-gray58 xl:border-b hover:border-gray-500" href="#">Spaletta</a>
+
+                <li @click="openTab = 5" class="mr-1">
+                    <a :class="{ 'tab-active': openTab === 5 }"
+                        class="pb-1 hover:text-gray58 xl:border-b hover:border-gray-500"
+                        href="#">{{ __('Rendezvények') }}</a>
                 </li>
                 <li @click="openTab = 2" class="mr-1">
                     <a :class="{ 'tab-active': openTab === 2 }"
@@ -35,16 +37,15 @@
                         class="pb-1 hover:text-gray58 xl:border-b hover:border-gray-500"
                         href="#">{{ __('Sörház') }}</a>
                 </li>
+                <li @click="openTab = 1" class="mr-1 -mb-px">
+                    <a :class="{ 'tab-active': openTab === 1 }"
+                        class="pb-1 hover:text-gray58 xl:border-b hover:border-gray-500" href="#">Terasz</a>
+                </li>
                 {{-- <li @click="openTab = 4" class="mr-1">
                     <a :class="{ 'tab-active': openTab === 4 }"
                         class="pb-6 hover:text-gray58 sm:border-b hover:border-gray-500"
                         href="#">{{ __('Csapatunk') }}</a>
                 </li> --}}
-                <li @click="openTab = 5" class="mr-1">
-                    <a :class="{ 'tab-active': openTab === 5 }"
-                        class="pb-1 hover:text-gray58 xl:border-b hover:border-gray-500"
-                        href="#">{{ __('Rendezvények') }}</a>
-                </li>
             </ul>
 
             <div class="flex flex-col items-center">
