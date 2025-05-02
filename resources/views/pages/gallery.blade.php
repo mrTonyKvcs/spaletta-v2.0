@@ -17,7 +17,7 @@
         {{ __('Galéria') }}
     </x-header>
     <x-section>
-        <div x-data="{ openTab: 1 }" class="p-6">
+        <div x-data="{ openTab: 5 }" class="p-6">
 
             <ul
                 class="flex flex-wrap items-center justify-center text-2xl font-medium uppercase space-x-3 sm:flex md:mb-16 md:flex md:items-center md:justify-center md:space-x-16 light-gray">
