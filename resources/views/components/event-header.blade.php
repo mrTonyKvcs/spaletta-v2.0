@@ -1,9 +1,11 @@
 @props([
     'background' => 'contact-bg.jpg',
     'showButtons' => true,
+    'backgroundColor' => false,
 ])
 
-<div class="top-0 bg-center bg-cover absolte h-96 lg:h-200 bg-zoom" style="background-image: url({{ $background }});">
+<div class="top-0 bg-center bg-cover absolte h-96 lg:h-200 bg-zoom"
+    style="{{ $backgroundColor ? 'background-color: #ffb606;' : 'background-image: url({{ $background ?>' }});' }}">
     <div class="flex flex-col items-center justify-center text-white uppercase h-96 lg:h-200">
         <h1 class="mb-4 text-4xl font-semibold text-center lg:text-title">{{ $slot }}</h1>
         @if ($showButtons)

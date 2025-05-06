@@ -1,5 +1,5 @@
 <x-layout>
-    <x-event-header :showButtons="false" background="/images/pages/events/event-bg.jpg">{{ $event->title }}</x-event-header>
+    <x-event-header :showButtons="false" backgroundColor="true">{{ $event->title }}</x-event-header>
     <x-section>
         <div class="flex flex-col md:flex-row-reverse">
             <div class="flex flex-col justify-center w-full pl-8 space-y-10">
@@ -12,6 +12,9 @@
                         <img class="w-7" src="/images/svg/calender.svg" alt="">
                         <p class="ml-4 text-2xl md:text-3xl text-gold">{{ $event->finished_at }}</p>
                     </div>
+                </div>
+                <div class="flex justify-center pr-6">
+                    <img class="w-full h-auto" src="{{ $event->image_path }}" alt="{{ $event->title }}">
                 </div>
                 <div class="text-left event__content" style="font-size: 18px !important;">
                     <p class="text-2xl">{!! $event->content !!}</p>
