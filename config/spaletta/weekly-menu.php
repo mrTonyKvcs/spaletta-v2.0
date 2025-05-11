@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2025.05.07. - 2025.05.09.',
+    'menu-date' => '2025.05.14. - 2025.05.16.',
     'saturday-date' => '2025.05.10.',
     'menu' => [
         // 'first-courses' => [
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Cukkini krémleves, padlizsán krokett, kapor(1,3,7)',
-                    'price' => 1460
+                    'name'  => 'Sáfrányos almaleves, eper, bazsalikom',
+                    'price' => 1430
                 ],
                 [
-                    'name'  => 'Székelygulyás(7,9)',
-                    'price' => 1570
+                    'name'  => 'Palócleves, burgonyagombóc(1,3,7,9,10)',
+                    'price' => 1560
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Erdei gombás tarja, specli(1,3,7)',
-                    'price' => 2690
+                    'name' => 'Szalonnás újburgonya, hagymás mangalicazsír, onsen tojás(3)',
+                    'price' => 2370
                 ],
                 [
-                    'name' => 'Füstös csirke hortobágyi, csepegtetett tejföl(1,3,7)',
-                    'price' => 2580
+                    'name' => 'Rántott csirkecomb filé, jázminrizs, szilvakompót(1,3)',
+                    'price' => 2590
                 ],
                 [
-                    'name' => 'Grillezett camembert, friss saláta, eper, spárga(7)',
-                    'price' => 2530
+                    'name' => 'Humusz, pirított cukkini, konfitált koktélparadicsom, tabulé(1,11)',
+                    'price' => 2460
                 ],
             ]
         ],
@@ -48,14 +48,14 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Répatorta, yuzus mascarpone(1,3,7,8)',
-                    'price' => 1390
+                    'name' => 'Túrógombóc, eper, karamellizált morzsa(1,3,7)',
+                    'price' => 1380
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'hide' => false,
+        'hide' => true,
         'price' => 5490,
         'items' => [
             'soup' => [
