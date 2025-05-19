@@ -69,17 +69,17 @@
         <p class="text-3xl italic font-medium text-center text-gray2e font-libre">Éttermünk augusztus 17 - 29 között, nyári szünet miatt zárva tart. Augusztus 30-án 16 órától a megszokottak szerint várjuk Vendégeinket!</p>
     </div> --}}
 
-    <x-section background="christmas-section">
-        <div class="flex justify-center">
-            <div class="flex flex-col items-center justify-center mt-10 space-y-8 md:mt-0">
-                <p class="text-3xl font-medium text-center text-gray2e font-libre">Május 17-én szombaton, zártkörű
-                    rendezvény miatt éttermünk zárva tart.
-                    Jövőhéten a megszokott nyitvatartással várjuk Vendégeinket!</p>
-                {{-- <x-button type="gray-transparent"><a --}}
-                {{--        href="{{ route('pages.reservation') }}">{{ __('Asztalfoglalás') }}</a></x-button> --}}
-            </div>
-        </div>
-    </x-section>
+    {{-- <x-section background="christmas-section"> --}}
+    {{--    <div class="flex justify-center"> --}}
+    {{--        <div class="flex flex-col items-center justify-center mt-10 space-y-8 md:mt-0"> --}}
+    {{--            <p class="text-3xl font-medium text-center text-gray2e font-libre">Május 17-én szombaton, zártkörű --}}
+    {{--                rendezvény miatt éttermünk zárva tart. --}}
+    {{--                Jövőhéten a megszokott nyitvatartással várjuk Vendégeinket!</p> --}}
+    {{--            {{-- <x-button type="gray-transparent"><a --}}--}}
+    {{--            {{--        href="{{ route('pages.reservation') }}">{{ __('Asztalfoglalás') }}</a></x-button> --}}--}}
+    {{--        </div> --}}
+    {{--    </div> --}}
+    {{-- </x-section> --}}
 
     <x-section>
         <div class="flex flex-col items-center w-full mt-24">
