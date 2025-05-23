@@ -45,6 +45,11 @@ Route::group(
             'uses' => 'App\Http\Controllers\PagesController@index'
         ]);
 
+        Route::get('hirlevel', [
+            'as' => 'pages.newsletter-page',
+            'uses' => 'App\Http\Controllers\NewsletterController@subscribePage'
+        ]);
+
         Route::post('hirlevel', [
             'as' => 'pages.newsletter',
             'uses' => 'App\Http\Controllers\NewsletterController@subscribed'

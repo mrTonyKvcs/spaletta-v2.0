@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class NewsletterController extends Controller
 {
+    public function subscribePage()
+    {
+        return view('pages.subscribe');
+    }
+
     public function subscribed(Request $request)
     {
         $validated = $request->validate([
@@ -16,7 +21,7 @@ class NewsletterController extends Controller
 
         Newsletter::create($request->all());
 
-        return back()->with('success', 'Sikeres hírlevél feliratkozás!');
+        return back()->with('success', __('Sikeres hírlevél feliratkozás!'));
     }
 
     public function unsubscribePage()
@@ -29,11 +34,11 @@ class NewsletterController extends Controller
         $email = Newsletter::where('email', $request->email)->first();
 
         if (empty($email)) {
-            return back()->with('error', 'Ezzel a email cimmel nincs hirlevel feliratkozas!');
+            return back()->with('error', __('Ezzel a email cimmel nincs hirlevel feliratkozas!'));
         }
 
         $email->delete();
 
-        return back()->with('success', 'Sikeres hírlevél leiratkozás!');
+        return back()->with('success', __('Sikeres hírlevél leiratkozás!'));
     }
 }

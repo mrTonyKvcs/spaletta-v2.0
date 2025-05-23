@@ -1,6 +1,6 @@
  <div class="px-6 mt-32 mb-24 md:grid">
      {{-- <div class="flex flex-col items-center justify-center mt-10 space-y-8 md:mt-0"> --}}
-     {{--        {{-- <h2 class="text-5xl text-center uppercase text-gold font-semibold">{{ __('Karácsonyi ajánló') }}</h2> --}}--}}
+     {{--        {{-- <h2 class="text-5xl text-center uppercase text-gold font-semibold">{{ __('Karácsonyi ajánló') }}</h2> --}}
      {{--        <p class="text-3xl font-medium text-center text-gold font-libre">{!! __( --}}
      {{--            'Május 17-én szombaton, zártkörű --}}
      {{--                            rendezvény miatt éttermünk zárva tart. --}}
@@ -60,8 +60,8 @@
 
      <div class="flex flex-col items-center justify-center w-full mt-12">
          <div class="flex justify-around uppercase text-gray73 w-full text-2xl">
-             <div class="space-y-6 font-semibold text-center">Az étterem konyhája keddtól szombatig 21:30 óráig tart
-                 nyitva.
+             <div class="space-y-6 font-semibold text-center">
+                 {{ __('Az étterem konyhája keddtól szombatig 21:30 óráig tart nyitva.') }}
              </div>
          </div>
      </div>
