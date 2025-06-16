@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2025.06.11. - 2025.06.13.',
-    'saturday-date' => '2025.06.14.',
+    'menu-date' => '2025.06.19. - 2025.06.20.',
+    'saturday-date' => '2025.06.21.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Hideg paradicsomleves, sztracsatella, bazsalikom(7,9)',
-                    'price' => 1450
+                    'name'  => 'Ajo blanco, sárgadinnye, serrano(8)',
+                    'price' => 1680
                 ],
                 [
-                    'name'  => 'Frankfurti leves(1,7)',
-                    'price' => 1480
+                    'name'  => 'Erdélyi csorba(1,3,7,9)',
+                    'price' => 1680
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Rakottburgonya(3,7)',
-                    'price' => 2640
+                    'name' => 'Chilisbab, házi tortilla',
+                    'price' => 2670
                 ],
                 [
-                    'name' => 'Joghurtos csirkenyárs, zöldsaláta(7,8,11)',
-                    'price' => 2580
+                    'name' => 'Rántott csirkemáj, petrezselymes burgonya, csemegeuborka(1,3,10)',
+                    'price' => 2590
                 ],
                 [
-                    'name' => 'Tökfőzelék, kápia, paprika',
-                    'price' => 2360
+                    'name' => 'Rizottó, szikkasztott paradicsom, pesto(7,8)',
+                    'price' => 2450
                 ],
             ]
         ],
@@ -48,21 +48,21 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Tápióka puding, eper, rebarbara, kókusz(1,7)',
-                    'price' => 1320
+                    'name' => 'Pannacotta, mangó, kókusz(7)',
+                    'price' => 1400
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
         'hide' => false,
-        'price' => 5460,
+        'price' => 5600,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Nyári zöldségleves(9)',
+                        'name'  => 'Hideg meggyleves, granny smith(7)',
                         'price' => 1500
                     ]
                 ]
@@ -71,7 +71,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Lasagne(1,3,7,9)',
+                        'name' => 'Cigánypecsenye, steak burgonya(1,10)',
                         'price' => 2500
                     ],
                 ]
@@ -80,7 +80,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Piskótatekercs, barack, merengue(1,3)',
+                        'name' => 'Citromos piskóta, mézes mascarpone, áfonya(1,3,7)',
                         'price' => 1200
                     ]
                 ]
