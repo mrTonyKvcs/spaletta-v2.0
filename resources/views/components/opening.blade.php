@@ -1,10 +1,10 @@
- <div class="px-6 mt-32 mb-24 md:grid">
-     <div class="flex flex-col items-center justify-center mt-10 space-y-8 md:mt-0">
-         <p class="text-2xl font-medium text-center text-gold font-libre">A héten éttermünk zárva tart, de találkozhattok
-             velünk a Street Food Fesztiválon Kecskemét főterén, a 0 km kőnél, június 25–28. között, minden nap 16
-             órától. Várunk mindenkit sok szeretettel!</p>
-     </div>
- </div>
+ {{-- <div class="px-6 mt-32 mb-24 md:grid"> --}}
+ {{--    <div class="flex flex-col items-center justify-center mt-10 space-y-8 md:mt-0"> --}}
+ {{--        <p class="text-2xl font-medium text-center text-gold font-libre">A héten éttermünk zárva tart, de találkozhattok --}}
+ {{--            velünk a Street Food Fesztiválon Kecskemét főterén, a 0 km kőnél, június 25–28. között, minden nap 16 --}}
+ {{--            órától. Várunk mindenkit sok szeretettel!</p> --}}
+ {{--    </div> --}}
+ {{-- </div> --}}
  <div class="hidden lg:flex lg:flex-row justify-start">
      <div class="w-1/4 flex md:justify-start">
          <span class="align-bottom uppercase text-gray2e text-5xl font-semibold">{{ __('Nyitvatartás') }}</span>
