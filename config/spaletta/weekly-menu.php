@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2025.07.16. - 2025.07.18.',
-    'saturday-date' => '2025.07.19.',
+    'menu-date' => '2025.07.23. - 2025.07.25.',
+    'saturday-date' => '2025.07.26.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Minestrone, arborio, parmezán(7,9)',
-                    'price' => 1530
+                    'name'  => 'Karfiol krémleves, pirított karfiol, zöld curry, mogyoró(4,8)',
+                    'price' => 1540
                 ],
                 [
-                    'name'  => 'Csirkemáj gombóc leves(1,3,9)',
-                    'price' => 1590
+                    'name'  => 'Gulyásleves, csipetke(1,3,9)',
+                    'price' => 1640
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Lassan sült sertéstarja “temesvári”, galuska(1,3,7)',
+                    'name' => 'Tarhonyás hús, almapaprika(1,3,10)',
+                    'price' => 2570
+                ],
+                [
+                    'name' => 'Aszalt paradicsommal, mozzarellával töltött rántott csirkemell, rukkolás burgonyapüré(1,3,7)',
                     'price' => 2590
                 ],
                 [
-                    'name' => 'Rakott csirkecomb filé, cukkini tócsni, fokhagymás tejföl(1,3,7)',
-                    'price' => 2590
-                ],
-                [
-                    'name' => 'Vegán töltött paprika(1)',
-                    'price' => 2390
+                    'name' => 'Grillezett camembert, zöldsaláta, mangó, kesudió(7,8)',
+                    'price' => 2490
                 ],
             ]
         ],
@@ -48,21 +48,21 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Hideg, mandulatejes tejberizs, meggy, tonkabab(8)',
-                    'price' => 1430
+                    'name' => 'Túrófánk, vaníliás tejföl(1,3,7)',
+                    'price' => 1470
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
         'hide' => false,
-        'price' => 5780,
+        'price' => 5690,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Almaleves, szikkasztott meggy, mandula(7,8)',
+                        'name'  => 'Tejfölös zöldbableves(1,7)',
                         'price' => 1500
                     ]
                 ]
@@ -71,7 +71,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Ropogós császár, borsófőzelék(7)',
+                        'name' => 'Brassói, csemegeuborka(10)',
                         'price' => 2500
                     ],
                 ]
@@ -80,7 +80,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Madártej, pisztácia, málna(3,7,8)',
+                        'name' => 'Barack, mandulás strőzel, mascarpone, méz(1,7,8)',
                         'price' => 1200
                     ]
                 ]
