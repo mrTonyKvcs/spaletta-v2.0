@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2025.07.23. - 2025.07.25.',
-    'saturday-date' => '2025.07.26.',
+    'menu-date' => '2025.07.30. - 2025.08.01.',
+    'saturday-date' => '2025.08.02.',
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -18,12 +18,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Karfiol krémleves, pirított karfiol, zöld curry, mogyoró(4,8)',
-                    'price' => 1540
+                    'name'  => 'Sárgadinnye krémleves, mandula, serrano, bazsalikom(8)',
+                    'price' => 1560
                 ],
                 [
-                    'name'  => 'Gulyásleves, csipetke(1,3,9)',
-                    'price' => 1640
+                    'name'  => 'Legényfogó leves(1,7,9)',
+                    'price' => 1620
                 ]
             ]
         ],
@@ -31,16 +31,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Tarhonyás hús, almapaprika(1,3,10)',
-                    'price' => 2570
-                ],
-                [
-                    'name' => 'Aszalt paradicsommal, mozzarellával töltött rántott csirkemell, rukkolás burgonyapüré(1,3,7)',
+                    'name' => 'Lasagna(1,3,7,9)',
                     'price' => 2590
                 ],
                 [
-                    'name' => 'Grillezett camembert, zöldsaláta, mangó, kesudió(7,8)',
-                    'price' => 2490
+                    'name' => 'Indiai vajas csirke, basmati rizs(7)',
+                    'price' => 2590
+                ],
+                [
+                    'name' => 'Görögdinnye, saláta, feta, olívabogyó(7)',
+                    'price' => 2290
                 ],
             ]
         ],
@@ -48,21 +48,21 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Túrófánk, vaníliás tejföl(1,3,7)',
-                    'price' => 1470
+                    'name' => 'Crème brûlée(3,7)',
+                    'price' => 1390
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
         'hide' => false,
-        'price' => 5690,
+        'price' => 5590,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Tejfölös zöldbableves(1,7)',
+                        'name'  => 'Hagymaleves, kovászos kenyér kocka(1,4,10)',
                         'price' => 1500
                     ]
                 ]
@@ -71,7 +71,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Brassói, csemegeuborka(10)',
+                        'name' => 'Gödöllői csirkecomb, burgonyapüré(1,3,7)',
                         'price' => 2500
                     ],
                 ]
@@ -80,7 +80,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Barack, mandulás strőzel, mascarpone, méz(1,7,8)',
+                        'name' => 'Baszk sajttorta, citromkrém(1,3,7)',
                         'price' => 1200
                     ]
                 ]
