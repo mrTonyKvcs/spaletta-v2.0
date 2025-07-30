@@ -83,6 +83,11 @@
     {{-- <div class="flex items-center justify-center col-span-2 mt-10">
         <p class="text-2xl text-center lg:text-xl">Felhívjuk vendégeink figyelmét hogy, az Étteremhétre való asztalfoglalás az alábbi linken lehetséges: <a class="text-gold" href="https://www.etteremhet.hu/lang/hu/cities/countryside/restaurants/spaletta-etterem-es-sorhaz-kecskemet/reservations/new?meal_type=&reservation%5Bfor_date%5D=&reservation%5Bno_persons%5D=2&sort=name">Étteremhét link</a> </p>
     </div> --}}
+    <div class="flex items-center justify-center col-span-2 mt-8">
+        <p class="text-2xl text-center lg:text-2xl font-bold text-gray-600">
+            {{ __('Sikeres foglalást követően munkatársaink 24 órán belül, vagy a legközelebbi nyitvatartási napon keresni fogják Önt a megerősítéshez.') }}
+        </p>
+    </div>
 
     <div class="flex items-center justify-center col-span-2">
         <x-button type="gray">{{ __('Asztalfoglalás') }}</x-button>

@@ -40,7 +40,7 @@ class SendMailsController extends Controller
             \Mail::to(env('MAIL_TO_ADDRESS'), 'Spaletta Kecskemét')
                 ->send(new SendMails($request->all()));
 
-            return back()->with('success', 'Az asztalfoglalás sikeresen elküldve!');
+            return back()->with('success', 'Foglalását sikeresen elküldte. Munkatársaink 24 órán belül, vagy a legközelebbi nyitvatartási napon keresni fogják Önt a megerősítéshez.');
         } elseif ($request->subject == 'Kapcsolat') {
             \Mail::to(env('MAIL_TO_ADDRESS'), 'Spaletta Kecskemét')
                 ->send(new SendContactMails($request->all()));
