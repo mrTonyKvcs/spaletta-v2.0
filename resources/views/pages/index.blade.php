@@ -68,7 +68,7 @@
         <h2 class="text-4xl italic font-medium gold font-libre">Kedves Vendégeink !</h2>
         <p class="text-3xl italic font-medium text-center text-gray2e font-libre">A Spaletta Étterem csapata augusztus
             16-28-ig nyári szabadságra megy. Feltöltődve térünk vissza augusztus 29-én ,hogy együtt búcsúztathassuk a
-            nyarat Nyárzáró rácson eseményünkkel. ezt a szoveget majd tedd ki kerlek a spalettahoz</p>
+            nyarat Nyárzáró rácson eseményünkkel.</p>
     </div>
 
     {{-- <x-section background="christmas-section"> --}}

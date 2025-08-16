@@ -23,7 +23,7 @@
                 augusztus
                 16-28-ig nyári szabadságra megy. Feltöltődve térünk vissza augusztus 29-én ,hogy együtt búcsúztathassuk
                 a
-                nyarat Nyárzáró rácson eseményünkkel. ezt a szoveget majd tedd ki kerlek a spalettahoz</p>
+                nyarat Nyárzáró rácson eseményünkkel.</p>
         </div>
         <x-reservation></x-reservation>
         <p class="text-2xl text-center my-28 dark-gray">
