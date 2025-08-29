@@ -1,12 +1,12 @@
-<div class="flex flex-col items-center justify-center w-full px-6 py-4 space-y-8">
-    <h2 class="text-4xl italic font-medium gold font-libre">Kedves Vendégeink !</h2>
-    <p class="text-3xl italic font-medium text-center text-gray2e font-libre">A Spaletta Étterem csapata augusztus
-        16-28-ig nyári szabadságra megy. Feltöltődve térünk vissza augusztus 29-én ,hogy együtt búcsúztathassuk a
-        nyarat Nyárzáró rácson eseményünkkel.</p>
-</div>
-<nav id="nav" x-data="{ open: false }" style="background: #262626;"
-    class="z-50 w-full text-xl font-medium xl:text-2xl">
-    {{-- <nav id="nav" x-data="{ open: false }" class="fixed z-50 w-full text-xl font-medium xl:text-2xl"> --}}
+{{-- <div class="flex flex-col items-center justify-center w-full px-6 py-4 space-y-8"> --}}
+{{--    <h2 class="text-4xl italic font-medium gold font-libre">Kedves Vendégeink !</h2> --}}
+{{--    <p class="text-3xl italic font-medium text-center text-gray2e font-libre">A Spaletta Étterem csapata augusztus --}}
+{{--        16-28-ig nyári szabadságra megy. Feltöltődve térünk vissza augusztus 29-én ,hogy együtt búcsúztathassuk a --}}
+{{--        nyarat Nyárzáró rácson eseményünkkel.</p> --}}
+{{-- </div> --}}
+{{-- <nav id="nav" x-data="{ open: false }" style="background: #262626;" --}}
+{{--    class="z-50 w-full text-xl font-medium xl:text-2xl"> --}}
+<nav id="nav" x-data="{ open: false }" class="fixed z-50 w-full text-xl font-medium xl:text-2xl">
     <div class="px-5 py-3 lg:py-0 lg:px-6">
         <div class="flex items-center justify-between lg:h-32">
             <div class="flex">

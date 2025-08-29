@@ -64,12 +64,12 @@
         <h2 class="text-4xl italic font-medium gold font-libre">Kedves Vendégeink !</h2>
         <p class="text-3xl italic font-medium text-center text-gray2e font-libre">Technikai okok miatt vezetékes telefonunk nem üzemel, az alábbi telefonszámon tudják elérni éttermünket: <a href="tel:+36202199975">+36 20 219 99 75</a></p>
     </div> -->
-    <div class="flex flex-col items-center justify-center w-full px-6 mt-56 space-y-8">
-        <h2 class="text-4xl italic font-medium gold font-libre">Kedves Vendégeink !</h2>
-        <p class="text-3xl italic font-medium text-center text-gray2e font-libre">A Spaletta Étterem csapata augusztus
-            16-28-ig nyári szabadságra megy. Feltöltődve térünk vissza augusztus 29-én ,hogy együtt búcsúztathassuk a
-            nyarat Nyárzáró rácson eseményünkkel.</p>
-    </div>
+    {{-- <div class="flex flex-col items-center justify-center w-full px-6 mt-56 space-y-8"> --}}
+    {{--    <h2 class="text-4xl italic font-medium gold font-libre">Kedves Vendégeink !</h2> --}}
+    {{--    <p class="text-3xl italic font-medium text-center text-gray2e font-libre">A Spaletta Étterem csapata augusztus --}}
+    {{--        16-28-ig nyári szabadságra megy. Feltöltődve térünk vissza augusztus 29-én ,hogy együtt búcsúztathassuk a --}}
+    {{--        nyarat Nyárzáró rácson eseményünkkel.</p> --}}
+    {{-- </div> --}}
 
     {{-- <x-section background="christmas-section"> --}}
     {{--    <div class="flex justify-center"> --}}

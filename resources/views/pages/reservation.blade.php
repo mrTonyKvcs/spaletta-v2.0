@@ -17,14 +17,14 @@
         {{ __('Asztalfoglalás') }}
     </x-header>
     <x-section>
-        <div class="flex flex-col items-center justify-center w-full px-6 space-y-8">
-            <h2 class="text-4xl italic font-medium gold font-libre">Kedves Vendégeink !</h2>
-            <p class="text-3xl italic font-medium text-center text-gray2e font-libre">A Spaletta Étterem csapata
-                augusztus
-                16-28-ig nyári szabadságra megy. Feltöltődve térünk vissza augusztus 29-én ,hogy együtt búcsúztathassuk
-                a
-                nyarat Nyárzáró rácson eseményünkkel.</p>
-        </div>
+        {{-- <div class="flex flex-col items-center justify-center w-full px-6 space-y-8"> --}}
+        {{--    <h2 class="text-4xl italic font-medium gold font-libre">Kedves Vendégeink !</h2> --}}
+        {{--    <p class="text-3xl italic font-medium text-center text-gray2e font-libre">A Spaletta Étterem csapata --}}
+        {{--        augusztus --}}
+        {{--        16-28-ig nyári szabadságra megy. Feltöltődve térünk vissza augusztus 29-én ,hogy együtt búcsúztathassuk --}}
+        {{--        a --}}
+        {{--        nyarat Nyárzáró rácson eseményünkkel.</p> --}}
+        {{-- </div> --}}
         <x-reservation></x-reservation>
         <p class="text-2xl text-center my-28 dark-gray">
             {{ __('A fenti űrlapot kitöltve tudjuk fogadni asztalfoglalási igényét. Ha foglalással kapcsolatba kérdése merülne fel az alábbi elérhetőségeken tudja a velünk felvenni a kapcsolatot') }}.
