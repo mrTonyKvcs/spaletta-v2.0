@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="flex justify-center pr-6">
-                    <img class="w-full h-auto" src="{{ $event->image_path }}" alt="{{ $event->title }}">
+                    <img class="w-full md:w-6/12 h-auto" src="{{ $event->image_path }}" alt="{{ $event->title }}">
                 </div>
                 <div class="text-left event__content" style="font-size: 18px !important;">
                     <p class="text-2xl">{!! $event->content !!}</p>

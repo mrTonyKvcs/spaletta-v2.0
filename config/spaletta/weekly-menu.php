@@ -4,6 +4,7 @@ return [
     'title'     => 'Déli Ajánló',
     'menu-date' => '2025.08.13. - 2025.08.15.',
     'saturday-date' => '2025.08.16.',
+    'hide' => true,
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',

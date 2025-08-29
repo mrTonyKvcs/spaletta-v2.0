@@ -86,8 +86,11 @@
 
     <x-section>
         <div class="flex flex-col items-center w-full mt-24">
-            <x-title title="{{ __('Déli ajánló') }}" text="{{ config('spaletta.weekly-menu.menu-date') }}"></x-title>
-            <x-weekly-menu></x-weekly-menu>
+            <x-title title="{{ __('Déli ajánló') }}"
+                text="{{ !config('spaletta.weekly-menu.hide') ? config('spaletta.weekly-menu.menu-date') : 'Spaletta' }}"></x-title>
+            @if (!config('spaletta.weekly-menu.hide'))
+                <x-weekly-menu></x-weekly-menu>
+            @endif
         </div>
         @if (!config('spaletta.weekly-menu.saturday-menu')['hide'])
             <div class="flex flex-col items-center w-full mt-24">
