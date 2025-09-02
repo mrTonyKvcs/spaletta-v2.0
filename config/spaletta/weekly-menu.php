@@ -2,9 +2,9 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2025.08.13. - 2025.08.15.',
-    'saturday-date' => '2025.08.16.',
-    'hide' => true,
+    'menu-date' => '2025.09.03. - 2025.09.05.',
+    'saturday-date' => '2025.09.06.',
+    'hide' => false,
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -19,12 +19,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Cukkini krémleves, marinált cukkini, tökmag(7)',
-                    'price' => 1490
+                    'name'  => 'Bakonyi betyárleves, burgonyagombóc(1,3,7,9)',
+                    'price' => 1560
                 ],
                 [
-                    'name'  => 'Bableves, lángolt kolbász, csipetke(1,3,7,9)',
-                    'price' => 1580
+                    'name'  => 'Karfiol leves(7)',
+                    'price' => 1390
                 ]
             ]
         ],
@@ -32,16 +32,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Rakott kel, tejföl(3,7)',
+                    'name' => 'Cigánypecsenye, steak burgonya, csemege uborka(1,10)',
+                    'price' => 2570
+                ],
+                [
+                    'name' => 'Rántott csirkemáj, rizibizi, tormás majonéz(1,3,7,10)',
                     'price' => 2490
                 ],
                 [
-                    'name' => 'Rántott csirkecomb filé, tonkatsu szósz, pirított zöldségek, ázsiai uborkasaláta(1,3,4,6,10,11)',
-                    'price' => 2480
-                ],
-                [
-                    'name' => 'Arancini, paradicsommártás, vadrizs(1,3,7,9)',
-                    'price' => 2390
+                    'name' => 'Zöldséges lasagne, pesto(1,3,7,8)',
+                    'price' => 2530
                 ],
             ]
         ],
@@ -49,21 +49,21 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Pavlova, barack, vaníliás tejszín(3,7)',
-                    'price' => 1390
+                    'name' => 'Szilvás palacsinta(1,3,7,8)',
+                    'price' => 1350
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'hide' => true,
+        'hide' => false,
         'price' => 5490,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Grízgaluska leves(1,3,9)',
+                        'name'  => 'Frankfurti leves(1,7)',
                         'price' => 1500
                     ]
                 ]
@@ -72,7 +72,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Rántott sertésszelet, petrezselymes burgonya, tejfölös uborkasaláta(1,3,7)',
+                        'name' => 'Rizseshús, piacos savanyúságok(10)',
                         'price' => 2500
                     ],
                 ]
@@ -81,7 +81,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Meggyes cobbler, vaníliás tejszín(1,3,7)',
+                        'name' => 'Meggyes pite, vaníliás tejszín(1,3,7)',
                         'price' => 1200
                     ]
                 ]
