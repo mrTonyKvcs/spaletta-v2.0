@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2025.09.10. - 2025.09.12.',
-    'saturday-date' => '2025.09.13.',
+    'menu-date' => '2025.09.17. - 2025.09.19.',
+    'saturday-date' => '2025.09.20.',
     'hide' => false,
     'menu' => [
         // 'first-courses' => [
@@ -19,12 +19,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Tarhonyaleves(1,3,9)',
-                    'price' => 1390
+                    'name'  => 'Lencsegulyás, tejföl(7,9)',
+                    'price' => 1540
                 ],
                 [
-                    'name'  => 'Tárkonyos csirkeraguleves(1,7,9,10)',
-                    'price' => 1540
+                    'name'  => 'Sütőtök krémleves, tökmag pesto(7)',
+                    'price' => 1420
                 ]
             ]
         ],
@@ -32,16 +32,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Fokhagymás sertésdagadó, paradicsomos káposzta(1)',
-                    'price' => 2590
+                    'name' => 'Székelykáposzta(7)',
+                    'price' => 2560
                 ],
                 [
-                    'name' => 'Ragacsos csirkenyárs, sült zöldséges bulgur(1,4,5,6,9,11)',
-                    'price' => 2590
+                    'name' => 'Csirkecomb filé zöldfűszeres párizsi bundában, rizibizi(1,3,7)',
+                    'price' => 2560
                 ],
                 [
-                    'name' => 'Rántott sajt, waldorf saláta(1,3,7,8,9,10)',
-                    'price' => 2490
+                    'name' => 'Gombás rizottó, pecorino(7)',
+                    'price' => 2450
                 ],
             ]
         ],
@@ -49,21 +49,21 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Barackos cobbler, vaníliás tejszín(1,3,7)',
-                    'price' => 1320
+                    'name' => 'Diós házi pappardelle, sárgabarack(1,3,7,8)',
+                    'price' => 1330
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
         'hide' => false,
-        'price' => 5490,
+        'price' => 5300,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Fahéjas almaleves, dió(7,8)',
+                        'name'  => 'Orjaleves, cérnametélt, zöldségek(1,3,9)',
                         'price' => 1500
                     ]
                 ]
@@ -72,7 +72,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Sertés cordon, burgonyapüré(1,3,7)',
+                        'name' => 'Töltött csirkecomb, burgonyapüré(1,3,7)',
                         'price' => 2500
                     ],
                 ]
@@ -81,7 +81,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Rizsfelfújt, gyümölcsök(3,7)',
+                        'name' => 'Túrófánk, gyümölcsragu(1,3,7)',
                         'price' => 1200
                     ]
                 ]
