@@ -54,7 +54,7 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-5 w-full mt-8">
-            @for ($i = 1; $i <= 4; $i++)
+            @for ($i = 1; $i <= $type->quantity; $i++)
                 <div class="w-full"
                     style="
                            background-color:#FCFCFC;
