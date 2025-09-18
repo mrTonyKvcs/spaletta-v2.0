@@ -32,6 +32,9 @@ Route::get('payment-finish', 'App\Http\Controllers\PaymentController@finish')
 Route::post('payment-ipn', 'App\Http\Controllers\PaymentController@ipn')
     ->name('payment.ipn');
 
+Route::get('ticket-sablon', function () {
+    return view('ticket-sablon');
+});
 
 
 Route::group(
@@ -40,6 +43,7 @@ Route::group(
         'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'localize']
     ],
     function () {
+
         Route::get('/', [
             'as' => 'pages.index',
             'uses' => 'App\Http\Controllers\PagesController@index'
@@ -172,6 +176,11 @@ Route::group(
         Route::get('check-in/{id}/{orderNumber}', [
             'as' => 'ticket.check-in',
             'uses' => 'App\Http\Controllers\TicketController@checkIn'
+        ]);
+
+        Route::get('jegy-letoltese/{encrypted}', [
+            'as' => 'ticket.download',
+            'uses' => 'App\Http\Controllers\TicketController@download'
         ]);
 
         Route::get('sikeres-vasarlas-visszaigazolasa/{id}/{orderNumber}', [

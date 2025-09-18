@@ -8,6 +8,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Crypt;
 
 class SendQrTicket extends Mailable
 {
@@ -25,6 +26,7 @@ class SendQrTicket extends Mailable
     {
         // $this->data['invoice_number'] = $ticket->invoice->invoice_number;
         $this->data['orderNumber'] = $ticket->order_number;
+        $this->data['name'] = $ticket->name;
         $this->data['email'] = $ticket->email;
         $this->data['event'] = $ticket->event->title;
         $this->data['started_at'] = $ticket->event->started_at;
@@ -32,6 +34,10 @@ class SendQrTicket extends Mailable
         $this->data['total'] = $ticket->total;
         $this->data['prices'] = $ticket->sold;
         $this->data['transaction_id'] = $ticket->transaction->transaction_id;
+
+        $this->data['encrypted'] = Crypt::encryptString(json_encode([
+            'orderNumber' => $ticket->order_number,
+        ]));
     }
 
     /**

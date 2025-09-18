@@ -9,6 +9,7 @@ use App\Models\Transaction;
 use App\Traits\InvoiceTrait;
 use App\Traits\TicketTrait;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Crypt;
 
 // use Illuminate\Http\Request;
 
@@ -77,5 +78,30 @@ class TicketController extends Controller
     public function paymentError(Transaction $transaction)
     {
         return view('pages.payment-error', ['transaction' => $transaction]);
+    }
+
+    public function download($encrypted)
+    {
+        try {
+            $decrypted = Crypt::decryptString(urldecode($encrypted));
+            $data = json_decode($decrypted, true);
+
+            if (!is_array($data) || !isset($data['orderNumber'])) {
+                abort(404, 'Érvénytelen vagy hiányzó rendelési adatok');
+            }
+
+            $orderNumber = $data['orderNumber'];
+            $ticket = $this->getTicket($orderNumber);
+
+            if (!$ticket) {
+                abort(404, 'A jegy nem található');
+            }
+
+            return view('tickets.download', [
+                'ticket' => $ticket
+            ]);
+        } catch (\Exception $e) {
+            abort(404, 'Érvénytelen vagy sérült link');
+        }
     }
 }
