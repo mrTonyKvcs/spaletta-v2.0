@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2025.09.25. - 2025.09.26.',
+    'menu-date' => '2025.09.24. - 2025.09.26.',
     'saturday-date' => '2025.09.27.',
     'hide' => false,
     'menu' => [
