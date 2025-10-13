@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2025.10.08. - 2025.10.10.',
-    'saturday-date' => '2025.10.11.',
+    'menu-date' => '2025.10.15. - 2025.10.17.',
+    'saturday-date' => '2025.10.18.',
     'hide' => false,
     'menu' => [
         // 'first-courses' => [
@@ -19,12 +19,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Májgombóc leves(1,3,9)',
-                    'price' => 1580
+                    'name'  => 'Sárgaborsó krémleves, lángolt kolbász(7)',
+                    'price' => 1380
                 ],
                 [
-                    'name'  => 'Brokkoli krémleves, kovászos kenyér, cheddar(1,7)',
-                    'price' => 1490
+                    'name'  => 'Tárkonyos csirkeraguleves(1,7,9,10)',
+                    'price' => 1480
                 ]
             ]
         ],
@@ -32,16 +32,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Fokhagymás pecsenye, hagymás törtburgonya, csemege uborka(10)',
+                    'name' => 'Rakott kel, tejföl(3,7)',
+                    'price' => 2480
+                ],
+                [
+                    'name' => 'Rántott zöldfűszeres csirkemell, sült zöldséges bulgur(1,3,7)',
                     'price' => 2580
                 ],
                 [
-                    'name' => 'Rántott csirkecomb filé, rizibizi(1,3,7)',
-                    'price' => 2530
-                ],
-                [
-                    'name' => 'Thai, pirított zöldséges tészta(1,4,5,6,11)',
-                    'price' => 2480
+                    'name' => 'Sütőtökös rizottó(7)',
+                    'price' => 2380
                 ],
             ]
         ],
@@ -49,7 +49,7 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Meggyes-mákos palacsinta(1,3,7)',
+                    'name' => 'Képviselőfánk, málnaragu(1,3,7)',
                     'price' => 1380
                 ]
             ]
@@ -63,7 +63,7 @@ return [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Frankfurti leves(1,7)',
+                        'name'  => 'Kókusztejes répaleves, misos sült répa(6)',
                         'price' => 1500
                     ]
                 ]
@@ -72,7 +72,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Zúzapörkölt, galuska, piacos savanyúság(1,3,10)',
+                        'name' => 'Brassói, csemegeuborka(10)',
                         'price' => 2500
                     ],
                 ]
@@ -81,7 +81,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Vargabéles, gyümölcsragu(1,3,7)',
+                        'name' => 'Tejespite, baracklekvár(1,3,7)',
                         'price' => 1200
                     ]
                 ]
