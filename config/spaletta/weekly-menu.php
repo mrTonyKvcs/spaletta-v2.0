@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2025.10.22. - 2025.10.24.',
-    'saturday-date' => '2025.10.25.',
+    'menu-date' => '2025.10.29. - 2025.10.30.',
+    'saturday-date' => '2025.10.31.',
     'hide' => false,
     'menu' => [
         // 'first-courses' => [
@@ -19,12 +19,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Vietnámi kacsaleves,kacsás wonton(1,4,6)',
-                    'price' => 1530
+                    'name'  => 'Gulyásleves, csipetke(1,3,9)',
+                    'price' => 1480
                 ],
                 [
-                    'name'  => 'Zellerkrémleves, misos sült zeller(6,7,9)',
-                    'price' => 1450
+                    'name'  => 'Zöldcurrys karfiol leves, pirított karfiol, mogyoró(4,8)',
+                    'price' => 1380
                 ]
             ]
         ],
@@ -32,16 +32,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Burgonyafőzelék, fasírt(1,3,7)',
-                    'price' => 2480
+                    'name' => 'Bácskai rizseshús, csemege uborka(10)',
+                    'price' => 2580
                 ],
                 [
-                    'name' => 'Borzas csirkemell, jázminrizs, fokhagymás tejföl(1,3,7)',
-                    'price' => 2540
+                    'name' => 'Alfredo csirke, házi tagliatelle(1,3,7)',
+                    'price' => 2520
                 ],
                 [
-                    'name' => 'Grillezett camembert, őszi saláta, körte(7,8)',
-                    'price' => 2420
+                    'name' => 'Zöldségtempura, hummusz, dukkah(5,11)',
+                    'price' => 2450
                 ],
             ]
         ],
@@ -49,14 +49,14 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Kukorica prósza, szilva, fahéj(3,7)',
+                    'name' => 'Gundel palacsinta(1,3,7,8)',
                     'price' => 1380
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'hide' => false,
+        'hide' => true,
         'price' => 5640,
         'items' => [
             'soup' => [
