@@ -19,7 +19,7 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Tojásleves(3,9)',
+                    'name'  => 'Babgulyás,csipetke(1,3,9)',
                     'price' => 1560
                 ],
                 [
