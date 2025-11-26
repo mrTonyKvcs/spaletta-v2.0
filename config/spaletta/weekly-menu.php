@@ -2,7 +2,7 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2025.11.19. - 2025.11.21.',
+    'menu-date' => '2025.11.26. - 2025.11.28.',
     'saturday-date' => '2025.11.22.',
     'hide' => false,
     'menu' => [
@@ -19,12 +19,12 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Babgulyás,csipetke(1,3,9)',
+                    'name'  => 'Vaddisznó raguleves',
                     'price' => 1560
                 ],
                 [
-                    'name'  => 'Grízgaluska leves(1,3)',
-                    'price' => 1440
+                    'name'  => 'Magyaros gombaleves, reszelt tészta',
+                    'price' => 1340
                 ]
             ]
         ],
@@ -32,16 +32,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Mustáros flekken,steak burgonya,lyoni hagyma(1,10)',
-                    'price' => 2540
+                    'name' => 'Sertéspörkölt, lencsefőzelék',
+                    'price' => 2560
                 ],
                 [
-                    'name' => 'Rántott csirkemáj, waldorf saláta(1,3,7,8,9,10)',
-                    'price' => 2460
+                    'name' => 'Ragacsos csirkecomb, jázminrizs, kimchi',
+                    'price' => 2570
                 ],
                 [
-                    'name' => 'Borsópörkölt,galuska(1,3)',
-                    'price' => 2380
+                    'name' => 'Rántott zöldségek, petrezselymes bulgur, tartár',
+                    'price' => 2420
                 ],
             ]
         ],
@@ -49,14 +49,14 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Túrógombóc,tejföl(1,3,7)',
-                    'price' => 1360
+                    'name' => 'Túró́s tejespite, baracklekvár',
+                    'price' => 1370
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'hide' => false,
+        'hide' => true,
         'price' => 5380,
         'items' => [
             'soup' => [
