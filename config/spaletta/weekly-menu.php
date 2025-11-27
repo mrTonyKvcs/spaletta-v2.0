@@ -56,14 +56,14 @@ return [
         ]
     ],
     'saturday-menu' => [
-        'hide' => true,
-        'price' => 5380,
+        'hide' => false,
+        'price' => 5580,
         'items' => [
             'soup' => [
                 'name' => 'Leves',
                 'items' => [
                     [
-                        'name'  => 'Tyúkhúsleves,cérnametélt(1,3,9)',
+                        'name'  => 'Tejfölös karfiol leves(7)',
                         'price' => 1500
                     ]
                 ]
@@ -72,7 +72,7 @@ return [
                 'name' => 'Főétel',
                 'items' => [
                     [
-                        'name' => 'Székelykáposzta,tejföl(7)',
+                        'name' => 'Chilisbab, házi tortilla',
                         'price' => 2500
                     ],
                 ]
@@ -81,7 +81,7 @@ return [
                 'name' => 'Desszert',
                 'items' => [
                     [
-                        'name' => 'Almás palacsinta,vanília sodó(1,3,7)',
+                        'name' => 'Répatorta(1,3,7,8)',
                         'price' => 1200
                     ]
                 ]
