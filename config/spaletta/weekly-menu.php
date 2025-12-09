@@ -2,8 +2,8 @@
 
 return [
     'title'     => 'Déli Ajánló',
-    'menu-date' => '2025.12.03. - 2025.12.05.',
-    'saturday-date' => '2025.12.06.',
+    'menu-date' => '2025.12.10. - 2025.12.12.',
+    'saturday-date' => '2025.12.13.',
     'hide' => false,
     'menu' => [
         // 'first-courses' => [
@@ -19,11 +19,11 @@ return [
             'name' => 'Leves',
             'items' => [
                 [
-                    'name'  => 'Palóc leves(1,7,9)',
+                    'name'  => 'Jókai bableves,lángolt kolbász,tejföl(1,7,9)',
                     'price' => 1540
                 ],
                 [
-                    'name'  => 'Fahéjas almaleves(7)',
+                    'name'  => 'Póréhagymás burgonyakrémleves, fűszeres kovászos kenyér(1,7)',
                     'price' => 1420
                 ]
             ]
@@ -32,16 +32,16 @@ return [
             'name' => 'Főétel',
             'items' => [
                 [
-                    'name' => 'Rakott burgonya, tejföl(3,7)',
-                    'price' => 2560
-                ],
-                [
-                    'name' => 'Párizsi csirkemell, rizibizi, savanyú cékla(1,3,7)',
+                    'name' => 'Bakonyi sertés tarja,galuska(1,3,7)',
                     'price' => 2540
                 ],
                 [
-                    'name' => 'Túrós tészta, pörc(1,3,7)',
-                    'price' => 2380
+                    'name' => 'Sült csirkeszárny, steak burgonya, coleslaw(1,3,4,6,7,10)',
+                    'price' => 2470
+                ],
+                [
+                    'name' => 'Rántott sajt, sült zöldségsaláta(1,3,7,9)',
+                    'price' => 2420
                 ],
             ]
         ],
@@ -49,14 +49,14 @@ return [
             'name' => 'Desszert',
             'items' => [
                 [
-                    'name' => 'Baszk sajttorta, birsalma(1,3,7)',
-                    'price' => 1450
+                    'name' => 'Posírozott körte, mascarpone, citromzselé,diós strőzel(1,7,8)',
+                    'price' => 1380
                 ]
             ]
         ]
     ],
     'saturday-menu' => [
-        'hide' => false,
+        'hide' => true,
         'price' => 5480,
         'items' => [
             'soup' => [
