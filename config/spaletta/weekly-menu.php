@@ -4,7 +4,7 @@ return [
     'title'     => 'Déli Ajánló',
     'menu-date' => '2025.12.17. - 2025.12.19.',
     'saturday-date' => '2025.12.20.',
-    'hide' => false,
+    'hide' => true,
     'menu' => [
         // 'first-courses' => [
         //     'name' => 'Előétel',
@@ -56,7 +56,7 @@ return [
         ]
     ],
     'saturday-menu' => [
-        'hide' => false,
+        'hide' => true,
         'price' => 5580,
         'items' => [
             'soup' => [

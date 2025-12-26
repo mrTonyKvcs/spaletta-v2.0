@@ -90,9 +90,13 @@ Route::group(
         // })->name('pages.menu');
 
         Route::get(LaravelLocalization::transRoute('routes.menu'), function () {
-            // return redirect()->route('pages.bistro');
-            $title = 'Étlap';
-            $categories = Category::whereIn('type_id', [1, 9])->orderBy('order_column')->with('items')->get();
+            if (now()->format('Y-m-d') > '2025-12-31') {
+                $title = 'Étlap';
+                $categories = Category::whereIn('type_id', [1, 9])->orderBy('order_column')->with('items')->get();
+            } else {
+                $title = __('Év végi étlap');
+                $categories = Category::where('type_id', 26)->orderBy('order_column')->with('items')->get();
+            }
             return view('pages.restaurant', compact('categories', 'title'));
         })->name('pages.menu');
 
