@@ -85,25 +85,26 @@
     {{-- </x-section> --}}
 
     <x-section>
-        <div class="flex flex-col items-center w-full mt-24">
-            <x-title title="{{ __('Déli ajánló') }}"
-                text="{{ !config('spaletta.weekly-menu.hide') ? config('spaletta.weekly-menu.menu-date') : 'Spaletta' }}"></x-title>
-            @if (!config('spaletta.weekly-menu.hide'))
-                <x-weekly-menu></x-weekly-menu>
-            @endif
-        </div>
-        @if (!config('spaletta.weekly-menu.saturday-menu')['hide'])
-            <div class="flex flex-col items-center w-full mt-24">
-                <x-title title="{{ __('Szombati ajánló') }}"
-                    text="{{ config('spaletta.weekly-menu.saturday-date') }}"></x-title>
-                <p class="text-3xl italic font-medium text-center text-gray2e font-libre">
-                    {{ config('spaletta.weekly-menu.saturday-menu')['price'] }} Ft</p>
-                <x-weekend-menu></x-weekend-menu>
-            </div>
-        @endif
-        <p class="text-xl">1. Glutén 2. Rákfélék 3. Tojás 4. Halak 5. Földimogyoró 6. Szójabab 7. Tej 8. Diófélék 9.
-            Zeller10. Mustár 11. Szezámmag</p>
-        <p class="text-xl">{{ __('(Az ár nem tartalmazza a csomagolás díját)') }}</p>
+        {{--<div class="flex flex-col items-center w-full mt-24">--}}
+        {{--    <x-title title="{{ __('Déli ajánló') }}"--}}
+        {{--        text="{{ !config('spaletta.weekly-menu.hide') ? config('spaletta.weekly-menu.menu-date') : 'Spaletta' }}"></x-title>--}}
+        {{--    @if (!config('spaletta.weekly-menu.hide'))--}}
+        {{--        <x-weekly-menu></x-weekly-menu>--}}
+        {{--    @endif--}}
+        {{--</div>--}}
+        {{--@if (!config('spaletta.weekly-menu.saturday-menu')['hide'])--}}
+        {{--    <div class="flex flex-col items-center w-full mt-24">--}}
+        {{--        <x-title title="{{ __('Szombati ajánló') }}"--}}
+        {{--            text="{{ config('spaletta.weekly-menu.saturday-date') }}"></x-title>--}}
+        {{--        <p class="text-3xl italic font-medium text-center text-gray2e font-libre">--}}
+        {{--            {{ config('spaletta.weekly-menu.saturday-menu')['price'] }} Ft</p>--}}
+        {{--        <x-weekend-menu></x-weekend-menu>--}}
+        {{--    </div>--}}
+        {{--@endif--}}
+        {{--<p class="text-xl">1. Glutén 2. Rákfélék 3. Tojás 4. Halak 5. Földimogyoró 6. Szójabab 7. Tej 8. Diófélék 9.--}}
+        {{--    Zeller10. Mustár 11. Szezámmag</p>--}}
+        {{--<p class="text-xl">{{ __('(Az ár nem tartalmazza a csomagolás díját)') }}</p>--}}
+    <p class="text-3xl italic font-medium text-center text-gray2e font-libre">{!! __('Tájékoztatunk benneteket, hogy éttermünk január 16-ig zárva tart. Ez idő alatt asztalfoglalás az alábbi e-mail címen lehetséges: <a href="mailto:spaletta.gasztro@gmail.com" class="text-gold">spaletta.gasztro@gmail.com</a>. Megértéseteket köszönjük, nyitás után szeretettel várunk benneteket!') !!}
     </x-section>
 
     <x-section background="home-about">

@@ -5,9 +5,8 @@
 @endphp
 
 <div class="flex flex-col items-center justify-center w-full px-6 space-y-8">
-    <p class="text-3xl italic font-medium text-center text-gray2e font-libre">Kedves Vendégeink ! 2025. december 19-ig az
-        asztalfoglalásokat kizárólag telefonon tudjuk fogadni, megértésüket előre is köszönjük.<br> <a
-            href="tel:+3676614744" class="text-gold">+36 76 614 744</a></p>
+    <p class="text-3xl italic font-medium text-center text-gray2e font-libre">{!! __('Tájékoztatunk benneteket, hogy éttermünk január 16-ig zárva tart. Ez idő alatt asztalfoglalás az alábbi e-mail címen lehetséges: <a href="mailto:spaletta.gasztro@gmail.com" class="text-gold">spaletta.gasztro@gmail.com</a>. Megértéseteket köszönjük, nyitás után szeretettel várunk benneteket!') !!}
+</p>
 </div>
 <div class="w-full mb-10">
     @include('flash-message', ['form' => 'form-reservation'])
